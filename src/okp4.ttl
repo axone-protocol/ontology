@@ -4,6 +4,8 @@
 
 <https://ontology.okp4.com/core>
   a owl:Ontology ;
+  owl:versionIRI <https://w3id.org/tso/BOTAlignment#/v0.1.0> ;
+  owl:versionInfo "v0.1.0" ;
   dc11:language "EN", "FR" ;
   dc11:title "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
   dc11:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
