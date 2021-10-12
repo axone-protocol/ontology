@@ -1,6 +1,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 <https://ontology.okp4.com/core>
   a owl:Ontology ;
@@ -10,4 +11,7 @@
   dc11:title "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
   dc11:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   rdfs:comment "Ontologie OKP4 système, utilisée pour decrire les metadonnées des jeux de connaissance, services et traitements dans la plateforme OKP4"@fr, "System OKP4 Ontology, used to describe knowledge data, services and processes in the OKP4 plateform"@en ;
-  rdfs:label "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en .
+  rdfs:label "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
+  vann:preferredNamespacePrefix "okp4" ;
+  vann:preferredNamespaceUri "https://ontology.okp4.com/core" .
+
