@@ -12,6 +12,7 @@
   dcterms:language "EN", "FR" ;
   dcterms:title "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  dcterms:publisher <https://okp4.com/> ;
   rdfs:comment "Ontologie OKP4 système, utilisée pour decrire les metadonnées des jeux de connaissance, services et traitements dans la plateforme OKP4"@fr, "System OKP4 Ontology, used to describe knowledge data, services and processes in the OKP4 plateform"@en ;
   rdfs:label "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
   vann:preferredNamespacePrefix "okp4" ;
