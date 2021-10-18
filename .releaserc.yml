@@ -1,0 +1,25 @@
+branches:
+  - main
+
+repositoryUrl: "git@github.com:okp4/ontology.git"
+
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - - "@semantic-release/changelog"
+    - changelogFile: CHANGELOG.md
+      changelogTitle: "# OKP4 Ontology Changelog"
+  - - "@semantic-release/exec"
+    - verifyReleaseCmd: |
+        # Required goreplace:
+        # $ go install github.com/piranha/goreplace
+        echo "Bump ontology version to: ${nextRelease.version}"
+        goreplace -o "okp4\.ttl" 'owl:versionIRI\s+<(.+)\/(\d+\.\d+\.\d+)>' -r 'owl:versionIRI <$1/${nextRelease.version}>'
+        goreplace -o "okp4\.ttl" 'owl:versionInfo "v(\d+\.\d+\.\d+)"' -r 'owl:versionInfo \"v${nextRelease.version}\"'
+  - "@semantic-release/github"
+  - - "@semantic-release/git"
+    - assets:
+      - CHANGELOG.md
+      - LICENSE
+      - src/
+      message: "chore(release): perform release ${nextRelease.version}\n\n${nextRelease.notes}"
