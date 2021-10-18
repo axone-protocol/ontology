@@ -16,7 +16,7 @@ jobs:
           go-version: '1.17.0'
 
       - run: |
-          go install github.com/piranha/goreplace
+          go install github.com/piranha/goreplace@2.6
 
       - name: Release project
         uses: cycjimmy/semantic-release-action@v2
