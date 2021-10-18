@@ -10,7 +10,7 @@ plugins:
     - changelogFile: CHANGELOG.md
       changelogTitle: "# OKP4 Ontology Changelog"
   - - "@semantic-release/exec"
-    - verifyReleaseCmd: |
+    - prepareCmd: |
         # Required goreplace:
         # $ go install github.com/piranha/goreplace
         echo "Bump ontology version to: ${nextRelease.version}"
