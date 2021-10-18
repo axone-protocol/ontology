@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
 jobs:
   commits-are-conventional:
     runs-on: ubuntu-20.04
