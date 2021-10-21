@@ -22,4 +22,4 @@ plugins:
       - CHANGELOG.md
       - LICENSE
       - src/
-      message: "chore(release): perform release ${nextRelease.version}\n\n${nextRelease.notes}"
+      message: "chore(release): perform release ${nextRelease.version}"
