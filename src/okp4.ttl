@@ -2,7 +2,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://ontology.okp4.com/core>
   a owl:Ontology ;
@@ -16,5 +17,5 @@
   rdfs:comment "Ontologie OKP4 système, utilisée pour decrire les metadonnées des jeux de connaissance, services et traitements dans la plateforme OKP4"@fr, "System OKP4 Ontology, used to describe knowledge data, services and processes in the OKP4 plateform"@en ;
   rdfs:label "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
   vann:preferredNamespacePrefix "okp4" ;
-  vann:preferredNamespaceUri "https://ontology.okp4.com/core" .
-
+  vann:preferredNamespaceUri "https://ontology.okp4.com/core" ;
+  vs:term_status "unstable"@en .
