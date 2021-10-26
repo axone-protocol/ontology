@@ -1,4 +1,4 @@
-name: Checks
+name: Lint
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  commits-are-conventional:
+  lint-commits:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository
@@ -23,7 +23,7 @@ jobs:
       - name: Check commits
         uses: wagoid/commitlint-github-action@v4
 
-  ontology-is-valid:
+  lint-ontology:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository
