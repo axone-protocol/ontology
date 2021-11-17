@@ -2,6 +2,7 @@
 ONTOLOGY_PATH = "src/okp4.ttl"
 
 DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
+DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
 
 # Some colors
 COLOR_GREEN  = $(shell tput -Txterm setaf 2)
@@ -10,7 +11,7 @@ COLOR_WHITE  = $(shell tput -Txterm setaf 7)
 COLOR_CYAN   = $(shell tput -Txterm setaf 6)
 COLOR_RESET  = $(shell tput -Txterm sgr0)
 
-.PHONY: all
+.PHONY: all lint lint-ontology documentation
 
 all: help
 
@@ -23,6 +24,13 @@ lint-ontology: ## Lint ontology
   		-v `pwd`:/usr/src/ontology \
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ONTOLOGY_PATH}
+
+## Documentation:
+documentation: ## Generate documentation site
+	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ONTOLOGY_PATH}${COLOR_RESET}"
+	@docker run -ti --rm \
+  		-v `pwd`:/usr/src/ontology \
+		${DOCKER_IMAGE_WIDOCO} -ontFile /usr/src/ontology/${ONTOLOGY_PATH} -outFolder /usr/src/ontology/target/generated/ontology -rewriteAll
 
 ## Help:
 help: ## Show this help.
