@@ -1,21 +1,82 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://ontology.okp4.com/core>
   a owl:Ontology ;
   owl:versionIRI <https://ontology.okp4.com/core/1.0.0> ;
   owl:versionInfo "v1.0.0" ;
-  dcterms:created "2021-10-11"^^xsd:date ;
-  dcterms:language "EN", "FR" ;
-  dcterms:title "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
-  dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  dcterms:publisher <https://okp4.com/> ;
-  rdfs:comment "Ontologie OKP4 système, utilisée pour decrire les metadonnées des jeux de connaissance, services et traitements dans la plateforme OKP4"@fr, "System OKP4 Ontology, used to describe knowledge data, services and processes in the OKP4 plateform"@en ;
-  rdfs:label "Ontologie OKP4 système"@fr, "System OKP4 Ontology"@en ;
+  dc:created "2021-10-11"^^xsd:date ;
+  dc:language "EN" ;
+  dc:title "OKP4 Ontology X"@en ;
+  dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  dc:publisher <https://okp4.com/> ;
+  dc:description """
+
+A vocabulary to describe knowledge graphs involving data sets, services and processing within dataspaces.
+
+"""@en ;
+  rdfs:label "OKP4 Ontology"@en ;
   vann:preferredNamespacePrefix "okp4" ;
   vann:preferredNamespaceUri "https://ontology.okp4.com/core" ;
   vs:term_status "unstable"@en .
+
+<https://ontology.okp4.com/core/Dataspace>
+  a rdfs:Class ;
+  rdfs:label "Dataspace"@en ;
+  rdfs:comment """
+  
+  `Dataspace` is a founding concept of this ontology and is described as a *virtual* space in which data, services and actors belong, and governed by a set of explicit predefined rules.
+  
+  """@en .
+
+<https://ontology.okp4.com/core/hasName>
+  a owl:FunctionalProperty, owl:DatatypeProperty ;
+  rdfs:subPropertyOf dc:title ;
+  rdfs:label "has name"@en ;
+  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:range xsd:string ;
+  rdfs:comment "A name given to the resource."@en .
+
+<https://ontology.okp4.com/core/hasDescription>
+  a owl:FunctionalProperty, owl:DatatypeProperty ;
+  rdfs:subPropertyOf dc:description ;
+  rdfs:label "has description"@en ;
+  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:range xsd:string ;
+  rdfs:comment """
+  
+  A short text description given to a resource.
+
+  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text. 
+  
+  """@en .
+
+<https://ontology.okp4.com/core/wasCreatedOn>
+  a owl:FunctionalProperty, owl:DatatypeProperty ;
+  rdfs:label "was created on"@en ;
+  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:range xsd:date ;
+  rdfs:comment """
+
+  Information on when the resource was created.
+  
+  This information is stored initially and will never be changed thereafter.
+
+"""@en .
+
+<https://ontology.okp4.com/core/wasCreatedBy>
+  a owl:FunctionalProperty, owl:ObjectProperty ;
+  rdfs:label "was created by"@en ;
+  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:range xsd:uri ;
+  rdfs:comment """
+
+  Information about who created the resource.
+  
+  This information is stored initially and will never be changed thereafter.
+
+"""@en .
