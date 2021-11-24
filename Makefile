@@ -29,9 +29,19 @@ lint-ontology: ## Lint ontology
 ## Documentation:
 documentation: ## Generate documentation site
 	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ONTOLOGY_PATH}${COLOR_RESET}"
-	@docker run -ti --rm \
+	@docker run \
+	    -ti --rm \
   		-v `pwd`:/usr/src/ontology \
-		${DOCKER_IMAGE_WIDOCO} -ontFile /usr/src/ontology/${ONTOLOGY_PATH} -outFolder /usr/src/ontology/target/generated/ontology -rewriteAll
+		${DOCKER_IMAGE_WIDOCO} \
+			-ontFile /usr/src/ontology/${ONTOLOGY_PATH} \
+			-outFolder /usr/src/ontology/target/generated/ontology \
+			-lang en \
+			-rewriteAll \
+			-getOntologyMetadata \
+			-includeImportedOntologies \
+			-webVowl \
+			-displayDirectImportsOnly \
+			-uniteSections
 
 start-site: documentation ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
