@@ -11,13 +11,20 @@
   owl:versionInfo "v1.0.0" ;
   dcterms:created "2021-10-11"^^xsd:date ;
   dcterms:language "EN" ;
-  dcterms:title "OKP4 Ontology"@en ;
+  dcterms:title "OKP4 Ontology: Ontology for Knownledge Graph"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   dcterms:publisher <https://okp4.com/> ;
   dcterms:description """
 
-A vocabulary to describe knowledge graphs involving data sets, services and processing within dataspaces.
+  A vocabulary to describe knowledge graphs within dataspaces.
 
+  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a dataspace by semantically characterizing 
+  what they are and the relationships they maintain between them.
+  
+  The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a dataspace,
+  their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the 
+  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the dataspaces during the 
+  different processing.
 """@en ;
   rdfs:label "OKP4 Ontology"@en ;
   vann:preferredNamespacePrefix "okp4" ;
@@ -39,8 +46,9 @@ dcterms:title a
   rdfs:label "Dataspace"@en ;
   rdfs:comment """
   
-  `Dataspace` is a founding concept of this ontology and is described as a *virtual* space in which data, services and actors belong, and governed by a set of explicit predefined rules.
-  
+  `Dataspace` is a founding concept of this ontology and is described as a *virtual* space in which several entities belong (for instance datasets, services and actors), and
+   governed by a set of explicit rules between all of them.
+   
   """@en .
 
 # -- properties
