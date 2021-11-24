@@ -1,5 +1,5 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -9,12 +9,12 @@
   a owl:Ontology ;
   owl:versionIRI <https://ontology.okp4.com/core/1.0.0> ;
   owl:versionInfo "v1.0.0" ;
-  dc:created "2021-10-11"^^xsd:date ;
-  dc:language "EN" ;
-  dc:title "OKP4 Ontology X"@en ;
-  dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  dc:publisher <https://okp4.com/> ;
-  dc:description """
+  dcterms:created "2021-10-11"^^xsd:date ;
+  dcterms:language "EN" ;
+  dcterms:title "OKP4 Ontology"@en ;
+  dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  dcterms:publisher <https://okp4.com/> ;
+  dcterms:description """
 
 A vocabulary to describe knowledge graphs involving data sets, services and processing within dataspaces.
 
@@ -23,6 +23,16 @@ A vocabulary to describe knowledge graphs involving data sets, services and proc
   vann:preferredNamespacePrefix "okp4" ;
   vann:preferredNamespaceUri "https://ontology.okp4.com/core" ;
   vs:term_status "unstable"@en .
+
+# -- annotation properties
+
+dcterms:description a
+  owl:AnnotationProperty .
+
+dcterms:title a
+  owl:AnnotationProperty .
+
+# -- classes
 
 <https://ontology.okp4.com/core/Dataspace>
   a rdfs:Class ;
@@ -33,9 +43,11 @@ A vocabulary to describe knowledge graphs involving data sets, services and proc
   
   """@en .
 
+# -- properties
+
 <https://ontology.okp4.com/core/hasName>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:subPropertyOf dc:title ;
+  rdfs:subPropertyOf dcterms:title ;
   rdfs:label "has name"@en ;
   rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
   rdfs:range xsd:string ;
@@ -43,7 +55,7 @@ A vocabulary to describe knowledge graphs involving data sets, services and proc
 
 <https://ontology.okp4.com/core/hasDescription>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:subPropertyOf dc:description ;
+  rdfs:subPropertyOf dcterms:description ;
   rdfs:label "has description"@en ;
   rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
   rdfs:range xsd:string ;
