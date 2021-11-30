@@ -11,7 +11,7 @@
   owl:versionInfo "v1.0.0" ;
   dcterms:created "2021-10-11"^^xsd:date ;
   dcterms:language "EN" ;
-  dcterms:title "OKP4 Ontology: Ontology for Knownledge Graph"@en ;
+  dcterms:title "OKP4 Ontology: Ontology for Knowledge Graph"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   dcterms:publisher <https://okp4.com/> ;
   dcterms:description """
