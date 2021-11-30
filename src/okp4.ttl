@@ -61,7 +61,7 @@ dcterms:title a
   rdfs:range xsd:string ;
   rdfs:comment "A name given to the resource."@en .
 
-<https://ontology.okp4.com/core/hasDescription>
+<https://ontology.okp4.com/core/isDescribedBy>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:description ;
   rdfs:label "has description"@en ;
