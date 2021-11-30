@@ -56,7 +56,7 @@ dcterms:title a
 <https://ontology.okp4.com/core/isNamed>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:title ;
-  rdfs:label "has name"@en ;
+  rdfs:label "is named"@en ;
   rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
   rdfs:range xsd:string ;
   rdfs:comment "A name given to the resource."@en .
@@ -64,7 +64,7 @@ dcterms:title a
 <https://ontology.okp4.com/core/isDescribedBy>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:description ;
-  rdfs:label "has description"@en ;
+  rdfs:label "is described by"@en ;
   rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
   rdfs:range xsd:string ;
   rdfs:comment """
