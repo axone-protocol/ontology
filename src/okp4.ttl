@@ -53,7 +53,7 @@ dcterms:title a
 
 # -- properties
 
-<https://ontology.okp4.com/core/hasName>
+<https://ontology.okp4.com/core/isNamed>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:title ;
   rdfs:label "has name"@en ;
