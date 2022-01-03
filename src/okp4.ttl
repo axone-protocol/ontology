@@ -46,8 +46,10 @@ dcterms:title a
   rdfs:label "Data Space"@en ;
   rdfs:comment """
   
-  `Dataspace` is a founding concept of this ontology and is described as a *virtual* space in which several entities belong (for instance datasets, services and actors), and
-   governed by a set of explicit rules between all of them.
+  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities of different kind belong (for instance datasets, services and actors), and
+   *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+
+   ![Data spaces](images/dataspace.png)
    
   """@en .
 
