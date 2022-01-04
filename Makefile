@@ -17,6 +17,11 @@ COLOR_RESET  = $(shell tput -Txterm sgr0)
 
 all: help
 
+# Clean:
+clean: ## Clean all generated files
+	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${GENERATED_PATH}${COLOR_RESET}"
+	@sudo rm -rf target
+
 ## Lint:
 lint: lint-ontology ## Lint all available linters
 
