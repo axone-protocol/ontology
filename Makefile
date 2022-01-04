@@ -31,7 +31,7 @@ lint-ontology: ## Lint ontology
 documentation: ## Generate documentation site
 	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ONTOLOGY_PATH}${COLOR_RESET}"
 	@docker run \
-	    -ti --rm \
+	    --rm \
   		-v `pwd`:/usr/src/ontology \
 		${DOCKER_IMAGE_WIDOCO} \
 			-ontFile /usr/src/ontology/${ONTOLOGY_PATH} \
@@ -47,7 +47,7 @@ documentation: ## Generate documentation site
 
 start-site: documentation ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
-	@docker run -ti --rm \
+	@docker run --rm \
 	  -p 8080:80 \
 	  -v `pwd`/target/generated/ontology:/usr/local/apache2/htdocs/:ro \
 	  ${DOCKER_IMAGE_HTTPD}
