@@ -1,5 +1,6 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 ONTOLOGY_PATH = "src/okp4.ttl"
+GENERATED_PATH = "target/generated"
 
 DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
 DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
@@ -16,6 +17,11 @@ COLOR_RESET  = $(shell tput -Txterm sgr0)
 
 all: help
 
+# Clean:
+clean: ## Clean all generated files
+	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${GENERATED_PATH}${COLOR_RESET}"
+	@sudo rm -rf target
+
 ## Lint:
 lint: lint-ontology ## Lint all available linters
 
@@ -30,11 +36,11 @@ lint-ontology: ## Lint ontology
 documentation: ## Generate documentation site
 	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ONTOLOGY_PATH}${COLOR_RESET}"
 	@docker run \
-	    -ti --rm \
+	    --rm \
   		-v `pwd`:/usr/src/ontology \
 		${DOCKER_IMAGE_WIDOCO} \
 			-ontFile /usr/src/ontology/${ONTOLOGY_PATH} \
-			-outFolder /usr/src/ontology/target/generated/ontology \
+			-outFolder /usr/src/ontology/${GENERATED_PATH}/ontology \
 			-lang en \
 			-rewriteAll \
 			-getOntologyMetadata \
@@ -42,10 +48,12 @@ documentation: ## Generate documentation site
 			-webVowl \
 			-displayDirectImportsOnly \
 			-uniteSections
+	@sudo chown -R  "$$(id -u):$$(id -g)" ${GENERATED_PATH}/ontology
+	@cp -R public/* ${GENERATED_PATH}/ontology/
 
 start-site: documentation ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
-	@docker run -ti --rm \
+	@docker run --rm \
 	  -p 8080:80 \
 	  -v `pwd`/target/generated/ontology:/usr/local/apache2/htdocs/:ro \
 	  ${DOCKER_IMAGE_HTTPD}

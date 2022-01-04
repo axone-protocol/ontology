@@ -16,14 +16,14 @@
   dcterms:publisher <https://okp4.com/> ;
   dcterms:description """
 
-  A vocabulary to describe knowledge graphs within dataspaces.
+  A vocabulary to describe knowledge graphs within data spaces.
 
-  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a dataspace by semantically characterizing 
+  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a data space by semantically characterizing 
   what they are and the relationships they maintain between them.
   
-  The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a dataspace,
+  The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a data space,
   their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the 
-  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the dataspaces during the 
+  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the 
   different processing.
 """@en ;
   rdfs:label "OKP4 Ontology"@en ;
@@ -41,13 +41,15 @@ dcterms:title a
 
 # -- classes
 
-<https://ontology.okp4.com/core/Dataspace>
+<https://ontology.okp4.com/core/DataSpace>
   a rdfs:Class ;
-  rdfs:label "Dataspace"@en ;
+  rdfs:label "Data Space"@en ;
   rdfs:comment """
   
-  `Dataspace` is a founding concept of this ontology and is described as a *virtual* space in which several entities belong (for instance datasets, services and actors), and
-   governed by a set of explicit rules between all of them.
+  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities of different kind belong (for instance datasets, services and actors), and
+   *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+
+   ![Data spaces](images/dataspace.png)
    
   """@en .
 
@@ -57,7 +59,7 @@ dcterms:title a
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:title ;
   rdfs:label "is named"@en ;
-  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:domain <https://ontology.okp4.com/core/DataSpace> ;
   rdfs:range xsd:string ;
   rdfs:comment "A name given to the resource."@en .
 
@@ -65,7 +67,7 @@ dcterms:title a
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:description ;
   rdfs:label "is described by"@en ;
-  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:domain <https://ontology.okp4.com/core/DataSpace> ;
   rdfs:range xsd:string ;
   rdfs:comment """
   
@@ -78,7 +80,7 @@ dcterms:title a
 <https://ontology.okp4.com/core/wasCreatedOn>
   a owl:FunctionalProperty, owl:DatatypeProperty ;
   rdfs:label "was created on"@en ;
-  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:domain <https://ontology.okp4.com/core/DataSpace> ;
   rdfs:range xsd:date ;
   rdfs:comment """
 
@@ -91,7 +93,7 @@ dcterms:title a
 <https://ontology.okp4.com/core/wasCreatedBy>
   a owl:FunctionalProperty, owl:ObjectProperty ;
   rdfs:label "was created by"@en ;
-  rdfs:domain <https://ontology.okp4.com/core/Dataspace> ;
+  rdfs:domain <https://ontology.okp4.com/core/DataSpace> ;
   rdfs:range xsd:uri ;
   rdfs:comment """
 
