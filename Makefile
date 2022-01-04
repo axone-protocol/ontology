@@ -43,6 +43,7 @@ documentation: ## Generate documentation site
 			-webVowl \
 			-displayDirectImportsOnly \
 			-uniteSections
+	@sudo chown -R  "$$(id -u):$$(id -g)" ${GENERATED_PATH}/ontology
 	@cp -R public/* ${GENERATED_PATH}/ontology/
 
 start-site: documentation ## Start a web server for serving generated documentation
