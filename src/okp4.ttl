@@ -58,7 +58,6 @@ dcterms:title a
 
 :isNamed
   a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:subPropertyOf dcterms:title ;
   rdfs:label "is named"@en ;
   rdfs:domain :DataSpace ;
   rdfs:range xsd:string ;
@@ -66,7 +65,6 @@ dcterms:title a
 
 :isDescribedBy
   a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:subPropertyOf dcterms:description ;
   rdfs:label "is described by"@en ;
   rdfs:domain :DataSpace ;
   rdfs:range xsd:string ;
