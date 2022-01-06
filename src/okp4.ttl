@@ -16,17 +16,16 @@
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   dcterms:publisher <https://okp4.com/> ;
   dcterms:description """
-
   A vocabulary to describe knowledge graphs within data spaces.
 
-  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a data space by semantically characterizing 
+  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a data space by semantically characterizing
   what they are and the relationships they maintain between them.
-  
+
   The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a data space,
-  their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the 
-  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the 
+  their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the
+  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the
   different processing.
-"""@en ;
+  """@en ;
   rdfs:label "OKP4 Ontology"@en ;
   vann:preferredNamespacePrefix "okp4" ;
   vann:preferredNamespaceUri "https://ontology.okp4.com/core" ;
@@ -34,11 +33,11 @@
 
 # -- annotation properties
 
-dcterms:description a
-  owl:AnnotationProperty .
+dcterms:description
+  a owl:AnnotationProperty .
 
-dcterms:title a
-  owl:AnnotationProperty .
+dcterms:title
+  a owl:AnnotationProperty .
 
 # -- classes
 
@@ -46,12 +45,10 @@ dcterms:title a
   a rdfs:Class ;
   rdfs:label "Data Space"@en ;
   rdfs:comment """
-  
   `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities of different kind belong (for instance datasets, services and actors), and
-   *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+  *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
 
-   ![Data spaces](images/dataspace.png)
-   
+  ![Data spaces](images/dataspace.png)
   """@en .
 
 # -- properties
@@ -69,11 +66,9 @@ dcterms:title a
   rdfs:domain :DataSpace ;
   rdfs:range xsd:string ;
   rdfs:comment """
-  
   A short text description given to a resource.
 
-  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text. 
-  
+  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text.
   """@en .
 
 :wasCreatedOn
@@ -82,12 +77,10 @@ dcterms:title a
   rdfs:domain :DataSpace ;
   rdfs:range xsd:date ;
   rdfs:comment """
-
   Information on when the resource was created.
-  
-  This information is stored initially and will never be changed thereafter.
 
-"""@en .
+  This information is stored initially and will never be changed thereafter.
+  """@en .
 
 :wasCreatedBy
   a owl:FunctionalProperty, owl:ObjectProperty ;
@@ -95,9 +88,7 @@ dcterms:title a
   rdfs:domain :DataSpace ;
   rdfs:range xsd:uri ;
   rdfs:comment """
-
   Information about who created the resource.
-  
-  This information is stored initially and will never be changed thereafter.
 
-"""@en .
+  This information is stored initially and will never be changed thereafter.
+  """@en .
