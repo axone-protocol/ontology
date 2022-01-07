@@ -42,14 +42,66 @@ dcterms:title
 # -- classes
 
 :DataSpace
-  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:subClassOf [ 
+    a owl:Restriction ;
+    owl:onProperty :recognizes ;
+    owl:allValuesFrom :Citizen 
+  ] ;
   rdfs:label "Data Space"@en ;
   rdfs:comment """
-  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities of different kind belong (for instance datasets, services and actors), and
-  *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
+  of different kind belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
 
   ![Data spaces](images/dataspace.png)
   """@en .
+
+:Citizen
+  a owl:Class ;
+  owl:unionOf (
+    :Dataset
+  );
+  rdfs:label "Citizen"@en ;
+  rdfs:comment """
+  `Citizen` denotes members of a `Data Space`, including datasets, services...
+  """@en .
+
+:Data
+  a owl:Class ;
+  rdfs:label "Data" ;
+  rdfs:comment """
+  `Data` denotes a quantity of information (processed or stored). 
+  """@en .
+
+:Metadata
+  a owl:Class ;
+  rdfs:label "Metadata"@en ;
+  rdfs:subClassOf :Data ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :describes ;
+    owl:allValuesFrom :Data 
+  ] ;
+  rdfs:comment """
+  `Metadata` denotes the information data about `Data` (i.e. data about the data).
+   """@en .
+
+:Dataset
+  a owl:Class ;
+  rdfs:subClassOf :Data ;
+  rdfs:label "Dataset"@en ;
+  rdfs:comment """
+  `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
+  This includes a wide variety of format, for example: csv files, images, videos, databases, etc.
+
+  Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means
+  (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.
+
+  Datasets are described by a set of descriptions (aka metadata) providing information about one or more aspects of the dataset, like the
+  time and date of creation, the file size or the data quality, using specific data description vocabularies and thesaurus (e.g. `Exif`, `EBUCore`, ISO 19115),
+  allowing a great extensibility.
+  """@en .
+
 
 # -- properties
 
@@ -70,6 +122,16 @@ dcterms:title
 
   [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text.
   """@en .
+
+:recognizes
+  a owl:ObjectProperty ;
+  rdfs:label "recognizes"@en ;
+  rdfs:comment "Denote the state of membership of an entity towards another which aknowledges it as such."@en .
+
+:describes
+  a owl:FunctionalProperty, owl:ObjectProperty ;
+  rdfs:label "describes"@en ;
+  rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
 
 :wasCreatedOn
   a owl:FunctionalProperty, owl:DatatypeProperty ;
