@@ -24,7 +24,7 @@
   The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a data space,
   their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the
   [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the
-  different processing.
+  different processings.
   """@en ;
   rdfs:label "OKP4 Ontology"@en ;
   vann:preferredNamespacePrefix "okp4" ;
@@ -51,7 +51,7 @@ dcterms:title
   rdfs:label "Data Space"@en ;
   rdfs:comment """
   `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
-  of different kind belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
 
   ![Data spaces](images/dataspace.png)
   """@en .
@@ -92,7 +92,7 @@ dcterms:title
   rdfs:label "Dataset"@en ;
   rdfs:comment """
   `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
-  This includes a wide variety of format, for example: csv files, images, videos, databases, etc.
+  This includes a wide variety of formats, for example: csv files, images, videos, databases, etc.
 
   Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means
   (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.
@@ -126,7 +126,7 @@ dcterms:title
 :recognizes
   a owl:ObjectProperty ;
   rdfs:label "recognizes"@en ;
-  rdfs:comment "Denote the state of membership of an entity towards another which aknowledges it as such."@en .
+  rdfs:comment "Denotes the state of membership of an entity towards another which acknowledges it as such."@en .
 
 :describes
   a owl:FunctionalProperty, owl:ObjectProperty ;
