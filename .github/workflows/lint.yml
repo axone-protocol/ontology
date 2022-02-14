@@ -9,6 +9,8 @@ on:
     branches:
       - main
 
+  workflow_call:
+
   workflow_dispatch:
 
 jobs:
@@ -53,7 +55,7 @@ jobs:
       - name: Setup ruby environment
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.6'
+          ruby-version: "2.6"
 
       - run: |
           gem install rdf-turtle
