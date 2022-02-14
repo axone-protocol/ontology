@@ -14,6 +14,9 @@ jobs:
 
   perfom-release:
     runs-on: ubuntu-20.04
+    needs:
+      - lint
+      - build
     if: github.ref == 'refs/heads/main' && github.actor == 'bot-anik'
     steps:
       - name: Check out repository
