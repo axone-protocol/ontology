@@ -42,6 +42,5 @@ plugins:
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
-        - LICENSE
         - src/
       message: "chore(release): perform release ${nextRelease.version}"
