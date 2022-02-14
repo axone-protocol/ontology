@@ -9,11 +9,14 @@ on:
     branches:
       - main
 
+  workflow_call:
+
   workflow_dispatch:
 
 jobs:
   lint-commits:
     runs-on: ubuntu-20.04
+    if: github.actor != 'dependabot[bot]'
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -53,7 +56,7 @@ jobs:
       - name: Setup ruby environment
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.6'
+          ruby-version: "2.6"
 
       - run: |
           gem install rdf-turtle
@@ -61,3 +64,20 @@ jobs:
       - name: Validate ontology file
         run: |
           rdf validate --validate src/okp4.ttl
+
+  lint-dockerfile:
+    runs-on: ubuntu-20.04
+    if: github.actor != 'dependabot[bot]'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Lint dockerfile (hadolint)
+        uses: hadolint/hadolint-action@v1.6.0
+
+      - name: Lint dockerfile (docker-lint)
+        uses: luke142367/Docker-Lint-Action@v1.1.1
+        with:
+          target: Dockerfile
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
