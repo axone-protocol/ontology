@@ -38,6 +38,8 @@ plugins:
               hasChanged: true
               numMatches: 1
               numReplacements: 1
+  - - "@semantic-release/exec"
+    - prepareCmd: make documentation
   - "@semantic-release/github"
   - - "@semantic-release/git"
     - assets:
