@@ -4,15 +4,18 @@ on:
   workflow_dispatch:
 
 jobs:
+  lint:
+    if: github.ref == 'refs/heads/main' && github.actor == 'bot-anik'
+    uses: ./.github/workflows/lint.yml
+
+  build:
+    if: github.ref == 'refs/heads/main' && github.actor == 'bot-anik'
+    uses: ./.github/workflows/build.yml
+
   perfom-release:
     runs-on: ubuntu-20.04
+    if: github.ref == 'refs/heads/main' && github.actor == 'bot-anik'
     steps:
-      - name: Check that main branch builds
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: Checks
-          token: ${{ secrets.OKP4_TOKEN }}
-
       - name: Check out repository
         uses: actions/checkout@v2
         with:
