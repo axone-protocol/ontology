@@ -12,7 +12,7 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.actor == 'bot-anik'
     uses: ./.github/workflows/build.yml
 
-  perfom-release:
+  perform-release:
     runs-on: ubuntu-20.04
     needs:
       - lint
