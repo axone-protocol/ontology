@@ -40,7 +40,14 @@ plugins:
               numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
-  - "@semantic-release/github"
+  - - "@semantic-release/github"
+    - assets:
+        - name: ontology
+          label: Ontology
+          path: "./target/generated/ontology/ontology.*"
+        - name: documentation
+          label: Documentation
+          path: "./target/generated/ontology/**/*"
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
