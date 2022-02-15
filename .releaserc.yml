@@ -9,39 +9,47 @@ plugins:
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
       changelogTitle: "# OKP4 Ontology Changelog"
-  - - '@google/semantic-release-replace-plugin'
+  - - "@google/semantic-release-replace-plugin"
     - replacements:
-    - files: [ src/okp4.ttl ]
-      from: owl:versionIRI\s+<(.+)\/(\d+\.\d+\.\d+)>
-      to: 'owl:versionIRI <$1/${nextRelease.version}>'
-      countMatches: true
-      results:
-        - file: src/okp4.ttl
-          hasChanged: true
-          numMatches: 1
-          numReplacements: 1
-    - files: [ src/okp4.ttl ]
-      from: owl:versionInfo "v(\d+\.\d+\.\d+)"
-      to: 'owl:versionInfo "v${nextRelease.version}"'
-      countMatches: true
-      results:
-        - file: src/okp4.ttl
-          hasChanged: true
-          numMatches: 1
-          numReplacements: 1
-    - files: [ src/okp4.ttl ]
-      from: dcterms:created "\d+\-\d+\-\d+"
-      to: 'dcterms:created "${TODAY}"'
-      countMatches: true
-      results:
-        - file: src/okp4.ttl
-          hasChanged: true
-          numMatches: 1
-          numReplacements: 1
-  - "@semantic-release/github"
+        - files: [src/okp4.ttl]
+          from: owl:versionIRI\s+<(.+)\/(\d+\.\d+\.\d+)>
+          to: "owl:versionIRI <$1/${nextRelease.version}>"
+          countMatches: true
+          results:
+            - file: src/okp4.ttl
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
+        - files: [src/okp4.ttl]
+          from: owl:versionInfo "v(\d+\.\d+\.\d+)"
+          to: 'owl:versionInfo "v${nextRelease.version}"'
+          countMatches: true
+          results:
+            - file: src/okp4.ttl
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
+        - files: [src/okp4.ttl]
+          from: dcterms:created "\d+\-\d+\-\d+"
+          to: 'dcterms:created "${TODAY}"'
+          countMatches: true
+          results:
+            - file: src/okp4.ttl
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
+  - - "@semantic-release/exec"
+    - prepareCmd: make documentation
+  - - "@semantic-release/github"
+    - assets:
+        - name: ontology
+          label: Ontology
+          path: "./target/generated/ontology/ontology.*"
+        - name: documentation
+          label: Documentation
+          path: "./target/generated/ontology/**/*"
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
-        - LICENSE
         - src/
       message: "chore(release): perform release ${nextRelease.version}"
