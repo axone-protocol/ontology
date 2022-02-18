@@ -31,14 +31,18 @@ plugins:
               numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
+  - - "@semantic-release/exec"
+    - prepareCmd: tar -cvf ontology.tar.gz ./target/generated/ontology/ontology.*
+  - - "@semantic-release/exec"
+    - prepareCmd: tar -cvf documentation.tar.gz ./target/generated/ontology/*
   - - "@semantic-release/github"
     - assets:
         - name: ontology
           label: Ontology
-          path: "./target/generated/ontology/ontology.*"
+          path: "./ontology.tar.gz"
         - name: documentation
           label: Documentation
-          path: "./target/generated/ontology/**/*"
+          path: "./documentation.tar.gz"
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
