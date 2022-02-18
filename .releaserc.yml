@@ -32,15 +32,15 @@ plugins:
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
   - - "@semantic-release/exec"
-    - prepareCmd: tar -cvf ontology.tar.gz ./target/generated/ontology/ontology.*
+    - prepareCmd: find target/generated/ontology -maxdepth 1 -type f -name "ontology.*" | cut -d '/' -f 4 | tar -cvf ontology.tar.gz -C target/generated/ontology -T -
   - - "@semantic-release/exec"
-    - prepareCmd: tar -cvf documentation.tar.gz ./target/generated/ontology/*
+    - prepareCmd: tar -cvf documentation.tar.gz -C ./target/generated/ontology .
   - - "@semantic-release/github"
     - assets:
-        - name: ontology
+        - name: ontology.tar.gz
           label: Ontology
           path: "./ontology.tar.gz"
-        - name: documentation
+        - name: documentation.tar.gz
           label: Documentation
           path: "./documentation.tar.gz"
   - - "@semantic-release/git"
