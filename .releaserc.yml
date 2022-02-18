@@ -29,15 +29,6 @@ plugins:
               hasChanged: true
               numMatches: 1
               numReplacements: 1
-        - files: [src/okp4.ttl]
-          from: dcterms:created "\d+\-\d+\-\d+"
-          to: 'dcterms:created "${TODAY}"'
-          countMatches: true
-          results:
-            - file: src/okp4.ttl
-              hasChanged: true
-              numMatches: 1
-              numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
   - - "@semantic-release/github"
