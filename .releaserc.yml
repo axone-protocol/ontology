@@ -29,25 +29,18 @@ plugins:
               hasChanged: true
               numMatches: 1
               numReplacements: 1
-        - files: [src/okp4.ttl]
-          from: dcterms:created "\d+\-\d+\-\d+"
-          to: 'dcterms:created "${TODAY}"'
-          countMatches: true
-          results:
-            - file: src/okp4.ttl
-              hasChanged: true
-              numMatches: 1
-              numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
+  - - "@semantic-release/exec"
+    - prepareCmd: find target/generated/ontology -maxdepth 1 -type f -name "ontology.*" | cut -d '/' -f 4 | tar -czvf ontology.tar.gz -C target/generated/ontology -T -
+  - - "@semantic-release/exec"
+    - prepareCmd: tar -czvf documentation.tar.gz -C ./target/generated/ontology .
   - - "@semantic-release/github"
     - assets:
-        - name: ontology
-          label: Ontology
-          path: "./target/generated/ontology/ontology.*"
-        - name: documentation
-          label: Documentation
-          path: "./target/generated/ontology/**/*"
+        - label: Ontology
+          path: "./ontology.tar.gz"
+        - label: Documentation
+          path: "./documentation.tar.gz"
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
