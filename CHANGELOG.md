@@ -1,5 +1,25 @@
 # OKP4 Ontology Changelog
 
+# [1.1.0](https://github.com/okp4/ontology/compare/v1.0.0...v1.1.0) (2022-02-18)
+
+
+### Bug Fixes
+
+* fix some typos on comments (after review) ([78d9002](https://github.com/okp4/ontology/commit/78d9002ee9d03074f28673fe074a0bf72a08d604))
+* remove subPropertyOf axiom (was erroneous) ([ece3f13](https://github.com/okp4/ontology/commit/ece3f13f842fbb263532c039be2b27ce2b081fda))
+
+
+### Features
+
+* align labels with property names ([a4fb8ae](https://github.com/okp4/ontology/commit/a4fb8ae48ac156514e7a0efc9fd896099faa9a22))
+* fix typo ([600eed6](https://github.com/okp4/ontology/commit/600eed63dc9da6bf81ac4837e17c1e216dc6a80b))
+* improve description of ontology ([e4e5dfd](https://github.com/okp4/ontology/commit/e4e5dfd36ade7400447f920f284b3cef90f95fff))
+* improve wording of propery ([627dab2](https://github.com/okp4/ontology/commit/627dab2b7d24d70ca4bb076943c0bf4609faf129))
+* improve wording of propery ([4343e6b](https://github.com/okp4/ontology/commit/4343e6be61a1ae76ee7f4a3ade480d193833867a))
+* introduce Dataset concept ([d575c19](https://github.com/okp4/ontology/commit/d575c199d815c3105a7d9d4ba42ad88660c0eb23))
+* introduce Dataspace concept ([f39172e](https://github.com/okp4/ontology/commit/f39172eecca33653fb1595eee7e8eb5be84449f0))
+* specify the current status of the ontology ([f9f0dfe](https://github.com/okp4/ontology/commit/f9f0dfe408461f832d867d8f9038000e6c469afb))
+
 # 1.0.0 (2021-10-18)
 
 
