@@ -16,6 +16,7 @@ FROM httpd:2.4.51-alpine3.14
 
 WORKDIR /usr/local/apache2/htdocs/
 
-RUN rm -r ./*
+RUN  rm -r ./* \
+  && sed -i "s/Options Indexes FollowSymLinks/# Options Indexes FollowSymLinks/" ../conf/httpd.conf
 
 COPY --from=BUILD_IMAGE /var/build/ontology/documentation .
