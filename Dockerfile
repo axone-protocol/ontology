@@ -16,6 +16,7 @@ RUN  java -jar /usr/local/widoco/widoco.jar \
         -webVowl                            \
         -uniteSections                      \
   && cp -R public/* documentation           \
+  && sed -i "s/http:\/\//https:\/\//" documentation/webvowl/css/*.css  \
   && rm documentation/readme.md
 
 # ---
