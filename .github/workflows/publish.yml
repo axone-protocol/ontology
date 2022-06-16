@@ -26,7 +26,16 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.OKP4_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: src/
+          exclude_assets: okp4.ttl
+          keep_files: true
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: target/generated/ontology/
-          destination_dir: ${{ steps.get_version.outputs.version }}
+          destination_dir: versions/${{ steps.get_version.outputs.version }}
+          keep_files: true
           cname: ontology.okp4.network
