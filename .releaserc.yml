@@ -29,6 +29,15 @@ plugins:
               hasChanged: true
               numMatches: 1
               numReplacements: 1
+        - files: [src/index.html]
+          from: 'https://ontology.okp4.network/versions/v(\d+\.\d+\.\d+)/index-en.html'
+          to: 'https://ontology.okp4.network/versions/v${nextRelease.version}/index-en.html'
+          countMatches: true
+          results:
+            - file: src/index.html
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
   - - "@semantic-release/exec"
