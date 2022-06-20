@@ -31,7 +31,7 @@ plugins:
               numReplacements: 1
         - files: [src/okp4.ttl]
           from: dcterms:created "(\d+\-\d+\-\d+)"
-          to: 'dcterms:created "<%= new Date().toLocaleDateString() %>"'
+          to: dcterms:created "<%= new Date().toISOString().split('T')[0] %>"
           countMatches: true
           results:
             - file: src/okp4.ttl
