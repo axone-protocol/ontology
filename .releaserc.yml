@@ -29,6 +29,15 @@ plugins:
               hasChanged: true
               numMatches: 1
               numReplacements: 1
+        - files: [src/okp4.ttl]
+          from: dcterms:created "(\d+\-\d+\-\d+)"
+          to: 'dcterms:created "<%= new Date().toLocaleDateString() %>"'
+          countMatches: true
+          results:
+            - file: src/okp4.ttl
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
         - files: [src/index.html]
           from: 'https://ontology.okp4.network/versions/v(\d+\.\d+\.\d+)/index-en.html'
           to: 'https://ontology.okp4.network/versions/v${nextRelease.version}/index-en.html'
