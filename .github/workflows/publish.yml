@@ -2,7 +2,6 @@ name: Publish
 
 on:
   push:
-    branches: [main]
     tags: [ "v*" ]
 
 concurrency:
@@ -28,6 +27,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: src/
+          destination_dir: versions/
           exclude_assets: okp4.ttl
           keep_files: true
 
