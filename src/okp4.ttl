@@ -10,7 +10,7 @@
   a owl:Ontology ;
   owl:versionIRI <https://ontology.okp4.space/core/1.1.0> ;
   owl:versionInfo "v1.1.0" ;
-  dcterms:created "2021-10-11"^^xsd:datetime ;
+  dcterms:created "2021-10-11"^^xsd:date ;
   dcterms:language "EN" ;
   dcterms:title "OKP4 Ontology: Ontology for Knowledge Graph"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
