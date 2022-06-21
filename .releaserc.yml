@@ -33,11 +33,6 @@ plugins:
           from: dcterms:created "(\d+\-\d+\-\d+)"
           to: dcterms:created "<%= new Date().toISOString().split('T')[0] %>"
           countMatches: true
-          results:
-            - file: src/okp4.ttl
-              hasChanged: true
-              numMatches: 1
-              numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make documentation
   - - "@semantic-release/exec"
