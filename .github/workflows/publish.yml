@@ -22,14 +22,18 @@ jobs:
       - id: get_version
         uses: battila7/get-version-action@v2
 
+      - name: replace release version in index.html
+        run: sed -i 's/{{release_version}}/${{ steps.get_version.outputs.version }}/' .github/gh-home/index.html
+        id: update-version-home-page
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: src/
-          destination_dir: versions/
-          exclude_assets: okp4.ttl
+          publish_dir: .github/gh-home/
           keep_files: true
+          commit-message: |
+            feat: update redirection latest (auto)
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -38,4 +42,6 @@ jobs:
           publish_dir: target/generated/ontology/
           destination_dir: versions/${{ steps.get_version.outputs.version }}
           keep_files: true
+          commit-message: |
+            feat: update ontology site (auto)
           cname: ontology.okp4.network
