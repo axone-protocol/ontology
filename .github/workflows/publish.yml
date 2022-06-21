@@ -33,7 +33,7 @@ jobs:
           publish_dir: .github/gh-home/
           keep_files: true
           commit-message: |
-            feat: update redirection latest (auto)
+            chore: update redirection to latest version (auto)
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -43,5 +43,5 @@ jobs:
           destination_dir: versions/${{ steps.get_version.outputs.version }}
           keep_files: true
           commit-message: |
-            feat: update ontology site (auto)
+            chore: release ontology github pages ${{ steps.get_version.outputs.version }}
           cname: ontology.okp4.network
