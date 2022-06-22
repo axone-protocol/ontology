@@ -29,7 +29,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.OKP4_TOKEN }}
           publish_dir: .github/gh-home/
           keep_files: true
           commit-message: |
@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.OKP4_TOKEN }}
           publish_dir: target/generated/ontology/
           destination_dir: versions/${{ steps.get_version.outputs.version }}
           keep_files: true
