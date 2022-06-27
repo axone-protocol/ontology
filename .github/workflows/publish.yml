@@ -2,51 +2,46 @@ name: Publish
 
 on:
   push:
-    branches: [ main ]
     tags: [ "v*" ]
 
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  publish-docker-images:
+  publish-gh-pages:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Set up context
-        id: project_context
-        uses: FranzDiebold/github-env-vars-action@v2.3.1
+      - name: Build documentation
+        run: |
+          make documentation
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: docker_metadata
-        uses: docker/metadata-action@v3
-        with:
-          images: ghcr.io/${{ github.repository }}
-          tags: |
-            type=raw,enable=${{ !endsWith(github.ref, github.event.repository.default_branch) }},value=${{ env.CI_ACTION_REF_NAME_SLUG }}
-            type=raw,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }},value=nightly
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-          labels: |
-            org.opencontainers.image.vendor=OKP4
+      - id: get_version
+        uses: battila7/get-version-action@v2
 
-      - name: Login to Docker registry
-        uses: docker/login-action@v1
-        with:
-          registry: ghcr.io
-          username: ${{ secrets.DOCKER_REGISTRY_ID }}
-          password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+      - name: replace release version in index.html
+        run: sed -i 's/{{release_version}}/${{ steps.get_version.outputs.version }}/' .github/gh-home/index.html
+        id: update-version-home-page
 
-      - name: Build and publish image(s)
-        uses: docker/build-push-action@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          context: .
-          platforms: linux/amd64
-          push: true
-          tags: ${{ steps.docker_metadata.outputs.tags }}
-          labels: ${{ steps.docker_metadata.outputs.labels }}
+          github_token: ${{ secrets.OKP4_TOKEN }}
+          publish_dir: .github/gh-home/
+          keep_files: true
+          commit-message: |
+            chore: update redirection to latest version (auto)
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.OKP4_TOKEN }}
+          publish_dir: target/generated/ontology/
+          destination_dir: versions/${{ steps.get_version.outputs.version }}
+          keep_files: true
+          commit-message: |
+            chore: release ontology github pages ${{ steps.get_version.outputs.version }}
+          cname: ontology.okp4.network
