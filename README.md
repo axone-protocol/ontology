@@ -5,7 +5,8 @@
 [![lint](https://img.shields.io/github/workflow/status/okp4/ontology/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/workflow/status/okp4/ontology/Build?label=build&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/build.yml)
 [![publish](https://img.shields.io/github/workflow/status/okp4/ontology/Publish?label=publish&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/publish.yml)
-[![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Version](https://img.shields.io/github/v/release/okp4/ontology?style=for-the-badge)](https://github.com/okp4/ontology/releases)
+[![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
 [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
 
 ## OKP4 Ontology design guide
