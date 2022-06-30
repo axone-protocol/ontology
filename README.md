@@ -39,5 +39,12 @@ The construction of the ontology include three steps:
 - Use [LowerCamelCase](https://wiki.c2.com/?LowerCamelCase) notation for naming the properties
 - e.g.: `hasName`, `isLinkedTo`
 
+## Contributing
+
+Contributions are welcome. Please check the following guidelines:
+
+- [Contributing](https://github.com/okp4/.github/blob/main/CONTRIBUTING.md)
+- [Code of conduct](https://github.com/okp4/.github/blob/main/CODE_OF_CONDUCT.md)
+
 [cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
