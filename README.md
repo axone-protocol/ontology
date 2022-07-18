@@ -2,12 +2,9 @@
 
 > The ontology used [@okp4](okp4.com) to describe knowledge data, services and processes in the OKP4 platform.
 
-[![lint](https://img.shields.io/github/workflow/status/okp4/ontology/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/lint.yml)
-[![build](https://img.shields.io/github/workflow/status/okp4/ontology/Build?label=build&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/build.yml)
-[![publish](https://img.shields.io/github/workflow/status/okp4/ontology/Publish?label=publish&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/publish.yml)
-[![release](https://img.shields.io/github/v/release/okp4/ontology?style=for-the-badge)](https://github.com/okp4/ontology/releases)
+[![lint](https://img.shields.io/github/workflow/status/okp4/ontology/Lint?label=lint&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/lint.yml) [![build](https://img.shields.io/github/workflow/status/okp4/ontology/Build?label=build&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/build.yml) [![publish](https://img.shields.io/github/workflow/status/okp4/ontology/Publish?label=publish&style=for-the-badge)](https://github.com/okp4/ontology/actions/workflows/publish.yml) [![release](https://img.shields.io/github/v/release/okp4/ontology?style=for-the-badge)](https://github.com/okp4/ontology/releases)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
-[![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
+![W3C](https://img.shields.io/badge/W3C-1572B6?style=for-the-badge&logo=w3c&logoColor=white) [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
 
 ## The [OKP4](https://okp4.network) ontology
 
