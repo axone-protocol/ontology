@@ -9,6 +9,12 @@
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
 [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
 
+## The [OKP4](https://okp4.network) ontology
+
+### A formal model for the OKP4 blockchain
+
+This ontology describes and defines the different forms of vocabularies used in the [OKP4](https://okp4.network) protocol in a standard and well designed format. The aim is to model a semantic network of all the _entities_  (Data Spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them.
+
 ## Documentation
 
 Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.network>
