@@ -19,7 +19,11 @@ This ontology describes and defines the different forms of vocabularies used in 
 
 Ontology is at the heart of the [OKP4](https://github.com/okp4/okp4d) protocol as much of the information is encoded and stored as an ontology _on-chain_ in the blockchain transactions. This means that (almost) all the semantics of the transactions submitted to the blockchain are expressed through this ontology - for instance the creation of a dataspace, the execution of a service, the description of a dataset, etc.
 
+### Why an ontology?
 
+[Ontology](https://www.w3.org/standards/semanticweb/ontology) is the most general and fundamental concept of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web). Ontologies are linked to various data elements representing conceptualized information about these data items. This allows for unambiguous identification, understanding, navigation and usage of this information.
+
+The knowledge representation language chosen for OKP4 is [RDF Schema](http://www.w3.org/TR/rdf-schema/) and [Web Ontology Language](http://www.w3.org/TR/owl2-overview/) on top of the framework [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/).
 
 ## Documentation
 
