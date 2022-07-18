@@ -24,7 +24,7 @@ The knowledge representation language chosen for OKP4 is [RDF Schema](http://www
 
 ## Documentation
 
-Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.network>
+Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.network>.
 
 ## Ontology construction process
 
@@ -35,7 +35,7 @@ The construction of this ontology follows a number of steps which are described 
 2. __Ontology design__:
    Formalizing of the elements identified in the previous step in the form of a knowledge representation, using the building blocks of ontologies: classes, attributes, relationships, subsumption.  
 3. __Ontology encoding__:
-   Encoding in [OWL](https://www.w3.org/TR/owl-ref/).
+   Encoding the ontology according to the [OWL](https://www.w3.org/TR/owl-ref/) grammar.
 4. __Ontology integration__:
    Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
 
