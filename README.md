@@ -33,7 +33,7 @@ The construction of this ontology follows a number of steps which are described 
 1. __Ontology capture__:
    Identification and definition of key concepts and relationships in the domain of interest and the terms that refer to such concepts, in natural language.
 2. __Ontology design__:
-   Formalizing of the elements identified in the previous step in the form of a knowledge representation, using the building blocks of ontologies: classes, attributes, relationships, subsumption.  
+   Formalizing of the elements identified in the previous step in the form of a knowledge representation, using the building blocks of ontologies: classes, attributes, relationships, subsumption.
 3. __Ontology encoding__:
    Encoding the ontology according to the [OWL](https://www.w3.org/TR/owl-ref/) grammar.
 4. __Ontology integration__:
