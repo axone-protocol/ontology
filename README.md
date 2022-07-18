@@ -48,3 +48,9 @@ Contributions are welcome. Please check the following guidelines:
 
 [cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
+
+## License
+
+The ontology and related assets (markdown documentation, images, etc.) are licensed under a [CC-BY license](LICENSE).
+
+All other code in this repository is licensed under the [BSD-3-Clause license](LICENSE-CODE).
