@@ -26,6 +26,15 @@ The knowledge representation language chosen for OKP4 is [RDF Schema](http://www
 
 Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.network>.
 
+## Some assumptions
+
+- There's no one correct way to model a domain and a trade-off must be found between the meaning given to ontology, its expressiveness, its extensibility and its usage.
+- The OKP4 ontology is not frozen. It is built step by step in an iterative process (see next section), and some decisions made here may be changed later.
+- It should be understood that OWL modeling is different from UML modeling (or more simply of the Oriented Object interpretation that one would be tempted to make). As such, the following readings are relevant:
+  - [A detailed comparison of UML and OWL](https://madoc.bib.uni-mannheim.de/1898/1/TR2008_004.pdf)
+  - [A common misconception regarding owl properties](https://henrietteharmse.com/2018/06/22/a-common-misconception-regarding-owl-properties/)
+- OWL being a logical description language, some deductions can be made by an OWL reasoner. However, as far as possible, it will be best to make explicit what could be deduced by an OWL reasoner.
+
 ## Ontology construction process
 
 The construction of this ontology follows a number of steps which are described below:
