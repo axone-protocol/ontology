@@ -41,29 +41,19 @@ dcterms:title
 
 # -- classes
 
-:DataSpace
-  a owl:Class ;
-  rdfs:subClassOf [ 
-    a owl:Restriction ;
-    owl:onProperty :recognizes ;
-    owl:allValuesFrom :Citizen 
-  ] ;
-  rdfs:label "Data Space"@en ;
-  rdfs:comment """
-  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
-  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
-
-  ![Data spaces](images/dataspace.png)
-  """@en .
-
-:Citizen
+:Resource
   a owl:Class ;
   owl:unionOf (
     :Dataset
-  );
-  rdfs:label "Citizen"@en ;
+  ) ;
+  rdfs:subClassOf [ 
+    a owl:Restriction ;
+    owl:onProperty :belongsTo ;
+    owl:allValuesFrom :DataSpace 
+  ] ;
+  rdfs:label "Resource"@en ;
   rdfs:comment """
-  `Citizen` denotes members of a `Data Space`, including datasets, services...
+  `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en .
 
 :Data
@@ -86,6 +76,17 @@ dcterms:title
   `Metadata` denotes the information data about `Data` (i.e. data about the data).
    """@en .
 
+:DataSpace
+  a owl:Class ;
+  rdfs:subClassOf :Data ;
+  rdfs:label "Data Space"@en ;
+  rdfs:comment """
+  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
+  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+
+  ![Data spaces](images/dataspace.png)
+  """@en .
+
 :Dataset
   a owl:Class ;
   rdfs:subClassOf :Data ;
@@ -105,28 +106,10 @@ dcterms:title
 
 # -- properties
 
-:isNamed
-  a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:label "is named"@en ;
-  rdfs:domain :DataSpace ;
-  rdfs:range xsd:string ;
-  rdfs:comment "A name given to the resource."@en .
-
-:isDescribedBy
-  a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:label "is described by"@en ;
-  rdfs:domain :DataSpace ;
-  rdfs:range xsd:string ;
-  rdfs:comment """
-  A short text description given to a resource.
-
-  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text.
-  """@en .
-
-:recognizes
+:belongsTo
   a owl:ObjectProperty ;
-  rdfs:label "recognizes"@en ;
-  rdfs:comment "Denotes the state of membership of an entity towards another which acknowledges it as such."@en .
+  rdfs:label "belongs to"@en ;
+  rdfs:comment "Denotes the state of membership of an entity towards another."@en .
 
 :describes
   a owl:FunctionalProperty, owl:ObjectProperty ;
