@@ -1,5 +1,7 @@
 # OKP4 Ontology Changelog
 
+## [1.1.1](https://github.com/okp4/ontology/compare/v1.1.0...v1.1.1) (2022-07-27)
+
 # [1.1.0](https://github.com/okp4/ontology/compare/v1.0.0...v1.1.0) (2022-02-18)
 
 
