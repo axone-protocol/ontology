@@ -6,11 +6,11 @@
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
 ![W3C](https://img.shields.io/badge/W3C-1572B6?style=for-the-badge&logo=w3c&logoColor=white) [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
 
-## The [OKP4](https://okp4.network) ontology
+## The [OKP4](https://okp4.space) ontology
 
 ### A formal model for the OKP4 blockchain
 
-This ontology describes and defines the different forms of vocabularies used in the [OKP4](https://okp4.network) protocol in a standard and well designed format. The aim is to model a semantic network of all the _entities_  (Data Spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them. Thus, the ontology provides a complete living understanding and knowledge of the datasets within a Data Space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).
+This ontology describes and defines the different forms of vocabularies used in the [OKP4](https://okp4.space) protocol in a standard and well designed format. The aim is to model a semantic network of all the _entities_  (Data Spaces, data, services, processing workflows) by semantically characterizing what they are and the relationships they maintain between them. Thus, the ontology provides a complete living understanding and knowledge of the datasets within a Data Space, their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).
 
 ### Ontology at the heart of the blockchain
 
@@ -24,7 +24,7 @@ The knowledge representation language chosen for OKP4 is [RDF Schema](http://www
 
 ## Documentation
 
-Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.network>.
+Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.space>.
 
 ## Ontology construction process
 
