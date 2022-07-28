@@ -44,4 +44,4 @@ jobs:
           keep_files: true
           commit-message: |
             chore: release ontology github pages ${{ steps.get_version.outputs.version }}
-          cname: ontology.okp4.network
+          cname: ontology.okp4.space
