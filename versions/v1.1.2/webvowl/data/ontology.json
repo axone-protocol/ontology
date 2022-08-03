@@ -1,0 +1,323 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://ontology.okp4.space/core", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "OKP4 Ontology: Ontology for Knowledge Graph"
+    },
+    "iri" : "https://ontology.okp4.space/core",
+    "version" : "v1.1.2",
+    "description" : {
+      "en" : "\n  A vocabulary to describe knowledge graphs within data spaces.\n\n  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a data space by semantically characterizing\n  what they are and the relationships they maintain between them.\n\n  The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a data space,\n  their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the\n  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the\n  different processings.\n  "
+    },
+    "labels" : {
+      "en" : "OKP4 Ontology"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-08-03",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "okp4",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://okp4.com/",
+        "type" : "iri"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "EN",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.1.2",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://ontology.okp4.space/core",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "OKP4 Ontology: Ontology for Knowledge Graph",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://ontology.okp4.space/core/Metadata",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metadata",
+      "en" : "Metadata"
+    },
+    "comment" : {
+      "en" : "\n  `Metadata` denotes the information data about `Data` (i.e. data about the data).\n   "
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://ontology.okp4.space/core/Data",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data",
+      "undefined" : "Data"
+    },
+    "subClasses" : [ "5", "3" ],
+    "comment" : {
+      "en" : "\n  `Data` denotes a quantity of information (processed or stored). \n  "
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://ontology.okp4.space/core/Citizen",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Citizen",
+      "en" : "Citizen"
+    },
+    "union" : [ "5" ],
+    "comment" : {
+      "en" : "\n  `Citizen` denotes members of a `Data Space`, including datasets, services...\n  "
+    },
+    "attributes" : [ "union", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#uri",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "uri"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "https://ontology.okp4.space/core/Dataset",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Dataset"
+    },
+    "comment" : {
+      "en" : "\n  `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.\n  This includes a wide variety of formats, for example: csv files, images, videos, databases, etc.\n\n  Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means\n  (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.\n\n  Datasets are described by a set of descriptions (aka metadata) providing information about one or more aspects of the dataset, like the\n  time and date of creation, the file size or the data quality, using specific data description vocabularies and thesaurus (e.g. `Exif`, `EBUCore`, ISO 19115),\n  allowing a great extensibility.\n  "
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://ontology.okp4.space/core/DataSpace",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSpace",
+      "en" : "Data Space"
+    },
+    "comment" : {
+      "en" : "\n  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, \n  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).\n\n  ![Data spaces](images/dataspace.png)\n  "
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:allValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://ontology.okp4.space/core/isDescribedBy",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isDescribedBy",
+      "en" : "is described by"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "\n  A short text description given to a resource.\n\n  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text.\n  "
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://ontology.okp4.space/core/isNamed",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isNamed",
+      "en" : "is named"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A name given to the resource."
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://ontology.okp4.space/core/wasCreatedOn",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "wasCreatedOn",
+      "en" : "was created on"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "\n  Information on when the resource was created.\n\n  This information is stored initially and will never be changed thereafter.\n  "
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://ontology.okp4.space/core/recognizes",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "recognizes",
+      "en" : "recognizes"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Denotes the state of membership of an entity towards another which acknowledges it as such."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://ontology.okp4.space/core/wasCreatedBy",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "wasCreatedBy",
+      "en" : "was created by"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "\n  Information about who created the resource.\n\n  This information is stored initially and will never be changed thereafter.\n  "
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://ontology.okp4.space/core/describes",
+    "baseIri" : "https://ontology.okp4.space/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "describes",
+      "en" : "describes"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."
+    },
+    "attributes" : [ "allValues", "external", "object", "functional" ],
+    "id" : "16"
+  } ]
+}

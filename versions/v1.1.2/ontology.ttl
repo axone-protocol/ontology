@@ -1,0 +1,223 @@
+@prefix : <https://ontology.okp4.space/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontology.okp4.space/core> .
+
+<https://ontology.okp4.space/core> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://ontology.okp4.space/core/1.1.2> ;
+                                    <http://purl.org/dc/terms/created> "2022-08-03"^^xsd:date ;
+                                    <http://purl.org/dc/terms/description> """
+  A vocabulary to describe knowledge graphs within data spaces.
+
+  This ontology is intended to model a semantic network of all the entities (datasets, services, actors...) of a data space by semantically characterizing
+  what they are and the relationships they maintain between them.
+
+  The primary objective of the ontology is to provide a complete living understanding and knowledge of the datasets within a data space,
+  their transformation (by the services), as well as the governance rules that apply (data sharing, consents, policy rules).  It also describes the
+  [Chain of Custody](https://en.wikipedia.org/wiki/Chain_of_custody) providing the Data Lineage (allowing the traceability) of each piece of data in the data spaces during the
+  different processings.
+  """@en ;
+                                    <http://purl.org/dc/terms/language> "EN" ;
+                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                                    <http://purl.org/dc/terms/publisher> <https://okp4.com/> ;
+                                    <http://purl.org/dc/terms/title> "OKP4 Ontology: Ontology for Knowledge Graph"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "okp4" ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://ontology.okp4.space/core" ;
+                                    rdfs:label "OKP4 Ontology"@en ;
+                                    owl:versionInfo "v1.1.2" ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontology.okp4.space/core/describes
+<https://ontology.okp4.space/core/describes> rdf:type owl:ObjectProperty ,
+                                                      owl:FunctionalProperty ;
+                                             rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en ;
+                                             rdfs:label "describes"@en .
+
+
+###  https://ontology.okp4.space/core/recognizes
+<https://ontology.okp4.space/core/recognizes> rdf:type owl:ObjectProperty ;
+                                              rdfs:comment "Denotes the state of membership of an entity towards another which acknowledges it as such."@en ;
+                                              rdfs:label "recognizes"@en .
+
+
+###  https://ontology.okp4.space/core/wasCreatedBy
+<https://ontology.okp4.space/core/wasCreatedBy> rdf:type owl:ObjectProperty ,
+                                                         owl:FunctionalProperty ;
+                                                rdfs:domain <https://ontology.okp4.space/core/DataSpace> ;
+                                                rdfs:range xsd:uri ;
+                                                rdfs:comment """
+  Information about who created the resource.
+
+  This information is stored initially and will never be changed thereafter.
+  """@en ;
+                                                rdfs:label "was created by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontology.okp4.space/core/isDescribedBy
+<https://ontology.okp4.space/core/isDescribedBy> rdf:type owl:DatatypeProperty ,
+                                                          owl:FunctionalProperty ;
+                                                 rdfs:domain <https://ontology.okp4.space/core/DataSpace> ;
+                                                 rdfs:range xsd:string ;
+                                                 rdfs:comment """
+  A short text description given to a resource.
+
+  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text.
+  """@en ;
+                                                 rdfs:label "is described by"@en .
+
+
+###  https://ontology.okp4.space/core/isNamed
+<https://ontology.okp4.space/core/isNamed> rdf:type owl:DatatypeProperty ,
+                                                    owl:FunctionalProperty ;
+                                           rdfs:domain <https://ontology.okp4.space/core/DataSpace> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "A name given to the resource."@en ;
+                                           rdfs:label "is named"@en .
+
+
+###  https://ontology.okp4.space/core/wasCreatedOn
+<https://ontology.okp4.space/core/wasCreatedOn> rdf:type owl:DatatypeProperty ,
+                                                         owl:FunctionalProperty ;
+                                                rdfs:domain <https://ontology.okp4.space/core/DataSpace> ;
+                                                rdfs:range xsd:date ;
+                                                rdfs:comment """
+  Information on when the resource was created.
+
+  This information is stored initially and will never be changed thereafter.
+  """@en ;
+                                                rdfs:label "was created on"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#uri
+xsd:uri rdf:type owl:Class .
+
+
+###  https://ontology.okp4.space/core/Citizen
+<https://ontology.okp4.space/core/Citizen> rdf:type owl:Class ;
+                                           owl:equivalentClass [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( <https://ontology.okp4.space/core/Dataset>
+                                                                             )
+                                                               ] ;
+                                           rdfs:comment """
+  `Citizen` denotes members of a `Data Space`, including datasets, services...
+  """@en ;
+                                           rdfs:label "Citizen"@en .
+
+
+###  https://ontology.okp4.space/core/Data
+<https://ontology.okp4.space/core/Data> rdf:type owl:Class ;
+                                        rdfs:comment """
+  `Data` denotes a quantity of information (processed or stored). 
+  """@en ;
+                                        rdfs:label "Data" .
+
+
+###  https://ontology.okp4.space/core/DataSpace
+<https://ontology.okp4.space/core/DataSpace> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <https://ontology.okp4.space/core/recognizes> ;
+                                                               owl:allValuesFrom <https://ontology.okp4.space/core/Citizen>
+                                                             ] ;
+                                             rdfs:comment """
+  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
+  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+
+  ![Data spaces](images/dataspace.png)
+  """@en ;
+                                             rdfs:label "Data Space"@en .
+
+
+###  https://ontology.okp4.space/core/Dataset
+<https://ontology.okp4.space/core/Dataset> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://ontology.okp4.space/core/Data> ;
+                                           rdfs:comment """
+  `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
+  This includes a wide variety of formats, for example: csv files, images, videos, databases, etc.
+
+  Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means
+  (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.
+
+  Datasets are described by a set of descriptions (aka metadata) providing information about one or more aspects of the dataset, like the
+  time and date of creation, the file size or the data quality, using specific data description vocabularies and thesaurus (e.g. `Exif`, `EBUCore`, ISO 19115),
+  allowing a great extensibility.
+  """@en ;
+                                           rdfs:label "Dataset"@en .
+
+
+###  https://ontology.okp4.space/core/Metadata
+<https://ontology.okp4.space/core/Metadata> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontology.okp4.space/core/Data> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://ontology.okp4.space/core/describes> ;
+                                                              owl:allValuesFrom <https://ontology.okp4.space/core/Data>
+                                                            ] ;
+                                            rdfs:comment """
+  `Metadata` denotes the information data about `Data` (i.e. data about the data).
+   """@en ;
+                                            rdfs:label "Metadata"@en .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
