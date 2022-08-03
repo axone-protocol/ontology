@@ -8,9 +8,9 @@
 
 <https://ontology.okp4.space/core>
   a owl:Ontology ;
-  owl:versionIRI <https://ontology.okp4.space/core/1.1.1> ;
-  owl:versionInfo "v1.1.1" ;
-  dcterms:created "2022-07-27"^^xsd:date ;
+  owl:versionIRI <https://ontology.okp4.space/core/1.1.2> ;
+  owl:versionInfo "v1.1.2" ;
+  dcterms:created "2022-08-03"^^xsd:date ;
   dcterms:language "EN" ;
   dcterms:title "OKP4 Ontology: Ontology for Knowledge Graph"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
