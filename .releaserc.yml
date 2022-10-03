@@ -5,6 +5,7 @@ repositoryUrl: "git@github.com:okp4/ontology.git"
 
 plugins:
   - - "@semantic-release/commit-analyzer"
+    - preset: conventionalcommits
     - releaseRules:
         - type: build
           release: patch
@@ -18,7 +19,8 @@ plugins:
           release: patch
         - type: chore
           release: patch
-  - "@semantic-release/release-notes-generator"
+  - - "@semantic-release/release-notes-generator"
+    - preset: conventionalcommits
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
       changelogTitle: "# OKP4 Ontology Changelog"
