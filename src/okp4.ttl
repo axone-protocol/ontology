@@ -14,7 +14,7 @@
   dcterms:language "EN" ;
   dcterms:title "OKP4 Ontology: Ontology for Knowledge Graph"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  dcterms:publisher <https://okp4.com/> ;
+  dcterms:publisher <https://okp4.network/> ;
   dcterms:description """
   A vocabulary to describe knowledge graphs within data spaces.
 
