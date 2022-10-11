@@ -81,10 +81,14 @@ dcterms:title
   rdfs:subClassOf :Data ;
   rdfs:label "Data Space"@en ;
   rdfs:comment """
-  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
-  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
+  `Data Space` is a founding concept of this ontology and is described as an abstraction that comprises:
+  
+  - Bundle of rights & rules that regulates interactions between data, algorithms, infrastructure and every resources shared by participants.
+  - Governance mechanisms to adapt these rules.
 
   ![Data spaces](images/dataspace.png)
+
+A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
   """@en .
 
 :Dataset
