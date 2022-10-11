@@ -120,21 +120,9 @@ A Data Space is highly customizable to allow its members to create a space of sh
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
 
-:wasCreatedOn
-  a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:label "was created on"@en ;
-  rdfs:domain :DataSpace ;
-  rdfs:range xsd:date ;
-  rdfs:comment """
-  Information on when the resource was created.
-
-  This information is stored initially and will never be changed thereafter.
-  """@en .
-
 :wasCreatedBy
-  a owl:FunctionalProperty, owl:ObjectProperty ;
+  a owl:AnnotationProperty ;
   rdfs:label "was created by"@en ;
-  rdfs:domain :DataSpace ;
   rdfs:range xsd:uri ;
   rdfs:comment """
   Information about who created the resource.
