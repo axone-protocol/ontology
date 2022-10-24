@@ -5,7 +5,6 @@ repositoryUrl: "git@github.com:okp4/ontology.git"
 
 plugins:
   - - "@semantic-release/commit-analyzer"
-    - preset: conventionalcommits
     - releaseRules:
         - type: build
           release: patch
@@ -19,6 +18,8 @@ plugins:
           release: patch
         - type: chore
           release: patch
+  - - "@semantic-release/commit-analyzer"
+    - preset: conventionalcommits
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
   - - "@semantic-release/changelog"
