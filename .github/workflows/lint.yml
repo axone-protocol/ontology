@@ -15,7 +15,7 @@ on:
 
 jobs:
   lint-commits:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.actor != 'dependabot[bot]'
     steps:
       - name: Check out repository
@@ -27,7 +27,7 @@ jobs:
         uses: wagoid/commitlint-github-action@v5
 
   lint-markdown:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -39,7 +39,7 @@ jobs:
           ignore: "./CHANGELOG.md"
 
   lint-yaml:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -48,7 +48,7 @@ jobs:
         uses: ibiqlik/action-yamllint@v3.1.0
 
   lint-ontology:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -66,7 +66,7 @@ jobs:
           rdf validate --validate src/okp4.ttl
 
   lint-dockerfile:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.actor != 'dependabot[bot]'
     steps:
       - name: Check out repository
