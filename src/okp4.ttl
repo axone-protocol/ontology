@@ -1,4 +1,4 @@
-@prefix : <https://ontology.okp4.space/core/> .
+@prefix okp4core: <https://ontology.okp4.space/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -41,44 +41,44 @@ dcterms:title
 
 # -- classes
 
-:Resource
+okp4core:Resource
   a owl:Class ;
   owl:unionOf (
-    :Dataset
+    okp4core:Dataset
   ) ;
   rdfs:subClassOf [ 
     a owl:Restriction ;
-    owl:onProperty :belongsTo ;
-    owl:allValuesFrom :DataSpace 
+    owl:onProperty okp4core:belongsTo ;
+    owl:allValuesFrom okp4core:DataSpace 
   ] ;
   rdfs:label "Resource"@en ;
   rdfs:comment """
   `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en .
 
-:Data
+okp4core:Data
   a owl:Class ;
   rdfs:label "Data" ;
   rdfs:comment """
   `Data` denotes a quantity of information (processed or stored). 
   """@en .
 
-:Metadata
+okp4core:Metadata
   a owl:Class ;
   rdfs:label "Metadata"@en ;
-  rdfs:subClassOf :Data ;
+  rdfs:subClassOf okp4core:Data ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:onProperty :describes ;
-    owl:allValuesFrom :Data 
+    owl:onProperty okp4core:describes ;
+    owl:allValuesFrom okp4core:Data 
   ] ;
   rdfs:comment """
   `Metadata` denotes the information data about `Data` (i.e. data about the data).
    """@en .
 
-:DataSpace
+okp4core:DataSpace
   a owl:Class ;
-  rdfs:subClassOf :Data ;
+  rdfs:subClassOf okp4core:Data ;
   rdfs:label "Data Space"@en ;
   rdfs:comment """
   `Data Space` is a founding concept of this ontology and is described as an abstraction that comprises:
@@ -91,9 +91,9 @@ dcterms:title
 A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
   """@en .
 
-:Dataset
+okp4core:Dataset
   a owl:Class ;
-  rdfs:subClassOf :Data ;
+  rdfs:subClassOf okp4core:Data ;
   rdfs:label "Dataset"@en ;
   rdfs:comment """
   `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
@@ -110,17 +110,17 @@ A Data Space is highly customizable to allow its members to create a space of sh
 
 # -- properties
 
-:belongsTo
+okp4core:belongsTo
   a owl:ObjectProperty ;
   rdfs:label "belongs to"@en ;
   rdfs:comment "Denotes the state of membership of an entity towards another."@en .
 
-:describes
+okp4core:describes
   a owl:FunctionalProperty, owl:ObjectProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
 
-:wasCreatedBy
+okp4core:wasCreatedBy
   a owl:AnnotationProperty ;
   rdfs:label "was created by"@en ;
   rdfs:range xsd:uri ;
