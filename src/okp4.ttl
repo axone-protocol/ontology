@@ -14,7 +14,7 @@
   dcterms:language "EN" ;
   dcterms:title "OKP4 Ontology: Ontology for Knowledge Graph"@en ;
   dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  dcterms:publisher <https://okp4.com/> ;
+  dcterms:publisher <https://okp4.network/> ;
   dcterms:description """
   A vocabulary to describe knowledge graphs within data spaces.
 
@@ -41,29 +41,19 @@ dcterms:title
 
 # -- classes
 
-:DataSpace
-  a owl:Class ;
-  rdfs:subClassOf [ 
-    a owl:Restriction ;
-    owl:onProperty :recognizes ;
-    owl:allValuesFrom :Citizen 
-  ] ;
-  rdfs:label "Data Space"@en ;
-  rdfs:comment """
-  `Data Space` is a founding concept of this ontology and is described as an *abstract* space in which several entities, named `Citizen`, 
-  of different kinds belong (for instance datasets, services and users), and *governed* by a set of explicit common rules between all of them (i.e. a rulebook).
-
-  ![Data spaces](images/dataspace.png)
-  """@en .
-
-:Citizen
+:Resource
   a owl:Class ;
   owl:unionOf (
     :Dataset
-  );
-  rdfs:label "Citizen"@en ;
+  ) ;
+  rdfs:subClassOf [ 
+    a owl:Restriction ;
+    owl:onProperty :belongsTo ;
+    owl:allValuesFrom :DataSpace 
+  ] ;
+  rdfs:label "Resource"@en ;
   rdfs:comment """
-  `Citizen` denotes members of a `Data Space`, including datasets, services...
+  `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en .
 
 :Data
@@ -86,6 +76,21 @@ dcterms:title
   `Metadata` denotes the information data about `Data` (i.e. data about the data).
    """@en .
 
+:DataSpace
+  a owl:Class ;
+  rdfs:subClassOf :Data ;
+  rdfs:label "Data Space"@en ;
+  rdfs:comment """
+  `Data Space` is a founding concept of this ontology and is described as an abstraction that comprises:
+  
+  - Bundle of rights & rules that regulates interactions between data, algorithms, infrastructure and every resources shared by participants.
+  - Governance mechanisms to adapt these rules.
+
+  ![Data spaces](images/dataspace.png)
+
+A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
+  """@en .
+
 :Dataset
   a owl:Class ;
   rdfs:subClassOf :Data ;
@@ -105,49 +110,19 @@ dcterms:title
 
 # -- properties
 
-:isNamed
-  a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:label "is named"@en ;
-  rdfs:domain :DataSpace ;
-  rdfs:range xsd:string ;
-  rdfs:comment "A name given to the resource."@en .
-
-:isDescribedBy
-  a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:label "is described by"@en ;
-  rdfs:domain :DataSpace ;
-  rdfs:range xsd:string ;
-  rdfs:comment """
-  A short text description given to a resource.
-
-  [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax can be used for creating formatted text.
-  """@en .
-
-:recognizes
+:belongsTo
   a owl:ObjectProperty ;
-  rdfs:label "recognizes"@en ;
-  rdfs:comment "Denotes the state of membership of an entity towards another which acknowledges it as such."@en .
+  rdfs:label "belongs to"@en ;
+  rdfs:comment "Denotes the state of membership of an entity towards another."@en .
 
 :describes
   a owl:FunctionalProperty, owl:ObjectProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
 
-:wasCreatedOn
-  a owl:FunctionalProperty, owl:DatatypeProperty ;
-  rdfs:label "was created on"@en ;
-  rdfs:domain :DataSpace ;
-  rdfs:range xsd:date ;
-  rdfs:comment """
-  Information on when the resource was created.
-
-  This information is stored initially and will never be changed thereafter.
-  """@en .
-
 :wasCreatedBy
-  a owl:FunctionalProperty, owl:ObjectProperty ;
+  a owl:AnnotationProperty ;
   rdfs:label "was created by"@en ;
-  rdfs:domain :DataSpace ;
   rdfs:range xsd:uri ;
   rdfs:comment """
   Information about who created the resource.

@@ -1,5 +1,5 @@
 # ---
-FROM ghcr.io/okp4/widoco:1.4.15 AS BUILD_IMAGE
+FROM ghcr.io/okp4/widoco:1.4.17 AS BUILD_IMAGE
 
 WORKDIR /var/build/ontology
 
