@@ -1,8 +1,9 @@
-@prefix : <https://ontology.okp4.space/core/> .
+@prefix okp4core: <https://ontology.okp4.space/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
@@ -39,46 +40,46 @@ dcterms:description
 dcterms:title
   a owl:AnnotationProperty .
 
-# -- classes
+# -- core classes
 
-:Resource
+okp4core:Resource
   a owl:Class ;
   owl:unionOf (
-    :Dataset
+    okp4core:Dataset
   ) ;
   rdfs:subClassOf [ 
     a owl:Restriction ;
-    owl:onProperty :belongsTo ;
-    owl:allValuesFrom :DataSpace 
+    owl:onProperty okp4core:belongsTo ;
+    owl:allValuesFrom okp4core:DataSpace 
   ] ;
   rdfs:label "Resource"@en ;
   rdfs:comment """
   `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en .
 
-:Data
+okp4core:Data
   a owl:Class ;
   rdfs:label "Data" ;
   rdfs:comment """
   `Data` denotes a quantity of information (processed or stored). 
   """@en .
 
-:Metadata
+okp4core:Metadata
   a owl:Class ;
   rdfs:label "Metadata"@en ;
-  rdfs:subClassOf :Data ;
+  rdfs:subClassOf okp4core:Data ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:onProperty :describes ;
-    owl:allValuesFrom :Data 
+    owl:onProperty okp4core:describes ;
+    owl:allValuesFrom okp4core:Data 
   ] ;
   rdfs:comment """
   `Metadata` denotes the information data about `Data` (i.e. data about the data).
    """@en .
 
-:DataSpace
+okp4core:DataSpace
   a owl:Class ;
-  rdfs:subClassOf :Data ;
+  rdfs:subClassOf okp4core:Data ;
   rdfs:label "Data Space"@en ;
   rdfs:comment """
   `Data Space` is a founding concept of this ontology and is described as an abstraction that comprises:
@@ -91,9 +92,9 @@ dcterms:title
 A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
   """@en .
 
-:Dataset
+okp4core:Dataset
   a owl:Class ;
-  rdfs:subClassOf :Data ;
+  rdfs:subClassOf okp4core:Data ;
   rdfs:label "Dataset"@en ;
   rdfs:comment """
   `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
@@ -108,19 +109,19 @@ A Data Space is highly customizable to allow its members to create a space of sh
   """@en .
 
 
-# -- properties
+# -- core properties
 
-:belongsTo
+okp4core:belongsTo
   a owl:ObjectProperty ;
   rdfs:label "belongs to"@en ;
   rdfs:comment "Denotes the state of membership of an entity towards another."@en .
 
-:describes
+okp4core:describes
   a owl:FunctionalProperty, owl:ObjectProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
 
-:wasCreatedBy
+okp4core:wasCreatedBy
   a owl:AnnotationProperty ;
   rdfs:label "was created by"@en ;
   rdfs:range xsd:uri ;
@@ -129,3 +130,63 @@ A Data Space is highly customizable to allow its members to create a space of sh
 
   This information is stored initially and will never be changed thereafter.
   """@en .
+
+# -- thesaurus - service category
+<https://ontology.okp4.space/thesaurus/service-category>
+  a skos:ConceptScheme ;
+  dcterms:title "The OKP4 Service Category Thesaurus"@en ;
+  dcterms:description """
+  This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised
+  and classified according to their nature or purpose.
+  """@en ;
+  rdfs:label "Service Category Thesaurus"@en .
+
+<https://ontology.okp4.space/thesaurus/service-category/ClassificationModel>
+  a skos:Concept ;
+  skos:prefLabel "Classification Model"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/ClusteringModel>
+  a skos:Concept ;
+  skos:prefLabel "Clustering Model"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/NaturalLanguageProcessing>
+  a skos:Concept ;
+  skos:prefLabel "Natural Language Processing"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/RegressionModel>
+  a skos:Concept ;
+  skos:prefLabel "Regression Model"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/DeepLearning>
+  a skos:Concept ;
+  skos:prefLabel "Deep Learning"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/DataTransformation>
+  a skos:Concept ;
+  skos:prefLabel "Data Transformation"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/DataCleaning>
+  a skos:Concept ;
+  skos:prefLabel "Data Cleaning"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/ComputerVision>
+  a skos:Concept ;
+  skos:prefLabel "Computer Vision"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/StatisticsAndAnalytics>
+  a skos:Concept ;
+  skos:prefLabel "Statistics & Analytics"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+
+<https://ontology.okp4.space/thesaurus/service-category/DataIntegration>
+  a skos:Concept ;
+  skos:prefLabel "Data Integration"@en ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
