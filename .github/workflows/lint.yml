@@ -53,18 +53,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Setup ruby environment
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "2.6"
-          bundler-cache: true
-
-      - run: |
-          gem install rdf-turtle
-
       - name: Validate ontology file
         run: |
-          rdf validate --validate src/okp4.ttl
+          make lint-ontology
 
   lint-dockerfile:
     runs-on: ubuntu-22.04
