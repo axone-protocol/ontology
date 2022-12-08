@@ -36,7 +36,7 @@ build: $(ARTIFACT_TTL) ## Build the ontology
 
 $(ARTIFACT_TTL): $(ARTIFACT_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} the ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-	@docker run -ti --rm \
+	@docker run --rm \
   		-v `pwd`:/usr/src/ontology:rw \
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ --output-format turtle $<
@@ -47,7 +47,7 @@ $(ARTIFACT_NT): $(OBJS) | $(BIN)
 
 $(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
 	@echo "${COLOR_CYAN}🔁 converting${COLOR_RESET} ontology ${COLOR_GREEN}$<${COLOR_RESET} into ${COLOR_GREEN}$@${COLOR_RESET}"
-	@docker run -ti --rm \
+	@docker run --rm \
   		-v `pwd`:/usr/src/ontology:rw \
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ $<
@@ -60,7 +60,7 @@ lint: lint-parts lint-ontology ## Lint all available linters
 
 lint-ontology: build ## Lint final (generated) ontology
 	@echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
-	@docker run -ti --rm \
+	@docker run --rm \
   		-v `pwd`:/usr/src/ontology:ro \
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ARTIFACT_TTL}
@@ -68,7 +68,7 @@ lint-ontology: build ## Lint final (generated) ontology
 lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
-		docker run -ti --rm \
+		docker run --rm \
   		  -v `pwd`:/usr/src/ontology:ro \
   		  -w /usr/src/ontology \
   		  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $${file}; \
