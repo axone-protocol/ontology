@@ -1,7 +1,6 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
-ONTOLOGY_PATH = "src/okp4.ttl"
-GENERATED_PATH = "target/generated"
 
+# Docker images
 DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
 DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
 DOCKER_IMAGE_HTTPD=httpd:2.4.51
@@ -13,34 +12,77 @@ COLOR_WHITE  = $(shell tput -Txterm setaf 7)
 COLOR_CYAN   = $(shell tput -Txterm setaf 6)
 COLOR_RESET  = $(shell tput -Txterm sgr0)
 
-.PHONY: all lint lint-ontology documentation
+# Build constants
+TARGET       := ./target
+OBJ          := $(TARGET)/nt
+DOC          := $(TARGET)/doc
+SRC          := ./src
+SRCS         := $(wildcard $(SRC)/*.ttl)
+OBJS         := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRCS))
+ARTIFACT_TTL := $(TARGET)/okp4.ttl
+ARTIFACT_NT  := $(TARGET)/okp4.nt
+
+.PHONY: all clean build lint lint-ontology lint-parts documentation start-site help
 
 all: help
 
-# Clean:
+## Clean:
 clean: ## Clean all generated files
-	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${GENERATED_PATH}${COLOR_RESET}"
+	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${DOC}${COLOR_RESET}"
 	@sudo rm -rf target
 
-## Lint:
-lint: lint-ontology ## Lint all available linters
+## Build:
+build: $(ARTIFACT_TTL) ## Build the ontology
 
-lint-ontology: ## Lint ontology
-	@echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}${ONTOLOGY_PATH}${COLOR_RESET}"
-	@docker run -ti --rm \
+$(ARTIFACT_TTL): $(ARTIFACT_NT)
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} the ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@docker run --rm \
+  		-v `pwd`:/usr/src/ontology:rw \
+  		-w /usr/src/ontology \
+  		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ --output-format turtle $<
+
+$(ARTIFACT_NT): $(OBJS) | $(BIN)
+	@echo "${COLOR_CYAN}🔨 assembling${COLOR_RESET} ontology into ${COLOR_GREEN}$@${COLOR_RESET}"
+	@cat $^ > $@
+
+$(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
+	@echo "${COLOR_CYAN}🔁 converting${COLOR_RESET} ontology ${COLOR_GREEN}$<${COLOR_RESET} into ${COLOR_GREEN}$@${COLOR_RESET}"
+	@docker run --rm \
+  		-v `pwd`:/usr/src/ontology:rw \
+  		-w /usr/src/ontology \
+  		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ $<
+
+$(BIN) $(OBJ):
+	@mkdir -p $@
+
+## Lint:
+lint: lint-parts lint-ontology ## Lint all available linters
+
+lint-ontology: build ## Lint final (generated) ontology
+	@echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
+	@docker run --rm \
   		-v `pwd`:/usr/src/ontology:ro \
   		-w /usr/src/ontology \
-  		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ONTOLOGY_PATH}
+  		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ARTIFACT_TTL}
+
+lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
+	@for file in $^ ; do \
+		echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
+		docker run --rm \
+  		  -v `pwd`:/usr/src/ontology:ro \
+  		  -w /usr/src/ontology \
+  		  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $${file}; \
+	done
 
 ## Documentation:
-documentation: ## Generate documentation site
-	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ONTOLOGY_PATH}${COLOR_RESET}"
+documentation: build ## Generate documentation site
+	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
 	@docker run \
 	    --rm \
   		-v `pwd`:/usr/src/ontology \
 		${DOCKER_IMAGE_WIDOCO} \
-			-ontFile /usr/src/ontology/${ONTOLOGY_PATH} \
-			-outFolder /usr/src/ontology/${GENERATED_PATH}/ontology \
+			-ontFile /usr/src/ontology/${ARTIFACT_TTL} \
+			-outFolder /usr/src/ontology/${DOC}/ontology \
 			-lang en \
 			-rewriteAll \
 			-getOntologyMetadata \
@@ -48,14 +90,14 @@ documentation: ## Generate documentation site
 			-webVowl \
 			-displayDirectImportsOnly \
 			-uniteSections
-	@sudo chown -R  "$$(id -u):$$(id -g)" ${GENERATED_PATH}/ontology
-	@cp -R public/* ${GENERATED_PATH}/ontology/
+	@sudo chown -R  "$$(id -u):$$(id -g)" ${DOC}/ontology
+	@cp -R public/* ${DOC}/ontology/
 
 start-site: documentation ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
 	@docker run --rm \
 	  -p 8080:80 \
-	  -v `pwd`/target/generated/ontology:/usr/local/apache2/htdocs/:ro \
+	  -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
 	  ${DOCKER_IMAGE_HTTPD}
 
 ## Help:

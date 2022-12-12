@@ -53,32 +53,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Setup ruby environment
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "2.6"
-          bundler-cache: true
-
-      - run: |
-          gem install rdf-turtle
-
       - name: Validate ontology file
         run: |
-          rdf validate --validate src/okp4.ttl
-
-  lint-dockerfile:
-    runs-on: ubuntu-22.04
-    if: github.actor != 'dependabot[bot]'
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Lint dockerfile (hadolint)
-        uses: hadolint/hadolint-action@v2.1.0
-
-      - name: Lint dockerfile (docker-lint)
-        uses: luke142367/Docker-Lint-Action@v1.1.1
-        with:
-          target: Dockerfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          make lint-ontology
