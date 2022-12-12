@@ -52,7 +52,28 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Validate ontology file
+      - name: Find changed ttl files
+        id: changed-ttl-files
+        uses: tj-actions/changed-files@v34.5.3
+        with:
+          files: |
+            src/*.ttl
+            Makefile
+
+      - name: Validate ttl files
+        if: steps.changed-ttl-files.outputs.any_changed == 'true'
         run: |
           make lint-ontology
+
+      - name: Check ttl files are formatted
+        if: steps.changed-ttl-files.outputs.any_changed == 'true'
+        run: |
+          make format-ontology
+          if [[ $(git status -s) ]]; then
+            >&2 echo "❌ There is a diff between formatted files and source code"
+            >&2 git status
+            exit 1
+          fi
