@@ -4,6 +4,7 @@
 DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
 DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
 DOCKER_IMAGE_HTTPD=httpd:2.4.51
+DOCKER_IMAGE_UBUNTU=ubuntu:22.04
 
 # Some colors
 COLOR_GREEN  = $(shell tput -Txterm setaf 2)
@@ -16,6 +17,7 @@ COLOR_RESET  = $(shell tput -Txterm sgr0)
 TARGET       := ./target
 OBJ          := $(TARGET)/nt
 DOC          := $(TARGET)/doc
+CACHE		 := $(TARGET)/.cache
 SRC          := ./src
 SRCS         := $(wildcard $(SRC)/*.ttl)
 OBJS         := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRCS))
@@ -54,6 +56,29 @@ $(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
 
 $(BIN) $(OBJ):
 	@mkdir -p $@
+
+## Format:
+format-ontology: $(CACHE)/owl-x86_64-linux-1.2.2 format-parts ## Format all the parts of the ontology
+
+format-parts: $(SRC)/*.ttl
+	@for file in $^ ; do \
+		echo "${COLOR_CYAN}📐 Formating: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
+		docker run --rm \
+  		  -v `pwd`:/usr/src/ontology:rw \
+  		  -w /usr/src/ontology \
+  		  ${DOCKER_IMAGE_UBUNTU} bash -c " \
+		  	${CACHE}/owl-x86_64-linux-1.2.2 write \
+			$${file} $${file}.formatted \
+		  " && \
+		mv -f "$${file}.formatted" "$${file}"; \
+	done
+
+$(CACHE)/owl-x86_64-linux-1.2.2:
+	@echo "⤵️ installing $(notdir $@)"
+	@mkdir -p $(CACHE); \
+	cd $(CACHE); \
+	wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-x86_64-linux-1.2.2; \
+	chmod +x owl-x86_64-linux-1.2.2
 
 ## Lint:
 lint: lint-parts lint-ontology ## Lint all available linters
