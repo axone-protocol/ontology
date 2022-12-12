@@ -1,67 +1,54 @@
-@prefix okp4core: <https://ontology.okp4.space/core/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
-<https://ontology.okp4.space/thesaurus/service-category>
-  a skos:ConceptScheme ;
-  dcterms:title "The OKP4 Service Category Thesaurus"@en ;
+<https://ontology.okp4.space/thesaurus/service-category> a skos:ConceptScheme ;
+  rdfs:label "Service Category Thesaurus"@en ;
   dcterms:description """
   This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised
   and classified according to their nature or purpose.
   """@en ;
-  rdfs:label "Service Category Thesaurus"@en .
+  dcterms:title "The OKP4 Service Category Thesaurus"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/ClassificationModel>
-  a skos:Concept ;
-  skos:prefLabel "Classification Model"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/ClassificationModel> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Classification Model"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/ClusteringModel>
-  a skos:Concept ;
-  skos:prefLabel "Clustering Model"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/ClusteringModel> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Clustering Model"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/NaturalLanguageProcessing>
-  a skos:Concept ;
-  skos:prefLabel "Natural Language Processing"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/ComputerVision> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Computer Vision"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/RegressionModel>
-  a skos:Concept ;
-  skos:prefLabel "Regression Model"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/DataCleaning> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Data Cleaning"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DeepLearning>
-  a skos:Concept ;
-  skos:prefLabel "Deep Learning"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/DataIntegration> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Data Integration"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DataTransformation>
-  a skos:Concept ;
-  skos:prefLabel "Data Transformation"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/DataTransformation> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Data Transformation"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DataCleaning>
-  a skos:Concept ;
-  skos:prefLabel "Data Cleaning"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/DeepLearning> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Deep Learning"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/ComputerVision>
-  a skos:Concept ;
-  skos:prefLabel "Computer Vision"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/NaturalLanguageProcessing> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Natural Language Processing"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/StatisticsAndAnalytics>
-  a skos:Concept ;
-  skos:prefLabel "Statistics & Analytics"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/RegressionModel> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Regression Model"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DataIntegration>
-  a skos:Concept ;
-  skos:prefLabel "Data Integration"@en ;
-  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> .
+<https://ontology.okp4.space/thesaurus/service-category/StatisticsAndAnalytics> a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Statistics & Analytics"@en .
+
+
