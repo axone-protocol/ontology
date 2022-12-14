@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix okp4core: <https://ontology.okp4.space/core/> .
+
+okp4core:Data a owl:Class ;
+  rdfs:label "Data" ;
+  rdfs:comment """
+  `Data` denotes a quantity of information (processed or stored). 
+  """@en .
+
+okp4core:DataSpace a owl:Class ;
+  rdfs:label "Data Space"@en ;
+  rdfs:comment """
+  `Data Space` is a founding concept of this ontology and is described as an abstraction that comprises:
+  
+  - Bundle of rights & rules that regulates interactions between data, algorithms, infrastructure and every resources shared by participants.
+  - Governance mechanisms to adapt these rules.
+
+  ![Data spaces](images/dataspace.png)
+
+A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
+  """@en ;
+  rdfs:subClassOf okp4core:Data .
+
+okp4core:Dataset a owl:Class ;
+  rdfs:label "Dataset"@en ;
+  rdfs:comment """
+  `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
+  This includes a wide variety of formats, for example: csv files, images, videos, databases, etc.
+
+  Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means
+  (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.
+
+  Datasets are described by a set of descriptions (aka metadata) providing information about one or more aspects of the dataset, like the
+  time and date of creation, the file size or the data quality, using specific data description vocabularies and thesaurus (e.g. `Exif`, `EBUCore`, ISO 19115),
+  allowing a great extensibility.
+  """@en ;
+  rdfs:subClassOf okp4core:Data .
+
+okp4core:Metadata a owl:Class ;
+  rdfs:label "Metadata"@en ;
+  rdfs:comment """
+  `Metadata` denotes the information data about `Data` (i.e. data about the data).
+   """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:Data ;
+    owl:onProperty okp4core:describes ;
+  ] ;
+  rdfs:subClassOf okp4core:Data .
+
+okp4core:Resource a owl:Class ;
+  rdfs:label "Resource"@en ;
+  rdfs:comment """
+  `Resource` denotes members of a `Data Space`, including datasets, services...
+  """@en ;
+  owl:unionOf ( okp4core:Dataset ) ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:DataSpace ;
+    owl:onProperty okp4core:belongsTo ;
+  ] .
+
+okp4core:belongsTo a owl:ObjectProperty ;
+  rdfs:label "belongs to"@en ;
+  rdfs:comment "Denotes the state of membership of an entity towards another."@en .
+
+okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "describes"@en ;
+  rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+okp4core:wasCreatedBy a owl:AnnotationProperty ;
+  rdfs:label "was created by"@en ;
+  rdfs:comment """
+  Information about who created the resource.
+
+  This information is stored initially and will never be changed thereafter.
+  """@en ;
+  rdfs:range xsd:uri .
+
+
