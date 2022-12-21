@@ -6,17 +6,17 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 area:hasAlpha2Code a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:label "Has ISO 3166-1-alpha-2 code"@en ;
+  rdfs:label "has ISO 3166-1-alpha-2 code"@en ;
   rdfs:comment "Represents the ISO 3166-1 two-letter country codes that uniquely identifies a country."@en ;
   rdfs:range xsd:string .
 
 area:hasAlpha3Code a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:label "Has ISO 3166-1-alpha-3 code"@en ;
+  rdfs:label "has ISO 3166-1-alpha-3 code"@en ;
   rdfs:comment "Represents the ISO 3166-1 three-letter country codes that uniquely identifies a country."@en ;
   rdfs:range xsd:string .
 
 area:hasAreaCode a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:label "Has M.49 area code"@en ;
+  rdfs:label "has M.49 area code"@en ;
   rdfs:comment "Represents the M.49 area code that uniquely identifies an area."@en ;
   rdfs:range xsd:integer .
 
