@@ -2,6 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix svccat: <https://ontology.okp4.space/thesaurus/service-category/> .
 
 <https://ontology.okp4.space/thesaurus/service-category> a skos:ConceptScheme ;
   rdfs:label "Service Category Thesaurus"@en ;
@@ -11,43 +12,43 @@
   """@en ;
   dcterms:title "The OKP4 Service Category Thesaurus"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/ClassificationModel> a skos:Concept ;
+svccat:ClassificationModel a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Classification Model"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/ClusteringModel> a skos:Concept ;
+svccat:ClusteringModel a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Clustering Model"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/ComputerVision> a skos:Concept ;
+svccat:ComputerVision a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Computer Vision"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DataCleaning> a skos:Concept ;
+svccat:DataCleaning a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Data Cleaning"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DataIntegration> a skos:Concept ;
+svccat:DataIntegration a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Data Integration"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DataTransformation> a skos:Concept ;
+svccat:DataTransformation a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Data Transformation"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/DeepLearning> a skos:Concept ;
+svccat:DeepLearning a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Deep Learning"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/NaturalLanguageProcessing> a skos:Concept ;
+svccat:NaturalLanguageProcessing a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Natural Language Processing"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/RegressionModel> a skos:Concept ;
+svccat:RegressionModel a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Regression Model"@en .
 
-<https://ontology.okp4.space/thesaurus/service-category/StatisticsAndAnalytics> a skos:Concept ;
+svccat:StatisticsAndAnalytics a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Statistics & Analytics"@en .
 
