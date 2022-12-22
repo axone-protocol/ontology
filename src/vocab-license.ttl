@@ -1,0 +1,593 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://ontology.okp4.space/thesaurus/license> a skos:ConceptScheme ;
+  rdfs:label "Open Source Licenses Thesaurus"@en ;
+  dct:description "This thesaurus defines a controlled vocabulary referencing the (major) Open Source licenses."@en ;
+  dct:title "Open Source licenses Thesaurus"@en ;
+  rdfs:seeAlso <https://licenses.opendefinition.org/> .
+
+license:AAL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Attribution Assurance Licenses"@en .
+
+license:AFL-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Academic Free License 3.0"@en .
+
+license:AGPL-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "GNU Affero General Public License v3"@en .
+
+license:APL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Adaptive Public License 1.0"@en .
+
+license:APSL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Apple Public Source License 2.0"@en .
+
+license:Against-DRM a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Against DRM"@en .
+
+license:Apache-1_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Apache Software License 1.1"@en .
+
+license:Apache-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Apache Software License 2.0"@en .
+
+license:Artistic-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Artistic License 2.0"@en .
+
+license:BSD-2-Clause a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel """BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)"""@en .
+
+license:BSD-3-Clause a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel """BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)"""@en .
+
+license:BSL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Boost Software License 1.0"@en .
+
+license:BitTorrent-1_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "BitTorrent Open Source License 1.1"@en .
+
+license:CATOSL-1_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"@en .
+
+license:CC-BY-4_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Creative Commons Attribution 4.0"@en .
+
+license:CC-BY-NC-4_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Creative Commons Attribution-NonCommercial 4.0"@en .
+
+license:CC-BY-SA-4_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Creative Commons Attribution Share-Alike 4.0"@en .
+
+license:CC0-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "CC0 1.0"@en .
+
+license:CDDL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Common Development and Distribution License 1.0"@en .
+
+license:CECILL-2_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "CeCILL License 2.1"@en .
+
+license:CNRI-Python a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "CNRI Python License"@en .
+
+license:CPAL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Common Public Attribution License 1.0"@en .
+
+license:CUA-OPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "CUA Office Public License 1.0"@en .
+
+license:DSL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Design Science License"@en .
+
+license:ECL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Educational Community License 2.0"@en .
+
+license:EFL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Eiffel Forum License 2.0"@en .
+
+license:EPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Eclipse Public License 1.0"@en .
+
+license:EPL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Eclipse Public License 2.0"@en .
+
+license:EUDatagrid a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "EU DataGrid Software License"@en .
+
+license:EUPL-1_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "European Union Public License 1.1"@en .
+
+license:Entessa a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Entessa Public License"@en .
+
+license:FAL-1_3 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Free Art License 1.3"@en .
+
+license:Fair a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Fair License"@en .
+
+license:Frameworx-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Frameworx License 1.0"@en .
+
+license:GFDL-1_3-no-cover-texts-no-invariant-sections a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "GNU Free Documentation License 1.3 with no cover texts and no invariant sections"@en .
+
+license:GPL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "GNU General Public License 2.0"@en .
+
+license:GPL-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "GNU General Public License 3.0"@en .
+
+license:HPND a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Historical Permission Notice and Disclaimer"@en .
+
+license:IPA a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "IPA Font License"@en .
+
+license:IPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "IBM Public License 1.0"@en .
+
+license:ISC a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "ISC License"@en .
+
+license:Intel a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Intel Open Source License"@en .
+
+license:LGPL-2_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "GNU Lesser General Public License 2.1"@en .
+
+license:LGPL-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "GNU Lesser General Public License 3.0"@en .
+
+license:LO-FR-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open License 2.0"@en .
+
+license:LPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel """Lucent Public License ("Plan9") 1.0"""@en .
+
+license:LPL-1_02 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Lucent Public License 1.02"@en .
+
+license:LPPL-1_3c a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "LaTeX Project Public License 1.3c"@en .
+
+license:MIT a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "MIT License"@en .
+
+license:MPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Mozilla Public License 1.0"@en .
+
+license:MPL-1_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Mozilla Public License 1.1"@en .
+
+license:MPL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Mozilla Public License 2.0"@en .
+
+license:MS-PL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Microsoft Public License"@en .
+
+license:MS-RL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Microsoft Reciprocal License"@en .
+
+license:MirOS a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "MirOS Licence"@en .
+
+license:Motosoto a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Motosoto License"@en .
+
+license:Multics a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Multics License"@en .
+
+license:NASA-1_3 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "NASA Open Source Agreement 1.3"@en .
+
+license:NCSA a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "University of Illinois/NCSA Open Source License"@en .
+
+license:NGPL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Nethack General Public License"@en .
+
+license:NPOSL-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Non-Profit Open Software License 3.0"@en .
+
+license:NTP a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "NTP License"@en .
+
+license:Naumen a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Naumen Public License"@en .
+
+license:Nokia a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Nokia Open Source License"@en .
+
+license:OCLC-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "OCLC Research Public License 2.0"@en .
+
+license:ODC-BY-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Data Commons Attribution License 1.0"@en .
+
+license:ODbL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Data Commons Open Database License 1.0"@en .
+
+license:OFL-1_1 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Font License 1.1"@en .
+
+license:OGL-Canada-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Government License 2.0 (Canada)"@en .
+
+license:OGL-UK-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Government Licence 1.0 (United Kingdom)"@en .
+
+license:OGL-UK-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Government Licence 2.0 (United Kingdom)"@en .
+
+license:OGL-UK-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Government Licence 3.0 (United Kingdom)"@en .
+
+license:OGTSL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Group Test Suite License"@en .
+
+license:OSL-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Software License 3.0"@en .
+
+license:PDDL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open Data Commons Public Domain Dedication and Licence 1.0"@en .
+
+license:PHP-3_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "PHP License 3.0"@en .
+
+license:PostgreSQL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "PostgreSQL License"@en .
+
+license:Python-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Python License 2.0"@en .
+
+license:QPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Q Public License 1.0"@en .
+
+license:RPL-1_5 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Reciprocal Public License 1.5"@en .
+
+license:RPSL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "RealNetworks Public Source License 1.0"@en .
+
+license:RSCPL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Ricoh Source Code Public License"@en .
+
+license:SISSL a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Sun Industry Standards Source License 1.1"@en .
+
+license:SPL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Sun Public License 1.0"@en .
+
+license:SimPL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Simple Public License 2.0"@en .
+
+license:Sleepycat a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Sleepycat License"@en .
+
+license:Talis a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Talis Community License"@en .
+
+license:Unlicense a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Unlicense"@en .
+
+license:VSL-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Vovida Software License 1.0"@en .
+
+license:W3C a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "W3C License"@en .
+
+license:WXwindows a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "wxWindows Library License"@en .
+
+license:Watcom-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Sybase Open Watcom Public License 1.0"@en .
+
+license:Xnet a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "X.Net License"@en .
+
+license:ZPL-2_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Zope Public License 2.0"@en .
+
+license:Zlib a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "zlib/libpng license"@en .
+
+license:contentLicenses a skos:Collection ;
+  rdfs:label "Content Licenses"@en ;
+  dct:description "Collection of licenses which applies to a content."@en ;
+  dct:title "Content Licenses"@en ;
+  skos:member license:AFL-3_0 ;
+  skos:member license:Against-DRM ;
+  skos:member license:CC-BY-4_0 ;
+  skos:member license:CC-BY-NC-4_0 ;
+  skos:member license:CC-BY-SA-4_0 ;
+  skos:member license:CC0-1_0 ;
+  skos:member license:DSL ;
+  skos:member license:FAL-1_3 ;
+  skos:member license:GFDL-1_3-no-cover-texts-no-invariant-sections ;
+  skos:member license:MirOS ;
+  skos:member license:NPOSL-3_0 ;
+  skos:member license:OGL-Canada-2_0 ;
+  skos:member license:OGL-UK-1_0 ;
+  skos:member license:OGL-UK-2_0 ;
+  skos:member license:OGL-UK-3_0 ;
+  skos:member license:OSL-3_0 ;
+  skos:member license:Talis ;
+  skos:member license:hesa-withrights ;
+  skos:member license:localauth-withrights ;
+  skos:member license:other-at ;
+  skos:member license:other-open ;
+  skos:member license:other-pd ;
+  skos:member license:ukclickusepsi ;
+  skos:member license:ukcrown-withrights ;
+  skos:member license:ukpsi .
+
+license:dataLicenses a skos:Collection ;
+  rdfs:label "Data Licenses"@en ;
+  dct:description "Collection of licenses which applies to a data."@en ;
+  dct:title "Data Licenses"@en ;
+  skos:member license:CC-BY-4_0 ;
+  skos:member license:CC-BY-NC-4_0 ;
+  skos:member license:CC-BY-SA-4_0 ;
+  skos:member license:CC0-1_0 ;
+  skos:member license:LO-FR-2_0 ;
+  skos:member license:ODC-BY-1_0 ;
+  skos:member license:ODbL-1_0 ;
+  skos:member license:OGL-Canada-2_0 ;
+  skos:member license:OGL-UK-1_0 ;
+  skos:member license:OGL-UK-2_0 ;
+  skos:member license:OGL-UK-3_0 ;
+  skos:member license:PDDL-1_0 ;
+  skos:member license:dli-model-use ;
+  skos:member license:geogratis .
+
+license:dli-model-use a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Statistics Canada: Data Liberation Initiative (DLI) - Model Data Use Licence"@en .
+
+license:geogratis a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Geogratis"@en .
+
+license:hesa-withrights a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Higher Education Statistics Agency Copyright with data.gov.uk rights"@en .
+
+license:localauth-withrights a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Local Authority Copyright with data.gov.uk rights"@en .
+
+license:met-office-cp a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Met Office UK Climate Projections Licence Agreement"@en .
+
+license:mitre a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "MITRE Collaborative Virtual Workspace License (CVW License)"@en .
+
+license:notspecified a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "License Not Specified"@en .
+
+license:other-at a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Other (Attribution)"@en .
+
+license:other-closed a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Other (Not Open)"@en .
+
+license:other-nc a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Other (Non-Commercial)"@en .
+
+license:other-open a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Other (Open)"@en .
+
+license:other-pd a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Other (Public Domain)"@en .
+
+license:softwareLicenses a skos:Collection ;
+  rdfs:label "Software Licenses"@en ;
+  dct:description "Collection of licenses which applies to a software."@en ;
+  dct:title "Software Licenses"@en ;
+  skos:member license:AAL ;
+  skos:member license:AFL-3_0 ;
+  skos:member license:AGPL-3_0 ;
+  skos:member license:APL-1_0 ;
+  skos:member license:APSL-2_0 ;
+  skos:member license:Apache-1_1 ;
+  skos:member license:Apache-2_0 ;
+  skos:member license:Artistic-2_0 ;
+  skos:member license:BSD-2-Clause ;
+  skos:member license:BSD-3-Clause ;
+  skos:member license:BSL-1_0 ;
+  skos:member license:BitTorrent-1_1 ;
+  skos:member license:CATOSL-1_1 ;
+  skos:member license:CC0-1_0 ;
+  skos:member license:CDDL-1_0 ;
+  skos:member license:CECILL-2_1 ;
+  skos:member license:CNRI-Python ;
+  skos:member license:CPAL-1_0 ;
+  skos:member license:CUA-OPL-1_0 ;
+  skos:member license:ECL-2_0 ;
+  skos:member license:EFL-2_0 ;
+  skos:member license:EPL-1_0 ;
+  skos:member license:EPL-2_0 ;
+  skos:member license:EUDatagrid ;
+  skos:member license:EUPL-1_1 ;
+  skos:member license:Entessa ;
+  skos:member license:Fair ;
+  skos:member license:Frameworx-1_0 ;
+  skos:member license:GPL-2_0 ;
+  skos:member license:GPL-3_0 ;
+  skos:member license:HPND ;
+  skos:member license:IPA ;
+  skos:member license:IPL-1_0 ;
+  skos:member license:ISC ;
+  skos:member license:Intel ;
+  skos:member license:LGPL-2_1 ;
+  skos:member license:LGPL-3_0 ;
+  skos:member license:LPL-1_0 ;
+  skos:member license:LPL-1_02 ;
+  skos:member license:LPPL-1_3c ;
+  skos:member license:MIT ;
+  skos:member license:MPL-1_0 ;
+  skos:member license:MPL-1_1 ;
+  skos:member license:MPL-2_0 ;
+  skos:member license:MS-PL ;
+  skos:member license:MS-RL ;
+  skos:member license:MirOS ;
+  skos:member license:Motosoto ;
+  skos:member license:Multics ;
+  skos:member license:NASA-1_3 ;
+  skos:member license:NCSA ;
+  skos:member license:NGPL ;
+  skos:member license:NPOSL-3_0 ;
+  skos:member license:NTP ;
+  skos:member license:Naumen ;
+  skos:member license:Nokia ;
+  skos:member license:OCLC-2_0 ;
+  skos:member license:OFL-1_1 ;
+  skos:member license:OGL-UK-1_0 ;
+  skos:member license:OGL-UK-2_0 ;
+  skos:member license:OGL-UK-3_0 ;
+  skos:member license:OGTSL ;
+  skos:member license:OSL-3_0 ;
+  skos:member license:PHP-3_0 ;
+  skos:member license:PostgreSQL ;
+  skos:member license:Python-2_0 ;
+  skos:member license:QPL-1_0 ;
+  skos:member license:RPL-1_5 ;
+  skos:member license:RPSL-1_0 ;
+  skos:member license:RSCPL ;
+  skos:member license:SISSL ;
+  skos:member license:SPL-1_0 ;
+  skos:member license:SimPL-2_0 ;
+  skos:member license:Sleepycat ;
+  skos:member license:Unlicense ;
+  skos:member license:VSL-1_0 ;
+  skos:member license:W3C ;
+  skos:member license:WXwindows ;
+  skos:member license:Watcom-1_0 ;
+  skos:member license:Xnet ;
+  skos:member license:ZPL-2_0 ;
+  skos:member license:Zlib ;
+  skos:member license:mitre .
+
+license:ukclickusepsi a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "UK Click Use PSI"@en .
+
+license:ukcrown a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "UK Crown Copyright"@en .
+
+license:ukcrown-withrights a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "UK Crown Copyright with data.gov.uk rights"@en .
+
+license:ukpsi a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "UK PSI Public Sector Information"@en .
+
+
