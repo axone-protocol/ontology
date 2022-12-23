@@ -81,6 +81,12 @@ okp4core:hasSpatialCoverage a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has spatial coverage"@en ;
   rdfs:comment "The spatial applicability of the resource."@en ;
   rdfs:range okp4th:area .
+
+okp4core:hasTemporalCoverage a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has temporal coverage"@en ;
+  rdfs:comment "The temporal applicability of the resource."@en ;
+  rdfs:range okp4core:Period .
+
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
