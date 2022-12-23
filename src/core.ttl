@@ -76,6 +76,11 @@ okp4core:hasLicense a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has license"@en ;
   rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
   rdfs:range okp4th:license .
+
+okp4core:hasSpatialCoverage a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has spatial coverage"@en ;
+  rdfs:comment "The spatial applicability of the resource."@en ;
+  rdfs:range okp4th:area .
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
