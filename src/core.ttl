@@ -52,6 +52,23 @@ okp4core:Metadata a owl:Class ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
+okp4core:Period a owl:Class ;
+  rdfs:label "Period"@en ;
+  rdfs:comment """
+  The Period class represents an interval of time, defined by a start and end time and date.
+  """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:dateTime ;
+    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onProperty okp4core:hasEndDate ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:dateTime ;
+    owl:onProperty okp4core:hasStartDate ;
+  ] .
+
 okp4core:Resource a owl:Class ;
   rdfs:label "Resource"@en ;
   rdfs:comment """
@@ -104,6 +121,21 @@ okp4core:hasDescription a owl:DatatypeProperty, owl:FunctionalProperty ;
   A human-readable description of the resource.
   """@en ;
   rdfs:range xsd:string .
+
+okp4core:hasEndDate a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:label "has end date"@en ;
+  rdfs:comment """
+  The end date property represents the start date of an interval of time.
+  """@en ;
+  rdfs:range xsd:dateTime .
+
+okp4core:hasStartDate a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:label "has start date"@en ;
+  rdfs:comment """
+  The start date property represents the start date of an interval of time.
+  """@en ;
+  rdfs:range xsd:dateTime .
+
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
