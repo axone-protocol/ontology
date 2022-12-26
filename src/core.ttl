@@ -97,6 +97,13 @@ okp4core:hasCreator a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has publisher"@en ;
   rdfs:comment "An entity primarily responsible for making the resource."@en ;
   rdfs:range xsd:string .
+
+okp4core:hasDescription a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:label "has description"@en ;
+  rdfs:comment """
+  A human-readable description of the resource.
+  """@en ;
+  rdfs:range xsd:string .
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
