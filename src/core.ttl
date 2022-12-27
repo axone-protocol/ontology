@@ -65,8 +65,8 @@ okp4core:Period a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom xsd:dateTime ;
-    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onDataRange xsd:dateTime ;
     owl:onProperty okp4core:hasEndDate ;
   ] .
 

@@ -16,8 +16,8 @@ meta:GeneralMetadata a owl:Class ;
    """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom core:Period ;
-    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onClass core:Period ;
+    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     owl:onProperty core:hasTemporalCoverage ;
   ] ;
   rdfs:subClassOf [
@@ -36,8 +36,8 @@ meta:GeneralMetadata a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom thesaurus:area ;
-    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onClass thesaurus:area ;
+    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     owl:onProperty core:hasSpatialCoverage ;
   ] ;
   rdfs:subClassOf [
