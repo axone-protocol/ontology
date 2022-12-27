@@ -143,6 +143,12 @@ okp4core:hasTag a owl:DatatypeProperty ;
   A keyword or term assigned to the resource.
   """@en ;
   rdfs:range xsd:string .
+
+okp4core:hasTitle a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:label "has title"@en ;
+  rdfs:comment "A name given to the resource."@en ;
+  rdfs:range xsd:string .
+
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
