@@ -1,0 +1,70 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix meta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix thesaurus: <https://ontology.okp4.space/thesaurus/> .
+
+meta:GeneralMetadata a owl:Class ;
+  rdfs:label "General Metadata"@en ;
+  rdfs:comment """
+  Generalmetadata is a metadata that describes the basic characteristics of a dataset. It typically includes information such as the title, description, and tags of the dataset, as well as its topic and temporal and spatial coverages.
+
+  The purpose of this metadata is to provide a broad overview of the dataset, making it easier for users to understand what the dataset is about and how it can be used. It is often used in conjunction with more detailed metadata, which provides more specific information about the dataset.
+   """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom core:Period ;
+    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onProperty core:hasTemporalCoverage ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasTag ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom [
+      a owl:Restriction ;
+      owl:hasValue license:dataLicenses ;
+      owl:onProperty skos:member ;
+    ] ;
+    owl:onProperty core:hasLicense ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom thesaurus:area ;
+    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onProperty core:hasSpatialCoverage ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasCreator ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasDescription ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasTitle ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom thesaurus:topic ;
+    owl:onProperty core:hasTopic ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasPublisher ;
+  ] ;
+  rdfs:subClassOf core:Metadata .
+
+
