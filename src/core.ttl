@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix okp4core: <https://ontology.okp4.space/core/> .
+@prefix okp4th: <https://ontology.okp4.space/thesaurus/> .
 
 okp4core:Data a owl:Class ;
   rdfs:label "Data" ;
@@ -136,6 +137,12 @@ okp4core:hasStartDate a owl:DatatypeProperty, owl:FunctionalProperty ;
   """@en ;
   rdfs:range xsd:dateTime .
 
+okp4core:hasTag a owl:DatatypeProperty ;
+  rdfs:label "has tag"@en ;
+  rdfs:comment """
+  A keyword or term assigned to the resource.
+  """@en ;
+  rdfs:range xsd:string .
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
