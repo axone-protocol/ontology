@@ -16,9 +16,39 @@ meta:GeneralMetadata a owl:Class ;
    """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:onClass core:Period ;
+    owl:allValuesFrom thesaurus:topic ;
+    owl:onProperty core:hasTopic ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasDescription ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasPublisher ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:uri ;
+    owl:onProperty core:hasImage ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasTitle ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onClass core:Period ;
     owl:onProperty core:hasTemporalCoverage ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasCreator ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -36,34 +66,9 @@ meta:GeneralMetadata a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:onClass thesaurus:area ;
     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onClass thesaurus:area ;
     owl:onProperty core:hasSpatialCoverage ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom xsd:string ;
-    owl:onProperty core:hasCreator ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom xsd:string ;
-    owl:onProperty core:hasDescription ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom xsd:string ;
-    owl:onProperty core:hasTitle ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom thesaurus:topic ;
-    owl:onProperty core:hasTopic ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom xsd:string ;
-    owl:onProperty core:hasPublisher ;
   ] ;
   rdfs:subClassOf core:Metadata .
 

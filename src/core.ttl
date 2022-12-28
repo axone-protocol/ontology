@@ -90,6 +90,11 @@ okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
 
+okp4core:hasImage a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has image"@en ;
+  rdfs:comment "An image of the resource."@en ;
+  rdfs:range xsd:anyURI .
+
 okp4core:hasLicense a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has license"@en ;
   rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
