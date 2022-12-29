@@ -6,6 +6,12 @@
 @prefix okp4core: <https://ontology.okp4.space/core/> .
 @prefix okp4th: <https://ontology.okp4.space/thesaurus/> .
 
+okp4core:DIDURI a owl:Class ;
+  rdfs:label "Decentralized Identifier URI"@en ;
+  rdfs:comment "A decentralized identifier URI is a URI that identifies a subject in a decentralized system and is managed independently of any centralized registry."@en ;
+  rdfs:seeAlso <https://www.w3.org/TR/did-core/> ;
+  rdfs:subClassOf xsd:anyURI .
+
 okp4core:Data a owl:Class ;
   rdfs:label "Data" ;
   rdfs:comment """
@@ -138,6 +144,11 @@ okp4core:hasPublisher a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has publisher"@en ;
   rdfs:comment "An entity primarily responsible for making the resource available."@en ;
   rdfs:range xsd:string .
+
+okp4core:hasRegistrar a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has registrar"@en ;
+  rdfs:comment "References the individual, company, or organization that is responsible for registering and managing a resource."@en ;
+  rdfs:range okp4core:DIDURI .
 
 okp4core:hasStartDate a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has start date"@en ;
