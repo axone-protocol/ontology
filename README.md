@@ -5,6 +5,7 @@
 [![release](https://img.shields.io/github/v/release/okp4/ontology?style=for-the-badge&logo=github)](https://github.com/okp4/ontology/releases)
 [![lint](https://img.shields.io/github/workflow/status/okp4/ontology/Lint?label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/ontology/actions/workflows/lint.yml)
 [![build](https://img.shields.io/github/workflow/status/okp4/ontology/Build?label=build&style=for-the-badge&logo=github)](https://github.com/okp4/ontology/actions/workflows/build.yml)
+[![test](https://img.shields.io/github/workflow/status/okp4/ontology/Test?label=build&style=for-the-badge&logo=github)](https://github.com/okp4/ontology/actions/workflows/test.yml)
 [![publish](https://img.shields.io/github/workflow/status/okp4/ontology/Publish?label=publish&style=for-the-badge&logo=github)](https://github.com/okp4/ontology/actions/workflows/publish.yml)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge&logo=conventionalcommits)](https://conventionalcommits.org)
 [![contributor covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](https://github.com/okp4/.github/blob/main/CODE_OF_CONDUCT.md)
