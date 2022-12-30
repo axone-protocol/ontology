@@ -5,6 +5,7 @@ DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
 DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
 DOCKER_IMAGE_HTTPD=httpd:2.4.51
 DOCKER_IMAGE_UBUNTU=ubuntu:22.04
+DOCKER_IMAGE_PYSHACL=ashleysommer/pyshacl:0.20.0
 
 # Some colors
 COLOR_GREEN  = $(shell tput -Txterm setaf 2)
@@ -18,9 +19,13 @@ TARGET       := ./target
 OBJ          := $(TARGET)/nt
 DOC          := $(TARGET)/doc
 CACHE		 := $(TARGET)/.cache
+RES          := $(TARGET)/test
 SRC          := ./src
-SRCS         := $(wildcard $(SRC)/*.ttl)
-OBJS         := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRCS))
+TST          := ./test
+SRC_FILES    := $(wildcard $(SRC)/*.ttl)
+OBJ_FILES    := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRC_FILES))
+RESULT_FILES    := $(wildcard $(TST)/*.ttl)
+RESULT_FILES := $(patsubst $(TST)/%.ttl,$(RES)/%.result,$(RESULT_FILES))
 ARTIFACT_TTL := $(TARGET)/okp4.ttl
 ARTIFACT_NT  := $(TARGET)/okp4.nt
 
@@ -43,7 +48,7 @@ $(ARTIFACT_TTL): $(ARTIFACT_NT)
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ --output-format turtle $<
 
-$(ARTIFACT_NT): $(OBJS) | $(BIN)
+$(ARTIFACT_NT): $(OBJ_FILES) | $(BIN)
 	@echo "${COLOR_CYAN}🔨 assembling${COLOR_RESET} ontology into ${COLOR_GREEN}$@${COLOR_RESET}"
 	@cat $^ > $@
 
@@ -54,7 +59,7 @@ $(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ $<
 
-$(BIN) $(OBJ):
+$(BIN) $(OBJ) $(RES):
 	@mkdir -p $@
 
 ## Format:
@@ -98,6 +103,27 @@ lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
   		  -w /usr/src/ontology \
   		  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $${file}; \
 	done
+
+## Test:
+test: test-ontology ## Run all available tests
+
+test-ontology: $(RESULT_FILES) ## Test final (generated) ontology
+
+$(RES)/%.result: $(TST)/%.ttl | $(RES)
+	@echo "${COLOR_CYAN}Testing: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@docker run --rm \
+	  -v `pwd`:/usr/src/ontology \
+	  ${DOCKER_IMAGE_PYSHACL} poetry run pyshacl \
+		-s /usr/src/ontology/$< \
+	    -o /usr/src/ontology/$@ \
+		/usr/src/ontology/$(ARTIFACT_TTL) \
+	  && echo "✅ Test passed" \
+	  || { \
+		echo "❌ Test failed"; \
+		echo "📄 Test result:"; \
+		cat $@; \
+		exit 1; \
+	  }\
 
 ## Documentation:
 documentation: build ## Generate documentation site
