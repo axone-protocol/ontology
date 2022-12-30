@@ -110,7 +110,7 @@ test: test-ontology ## Run all available tests
 .PHONY: test-ontology
 test-ontology: $(RESULT_FILES) ## Test final (generated) ontology
 
-$(RES)/%.result: $(TST)/%.ttl | $(RES)
+$(RES)/%.result: $(TST)/%.ttl | $(RES) build
 	@echo "${COLOR_CYAN}Testing: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@docker run --rm \
 	  -v `pwd`:/usr/src/ontology \
