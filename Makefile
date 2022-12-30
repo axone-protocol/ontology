@@ -5,6 +5,7 @@ DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
 DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
 DOCKER_IMAGE_HTTPD=httpd:2.4.51
 DOCKER_IMAGE_UBUNTU=ubuntu:22.04
+DOCKER_IMAGE_PYSHACL=ashleysommer/pyshacl:0.20.0
 
 # Some colors
 COLOR_GREEN  = $(shell tput -Txterm setaf 2)
@@ -18,22 +19,28 @@ TARGET       := ./target
 OBJ          := $(TARGET)/nt
 DOC          := $(TARGET)/doc
 CACHE		 := $(TARGET)/.cache
+RES          := $(TARGET)/test
 SRC          := ./src
-SRCS         := $(wildcard $(SRC)/*.ttl)
-OBJS         := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRCS))
+TST          := ./test
+SRC_FILES    := $(wildcard $(SRC)/*.ttl)
+OBJ_FILES    := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRC_FILES))
+RESULT_FILES    := $(wildcard $(TST)/*.ttl)
+RESULT_FILES := $(patsubst $(TST)/%.ttl,$(RES)/%.result,$(RESULT_FILES))
 ARTIFACT_TTL := $(TARGET)/okp4.ttl
 ARTIFACT_NT  := $(TARGET)/okp4.nt
 
-.PHONY: all clean build lint lint-ontology lint-parts documentation start-site help
 
+.PHONY: help
 all: help
 
 ## Clean:
+.PHONY: clean
 clean: ## Clean all generated files
 	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${DOC}${COLOR_RESET}"
-	@sudo rm -rf target
+	@rm -rf target
 
 ## Build:
+.PHONY: build
 build: $(ARTIFACT_TTL) ## Build the ontology
 
 $(ARTIFACT_TTL): $(ARTIFACT_NT)
@@ -43,7 +50,7 @@ $(ARTIFACT_TTL): $(ARTIFACT_NT)
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ --output-format turtle $<
 
-$(ARTIFACT_NT): $(OBJS) | $(BIN)
+$(ARTIFACT_NT): $(OBJ_FILES) | $(BIN)
 	@echo "${COLOR_CYAN}🔨 assembling${COLOR_RESET} ontology into ${COLOR_GREEN}$@${COLOR_RESET}"
 	@cat $^ > $@
 
@@ -54,13 +61,15 @@ $(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ $<
 
-$(BIN) $(OBJ):
-	@mkdir -p $@
+$(BIN) $(OBJ) $(RES):
+	@mkdir -p -m 777 $@
 
 ## Format:
-format-ontology: $(CACHE)/owl-x86_64-linux-1.2.2 format-parts ## Format all the parts of the ontology
+.PHONY: format
+format: format-rdf ## Format with all available formatters
 
-format-parts: $(SRC)/*.ttl
+.PHONY: format-rdf
+format-rdf: $(SRC)/*.ttl $(TST)/*.ttl | $(CACHE)/owl-x86_64-linux-1.2.2 ## Format all the rdfs files (turtle)
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}📐 Formating: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
 		docker run --rm \
@@ -81,16 +90,11 @@ $(CACHE)/owl-x86_64-linux-1.2.2:
 	chmod +x owl-x86_64-linux-1.2.2
 
 ## Lint:
-lint: lint-parts lint-ontology ## Lint all available linters
+.PHONY: lint
+lint: lint-rdf ## Lint with all available linters
 
-lint-ontology: build ## Lint final (generated) ontology
-	@echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
-	@docker run --rm \
-  		-v `pwd`:/usr/src/ontology:ro \
-  		-w /usr/src/ontology \
-  		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ARTIFACT_TTL}
-
-lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
+.PHONY: lint-rdf
+lint-rdf: $(SRC)/*.ttl $(TST)/*.ttl ## Lint all the rdf files (turtle)
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
 		docker run --rm \
@@ -99,7 +103,31 @@ lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
   		  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $${file}; \
 	done
 
+## Test:
+.PHONY: test
+test: test-ontology ## Run all available tests
+
+.PHONY: test-ontology
+test-ontology: $(RESULT_FILES) ## Test final (generated) ontology
+
+$(RES)/%.result: $(TST)/%.ttl | $(RES) build
+	@echo "${COLOR_CYAN}Testing: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@docker run --rm \
+	  -v `pwd`:/usr/src/ontology \
+	  ${DOCKER_IMAGE_PYSHACL} poetry run pyshacl \
+		-s /usr/src/ontology/$< \
+	    -o /usr/src/ontology/$@ \
+		/usr/src/ontology/$(ARTIFACT_TTL) \
+	  && echo "✅ Test passed" \
+	  || { \
+		echo "❌ Test failed"; \
+		echo "📄 Test result:"; \
+		cat $@; \
+		exit 1; \
+	  }\
+
 ## Documentation:
+.PHONY: documentation
 documentation: build ## Generate documentation site
 	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
 	@docker run \
@@ -118,6 +146,7 @@ documentation: build ## Generate documentation site
 	@sudo chown -R  "$$(id -u):$$(id -g)" ${DOC}/ontology
 	@cp -R public/* ${DOC}/ontology/
 
+.PHONY: start-site
 start-site: documentation ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
 	@docker run --rm \
@@ -126,6 +155,7 @@ start-site: documentation ## Start a web server for serving generated documentat
 	  ${DOCKER_IMAGE_HTTPD}
 
 ## Help:
+.PHONY: help
 help: ## Show this help.
 	@echo ''
 	@echo 'Usage:'
