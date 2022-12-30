@@ -65,11 +65,11 @@ $(BIN) $(OBJ) $(RES):
 	@mkdir -p $@
 
 ## Format:
-.PHONY: format-ontology
-format-ontology: $(CACHE)/owl-x86_64-linux-1.2.2 format-parts ## Format all the parts of the ontology
+.PHONY: format
+format: format-rdf ## Format with all available formatters
 
-.PHONY: format-parts
-format-parts: $(SRC)/*.ttl
+.PHONY: format-rdf
+format-rdf: $(SRC)/*.ttl $(TST)/*.ttl | $(CACHE)/owl-x86_64-linux-1.2.2 ## Format all the rdfs files (turtle)
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}📐 Formating: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
 		docker run --rm \
