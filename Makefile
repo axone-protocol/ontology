@@ -91,18 +91,10 @@ $(CACHE)/owl-x86_64-linux-1.2.2:
 
 ## Lint:
 .PHONY: lint
-lint: lint-parts lint-ontology ## Lint all available linters
+lint: lint-rdf ## Lint with all available linters
 
-.PHONY: lint-ontology
-lint-ontology: build ## Lint final (generated) ontology
-	@echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
-	@docker run --rm \
-  		-v `pwd`:/usr/src/ontology:ro \
-  		-w /usr/src/ontology \
-  		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ARTIFACT_TTL}
-
-.PHONY: lint-parts
-lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
+.PHONY: lint-rdf
+lint-rdf: $(SRC)/*.ttl $(TST)/*.ttl ## Lint all the rdf files (turtle)
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
 		docker run --rm \
