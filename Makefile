@@ -37,7 +37,7 @@ all: help
 .PHONY: clean
 clean: ## Clean all generated files
 	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${DOC}${COLOR_RESET}"
-	@sudo rm -rf target
+	@rm -rf target
 
 ## Build:
 .PHONY: build
@@ -62,7 +62,7 @@ $(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
   		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ $<
 
 $(BIN) $(OBJ) $(RES):
-	@mkdir -p $@
+	@mkdir -p -m 777 $@
 
 ## Format:
 .PHONY: format
