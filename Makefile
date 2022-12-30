@@ -29,16 +29,18 @@ RESULT_FILES := $(patsubst $(TST)/%.ttl,$(RES)/%.result,$(RESULT_FILES))
 ARTIFACT_TTL := $(TARGET)/okp4.ttl
 ARTIFACT_NT  := $(TARGET)/okp4.nt
 
-.PHONY: all clean build lint lint-ontology lint-parts documentation start-site help
 
+.PHONY: help
 all: help
 
 ## Clean:
+.PHONY: clean
 clean: ## Clean all generated files
 	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${DOC}${COLOR_RESET}"
 	@sudo rm -rf target
 
 ## Build:
+.PHONY: build
 build: $(ARTIFACT_TTL) ## Build the ontology
 
 $(ARTIFACT_TTL): $(ARTIFACT_NT)
@@ -63,8 +65,10 @@ $(BIN) $(OBJ) $(RES):
 	@mkdir -p $@
 
 ## Format:
+.PHONY: format-ontology
 format-ontology: $(CACHE)/owl-x86_64-linux-1.2.2 format-parts ## Format all the parts of the ontology
 
+.PHONY: format-parts
 format-parts: $(SRC)/*.ttl
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}📐 Formating: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
@@ -86,8 +90,10 @@ $(CACHE)/owl-x86_64-linux-1.2.2:
 	chmod +x owl-x86_64-linux-1.2.2
 
 ## Lint:
+.PHONY: lint
 lint: lint-parts lint-ontology ## Lint all available linters
 
+.PHONY: lint-ontology
 lint-ontology: build ## Lint final (generated) ontology
 	@echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
 	@docker run --rm \
@@ -95,6 +101,7 @@ lint-ontology: build ## Lint final (generated) ontology
   		-w /usr/src/ontology \
   		${DOCKER_IMAGE_RUBY_RDF} validate --validate ${ARTIFACT_TTL}
 
+.PHONY: lint-parts
 lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
 	@for file in $^ ; do \
 		echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
@@ -105,8 +112,10 @@ lint-parts: $(SRC)/*.ttl ## Lint all the parts of the ontology
 	done
 
 ## Test:
+.PHONY: test
 test: test-ontology ## Run all available tests
 
+.PHONY: test-ontology
 test-ontology: $(RESULT_FILES) ## Test final (generated) ontology
 
 $(RES)/%.result: $(TST)/%.ttl | $(RES)
@@ -126,6 +135,7 @@ $(RES)/%.result: $(TST)/%.ttl | $(RES)
 	  }\
 
 ## Documentation:
+.PHONY: documentation
 documentation: build ## Generate documentation site
 	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
 	@docker run \
@@ -144,6 +154,7 @@ documentation: build ## Generate documentation site
 	@sudo chown -R  "$$(id -u):$$(id -g)" ${DOC}/ontology
 	@cp -R public/* ${DOC}/ontology/
 
+.PHONY: start-site
 start-site: documentation ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
 	@docker run --rm \
@@ -152,6 +163,7 @@ start-site: documentation ## Start a web server for serving generated documentat
 	  ${DOCKER_IMAGE_HTTPD}
 
 ## Help:
+.PHONY: help
 help: ## Show this help.
 	@echo ''
 	@echo 'Usage:'
