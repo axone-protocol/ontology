@@ -61,12 +61,13 @@ jobs:
         with:
           files: |
             src/*.ttl
+            test/*.ttl
             Makefile
 
-      - name: Validate ttl files
+      - name: Validate rdf files (turle)
         if: steps.changed-ttl-files.outputs.any_changed == 'true'
         run: |
-          make lint-ontology
+          make lint-rdf
 
       - name: Check ttl files are formatted
         if: steps.changed-ttl-files.outputs.any_changed == 'true'
