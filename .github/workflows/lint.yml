@@ -64,15 +64,15 @@ jobs:
             test/*.ttl
             Makefile
 
-      - name: Validate rdf files (turle)
+      - name: Validate rdf files (turtle)
         if: steps.changed-ttl-files.outputs.any_changed == 'true'
         run: |
           make lint-rdf
 
-      - name: Check ttl files are formatted
+      - name: Check rdf files (turtle) are formatted
         if: steps.changed-ttl-files.outputs.any_changed == 'true'
         run: |
-          make format-ontology
+          make format-rdf
           if [[ $(git status -s) ]]; then
             >&2 echo "❌ There is a diff between formatted files and source code"
             >&2 git status
