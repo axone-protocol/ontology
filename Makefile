@@ -41,7 +41,7 @@ clean: ## Clean all generated files
 
 ## Build:
 .PHONY: build
-build: $(ARTIFACT_TTL) ## Build the ontology
+build: $(CACHE)/owl-x86_64-linux-1.2.2 $(ARTIFACT_TTL) ## Build the ontology
 
 $(ARTIFACT_TTL): $(ARTIFACT_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} the ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -57,9 +57,12 @@ $(ARTIFACT_NT): $(OBJ_FILES) | $(BIN)
 $(OBJ)/%.nt: $(SRC)/%.ttl | $(OBJ)
 	@echo "${COLOR_CYAN}🔁 converting${COLOR_RESET} ontology ${COLOR_GREEN}$<${COLOR_RESET} into ${COLOR_GREEN}$@${COLOR_RESET}"
 	@docker run --rm \
-  		-v `pwd`:/usr/src/ontology:rw \
-  		-w /usr/src/ontology \
-  		${DOCKER_IMAGE_RUBY_RDF} serialize -o $@ $<
+	  -v `pwd`:/usr/src/ontology:rw \
+	  -w /usr/src/ontology \
+	  ${DOCKER_IMAGE_UBUNTU} bash -c " \
+		${CACHE}/owl-x86_64-linux-1.2.2 write \
+		-o ntriple $< $@ \
+	  "
 
 $(BIN) $(OBJ) $(RES):
 	@mkdir -p -m 777 $@
