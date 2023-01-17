@@ -55,6 +55,11 @@ okp4core:Dataset a owl:Class ;
     owl:allValuesFrom xsd:anyURI ;
     owl:onProperty okp4core:hasIdentifier ;
   ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:providedBy ;
+  ] ;
   rdfs:subClassOf okp4core:Data .
 
 okp4core:Metadata a owl:Class ;
@@ -201,6 +206,11 @@ okp4core:hasTag a owl:DatatypeProperty ;
   A keyword or term assigned to the resource.
   """@en ;
   rdfs:range xsd:string .
+
+okp4core:providedBy a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "provided by"@en ;
+  rdfs:comment "References the entity that provides the resource."@en ;
+  rdfs:range xsd:anyURI .
 
 okp4core:hasTitle a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has title"@en ;
