@@ -35,11 +35,11 @@ A Data Space is highly customizable to allow its members to create a space of sh
 okp4core:Dataset a owl:Class ;
   rdfs:label "Dataset"@en ;
   rdfs:comment """
-  `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
-  This includes a wide variety of formats, for example: csv files, images, videos, databases, etc.
+  `Dataset` represents the group of related data that is organized and presented in a specific format by the provider. This data can take many forms, 
+  including csv files, images, videos, databases, and more, as well as data sources such as databases and APIs.
 
-  Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means
-  (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.
+  Each dataset is identified and located by its unique [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the path and 
+  mean to access the data through the provider service.
 
   Datasets are described by a set of descriptions (aka metadata) providing information about one or more aspects of the dataset, like the
   time and date of creation, the file size or the data quality, using specific data description vocabularies and thesaurus (e.g. `Exif`, `EBUCore`, ISO 19115),
@@ -49,6 +49,11 @@ okp4core:Dataset a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
     owl:onProperty okp4core:hasRegistrar ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
@@ -100,6 +105,11 @@ okp4core:belongsTo a owl:ObjectProperty ;
 okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
+
+okp4core:hasIdentifier a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has identifier"@en ;
+  rdfs:comment "An identifier for the resource."@en ;
+  rdfs:range xsd:anyURI .
 
 okp4core:hasImage a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has image"@en ;
