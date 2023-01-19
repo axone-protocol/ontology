@@ -47,11 +47,6 @@ okp4core:Dataset a owl:Class ;
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasRegistrar ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
     owl:allValuesFrom okp4core:Service ;
     owl:onProperty okp4core:providedBy ;
   ] ;
@@ -59,6 +54,11 @@ okp4core:Dataset a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom xsd:anyURI ;
     owl:onProperty okp4core:hasIdentifier ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasRegistrar ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
@@ -96,7 +96,7 @@ okp4core:Resource a owl:Class ;
   rdfs:comment """
   `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en ;
-  owl:unionOf ( okp4core:Dataset ) ;
+  owl:unionOf ( okp4core:Dataset okp4core:Service ) ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DataSpace ;
@@ -117,12 +117,12 @@ okp4core:Service a owl:Class ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasIdentity ;
+    owl:onProperty okp4core:hasRegistrar ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasRegistrar ;
+    owl:onProperty okp4core:hasIdentity ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
