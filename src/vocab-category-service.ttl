@@ -76,4 +76,8 @@ svccat:StatisticsAndAnalytics a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Statistics & Analytics"@en .
 
+svccat:Storage a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:prefLabel "Storage"@en .
+
 
