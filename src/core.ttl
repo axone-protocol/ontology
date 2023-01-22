@@ -35,16 +35,26 @@ A Data Space is highly customizable to allow its members to create a space of sh
 okp4core:Dataset a owl:Class ;
   rdfs:label "Dataset"@en ;
   rdfs:comment """
-  `Dataset` denotes the collection of related sets of information, encoded in a defined structure, as published by the data provider.
-  This includes a wide variety of formats, for example: csv files, images, videos, databases, etc.
+  `Dataset` represents the group of related data that is organized and presented in a specific format by the provider. This data can take many forms, 
+  including csv files, images, videos, and more, as well as data sources such as databases and APIs.
 
-  Datasets are accessible on the network by a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the means
-  (the protocol, e.g. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) of access to the resource.
+  Each dataset is identified and located by its unique [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the path and 
+  mean to access the data through the provider service.
 
   Datasets are described by a set of descriptions (aka metadata) providing information about one or more aspects of the dataset, like the
   time and date of creation, the file size or the data quality, using specific data description vocabularies and thesaurus (e.g. `Exif`, `EBUCore`, ISO 19115),
   allowing a great extensibility.
   """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:Service ;
+    owl:onProperty okp4core:providedBy ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
+  ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
@@ -86,12 +96,40 @@ okp4core:Resource a owl:Class ;
   rdfs:comment """
   `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en ;
-  owl:unionOf ( okp4core:Dataset ) ;
+  owl:unionOf ( okp4core:Dataset okp4core:Service ) ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DataSpace ;
     owl:onProperty okp4core:belongsTo ;
   ] .
+
+okp4core:Service a owl:Class ;
+  rdfs:label "Service"@en ;
+  rdfs:comment """
+  `Service` is a generic concept for any kind of service that can be provided through a network (e.g. a REST API, a gRPC service, etc.).
+
+  Each service is identified and located by its unique [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) which defines the entry point
+  of the service.
+
+  Services are described by a set of descriptions (aka metadata) providing information about one or more aspects of the service, like the purpose of the service,
+  the general information of the provider, etc.
+  """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasRegistrar ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasIdentity ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
+  ] ;
+  rdfs:subClassOf okp4core:Data .
 
 okp4core:belongsTo a owl:ObjectProperty ;
   rdfs:label "belongs to"@en ;
@@ -100,6 +138,18 @@ okp4core:belongsTo a owl:ObjectProperty ;
 okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
+
+okp4core:hasIdentifier a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has identifier"@en ;
+  rdfs:comment "An identifier for the resource."@en ;
+  rdfs:range xsd:anyURI .
+
+okp4core:hasIdentity a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has identity"@en ;
+  rdfs:comment """
+  The identity property represents the identity for a resource.
+  """@en ;
+  rdfs:range okp4core:DIDURI .
 
 okp4core:hasImage a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has image"@en ;
@@ -110,6 +160,11 @@ okp4core:hasLicense a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has license"@en ;
   rdfs:comment "A legal document giving official permission to do something with the resource."@en ;
   rdfs:range okp4th:license .
+
+okp4core:hasRegistrar a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has registrar"@en ;
+  rdfs:comment "References the individual, company, or organization that is responsible for registering and managing a resource."@en ;
+  rdfs:range okp4core:DIDURI .
 
 okp4core:hasSpatialCoverage a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has spatial coverage"@en ;
@@ -125,6 +180,11 @@ okp4core:hasTopic a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has topic"@en ;
   rdfs:comment "A topic of the resource."@en ;
   rdfs:range okp4th:topic .
+
+okp4core:providedBy a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "provided by"@en ;
+  rdfs:comment "References the entity that provides the resource."@en ;
+  rdfs:range xsd:anyURI .
 
 okp4core:hasCreator a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has creator"@en ;
@@ -149,11 +209,6 @@ okp4core:hasPublisher a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has publisher"@en ;
   rdfs:comment "An entity primarily responsible for making the resource available."@en ;
   rdfs:range xsd:string .
-
-okp4core:hasRegistrar a owl:ObjectProperty, owl:FunctionalProperty ;
-  rdfs:label "has registrar"@en ;
-  rdfs:comment "References the individual, company, or organization that is responsible for registering and managing a resource."@en ;
-  rdfs:range okp4core:DIDURI .
 
 okp4core:hasStartDate a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has start date"@en ;
