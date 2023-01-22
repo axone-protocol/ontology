@@ -13,42 +13,66 @@
   dcterms:title "The OKP4 Service Category Thesaurus"@en .
 
 svccat:ClassificationModel a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Classification Model"@en .
 
 svccat:ClusteringModel a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Clustering Model"@en .
 
 svccat:ComputerVision a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Computer Vision"@en .
 
 svccat:DataCleaning a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Data Cleaning"@en .
 
 svccat:DataIntegration a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Data Integration"@en .
 
+svccat:DataProcessing a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
+  skos:narrower svccat:ClassificationModel ;
+  skos:narrower svccat:ClusteringModel ;
+  skos:narrower svccat:ComputerVision ;
+  skos:narrower svccat:DataCleaning ;
+  skos:narrower svccat:DataIntegration ;
+  skos:narrower svccat:DataTransformation ;
+  skos:narrower svccat:DeepLearning ;
+  skos:narrower svccat:NaturalLanguageProcessing ;
+  skos:narrower svccat:RegressionModel ;
+  skos:narrower svccat:StatisticsAndAnalytics ;
+  skos:prefLabel "Data Processing"@en .
+
 svccat:DataTransformation a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Data Transformation"@en .
 
 svccat:DeepLearning a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Deep Learning"@en .
 
 svccat:NaturalLanguageProcessing a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Natural Language Processing"@en .
 
 svccat:RegressionModel a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Regression Model"@en .
 
 svccat:StatisticsAndAnalytics a skos:Concept ;
+  skos:broader svccat:DataProcessing ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/service-category> ;
   skos:prefLabel "Statistics & Analytics"@en .
 
