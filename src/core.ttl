@@ -185,7 +185,7 @@ okp4core:hasTemporalCoverage a owl:ObjectProperty, owl:FunctionalProperty ;
 okp4core:hasTopic a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has topic"@en ;
   rdfs:comment "A topic of the resource."@en ;
-  rdfs:range okp4th:topic .
+  rdfs:range skos:Concept .
 
 okp4core:providedBy a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "provided by"@en ;
