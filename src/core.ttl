@@ -5,6 +5,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix okp4core: <https://ontology.okp4.space/core/> .
 @prefix okp4th: <https://ontology.okp4.space/thesaurus/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 okp4core:DIDURI a owl:Class ;
   rdfs:label "Decentralized Identifier URI"@en ;
@@ -52,13 +53,13 @@ okp4core:Dataset a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom xsd:anyURI ;
-    owl:onProperty okp4core:hasIdentifier ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasRegistrar ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasRegistrar ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
@@ -116,8 +117,8 @@ okp4core:Service a owl:Class ;
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasRegistrar ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -126,8 +127,8 @@ okp4core:Service a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom xsd:anyURI ;
-    owl:onProperty okp4core:hasIdentifier ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasRegistrar ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
@@ -138,6 +139,11 @@ okp4core:belongsTo a owl:ObjectProperty ;
 okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
+
+okp4core:hasCategory a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has category"@en ;
+  rdfs:comment "A category of the resource."@en ;
+  rdfs:range skos:Concept .
 
 okp4core:hasIdentifier a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has identifier"@en ;
