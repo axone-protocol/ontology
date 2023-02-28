@@ -1,0 +1,50 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix meta: <https://ontology.okp4.space/metadata/dataspace/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix thesaurus: <https://ontology.okp4.space/thesaurus/> .
+
+meta:GeneralMetadata a owl:Class ;
+  rdfs:label "General Metadata"@en ;
+  rdfs:comment """
+  GeneralMetadata is a type of metadata that provides a general description of the essential information about a dataspace.
+    
+  This typically comprises details like the dataspace's title, description, and tags. The primary objective of this metadata is to provide a broad overview 
+  of the dataspace, facilitating users' comprehension of its purpose and potential use cases. Typically, GeneralMetadata is used along with additional metadata 
+  that provides a more specific perspective on a particular aspect of the dataspace.
+   """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom thesaurus:topic ;
+    owl:onProperty core:hasTopic ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasDescription ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasPublisher ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:uri ;
+    owl:onProperty core:hasImage ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasTitle ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:string ;
+    owl:onProperty core:hasTag ;
+  ] ;
+  rdfs:subClassOf core:Metadata .
+
