@@ -53,8 +53,8 @@ okp4core:Dataset a owl:Class ;
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom okp4core:Service ;
-    owl:onProperty okp4core:providedBy ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -63,8 +63,8 @@ okp4core:Dataset a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom xsd:anyURI ;
-    owl:onProperty okp4core:hasIdentifier ;
+    owl:allValuesFrom okp4core:Service ;
+    owl:onProperty okp4core:providedBy ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
@@ -122,8 +122,8 @@ okp4core:Service a owl:Class ;
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom xsd:anyURI ;
-    owl:onProperty okp4core:hasIdentifier ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasRegistrar ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -132,8 +132,8 @@ okp4core:Service a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasRegistrar ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
   ] ;
   rdfs:subClassOf okp4core:Data .
 
@@ -148,6 +148,11 @@ okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
 okp4core:hasCategory a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "has category"@en ;
   rdfs:comment "A category of the resource."@en ;
+  rdfs:range skos:Concept .
+
+okp4core:hasFormat a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "has format"@en ;
+  rdfs:comment "The format of the resource."@en ;
   rdfs:range skos:Concept .
 
 okp4core:hasIdentifier a owl:ObjectProperty, owl:FunctionalProperty ;
