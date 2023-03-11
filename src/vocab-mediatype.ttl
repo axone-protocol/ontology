@@ -12,10 +12,20 @@ media-type:hasMediaType a owl:DatatypeProperty, owl:FunctionalProperty ;
 
 <https://ontology.okp4.space/thesaurus/media-type> a skos:ConceptScheme ;
   rdfs:label "Media types Thesaurus"@en ;
-  dct:description "This thesaurus identifyies a sef of Internet media types (originally called MIME type) that are awareness and usage significant."@en ;
+  dct:description """
+    The Media Types Thesaurus is a comprehensive list of Internet media types (originally called MIME types) that are commonly used and widely recognized.
+    It serves as a standardized vocabulary to describe different types of content that can be transmitted over the Internet, including text, images, audio, and video.
+    
+    The primary purpose of this thesaurus is to enable interoperability and resource sharing within the dataverse, with a specific focus on datasets. Its design is intended
+    to promote the exchange of information and facilitate compatibility between different systems and tools used for managing and analyzing datasets.
+  """@en ;
+  dct:source <https://specifications.freedesktop.org/shared-mime-info-spec/latest/> ;
   dct:title "Media types Thesaurus"@en ;
   rdfs:seeAlso <http://en.wikipedia.org/wiki/Internet_media_type> ;
-  rdfs:seeAlso <http://standards.freedesktop.org/shared-mime-info-spec/> .
+  rdfs:seeAlso <https://www.iana.org/assignments/media-types/media-types.xhtml> ;
+  skos:note """
+    Note that this thesaurus may not be complete and all the media-type terms may not have all translations.
+  """@en .
 
 media-type:application a skos:Collection ;
   rdfs:label "Application types"@en ;
