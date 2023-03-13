@@ -4462,6 +4462,16 @@ media-type:text_css a skos:Concept ;
   skos:prefLabel "Каскадна стилска страна (CSS)"@sr ;
   skos:prefLabel "다단 스타일시트"@ko .
 
+media-type:text_csv a skos:Concept ;
+  media-type:hasMediaType "text/csv" ;
+  rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc7111> ;
+  skos:altLabel "CSV"@en ;
+  skos:exactMatch media-type:text_x-comma-separated-values ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "CSV (valeurs séparées par des virgules)"@fr ;
+  skos:prefLabel "Comma Separated Values"@en ;
+  skos:prefLabel "Werte durch Komma getrennt"@de .
+
 media-type:text_directory a skos:Concept ;
   media-type:hasMediaType "text/directory" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
