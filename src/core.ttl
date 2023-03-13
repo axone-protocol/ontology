@@ -35,8 +35,7 @@ A Data Space is highly customizable to allow its members to create a space of sh
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
     owl:onProperty okp4core:hasRegistrar ;
-  ] ;
-  rdfs:subClassOf okp4core:Data .
+  ] .
 
 okp4core:Dataset a owl:Class ;
   rdfs:label "Dataset"@en ;
@@ -65,8 +64,7 @@ okp4core:Dataset a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom okp4core:Service ;
     owl:onProperty okp4core:providedBy ;
-  ] ;
-  rdfs:subClassOf okp4core:Data .
+  ] .
 
 okp4core:Metadata a owl:Class ;
   rdfs:label "Metadata"@en ;
@@ -77,8 +75,7 @@ okp4core:Metadata a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom okp4core:Data ;
     owl:onProperty okp4core:describes ;
-  ] ;
-  rdfs:subClassOf okp4core:Data .
+  ] .
 
 okp4core:Period a owl:Class ;
   rdfs:label "Period"@en ;
@@ -134,8 +131,7 @@ okp4core:Service a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom xsd:anyURI ;
     owl:onProperty okp4core:hasIdentifier ;
-  ] ;
-  rdfs:subClassOf okp4core:Data .
+  ] .
 
 okp4core:belongsTo a owl:ObjectProperty ;
   rdfs:label "belongs to"@en ;
