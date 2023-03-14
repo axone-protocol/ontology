@@ -201,7 +201,7 @@ okp4core:hasTopic a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:range skos:Concept .
 
 okp4core:lastModifiedBy a owl:ObjectProperty ;
-  rdfs:label "last Modified By"@en ;
+  rdfs:label "last modified by"@en ;
   rdfs:comment """
   The entity who last modified the resource.
   """@en ;
