@@ -1,0 +1,34 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+
+meta:AuditMetadata a owl:Class ;
+  rdfs:label "Audit Metadata"@en ;
+  rdfs:comment """
+  Audit Metadata is a set of metadata that is used to track the history of a resource, i.e. the creation, modification, and deletion of a resource.
+  """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:dateTime ;
+    owl:onProperty core:createdOn ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:dateTime ;
+    owl:onProperty core:lastModifiedOn ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom core:DIDURI ;
+    owl:onProperty core:lastModifiedBy ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom core:DIDURI ;
+    owl:onProperty core:createdBy ;
+  ] ;
+  rdfs:subClassOf core:Metadata .
+
+
