@@ -137,6 +137,13 @@ okp4core:belongsTo a owl:ObjectProperty ;
   rdfs:label "belongs to"@en ;
   rdfs:comment "Denotes the state of membership of an entity towards another."@en .
 
+okp4core:createdBy a owl:ObjectProperty ;
+  rdfs:label "created by"@en ;
+  rdfs:comment """
+  The entity who created the resource.
+  """@en ;
+  rdfs:range okp4core:DIDURI .
+
 okp4core:describes a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "describes"@en ;
   rdfs:comment "Description link between a resource (i.e. the data) and the description of that resource (i.e. metadata)."@en .
@@ -193,10 +200,24 @@ okp4core:hasTopic a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:comment "A topic of the resource."@en ;
   rdfs:range skos:Concept .
 
+okp4core:lastModifiedBy a owl:ObjectProperty ;
+  rdfs:label "last modified by"@en ;
+  rdfs:comment """
+  The entity who last modified the resource.
+  """@en ;
+  rdfs:range okp4core:DIDURI .
+
 okp4core:providedBy a owl:ObjectProperty, owl:FunctionalProperty ;
   rdfs:label "provided by"@en ;
   rdfs:comment "References the entity that provides the resource."@en ;
   rdfs:range xsd:anyURI .
+
+okp4core:createdOn a owl:DatatypeProperty ;
+  rdfs:label "created on"@en ;
+  rdfs:comment """
+  The date and time when the resource was created.
+  """@en ;
+  rdfs:range xsd:dateTime .
 
 okp4core:hasCreator a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:label "has creator"@en ;
@@ -241,17 +262,15 @@ okp4core:hasTitle a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:comment "A name given to the resource."@en ;
   rdfs:range xsd:string .
 
+okp4core:lastModifiedOn a owl:DatatypeProperty ;
+  rdfs:label "last modified on"@en ;
+  rdfs:comment """
+  The date and time when the resource was last modified.
+  """@en ;
+  rdfs:range xsd:dateTime .
+
 dcterms:description a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
-
-okp4core:wasCreatedBy a owl:AnnotationProperty ;
-  rdfs:label "was created by"@en ;
-  rdfs:comment """
-  Information about who created the resource.
-
-  This information is stored initially and will never be changed thereafter.
-  """@en ;
-  rdfs:range xsd:uri .
 
 
