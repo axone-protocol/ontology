@@ -431,6 +431,7 @@ license:dataLicenses a skos:Collection ;
   skos:member license:CC-BY-NC-4_0 ;
   skos:member license:CC-BY-SA-4_0 ;
   skos:member license:CC0-1_0 ;
+  skos:member license:LO-FR-1_0 ;
   skos:member license:LO-FR-2_0 ;
   skos:member license:ODC-BY-1_0 ;
   skos:member license:ODbL-1_0 ;
