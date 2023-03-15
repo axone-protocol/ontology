@@ -185,6 +185,10 @@ license:LGPL-3_0 a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
   skos:prefLabel "GNU Lesser General Public License 3.0"@en .
 
+license:LO-FR-1_0 a skos:Concept ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
+  skos:prefLabel "Open License 1.0"@en .
+
 license:LO-FR-2_0 a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/license> ;
   skos:prefLabel "Open License 2.0"@en .
