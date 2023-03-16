@@ -11,7 +11,7 @@
   """@en ;
   dcterms:title "The OKP4 Topic Thesaurus"@en .
 
-<https://ontology.okp4.space/thesaurus/topic/AgricultureEnvironmentAndForestry> a skos:Concept ;
+<https://ontology.okp4.space/thesaurus/topic/AgricultureFoodEnvironmentAndForestry> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
   skos:prefLabel "Agriculture, food, environment and forestry"@en .
 
