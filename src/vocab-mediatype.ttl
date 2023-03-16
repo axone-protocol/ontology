@@ -247,6 +247,12 @@ media-type:application_andrew-inset a skos:Concept ;
   skos:prefLabel "Mewnosodiad Andrew Toolkit"@cy ;
   skos:prefLabel "ajout Andrew Toolkit"@fr .
 
+media-type:application_geopackage a skos:Concept ;
+  media-type:hasMediaType "application/geopackage+sqlite3" ;
+  skos:broader media-type:application_octet-stream 
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "GeoPackage"@en .
+  
 media-type:application_illustrator a skos:Concept ;
   media-type:hasMediaType "application/illustrator" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
