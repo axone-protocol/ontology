@@ -1,0 +1,32 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/37fb789f-23d8-41b3-900b-418147d115fd> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:fbe11a63-85da-4f82-97c4-f719ac1f4ce8 ;
+    core:hasCategory category:DataTransformation ;
+    core:hasDescription "L'outil Data Selector permet de sélectionner un échantillon de l'ensemble de données, en spécifiant un nombre de lignes. Il est possible de supprimer ou de conserver des colonnes. Un autre paramètre permet de sélectionner les données d'une colonne en fonction de sa (ses) valeur(s)."@fr ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "selection",
+        "traitement de données" ;
+    core:hasTitle "Data Selector"@fr .
+
+<https://ontology.okp4.space/dataverse/service/metadata/730f271e-022e-411c-9eb9-23d8140af611> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2022-09-28T11:13:13Z"^^xsd:dateTimeStamp ;
+    core:describes service:fbe11a63-85da-4f82-97c4-f719ac1f4ce8 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2022-09-28T11:13:13Z"^^xsd:dateTimeStamp .
+
+service:fbe11a63-85da-4f82-97c4-f719ac1f4ce8 a owl:NamedIndividual,
+        core:Service ;
+    core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:fbe11a63-85da-4f82-97c4-f719ac1f4ce8> ;
+    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+

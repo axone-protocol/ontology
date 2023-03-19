@@ -1,0 +1,32 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/e7f1468b-f7f6-42da-85cf-f562b337554a> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2022-03-03T16:49:46Z"^^xsd:dateTimeStamp ;
+    core:describes service:e4fa9cb1-59f8-4f40-9ba3-f00f8a18e3de ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2022-03-03T16:49:46Z"^^xsd:dateTimeStamp .
+
+<https://ontology.okp4.space/dataverse/service/metadata/f9a890a3-e1fa-46ba-897d-60e6e414c457> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:e4fa9cb1-59f8-4f40-9ba3-f00f8a18e3de ;
+    core:hasCategory category:DataTransformation ;
+    core:hasDescription "L'outil Data Join Geospatial permet de joindre deux jeux de données géoréférencé."@fr ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "jointure",
+        "traitement de données" ;
+    core:hasTitle "Data Join Geospatial"@fr .
+
+service:e4fa9cb1-59f8-4f40-9ba3-f00f8a18e3de a owl:NamedIndividual,
+        core:Service ;
+    core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:e4fa9cb1-59f8-4f40-9ba3-f00f8a18e3de> ;
+    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+

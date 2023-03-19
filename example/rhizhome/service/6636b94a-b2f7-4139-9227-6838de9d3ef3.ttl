@@ -1,0 +1,32 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/2eb089a5-c388-4411-b451-afd05b8a128a> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2022-10-10T01:09:39Z"^^xsd:dateTimeStamp ;
+    core:describes service:6636b94a-b2f7-4139-9227-6838de9d3ef3 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2022-10-10T01:09:39Z"^^xsd:dateTimeStamp .
+
+<https://ontology.okp4.space/dataverse/service/metadata/90359e65-5685-4721-9298-f457a47787ff> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:6636b94a-b2f7-4139-9227-6838de9d3ef3 ;
+    core:hasCategory category:DataTransformation ;
+    core:hasDescription "L'outil Data Join Tabular permet de joindre deux jeux de données contenant des valeurs communes afin d'apporter de nouvelles informations."@fr ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "jointure",
+        "traitement de données" ;
+    core:hasTitle "Data Join Tabular"@fr .
+
+service:6636b94a-b2f7-4139-9227-6838de9d3ef3 a owl:NamedIndividual,
+        core:Service ;
+    core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:6636b94a-b2f7-4139-9227-6838de9d3ef3> ;
+    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+

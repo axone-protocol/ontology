@@ -1,0 +1,29 @@
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/dataspace/metadata/56827e28-0a27-40ee-803e-76a57cd7de07> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/dataspace/GeneralMetadata> ;
+    core:describes dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasDescription "Rhizome est un data space exploité par OKP4, actuellement en cours de développement sur la base de la technologie OKP4. Rhizome démontre la puissance du traitement et du partage des données, et la valeur que nous pouvons obtenir en connectant efficacement différentes sources de données agricoles en libre accès sous différents formats de données. Rhizome vise à connecter autant de données que possible et à fournir des visuels et métriques de grande valeur dans différents domaines liés à l'agriculture, tels que l'utilisation des terres et la gestion du territoire, la gestion des cultures et du bétail, ainsi que les ressources forestières et l'industrie du bois."@fr ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "agriculture",
+        "dataviz",
+        "demonstrateur",
+        "open data" ;
+    core:hasTitle "Rhizome"@fr ;
+    core:hasTopic topic:AgricultureEnvironmentForestry .
+
+<https://ontology.okp4.space/dataverse/dataspace/metadata/e33f7ab8-4f8d-4588-a3fe-43e5e77b189e> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2022-10-30T15:29:16.507000+00:00"^^xsd:dateTime ;
+    core:describes dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2022-10-30T15:29:16.507000+00:00"^^xsd:dateTime .
+
+dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 a owl:NamedIndividual,
+        core:DataSpace .
+
