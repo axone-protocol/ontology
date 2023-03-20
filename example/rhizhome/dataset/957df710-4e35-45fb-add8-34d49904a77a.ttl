@@ -14,9 +14,11 @@
     core:describes dataset:957df710-4e35-45fb-add8-34d49904a77a ;
     core:hasCreator "AGRESTE" ;
     core:hasDescription "Statistique agricole annuelle (SAA), constitué des superficies, des rendements et de la production du territoire français."@fr ;
+    core:hasDescription "Annual agricultural statistics, consisting of the areas, yields and production of the French territory."@en ;
+    core:hasDescription "Jährliche Agrarstatistik, bestehend aus den Flächen, Erträgen und der Produktion des französischen Staatsgebiets."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLience licence:LO-FR-1_0 ;
+    core:hasLicense licence:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "agriculture",
@@ -30,6 +32,8 @@
                 core:Period ;
             core:hasStartDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "AGRESTE 2020"@fr ;
+    core:hasTitle "AGRESTE 2020"@en ;
+    core:hasTitle "AGRESTE 2020"@de ;
     core:hasTopic topic:AgricultureEnvironmentAndForestry .
 
 <https://ontology.okp4.space/dataverse/dataset/metadata/e672e90e-1c5b-4a46-bf4b-ce3026cf3b9e> a owl:NamedIndividual,

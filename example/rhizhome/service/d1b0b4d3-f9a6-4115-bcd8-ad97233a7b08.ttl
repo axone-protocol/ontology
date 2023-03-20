@@ -10,9 +10,13 @@
     core:describes service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Service de stockage de données"@fr ;
+    core:hasDescription "Data storage service"@en ;
+    core:hasDescription "Datenspeicherungsdienst"@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Storage"@fr .
+    core:hasTitle "Stockage"@fr ;
+    core:hasTitle "Storage"@en ;
+    core:hasTitle "Speicherung"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/8f5a671d-ba50-4768-9354-4268bd4345e9> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

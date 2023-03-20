@@ -10,10 +10,14 @@
     core:describes service:987e1ffd-05e7-48e4-a429-1172689477ee ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Grouping permet organiser des données identiques en groupes."@fr ;
+    core:hasDescription "The Data Grouping tool allows you to organize identical data into groups."@en ;
+    core:hasDescription "Mit dem Tool Data Grouping können Sie identische Daten in Gruppen organisieren."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "regroupement",
         "traitement de données" ;
-    core:hasTitle "Data Grouping"@fr .
+    core:hasTitle "Data Grouping"@fr ;
+    core:hasTitle "Data Grouping"@en ;
+    core:hasTitle "Data Grouping"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/a65267da-98ec-4db6-a8ad-29aeb48efd5e> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

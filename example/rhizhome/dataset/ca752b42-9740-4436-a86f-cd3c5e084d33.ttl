@@ -22,9 +22,11 @@
     core:describes dataset:ca752b42-9740-4436-a86f-cd3c5e084d33 ;
     core:hasCreator "OKP4" ;
     core:hasDescription "Jeu de données issu de la jointure entre les données du RPG et de l'AGRESTE. Obtenu grâce à un enchainement de traitements de la donnée à l'aide du protocole OKP4."@fr ;
+    core:hasDescription "Data set resulting from the join between RPG and AGRESTE data. Obtained through a sequence of data processing using the OKP4 protocol."@en ;
+    core:hasDescription "Datensatz, der aus der Verknüpfung von GLR- und AGRESTE-Daten hervorgeht. Erhalten durch eine Verkettung von Datenverarbeitungen mithilfe des OKP4-Protokolls."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLience licence:LO-FR-2_0 ;
+    core:hasLicense licence:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "RPG",
@@ -39,6 +41,8 @@
                 core:Period ;
             core:hasStartDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "RPG AGRESTE 2020"@fr ;
+    core:hasTitle "RPG AGRESTE 2020"@en ;
+    core:hasTitle "RPG AGRESTE 2020"@de ;
     core:hasTopic topic:AgricultureEnvironmentAndForestry .
 
 dataset:ca752b42-9740-4436-a86f-cd3c5e084d33 a owl:NamedIndividual,

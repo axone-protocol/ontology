@@ -18,10 +18,14 @@
     core:describes service:16c4cd10-521a-4829-b1bd-a1e2ac60459a ;
     core:hasCategory category:DataIntegration ;
     core:hasDescription "Ce service permet d'injecter des fichiers de données dans OpenSearch afin de pouvoir connsommer la connaisance créée à l'aide de visualisation."@fr ;
+    core:hasDescription "This service allows you to inject data files into OpenSearch so that you can consume the knowledge created through visualization."@en ;
+    core:hasDescription "Dieser Dienst ermöglicht es, Datendateien in OpenSearch zu injizieren, um das erzeugte Wissen mithilfe von Visualisierungen zu konsumieren."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "dataviz",
-        "opensearsh" ;
-    core:hasTitle "Data Connector"@fr .
+        "opensearch" ;
+    core:hasTitle "Data Connector"@fr ;
+    core:hasTitle "Data Connector"@en ;
+    core:hasTitle "Data Connector"@de .
 
 service:16c4cd10-521a-4829-b1bd-a1e2ac60459a a owl:NamedIndividual,
         core:Service ;

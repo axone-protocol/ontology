@@ -18,10 +18,14 @@
     core:describes service:e4fa9cb1-59f8-4f40-9ba3-f00f8a18e3de ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Join Geospatial permet de joindre deux jeux de données géoréférencé."@fr ;
+    core:hasDescription "The Data Join Geospatial tool allows to join two georeferenced datasets."@en ;
+    core:hasDescription "Mit dem Tool Data Join Geospatial können Sie zwei georeferenzierte Datensätze miteinander verbinden."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "jointure",
         "traitement de données" ;
-    core:hasTitle "Data Join Geospatial"@fr .
+    core:hasTitle "Data Join Geospatial"@fr ;
+    core:hasTitle "Data Join Geospatial"@en ;
+    core:hasTitle "Data Join Geospatial"@de .
 
 service:e4fa9cb1-59f8-4f40-9ba3-f00f8a18e3de a owl:NamedIndividual,
         core:Service ;

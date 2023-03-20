@@ -10,10 +10,14 @@
     core:describes service:fbe11a63-85da-4f82-97c4-f719ac1f4ce8 ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Selector permet de sélectionner un échantillon de l'ensemble de données, en spécifiant un nombre de lignes. Il est possible de supprimer ou de conserver des colonnes. Un autre paramètre permet de sélectionner les données d'une colonne en fonction de sa (ses) valeur(s)."@fr ;
+    core:hasDescription "The Data Selector tool allows you to select a sample of the data set, specifying a number of rows. It is possible to delete or keep columns. Another parameter allows you to select data from a column according to its value(s)."@en ;
+    core:hasDescription "Mit dem Werkzeug Data Selector können Sie eine Stichprobe aus dem Datensatz auswählen, indem Sie eine Anzahl von Zeilen angeben. Es ist möglich, Spalten zu löschen oder beizubehalten. Eine weitere Einstellung ermöglicht es, die Daten einer Spalte anhand ihres Wertes (ihrer Werte) auszuwählen."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "selection",
         "traitement de données" ;
-    core:hasTitle "Data Selector"@fr .
+    core:hasTitle "Data Selector"@fr ;
+    core:hasTitle "Data Selector"@en ;
+    core:hasTitle "Data Selector"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/730f271e-022e-411c-9eb9-23d8140af611> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

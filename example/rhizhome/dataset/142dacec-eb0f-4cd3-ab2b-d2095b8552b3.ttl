@@ -13,10 +13,12 @@
         <https://ontology.okp4.space/metadata/dataset/GeneralMetadata> ;
     core:describes dataset:142dacec-eb0f-4cd3-ab2b-d2095b8552b3 ;
     core:hasCreator "IGN" ;
-    core:hasDescription "ADMIN EXPRESS permet d'effectuer des croisements avec d'autres sources de données dans le but de construire des représentations thématiques du territoire selon une granularité administrative (commune, arrondissement départementaux, département, région). ADMIN EXPRESS est décliné dans une édition « COG », conforme au code officiel géographique publié chaque année par l'INSEE."@fr ;
+    core:hasDescription "ADMIN EXPRESS permet d'effectuer des croisements avec d'autres sources de données dans le but de construire des représentations thématiques du territoire selon une granularité administrative (commune, arrondissement départementaux, département, région). ADMIN EXPRESS est décliné dans une édition \"COG\", conforme au code officiel géographique publié chaque année par l'INSEE."@fr ;
+    core:hasDescription "ADMIN EXPRESS allows cross-referencing with other data sources in order to build thematic representations of the territory according to an administrative granularity (commune, departmental district, department, region). ADMIN EXPRESS is available in a \"COG\" edition, in accordance with the official geographic code published each year by INSEE."@en ;
+    core:hasDescription "ADMIN EXPRESS ermöglicht es, Kreuzungen mit anderen Datenquellen vorzunehmen, um thematische Darstellungen des Gebiets nach administrativer Granularität (Gemeinde, Departementsbezirke, Departement, Region) zu erstellen. ADMIN EXPRESS ist in einer \"COG\"-Ausgabe erhältlich, die dem offiziellen geografischen Code entspricht, der jedes Jahr vom INSEE veröffentlicht wird."@de ;
     core:hasFormat mediatype:application_vnd-shp ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLience licence:LO-FR-2_0 ;
+    core:hasLicense licence:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "INSEE",
@@ -28,6 +30,8 @@
                 core:Period ;
             core:hasStartDate "2022-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "ADMIN EXPRESS COG 2022 DEPARTEMENT"@fr ;
+    core:hasTitle "ADMIN EXPRESS COG 2022 DEPARTMENT"@en ;
+    core:hasTitle "ADMIN EXPRESS COG 2022 DEPARTEMENT"@de ;
     core:hasTopic topic:Other .
 
 <https://ontology.okp4.space/dataverse/dataset/metadata/ab1d3821-3b74-4281-8c46-f1b10ec15050> a owl:NamedIndividual,

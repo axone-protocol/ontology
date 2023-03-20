@@ -10,11 +10,15 @@
     core:describes service:6272c8d0-f5ed-4394-8f54-a7b429faec13 ;
     core:hasCategory category:DataCleaning ;
     core:hasDescription "L'outil Data Refactor permet d'éditer, de modifier un jeu de données afin de le standardiser."@fr ;
+    core:hasDescription "The Data Refactor tool allows you to edit and modify a data set in order to standardize it."@en ;
+    core:hasDescription "Mit dem Tool Data Refactor können Sie einen Datensatz bearbeiten, ändern und so standardisieren."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "standard",
         "traitement de données",
         "édition" ;
-    core:hasTitle "Data Refactor"@fr .
+    core:hasTitle "Data Refactor"@fr ;
+    core:hasTitle "Data Refactor"@en ;
+    core:hasTitle "Data Refactor"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/ea1c97e1-3b79-4c1a-9d07-6caa347d25eb> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

@@ -18,10 +18,14 @@
     core:describes service:6636b94a-b2f7-4139-9227-6838de9d3ef3 ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Join Tabular permet de joindre deux jeux de données contenant des valeurs communes afin d'apporter de nouvelles informations."@fr ;
+    core:hasDescription "The Data Join Tabular tool allows you to join two datasets containing common values to provide new information."@en ;
+    core:hasDescription "Mit dem Tool Data Join Tabular können Sie zwei Datensätze mit gemeinsamen Werten verbinden, um neue Informationen zu erhalten."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "jointure",
         "traitement de données" ;
-    core:hasTitle "Data Join Tabular"@fr .
+    core:hasTitle "Data Join Tabular"@fr ;
+    core:hasTitle "Data Join Tabular"@en ;
+    core:hasTitle "Data Join Tabular"@de .
 
 service:6636b94a-b2f7-4139-9227-6838de9d3ef3 a owl:NamedIndividual,
         core:Service ;

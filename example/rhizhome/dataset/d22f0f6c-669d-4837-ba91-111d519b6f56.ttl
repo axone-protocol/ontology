@@ -21,15 +21,19 @@
     core:describes dataset:d22f0f6c-669d-4837-ba91-111d519b6f56 ;
     core:hasCreator "INSEE" ;
     core:hasDescription "La Nomenclature d'activités française (NAF), est une nomenclature des activités économiques productives, principalement élaborée pour faciliter l'organisation de l'information économique et sociale."@fr ;
+    core:hasDescription "The French Nomenclature of Activities (NAF) is a nomenclature of productive economic activities, mainly developed to facilitate the organization of economic and social information."@en ;
+    core:hasDescription "Die französische Nomenklatur der Wirtschaftszweige (Nomenclature d'activités française, NAF) ist eine Nomenklatur der produktiven Wirtschaftszweige, die hauptsächlich entwickelt wurde, um die Organisation von wirtschaftlichen und sozialen Informationen zu erleichtern."@de ;
     core:hasFormat mediatype:application_vndms-excel ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLience licence:LO-FR-2_0 ;
+    core:hasLicense licence:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasTag "INSEE",
         "entreprise",
         "france",
         "open data" ;
     core:hasTitle "Table référentielle des codes NAF Rév2"@fr ;
+    core:hasTitle "Reference table of NAF Rev2 codes"@en ;
+    core:hasTitle "Referenztabelle der NAF-Codes Rev. 2"@de ;
     core:hasTopic topic:Other .
 
 dataset:d22f0f6c-669d-4837-ba91-111d519b6f56 a owl:NamedIndividual,
