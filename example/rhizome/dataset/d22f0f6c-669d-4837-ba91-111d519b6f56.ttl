@@ -1,0 +1,45 @@
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix licence: <https://ontology.okp4.space/thesaurus/licence/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/dataset/metadata/2f6a2898-7311-4472-805e-51f144c59375> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2022-06-15T21:25:21+00:00"^^xsd:dateTime ;
+    core:describes dataset:d22f0f6c-669d-4837-ba91-111d519b6f56 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2022-06-15T21:25:21+00:00"^^xsd:dateTime .
+
+<https://ontology.okp4.space/dataverse/dataset/metadata/3028c5ae-444b-4827-b56e-ef52dbe1ddba> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/dataset/GeneralMetadata> ;
+    core:describes dataset:d22f0f6c-669d-4837-ba91-111d519b6f56 ;
+    core:hasCreator "INSEE" ;
+    core:hasDescription "La Nomenclature d'activités française (NAF), est une nomenclature des activités économiques productives, principalement élaborée pour faciliter l'organisation de l'information économique et sociale."@fr ;
+    core:hasDescription "The French Nomenclature of Activities (NAF) is a nomenclature of productive economic activities, mainly developed to facilitate the organization of economic and social information."@en ;
+    core:hasDescription "Die französische Nomenklatur der Wirtschaftszweige (Nomenclature d'activités française, NAF) ist eine Nomenklatur der produktiven Wirtschaftszweige, die hauptsächlich entwickelt wurde, um die Organisation von wirtschaftlichen und sozialen Informationen zu erleichtern."@de ;
+    core:hasFormat mediatype:application_vndms-excel ;
+    core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
+    core:hasLicense licence:LO-FR-2_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "INSEE",
+        "entreprise",
+        "france",
+        "open data" ;
+    core:hasTitle "Table référentielle des codes NAF Rév2"@fr ;
+    core:hasTitle "Reference table of NAF Rev2 codes"@en ;
+    core:hasTitle "Referenztabelle der NAF-Codes Rev. 2"@de ;
+    core:hasTopic topic:Other .
+
+dataset:d22f0f6c-669d-4837-ba91-111d519b6f56 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:d22f0f6c-669d-4837-ba91-111d519b6f56> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+
