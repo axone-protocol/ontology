@@ -53,6 +53,27 @@ The construction of this ontology follows a number of steps which are described 
 4. __Ontology integration__:
    Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
 
+## Building the ontology
+
+The ontology is built using [GNU make](https://www.gnu.org/software/make/manual/make.html) and [Docker](https://www.docker.com/).
+To build the ontology, run the following command:
+
+```bash
+make build
+```
+
+This will build the ontology and the examples under the `target` directory. The files generated have different [RDF](https://www.w3.org/RDF/) formats ([Turtle](https://www.w3.org/TR/turtle/), [N-Triples](http://www.w3.org/TR/n-triples/), [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), [JSON-LD](https://www.w3.org/TR/json-ld11/)) to be used in different contexts.
+
+```text
+./target
+   ├── examples.jsonld
+   ├── examples.nt
+   ├── examples.ttl
+   ├── okp4.nt
+   ├── okp4.rdf.xml
+   └── okp4.ttl
+```
+
 ## Contributing
 
 Contributions are welcome. Please check the following guidelines:
