@@ -181,32 +181,32 @@ $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(SRC_ONT)/%.ttl
          }
 
 ## Documentation:
-.PHONY: documentation
-documentation: build ## Generate documentation site
-	@echo "${COLOR_CYAN}Generate documentation for ${COLOR_GREEN}${ARTIFACT_TTL}${COLOR_RESET}"
-	@docker run \
-	    --rm \
-  		-v `pwd`:/usr/src/ontology \
-		${DOCKER_IMAGE_WIDOCO} \
-			-ontFile /usr/src/ontology/${ARTIFACT_TTL} \
-			-outFolder /usr/src/ontology/${DOC}/ontology \
-			-lang en \
-			-rewriteAll \
-			-getOntologyMetadata \
-			-includeImportedOntologies \
-			-webVowl \
-			-displayDirectImportsOnly \
-			-uniteSections
-	@sudo chown -R  "$$(id -u):$$(id -g)" ${DOC}/ontology
-	@cp -R public/* ${DOC}/ontology/
+.PHONY: doc
+doc: build-ontology ## Generate documentation site
+    @echo "${COLOR_CYAN}📖 generating documentation for ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
+    @docker run \
+        --rm \
+        -v `pwd`:/usr/src/ontology \
+        ${DOCKER_IMAGE_WIDOCO} \
+            -ontFile /usr/src/ontology/${BIN_OKP4_RDFXML} \
+            -outFolder /usr/src/ontology/${DST_DOC} \
+            -lang en \
+            -rewriteAll \
+            -getOntologyMetadata \
+            -includeImportedOntologies \
+            -webVowl \
+            -displayDirectImportsOnly \
+            -uniteSections
+    @sudo chown -R  "$$(id -u):$$(id -g)" ${DST_DOC}
+    @cp -R public/* ${DST_DOC}
 
-.PHONY: start-site
-start-site: documentation ## Start a web server for serving generated documentation
-	@echo "${COLOR_CYAN}Site will be available here: ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
-	@docker run --rm \
-	  -p 8080:80 \
-	  -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
-	  ${DOCKER_IMAGE_HTTPD}
+.PHONY: doc-serve
+doc-serve: doc ## Start a web server for serving generated documentation
+    @echo "${COLOR_CYAN}🌐 serving documentation - available at ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
+    @docker run --rm \
+      -p 8080:80 \
+      -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
+      ${DOCKER_IMAGE_HTTPD}
 
 ## Help:
 .PHONY: help
