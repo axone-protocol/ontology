@@ -47,6 +47,37 @@ BIN_EXAMPLE_TTL    := $(DST)/examples.ttl
 BIN_EXAMPLE_NT     := $(DST)/examples.nt
 BIN_EXAMPLE_JSONLD := $(DST)/examples.jsonld
 
+# Runners
+RDF_WRITE = \
+  docker run --rm \
+      -v `pwd`:/usr/src/ontology:rw \
+      -w /usr/src/ontology \
+      ${DOCKER_IMAGE_JRE} \
+        java -jar ${DST_CACHE}/owl-cli-1.2.2.jar \
+        write \
+        -o $1 \
+        $2 \
+        $3
+RDF_SERIALIZE = \
+  @docker run --rm \
+    -v `pwd`:/usr/src/ontology:rw \
+    -w /usr/src/ontology \
+    ${DOCKER_IMAGE_RUBY_RDF} \
+      serialize \
+      -o $4 \
+      --output-format $2 \
+      --input-format $1 \
+      $3
+RDF_SHACL = \
+  @docker run --rm \
+    -v `pwd`:/usr/src/ontology \
+    ${DOCKER_IMAGE_PYSHACL} poetry run pyshacl \
+    --shacl /usr/src/ontology/$1 \
+    --output /usr/src/ontology/$2 \
+    --inference none \
+    --format human \
+    /usr/src/ontology/$(BIN_OKP4_NT)
+
 .PHONY: help
 all: help
 
