@@ -208,7 +208,7 @@ doc-serve: doc ## Start a web server for serving generated documentation
       -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
       ${DOCKER_IMAGE_HTTPD}
 
-PHONY: cache
+.PHONY: cache
 cache: $(DST_CACHE)/owl-cli-1.2.2.jar ## Download all required files to cache
 
 $(DST_CACHE)/owl-cli-1.2.2.jar:
@@ -217,7 +217,12 @@ $(DST_CACHE)/owl-cli-1.2.2.jar:
     cd $(DST_CACHE); \
     wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-cli-1.2.2.jar
 
+
 ## Help:
+.PHONY: vars
+vars: ## Show relevant variables used in this Makefile
+	$(foreach var,$(sort $(filter DOCKER_IMAGE_% SRC_% DST_% OBJ_% FLG_% BIN_%,$(.VARIABLES))),$(info ${COLOR_GREEN}$(var)${COLOR_WHITE}=${COLOR_CYAN}$($(var))${COLOR_RESET}))
+
 .PHONY: help
 help: ## Show this help.
 	@echo ''
