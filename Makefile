@@ -16,21 +16,36 @@ COLOR_WHITE  := $(shell tput -Txterm setaf 7)
 COLOR_YELLOW := $(shell tput -Txterm setaf 3)
 
 # Build constants
-TARGET       := ./target
-OBJ          := $(TARGET)/nt
-DOC          := $(TARGET)/doc
-CACHE        := $(TARGET)/.cache
-RES          := $(TARGET)/test
-SRC          := ./src
-TST          := ./test
-EXM          := ./example
-SRC_FILES    := $(wildcard $(SRC)/*.ttl)
-EXM_FILES	 := $(shell find $(EXM) -name "*.ttl")
-OBJ_FILES    := $(patsubst $(SRC)/%.ttl,$(OBJ)/%.nt,$(SRC_FILES))
-RESULT_FILES := $(wildcard $(TST)/*.ttl)
-RESULT_FILES := $(patsubst $(TST)/%.ttl,$(RES)/%.result,$(RESULT_FILES))
-ARTIFACT_TTL := $(TARGET)/okp4.ttl
-ARTIFACT_NT  := $(TARGET)/okp4.nt
+ROOT               := .
+
+DST                := $(ROOT)/target
+DST_CACHE          := $(DST)/.cache
+DST_EXM            := $(DST)/example
+DST_ONT            := $(DST)/ontology
+DST_LINT           := $(DST)/lint
+DST_TEST           := $(DST)/test
+DST_DOC            := $(DST)/doc
+
+SRC_ONT            := $(ROOT)/src
+SRC_EXM            := $(ROOT)/example
+SRC_TST            := $(ROOT)/test
+SRC_EXMS           := $(shell find $(SRC_EXM) -name "*.ttl" | sort)
+SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
+SRC_TTLS           := $(shell find $(SRC_ONT) $(SRC_EXM) -name "*.ttl" | sort)
+SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
+
+OBJ_EXMS           := $(patsubst $(SRC_EXM)/%.ttl,$(DST_EXM)/%.nt,$(SRC_EXMS))
+OBJ_ONTS           := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
+FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested.flag,$(SRC_TSTS))
+FLG_TTLS_FMT       := $(patsubst $(ROOT)/%.ttl,$(DST_LINT)/%.formatted.flag,$(SRC_TTLS))
+FLG_TTLS_LNT       := $(patsubst $(ROOT)/%.ttl,$(DST_LINT)/%.linted.flag,$(SRC_TTLS))
+
+BIN_OKP4_TTL       := $(DST)/okp4.ttl
+BIN_OKP4_NT        := $(DST)/okp4.nt
+BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
+BIN_EXAMPLE_TTL    := $(DST)/examples.ttl
+BIN_EXAMPLE_NT     := $(DST)/examples.nt
+BIN_EXAMPLE_JSONLD := $(DST)/examples.jsonld
 
 .PHONY: help
 all: help
