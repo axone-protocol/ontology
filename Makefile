@@ -149,19 +149,19 @@ $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
 
 ## Lint:
 .PHONY: lint
-lint: lint-rdf ## Lint with all available linters
+lint: lint-ttl ## Lint with all available linters
 
-.PHONY: lint-rdf
+.PHONY: lint-ttl
+lint-ttl: cache $(FLG_TTLS_LNT) ## Lint all Turtle files
 
-lint-rdf: $(SRC)/*.ttl $(TST)/*.ttl $(EXM_FILES) ## Lint all the rdf files (turtle)
-	@set -e; \
-	for file in $^ ; do \
-		echo "${COLOR_CYAN}Linting: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
-		docker run --rm \
-		  -v `pwd`:/usr/src/ontology:ro \
-		  -w /usr/src/ontology \
-		  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $${file}; \
-	done
+$(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
+    @echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
+    @mkdir -p $(@D)
+    @docker run --rm \
+      -v `pwd`:/usr/src/ontology:ro \
+      -w /usr/src/ontology \
+      ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
+    @touch $@
 
 ## Test:
 .PHONY: test
