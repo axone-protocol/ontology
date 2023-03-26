@@ -135,28 +135,17 @@ $(BIN_EXAMPLE_JSONLD): $(BIN_EXAMPLE_NT)
 
 ## Format:
 .PHONY: format
-format: format-rdf ## Format with all available formatters
+format: format-ttl ## Format with all available formatters
 
-.PHONY: format-rdf
-format-rdf: $(SRC)/*.ttl $(TST)/*.ttl | $(CACHE)/owl-x86_64-linux-1.2.2 ## Format all the rdfs files (turtle)
-	@for file in $^ ; do \
-		echo "${COLOR_CYAN}📐 Formating: ${COLOR_GREEN}$${file}${COLOR_RESET}"; \
-		docker run --rm \
-  		  -v `pwd`:/usr/src/ontology:rw \
-  		  -w /usr/src/ontology \
-  		  ${DOCKER_IMAGE_UBUNTU} bash -c " \
-		  	${CACHE}/owl-x86_64-linux-1.2.2 write \
-			$${file} $${file}.formatted \
-		  " && \
-		mv -f "$${file}.formatted" "$${file}"; \
-	done
+.PHONY: format-ttl
+format-ttl: cache $(FLG_TTLS_FMT) ## Format all Turtle files
 
-$(CACHE)/owl-x86_64-linux-1.2.2:
-	@echo "⤵️ installing $(notdir $@)"
-	@mkdir -p $(CACHE); \
-	cd $(CACHE); \
-	wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-x86_64-linux-1.2.2; \
-	chmod +x owl-x86_64-linux-1.2.2
+$(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
+    @echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
+    @mkdir -p $(@D)
+    ${call RDF_WRITE,turtle,$<,"$<.formatted"}
+    @mv -f "$<.formatted" $<
+    @touch $@
 
 ## Lint:
 .PHONY: lint
