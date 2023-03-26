@@ -168,23 +168,17 @@ $(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
 test: test-ontology ## Run all available tests
 
 .PHONY: test-ontology
-test-ontology: $(RESULT_FILES) ## Test final (generated) ontology
+test-ontology: build $(FLG_TSTS) ## Test final (generated) ontology
 
-$(RES)/%.result: $(TST)/%.ttl | $(RES) build
-	@echo "${COLOR_CYAN}Testing: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@docker run --rm \
-	  -v `pwd`:/usr/src/ontology \
-	  ${DOCKER_IMAGE_PYSHACL} poetry run pyshacl \
-		-s /usr/src/ontology/$< \
-	    -o /usr/src/ontology/$@ \
-		/usr/src/ontology/$(ARTIFACT_TTL) \
-	  && echo "✅ Test passed" \
-	  || { \
-		echo "❌ Test failed"; \
-		echo "📄 Test result:"; \
-		cat $@; \
-		exit 1; \
-	  }\
+$(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(SRC_ONT)/%.ttl
+    @echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
+    @mkdir -p $(@D)
+    $(call RDF_SHACL,$<,$@) \
+      && echo "  ↳ ✅ ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
+      || { \
+           echo "  ↳ ❌ ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
+           exit 1; \
+         }
 
 ## Documentation:
 .PHONY: documentation
