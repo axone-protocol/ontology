@@ -14,12 +14,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-documentation:
+  build-ontology:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
 
+      - name: Build ontology and examples
+        run: |
+          make build
+
       - name: Build documentation
         run: |
-          make documentation
+          make doc
