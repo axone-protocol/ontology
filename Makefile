@@ -84,8 +84,8 @@ all: help
 ## Clean:
 .PHONY: clean
 clean: ## Clean all generated files
-	@echo "${COLOR_CYAN}Cleaning: ${COLOR_GREEN}${DOC}${COLOR_RESET}"
-	@rm -rf target
+    @echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST}${COLOR_RESET}"
+    @rm -rf ${DST}
 
 ## Build:
 .PHONY: build
