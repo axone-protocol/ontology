@@ -49,7 +49,7 @@ BIN_EXAMPLE_JSONLD := $(DST)/examples.jsonld
 
 # Runners
 RDF_WRITE = \
-  docker run --rm \
+  @docker run --rm \
       -v `pwd`:/usr/src/ontology:rw \
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_JRE} \
@@ -84,12 +84,12 @@ all: help
 ## Clean:
 .PHONY: clean
 clean: ## Clean all generated files
-    @echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST}${COLOR_RESET}"
-    @rm -rf ${DST}
+	@echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST}${COLOR_RESET}"
+	@rm -rf ${DST}
 
 ## Build:
 .PHONY: build
-build:  build-ontology build-examples ## Build all the files (ontology and examples)
+build: build-ontology build-examples ## Build all the files (ontology and examples)
 
 .PHONY: cache build-ontology
 build-ontology: $(BIN_OKP4_TTL) $(BIN_OKP4_RDFXML) ## Build the ontology
@@ -98,40 +98,40 @@ build-ontology: $(BIN_OKP4_TTL) $(BIN_OKP4_RDFXML) ## Build the ontology
 build-examples: $(BIN_EXAMPLE_TTL) $(BIN_EXAMPLE_JSONLD) ## Build the examples
 
 $(OBJ_ONTS): $(DST_ONT)/%.nt: $(SRC_ONT)/%.ttl
-    @echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
-    @mkdir -p $(@D)
-    ${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
+	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p $(@D)
+	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
 
 $(OBJ_EXMS): $(DST_EXM)/%.nt: $(SRC_EXM)/%.ttl
-    @echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
-    @mkdir -p $(@D)
-    ${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
+	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p $(@D)
+	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
 
 $(BIN_OKP4_NT): $(OBJ_ONTS)
-    @echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-    @cat $^ > $@
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@cat $^ > $@
 
 $(BIN_OKP4_TTL): $(BIN_OKP4_NT)
-    @echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-    @touch $@
-    ${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@touch $@
+	${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
 
 $(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
-    @echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-    @touch $@
-    ${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@touch $@
+	${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
 
 $(BIN_EXAMPLE_NT): $(OBJ_EXMS)
-    @echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-    @cat $^ > $@
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
+	@cat $^ > $@
 
 $(BIN_EXAMPLE_TTL): $(BIN_EXAMPLE_NT)
-    @echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-    ${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
+	${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
 
 $(BIN_EXAMPLE_JSONLD): $(BIN_EXAMPLE_NT)
-    @echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-    ${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
+	${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
 
 ## Format:
 .PHONY: format
@@ -141,11 +141,11 @@ format: format-ttl ## Format with all available formatters
 format-ttl: cache $(FLG_TTLS_FMT) ## Format all Turtle files
 
 $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
-    @echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
-    @mkdir -p $(@D)
-    ${call RDF_WRITE,turtle,$<,"$<.formatted"}
-    @mv -f "$<.formatted" $<
-    @touch $@
+	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@mkdir -p $(@D)
+	${call RDF_WRITE,turtle,$<,"$<.formatted"}
+	@mv -f "$<.formatted" $<
+	@touch $@
 
 ## Lint:
 .PHONY: lint
@@ -155,13 +155,13 @@ lint: lint-ttl ## Lint with all available linters
 lint-ttl: cache $(FLG_TTLS_LNT) ## Lint all Turtle files
 
 $(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
-    @echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
-    @mkdir -p $(@D)
-    @docker run --rm \
+	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@mkdir -p $(@D)
+	@docker run --rm \
       -v `pwd`:/usr/src/ontology:ro \
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
-    @touch $@
+	@touch $@
 
 ## Test:
 .PHONY: test
@@ -171,9 +171,9 @@ test: test-ontology ## Run all available tests
 test-ontology: build $(FLG_TSTS) ## Test final (generated) ontology
 
 $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(SRC_ONT)/%.ttl
-    @echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
-    @mkdir -p $(@D)
-    $(call RDF_SHACL,$<,$@) \
+	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@mkdir -p $(@D)
+	$(call RDF_SHACL,$<,$@) \
       && echo "  ↳ ✅ ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
       || { \
            echo "  ↳ ❌ ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
@@ -183,8 +183,8 @@ $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(SRC_ONT)/%.ttl
 ## Documentation:
 .PHONY: doc
 doc: build-ontology ## Generate documentation site
-    @echo "${COLOR_CYAN}📖 generating documentation for ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
-    @docker run \
+	@echo "${COLOR_CYAN}📖 generating documentation for ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
+	@docker run \
         --rm \
         -v `pwd`:/usr/src/ontology \
         ${DOCKER_IMAGE_WIDOCO} \
@@ -197,16 +197,25 @@ doc: build-ontology ## Generate documentation site
             -webVowl \
             -displayDirectImportsOnly \
             -uniteSections
-    @sudo chown -R  "$$(id -u):$$(id -g)" ${DST_DOC}
-    @cp -R public/* ${DST_DOC}
+	@sudo chown -R  "$$(id -u):$$(id -g)" ${DST_DOC}
+	@cp -R public/* ${DST_DOC}
 
 .PHONY: doc-serve
 doc-serve: doc ## Start a web server for serving generated documentation
-    @echo "${COLOR_CYAN}🌐 serving documentation - available at ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
-    @docker run --rm \
+	@echo "${COLOR_CYAN}🌐 serving documentation - available at ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
+	@docker run --rm \
       -p 8080:80 \
       -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
       ${DOCKER_IMAGE_HTTPD}
+
+PHONY: cache
+cache: $(DST_CACHE)/owl-cli-1.2.2.jar ## Download all required files to cache
+
+$(DST_CACHE)/owl-cli-1.2.2.jar:
+	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
+	@mkdir -p $(DST_CACHE); \
+    cd $(DST_CACHE); \
+    wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-cli-1.2.2.jar
 
 ## Help:
 .PHONY: help
