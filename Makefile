@@ -1,11 +1,11 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
 # Docker images
-DOCKER_IMAGE_RUBY_RDF=ghcr.io/okp4/ruby-rdf:3.1.15
-DOCKER_IMAGE_WIDOCO=ghcr.io/okp4/widoco:1.4.15
-DOCKER_IMAGE_HTTPD=httpd:2.4.51
-DOCKER_IMAGE_UBUNTU=ubuntu:22.04
-DOCKER_IMAGE_PYSHACL=ashleysommer/pyshacl:0.20.0
+DOCKER_IMAGE_HTTPD    := httpd:2.4.51
+DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:0.20.0
+DOCKER_IMAGE_RUBY_RDF := ghcr.io/okp4/ruby-rdf:3.1.15
+DOCKER_IMAGE_WIDOCO   := ghcr.io/okp4/widoco:1.4.15
+DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 
 # Some colors
 COLOR_GREEN  = $(shell tput -Txterm setaf 2)
