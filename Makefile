@@ -8,11 +8,12 @@ DOCKER_IMAGE_WIDOCO   := ghcr.io/okp4/widoco:1.4.15
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 
 # Some colors
-COLOR_GREEN  = $(shell tput -Txterm setaf 2)
-COLOR_YELLOW = $(shell tput -Txterm setaf 3)
-COLOR_WHITE  = $(shell tput -Txterm setaf 7)
-COLOR_CYAN   = $(shell tput -Txterm setaf 6)
-COLOR_RESET  = $(shell tput -Txterm sgr0)
+COLOR_CYAN   := $(shell tput -Txterm setaf 6)
+COLOR_GREEN  := $(shell tput -Txterm setaf 2)
+COLOR_RED    := $(shell tput -Txterm setaf 1)
+COLOR_RESET  := $(shell tput -Txterm sgr0)
+COLOR_WHITE  := $(shell tput -Txterm setaf 7)
+COLOR_YELLOW := $(shell tput -Txterm setaf 3)
 
 # Build constants
 TARGET       := ./target
