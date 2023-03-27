@@ -170,7 +170,7 @@ test: test-ontology ## Run all available tests
 .PHONY: test-ontology
 test-ontology: build $(FLG_TSTS) ## Test final (generated) ontology
 
-$(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(SRC_ONT)/%.ttl
+$(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p $(@D)
 	$(call RDF_SHACL,$<,$@) \
