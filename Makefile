@@ -99,12 +99,12 @@ build-examples: $(BIN_EXAMPLE_TTL) $(BIN_EXAMPLE_JSONLD) ## Build the examples
 
 $(OBJ_ONTS): $(DST_ONT)/%.nt: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p $(@D)
+	@mkdir -p -m 777 $(@D)
 	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
 
 $(OBJ_EXMS): $(DST_EXM)/%.nt: $(SRC_EXM)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p $(@D)
+	@mkdir -p -m 777 $(@D)
 	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
 
 $(BIN_OKP4_NT): $(OBJ_ONTS)
@@ -142,7 +142,7 @@ format-ttl: cache $(FLG_TTLS_FMT) ## Format all Turtle files
 
 $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
 	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@mkdir -p $(@D)
+	@mkdir -p -m 777 $(@D)
 	${call RDF_WRITE,turtle,$<,"$<.formatted"}
 	@mv -f "$<.formatted" $<
 	@touch $@
@@ -156,7 +156,7 @@ lint-ttl: cache $(FLG_TTLS_LNT) ## Lint all Turtle files
 
 $(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@mkdir -p $(@D)
+	@mkdir -p -m 777 $(@D)
 	@docker run --rm \
       -v `pwd`:/usr/src/ontology:ro \
       -w /usr/src/ontology \
@@ -172,7 +172,7 @@ test-ontology: build $(FLG_TSTS) ## Test final (generated) ontology
 
 $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@mkdir -p $(@D)
+	@mkdir -p -m 777 $(@D)
 	$(call RDF_SHACL,$<,$@) \
       && echo "  ↳ ✅ ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
       || { \
@@ -213,7 +213,7 @@ cache: $(DST_CACHE)/owl-cli-1.2.2.jar ## Download all required files to cache
 
 $(DST_CACHE)/owl-cli-1.2.2.jar:
 	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
-	@mkdir -p $(DST_CACHE); \
+	@mkdir -p -m 777 $(DST_CACHE); \
     cd $(DST_CACHE); \
     wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-cli-1.2.2.jar
 
