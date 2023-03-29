@@ -1,0 +1,49 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+meta:8de7ca33-378e-445c-b087-f5ef334d2cca a dstmeta:GeneralMetadata ;
+    core:describes dataset:8ad881d8-f350-4cc0-bab3-8e694aa63cd3 ;
+    core:hasCreator "Agence Bio"^^xsd:string ;
+    core:hasDescription "Les données diffusées correspondent aux parcelles déclarées en agriculture biologique et en conversion lors des demandes d'aides de la Politique Agricole Commune (PAC) au titre de la campagne 2020 - dans leur situation connue et arrêtée par l'administration en fin d’instruction, après le 30 juin de l'année N+1. Ces données comprennent 80 à 85% du total des parcelles conduites selon le mode de production biologique, toutes les parcelles conduites en bio ne faisant pas l’objet d’une demande d’aide PAC."@fr ;
+    core:hasFormat mediatype:application_zip ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLience license:LO-FR-2_0 ;
+    core:hasPublisher "OKP4"^^xsd:string ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "agriculture"^^xsd:string,
+        "agriculture-biologique"^^xsd:string,
+        "aides"^^xsd:string,
+        "europe"^^xsd:string,
+        "pac"^^xsd:string,
+        "parcellaire-agricole"^^xsd:string,
+        "politique-agricole-commune"^^xsd:string,
+        "registre-parcellaire-graphique"^^xsd:string,
+        "rpg"^^xsd:string ;
+    core:hasTemporalCoverage [ a core:Period ;
+            core:hasEndDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            core:hasStartDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
+    core:hasTitle "Parcelles en Agriculture Biologique (AB) déclarées à la PAC 2020"^^xsd:string ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+meta:b103b4c8-a830-428b-8537-b82360679235 a meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:8ad881d8-f350-4cc0-bab3-8e694aa63cd3 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:8ad881d8-f350-4cc0-bab3-8e694aa63cd3 a core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:8ad881d8-f350-4cc0-bab3-8e694aa63cd3> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

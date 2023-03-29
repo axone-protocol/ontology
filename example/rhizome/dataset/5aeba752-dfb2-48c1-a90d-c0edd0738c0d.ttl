@@ -1,0 +1,54 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+meta:8de7ca33-378e-445c-b087-f5ef334d2cca a dstmeta:GeneralMetadata ;
+    core:describes dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d ;
+    core:hasCreator "IGN"^^xsd:string ;
+    core:hasDescription "La BD TOPO® est une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique, exploitable à des échelles allant du 1 : 2 000 au 1 : 50 000. Elle couvre de manière cohérente l’ensemble des entités géographiques et administratives du territoire national. Elle permet la visualisation, le positionnement, la simulation au service de l’analyse et de la gestion opérationnelle du territoire. La description des objets géographiques en 3D permet de représenter de façon réaliste les analyses spatiales utiles aux processus de décision dans le cadre d’études diverses. Depuis 2019, une nouvelle édition (mise à jour) est publiée chaque trimestre."@fr ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-05/bdtopo_Vignette.png?itok=2PvQWZsd> ;
+    core:hasLience license:LO-FR-2_0 ;
+    core:hasPublisher "OKP4"^^xsd:string ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "activites"^^xsd:string,
+        "administratif"^^xsd:string,
+        "adresses"^^xsd:string,
+        "bati"^^xsd:string,
+        "hydrographie"^^xsd:string,
+        "lieux-nommes"^^xsd:string,
+        "occupationdusol"^^xsd:string,
+        "route"^^xsd:string,
+        "routes-transports"^^xsd:string,
+        "servicestopo"^^xsd:string,
+        "topographie"^^xsd:string,
+        "vecteur"^^xsd:string,
+        "vectorielle"^^xsd:string,
+        "zones-reglementees"^^xsd:string ;
+    core:hasTemporalCoverage [ a core:Period ;
+            core:hasEndDate "None"^^xsd:dateTime ;
+            core:hasStartDate "None"^^xsd:dateTime ] ;
+    core:hasTitle "BD TOPO départements"^^xsd:string ;
+    core:hasTopic topic:Other .
+
+meta:b103b4c8-a830-428b-8537-b82360679235 a meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d a core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:5aeba752-dfb2-48c1-a90d-c0edd0738c0d> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

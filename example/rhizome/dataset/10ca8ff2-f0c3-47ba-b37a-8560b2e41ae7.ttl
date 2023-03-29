@@ -1,0 +1,41 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+meta:8de7ca33-378e-445c-b087-f5ef334d2cca a dstmeta:GeneralMetadata ;
+    core:describes dataset:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7 ;
+    core:hasCreator "IGN"^^xsd:string ;
+    core:hasDescription "L’OCS GE est une base de données de référence pour la description de l’occupation du sol de l’ensemble du territoire métropolitain et des départements et régions d’outre-mer (DROM). Elle est produite à partir de données existantes extraites des bases de données de l’IGN, et de toutes autres données mobilisables issues de référentiels nationaux ou locaux. Plus récemment, dans le cadre du dispositif de l’artificialisation des sols, elle est également produite grâce à des procédés inédits d’intelligence artificielle."@fr ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-06/ocsge_Vignette.png?itok=1hXTpDGh> ;
+    core:hasLience license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4"^^xsd:string ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "occupationocsocsgeocsol"^^xsd:string ;
+    core:hasTemporalCoverage [ a core:Period ;
+            core:hasEndDate "None"^^xsd:dateTime ;
+            core:hasStartDate "None"^^xsd:dateTime ] ;
+    core:hasTitle "OCS GE"^^xsd:string ;
+    core:hasTopic topic:Other .
+
+meta:b103b4c8-a830-428b-8537-b82360679235 a meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7 a core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+
