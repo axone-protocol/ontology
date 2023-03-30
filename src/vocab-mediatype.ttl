@@ -249,7 +249,7 @@ media-type:application_andrew-inset a skos:Concept ;
 
 media-type:application_geopackage a skos:Concept ;
   media-type:hasMediaType "application/geopackage+sqlite3" ;
-  skos:broader media-type:application_octet-stream 
+  skos:broader media-type:application_octet-stream ; 
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "GeoPackage"@en .
   
@@ -491,7 +491,7 @@ media-type:application_vndcorel-draw a skos:Concept ;
 
 media-type:application_vnddbf a skos:Concept ;
   media-type:hasMediaType "application/vnd.dbf" ;
-  skos:broader media-type:application_octet-stream 
+  skos:broader media-type:application_octet-stream ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Shapefile format .dbf extension"@en .
 
@@ -605,13 +605,13 @@ media-type:application_vndrn-realmedia a skos:Concept ;
 
 media-type:application_vndshp a skos:Concept ;
   media-type:hasMediaType "application/vnd.shp" ;
-  skos:broader media-type:application_octet-stream 
+  skos:broader media-type:application_octet-stream ; 
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Shapefile format .shp extension"@en .
 
 media-type:application_vndshx a skos:Concept ;
   media-type:hasMediaType "application/vnd.shx" ;
-  skos:broader media-type:application_octet-stream 
+  skos:broader media-type:application_octet-stream ; 
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Shapefile format .shx extension"@en .
 
