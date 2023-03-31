@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Diese Daten zur Anzahl der Betriebe, Flächen und Viehbestände stammen aus den jährlichen Kontrollen, die die zugelassenen Zertifizierungsstellen auf den Bauernhöfen und in den Verarbeitungs- und Vertriebsunternehmen durchführen, die sich für den ökologischen Landbau engagieren. Die Daten werden auf Gemeindeebene aggregiert: Insee-Code der Gemeinde, in der sich der Standort der Aktivität oder, falls nicht vorhanden, der Sitz des Betriebes befindet."@de ;
     core:hasFormat mediatype:application_vndms-excel ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "agriculture-biologique",

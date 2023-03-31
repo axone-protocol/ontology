@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Die BD Forêt® Version 1 stellt die Bodenbedeckung dar (durch Beschreibung der Struktur und der vorherrschenden Zusammensetzung der bewaldeten oder natürlichen Formationen) und stützt sich dabei auf eine Nomenklatur der Departements, die je nach der Waldvielfalt des kartografierten Departements zwischen 15 und 60 Positionen variiert. Bis 2006 wurde sie nach Departements zusammengestellt und ist nun für das gesamte französische Mutterland verfügbar. Für mehr als die Hälfte der Departements sind mehrere Versionen der BD Forêt® Version 1 verfügbar. Die BD Forêt® Version 2 wurde zwischen 2007 und 2018 durch Fotointerpretation von Farbinfrarotbildern der BD ORTHO® erstellt. Sie weist jedem kartografierten Strand mit einer Fläche von mehr als 5000 m² einen Vegetationsformationstyp zu."@de ;
     core:hasFormat mediatype:application_vndshp ;
     core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-05/bdforet_Vignette.png?itok=33k5NnHh> ;
-    core:hasLience license:LO-FR-1_0 ;
+    core:hasLicense license:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "foret" ;

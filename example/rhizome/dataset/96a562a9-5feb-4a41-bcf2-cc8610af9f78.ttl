@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Die Total Eating Studies (TES) sind nationale Erhebungen, deren Ziel es ist, die chronische Belastung einer Bevölkerung durch chemische Verbindungen über die Nahrung zu schätzen. Sie beruhen auf der Analyse einer großen Anzahl von Substanzen in Lebensmittelproben, die für die Ernährung der untersuchten Bevölkerung repräsentativ sind. Von 2012 bis 2016 führte Anses die Etude de l'Alimentation Totale infantile (EATi) durch, eine der ersten Studien auf internationaler Ebene, mit der die ernährungsbedingte Exposition von nicht gestillten Kindern unter drei Jahren geschätzt werden konnte. Sie umfasste die Analyse von 670 Substanzen (Umweltkontaminanten, Mineralien, Pflanzenschutzmittel usw.) in der Nahrung von nicht gestillten Kindern, die im französischen Mutterland leben."@de ;
     core:hasFormat mediatype:application_vndms-excel ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-1_0 ;
+    core:hasLicense license:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "alimentation",

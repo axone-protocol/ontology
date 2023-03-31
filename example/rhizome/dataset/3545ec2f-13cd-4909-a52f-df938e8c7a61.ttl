@@ -2,7 +2,7 @@
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
 @prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
-@prefix licence: <https://ontology.okp4.space/thesaurus/licence/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
 @prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix service: <https://ontology.okp4.space/dataverse/service/> .
@@ -26,7 +26,7 @@
     core:hasDescription "Das grafische Parzellenregister ist eine geografische Datenbank, die als Referenz für die Bearbeitung von Beihilfen im Rahmen der Gemeinsamen Agrarpolitik (GAP) dient. Die anonymisierte Version, die hier im Rahmen des öffentlichen Dienstes zur Bereitstellung von Referenzdaten verbreitet wird, enthält die grafischen Daten der Parzellen (seit 2015), die mit ihrer Hauptkultur versehen sind. Diese Daten werden seit 2007 von der Agence de services et de paiement (ASP) erstellt."@de ;
     core:hasFormat mediatype:application_geopackage-sqlite3 ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLicense licence:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "agriculture",

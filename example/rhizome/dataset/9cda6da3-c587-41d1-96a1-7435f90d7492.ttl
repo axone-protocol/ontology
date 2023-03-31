@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Der SWI (von englisch Soil Wetness Index ) ist ein in der wissenschaftlichen Literatur dokumentierter Bodenfeuchtigkeitsindex. Er stellt in einer Tiefe von etwa zwei Metern den Zustand des Wasservorrats im Boden im Vergleich zum nutzbaren Wasservorrat (Wasser, das für die Ernährung der Pflanzen zur Verfügung steht) dar."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "humidite",

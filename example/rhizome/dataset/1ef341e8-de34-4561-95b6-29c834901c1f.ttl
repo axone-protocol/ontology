@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Das Produkt Höhenlinien ist eine Vektorversion der Höhenlinien (auch Isohypsen genannt), die in den kartografischen Produkten des IGN enthalten sind. Sie werden aus den GBR ALTI®-Daten berechnet und ermöglichen es, das Relief zusätzlich zu den klassischen digitalen Geländemodellen (DTM) zu verstehen."@de ;
     core:hasFormat mediatype:application_vndshp ;
     core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-07/courbes-de-niveau_Vignette.png?itok=cM-yMcBA> ;
-    core:hasLience license:LO-FR-1_0 ;
+    core:hasLicense license:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "courbe-de-niveau" ;

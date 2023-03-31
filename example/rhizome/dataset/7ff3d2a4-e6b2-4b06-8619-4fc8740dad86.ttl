@@ -2,7 +2,7 @@
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
 @prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
-@prefix licence: <https://ontology.okp4.space/thesaurus/licence/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
 @prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix service: <https://ontology.okp4.space/dataverse/service/> .
@@ -26,7 +26,7 @@
     core:hasDescription "ADMIN EXPRESS ermöglicht es, Kreuzungen mit anderen Datenquellen vorzunehmen, um thematische Darstellungen des Gebiets nach administrativer Granularität (Gemeinde, Departementsbezirke, Departement, Region) zu erstellen. ADMIN EXPRESS ist in einer \"COG\"-Ausgabe erhältlich, die dem offiziellen geografischen Code entspricht, der jedes Jahr vom INSEE veröffentlicht wird."@de ;
     core:hasFormat mediatype:application_vnd-shp ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLicense licence:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "INSEE",

@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Gemäß den EU-Verordnungen 1151/2012 vom 21. November 2012 und 1308/2013 vom 17. Dezember 2013 wird in der Spezifikation der Bezeichnungen das geografische Gebiet der als g.U. oder g.g.A. eingetragenen Erzeugnisse festgelegt. Im Falle einer Bezeichnung ist das geografische Gebiet oder Produktionsgebiet das Gebiet, in dem alle Schritte der Herstellung des Produkts unter Einhaltung der in der Spezifikation festgelegten Gepflogenheiten und Produktionsbedingungen durchgeführt werden müssen, um das SIQO beanspruchen zu können. Das Produktionsgebiet der Bezeichnung muss das Produktionsgebiet des Rohstoffs (das in der Regel dem abgegrenzten oder identifizierten Gebiet entspricht) und das Verarbeitungsgebiet umfassen."@de ;
     core:hasFormat mediatype:application_vndshp ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "agriculture",

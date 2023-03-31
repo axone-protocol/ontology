@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Mit dem Ziel, die Fischbestände, die marine Biodiversität und die mit der Fischerei verbundene Wirtschaftstätigkeit langfristig zu schützen, entwickelt das staatliche Startup-Unternehmen MonitorFish & MonitorEnv Werkzeuge, um die Ausrichtung und Überwachung von Fischereikontrollen und Kontrollen der Meeresumwelt zu verbessern."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-1_0 ;
+    core:hasLicense license:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:001 ;
     core:hasTag "biodiversite",

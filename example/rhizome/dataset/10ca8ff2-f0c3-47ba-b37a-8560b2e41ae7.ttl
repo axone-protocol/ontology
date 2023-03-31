@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Die OCS GE ist eine Referenzdatenbank für die Beschreibung der Bodenbedeckung des gesamten französischen Mutterlandes und der überseeischen Departements und Regionen (DROM). Sie wird auf der Grundlage vorhandener Daten aus den Datenbanken des IGN und aller anderen mobilisierbaren Daten aus nationalen oder lokalen Referenzsystemen erstellt. In jüngster Zeit wird sie im Zusammenhang mit der künstlichen Bodenbearbeitung auch mithilfe neuartiger Verfahren der künstlichen Intelligenz erstellt."@de ;
     core:hasFormat mediatype:application_vndshp ;
     core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-06/ocsge_Vignette.png?itok=1hXTpDGh> ;
-    core:hasLience license:LO-FR-1_0 ;
+    core:hasLicense license:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "occupation",

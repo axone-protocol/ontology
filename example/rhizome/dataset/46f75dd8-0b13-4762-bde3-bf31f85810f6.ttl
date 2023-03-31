@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Der Indikator für die Häufigkeit von Pflanzenschutzbehandlungen (IFT) ist ein Indikator zur Überwachung des Einsatzes von Pflanzenschutzmitteln auf der Ebene von landwirtschaftlichen Betrieben oder Gruppen von Betrieben. Der LFI wird als Anzahl der Referenzdosen pro Hektar ausgedrückt, die in einer räumlichen Einheit während eines bestimmten Zeitraums angewendet werden. In der Regel ist die räumliche Einheit die Parzelle und der Zeitraum die Anbausaison. Weitere Informationen unter http://agriculture.gouv.fr/indicateur-de-frequence-de-traitements-phytosanitaires-ift"@de ;    
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-1_0 ;
+    core:hasLicense license:LO-FR-1_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "code-source",

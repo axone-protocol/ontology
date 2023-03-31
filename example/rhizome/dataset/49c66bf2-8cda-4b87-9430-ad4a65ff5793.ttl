@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Die Waldbranddatenbank (BDIFF) ist eine Internetanwendung, die seit 2006 die Daten über Waldbrände in Frankreich zentralisiert und alle diese Informationen der Öffentlichkeit und den staatlichen Stellen zur Verfügung stellt. Die Anwendung, die über das Portal verbreitet wird, ermöglicht es jedem interessierten Nutzer, nationale Daten über Waldbrände bis zum Jahr vor dem aktuellen Jahr abzurufen, und zwar aggregiert auf Gemeindeebene."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "foret" ;

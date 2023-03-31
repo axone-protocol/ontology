@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Die BD TOPO® ist eine vektorielle 3D-Beschreibung (strukturiert in Objekten) der Elemente des Territoriums und seiner Infrastrukturen mit metrischer Genauigkeit, die in Maßstäben von 1 : 2 000 bis 1 : 50 000 verwendet werden kann. Sie deckt auf kohärente Weise alle geografischen und administrativen Einheiten des nationalen Territoriums ab. Sie ermöglicht die Visualisierung, Positionierung und Simulation im Dienste der Analyse und des operativen Managements des Territoriums. Die Beschreibung der geografischen Objekte in 3D ermöglicht eine realistische Darstellung der räumlichen Analysen, die für die Entscheidungsprozesse im Rahmen verschiedener Studien nützlich sind. Seit 2019 wird jedes Quartal eine neue (aktualisierte) Ausgabe veröffentlicht."@de ;
     core:hasFormat mediatype:application_vndshp ;
     core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-05/bdtopo_Vignette.png?itok=2PvQWZsd> ;
-    core:hasLience license:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "activites",

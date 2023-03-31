@@ -21,7 +21,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasDescription "Der Hohe Umweltwert (Haute Valeur Environnementale, HVE) ist die dritte und höchste Stufe der Umweltzertifizierung von landwirtschaftlichen Betrieben. Seit Februar 2012, als das System eingeführt wurde, hat sich die Zahl der zertifizierten Betriebe stetig erhöht. Fast 29.900 Betriebe (29.898 Betriebe - Stand: 1. Juli 2022) können sich als High Environmental Value-Betriebe bezeichnen, was ihr Engagement für umweltfreundliche Praktiken und Biodiversität belegt."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
-    core:hasLience license:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasSpatialCoverage area:250 ;
     core:hasTag "agroecologie",
