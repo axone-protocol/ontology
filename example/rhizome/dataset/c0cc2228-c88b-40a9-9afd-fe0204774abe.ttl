@@ -1,0 +1,53 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:c0cc2228-c88b-40a9-9afd-fe0204774abe ;
+    core:hasCreator "Ministère de la Transition écologique" ;
+    core:hasDescription "La Haute Valeur Environnementale (HVE) correspond au 3e niveau, le plus élevé, de la certification environnementale des exploitations agricoles. Depuis février 2012, date de mise en œuvre du dispositif, le nombre d'exploitations certifiées a connu un développement constant. Près de 29 900 exploitations (29 898 exploitations précisément – chiffre en date du 1er juillet 2022) peuvent se revendiquer être « Haute Valeur Environnementale », preuve de leur engagement dans des pratiques respectueuses de l'environnement et de la biodiversité."@fr ;
+    core:hasDescription "The High Environmental Value (HVE) is the third and highest level of environmental certification for farms. Since February 2012, when the scheme was implemented, the number of certified farms has grown steadily. Nearly 29,900 farms (29,898 to be precise - figure as of 1 July 2022) can claim to be High Environmental Value, proof of their commitment to practices that respect the environment and biodiversity."@en ;
+    core:hasDescription "Der Hohe Umweltwert (Haute Valeur Environnementale, HVE) ist die dritte und höchste Stufe der Umweltzertifizierung von landwirtschaftlichen Betrieben. Seit Februar 2012, als das System eingeführt wurde, hat sich die Zahl der zertifizierten Betriebe stetig erhöht. Fast 29.900 Betriebe (29.898 Betriebe - Stand: 1. Juli 2022) können sich als High Environmental Value-Betriebe bezeichnen, was ihr Engagement für umweltfreundliche Praktiken und Biodiversität belegt."@de ;
+    core:hasFormat mediatype:text_csv ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLience license:LO-FR-2_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "agroecologie",
+        "ecologie",
+        "environnement",
+        "hve" ;
+    core:hasTemporalCoverage [ a owl:NamedIndividual,
+                core:Period ;
+            core:hasStartDate "2012-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
+    core:hasTitle "Annuaire des exploitations de « Haute Valeur Environnementale »"@fr ;
+    core:hasTitle "Directory of High Environmental Value farms"@en ;
+    core:hasTitle "Verzeichnis von Betrieben mit hohem Umweltwert (High Environmental Value)"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:c0cc2228-c88b-40a9-9afd-fe0204774abe ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:c0cc2228-c88b-40a9-9afd-fe0204774abe a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:c0cc2228-c88b-40a9-9afd-fe0204774abe> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

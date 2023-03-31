@@ -1,0 +1,55 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:46f75dd8-0b13-4762-bde3-bf31f85810f6 ;
+    core:hasCreator "Ministère de l'agriculture et de l'Alimentation" ;
+    core:hasDescription "L’Indicateur de Fréquence de Traitements phytosanitaires (IFT) est un indicateur de suivi de l’utilisation des produits phytopharmaceutiques à l’échelle de l’exploitation agricole ou de groupes d’exploitations. L’IFT s’exprime en « nombre de doses de référence par hectare » appliquées sur une unité spatiale pendant une période donnée. Le plus généralement, l’unité spatiale est la parcelle et la période la campagne culturale. Plus d’informations sur http://agriculture.gouv.fr/indicateur-de-frequence-de-traitements-phytosanitaires-ift"@fr ;
+    core:hasDescription "The Phytosanitary Treatment Frequency Indicator (TFI) is an indicator for monitoring the use of phytopharmaceutical products at the farm or group of farms level. The IFT is expressed as the number of reference doses per hectare applied on a spatial unit during a given period. Most commonly, the spatial unit is the plot and the period is the crop year. More information on http://agriculture.gouv.fr/indicateur-de-frequence-de-traitements-phytosanitaires-ift"@en ;
+    core:hasDescription "Der Indikator für die Häufigkeit von Pflanzenschutzbehandlungen (IFT) ist ein Indikator zur Überwachung des Einsatzes von Pflanzenschutzmitteln auf der Ebene von landwirtschaftlichen Betrieben oder Gruppen von Betrieben. Der LFI wird als Anzahl der Referenzdosen pro Hektar ausgedrückt, die in einer räumlichen Einheit während eines bestimmten Zeitraums angewendet werden. In der Regel ist die räumliche Einheit die Parzelle und der Zeitraum die Anbausaison. Weitere Informationen unter http://agriculture.gouv.fr/indicateur-de-frequence-de-traitements-phytosanitaires-ift"@de ;    
+    core:hasFormat mediatype:text_csv ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLience license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "code-source",
+        "doses",
+        "ift",
+        "indicateurs",
+        "pesticides",
+        "produits-phytosanitaires" ;
+    core:hasTemporalCoverage [ a owl:NamedIndividual,
+                core:Period ;
+            core:hasStartDate "2015-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
+    core:hasTitle "Doses de référence indicateur de fréquence de traitements phytosanitaires"@fr ;
+    core:hasTitle "Reference doses for the plant protection treatment frequency indicator"@en ;
+    core:hasTitle "Referenzdosen Indikator für die Häufigkeit von Pflanzenschutzbehandlungen"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:46f75dd8-0b13-4762-bde3-bf31f85810f6 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:46f75dd8-0b13-4762-bde3-bf31f85810f6 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:46f75dd8-0b13-4762-bde3-bf31f85810f6> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

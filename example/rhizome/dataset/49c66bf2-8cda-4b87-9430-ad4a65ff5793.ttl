@@ -1,0 +1,51 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:49c66bf2-8cda-4b87-9430-ad4a65ff5793 ;
+    core:hasCreator "IGN" ;
+    core:hasDescription "La base de données sur les incendies de forêt (BDIFF) est une application internet chargée de centraliser les données sur les incendies de forêt sur le territoire français depuis 2006 et de mettre l'ensemble de cette information à disposition du public et des services de l'État. L'application diffusée sur le portail, permet à tout utilisateur intéressé, de consulter des données nationales, sur les feux de forêt jusqu'à l'année antérieure à l’année en cours et ce, agrégées à la commune."@fr ;
+    core:hasDescription "The forest fire database (BDIFF) is an internet application in charge of centralising data on forest fires on French territory since 2006 and making all this information available to the public and the State services. The application distributed on the portal allows any interested user to consult national data on forest fires up to the year before the current year, aggregated at the commune level."@en ;
+    core:hasDescription "Die Waldbranddatenbank (BDIFF) ist eine Internetanwendung, die seit 2006 die Daten über Waldbrände in Frankreich zentralisiert und alle diese Informationen der Öffentlichkeit und den staatlichen Stellen zur Verfügung stellt. Die Anwendung, die über das Portal verbreitet wird, ermöglicht es jedem interessierten Nutzer, nationale Daten über Waldbrände bis zum Jahr vor dem aktuellen Jahr abzurufen, und zwar aggregiert auf Gemeindeebene."@de ;
+    core:hasFormat mediatype:text_csv ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLience license:LO-FR-2_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "foret" ;
+    core:hasTemporalCoverage [ a owl:NamedIndividual,
+                core:Period ;
+            core:hasEndDate "2020-12-31T23:59:59+00:00"^^xsd:dateTime ;
+            core:hasStartDate "2006-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
+    core:hasTitle "Base de Données sur les Incendies de Forêts en France (BDIFF)"@fr ;
+    core:hasTitle "Database on Forest Fires in France (BDIFF)"@en ;
+    core:hasTitle "Datenbank über Waldbrände in Frankreich (BDIFF)"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:49c66bf2-8cda-4b87-9430-ad4a65ff5793 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:49c66bf2-8cda-4b87-9430-ad4a65ff5793 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:49c66bf2-8cda-4b87-9430-ad4a65ff5793> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

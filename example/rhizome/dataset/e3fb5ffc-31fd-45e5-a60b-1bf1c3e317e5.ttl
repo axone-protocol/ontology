@@ -1,0 +1,50 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:e3fb5ffc-31fd-45e5-a60b-1bf1c3e317e5 ;
+    core:hasCreator "IGN" ;
+    core:hasDescription "La BD Forêt® version 1 présente la couverture du sol (par description de la structure et de la composition dominante des formations boisées ou naturelles) en s’appuyant sur une nomenclature départementale qui varie d’une quinzaine à une soixantaine de postes selon la diversité forestière du département cartographié. Constituée, jusqu’en 2006, par emprises départementales, elle est disponible sur l’ensemble du territoire métropolitain. Pour plus de la moitié des départements, plusieurs versions de la BD Forêt® version 1 sont disponibles. La BD Forêt® version 2 a été élaborée entre 2007 et 2018 par photo-interprétation d’images en infrarouge couleurs de la BD ORTHO®. Elle attribue à chaque plage cartographiée de plus de 5000 m² un type de formation végétale."@fr ;
+    core:hasDescription "The BD Forêt® version 1 presents the land cover (by describing the structure and dominant composition of the wooded or natural formations) based on a departmental nomenclature that varies from about fifteen to sixty items depending on the forest diversity of the department being mapped. Until 2006, the nomenclature was based on departmental areas and is available for the entire territory of Metropolitan France. For more than half of the departments, several versions of the BD Forêt® version 1 are available. The BD Forêt® version 2 was produced between 2007 and 2018 by photo-interpretation of colour infrared images from the BD ORTHO®. It assigns to each mapped area of more than 5000 m² a type of vegetation formation."@en ;
+    core:hasDescription "Die BD Forêt® Version 1 stellt die Bodenbedeckung dar (durch Beschreibung der Struktur und der vorherrschenden Zusammensetzung der bewaldeten oder natürlichen Formationen) und stützt sich dabei auf eine Nomenklatur der Departements, die je nach der Waldvielfalt des kartografierten Departements zwischen 15 und 60 Positionen variiert. Bis 2006 wurde sie nach Departements zusammengestellt und ist nun für das gesamte französische Mutterland verfügbar. Für mehr als die Hälfte der Departements sind mehrere Versionen der BD Forêt® Version 1 verfügbar. Die BD Forêt® Version 2 wurde zwischen 2007 und 2018 durch Fotointerpretation von Farbinfrarotbildern der BD ORTHO® erstellt. Sie weist jedem kartografierten Strand mit einer Fläche von mehr als 5000 m² einen Vegetationsformationstyp zu."@de ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-05/bdforet_Vignette.png?itok=33k5NnHh> ;
+    core:hasLience license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "foret" ;
+    core:hasTemporalCoverage [ a owl:NamedIndividual,
+                core:Period ;
+            core:hasEndDate "2018-12-31T23:59:59+00:00"^^xsd:dateTime ] ;
+    core:hasTitle "BD Forêt"@fr ;
+    core:hasTitle "BD Forest"@en ;
+    core:hasTitle "BD Forest"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:e3fb5ffc-31fd-45e5-a60b-1bf1c3e317e5 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:e3fb5ffc-31fd-45e5-a60b-1bf1c3e317e5 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:e3fb5ffc-31fd-45e5-a60b-1bf1c3e317e5> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+
