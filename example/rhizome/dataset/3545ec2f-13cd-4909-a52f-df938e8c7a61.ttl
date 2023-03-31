@@ -34,7 +34,8 @@
         "open data" ;
     core:hasTemporalCoverage [ a owl:NamedIndividual,
                 core:Period ;
-            core:hasStartDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
+            core:hasEndDate "2020-12-31T23:59:59+00:00"^^xsd:dateTime ;
+            core:hasStartDate "2015-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "RPG FRANCE 2020"@fr ;
     core:hasTitle "RPG FRANCE 2020"@en ;
     core:hasTitle "RPG FRANKREICH 2020"@de ;

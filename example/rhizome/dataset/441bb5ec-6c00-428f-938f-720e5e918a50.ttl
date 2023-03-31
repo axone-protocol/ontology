@@ -35,7 +35,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
         "rpg" ;
     core:hasTemporalCoverage [ a owl:NamedIndividual,
                 core:Period ;
-            core:hasEndDate "2021-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            core:hasEndDate "2021-12-31T23:59:59+00:00"^^xsd:dateTime ;
             core:hasStartDate "2021-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "Parcelles en Agriculture Biologique (AB) déclarées à la PAC 2021"@fr ;
     core:hasTitle "Plots in Organic Agriculture (AB) declared to the CAP 2021"@en ;

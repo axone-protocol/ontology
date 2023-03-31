@@ -35,7 +35,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
         "rpg" ;
     core:hasTemporalCoverage [ a owl:NamedIndividual,
                 core:Period ;
-            core:hasEndDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            core:hasEndDate "2020-12-31T23:59:59+00:00"^^xsd:dateTime ;
             core:hasStartDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "Parcelles en Agriculture Biologique (AB) déclarées à la PAC 2020"@fr ;
     core:hasTitle "Organic Agriculture (OA) plots declared for the 2020 CAP"@en ;
