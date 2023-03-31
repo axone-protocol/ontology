@@ -60,8 +60,9 @@ jobs:
         uses: tj-actions/changed-files@v35.2.1
         with:
           files: |
-            src/*.ttl
-            test/*.ttl
+            src/**/*.ttl
+            test/**/*.ttl
+            example/**/*.ttl
             Makefile
 
       - name: Validate rdf files (turtle)
