@@ -66,6 +66,22 @@ okp4core:Dataset a owl:Class ;
     owl:onProperty okp4core:hasIdentifier ;
   ] .
 
+okp4core:Governance a owl:Class ;
+  rdfs:label "Governance"@en ;
+  rdfs:comment """
+    `Governance` is a set of rules that define how a `Data Space` is managed and how the resources are shared.
+  """@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom okp4core:DIDURI ;
+    owl:onProperty okp4core:hasRegistrar ;
+  ] .
+
 okp4core:Metadata a owl:Class ;
   rdfs:label "Metadata"@en ;
   rdfs:comment """
@@ -84,14 +100,14 @@ okp4core:Period a owl:Class ;
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom xsd:dateTime ;
-    owl:onProperty okp4core:hasStartDate ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     owl:onDataRange xsd:dateTime ;
     owl:onProperty okp4core:hasEndDate ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:dateTime ;
+    owl:onProperty okp4core:hasStartDate ;
   ] .
 
 okp4core:Resource a owl:Class ;
@@ -99,7 +115,7 @@ okp4core:Resource a owl:Class ;
   rdfs:comment """
   `Resource` denotes members of a `Data Space`, including datasets, services...
   """@en ;
-  owl:unionOf ( okp4core:Dataset okp4core:Service ) ;
+  owl:unionOf ( okp4core:Dataset okp4core:Service okp4core:Governance ) ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DataSpace ;
