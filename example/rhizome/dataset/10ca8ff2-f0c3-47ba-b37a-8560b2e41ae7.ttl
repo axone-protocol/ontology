@@ -1,0 +1,50 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7 ;
+    core:hasCreator "IGN" ;
+    core:hasDescription "L’OCS GE est une base de données de référence pour la description de l’occupation du sol de l’ensemble du territoire métropolitain et des départements et régions d’outre-mer (DROM). Elle est produite à partir de données existantes extraites des bases de données de l’IGN, et de toutes autres données mobilisables issues de référentiels nationaux ou locaux. Plus récemment, dans le cadre du dispositif de l’artificialisation des sols, elle est également produite grâce à des procédés inédits d’intelligence artificielle."@fr ;
+    core:hasDescription "The OCS GE is a reference database for the description of the land use of the entire metropolitan territory and the overseas departments and regions (DROM). It is produced from existing data extracted from IGN databases, and from any other data that can be mobilised from national or local reference systems. More recently, in the context of the land artificialisation system, it is also produced using new artificial intelligence processes."@en ;
+    core:hasDescription "Die OCS GE ist eine Referenzdatenbank für die Beschreibung der Bodenbedeckung des gesamten französischen Mutterlandes und der überseeischen Departements und Regionen (DROM). Sie wird auf der Grundlage vorhandener Daten aus den Datenbanken des IGN und aller anderen mobilisierbaren Daten aus nationalen oder lokalen Referenzsystemen erstellt. In jüngster Zeit wird sie im Zusammenhang mit der künstlichen Bodenbearbeitung auch mithilfe neuartiger Verfahren der künstlichen Intelligenz erstellt."@de ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-06/ocsge_Vignette.png?itok=1hXTpDGh> ;
+    core:hasLicense license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "occupation",
+        "ocs",
+        "ocsge",
+        "ocsol" ;
+    core:hasTitle "OCS GE"@de ;
+    core:hasTitle "OCS GE"@en ;
+    core:hasTitle "OCS GE"@de ;
+    core:hasTopic topic:Other .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:10ca8ff2-f0c3-47ba-b37a-8560b2e41ae7> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

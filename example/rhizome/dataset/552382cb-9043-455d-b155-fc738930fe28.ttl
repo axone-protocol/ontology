@@ -1,0 +1,51 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:552382cb-9043-455d-b155-fc738930fe28 ;
+    core:hasCreator "INAO" ;
+    core:hasDescription "Selon les règlements européens 1151/2012 du 21 novembre 2012 et 1308/2013 du 17 décembre 2013, le cahier des charges des appellations définit l’aire géographique des produits enregistrés en AOP ou en IGP. Dans le cas d’une appellation, l’ aire-géographique ou aire de production est le territoire au sein duquel doivent être réalisées toutes les étapes de l’élaboration du produit dans le respect des usages et des conditions de production définies par le cahier des charges pour pouvoir revendiquer le SIQO. L’aire de production de l’appellation doit recouvrir l’aire de production de la matière première (qui correspond généralement à l’aire délimitée ou identifiée) et l’aire de transformation."@fr ;
+    core:hasDescription "According to the European regulations 1151/2012 of 21 November 2012 and 1308/2013 of 17 December 2013, the specification of the designations defines the geographical area of the products registered as PDO or PGI. In the case of an appellation, the geographical area or production area is the territory in which all the stages of production of the product must be carried out in compliance with the practices and production conditions defined by the specification in order to be able to claim the SIQO. The production area of the designation must cover the production area of the raw material (which generally corresponds to the delimited or identified area) and the processing area."@en ;
+    core:hasDescription "Gemäß den EU-Verordnungen 1151/2012 vom 21. November 2012 und 1308/2013 vom 17. Dezember 2013 wird in der Spezifikation der Bezeichnungen das geografische Gebiet der als g.U. oder g.g.A. eingetragenen Erzeugnisse festgelegt. Im Falle einer Bezeichnung ist das geografische Gebiet oder Produktionsgebiet das Gebiet, in dem alle Schritte der Herstellung des Produkts unter Einhaltung der in der Spezifikation festgelegten Gepflogenheiten und Produktionsbedingungen durchgeführt werden müssen, um das SIQO beanspruchen zu können. Das Produktionsgebiet der Bezeichnung muss das Produktionsgebiet des Rohstoffs (das in der Regel dem abgegrenzten oder identifizierten Gebiet entspricht) und das Verarbeitungsgebiet umfassen."@de ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLicense license:LO-FR-2_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "agriculture",
+        "aoc",
+        "aop",
+        "igp",
+        "vin" ;
+    core:hasTitle "Délimitation des aires-géographiques des SIQO"@fr ;
+    core:hasTitle "Delimitation of the geographical areas of the SIQO"@en ;
+    core:hasTitle "Abgrenzung der geografischen Gebiete von SIQOs"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:552382cb-9043-455d-b155-fc738930fe28 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:552382cb-9043-455d-b155-fc738930fe28 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:552382cb-9043-455d-b155-fc738930fe28> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

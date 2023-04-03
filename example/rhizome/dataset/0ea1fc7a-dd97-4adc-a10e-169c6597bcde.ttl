@@ -1,0 +1,49 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:0ea1fc7a-dd97-4adc-a10e-169c6597bcde ;
+    core:hasCreator "Anses" ;
+    core:hasDescription "Avec 3185 aliments référencés, cette nouvelle version de la table Ciqual intègre le détail de tous les sucres individuels contenus dans les aliments. Elle propose également des données actualisées sur les principaux fruits et légumes, y compris ceux cultivés en Outre-mer. Pour être en adéquation avec les nouvelles pratiques alimentaires des français, la table inclut désormais une cinquantaine de nouveaux aliments adaptés aux régimes végétariens."@fr ;
+    core:hasDescription "With 3,185 foods referenced, this new version of the Ciqual table includes details of all individual sugars contained in foods. It also provides updated data on the main fruits and vegetables, including those grown in the French overseas territories. To keep up with the new eating habits of the French, the table now includes around fifty new foods adapted to vegetarian diets."@en ;
+    core:hasDescription "Die neue Version der Ciqual-Tabelle enthält 3185 Lebensmittel und detaillierte Angaben zu allen in den Lebensmitteln enthaltenen individuellen Zuckern. Außerdem enthält sie aktualisierte Daten zu den wichtigsten Obst- und Gemüsesorten, einschließlich der in Übersee angebauten Sorten. Um den neuen Essgewohnheiten der Franzosen gerecht zu werden, enthält die Tabelle nun rund 50 neue Lebensmittel, die für vegetarische Ernährung geeignet sind."@de ;
+    core:hasFormat mediatype:application_vndms-excel ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLicense license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "alimentation-humaine",
+        "aliments",
+        "composition-des-aliments" ;
+    core:hasTitle "Table de composition nutritionnelle des aliments Ciqual 2020"@fr ;
+    core:hasTitle "Nutritional composition table for Ciqual 2020 foods"@en ;
+    core:hasTitle "Tabelle der Nährstoffzusammensetzung von Lebensmitteln Ciqual 2020"@fr ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:0ea1fc7a-dd97-4adc-a10e-169c6597bcde ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:0ea1fc7a-dd97-4adc-a10e-169c6597bcde a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:0ea1fc7a-dd97-4adc-a10e-169c6597bcde> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

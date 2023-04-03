@@ -1,0 +1,60 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d ;
+    core:hasCreator "IGN" ;
+    core:hasDescription "La BD TOPO® est une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique, exploitable à des échelles allant du 1 : 2 000 au 1 : 50 000. Elle couvre de manière cohérente l’ensemble des entités géographiques et administratives du territoire national. Elle permet la visualisation, le positionnement, la simulation au service de l’analyse et de la gestion opérationnelle du territoire. La description des objets géographiques en 3D permet de représenter de façon réaliste les analyses spatiales utiles aux processus de décision dans le cadre d’études diverses. Depuis 2019, une nouvelle édition (mise à jour) est publiée chaque trimestre."@fr ;
+    core:hasDescription "The BD TOPO® is a 3D vector description (structured in objects) of the elements of the territory and its infrastructures, with metric precision, usable at scales ranging from 1 : 2 000 to 1 : 50 000. It covers in a coherent way all the geographical and administrative entities of the national territory. It allows visualisation, positioning and simulation for analysis and operational management of the territory. The description of geographical objects in 3D allows for realistic representation of spatial analyses useful for decision-making processes in the context of various studies. Since 2019, a new (updated) edition is published every quarter."@en ;
+    core:hasDescription "Die BD TOPO® ist eine vektorielle 3D-Beschreibung (strukturiert in Objekten) der Elemente des Territoriums und seiner Infrastrukturen mit metrischer Genauigkeit, die in Maßstäben von 1 : 2 000 bis 1 : 50 000 verwendet werden kann. Sie deckt auf kohärente Weise alle geografischen und administrativen Einheiten des nationalen Territoriums ab. Sie ermöglicht die Visualisierung, Positionierung und Simulation im Dienste der Analyse und des operativen Managements des Territoriums. Die Beschreibung der geografischen Objekte in 3D ermöglicht eine realistische Darstellung der räumlichen Analysen, die für die Entscheidungsprozesse im Rahmen verschiedener Studien nützlich sind. Seit 2019 wird jedes Quartal eine neue (aktualisierte) Ausgabe veröffentlicht."@de ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-05/bdtopo_Vignette.png?itok=2PvQWZsd> ;
+    core:hasLicense license:LO-FR-2_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "activites",
+        "administratif",
+        "adresses",
+        "bati",
+        "hydrographie",
+        "lieux-nommes",
+        "occupationdusol",
+        "route",
+        "routes-transports",
+        "servicestopo",
+        "topographie",
+        "vecteur",
+        "vectorielle",
+        "zones-reglementees" ;
+    core:hasTitle "BD TOPO départements"@fr ;
+    core:hasTitle "BD TOPO departments"@en ;
+    core:hasTitle "BD TOPO departements"@de ;
+    core:hasTopic topic:Other .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:5aeba752-dfb2-48c1-a90d-c0edd0738c0d> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

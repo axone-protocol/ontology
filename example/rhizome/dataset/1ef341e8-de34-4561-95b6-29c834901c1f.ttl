@@ -1,0 +1,47 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:1ef341e8-de34-4561-95b6-29c834901c1f ;
+    core:hasCreator "IGN" ;
+    core:hasDescription "Le produit Courbes de niveau est une version vectorielle des courbes de niveau altimétriques (aussi appelées « isohypses ») présentes dans les produits cartographiques de l’IGN.Calculées à partir des données RGE ALTI®, elles permettent d’appréhender le relief de manière complémentaire aux modèles numériques de terrain (MNT) classiques et facilitent la superposition avec des données métiers pour un usage cartographique."@fr ;
+    core:hasDescription "The contour lines product is a vector version of the altimetric contour lines (also called 'isohypses') present in the IGN's cartographic products. Calculated from the RGE ALTI® data, they allow the relief to be understood in a way that complements the classic digital terrain models (DTMs) and facilitates overlaying with business data for cartographic use."@en ;
+    core:hasDescription "Das Produkt Höhenlinien ist eine Vektorversion der Höhenlinien (auch Isohypsen genannt), die in den kartografischen Produkten des IGN enthalten sind. Sie werden aus den GBR ALTI®-Daten berechnet und ermöglichen es, das Relief zusätzlich zu den klassischen digitalen Geländemodellen (DTM) zu verstehen."@de ;
+    core:hasFormat mediatype:application_vndshp ;
+    core:hasImage <https://geoservices.ign.fr/sites/default/files/styles/echelle_recadrage_00/public/2021-07/courbes-de-niveau_Vignette.png?itok=cM-yMcBA> ;
+    core:hasLicense license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "courbe-de-niveau" ;
+    core:hasTitle "Courbes de niveau"@fr ;
+    core:hasTitle "contour lines"@en ;
+    core:hasTitle "Höhenkurven"@de ;
+    core:hasTopic topic:Other .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:1ef341e8-de34-4561-95b6-29c834901c1f ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:1ef341e8-de34-4561-95b6-29c834901c1f a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:1ef341e8-de34-4561-95b6-29c834901c1f> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

@@ -1,0 +1,52 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:aec18920-43ca-464e-bea9-1a642ba56dda ;
+    core:hasCreator "Ministère de la Transition écologique" ;
+    core:hasDescription "Dans le but de protéger les ressources halieutiques, la biodiversité marine et l'activité économique liée à la pêche sur le long terme, la Startup d'Etat MonitorFish & MonitorEnv développe des outils permettant d'améliorer le ciblage et le suivi des contrôles des pêches et des contrôles de l'environnement marin."@fr ;
+    core:hasDescription "With the aim of protecting fisheries resources, marine biodiversity and fishing-related economic activity in the long term, the state-owned startup MonitorFish & MonitorEnv is developing tools to improve the targeting and monitoring of fisheries and marine environmental controls."@en ;
+    core:hasDescription "Mit dem Ziel, die Fischbestände, die marine Biodiversität und die mit der Fischerei verbundene Wirtschaftstätigkeit langfristig zu schützen, entwickelt das staatliche Startup-Unternehmen MonitorFish & MonitorEnv Werkzeuge, um die Ausrichtung und Überwachung von Fischereikontrollen und Kontrollen der Meeresumwelt zu verbessern."@de ;
+    core:hasFormat mediatype:text_csv ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLicense license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:001 ;
+    core:hasTag "biodiversite",
+        "contrôle",
+        "environnement",
+        "gestion-de-la-peche",
+        "peche",
+        "peche-halieutique" ;
+    core:hasTitle "Statistiques de contrôle des pêches"@fr ;
+    core:hasTitle "Fisheries control statistics"@en ;
+    core:hasTitle "Statistiken zur Fischereiüberwachung"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:aec18920-43ca-464e-bea9-1a642ba56dda ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:aec18920-43ca-464e-bea9-1a642ba56dda a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:aec18920-43ca-464e-bea9-1a642ba56dda> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

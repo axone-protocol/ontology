@@ -1,0 +1,48 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:96a562a9-5feb-4a41-bcf2-cc8610af9f78 ;
+    core:hasCreator "Anses" ;
+    core:hasDescription "Les « Etudes de l’Alimentation Totale » (EAT) sont des enquêtes nationales dont le but est d’estimer l’exposition alimentaire chronique d’une population à des composés chimiques. Elles reposent sur l’analyse d’un grand nombre de substances dans des échantillons alimentaires représentatifs du régime alimentaire de la population étudiée. De 2012 à 2016, l’Anses a conduit l’Etude de l’Alimentation Totale infantile (EATi), une des premières études au niveau international permettant d’estimer l’exposition alimentaire des enfants de moins de 3 ans non allaités. Elle a porté sur l’analyse de 670 substances (contaminants environnementaux, minéraux, produits phytopharmaceutiques etc.) dans l’alimentation des enfants non allaités habitant en France métropolitaine."@fr ;
+    core:hasDescription "Total Diet Studies (TDS) are national surveys that aim to estimate the chronic dietary exposure of a population to chemical compounds. They are based on the analysis of a large number of substances in food samples representative of the diet of the population studied. From 2012 to 2016, the Anses conducted the Total Infant Feeding Study (EATi), one of the first studies at international level to estimate the dietary exposure of non-breastfed children under 3 years of age. It involved the analysis of 670 substances (environmental contaminants, minerals, phytopharmaceutical products, etc.) in the diet of non-breastfed children living in metropolitan France."@en ;
+    core:hasDescription "Die Total Eating Studies (TES) sind nationale Erhebungen, deren Ziel es ist, die chronische Belastung einer Bevölkerung durch chemische Verbindungen über die Nahrung zu schätzen. Sie beruhen auf der Analyse einer großen Anzahl von Substanzen in Lebensmittelproben, die für die Ernährung der untersuchten Bevölkerung repräsentativ sind. Von 2012 bis 2016 führte Anses die Etude de l'Alimentation Totale infantile (EATi) durch, eine der ersten Studien auf internationaler Ebene, mit der die ernährungsbedingte Exposition von nicht gestillten Kindern unter drei Jahren geschätzt werden konnte. Sie umfasste die Analyse von 670 Substanzen (Umweltkontaminanten, Mineralien, Pflanzenschutzmittel usw.) in der Nahrung von nicht gestillten Kindern, die im französischen Mutterland leben."@de ;
+    core:hasFormat mediatype:application_vndms-excel ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLicense license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "alimentation",
+        "alimentation-infantile" ;
+    core:hasTitle "Données Etude de l’Alimentation Totale infantile"@fr ;
+    core:hasTitle "Data Total Child Nutrition Study"@en ;
+    core:hasTitle "Daten Studie zur Gesamternährung von Kindern"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:96a562a9-5feb-4a41-bcf2-cc8610af9f78 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:96a562a9-5feb-4a41-bcf2-cc8610af9f78 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:96a562a9-5feb-4a41-bcf2-cc8610af9f78> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+

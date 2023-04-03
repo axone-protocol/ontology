@@ -1,7 +1,7 @@
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
 @prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
-@prefix licence: <https://ontology.okp4.space/thesaurus/licence/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
 @prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix service: <https://ontology.okp4.space/dataverse/service/> .
@@ -17,7 +17,7 @@
     core:hasDescription "Dieser Datensatz wird mithilfe der Verknüpfung der SIRENE-BASE mit der NAF-Code-Referenztabelle gewonnen, um Informationen über die Tätigkeit der Betriebe zu erhalten."@de ;
     core:hasFormat mediatype:text_csv ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
-    core:hasLicense licence:LO-FR-2_0 ;
+    core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
     core:hasTag "INSEE",
         "france",

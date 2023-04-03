@@ -1,0 +1,49 @@
+@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
+@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix meta: <https://ontology.okp4.space/metadata/> .
+@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+        metadst:GeneralMetadata ;
+    core:describes dataset:965dae6f-19ad-4a2b-93f3-05e2d09d7496 ;
+    core:hasCreator "Ministère de l'agriculture et de l'Alimentation" ;
+    core:hasDescription "Liste des forêts classées sous un régime de protection : données départementales , libellés, surfaces et statut (public, privé)."@fr ;
+    core:hasDescription "List of classified forests under a protection regime: departmental data, names, areas and status (public, private)."@en ;
+    core:hasDescription "Liste der unter Schutz gestellten Wälder: Angaben zum Departement , Bezeichnungen, Flächen und Status (öffentlich, privat)."@de ;
+    core:hasFormat mediatype:application_vndms-excel ;
+    core:hasImage <https://media.istockphoto.com/vectors/vector-database-icon-vector-id886729568?k=6&m=886729568&s=170667a&w=0&h=eFOH56cfMnoFK2NtX6BSe_AaIyYWFUK4FCumIgpMUY8=> ;
+    core:hasLicense license:LO-FR-1_0 ;
+    core:hasPublisher "OKP4" ;
+    core:hasSpatialCoverage area:250 ;
+    core:hasTag "foret",
+        "massif",
+        "protection" ;
+    core:hasTitle "Liste des massifs forestiers classés en forêts de protection"@fr ;
+    core:hasTitle "List of forest areas classified as protection forests"@en ;
+    core:hasTitle "Liste der Waldmassive, die als Schutzwälder eingestuft sind"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+        meta:AuditMetadata ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    core:describes dataset:965dae6f-19ad-4a2b-93f3-05e2d09d7496 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
+
+dataset:965dae6f-19ad-4a2b-93f3-05e2d09d7496 a owl:NamedIndividual,
+        core:DataSet ;
+    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
+    core:hasIdentifier <urn:uuid:965dae6f-19ad-4a2b-93f3-05e2d09d7496> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
+
