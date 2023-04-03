@@ -7,7 +7,7 @@
 <https://ontology.okp4.space/dataverse/dataspace/metadata/dcf48417-01c5-4b43-9bc7-49e54c028473> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/dataspace/GeneralMetadata> ;
     core:describes dataspace:97ff7e16-c08d-47be-8475-211016c82e33 ;
-    core:hasDescription "Data Space for Investors (DS4I) est Data Space privé créé et maintenu par l'équipe OKP4. L'objectif de DS4I est de présenter une preuve de concept simple et conviviale pour démontrer aux investisseurs potentiels comment le protocole OKP4 fonctionne sur la base de règles de gouvernance simples."@fr ;
+    core:hasDescription "Data Space for Investors (DS4I) est un Data Space privé créé et maintenu par l'équipe OKP4. L'objectif de DS4I est de présenter une preuve de concept simple et conviviale pour démontrer aux investisseurs potentiels comment le protocole OKP4 fonctionne sur la base de règles de gouvernance simples."@fr ;
     core:hasDescription "Data Space for Investors (DS4I) is a private Data Space created and maintained by OKP4 Team. DS4I's purpose is to present a simple and user-friendly Proof of Concept to demonstrate for potential investors how OKP4 protocol works based on simple governance rules."@en ;
     core:hasDescription "Data Space for Investors (DS4I) ist ein privater Datenraum, der vom OKP4 Team erstellt und gepflegt wird. DS4I soll ein einfaches und benutzerfreundliches Proof of Concept darstellen, um potentiellen Investoren zu demonstrieren, wie das OKP4 Protokoll basierend auf einfachen Regeln funktioniert."@de ;
     core:hasPublisher "OKP4" ;
