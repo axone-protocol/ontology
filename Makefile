@@ -47,6 +47,13 @@ BIN_EXAMPLE_TTL    := $(DST)/examples.ttl
 BIN_EXAMPLE_NT     := $(DST)/examples.nt
 BIN_EXAMPLE_JSONLD := $(DST)/examples.jsonld
 
+# sed -i support
+SED_FLAG=
+SHELL_NAME := $(shell uname -s)
+ifeq ($(SHELL_NAME),Darwin)
+    SED_FLAG := ""
+endif
+
 # Runners
 RDF_WRITE = \
   @docker run --rm \
@@ -77,6 +84,9 @@ RDF_SHACL = \
     --inference none \
     --format human \
     /usr/src/ontology/$(BIN_OKP4_NT)
+NT_UNIQUIFY = \
+  @HASH=`md5sum $1 | awk '{print $$1}'`; \
+  sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
 
 .PHONY: help
 all: help
@@ -101,11 +111,13 @@ $(OBJ_ONTS): $(DST_ONT)/%.nt: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
+	${call NT_UNIQUIFY,$@}
 
 $(OBJ_EXMS): $(DST_EXM)/%.nt: $(SRC_EXM)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
+	${call NT_UNIQUIFY,$@}
 
 $(BIN_OKP4_NT): $(OBJ_ONTS)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
