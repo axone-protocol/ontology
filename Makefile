@@ -1,11 +1,19 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
 # Docker images
+DOCKER_IMAGE_FUSEKI   := docuteam/fuseki:4.2.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
+DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:0.20.0
 DOCKER_IMAGE_RUBY_RDF := ghcr.io/okp4/ruby-rdf:3.1.15
 DOCKER_IMAGE_WIDOCO   := ghcr.io/okp4/widoco:1.4.15
-DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
+
+# Deployment
+DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
+DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT=30
+DEPLOYMENT_FUSEKI_PORT=3030
+DEPLOYMENT_FUSEKI_JVM_ARGS=-Xmx4g
+DEPLOYMENT_FUSEKI_DATASET=dataverse
 
 # Some colors
 COLOR_CYAN   := $(shell tput -Txterm setaf 6)
@@ -39,6 +47,7 @@ OBJ_ONTS           := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested.flag,$(SRC_TSTS))
 FLG_TTLS_FMT       := $(patsubst $(ROOT)/%.ttl,$(DST_LINT)/%.formatted.flag,$(SRC_TTLS))
 FLG_TTLS_LNT       := $(patsubst $(ROOT)/%.ttl,$(DST_LINT)/%.linted.flag,$(SRC_TTLS))
+FLG_CHECK_OK       := $(DST)/check.ok.flag
 
 BIN_OKP4_TTL       := $(DST)/okp4.ttl
 BIN_OKP4_NT        := $(DST)/okp4.nt
@@ -102,10 +111,10 @@ clean: ## Clean all generated files
 build: build-ontology build-examples ## Build all the files (ontology and examples)
 
 .PHONY: cache build-ontology
-build-ontology: $(BIN_OKP4_TTL) $(BIN_OKP4_RDFXML) ## Build the ontology
+build-ontology: check $(BIN_OKP4_TTL) $(BIN_OKP4_RDFXML) ## Build the ontology
 
 .PHONY: cache build-examples
-build-examples: $(BIN_EXAMPLE_TTL) $(BIN_EXAMPLE_JSONLD) ## Build the examples
+build-examples: check $(BIN_EXAMPLE_TTL) $(BIN_EXAMPLE_JSONLD) ## Build the examples
 
 $(OBJ_ONTS): $(DST_ONT)/%.nt: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -147,10 +156,10 @@ $(BIN_EXAMPLE_JSONLD): $(BIN_EXAMPLE_NT)
 
 ## Format:
 .PHONY: format
-format: format-ttl ## Format with all available formatters
+format: check format-ttl ## Format with all available formatters
 
 .PHONY: format-ttl
-format-ttl: cache $(FLG_TTLS_FMT) ## Format all Turtle files
+format-ttl: check cache $(FLG_TTLS_FMT) ## Format all Turtle files
 
 $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
 	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
@@ -164,7 +173,7 @@ $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
 lint: lint-ttl ## Lint with all available linters
 
 .PHONY: lint-ttl
-lint-ttl: cache $(FLG_TTLS_LNT) ## Lint all Turtle files
+lint-ttl: check cache $(FLG_TTLS_LNT) ## Lint all Turtle files
 
 $(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
@@ -180,7 +189,7 @@ $(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
 test: test-ontology ## Run all available tests
 
 .PHONY: test-ontology
-test-ontology: build $(FLG_TSTS) ## Test final (generated) ontology
+test-ontology: check build $(FLG_TSTS) ## Test final (generated) ontology
 
 $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
@@ -192,9 +201,50 @@ $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*
            exit 1; \
          }
 
+## Fuseki:
+.PHONY: fuseki-start
+fuseki-start: check build ## Start Fuseki server with the ontology and examples loaded in it
+	@echo "${COLOR_CYAN}🚀 starting ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+	@if [ "$$(docker ps -q -f name=${DEPLOYMENT_FUSEKI_CONTAINER})" ]; then \
+      echo "${COLOR_CYAN}❌ container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} already running"; \
+	  exit 1; \
+	fi
+	@docker run \
+	  --rm \
+	  -d \
+	  --name ${DEPLOYMENT_FUSEKI_CONTAINER} \
+	  -p ${DEPLOYMENT_FUSEKI_PORT}:${DEPLOYMENT_FUSEKI_PORT} \
+	  -v `pwd`/shiro.ini:/fuseki/shiro.ini \
+	  -e -JVM_ARGS=${DEPLOYMENT_FUSEKI_JVM_ARGS} \
+	  ${DOCKER_IMAGE_FUSEKI}
+	@sleep 1
+	@echo "${COLOR_CYAN}⏱️ waiting for REST API to be ready...${COLOR_RESET}"
+	@timeout ${DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT} sh -c 'until $$(curl --output /dev/null --silent --head --fail http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/ping); do \
+	    printf '.'; \
+	    sleep 1; \
+	done'
+	@echo ""
+	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
+	@curl -X POST --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
+	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
+	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
+	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_EXAMPLE_TTL}${COLOR_RESET}"
+	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_EXAMPLE_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
+	@echo "${COLOR_CYAN}🟢 running on: ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET} - have fun 🎉"
+
+.PHONY: check fuseki-stop
+fuseki-stop: ## Stop Fuseki server
+	@echo "${COLOR_CYAN}✋ stopping ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+	@docker stop ${DEPLOYMENT_FUSEKI_CONTAINER}
+	@echo "${COLOR_CYAN}⚪️ Fuseki server stopped${COLOR_RESET}"
+
+.PHONY: fuseki-log
+fuseki-log: check ## Show Fuseki server logs
+	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER}
+
 ## Documentation:
 .PHONY: doc
-doc: build-ontology ## Generate documentation site
+doc: check build-ontology ## Generate documentation site
 	@echo "${COLOR_CYAN}📖 generating documentation for ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
 	@docker run \
         --rm \
@@ -213,13 +263,14 @@ doc: build-ontology ## Generate documentation site
 	@cp -R public/* ${DST_DOC}
 
 .PHONY: doc-serve
-doc-serve: doc ## Start a web server for serving generated documentation
+doc-serve: check doc ## Start a web server for serving generated documentation
 	@echo "${COLOR_CYAN}🌐 serving documentation - available at ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
 	@docker run --rm \
       -p 8080:80 \
       -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
       ${DOCKER_IMAGE_HTTPD}
 
+## Misc:
 .PHONY: cache
 cache: $(DST_CACHE)/owl-cli-1.2.2.jar ## Download all required files to cache
 
@@ -229,6 +280,21 @@ $(DST_CACHE)/owl-cli-1.2.2.jar:
     cd $(DST_CACHE); \
     wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-cli-1.2.2.jar
 
+.PHONY: check
+check: $(FLG_CHECK_OK) ## Check if all required commands are available in the system
+
+$(FLG_CHECK_OK):
+	@echo "${COLOR_CYAN}☑️ checking ${COLOR_RESET} if required commands are available..."
+	@for cmd in awk curl docker md5sum timeout wget; do \
+		path=$$(which $$cmd); \
+		if [ -z "$$path" ]; then \
+			echo "${COLOR_CYAN}❌ ${COLOR_GREEN}$$cmd${COLOR_RESET} command is not available, please install it." && exit 1; \
+		else \
+			echo "${COLOR_CYAN}✅ ${COLOR_GREEN}$$cmd${COLOR_RESET} ($$path)"; \
+		fi \
+	done
+	@mkdir -p -m 777 $(@D)
+	@touch $(FLG_CHECK_OK)
 
 ## Help:
 .PHONY: vars
