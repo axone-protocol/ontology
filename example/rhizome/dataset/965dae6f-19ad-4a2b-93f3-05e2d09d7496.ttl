@@ -12,7 +12,7 @@
 @prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+dstmeta:6274df8d-2492-443a-80a7-9791372bf8b8 a owl:NamedIndividual,
         metadst:GeneralMetadata ;
     core:describes dataset:965dae6f-19ad-4a2b-93f3-05e2d09d7496 ;
     core:hasCreator "Ministère de l'agriculture et de l'Alimentation" ;
@@ -32,7 +32,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasTitle "Liste der Waldmassive, die als Schutzwälder eingestuft sind"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+dstmeta:ba404ea5-7cbf-426e-beaf-9b8bd651f734 a owl:NamedIndividual,
         meta:AuditMetadata ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;

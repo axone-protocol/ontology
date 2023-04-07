@@ -12,7 +12,7 @@
 @prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+dstmeta:69db3c60-29eb-46f5-a600-c64e46a4b4cf a owl:NamedIndividual,
         metadst:GeneralMetadata ;
     core:describes dataset:96a562a9-5feb-4a41-bcf2-cc8610af9f78 ;
     core:hasCreator "Anses" ;
@@ -31,7 +31,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasTitle "Daten Studie zur Gesamternährung von Kindern"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+dstmeta:eb29181e-b3eb-48cc-b0c8-85d0b811a619 a owl:NamedIndividual,
         meta:AuditMetadata ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;

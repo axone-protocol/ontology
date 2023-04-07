@@ -12,7 +12,7 @@
 @prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+dstmeta:af77412b-487f-48b7-ae38-63a1198ce449 a owl:NamedIndividual,
         metadst:GeneralMetadata ;
     core:describes dataset:f047abf0-cbad-49d7-985e-7171b9b0e619 ;
     core:hasCreator "Agence Bio" ;
@@ -42,7 +42,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasTitle "Parzellen mit biologischem Landbau (AB), die für die GAP 2021 angemeldet wurden"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+dstmeta:e7362132-893e-49ee-91cf-270372911dfa a owl:NamedIndividual,
         meta:AuditMetadata ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;

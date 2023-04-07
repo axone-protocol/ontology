@@ -12,7 +12,7 @@
 @prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+dstmeta:cb78a6b9-b39e-43f7-89f4-22f55ab6de8d a owl:NamedIndividual,
         metadst:GeneralMetadata ;
     core:describes dataset:5aeba752-dfb2-48c1-a90d-c0edd0738c0d ;
     core:hasCreator "IGN" ;
@@ -43,7 +43,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasTitle "BD TOPO departements"@de ;
     core:hasTopic topic:Other .
 
-dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+dstmeta:2346735a-dea8-4d6b-9419-3b81f78ce940 a owl:NamedIndividual,
         meta:AuditMetadata ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;

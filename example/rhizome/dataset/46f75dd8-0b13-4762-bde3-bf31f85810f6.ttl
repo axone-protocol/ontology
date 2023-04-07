@@ -12,7 +12,7 @@
 @prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+dstmeta:01ab3423-ac4c-4402-8554-22472ac55566 a owl:NamedIndividual,
         metadst:GeneralMetadata ;
     core:describes dataset:46f75dd8-0b13-4762-bde3-bf31f85810f6 ;
     core:hasCreator "Ministère de l'agriculture et de l'Alimentation" ;
@@ -38,7 +38,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasTitle "Referenzdosen Indikator für die Häufigkeit von Pflanzenschutzbehandlungen"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+dstmeta:6380faf9-683d-4269-8372-e21a2e137c07 a owl:NamedIndividual,
         meta:AuditMetadata ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
