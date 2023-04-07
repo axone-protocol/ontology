@@ -237,6 +237,10 @@ fuseki-stop: ## Stop Fuseki server
 	@docker stop ${DEPLOYMENT_FUSEKI_CONTAINER}
 	@echo "${COLOR_CYAN}⚪️ Fuseki server stopped${COLOR_RESET}"
 
+.PHONY: fuseki-log
+fuseki-log: ## Show Fuseki server logs
+	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER}
+
 ## Documentation:
 .PHONY: doc
 doc: build-ontology ## Generate documentation site
