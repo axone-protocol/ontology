@@ -74,6 +74,26 @@ This will build the ontology and the examples under the `target` directory. The 
    └── okp4.ttl
 ```
 
+## Deploying the ontology in local triple store
+
+The ontology can be deployed in a local triple store using [Docker](https://www.docker.com/). The triple store used is [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/).
+
+To start the triple store, run the following command. This will start the triple store and load the ontology and the examples in it.
+
+```bash
+make fuseki-start
+```
+
+You can now play with the ontology using the Fuseki UI - <http://localhost:3030/>.
+
+Conversaly, to stop the triple store, run the following command:
+
+```bash
+make fuseki-stop
+```
+
+Note that the triple store is not persistent, so all the data will be lost when the triple store is stopped.
+
 ## Contributing
 
 Contributions are welcome. Please check the following guidelines:
