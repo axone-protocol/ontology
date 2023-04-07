@@ -12,7 +12,7 @@
 @prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
+dstmeta:2815ce79-100e-49a9-940e-f806fcf4f034 a owl:NamedIndividual,
         metadst:GeneralMetadata ;
     core:describes dataset:5626b242-0c02-45a7-98ca-34c9f4d42b04 ;
     core:hasCreator "INAO" ;
@@ -31,7 +31,7 @@ dstmeta:496c7dc1-42a1-423f-9274-dd72168a8da2 a owl:NamedIndividual,
     core:hasTitle "Parzellarische Abgrenzung der AOC-Weinbaugebiete des INAO"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-dstmeta:659b4a4d-5a45-4769-ac7f-0b746ef10ef1 a owl:NamedIndividual,
+dstmeta:85d38e2c-9e7b-4dbb-965f-d5a8b410dbbc a owl:NamedIndividual,
         meta:AuditMetadata ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime ;
