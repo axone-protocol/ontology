@@ -231,6 +231,12 @@ fuseki-start: build ## Start Fuseki server with the ontology and examples loaded
 	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_EXAMPLE_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
 	@echo "${COLOR_CYAN}🟢 running on: ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET} - have fun 🎉"
 
+.PHONY: fuseki-stop
+fuseki-stop: ## Stop Fuseki server
+	@echo "${COLOR_CYAN}✋ stopping ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+	@docker stop ${DEPLOYMENT_FUSEKI_CONTAINER}
+	@echo "${COLOR_CYAN}⚪️ Fuseki server stopped${COLOR_RESET}"
+
 ## Documentation:
 .PHONY: doc
 doc: build-ontology ## Generate documentation site
