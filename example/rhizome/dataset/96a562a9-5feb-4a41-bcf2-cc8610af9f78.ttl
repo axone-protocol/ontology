@@ -40,7 +40,7 @@ dstmeta:eb29181e-b3eb-48cc-b0c8-85d0b811a619 a owl:NamedIndividual,
     core:updatedOn "2023-03-28T00:00:00+00:00"^^xsd:dateTime .
 
 dataset:96a562a9-5feb-4a41-bcf2-cc8610af9f78 a owl:NamedIndividual,
-        core:DataSet ;
+        core:Dataset ;
     core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
     core:hasIdentifier <urn:uuid:96a562a9-5feb-4a41-bcf2-cc8610af9f78> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;

@@ -37,7 +37,7 @@
     core:hasTopic topic:Other .
 
 dataset:6be4c7c2-c749-40dc-ac27-2653fa591356 a owl:NamedIndividual,
-        core:DataSet ;
+        core:Dataset ;
     core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
     core:hasIdentifier <urn:uuid:6be4c7c2-c749-40dc-ac27-2653fa591356> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;

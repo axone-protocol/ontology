@@ -42,7 +42,7 @@
     core:updatedOn "2022-08-05T15:37:43+00:00"^^xsd:dateTime .
 
 dataset:65eda3f4-ecb6-4322-90e7-1832ed3178e9 a owl:NamedIndividual,
-        core:DataSet ;
+        core:Dataset ;
     core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
     core:hasIdentifier <urn:uuid:65eda3f4-ecb6-4322-90e7-1832ed3178e9> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
