@@ -44,14 +44,14 @@ Last released version of OKP4 ontology documentation is available here: <https:/
 
 The construction of this ontology follows a number of steps which are described below:
 
-1. __Ontology capture__:
-   Identification and definition of key concepts and relationships in the domain of interest and the terms that refer to such concepts, in natural language.
-2. __Ontology design__:
-   Formalizing of the elements identified in the previous step in the form of a knowledge representation, using the building blocks of ontologies: classes, attributes, relationships, subsumption.
-3. __Ontology encoding__:
-   Encoding the ontology according to the [OWL](https://www.w3.org/TR/owl-ref/) grammar.
-4. __Ontology integration__:
-   Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
+- __Ontology scope definition (1) & knowledge acquisition (2)__: Identification and definition of key concepts and relationships in the domain of interest and the terms that refer to such concepts, in natural language.
+- __Ontology specification (3) & conceptualization (4)__: Formalizing of the elements identified in the previous step in the form of a knowledge representation, using the building blocks of ontologies: classes, attributes, relationships, subsumption.
+- __Ontology implementation (5)__: Encoding the ontology according to the OWL grammar.
+- __Ontology evaluation (6)__: Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
+
+<p align="center">
+  <img src="etc/ontology-construction-process.webp" alt="Ontology construction process" width="600"/>
+</p>
 
 ## Building the ontology
 
