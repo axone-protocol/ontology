@@ -291,7 +291,161 @@ govmeta:2eb14767-5d2e-4ce7-9dc4-df07bec84b25 a owl:NamedIndividual,
     core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
     metagov:hasNumber "1.3.6.1.1" ;
     core:isPartOf govmeta:90d9ff51-05e9-499a-b814-e128f94f41d1 .
-    
+
+govmeta:2456f8c9-0e52-4083-89a1-62b120303aee a owl:NamedIndividual,
+        metagov:Section ; 
+    core:hasTitle "Services Management" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4" ; 
+    core:isPartOf govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c .
+
+govmeta:b6dbb1bf-da03-4474-b275-e47c4d97d91d a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Reference service" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.1" ;
+    core:isPartOf govmeta:2456f8c9-0e52-4083-89a1-62b120303aee .
+
+govmeta:3c537ee4-4387-4b46-b284-1675b9769a81 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Condition : can reference service." ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.1.1" ;
+    core:isPartOf govmeta:b6dbb1bf-da03-4474-b275-e47c4d97d91d .
+
+govmeta:027ef94a-6cb7-49ac-8561-6f86c0cdadeb a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.4.1.1.1" ;
+    core:isPartOf govmeta:3c537ee4-4387-4b46-b284-1675b9769a81 .
+
+govmeta:57626207-bcc4-45f6-80da-e337cf323265 a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Create service metadata" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.2" ;
+    core:isPartOf govmeta:2456f8c9-0e52-4083-89a1-62b120303aee .
+
+govmeta:8ed849b0-c404-4b65-a7ac-6a8dbc38a238 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Condition : can create metadata." ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.2.1" ;
+    core:isPartOf govmeta:57626207-bcc4-45f6-80da-e337cf323265 .
+
+govmeta:634697a2-d922-45aa-aa3b-2731592adce2 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.4.2.1.1" ;
+    core:isPartOf govmeta:8ed849b0-c404-4b65-a7ac-6a8dbc38a238 .
+
+govmeta:cb4302c2-ffcb-432b-aba4-27c43cedc440 a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Edit service metadata" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.3" ;
+    core:isPartOf govmeta:2456f8c9-0e52-4083-89a1-62b120303aee .
+
+govmeta:2719e85b-511c-4e45-a9da-5bf63821f198 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Condition : can edit metadata." ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.3.1" ;
+    core:isPartOf govmeta:cb4302c2-ffcb-432b-aba4-27c43cedc440 .
+
+govmeta:7f074bb8-0f0c-42ac-ba6d-7f7614d5a957 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.4.3.1.1" ;
+    core:isPartOf govmeta:2719e85b-511c-4e45-a9da-5bf63821f198 .
+
+govmeta:ed590187-effa-4fad-a369-d5a3ed6f9f3b a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Remove service metadata" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.4" ;
+    core:isPartOf govmeta:2456f8c9-0e52-4083-89a1-62b120303aee .
+
+govmeta:1d42ff1b-f4bc-4bc1-9329-9cb336ccffe8 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Condition: can remove metadata." ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.4.1" ;
+    core:isPartOf govmeta:b4357ab3-d974-4c25-a1ca-62b63da524cb .
+
+govmeta:f0cede8f-f780-41b8-a420-5c1f0ca2229f a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.4.4.1.1" ;
+    core:isPartOf govmeta:6cb0ef96-a3bc-4250-a3c7-3567b554e3ac .
+
+govmeta:74fa39b6-522e-456d-8272-5ba15de4690e a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Dereference service" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.5" ;
+    core:isPartOf govmeta:2456f8c9-0e52-4083-89a1-62b120303aee .
+
+govmeta:869d3def-a781-4dfa-be5e-d779934b3c68 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Condition: can dereference service." ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.4.5.1" ;
+    core:isPartOf govmeta:74fa39b6-522e-456d-8272-5ba15de4690e .
+
+govmeta:15795abe-09a1-4a67-b604-fc60e2c153c9 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.4.5.1.1" ;
+    core:isPartOf govmeta:869d3def-a781-4dfa-be5e-d779934b3c68 .
+
+govmeta:31a775bd-47ed-4bef-ada6-2e3fda052ee6 a owl:NamedIndividual,
+        metagov:Section ; 
+    core:hasTitle "Business Model" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.5" ; 
+    core:isPartOf govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c .
+
+govmeta:e2745f59-d895-46b3-ba1a-d773373b22ed a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Datasets retribution" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.5.1" ;
+    core:isPartOf govmeta:31a775bd-47ed-4bef-ada6-2e3fda052ee6 .
+
+govmeta:6b57470f-1b68-41bc-b619-6bf0758ba913 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Datasets are not retributed" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.5.1.1" ;
+    core:isPartOf govmeta:e2745f59-d895-46b3-ba1a-d773373b22ed .
+
+govmeta:080baf09-cb15-494b-bef0-84d6f166783b a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Service retribution" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.5.2" ;
+    core:isPartOf govmeta:31a775bd-47ed-4bef-ada6-2e3fda052ee6 .
+
+govmeta:700ba720-6865-4e92-83ac-33fc35a69c81 a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Services are retributed if" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.5.2.1" ;
+    core:isPartOf govmeta:080baf09-cb15-494b-bef0-84d6f166783b .
+
+govmeta:19ccd0f7-2653-43ce-888e-02a475dd6e13 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Pricing" ;
+    core:hasDescription "Must be fixed" ;
+    metagov:hasNumber "1.5.2.1.1" ;
+    core:isPartOf govmeta:700ba720-6865-4e92-83ac-33fc35a69c81 .
+
 governance:a6974b5d-292d-4f5b-8e4f-3cbb01b978d8 a owl:NamedIndividual,
         core:Governance ; 
     core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
