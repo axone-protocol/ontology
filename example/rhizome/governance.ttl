@@ -30,22 +30,22 @@ govmeta:92a26f2a-6ab8-4d2c-a8c7-8e8f6091c001 a owl:NamedIndividual,
         metagov:Subsection ;
     core:hasTitle "Accceptable forms of identification" ; 
     core:hasDescription "" ;
-    core:hasNumber "1.1.1" ;
+    metagov:hasNumber "1.1.1" ;
     core:isPartOf govmeta:50e2871d-fed8-40a7-96a7-80d3e9a2cfd8 .
 
 govmeta:aefb58b8-4224-4a9d-81f3-54c1cdc9e453 a owl:NamedIndividual,
         metagov:Article ;
-  core:hasTitle "Condition: Only Decentralized Identifiers (DID) are accepted" ;
-  core:hasDescription "" ;
-  metagov:hasNumber "1.1.1.1" ;
-  core:isPartOf govmeta:92a26f2a-6ab8-4d2c-a8c7-8e8f6091c001 .
+    core:hasTitle "Condition: Only Decentralized Identifiers (DID) are accepted" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.1.1.1" ;
+    core:isPartOf govmeta:92a26f2a-6ab8-4d2c-a8c7-8e8f6091c001 .
 
 govmeta:2dde2cef-16e1-4672-8687-5c1a7d7571ab a owl:NamedIndividual,
         metagov:Paragraph ;
-  core:hasTitle "Verification method" ;
-  core:hasDescription "Must be 'KEY'" ;
-  metagov:hasNumber "1.1.1.1.1" ;
-  core:isPartOf govmeta:aefb58b8-4224-4a9d-81f3-54c1cdc9e453 .
+    core:hasTitle "Verification method" ;
+    core:hasDescription "Must be 'KEY'" ;
+    metagov:hasNumber "1.1.1.1.1" ;
+    core:isPartOf govmeta:aefb58b8-4224-4a9d-81f3-54c1cdc9e453 .
 
 govmeta:4738fce6-4586-4aa9-a43f-e69038998ea0 a owl:NamedIndividual,
         metagov:Section ; 
@@ -58,64 +58,134 @@ govmeta:df90d724-4f6c-48eb-8d56-9e429609d67c a owl:NamedIndividual,
         metagov:Subsection ;
     core:hasTitle "Create Rules" ; 
     core:hasDescription "" ;
-    core:hasNumber "1.2.1" ;
+    metagov:hasNumber "1.2.1" ;
     core:isPartOf govmeta:4738fce6-4586-4aa9-a43f-e69038998ea0 .
 
 govmeta:7ffef773-7f94-4e4b-ae60-099ab6bf2f82 a owl:NamedIndividual,
         metagov:Article ;
-  core:hasTitle "Governance creation by Specific users" ;
-  core:hasDescription "" ;
-  metagov:hasNumber "1.2.1.1" ;
-  core:isPartOf govmeta:df90d724-4f6c-48eb-8d56-9e429609d67c .
+    core:hasTitle "Governance creation by Specific users" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.2.1.1" ;
+    core:isPartOf govmeta:df90d724-4f6c-48eb-8d56-9e429609d67c .
 
 govmeta:ad388f66-785f-4783-9119-cd54bcaacc0d a owl:NamedIndividual,
         metagov:Paragraph ;
-  core:hasTitle "Users" ;
-  core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
-  metagov:hasNumber "1.2.1.1.1" ;
-  core:isPartOf govmeta:7ffef773-7f94-4e4b-ae60-099ab6bf2f82 .
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.2.1.1.1" ;
+    core:isPartOf govmeta:7ffef773-7f94-4e4b-ae60-099ab6bf2f82 .
 
 govmeta:7109f25d-3976-4174-b4c0-68e71831aff4  a owl:NamedIndividual,
         metagov:Subsection ;
     core:hasTitle "Edit Rules" ; 
     core:hasDescription "" ;
-    core:hasNumber "1.2.2" ;
+    metagov:hasNumber "1.2.2" ;
     core:isPartOf govmeta:4738fce6-4586-4aa9-a43f-e69038998ea0 .
 
 govmeta:dc888d6a-d301-4449-8c33-659d9198c3be a owl:NamedIndividual,
         metagov:Article ;
-  core:hasTitle "Governance Amendment by Specific users" ;
-  core:hasDescription "" ;
-  metagov:hasNumber "1.2.2.1" ;
-  core:isPartOf govmeta:7109f25d-3976-4174-b4c0-68e71831aff4  .
+    core:hasTitle "Governance Amendment by Specific users" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.2.2.1" ;
+    core:isPartOf govmeta:7109f25d-3976-4174-b4c0-68e71831aff4  .
 
 govmeta:468b12c9-c799-4639-ad64-64ea24fb865a a owl:NamedIndividual,
         metagov:Paragraph ;
-  core:hasTitle "Users" ;
-  core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
-  metagov:hasNumber "1.2.2.1.1" ;
-  core:isPartOf govmeta:dc888d6a-d301-4449-8c33-659d9198c3be .
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.2.2.1.1" ;
+    core:isPartOf govmeta:dc888d6a-d301-4449-8c33-659d9198c3be .
 
 govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  a owl:NamedIndividual,
         metagov:Subsection ;
     core:hasTitle "Remove Rules" ; 
     core:hasDescription "Process of removing or revoking established policies and procedures governing the management and use of data within an Data Space." ;
-    core:hasNumber "1.2.3" ;
+    metagov:hasNumber "1.2.3" ;
     core:isPartOf govmeta:4738fce6-4586-4aa9-a43f-e69038998ea0 .
 
 govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386 a owl:NamedIndividual,
         metagov:Article ;
-  core:hasTitle "Governance Amendment by Specific users" ;
-  core:hasDescription "Keys with the permissions to delete rules related to the Data Space." ;
-  metagov:hasNumber "1.2.3.1" ;
-  core:isPartOf govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  .
+    core:hasTitle "Governance Amendment by Specific users" ;
+    core:hasDescription "Keys with the permissions to delete rules related to the Data Space." ;
+    metagov:hasNumber "1.2.3.1" ;
+    core:isPartOf govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  .
 
 govmeta:d4e8625c-e26b-49a2-b266-a05652ffae46 a owl:NamedIndividual,
         metagov:Paragraph ;
-  core:hasTitle "Users" ;
-  core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
-  metagov:hasNumber "1.2.3.1.1" ;
-  core:isPartOf govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386  .
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
+    metagov:hasNumber "1.2.3.1.1" ;
+    core:isPartOf govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386  .
+
+govmeta:d4d678f0-483b-4e20-9495-be900d7af83c a owl:NamedIndividual,
+        metagov:Section ; 
+    core:hasTitle "Datasets Management" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.3" ; 
+    core:isPartOf govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c .
+
+govmeta:fe93b17d-2701-4489-b94f-612f25a5c610 a owl:NamedIndividual,
+        metagov:Subsection ;
+    core:hasTitle "Reference dataset" ; 
+    core:hasDescription "" ;
+    metagov:hasNumber "1.3.1" ;
+    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+
+govmeta:9141f387-b775-4a21-8542-4a3984019e4f a owl:NamedIndividual,
+        metagov:Article ;
+    core:hasTitle "Datasets referencing with specific criteria" ;
+    core:hasDescription "" ;
+    metagov:hasNumber "1.3.1.1" ;
+    core:isPartOf govmeta:fe93b17d-2701-4489-b94f-612f25a5c610 .
+
+govmeta:53b3a715-f99b-42c3-8dd0-db29f57f81ef a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Topic" ;
+    core:hasDescription "Agriculture or food" ;
+    metagov:hasNumber "1.3.1.1.1" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
+
+govmeta:1e07c29b-396c-4185-88f5-e2a7c2c59916 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Size" ;
+    core:hasDescription "Smaller than 5Gb" ;
+    metagov:hasNumber "1.3.1.1.2" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
+
+govmeta:aa019e49-727b-4c69-bf2d-79ea114cd5a1 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Geographical Coverage" ;
+    core:hasDescription "Metropolitan France or French Overseas Territories or Europe" ;
+    metagov:hasNumber "1.3.1.1.3" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
+
+govmeta:6789c1d9-4510-4fc1-8265-48df32f95220 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Authorship" ;
+    core:hasDescription "Must be specified" ;
+    metagov:hasNumber "1.3.1.1.4" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
+
+govmeta:0f35095f-f626-4636-8ec2-6c0cb851fed2 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Metadata" ;
+    core:hasDescription "Must be completed" ;
+    metagov:hasNumber "1.3.1.1.5" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
+
+govmeta:73c4ac5b-0687-4e08-9e2f-eb4357e66710 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Licence" ;
+    core:hasDescription "Etalab 2.0, OGL, CC-BY 2.0, ODC-BY or ODbl 1.0, Licence 3, Licence 4, Licence 5, Licence 6, Licence 7, Licence 8, Licence 9, Licence 10, Licence 11, Licence 12 Licence 13, Licence 14, Licence 15, Licence 16, Licence 17" ;
+    metagov:hasNumber "1.3.1.1.6" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
+
+govmeta:b2afa4bb-1e6c-498c-8baa-adb7e22d8841 a owl:NamedIndividual,
+        metagov:Paragraph ;
+    core:hasTitle "Users" ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655 did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575656 did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575659 did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575660 did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575662" ;
+    metagov:hasNumber "1.3.1.1.7" ;
+    core:isPartOf govmeta:9141f387-b775-4a21-8542-4a3984019e4f .
 
 governance:a6974b5d-292d-4f5b-8e4f-3cbb01b978d8 a owl:NamedIndividual,
         core:Governance ; 
