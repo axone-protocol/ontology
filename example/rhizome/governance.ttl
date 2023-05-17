@@ -37,14 +37,14 @@ govmeta:aefb58b8-4224-4a9d-81f3-54c1cdc9e453 a owl:NamedIndividual,
         metagov:Article ;
   core:hasTitle "Condition: Only Decentralized Identifiers (DID) are accepted" ;
   core:hasDescription "" ;
-  meta:hasNumber "1.1.1.1" ;
+  metagov:hasNumber "1.1.1.1" ;
   core:isPartOf govmeta:92a26f2a-6ab8-4d2c-a8c7-8e8f6091c001 .
 
 govmeta:2dde2cef-16e1-4672-8687-5c1a7d7571ab a owl:NamedIndividual,
         metagov:Paragraph ;
   core:hasTitle "Verification method" ;
   core:hasDescription "Must be 'KEY'" ;
-  meta:hasNumber "1.1.1.1.1" ;
+  metagov:hasNumber "1.1.1.1.1" ;
   core:isPartOf govmeta:aefb58b8-4224-4a9d-81f3-54c1cdc9e453 .
 
 govmeta:4738fce6-4586-4aa9-a43f-e69038998ea0 a owl:NamedIndividual,
@@ -65,14 +65,14 @@ govmeta:7ffef773-7f94-4e4b-ae60-099ab6bf2f82 a owl:NamedIndividual,
         metagov:Article ;
   core:hasTitle "Governance creation by Specific users" ;
   core:hasDescription "" ;
-  meta:hasNumber "1.2.1.1" ;
+  metagov:hasNumber "1.2.1.1" ;
   core:isPartOf govmeta:df90d724-4f6c-48eb-8d56-9e429609d67c .
 
 govmeta:ad388f66-785f-4783-9119-cd54bcaacc0d a owl:NamedIndividual,
         metagov:Paragraph ;
   core:hasTitle "Users" ;
   core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
-  meta:hasNumber "1.2.1.1.1" ;
+  metagov:hasNumber "1.2.1.1.1" ;
   core:isPartOf govmeta:7ffef773-7f94-4e4b-ae60-099ab6bf2f82 .
 
 govmeta:7109f25d-3976-4174-b4c0-68e71831aff4  a owl:NamedIndividual,
@@ -86,14 +86,14 @@ govmeta:dc888d6a-d301-4449-8c33-659d9198c3be a owl:NamedIndividual,
         metagov:Article ;
   core:hasTitle "Governance Amendment by Specific users" ;
   core:hasDescription "" ;
-  meta:hasNumber "1.2.2.1" ;
+  metagov:hasNumber "1.2.2.1" ;
   core:isPartOf govmeta:7109f25d-3976-4174-b4c0-68e71831aff4  .
 
 govmeta:468b12c9-c799-4639-ad64-64ea24fb865a a owl:NamedIndividual,
         metagov:Paragraph ;
   core:hasTitle "Users" ;
   core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
-  meta:hasNumber "1.2.2.1.1" ;
+  metagov:hasNumber "1.2.2.1.1" ;
   core:isPartOf govmeta:dc888d6a-d301-4449-8c33-659d9198c3be .
 
 govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  a owl:NamedIndividual,
@@ -107,14 +107,14 @@ govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386 a owl:NamedIndividual,
         metagov:Article ;
   core:hasTitle "Governance Amendment by Specific users" ;
   core:hasDescription "Keys with the permissions to delete rules related to the Data Space." ;
-  meta:hasNumber "1.2.3.1" ;
+  metagov:hasNumber "1.2.3.1" ;
   core:isPartOf govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  .
 
 govmeta:d4e8625c-e26b-49a2-b266-a05652ffae46 a owl:NamedIndividual,
         metagov:Paragraph ;
   core:hasTitle "Users" ;
   core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
-  meta:hasNumber "1.2.3.1.1" ;
+  metagov:hasNumber "1.2.3.1.1" ;
   core:isPartOf govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386  .
 
 governance:a6974b5d-292d-4f5b-8e4f-3cbb01b978d8 a owl:NamedIndividual,
