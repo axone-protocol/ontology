@@ -374,14 +374,14 @@ govmeta:1d42ff1b-f4bc-4bc1-9329-9cb336ccffe8 a owl:NamedIndividual,
     core:hasTitle "Condition: can remove metadata." ;
     core:hasDescription "" ;
     metagov:hasNumber "1.4.4.1" ;
-    core:isPartOf govmeta:b4357ab3-d974-4c25-a1ca-62b63da524cb .
+    core:isPartOf govmeta:ed590187-effa-4fad-a369-d5a3ed6f9f3b .
 
 govmeta:f0cede8f-f780-41b8-a420-5c1f0ca2229f a owl:NamedIndividual,
         metagov:Paragraph ;
     core:hasTitle "Users" ;
     core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655" ;
     metagov:hasNumber "1.4.4.1.1" ;
-    core:isPartOf govmeta:6cb0ef96-a3bc-4250-a3c7-3567b554e3ac .
+    core:isPartOf govmeta:1d42ff1b-f4bc-4bc1-9329-9cb336ccffe8 .
 
 govmeta:74fa39b6-522e-456d-8272-5ba15de4690e a owl:NamedIndividual,
         metagov:Subsection ;
