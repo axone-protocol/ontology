@@ -96,3 +96,33 @@ tst:AssertParagraphs a sh:NodeShape ;
     sh:minCount 1 ;
     sh:message "meta:Paragraph requires one core:hasDescription of type rdf:langString."@en ;
   ] .
+
+tst:AssetSections a sh:NodeShape ;
+  sh:targetClass meta:Section ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Chapter ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Section should be part of one meta:Chapter."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Section requires one core:hasTitle of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Section requires one core:hasDescription of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:makeCount 1 ;
+    sh:message "meta:Section requires one meta:hasNumber of type xsd:string."@en ;
+  ] .
+  
