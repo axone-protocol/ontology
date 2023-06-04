@@ -67,3 +67,32 @@ tst:AssertGovernanceMetadatas a sh:NodeShape ;
     sh:maxCount 1 ;
     sh:message "meta:GovernanceMetadata requires at least one core:createdOn of type xsd:dateTime."@en ;
   ] .
+
+tst:AssertParagraphs a sh:NodeShape ;
+  sh:targetClass meta:Paragraph ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Paragraph requires one core:hasTitle of type rdf:langString."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Paragraph requires one meta:hasNumber of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Article ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Paragraph should be part of one meta:Article."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Paragraph requires one core:hasDescription of type rdf:langString."@en ;
+  ] .
