@@ -50,3 +50,20 @@ tst:AssertChapters a sh:NodeShape ;
     sh:minCount 1 ;
     sh:message "meta:Chapter requires one core:hasDescription of type rdf:langString."@en ;
   ] .
+
+tst:AssertGovernanceMetadatas a sh:NodeShape ;
+  sh:targetClass meta:GovernanceMetadata ;
+  sh:property [
+    sh:path meta:hasChapter ;
+    sh:class meta:Chapter ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Governance should have one core:hasChapter."@en ;
+  ] ;
+  sh:property [
+    sh:path core:createdOn ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:GovernanceMetadata requires at least one core:createdOn of type xsd:dateTime."@en ;
+  ] .
