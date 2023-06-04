@@ -89,10 +89,10 @@ RDF_SHACL = \
     -v `pwd`:/usr/src/ontology \
     ${DOCKER_IMAGE_PYSHACL} poetry run pyshacl \
     --shacl /usr/src/ontology/$1 \
-    --output /usr/src/ontology/$2 \
+    --output /usr/src/ontology/$3 \
     --inference none \
     --format human \
-    /usr/src/ontology/$(BIN_OKP4_NT)
+    /usr/src/ontology/$2
 NT_UNIQUIFY = \
   @HASH=`md5sum $1 | awk '{print $$1}'`; \
   sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
@@ -194,12 +194,16 @@ test-ontology: check build $(FLG_TSTS) ## Test final (generated) ontology
 $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
-	@$(call RDF_SHACL,$<,$@) \
-      && echo "  ↳ ✅ ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
-      || { \
-           echo "  ↳ ❌ ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
-           exit 1; \
-         }
+	@bash -c '\
+		for target in $(BIN_OKP4_NT) $(BIN_EXAMPLE_NT); do \
+			$(call RDF_SHACL,$<,$$target,$@) \
+			&& echo "  ↳ ✅ ${COLOR_CYAN}$$target ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
+			|| { \
+				echo "  ↳ ❌ ${COLOR_CYAN}$$target ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
+				exit 1; \
+			}; \
+		done \
+	'
 
 ## Fuseki:
 .PHONY: fuseki-start
