@@ -117,7 +117,7 @@ govmeta:d4e8625c-e26b-49a2-b266-a05652ffae46 a owl:NamedIndividual,
     metagov:hasNumber "1.2.3.1.1" ;
     core:isPartOf govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386  .
 
-govmeta:d4d678f0-483b-4e20-9495-be900d7af83c a owl:NamedIndividual,
+govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 a owl:NamedIndividual,
         metagov:Section ; 
     core:hasTitle "Datasets Management"@en ;
     core:hasDescription ""@en ;
@@ -129,7 +129,7 @@ govmeta:fe93b17d-2701-4489-b94f-612f25a5c610 a owl:NamedIndividual,
     core:hasTitle "Reference dataset"@en ; 
     core:hasDescription ""@en ;
     metagov:hasNumber "1.3.1" ;
-    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+    core:isPartOf govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 .
 
 govmeta:9141f387-b775-4a21-8542-4a3984019e4f a owl:NamedIndividual,
         metagov:Article ;
@@ -192,7 +192,7 @@ govmeta:35fbdba6-46d8-4994-8e2d-240c6a42169a a owl:NamedIndividual,
     core:hasTitle "Create metadata"@en ; 
     core:hasDescription ""@en ;
     metagov:hasNumber "1.3.2" ;
-    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+    core:isPartOf govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 .
 
 govmeta:3882e09d-8087-42ad-925d-d150a675789f a owl:NamedIndividual,
         metagov:Article ;
@@ -213,7 +213,7 @@ govmeta:d2466dea-840c-4556-aecf-8320058a427f a owl:NamedIndividual,
     core:hasTitle "Edit metadata"@en ; 
     core:hasDescription ""@en ;
     metagov:hasNumber "1.3.3" ;
-    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+    core:isPartOf govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 .
 
 govmeta:2054c0b5-a731-4ad4-9e62-4b60024ef762 a owl:NamedIndividual,
         metagov:Article ;
@@ -234,7 +234,7 @@ govmeta:b4357ab3-d974-4c25-a1ca-62b63da524cb a owl:NamedIndividual,
     core:hasTitle "Remove metadata"@en ; 
     core:hasDescription ""@en ;
     metagov:hasNumber "1.3.4" ;
-    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+    core:isPartOf govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 .
 
 govmeta:6cb0ef96-a3bc-4250-a3c7-3567b554e3ac a owl:NamedIndividual,
         metagov:Article ;
@@ -255,7 +255,7 @@ govmeta:7105afcd-2005-4248-90e1-1a067d6cd0e4 a owl:NamedIndividual,
     core:hasTitle "Dereference dataset"@en ; 
     core:hasDescription ""@en ;
     metagov:hasNumber "1.3.5" ;
-    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+    core:isPartOf govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 .
 
 govmeta:ee7747de-4643-46d7-baa8-13ea708e41b8 a owl:NamedIndividual,
         metagov:Article ;
@@ -276,7 +276,7 @@ govmeta:21b33e23-573d-4856-ab36-9cdbdd4834c0 a owl:NamedIndividual,
     core:hasTitle "Download dataset"@en ; 
     core:hasDescription ""@en ;
     metagov:hasNumber "1.3.6" ;
-    core:isPartOf govmeta:d4d678f0-483b-4e20-9495-be900d7af83c .
+    core:isPartOf govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 .
 
 govmeta:90d9ff51-05e9-499a-b814-e128f94f41d1 a owl:NamedIndividual,
         metagov:Article ;

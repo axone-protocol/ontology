@@ -145,7 +145,7 @@ govmeta:c9edf8f4-a4c7-4ddb-833d-911fff982ed0 a owl:NamedIndividual,
     metagov:hasNumber "1.3.1.1.1" ;
     core:isPartOf govmeta:67ba9850-e67a-4fc0-b36a-f04d48487f45 .
 
-govmeta:c9edf8f4-a4c7-4ddb-833d-911fff982ed0 a owl:NamedIndividual,
+govmeta:01ae0909-f548-4526-a6d3-e63811a1fd59 a owl:NamedIndividual,
         metagov:Paragraph ;
     core:hasTitle "Size"@en ;
     core:hasDescription "Smaller than 5Gb"@en ;
