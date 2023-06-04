@@ -1,3 +1,4 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,10 +11,9 @@ tst:AssertArticles a sh:NodeShape ;
   sh:targetClass meta:Article ;
   sh:property [
     sh:path core:hasTitle ;
-    sh:datatype xsd:string ;
+    sh:datatype rdf:langString ;
     sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:message "meta:Article requires one core:hasTitle of type xsd:string."@en ;
+    sh:message "meta:Article requires one core:hasTitle of type rdf:langString."@en ;
   ] ;
   sh:property [
     sh:path core:isPartOf ;
@@ -31,8 +31,22 @@ tst:AssertArticles a sh:NodeShape ;
   ] ;
   sh:property [
     sh:path core:hasDescription ;
-    sh:datatype xsd:string ;
+    sh:datatype rdf:langString ;
     sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:message "meta:Article requires one core:hasDescription of type xsd:string."@en ;
+    sh:message "meta:Article requires one core:hasDescription of type rdf:langString."@en ;
+  ] .
+
+tst:AssertChapters a sh:NodeShape ;
+  sh:targetClass meta:Chapter ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Chapter requires one core:hasTitle of type rdf:langString."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Chapter requires one core:hasDescription of type rdf:langString."@en ;
   ] .
