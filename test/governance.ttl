@@ -125,4 +125,32 @@ tst:AssetSections a sh:NodeShape ;
     sh:makeCount 1 ;
     sh:message "meta:Section requires one meta:hasNumber of type xsd:string."@en ;
   ] .
-  
+
+tst:AssetSubsections a sh:NodeShape ;
+  sh:targetClass meta:Subsection ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Section ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Subsection should be part of one meta:Section."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Subsection requires one core:hasTitle of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Subsection requires one core:hasDescription of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:makeCount 1 ;
+    sh:message "meta:Subsection requires one meta:hasNumber of type xsd:string."@en ;
+  ] .
