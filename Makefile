@@ -65,7 +65,7 @@ endif
 
 # Runners
 RDF_WRITE = \
-  @docker run --rm \
+  docker run --rm \
       -v `pwd`:/usr/src/ontology:rw \
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_JRE} \
@@ -75,7 +75,7 @@ RDF_WRITE = \
         $2 \
         $3
 RDF_SERIALIZE = \
-  @docker run --rm \
+  docker run --rm \
     -v `pwd`:/usr/src/ontology:rw \
     -w /usr/src/ontology \
     ${DOCKER_IMAGE_RUBY_RDF} \
@@ -85,14 +85,14 @@ RDF_SERIALIZE = \
       --input-format $1 \
       $3
 RDF_SHACL = \
-  @docker run --rm \
+  docker run --rm \
     -v `pwd`:/usr/src/ontology \
     ${DOCKER_IMAGE_PYSHACL} poetry run pyshacl \
     --shacl /usr/src/ontology/$1 \
-    --output /usr/src/ontology/$2 \
+    --output /usr/src/ontology/$3 \
     --inference none \
     --format human \
-    /usr/src/ontology/$(BIN_OKP4_NT)
+    /usr/src/ontology/$2
 NT_UNIQUIFY = \
   @HASH=`md5sum $1 | awk '{print $$1}'`; \
   sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
@@ -119,14 +119,14 @@ build-examples: check $(BIN_EXAMPLE_TTL) $(BIN_EXAMPLE_JSONLD) ## Build the exam
 $(OBJ_ONTS): $(DST_ONT)/%.nt: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
-	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
-	${call NT_UNIQUIFY,$@}
+	@${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
+	@${call NT_UNIQUIFY,$@}
 
 $(OBJ_EXMS): $(DST_EXM)/%.nt: $(SRC_EXM)/%.ttl
 	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
-	${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
-	${call NT_UNIQUIFY,$@}
+	@${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
+	@${call NT_UNIQUIFY,$@}
 
 $(BIN_OKP4_NT): $(OBJ_ONTS)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -135,12 +135,12 @@ $(BIN_OKP4_NT): $(OBJ_ONTS)
 $(BIN_OKP4_TTL): $(BIN_OKP4_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
-	${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
+	@${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
 
 $(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
-	${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
+	@${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
 
 $(BIN_EXAMPLE_NT): $(OBJ_EXMS)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -148,11 +148,11 @@ $(BIN_EXAMPLE_NT): $(OBJ_EXMS)
 
 $(BIN_EXAMPLE_TTL): $(BIN_EXAMPLE_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-	${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
+	@${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
 
 $(BIN_EXAMPLE_JSONLD): $(BIN_EXAMPLE_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-	${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
+	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
 
 ## Format:
 .PHONY: format
@@ -164,7 +164,7 @@ format-ttl: check cache $(FLG_TTLS_FMT) ## Format all Turtle files
 $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
 	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
-	${call RDF_WRITE,turtle,$<,"$<.formatted"}
+	@${call RDF_WRITE,turtle,$<,"$<.formatted"}
 	@mv -f "$<.formatted" $<
 	@touch $@
 
@@ -194,12 +194,16 @@ test-ontology: check build $(FLG_TSTS) ## Test final (generated) ontology
 $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
-	$(call RDF_SHACL,$<,$@) \
-      && echo "  ↳ ✅ ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
-      || { \
-           echo "  ↳ ❌ ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
-           exit 1; \
-         }
+	@bash -c '\
+		for target in $(BIN_OKP4_NT) $(BIN_EXAMPLE_NT); do \
+			$(call RDF_SHACL,$<,$$target,$@) \
+			&& echo "  ↳ ✅ ${COLOR_CYAN}$$target ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
+			|| { \
+				echo "  ↳ ❌ ${COLOR_CYAN}$$target ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
+				exit 1; \
+			}; \
+		done \
+	'
 
 ## Fuseki:
 .PHONY: fuseki-start

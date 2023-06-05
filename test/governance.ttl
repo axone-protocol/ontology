@@ -1,0 +1,156 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix meta: <https://ontology.okp4.space/metadata/governance/> .
+@prefix tst: <https://ontology.okp4.space/test/> .
+
+tst:AssertArticles a sh:NodeShape ;
+  sh:targetClass meta:Article ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Article requires one core:hasTitle of type rdf:langString."@en ;
+  ] ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Subsection ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Article should be part of one meta:Subsection."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Article requires one meta:hasNumber of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Article requires one core:hasDescription of type rdf:langString."@en ;
+  ] .
+
+tst:AssertChapters a sh:NodeShape ;
+  sh:targetClass meta:Chapter ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Chapter requires one core:hasTitle of type rdf:langString."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Chapter requires one core:hasDescription of type rdf:langString."@en ;
+  ] .
+
+tst:AssertGovernanceMetadatas a sh:NodeShape ;
+  sh:targetClass meta:GovernanceMetadata ;
+  sh:property [
+    sh:path meta:hasChapter ;
+    sh:class meta:Chapter ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Governance should have one core:hasChapter."@en ;
+  ] ;
+  sh:property [
+    sh:path core:createdOn ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:GovernanceMetadata requires at least one core:createdOn of type xsd:dateTime."@en ;
+  ] .
+
+tst:AssertParagraphs a sh:NodeShape ;
+  sh:targetClass meta:Paragraph ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Paragraph requires one core:hasTitle of type rdf:langString."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Paragraph requires one meta:hasNumber of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Article ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Paragraph should be part of one meta:Article."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Paragraph requires one core:hasDescription of type rdf:langString."@en ;
+  ] .
+
+tst:AssetSections a sh:NodeShape ;
+  sh:targetClass meta:Section ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Chapter ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Section should be part of one meta:Chapter."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Section requires one core:hasTitle of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Section requires one core:hasDescription of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:makeCount 1 ;
+    sh:message "meta:Section requires one meta:hasNumber of type xsd:string."@en ;
+  ] .
+
+tst:AssetSubsections a sh:NodeShape ;
+  sh:targetClass meta:Subsection ;
+  sh:property [
+    sh:path core:isPartOf ;
+    sh:class meta:Section ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "meta:Subsection should be part of one meta:Section."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasTitle ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Subsection requires one core:hasTitle of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path core:hasDescription ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "meta:Subsection requires one core:hasDescription of type xsd:string."@en ;
+  ] ;
+  sh:property [
+    sh:path meta:hasNumber ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:makeCount 1 ;
+    sh:message "meta:Subsection requires one meta:hasNumber of type xsd:string."@en ;
+  ] .
