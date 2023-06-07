@@ -18,7 +18,7 @@
     core:hasTitle "Rhizome"@fr ;
     core:hasTitle "Rhizome"@en ;
     core:hasTitle "Rhizom"@de ;
-    core:hasTopic topic:AgricultureEnvironmentForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 <https://ontology.okp4.space/dataverse/dataspace/metadata/e33f7ab8-4f8d-4588-a3fe-43e5e77b189e> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

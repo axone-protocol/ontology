@@ -35,7 +35,7 @@
     core:hasTitle "BASE SIRENE - agriculture sylviculture pêche"@fr ;
     core:hasTitle "SIRENE database - agriculture, forestry and fishing"@en ;
     core:hasTitle "BASE SIRENE - Landwirtschaft Forstwirtschaft Fischerei"@de ;
-    core:hasTopic topic:AgricultureEnvironmentAndForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 dataset:d41e0628-e77a-446f-a3f9-624d5b061762 a owl:NamedIndividual,
         core:Dataset ;

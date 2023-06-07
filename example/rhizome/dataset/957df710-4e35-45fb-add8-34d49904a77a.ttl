@@ -34,7 +34,7 @@
     core:hasTitle "AGRESTE 2020"@fr ;
     core:hasTitle "AGRESTE 2020"@en ;
     core:hasTitle "AGRESTE 2020"@de ;
-    core:hasTopic topic:AgricultureEnvironmentAndForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 <https://ontology.okp4.space/dataverse/dataset/metadata/e672e90e-1c5b-4a46-bf4b-ce3026cf3b9e> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

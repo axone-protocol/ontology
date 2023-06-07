@@ -34,7 +34,7 @@
     core:hasTitle "Table référentielle des cultures et des groupes de cultures du RPG"@fr ;
     core:hasTitle "Crop and crop group reference table of the Graphic Parcel Register (Registre Parcellaire Graphique)"@en ;
     core:hasTitle "Referenztabelle der Kulturen und Kulturgruppen des grafischen Parzellenregisters (Registre Parcellaire Graphique)"@de ;
-    core:hasTopic topic:AgricultureEnvironmentAndForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 dataset:2c039dd5-6cc6-41bb-88eb-ab39e9f2ea81 a owl:NamedIndividual,
         core:Dataset ;
