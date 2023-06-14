@@ -29,7 +29,7 @@ dstmeta:d1615703-4ee1-4e2f-997e-15aecf1eea4e a owl:NamedIndividual,
         "composition-des-aliments" ;
     core:hasTitle "Table de composition nutritionnelle des aliments Ciqual 2020"@fr ;
     core:hasTitle "Nutritional composition table for Ciqual 2020 foods"@en ;
-    core:hasTitle "Tabelle der Nährstoffzusammensetzung von Lebensmitteln Ciqual 2020"@fr ;
+    core:hasTitle "Tabelle der Nährstoffzusammensetzung von Lebensmitteln Ciqual 2020"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 dstmeta:15592fd4-e368-46d3-b113-5d0ef8d4d10f a owl:NamedIndividual,
