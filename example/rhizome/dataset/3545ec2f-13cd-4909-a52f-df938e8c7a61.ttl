@@ -39,7 +39,7 @@
     core:hasTitle "RPG FRANCE 2020"@fr ;
     core:hasTitle "RPG FRANCE 2020"@en ;
     core:hasTitle "RPG FRANKREICH 2020"@de ;
-    core:hasTopic topic:AgricultureEnvironmentAndForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 dataset:3545ec2f-13cd-4909-a52f-df938e8c7a61 a owl:NamedIndividual,
         core:Dataset ;

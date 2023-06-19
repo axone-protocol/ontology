@@ -43,7 +43,7 @@
     core:hasTitle "RPG AGRESTE 2020"@fr ;
     core:hasTitle "RPG AGRESTE 2020"@en ;
     core:hasTitle "RPG AGRESTE 2020"@de ;
-    core:hasTopic topic:AgricultureEnvironmentAndForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 dataset:ca752b42-9740-4436-a86f-cd3c5e084d33 a owl:NamedIndividual,
         core:Dataset ;

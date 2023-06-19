@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tst: <https://ontology.okp4.space/test/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix meta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+
+tst:AssertGeneralMetadatas a sh:NodeShape ;
+  sh:targetClass meta:GeneralMetadata ;
+  sh:property [
+    sh:path core:hasTopic ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in ( topic:AgricultureFoodEnvironmentAndForestry
+            topic:BiologyGeologyAndChemistry
+            topic:BusinessAndPurchase
+            topic:DeFiAndCrypto
+            topic:Energy
+            topic:Healthcare
+            topic:IndustryMobilityAndEngineering
+            topic:LogisticsRetailSupplyChainECommerce
+            topic:MarketingAndCustomerBehavior
+            topic:Other ) ; 
+    sh:message "meta:GeneralMetadata requires one core:hasTopic instance part of the <https://ontology.okp4.space/thesaurus/topic> thesaurus."@en ;
+  ] .

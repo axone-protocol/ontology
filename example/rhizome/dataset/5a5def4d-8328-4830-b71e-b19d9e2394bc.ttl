@@ -40,7 +40,7 @@
     core:hasTitle "ADMIN EXPRESS COG 2022 REGION"@fr ;
     core:hasTitle "ADMIN EXPRESS COG 2022 REGION"@en ;
     core:hasTitle "ADMIN EXPRESS COG 2022 REGION"@de ;
-    core:hasTopic topic:AgricultureEnvironmentAndForestry .
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
 dataset:5a5def4d-8328-4830-b71e-b19d9e2394bc a owl:NamedIndividual,
         core:Dataset ;
