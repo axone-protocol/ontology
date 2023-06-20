@@ -1,7 +1,7 @@
 @prefix area: <https://ontology.okp4.space/thesaurus/area/> .
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
-@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
 @prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
 @prefix license: <https://ontology.okp4.space/thesaurus/license/> .
 @prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
@@ -42,7 +42,6 @@ dstmeta:125f3bf4-08ac-46e1-bf8e-371fb81ed835 a owl:NamedIndividual,
 
 dataset:5da01b5b-af91-4ecd-9458-c885a248417e a owl:NamedIndividual,
         core:Dataset ;
-    core:belongsTo dataspace:347285-e52a-430d-9679-dcb76b962ce7 ;
     core:hasIdentifier <urn:uuid:5da01b5b-af91-4ecd-9458-c885a248417e> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:providedBy service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 .
