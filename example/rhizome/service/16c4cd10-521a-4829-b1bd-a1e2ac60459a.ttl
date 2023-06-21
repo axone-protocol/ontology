@@ -1,6 +1,5 @@
 @prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
 @prefix core: <https://ontology.okp4.space/core/> .
-@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix service: <https://ontology.okp4.space/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,7 +28,6 @@
 
 service:16c4cd10-521a-4829-b1bd-a1e2ac60459a a owl:NamedIndividual,
         core:Service ;
-    core:belongsTo dataspace:ef347285-e52a-430d-9679-dcb76b962ce7 ;
     core:hasIdentifier <urn:uuid:16c4cd10-521a-4829-b1bd-a1e2ac60459a> ;
     core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .

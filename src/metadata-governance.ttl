@@ -47,10 +47,10 @@ meta:Chapter a owl:Class ;
 meta:GovernanceMetadata a owl:Class ;
   rdfs:label "Governance metadata"@en ;
   rdfs:comment """
-    Metadata provides descriptive information about a governance text. This metadata is distinct from the governance text itself, but helps to understand the governance text 
+    Governance Metadata provides descriptive information about a governance text. This metadata is distinct from the governance text itself, but helps to understand the governance text 
     by providing important context. The metadata describes the governance text in a hierarchical manner, organized into chapters, sections, and articles. This hierarchy helps to structure the governance text and makes it easier to navigate and comprehend.
 
-    This metadata is especially valuable in decentralized applications and web3 interfaces where governance texts are utilized to describe and represent the rules governing dataspaces. This enables users to more readily engage with the governance text, allowing them to gain a better understanding of how the text operates and the rules governing the relationship between all resources within the dataspaces.
+    This metadata is especially valuable in decentralized applications and web3 interfaces where governance texts are utilized to describe and represent the rules governing Zones. This enables users to more readily engage with the governance text, allowing them to gain a better understanding of how the text operates and the rules governing the relationship between all resources within the Zones.
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;

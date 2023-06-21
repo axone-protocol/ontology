@@ -3,7 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix license: <https://ontology.okp4.space/thesaurus/license/> .
-@prefix meta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix meta: <https://ontology.okp4.space/metadata/zone/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix thesaurus: <https://ontology.okp4.space/thesaurus/> .
 

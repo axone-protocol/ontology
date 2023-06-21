@@ -4,11 +4,11 @@
 @prefix metagov: <https://ontology.okp4.space/metadata/governance/> .
 @prefix govmeta: <https://ontology.okp4.space/dataverse/governance/metadata/> .
 @prefix governance: <https://ontology.okp4.space/dataverse/governance/> .
-@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
+@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
 
 govmeta:58f368ee-fbc6-11ed-be56-0242ac120002 a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
-    core:describes governance:58f368ee-fbc6-11ed-be56-0242ac120002 ;
+    core:describes zone:97ff7e16-c08d-47be-8475-211016c82e33 ;
     core:createdOn "2022-10-16T16:51:28+00:00"^^xsd:dateTime ;
     metagov:hasChapter govmeta:bba31e5b-afe5-41a5-bab4-b5c2d443ec18.
 
@@ -445,9 +445,3 @@ govmeta:84ef5281-13d3-45e2-bd41-c3fd9ee940f5 a owl:NamedIndividual,
     core:hasDescription "Must be fixed"@en ;
     metagov:hasNumber "1.5.2.1.1" ;
     core:isPartOf govmeta:51b95a57-5d3e-40b2-9ff2-f7eceeb7c0e3 .
-    
-governance:58f368ee-fbc6-11ed-be56-0242ac120002 a owl:NamedIndividual,
-        core:Governance ; 
-    core:belongsTo dataspace:97ff7e16-c08d-47be-8475-211016c82e33 ;
-    core:hasIdentifier <urn:uuid:58f368ee-fbc6-11ed-be56-0242ac120002> ;
-    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .

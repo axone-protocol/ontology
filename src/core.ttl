@@ -19,22 +19,26 @@ okp4core:Data a owl:Class ;
   `Data` denotes a quantity of information (processed or stored). 
   """@en .
 
-okp4core:DataSpace a owl:Class ;
-  rdfs:label "Data Space"@en ;
+okp4core:Zone a owl:Class ;
+  rdfs:label "Zone"@en ;
   rdfs:comment """
-  `Data Space` is a founding concept of this ontology and is described as an abstraction that comprises:
+  `Zone` is a conceptual framework that is established based on a set of rules, within which recognized `Resources` must conform, considering associated consents.
   
-  - Bundle of rights & rules that regulates interactions between data, algorithms, infrastructure and every resources shared by participants.
-  - Governance mechanisms to adapt these rules.
-
-  ![Data spaces](images/dataspace.png)
-
-A Data Space is highly customizable to allow its members to create a space of sharing designed exactly as they need.
+  Zones are described by a set of metadata providing information about various aspects of the Zone, such as the zone's name, general information about the provider, and more. 
+  Specific data description vocabularies and thesauri are used to structure this metadata. A dedicated metadata profile outlines the rules that govern the Zone, expressing 
+  its fundamental principles, intentions, scope, and ultimate objectives. These rules encompass the entities involved and the Resources that interact within the Zone. 
+  They can be customized to address specific use cases, industry sectors, partnership networks, or geographic regions, facilitating tailored governance arrangements 
+  within a specific context.
   """@en ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
     owl:onProperty okp4core:hasRegistrar ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom xsd:anyURI ;
+    owl:onProperty okp4core:hasIdentifier ;
   ] .
 
 okp4core:Dataset a owl:Class ;
@@ -64,23 +68,8 @@ okp4core:Dataset a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom xsd:anyURI ;
     owl:onProperty okp4core:hasIdentifier ;
-  ] .
-
-okp4core:Governance a owl:Class ;
-  rdfs:label "Governance"@en ;
-  rdfs:comment """
-    `Governance` is a set of rules that define how a `Data Space` is managed and how the resources are shared.
-  """@en ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom xsd:anyURI ;
-    owl:onProperty okp4core:hasIdentifier ;
   ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom okp4core:DIDURI ;
-    owl:onProperty okp4core:hasRegistrar ;
-  ] .
+  rdfs:subClassOf okp4core:Resource .
 
 okp4core:Metadata a owl:Class ;
   rdfs:label "Metadata"@en ;
@@ -113,14 +102,9 @@ okp4core:Period a owl:Class ;
 okp4core:Resource a owl:Class ;
   rdfs:label "Resource"@en ;
   rdfs:comment """
-  `Resource` denotes members of a `Data Space`, including datasets, services...
-  """@en ;
-  owl:unionOf ( okp4core:Dataset okp4core:Service okp4core:Governance ) ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:allValuesFrom okp4core:DataSpace ;
-    owl:onProperty okp4core:belongsTo ;
-  ] .
+  `Resource` is a generic concept referring to an elemental material within the dataverse, possessing value and being capable of being utilized in an 
+  orchestration within the protocol's framework (e.g. `Datasets`, `Services`).
+  """@en .
 
 okp4core:Service a owl:Class ;
   rdfs:label "Service"@en ;
@@ -147,7 +131,8 @@ okp4core:Service a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom okp4core:DIDURI ;
     owl:onProperty okp4core:hasRegistrar ;
-  ] .
+  ] ;
+  rdfs:subClassOf okp4core:Resource .
 
 okp4core:ServiceExecution a owl:Class ;
   rdfs:label "Service Execution"@en ;
@@ -207,6 +192,10 @@ okp4core:ServiceExecutionOrder a owl:Class ;
       a owl:Restriction ;
       owl:allValuesFrom okp4core:Service ;
       owl:onProperty okp4core:hasObject ;
+    ] [
+      a owl:Restriction ;
+      owl:allValuesFrom okp4core:Zone ;
+      owl:onProperty okp4core:belongsTo ;
     ] ) ;
   ] .
 
