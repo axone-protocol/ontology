@@ -1,7 +1,6 @@
 @prefix area: <https://ontology.okp4.space/thesaurus/area/> .
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
-@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
 @prefix license: <https://ontology.okp4.space/thesaurus/license/> .
 @prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
