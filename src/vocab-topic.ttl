@@ -5,50 +5,80 @@
 
 <https://ontology.okp4.space/thesaurus/topic> a skos:ConceptScheme ;
   rdfs:label "Topic Thesaurus"@en ;
+  rdfs:label "Thésaurus des thèmes"@en ;
+  rdfs:label "Thema Thesaurus"@de ;
   dcterms:description """
   This thesaurus defines a controlled vocabulary expressing the different common topics, allowing resources
   to be organised and classified according to their nature or purpose.
   """@en ;
-  dcterms:title "The OKP4 Topic Thesaurus"@en .
+  dcterms:description """
+  Ce thésaurus définit un vocabulaire contrôlé exprimant les différents thèmes communs, ce qui permet d'organiser et de classer les ressources en fonction de leur nature ou de leur objectif. d'être organisées et classées en fonction de leur nature ou de leur objectif.
+  """@fr ;
+  dcterms:description """
+  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen gemeinsamen Themen ausdrückt und die Organisation und Klassifizierung von Ressourcen nach ihrer Art oder ihrem Zweck ermöglicht.
+  """@de ;
+  dcterms:title "The OKP4 Topic Thesaurus"@en ;
+  dcterms:title "Le thésaurus thématique OKP4"@fr ;
+  dcterms:title "Der OKP4 Themen-Thesaurus"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/AgricultureFoodEnvironmentAndForestry> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Agriculture, food, environment and forestry"@en .
+  skos:prefLabel "Agriculture, food, environment and forestry"@en ;
+  skos:prefLabel "Agriculture, alimentation, environnement et forêt"@fr ;
+  skos:prefLabel "Landwirtschaft, Ernährung, Umwelt und Forstwirtschaft"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/BiologyGeologyAndChemistry> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Biology, geology and chemistry"@en .
+  skos:prefLabel "Biology, geology and chemistry"@en ;
+  skos:prefLabel "Biologie, géologie et chimie"@fr ;
+  skos:prefLabel "Biologie, Geologie und Chemie"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/BusinessAndPurchase> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Business and purchase"@en .
+  skos:prefLabel "Business and purchase"@en ;
+  skos:prefLabel "Commerce et achat"@fr ;
+  skos:prefLabel "Geschäft und Einkauf"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/DeFiAndCrypto> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "DeFi and Crypto"@en .
+  skos:prefLabel "DeFi and Crypto"@en ;
+  skos:prefLabel "DeFi et Crypto"@fr ;
+  skos:prefLabel "DeFi und Krypto"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/Energy> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Energy"@en .
+  skos:prefLabel "Energy"@en ;
+  skos:prefLabel "Energie"@fr ;
+  skos:prefLabel "Energie"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/Healthcare> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Healthcare"@en .
+  skos:prefLabel "Health"@en ;
+  skos:prefLabel "Santé"@fr ;
+  skos:prefLabel "Gesundheit"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/IndustryMobilityAndEngineering> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Industry, mobility and engineering"@en .
+  skos:prefLabel "Industry, mobility and engineering"@en ;
+  skos:prefLabel "Industrie, mobilité et ingénierie"@fr ;
+  skos:prefLabel "Industrie, Mobilität und Technik"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/LogisticsRetailSupplyChainECommerce> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Logistics, retail, supply chain and eCommerce"@en .
+  skos:prefLabel "Logistics, retail, supply chain and eCommerce"@en ;
+  skos:prefLabel "Logistique, commerce, chaîne d'approvisionnement et eCommerce"@fr ;
+  skos:prefLabel "Logistik, Einzelhandel, Lieferkette und eCommerce"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/MarketingAndCustomerBehavior> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Marketing and Customer Behavior"@en .
+  skos:prefLabel "Marketing and Customer Behavior"@en ;
+  skos:prefLabel "Marketing et comportement des consommateurs"@fr ;
+  skos:prefLabel "Marketing und Kundenverhalten"@de .
 
 <https://ontology.okp4.space/thesaurus/topic/Other> a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/topic> ;
-  skos:prefLabel "Other"@en .
+  skos:prefLabel "Other"@en ;
+  skos:prefLabel "Autres"@fr ;
+  skos:prefLabel "Andere"@de .
 
 
