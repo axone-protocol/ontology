@@ -29,6 +29,7 @@ area:001 a skos:Concept ;
   skos:narrower area:142 ;
   skos:narrower area:150 ;
   skos:prefLabel "World"@en ;
+  skos:prefLabel "Monde"@fr ;
   skos:topConceptOf <https://ontology.okp4.space/thesaurus/area> .
 
 area:002 a skos:Concept ;
@@ -38,6 +39,7 @@ area:002 a skos:Concept ;
   skos:narrower area:015 ;
   skos:narrower area:202 ;
   skos:prefLabel "Africa"@en .
+  skos:prefLabel "Afrique"@fr .
 
 area:004 a skos:Concept ;
   area:hasAlpha2Code "AF" ;
@@ -46,6 +48,7 @@ area:004 a skos:Concept ;
   skos:broader area:034 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Afghanistan"@en .
+  skos:prefLabel "Afghanistan"@fr .
 
 area:005 a skos:Concept ;
   area:hasAreaCode 5 ;
@@ -68,6 +71,7 @@ area:005 a skos:Concept ;
   skos:narrower area:858 ;
   skos:narrower area:862 ;
   skos:prefLabel "South America"@en .
+  skos:prefLabel "Amérique du Sud"@fr .
 
 area:008 a skos:Concept ;
   area:hasAlpha2Code "AL" ;
@@ -76,6 +80,7 @@ area:008 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Albania"@en .
+  skos:prefLabel "Albanie"@fr .
 
 area:009 a skos:Concept ;
   area:hasAreaCode 9 ;
@@ -86,6 +91,7 @@ area:009 a skos:Concept ;
   skos:narrower area:057 ;
   skos:narrower area:061 ;
   skos:prefLabel "Oceania"@en .
+  skos:prefLabel "Océanie"@fr .
 
 area:010 a skos:Concept ;
   area:hasAlpha2Code "AQ" ;
@@ -94,6 +100,7 @@ area:010 a skos:Concept ;
   skos:broader area:001 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Antarctica"@en .
+  skos:prefLabel "Antarctique"@fr .
 
 area:011 a skos:Concept ;
   area:hasAreaCode 11 ;
@@ -117,6 +124,7 @@ area:011 a skos:Concept ;
   skos:narrower area:768 ;
   skos:narrower area:854 ;
   skos:prefLabel "Western Africa"@en .
+  skos:prefLabel "Afrique de l'Ouest"@fr .
 
 area:012 a skos:Concept ;
   area:hasAlpha2Code "DZ" ;
@@ -125,6 +133,7 @@ area:012 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Algeria"@en .
+  skos:prefLabel "Algérie"@fr .
 
 area:013 a skos:Concept ;
   area:hasAreaCode 13 ;
@@ -139,6 +148,7 @@ area:013 a skos:Concept ;
   skos:narrower area:558 ;
   skos:narrower area:591 ;
   skos:prefLabel "Central America"@en .
+  skos:prefLabel "Amérique centrale"@fr .
 
 area:014 a skos:Concept ;
   area:hasAreaCode 14 ;
@@ -167,6 +177,7 @@ area:014 a skos:Concept ;
   skos:narrower area:834 ;
   skos:narrower area:894 ;
   skos:prefLabel "Eastern Africa"@en .
+  skos:prefLabel "Afrique de l'Est"@fr .
 
 area:015 a skos:Concept ;
   area:hasAreaCode 15 ;
@@ -180,6 +191,7 @@ area:015 a skos:Concept ;
   skos:narrower area:788 ;
   skos:narrower area:818 ;
   skos:prefLabel "Northern Africa"@en .
+  skos:prefLabel "Afrique du Nord"@fr .
 
 area:016 a skos:Concept ;
   area:hasAlpha2Code "AS" ;
@@ -188,6 +200,7 @@ area:016 a skos:Concept ;
   skos:broader area:061 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "American Samoa"@en .
+  skos:prefLabel "Samoa américaines"@fr .
 
 area:017 a skos:Concept ;
   area:hasAreaCode 17 ;
@@ -203,6 +216,7 @@ area:017 a skos:Concept ;
   skos:narrower area:266 ;
   skos:narrower area:678 ;
   skos:prefLabel "Middle Africa"@en .
+  skos:prefLabel "Afrique centrale"@fr .
 
 area:018 a skos:Concept ;
   area:hasAreaCode 18 ;
@@ -214,6 +228,7 @@ area:018 a skos:Concept ;
   skos:narrower area:710 ;
   skos:narrower area:748 ;
   skos:prefLabel "Southern Africa"@en .
+  skos:prefLabel "Afrique Australe"@fr .
 
 area:019 a skos:Concept ;
   area:hasAreaCode 19 ;
@@ -222,6 +237,7 @@ area:019 a skos:Concept ;
   skos:narrower area:021 ;
   skos:narrower area:419 ;
   skos:prefLabel "Americas"@en .
+  skos:prefLabel "Amériques"@fr .
 
 area:020 a skos:Concept ;
   area:hasAlpha2Code "AD" ;
@@ -230,6 +246,7 @@ area:020 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Andorra"@en .
+  skos:prefLabel "Andorre"@fr .
 
 area:021 a skos:Concept ;
   area:hasAreaCode 21 ;
@@ -249,6 +266,7 @@ area:024 a skos:Concept ;
   skos:broader area:017 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Angola"@en .
+  skos:prefLabel "Angola"@fr .
 
 area:028 a skos:Concept ;
   area:hasAlpha2Code "AG" ;
@@ -257,6 +275,7 @@ area:028 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Antigua and Barbuda"@en .
+  skos:prefLabel "Antigua et Barbade"@fr .
 
 area:029 a skos:Concept ;
   area:hasAreaCode 29 ;
@@ -291,6 +310,7 @@ area:029 a skos:Concept ;
   skos:narrower area:796 ;
   skos:narrower area:850 ;
   skos:prefLabel "Caribbean"@en .
+  skos:prefLabel "Caraïbes"@fr .
 
 area:030 a skos:Concept ;
   area:hasAreaCode 30 ;
@@ -304,6 +324,7 @@ area:030 a skos:Concept ;
   skos:narrower area:446 ;
   skos:narrower area:496 ;
   skos:prefLabel "Eastern Asia"@en .
+  skos:prefLabel "Asie de l'Est"@fr .
 
 area:031 a skos:Concept ;
   area:hasAlpha2Code "AZ" ;
@@ -312,6 +333,7 @@ area:031 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Azerbaijan"@en .
+  skos:prefLabel "Azerbaijan"@fr .
 
 area:032 a skos:Concept ;
   area:hasAlpha2Code "AR" ;
@@ -320,6 +342,7 @@ area:032 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Argentina"@en .
+  skos:prefLabel "Argentine"@fr .
 
 area:034 a skos:Concept ;
   area:hasAreaCode 34 ;
@@ -335,6 +358,7 @@ area:034 a skos:Concept ;
   skos:narrower area:524 ;
   skos:narrower area:586 ;
   skos:prefLabel "Southern Asia"@en .
+  skos:prefLabel "Asie du Sud"@fr .
 
 area:035 a skos:Concept ;
   area:hasAreaCode 35 ;
@@ -352,6 +376,7 @@ area:035 a skos:Concept ;
   skos:narrower area:704 ;
   skos:narrower area:764 ;
   skos:prefLabel "South-eastern Asia"@en .
+  skos:prefLabel "Asie du Sud-Est"@fr .
 
 area:036 a skos:Concept ;
   area:hasAlpha2Code "AU" ;
@@ -360,6 +385,8 @@ area:036 a skos:Concept ;
   skos:broader area:053 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Australia"@en .
+  skos:prefLabel "Australie"@fr .
+
 
 area:039 a skos:Concept ;
   area:hasAreaCode 39 ;
@@ -382,6 +409,7 @@ area:039 a skos:Concept ;
   skos:narrower area:724 ;
   skos:narrower area:807 ;
   skos:prefLabel "Southern Europe"@en .
+  skos:prefLabel "Europe du Sud"@fr .
 
 area:040 a skos:Concept ;
   area:hasAlpha2Code "AT" ;
@@ -390,6 +418,7 @@ area:040 a skos:Concept ;
   skos:broader area:155 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Austria"@en .
+  skos:prefLabel "Autriche"@fr .
 
 area:044 a skos:Concept ;
   area:hasAlpha2Code "BS" ;
@@ -398,6 +427,7 @@ area:044 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bahamas"@en .
+  skos:prefLabel "Bahamas"@fr .
 
 area:048 a skos:Concept ;
   area:hasAlpha2Code "BH" ;
@@ -406,6 +436,7 @@ area:048 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bahrain"@en .
+  skos:prefLabel "Bahrain"@fr .
 
 area:050 a skos:Concept ;
   area:hasAlpha2Code "BD" ;
@@ -414,6 +445,7 @@ area:050 a skos:Concept ;
   skos:broader area:034 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bangladesh"@en .
+  skos:prefLabel "Bangladesh"@fr .
 
 area:051 a skos:Concept ;
   area:hasAlpha2Code "AM" ;
@@ -422,6 +454,8 @@ area:051 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Armenia"@en .
+  skos:prefLabel "Armenie"@fr .
+
 
 area:052 a skos:Concept ;
   area:hasAlpha2Code "BB" ;
@@ -430,6 +464,7 @@ area:052 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Barbados"@en .
+  skos:prefLabel "Barbades"@fr .
 
 area:053 a skos:Concept ;
   area:hasAreaCode 53 ;
@@ -442,6 +477,7 @@ area:053 a skos:Concept ;
   skos:narrower area:554 ;
   skos:narrower area:574 ;
   skos:prefLabel "Australia and New Zealand"@en .
+  skos:prefLabel "Australie et Nouvelle-Zélande"@fr .
 
 area:054 a skos:Concept ;
   area:hasAreaCode 54 ;
@@ -453,6 +489,7 @@ area:054 a skos:Concept ;
   skos:narrower area:548 ;
   skos:narrower area:598 ;
   skos:prefLabel "Melanesia"@en .
+  skos:prefLabel "Mélanésie"@fr .
 
 area:056 a skos:Concept ;
   area:hasAlpha2Code "BE" ;
@@ -461,6 +498,7 @@ area:056 a skos:Concept ;
   skos:broader area:155 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Belgium"@en .
+  skos:prefLabel "Belgique"@fr .
 
 area:057 a skos:Concept ;
   area:hasAreaCode 57 ;
@@ -483,6 +521,7 @@ area:060 a skos:Concept ;
   skos:broader area:021 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bermuda"@en .
+  skos:prefLabel "Bermudes"@fr .
 
 area:061 a skos:Concept ;
   area:hasAreaCode 61 ;
@@ -499,6 +538,8 @@ area:061 a skos:Concept ;
   skos:narrower area:876 ;
   skos:narrower area:882 ;
   skos:prefLabel "Polynesia"@en .
+  skos:prefLabel "Polynésie"@fr .
+
 
 area:064 a skos:Concept ;
   area:hasAlpha2Code "BT" ;
@@ -515,6 +556,7 @@ area:068 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bolivia (Plurinational State of)"@en .
+  skos:prefLabel "Bolivie"@fr .
 
 area:070 a skos:Concept ;
   area:hasAlpha2Code "BA" ;
@@ -523,6 +565,7 @@ area:070 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bosnia and Herzegovina"@en .
+  skos:prefLabel "Bosnie-Herzégovine"@fr .
 
 area:072 a skos:Concept ;
   area:hasAlpha2Code "BW" ;
@@ -547,6 +590,7 @@ area:076 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Brazil"@en .
+  skos:prefLabel "Brésil"@fr .
 
 area:084 a skos:Concept ;
   area:hasAlpha2Code "BZ" ;
@@ -571,6 +615,7 @@ area:090 a skos:Concept ;
   skos:broader area:054 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Solomon Islands"@en .
+  skos:prefLabel "Îles Salomon"@fr .
 
 area:092 a skos:Concept ;
   area:hasAlpha2Code "VG" ;
@@ -579,6 +624,7 @@ area:092 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "British Virgin Islands"@en .
+  skos:prefLabel "Îles Vierges britanniques"@fr .
 
 area:096 a skos:Concept ;
   area:hasAlpha2Code "BN" ;
@@ -595,6 +641,7 @@ area:100 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Bulgaria"@en .
+  skos:prefLabel "Bulgarie"@fr .
 
 area:104 a skos:Concept ;
   area:hasAlpha2Code "MM" ;
@@ -619,6 +666,7 @@ area:112 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Belarus"@en .
+  skos:prefLabel "Biélorussie"@fr .
 
 area:116 a skos:Concept ;
   area:hasAlpha2Code "KH" ;
@@ -627,6 +675,7 @@ area:116 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Cambodia"@en .
+  skos:prefLabel "Cambodge"@fr .
 
 area:120 a skos:Concept ;
   area:hasAlpha2Code "CM" ;
@@ -659,6 +708,7 @@ area:136 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Cayman Islands"@en .
+  skos:prefLabel "Îles Caïmans"@fr .
 
 area:140 a skos:Concept ;
   area:hasAlpha2Code "CF" ;
@@ -667,6 +717,7 @@ area:140 a skos:Concept ;
   skos:broader area:017 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Central African Republic"@en .
+  skos:prefLabel "République centrafricaine"@fr .
 
 area:142 a skos:Concept ;
   area:hasAreaCode 142 ;
@@ -678,6 +729,7 @@ area:142 a skos:Concept ;
   skos:narrower area:143 ;
   skos:narrower area:145 ;
   skos:prefLabel "Asia"@en .
+  skos:prefLabel "Asie"@fr .
 
 area:143 a skos:Concept ;
   area:hasAreaCode 143 ;
@@ -689,6 +741,7 @@ area:143 a skos:Concept ;
   skos:narrower area:795 ;
   skos:narrower area:860 ;
   skos:prefLabel "Central Asia"@en .
+  skos:prefLabel "Asie Centrale"@fr .
 
 area:144 a skos:Concept ;
   area:hasAlpha2Code "LK" ;
@@ -721,6 +774,7 @@ area:145 a skos:Concept ;
   skos:narrower area:792 ;
   skos:narrower area:887 ;
   skos:prefLabel "Western Asia"@en .
+  skos:prefLabel "Asie occidentale"@fr .
 
 area:148 a skos:Concept ;
   area:hasAlpha2Code "TD" ;
@@ -729,6 +783,7 @@ area:148 a skos:Concept ;
   skos:broader area:017 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Chad"@en .
+  skos:prefLabel "Tchad"@fr .
 
 area:150 a skos:Concept ;
   area:hasAreaCode 150 ;
@@ -755,6 +810,7 @@ area:151 a skos:Concept ;
   skos:narrower area:703 ;
   skos:narrower area:804 ;
   skos:prefLabel "Eastern Europe"@en .
+  skos:prefLabel "Europe de l'Est"@fr . 
 
 area:152 a skos:Concept ;
   area:hasAlpha2Code "CL" ;
@@ -763,6 +819,7 @@ area:152 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Chile"@en .
+  skos:prefLabel "Chili"@fr .
 
 area:154 a skos:Concept ;
   area:hasAreaCode 154 ;
@@ -784,6 +841,8 @@ area:154 a skos:Concept ;
   skos:narrower area:830 ;
   skos:narrower area:833 ;
   skos:prefLabel "Northern Europe"@en .
+  skos:prefLabel "Europe du Nord"@fr .
+
 
 area:155 a skos:Concept ;
   area:hasAreaCode 155 ;
@@ -799,6 +858,7 @@ area:155 a skos:Concept ;
   skos:narrower area:528 ;
   skos:narrower area:756 ;
   skos:prefLabel "Western Europe"@en .
+  skos:prefLabel "Europe de l'Ouest"@fr .
 
 area:156 a skos:Concept ;
   area:hasAlpha2Code "CN" ;
@@ -807,6 +867,8 @@ area:156 a skos:Concept ;
   skos:broader area:030 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "China"@en .
+  skos:prefLabel "Chine"@fr .
+
 
 area:162 a skos:Concept ;
   area:hasAlpha2Code "CX" ;
@@ -831,6 +893,8 @@ area:170 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Colombia"@en .
+  skos:prefLabel "Colombie"@fr .
+
 
 area:174 a skos:Concept ;
   area:hasAlpha2Code "KM" ;
@@ -839,6 +903,7 @@ area:174 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Comoros"@en .
+  skos:prefLabel "Comores"@fr .
 
 area:175 a skos:Concept ;
   area:hasAlpha2Code "YT" ;
@@ -863,6 +928,7 @@ area:180 a skos:Concept ;
   skos:broader area:017 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Democratic Republic of the Congo"@en .
+  skos:prefLabel "République démocratique du Congo"@fr .
 
 area:184 a skos:Concept ;
   area:hasAlpha2Code "CK" ;
@@ -887,6 +953,7 @@ area:191 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Croatia"@en .
+  skos:prefLabel "Croatie"@fr .
 
 area:192 a skos:Concept ;
   area:hasAlpha2Code "CU" ;
@@ -903,6 +970,7 @@ area:196 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Cyprus"@en .
+  skos:prefLabel "Chypre"@fr .
 
 area:202 a skos:Concept ;
   area:hasAreaCode 202 ;
@@ -913,6 +981,7 @@ area:202 a skos:Concept ;
   skos:narrower area:017 ;
   skos:narrower area:018 ;
   skos:prefLabel "Sub-Saharan Africa"@en .
+  skos:prefLabel "Afrique subsaharienne"@fr .
 
 area:203 a skos:Concept ;
   area:hasAlpha2Code "CZ" ;
@@ -921,7 +990,8 @@ area:203 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Czechia"@en .
-
+  skos:prefLabel "Tchéquie"@fr .
+  
 area:204 a skos:Concept ;
   area:hasAlpha2Code "BJ" ;
   area:hasAlpha3Code "BEN" ;
@@ -929,6 +999,7 @@ area:204 a skos:Concept ;
   skos:broader area:011 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Benin"@en .
+  skos:prefLabel "Bénin"@fr .
 
 area:208 a skos:Concept ;
   area:hasAlpha2Code "DK" ;
@@ -937,6 +1008,7 @@ area:208 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Denmark"@en .
+  skos:prefLabel "Danemark"@fr .
 
 area:212 a skos:Concept ;
   area:hasAlpha2Code "DM" ;
@@ -945,6 +1017,7 @@ area:212 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Dominica"@en .
+  skos:prefLabel "Dominique"@fr .
 
 area:214 a skos:Concept ;
   area:hasAlpha2Code "DO" ;
@@ -953,6 +1026,7 @@ area:214 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Dominican Republic"@en .
+  skos:prefLabel "République dominicaine"@fr .
 
 area:218 a skos:Concept ;
   area:hasAlpha2Code "EC" ;
@@ -961,6 +1035,7 @@ area:218 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Ecuador"@en .
+  skos:prefLabel "Équateur"@fr .
 
 area:222 a skos:Concept ;
   area:hasAlpha2Code "SV" ;
@@ -969,6 +1044,8 @@ area:222 a skos:Concept ;
   skos:broader area:013 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "El Salvador"@en .
+  skos:prefLabel "Salvador"@fr .
+
 
 area:226 a skos:Concept ;
   area:hasAlpha2Code "GQ" ;
@@ -977,6 +1054,7 @@ area:226 a skos:Concept ;
   skos:broader area:017 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Equatorial Guinea"@en .
+  skos:prefLabel "Guinée équatoriale"@fr .
 
 area:231 a skos:Concept ;
   area:hasAlpha2Code "ET" ;
@@ -985,6 +1063,7 @@ area:231 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Ethiopia"@en .
+  skos:prefLabel "Éthiopie"@fr .
 
 area:232 a skos:Concept ;
   area:hasAlpha2Code "ER" ;
@@ -993,6 +1072,7 @@ area:232 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Eritrea"@en .
+  skos:prefLabel "Érythrée"@fr .
 
 area:233 a skos:Concept ;
   area:hasAlpha2Code "EE" ;
@@ -1001,6 +1081,7 @@ area:233 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Estonia"@en .
+  skos:prefLabel "Estonie"@fr .
 
 area:234 a skos:Concept ;
   area:hasAlpha2Code "FO" ;
@@ -1041,6 +1122,7 @@ area:246 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Finland"@en .
+  skos:prefLabel "Finlande"@fr .
 
 area:248 a skos:Concept ;
   area:hasAlpha2Code "AX" ;
@@ -1065,6 +1147,7 @@ area:254 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "French Guiana"@en .
+  skos:prefLabel "Guyane française"@fr .
 
 area:258 a skos:Concept ;
   area:hasAlpha2Code "PF" ;
@@ -1073,6 +1156,7 @@ area:258 a skos:Concept ;
   skos:broader area:061 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "French Polynesia"@en .
+  skos:prefLabel "Polynésie française"@fr .
 
 area:260 a skos:Concept ;
   area:hasAlpha2Code "TF" ;
@@ -1081,6 +1165,7 @@ area:260 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "French Southern Territories"@en .
+  skos:prefLabel "Territoires français du Sud"@fr .
 
 area:262 a skos:Concept ;
   area:hasAlpha2Code "DJ" ;
@@ -1105,6 +1190,7 @@ area:268 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Georgia"@en .
+  skos:prefLabel "Géorgie"@fr .
 
 area:270 a skos:Concept ;
   area:hasAlpha2Code "GM" ;
@@ -1113,6 +1199,7 @@ area:270 a skos:Concept ;
   skos:broader area:011 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Gambia"@en .
+  skos:prefLabel "Gambie"@fr .
 
 area:275 a skos:Concept ;
   area:hasAlpha2Code "PS" ;
@@ -1121,6 +1208,7 @@ area:275 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "State of Palestine"@en .
+  skos:prefLabel "État de Palestine"@fr .
 
 area:276 a skos:Concept ;
   area:hasAlpha2Code "DE" ;
@@ -1129,6 +1217,7 @@ area:276 a skos:Concept ;
   skos:broader area:155 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Germany"@en .
+  skos:prefLabel "Allemagne"@fr .
 
 area:288 a skos:Concept ;
   area:hasAlpha2Code "GH" ;
@@ -1161,6 +1250,7 @@ area:300 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Greece"@en .
+  skos:prefLabel "Grèce"@fr .
 
 area:304 a skos:Concept ;
   area:hasAlpha2Code "GL" ;
@@ -1177,6 +1267,7 @@ area:308 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Grenada"@en .
+  skos:prefLabel "Grenade"@fr .
 
 area:312 a skos:Concept ;
   area:hasAlpha2Code "GP" ;
@@ -1209,6 +1300,7 @@ area:324 a skos:Concept ;
   skos:broader area:011 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Guinea"@en .
+  skos:prefLabel "Guinée"@fr .
 
 area:328 a skos:Concept ;
   area:hasAlpha2Code "GY" ;
@@ -1217,6 +1309,7 @@ area:328 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Guyana"@en .
+  skos:prefLabel "Guyane"@fr .
 
 area:332 a skos:Concept ;
   area:hasAlpha2Code "HT" ;
@@ -1257,6 +1350,7 @@ area:344 a skos:Concept ;
   skos:broader area:030 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "China, Hong Kong Special Administrative Region"@en .
+  skos:prefLabel "Chine, Région administrative spéciale de Hong Kong"@fr .
 
 area:348 a skos:Concept ;
   area:hasAlpha2Code "HU" ;
@@ -1265,6 +1359,7 @@ area:348 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Hungary"@en .
+  skos:prefLabel "Hongrie"@fr .
 
 area:352 a skos:Concept ;
   area:hasAlpha2Code "IS" ;
@@ -1273,6 +1368,7 @@ area:352 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Iceland"@en .
+  skos:prefLabel "Islande"@fr .
 
 area:356 a skos:Concept ;
   area:hasAlpha2Code "IN" ;
@@ -1281,6 +1377,7 @@ area:356 a skos:Concept ;
   skos:broader area:034 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "India"@en .
+  skos:prefLabel "Inde"@fr .
 
 area:360 a skos:Concept ;
   area:hasAlpha2Code "ID" ;
@@ -1289,6 +1386,7 @@ area:360 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Indonesia"@en .
+  skos:prefLabel "Indonésie"@fr .
 
 area:364 a skos:Concept ;
   area:hasAlpha2Code "IR" ;
@@ -1297,6 +1395,7 @@ area:364 a skos:Concept ;
   skos:broader area:034 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Iran (Islamic Republic of)"@en .
+  skos:prefLabel "Iran (République islamique d')"@fr .
 
 area:368 a skos:Concept ;
   area:hasAlpha2Code "IQ" ;
@@ -1305,6 +1404,7 @@ area:368 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Iraq"@en .
+  skos:prefLabel "Irak"@fr .
 
 area:372 a skos:Concept ;
   area:hasAlpha2Code "IE" ;
@@ -1313,6 +1413,7 @@ area:372 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Ireland"@en .
+  skos:prefLabel "Irlande"@fr .
 
 area:376 a skos:Concept ;
   area:hasAlpha2Code "IL" ;
@@ -1321,6 +1422,7 @@ area:376 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Israel"@en .
+  skos:prefLabel "Israël"@fr .
 
 area:380 a skos:Concept ;
   area:hasAlpha2Code "IT" ;
@@ -1329,6 +1431,7 @@ area:380 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Italy"@en .
+  skos:prefLabel "Italie"@fr .
 
 area:384 a skos:Concept ;
   area:hasAlpha2Code "CI" ;
@@ -1345,6 +1448,7 @@ area:388 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Jamaica"@en .
+  skos:prefLabel "Jamaïque"@fr .
 
 area:392 a skos:Concept ;
   area:hasAlpha2Code "JP" ;
@@ -1353,6 +1457,7 @@ area:392 a skos:Concept ;
   skos:broader area:030 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Japan"@en .
+  skos:prefLabel "Japon"@fr .
 
 area:398 a skos:Concept ;
   area:hasAlpha2Code "KZ" ;
@@ -1369,6 +1474,7 @@ area:400 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Jordan"@en .
+  skos:prefLabel "Jordanie"@fr .
 
 area:404 a skos:Concept ;
   area:hasAlpha2Code "KE" ;
@@ -1385,6 +1491,7 @@ area:408 a skos:Concept ;
   skos:broader area:030 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Democratic People's Republic of Korea"@en .
+  skos:prefLabel "République populaire démocratique de Corée"@fr .
 
 area:410 a skos:Concept ;
   area:hasAlpha2Code "KR" ;
@@ -1393,6 +1500,7 @@ area:410 a skos:Concept ;
   skos:broader area:030 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Republic of Korea"@en .
+  skos:prefLabel "République de Corée"@fr .
 
 area:414 a skos:Concept ;
   area:hasAlpha2Code "KW" ;
@@ -1401,6 +1509,7 @@ area:414 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Kuwait"@en .
+  skos:prefLabel "Koweït"@fr .
 
 area:417 a skos:Concept ;
   area:hasAlpha2Code "KG" ;
@@ -1417,6 +1526,8 @@ area:418 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Lao People's Democratic Republic"@en .
+  skos:prefLabel "République démocratique populaire lao"@fr .
+
 
 area:419 a skos:Concept ;
   area:hasAreaCode 419 ;
@@ -1426,6 +1537,7 @@ area:419 a skos:Concept ;
   skos:narrower area:013 ;
   skos:narrower area:029 ;
   skos:prefLabel "Latin America and the Caribbean"@en .
+  skos:prefLabel "Amérique latine et Caraïbes"@fr .
 
 area:422 a skos:Concept ;
   area:hasAlpha2Code "LB" ;
@@ -1434,6 +1546,7 @@ area:422 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Lebanon"@en .
+  skos:prefLabel "Liban"@fr .
 
 area:426 a skos:Concept ;
   area:hasAlpha2Code "LS" ;
@@ -1450,6 +1563,7 @@ area:428 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Latvia"@en .
+  skos:prefLabel "Lettonie"@fr .
 
 area:430 a skos:Concept ;
   area:hasAlpha2Code "LR" ;
@@ -1466,6 +1580,7 @@ area:434 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Libya"@en .
+  skos:prefLabel "Libye"@fr .
 
 area:438 a skos:Concept ;
   area:hasAlpha2Code "LI" ;
@@ -1482,6 +1597,7 @@ area:440 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Lithuania"@en .
+  skos:prefLabel "Lituanie"@fr .
 
 area:442 a skos:Concept ;
   area:hasAlpha2Code "LU" ;
@@ -1522,6 +1638,7 @@ area:458 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Malaysia"@en .
+  skos:prefLabel "Malaisie"@fr .
 
 area:462 a skos:Concept ;
   area:hasAlpha2Code "MV" ;
@@ -1546,6 +1663,7 @@ area:470 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Malta"@en .
+  skos:prefLabel "Malte"@fr .
 
 area:474 a skos:Concept ;
   area:hasAlpha2Code "MQ" ;
@@ -1562,6 +1680,7 @@ area:478 a skos:Concept ;
   skos:broader area:011 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Mauritania"@en .
+  skos:prefLabel "Mauritanie"@fr .
 
 area:480 a skos:Concept ;
   area:hasAlpha2Code "MU" ;
@@ -1570,6 +1689,7 @@ area:480 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Mauritius"@en .
+  skos:prefLabel "Ile Maurice"@fr .
 
 area:484 a skos:Concept ;
   area:hasAlpha2Code "MX" ;
@@ -1578,6 +1698,7 @@ area:484 a skos:Concept ;
   skos:broader area:013 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Mexico"@en .
+  skos:prefLabel "Mexique"@fr .
 
 area:492 a skos:Concept ;
   area:hasAlpha2Code "MC" ;
@@ -1594,6 +1715,7 @@ area:496 a skos:Concept ;
   skos:broader area:030 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Mongolia"@en .
+  skos:prefLabel "Mongolie"@fr .
 
 area:498 a skos:Concept ;
   area:hasAlpha2Code "MD" ;
@@ -1602,6 +1724,7 @@ area:498 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Republic of Moldova"@en .
+  skos:prefLabel "République de Moldavie"@fr .
 
 area:499 a skos:Concept ;
   area:hasAlpha3Code "MNE" ;
@@ -1625,6 +1748,7 @@ area:504 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Morocco"@en .
+  skos:prefLabel "Maroc"@fr .
 
 area:508 a skos:Concept ;
   area:hasAlpha2Code "MZ" ;
@@ -1649,6 +1773,7 @@ area:516 a skos:Concept ;
   skos:broader area:018 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Namibia"@en .
+  skos:prefLabel "Namibie"@fr .
 
 area:520 a skos:Concept ;
   area:hasAlpha2Code "NR" ;
@@ -1673,6 +1798,8 @@ area:528 a skos:Concept ;
   skos:broader area:155 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Netherlands"@en .
+  skos:prefLabel "Pays-Bas"@fr .
+
 
 area:531 a skos:Concept ;
   area:hasAlpha3Code "CUW" ;
@@ -1695,6 +1822,7 @@ area:534 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Sint Maarten (Dutch part)"@en .
+  skos:prefLabel "Saint-Martin (partie néerlandaise)"@fr .
 
 area:535 a skos:Concept ;
   area:hasAlpha3Code "BES" ;
@@ -1710,6 +1838,7 @@ area:540 a skos:Concept ;
   skos:broader area:054 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "New Caledonia"@en .
+  skos:prefLabel "Nouvelle-Calédonie"@fr .
 
 area:548 a skos:Concept ;
   area:hasAlpha2Code "VU" ;
@@ -1726,6 +1855,7 @@ area:554 a skos:Concept ;
   skos:broader area:053 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "New Zealand"@en .
+  skos:prefLabel "Nouvelle-Zélande"@fr .
 
 area:558 a skos:Concept ;
   area:hasAlpha2Code "NI" ;
@@ -1774,6 +1904,7 @@ area:578 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Norway"@en .
+  skos:prefLabel "Norvège"@fr .
 
 area:580 a skos:Concept ;
   area:hasAlpha2Code "MP" ;
@@ -1838,6 +1969,7 @@ area:598 a skos:Concept ;
   skos:broader area:054 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Papua New Guinea"@en .
+  skos:prefLabel " Papouasie-Nouvelle-Guinée "@fr .
 
 area:600 a skos:Concept ;
   area:hasAlpha2Code "PY" ;
@@ -1854,6 +1986,7 @@ area:604 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Peru"@en .
+  skos:prefLabel "Pérou"@fr .
 
 area:608 a skos:Concept ;
   area:hasAlpha2Code "PH" ;
@@ -1878,6 +2011,7 @@ area:616 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Poland"@en .
+  skos:prefLabel "Pologne"@fr .
 
 area:620 a skos:Concept ;
   area:hasAlpha2Code "PT" ;
@@ -1894,6 +2028,7 @@ area:624 a skos:Concept ;
   skos:broader area:011 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Guinea-Bissau"@en .
+  skos:prefLabel "Guinée-Bissau"@fr .
 
 area:626 a skos:Concept ;
   area:hasAlpha2Code "TL" ;
@@ -1910,6 +2045,7 @@ area:630 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Puerto Rico"@en .
+  skos:prefLabel "Pprto Rico"@fr .
 
 area:634 a skos:Concept ;
   area:hasAlpha2Code "QA" ;
@@ -1934,6 +2070,8 @@ area:642 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Romania"@en .
+  skos:prefLabel "Roumanie"@fr .
+
 
 area:643 a skos:Concept ;
   area:hasAlpha2Code "RU" ;
@@ -1942,6 +2080,7 @@ area:643 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Russian Federation"@en .
+  skos:prefLabel "Fédération de Russie"@fr .
 
 area:646 a skos:Concept ;
   area:hasAlpha2Code "RW" ;
@@ -1996,6 +2135,7 @@ area:663 a skos:Concept ;
   skos:broader area:029 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Saint Martin (French Part)"@en .
+  skos:prefLabel "Saint Martin (Partie française)"@fr .
 
 area:666 a skos:Concept ;
   area:hasAlpha2Code "PM" ;
@@ -2004,6 +2144,7 @@ area:666 a skos:Concept ;
   skos:broader area:021 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Saint Pierre and Miquelon"@en .
+  skos:prefLabel "Saint Pierre et Miquelon"@fr .
 
 area:670 a skos:Concept ;
   area:hasAlpha2Code "VC" ;
@@ -2043,6 +2184,7 @@ area:682 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Saudi Arabia"@en .
+  skos:prefLabel "Arabie Saoudite"@fr .
 
 area:686 a skos:Concept ;
   area:hasAlpha2Code "SN" ;
@@ -2051,6 +2193,7 @@ area:686 a skos:Concept ;
   skos:broader area:011 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Senegal"@en .
+  skos:prefLabel "Sénégal"@fr .
 
 area:688 a skos:Concept ;
   area:hasAlpha3Code "SRB" ;
@@ -2058,6 +2201,7 @@ area:688 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Serbia"@en .
+  skos:prefLabel "Serbie"@fr .
 
 area:690 a skos:Concept ;
   area:hasAlpha2Code "SC" ;
@@ -2082,6 +2226,7 @@ area:702 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Singapore"@en .
+  skos:prefLabel "Singapour"@fr .
 
 area:703 a skos:Concept ;
   area:hasAlpha2Code "SK" ;
@@ -2090,6 +2235,7 @@ area:703 a skos:Concept ;
   skos:broader area:151 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Slovakia"@en .
+  skos:prefLabel "Slovaquie"@fr .
 
 area:704 a skos:Concept ;
   area:hasAlpha2Code "VN" ;
@@ -2098,6 +2244,7 @@ area:704 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Viet Nam"@en .
+  skos:prefLabel "Vietnam"@fr .
 
 area:705 a skos:Concept ;
   area:hasAlpha2Code "SI" ;
@@ -2106,6 +2253,7 @@ area:705 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Slovenia"@en .
+  skos:prefLabel "Slovenie"@fr .
 
 area:706 a skos:Concept ;
   area:hasAlpha2Code "SO" ;
@@ -2114,6 +2262,7 @@ area:706 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Somalia"@en .
+  skos:prefLabel "Somalie"@fr .
 
 area:710 a skos:Concept ;
   area:hasAlpha2Code "ZA" ;
@@ -2122,6 +2271,7 @@ area:710 a skos:Concept ;
   skos:broader area:018 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "South Africa"@en .
+  skos:prefLabel "Afrique du Sud"@fr .
 
 area:716 a skos:Concept ;
   area:hasAlpha2Code "ZW" ;
@@ -2138,6 +2288,7 @@ area:724 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Spain"@en .
+  skos:prefLabel "Espagne"@fr .
 
 area:728 a skos:Concept ;
   area:hasAlpha3Code "SSD" ;
@@ -2145,6 +2296,7 @@ area:728 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "South Sudan"@en .
+  skos:prefLabel "Soudan du Sud"@fr .
 
 area:729 a skos:Concept ;
   area:hasAlpha2Code "SD" ;
@@ -2153,6 +2305,7 @@ area:729 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Sudan"@en .
+  skos:prefLabel "Soudan"@fr .
 
 area:732 a skos:Concept ;
   area:hasAlpha2Code "EH" ;
@@ -2161,6 +2314,8 @@ area:732 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Western Sahara"@en .
+  skos:prefLabel "Sahara occidental"@fr .
+
 
 area:740 a skos:Concept ;
   area:hasAlpha2Code "SR" ;
@@ -2193,6 +2348,8 @@ area:752 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Sweden"@en .
+  skos:prefLabel "Suède"@fr .
+
 
 area:756 a skos:Concept ;
   area:hasAlpha2Code "CH" ;
@@ -2201,6 +2358,7 @@ area:756 a skos:Concept ;
   skos:broader area:155 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Switzerland"@en .
+  skos:prefLabel "Suisse"@fr .
 
 area:760 a skos:Concept ;
   area:hasAlpha2Code "SY" ;
@@ -2209,6 +2367,8 @@ area:760 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Syrian Arab Republic"@en .
+  skos:prefLabel "République arabe syrienne"@fr .
+
 
 area:762 a skos:Concept ;
   area:hasAlpha2Code "TJ" ;
@@ -2225,6 +2385,7 @@ area:764 a skos:Concept ;
   skos:broader area:035 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Thailand"@en .
+  skos:prefLabel "Thaïlande"@fr .
 
 area:768 a skos:Concept ;
   area:hasAlpha2Code "TG" ;
@@ -2265,6 +2426,8 @@ area:784 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "United Arab Emirates"@en .
+  skos:prefLabel "Émirats arabes unis"@fr .
+
 
 area:788 a skos:Concept ;
   area:hasAlpha2Code "TN" ;
@@ -2273,6 +2436,7 @@ area:788 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Tunisia"@en .
+  skos:prefLabel "Tunisie"@fr .
 
 area:792 a skos:Concept ;
   area:hasAlpha2Code "TR" ;
@@ -2281,6 +2445,8 @@ area:792 a skos:Concept ;
   skos:broader area:145 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Türkiye"@en .
+  skos:prefLabel "Turquie"@fr .
+
 
 area:795 a skos:Concept ;
   area:hasAlpha2Code "TM" ;
@@ -2313,6 +2479,7 @@ area:800 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Uganda"@en .
+  skos:prefLabel "Ouganda"@fr .
 
 area:804 a skos:Concept ;
   area:hasAlpha2Code "UA" ;
@@ -2329,6 +2496,8 @@ area:807 a skos:Concept ;
   skos:broader area:039 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "North Macedonia"@en .
+  skos:prefLabel "Macédoine du Nord"@fr .
+
 
 area:818 a skos:Concept ;
   area:hasAlpha2Code "EG" ;
@@ -2337,6 +2506,7 @@ area:818 a skos:Concept ;
   skos:broader area:015 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Egypt"@en .
+  skos:prefLabel "Égypte"@fr .
 
 area:826 a skos:Concept ;
   area:hasAlpha2Code "GB" ;
@@ -2345,6 +2515,8 @@ area:826 a skos:Concept ;
   skos:broader area:154 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "United Kingdom of Great Britain and Northern Ireland"@en .
+  skos:prefLabel "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord"@fr .
+
 
 area:830 a skos:Concept ;
   area:hasAreaCode 830 ;
@@ -2361,6 +2533,7 @@ area:831 a skos:Concept ;
   skos:broader area:830 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Guernsey"@en .
+  skos:prefLabel "Guernesey"@fr .
 
 area:832 a skos:Concept ;
   area:hasAlpha3Code "JEY" ;
@@ -2384,6 +2557,7 @@ area:834 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "United Republic of Tanzania"@en .
+  skos:prefLabel "République-Unie de Tanzanie"@fr .
 
 area:840 a skos:Concept ;
   area:hasAlpha2Code "US" ;
@@ -2392,6 +2566,7 @@ area:840 a skos:Concept ;
   skos:broader area:021 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "United States of America"@en .
+  skos:prefLabel "États-Unis d'Amérique"@fr .
 
 area:850 a skos:Concept ;
   area:hasAlpha2Code "VI" ;
@@ -2432,6 +2607,8 @@ area:862 a skos:Concept ;
   skos:broader area:005 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Venezuela (Bolivarian Republic of)"@en .
+  skos:prefLabel "Venezuela"@fr .
+
 
 area:876 a skos:Concept ;
   area:hasAlpha2Code "WF" ;
@@ -2440,6 +2617,7 @@ area:876 a skos:Concept ;
   skos:broader area:061 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Wallis and Futuna Islands"@en .
+  skos:prefLabel "Îles Wallis et Futuna"@fr .
 
 area:882 a skos:Concept ;
   area:hasAlpha2Code "WS" ;
@@ -2464,6 +2642,7 @@ area:894 a skos:Concept ;
   skos:broader area:014 ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Zambia"@en .
+  skos:prefLabel "Zambie"@fr .
 
 <https://ontology.okp4.space/thesaurus/area> a skos:ConceptScheme ;
   rdfs:label "Area Code Thesaurus"@en ;
