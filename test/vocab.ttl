@@ -7,10 +7,10 @@
 
 tst:AssertConceptSchemes a sh:NodeShape ;
   sh:property [
-    a sh:PropertyShape ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
     sh:path rdfs:label ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:message "The concept sceheme requires one rdfs:label of type rdf:langString."@en ;
   ] ;
   sh:targetClass skos:ConceptScheme .
 

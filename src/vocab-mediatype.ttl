@@ -252,6 +252,7 @@ media-type:application_illustrator a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Adobe Illustrator -asiakirja"@fi ;
   skos:prefLabel "Adobe Illustrator document"@en ;
+  skos:prefLabel "Document Adobe Illustrator"@fr ;
   skos:prefLabel "Adobe Illustrator-Dokument"@de ;
   skos:prefLabel "Adobe Illustrator-dokument"@no ;
   skos:prefLabel "Adobe Illustrator-dokument"@sv ;
@@ -283,6 +284,7 @@ media-type:application_octet-stream a skos:Concept ;
   skos:prefLabel "ukjent"@no ;
   skos:prefLabel "unbekannt"@de ;
   skos:prefLabel "unknown"@en ;
+  skos:prefLabel "inconnu"@fr ;
   skos:prefLabel "άγνωστο"@el .
 
 media-type:application_oda a skos:Concept ;
@@ -328,6 +330,7 @@ media-type:application_pdf a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Dogfen PDF"@cy ;
   skos:prefLabel "PDF document"@en ;
+  skos:prefLabel "Document PDF"@fr ;
   skos:prefLabel "PDF документ"@sr ;
   skos:prefLabel "PDF-Dokument"@de ;
   skos:prefLabel "PDF-asiakirja"@fi ;
@@ -359,6 +362,7 @@ media-type:application_pgp-encrypted a skos:Concept ;
   media-type:hasMediaType "application/pgp-encrypted" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "PGP/MIME-encrypted message header"@en ;
+  skos:prefLabel "En-tête de message chiffré PGP/MIME"@fr ;
   skos:prefLabel "PGP/MIME-kryptert meldingshode"@no ;
   skos:prefLabel "PGP/MIME-salattu viestiotsikko"@fi ;
   skos:prefLabel "PGP/MIME-verschlüsselter Nachrichtenkopf"@de .
@@ -386,6 +390,7 @@ media-type:application_pgp-signature a skos:Concept ;
   media-type:hasMediaType "application/pgp-signature" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "detached OpenPGP signature"@en ;
+  skos:prefLabel "signature OpenPGP détachée"@fr ;
   skos:prefLabel "erillinen OpenPGP-allekirjoitus"@fi ;
   skos:prefLabel "frakoblet OpenPGP-signatur"@no ;
   skos:prefLabel "isolierte OpenPGP-Signatur"@de .
@@ -413,6 +418,7 @@ media-type:application_pkcs7-signature a skos:Concept ;
   media-type:hasMediaType "application/pkcs7-signature" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "detached S/MIME signature"@en ;
+  skos:prefLabel "signature S/MIME détachée"@fr ;
   skos:prefLabel "erillinen S/MIME-allekirjoitus"@fi ;
   skos:prefLabel "frakoblet S/MIME-signatur"@no ;
   skos:prefLabel "isolierte S/MIME-Signatur"@de .
@@ -421,6 +427,7 @@ media-type:application_postscript a skos:Concept ;
   media-type:hasMediaType "application/postscript" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "PostScript document"@en ;
+  skos:prefLabel "Document PostScript"@fr ;
   skos:prefLabel "PostScript-Dokument"@de ;
   skos:prefLabel "PostScript-asiakirja"@fi ;
   skos:prefLabel "PostScript-dokument"@no ;
@@ -488,6 +495,7 @@ media-type:application_vndhp-hpgl a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "HP Graphics Language (piirturi)"@fi ;
   skos:prefLabel "HP Graphics Language (plotter)"@en ;
+  skos:prefLabel "Langage graphique HP (traceur)"@fr ;
   skos:prefLabel "HP-Grafiksprache (Plotter)"@de .
 
 media-type:application_vndhp-pcl a skos:Concept ;
@@ -495,6 +503,7 @@ media-type:application_vndhp-pcl a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "HP Printer Control Language -tiedosto"@fi ;
   skos:prefLabel "HP Printer Control Language file"@en ;
+  skos:prefLabel "Fichier du langage de contrôle de l'imprimante HP"@fr ;
   skos:prefLabel "HP-Druckersteuerungs-Sprachdatei"@de .
 
 media-type:application_vndlotus-1-2-3 a skos:Concept ;
@@ -531,7 +540,7 @@ media-type:application_vndms-excel a skos:Concept ;
   skos:prefLabel "Microsoft Excel-munkafüzet"@hu ;
   skos:prefLabel "Tabulka Microsoft Excel"@cs ;
   skos:prefLabel "Taenlen Microsoft Excel"@cy ;
-  skos:prefLabel "chiffrier Microsoft Excel"@fr ;
+  skos:prefLabel "Feuille de calcul Microsoft Excel"@fr ;
   skos:prefLabel "Λογιστικό φύλλο Microsoft Excel"@el ;
   skos:prefLabel "Микрософт Ексел табеларни прорачун"@sr ;
   skos:prefLabel "마이크로소프트 엑셀 스프레드시트"@ko .
@@ -541,6 +550,7 @@ media-type:application_vndms-powerpoint a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Microsoft PowerPoint -esitys"@fi ;
   skos:prefLabel "Microsoft PowerPoint presentation"@en ;
+  skos:prefLabel "Présentation Microsoft PowerPoint"@fr ;
   skos:prefLabel "Microsoft PowerPoint-Präsentation"@de ;
   skos:prefLabel "Microsoft PowerPoint-presentasjon"@no ;
   skos:prefLabel "Παρουσίαση Microsoft PowerPoint"@el .
@@ -560,7 +570,7 @@ media-type:application_vndms-word a skos:Concept ;
   skos:prefLabel "Microsoft Word-dokument"@nn ;
   skos:prefLabel "Microsoft Word-dokument"@sv ;
   skos:prefLabel "Microsoft Word-dokumentum"@hu ;
-  skos:prefLabel "document Microsoft Word"@fr ;
+  skos:prefLabel "Document Microsoft Word"@fr ;
   skos:prefLabel "Έγγραφο Microsoft Word"@el ;
   skos:prefLabel "Микрософт Word документ"@sr ;
   skos:prefLabel "마이크로소프트 워드 문서"@ko .
@@ -587,7 +597,7 @@ media-type:application_vndrn-realmedia a skos:Concept ;
   skos:prefLabel "RealAudio/Video-dokument"@no ;
   skos:prefLabel "RealAudio/Video-dokument"@sv ;
   skos:prefLabel "RealAudio/Video-dokumentum"@hu ;
-  skos:prefLabel "document RealAudio/Video"@fr ;
+  skos:prefLabel "Document RealAudio/Video"@fr ;
   skos:prefLabel "Έγγραφο RealAudio/Video"@el ;
   skos:prefLabel "리얼오디오/비디오 문서"@ko .
 
@@ -607,7 +617,7 @@ media-type:application_vndstardivisioncalc a skos:Concept ;
   skos:prefLabel "StarCalc-taulukko"@fi ;
   skos:prefLabel "Tabulka StarCalc"@cs ;
   skos:prefLabel "Taenlen StarCalc"@cy ;
-  skos:prefLabel "chiffier StarCalc"@fr ;
+  skos:prefLabel "Feuille de calcul StarCalc"@fr ;
   skos:prefLabel "Λογιστικό φύλλο StarCalc"@el .
 
 media-type:application_vndstardivisionchart a skos:Concept ;
@@ -707,6 +717,7 @@ media-type:application_vndsunxmlcalc a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Calc -taulukko"@fi ;
   skos:prefLabel "OpenOffice.org Calc spreadsheet"@en ;
+  skos:prefLabel "Feuille de calcul OpenOffice.org Calc"@fr ;
   skos:prefLabel "OpenOffice.org Calc-Tabellendokumen"@de ;
   skos:prefLabel "OpenOffice.org Calc-regneark"@no ;
   skos:prefLabel "Λογιστικό φύλλο OpenOffice.org Calc"@el .
@@ -716,6 +727,7 @@ media-type:application_vndsunxmlcalctemplate a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Calc -taulukkomalli"@fi ;
   skos:prefLabel "OpenOffice.org Calc spreadsheet template"@en ;
+  skos:prefLabel "Modèle de feuille de calcul OpenOffice.org Calc"@fr ;
   skos:prefLabel "OpenOffice.org Calc-Vorlage für Tabellendokument"@de ;
   skos:prefLabel "OpenOffice.org Calc-regnearkmal"@no ;
   skos:prefLabel "Πρότυπο λογιστικό φύλλο OpenOffice.org Calc"@el .
@@ -724,6 +736,7 @@ media-type:application_vndsunxmldraw a skos:Concept ;
   media-type:hasMediaType "application/vnd.sun.xml.draw" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Draw drawing"@en ;
+  skos:prefLabel "OpenOffice.org Draw dessin"@fr ;
   skos:prefLabel "OpenOffice.org Draw-Zeichnung"@de ;
   skos:prefLabel "OpenOffice.org Draw-tegning"@no ;
   skos:prefLabel "OpenOffice.org-Draw -piirros"@fi .
@@ -733,6 +746,7 @@ media-type:application_vndsunxmldrawtemplate a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Draw -piirrosmalli"@fi ;
   skos:prefLabel "OpenOffice.org Draw drawing template"@en ;
+  skos:prefLabel "OpenOffice.org Draw modèle de dessin"@fr ;
   skos:prefLabel "OpenOffice.org Draw-tegningsmal"@no ;
   skos:prefLabel "OpenOffice.org·Draw-Zeichnungsvorlage"@de .
 
@@ -741,6 +755,7 @@ media-type:application_vndsunxmlimpress a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Impress -esitys"@fi ;
   skos:prefLabel "OpenOffice.org Impress presentation"@en ;
+  skos:prefLabel "Présentation d'OpenOffice.org Impress"@fr ;
   skos:prefLabel "OpenOffice.org Impress-presentasjon"@no ;
   skos:prefLabel "OpenOffice.org Impress-presentation"@sv ;
   skos:prefLabel "OpenOffice.org·Impress-Präsentation"@de ;
@@ -751,6 +766,7 @@ media-type:application_vndsunxmlimpresstemplate a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Impress -esitysmalli"@fi ;
   skos:prefLabel "OpenOffice.org Impress presentation template"@en ;
+  skos:prefLabel "Modèle de présentation d'OpenOffice.org Impress"@fr ;
   skos:prefLabel "OpenOffice.org Impress-presentasjonsmal"@no ;
   skos:prefLabel "OpenOffice.org Impress-presentationsmall"@sv ;
   skos:prefLabel "OpenOffice.org·Impress-Präsentationsvorlage"@de ;
@@ -760,6 +776,7 @@ media-type:application_vndsunxmlmath a skos:Concept ;
   media-type:hasMediaType "application/vnd.sun.xml.math" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Math formula"@en ;
+  skos:prefLabel "OpenOffice.org Formule mathématique"@fr ;
   skos:prefLabel "OpenOffice.org Math-asiakirja"@fi ;
   skos:prefLabel "OpenOffice.org Math-dokument"@no ;
   skos:prefLabel "OpenOffice.org·Math-Formel"@de .
@@ -769,6 +786,7 @@ media-type:application_vndsunxmlwriter a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Writer -asiakirja"@fi ;
   skos:prefLabel "OpenOffice.org Writer document"@en ;
+  skos:prefLabel "Document OpenOffice.org Writer"@fr ;
   skos:prefLabel "OpenOffice.org Writer-dokument"@no ;
   skos:prefLabel "OpenOffice.org Writer-dokument"@sv ;
   skos:prefLabel "OpenOffice.org·Writer-Dokument"@de ;
@@ -788,6 +806,7 @@ media-type:application_vndsunxmlwritertemplate a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Writer -asiakirjamalli"@fi ;
   skos:prefLabel "OpenOffice.org Writer document template"@en ;
+  skos:prefLabel "Modèle de Document OpenOffice.org Writer"@fr ;
   skos:prefLabel "OpenOffice.org Writer-dokumentmal"@no ;
   skos:prefLabel "OpenOffice.org·Writer-Dokumentenvorlage"@de ;
   skos:prefLabel "Πρότυπο έγγραφο OpenOffice.org Writer"@el .
@@ -914,7 +933,7 @@ media-type:application_x-asp a skos:Concept ;
   skos:prefLabel "active server page"@no ;
   skos:prefLabel "aktiivinen palvelinsivu"@fi ;
   skos:prefLabel "aktiv serversida"@sv ;
-  skos:prefLabel "page active du serveur"@fr ;
+  skos:prefLabel "Page active du serveur"@fr ;
   skos:prefLabel "tudalen ASP"@cy ;
   skos:prefLabel "Активна серверска страна"@sr ;
   skos:prefLabel "액티브 서버 페이지"@ko .
@@ -1229,6 +1248,7 @@ media-type:application_x-dvi a skos:Concept ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "TeX DVI -asiakirja"@fi ;
   skos:prefLabel "TeX DVI document"@en ;
+  skos:prefLabel "document TeX DVI"@fr ;
   skos:prefLabel "TeX DVI-dokument"@no ;
   skos:prefLabel "TeX-DVI-Dokument"@de .
 
