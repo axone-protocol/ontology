@@ -15,14 +15,14 @@ govmeta:495560a4-76a6-4bbc-80e2-5f4dac17d5ef a owl:NamedIndividual,
 govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c a owl:NamedIndividual, 
         metagov:Chapter ;
     core:hasTitle "Rhizome Governance"@en ;
-    core:hasDescription "Rhizome est un data space exploité par OKP4, actuellement en cours de développement sur la base de la technologie OKP4. Rhizome démontre la puissance du traitement et du partage des données, et la valeur que nous pouvons obtenir en connectant efficacement différentes sources de données agricoles en libre accès sous différents formats de données. Rhizome vise à connecter autant de données que possible et à fournir des visuels et métriques de grande valeur dans différents domaines liés à l'agriculture, tels que l'utilisation des terres et la gestion du territoire, la gestion des cultures et du bétail, ainsi que les ressources forestières et l'industrie du bois."@fr ;
-    core:hasDescription "Rhizome is a data space operated by OKP4, currently under development based on OKP4 technology. Rhizome demonstrates the power of data processing and sharing, and the value we can achieve by effectively connecting different sources of open access agricultural data in different data formats. Rhizome aims to connect as much data as possible and provide valuable visuals and metrics in various agriculture-related areas, such as land use and land management, crop and livestock management, and forest resources and timber industry."@en ;
-    core:hasDescription "Rhizome ist ein von OKP4 betriebener Datenraum, der derzeit auf der Grundlage der OKP4-Technologie weiterentwickelt wird. Rhizome demonstriert die Macht der Datenverarbeitung und des Datenaustauschs und den Wert, den wir durch die effiziente Verbindung verschiedener frei zugänglicher landwirtschaftlicher Datenquellen in unterschiedlichen Datenformaten erzielen können. Rhizome zielt darauf ab, so viele Daten wie möglich zu verbinden und wertvolle Visualisierungen und Metriken für verschiedene landwirtschaftsbezogene Bereiche wie Landnutzung und Landmanagement, Pflanzen- und Viehwirtschaft sowie Waldressourcen und Holzindustrie zu liefern."@de .
+    core:hasDescription "Rhizome est une zone exploitée par OKP4, actuellement en cours de développement sur la base de la technologie OKP4. Rhizome démontre la puissance du traitement et du partage des données, et la valeur que nous pouvons obtenir en connectant efficacement différentes sources de données agricoles en libre accès sous différents formats de données. Rhizome vise à connecter autant de données que possible et à fournir des visuels et métriques de grande valeur dans différents domaines liés à l'agriculture, tels que l'utilisation des terres et la gestion du territoire, la gestion des cultures et du bétail, ainsi que les ressources forestières et l'industrie du bois."@fr ;
+    core:hasDescription "Rhizome is a zone operated by OKP4, currently under development based on OKP4 technology. Rhizome demonstrates the power of data processing and sharing, and the value we can achieve by effectively connecting different sources of open access agricultural data in different data formats. Rhizome aims to connect as much data as possible and provide valuable visuals and metrics in various agriculture-related areas, such as land use and land management, crop and livestock management, and forest resources and timber industry."@en ;
+    core:hasDescription "Rhizome ist ein von OKP4 betriebener zone, der derzeit auf der Grundlage der OKP4-Technologie weiterentwickelt wird. Rhizome demonstriert die Macht der Datenverarbeitung und des Datenaustauschs und den Wert, den wir durch die effiziente Verbindung verschiedener frei zugänglicher landwirtschaftlicher Datenquellen in unterschiedlichen Datenformaten erzielen können. Rhizome zielt darauf ab, so viele Daten wie möglich zu verbinden und wertvolle Visualisierungen und Metriken für verschiedene landwirtschaftsbezogene Bereiche wie Landnutzung und Landmanagement, Pflanzen- und Viehwirtschaft sowie Waldressourcen und Holzindustrie zu liefern."@de .
 
 govmeta:50e2871d-fed8-40a7-96a7-80d3e9a2cfd8 a owl:NamedIndividual,
         metagov:Section ; 
     core:hasTitle "Identity Management"@en ;
-    core:hasDescription "It refers to the processes and tools used to manage and secure the access and use of data within a Data Space."@en ;
+    core:hasDescription "It refers to the processes and tools used to manage and secure the access and use of data within a Zone."@en ;
     metagov:hasNumber "1.1" ; 
     core:isPartOf govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c .
 
@@ -99,14 +99,14 @@ govmeta:468b12c9-c799-4639-ad64-64ea24fb865a a owl:NamedIndividual,
 govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  a owl:NamedIndividual,
         metagov:Subsection ;
     core:hasTitle "Remove Rules"@en ; 
-    core:hasDescription "Process of removing or revoking established policies and procedures governing the management and use of data within an Data Space."@en ;
+    core:hasDescription "Process of removing or revoking established policies and procedures governing the management and use of data within a Zone."@en ;
     metagov:hasNumber "1.2.3" ;
     core:isPartOf govmeta:4738fce6-4586-4aa9-a43f-e69038998ea0 .
 
 govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386 a owl:NamedIndividual,
         metagov:Article ;
     core:hasTitle "Governance Amendment by Specific users"@en ;
-    core:hasDescription "Keys with the permissions to delete rules related to the Data Space."@en ;
+    core:hasDescription "Keys with the permissions to delete rules related to the Zone."@en ;
     metagov:hasNumber "1.2.3.1" ;
     core:isPartOf govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  .
 

@@ -15,9 +15,9 @@ govmeta:58f368ee-fbc6-11ed-be56-0242ac120002 a owl:NamedIndividual,
 govmeta:bba31e5b-afe5-41a5-bab4-b5c2d443ec18 a owl:NamedIndividual,
         metagov:Chapter ;
     core:hasTitle "DS4I Governance"@en ;
-    core:hasDescription "Data Space for Investors (DS4I) est un Data Space privé créé et maintenu par l'équipe OKP4. L'objectif de DS4I est de présenter une preuve de concept simple et conviviale pour démontrer aux investisseurs potentiels comment le protocole OKP4 fonctionne sur la base de règles de gouvernance simples."@fr ;
-    core:hasDescription "Data Space for Investors (DS4I) is a private Data Space created and maintained by OKP4 Team. DS4I's purpose is to present a simple and user-friendly Proof of Concept to demonstrate for potential investors how OKP4 protocol works based on simple governance rules."@en ;
-    core:hasDescription "Data Space for Investors (DS4I) ist ein privater Datenraum, der vom OKP4 Team erstellt und gepflegt wird. DS4I soll ein einfaches und benutzerfreundliches Proof of Concept darstellen, um potentiellen Investoren zu demonstrieren, wie das OKP4 Protokoll basierend auf einfachen Regeln funktioniert."@de .
+    core:hasDescription "Data Space for Investors (DS4I) est une Zone privée créée et maintenue par l'équipe OKP4. L'objectif de DS4I est de présenter une preuve de concept simple et conviviale pour démontrer aux investisseurs potentiels comment le protocole OKP4 fonctionne sur la base de règles de gouvernance simples."@fr ;
+    core:hasDescription "Data Space for Investors (DS4I) is a private Zone created and maintained by OKP4 Team. DS4I's purpose is to present a simple and user-friendly Proof of Concept to demonstrate for potential investors how OKP4 protocol works based on simple governance rules."@en ;
+    core:hasDescription "Data Space for Investors (DS4I) ist ein privater Zone, der vom OKP4 Team erstellt und gepflegt wird. DS4I soll ein einfaches und benutzerfreundliches Proof of Concept darstellen, um potentiellen Investoren zu demonstrieren, wie das OKP4 Protokoll basierend auf einfachen Regeln funktioniert."@de .
 
 govmeta:8179eed2-dc22-481b-9eaf-f5322a3537a7 a owl:NamedIndividual,
         metagov:Section ; 
