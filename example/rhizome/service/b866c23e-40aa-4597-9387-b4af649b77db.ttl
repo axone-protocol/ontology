@@ -1,0 +1,31 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/62d09598-de0d-442c-b880-1e19d43b5ec9> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:b866c23e-40aa-4597-9387-b4af649b77db ;
+    core:hasCategory category:Storage ;
+    core:hasDescription "Service de stockage de données"@fr ;
+    core:hasDescription "Data storage service"@en ;
+    core:hasDescription "Datenspeicherungsdienst"@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "stockage" ;
+    core:hasTitle "Deutsche Telekom Cloud Object Storage"@en .
+
+<https://ontology.okp4.space/dataverse/service/metadata/51ca1c69-c562-4b62-a22f-394a6e931811> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
+    core:describes service:b866c23e-40aa-4597-9387-b4af649b77db ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
+
+service:b866c23e-40aa-4597-9387-b4af649b77db a owl:NamedIndividual,
+        core:Service ;
+    core:hasIdentifier <urn:uuid:b866c23e-40aa-4597-9387-b4af649b77db> ;
+    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+    

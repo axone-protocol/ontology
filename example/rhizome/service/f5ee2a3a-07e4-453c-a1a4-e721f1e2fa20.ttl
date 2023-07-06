@@ -1,0 +1,31 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/da2f0a5d-d04f-48c8-bded-3012ea799b09> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 ;
+    core:hasCategory category:Storage ;
+    core:hasDescription "Service de stockage de données"@fr ;
+    core:hasDescription "Data storage service"@en ;
+    core:hasDescription "Datenspeicherungsdienst"@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "stockage" ;
+    core:hasTitle "IPFS"@en .
+
+<https://ontology.okp4.space/dataverse/service/metadata/f6bd8a39-b5ce-47ea-8f03-038347319d79> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
+    core:describes service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
+
+service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 a owl:NamedIndividual,
+        core:Service ;
+    core:hasIdentifier <urn:uuid:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20> ;
+    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+    

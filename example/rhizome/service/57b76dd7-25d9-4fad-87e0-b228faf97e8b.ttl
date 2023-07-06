@@ -1,0 +1,31 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/aa3c8d28-99bb-4db9-b802-31c744638143> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:57b76dd7-25d9-4fad-87e0-b228faf97e8b ;
+    core:hasCategory category:Storage ;
+    core:hasDescription "IBM Cloud Object Storage, grâce à sa présence mondiale et à ses options de résilience souples, prend en charge la croissance exponentielle des données pour vos charges de travail natives du cloud avec la meilleure optimisation des coûts de sa catégorie, une sécurité des données robuste et une gouvernance des données facile à utiliser."@fr ;
+    core:hasDescription "IBM Cloud Object Storage, with its global presence and flexible resilience options, supports exponential data growth for your cloud-native workloads with best-in-class cost optimization, robust data security and easy-to-use data governance."@en ;
+    core:hasDescription "IBM Cloud Object Storage mit seiner globalen Präsenz und flexiblen Ausfallsicherheitsoptionen unterstützt exponentielles Datenwachstum für Ihre Cloud-nativen Workloads mit branchenführender Kostenoptimierung, robuster Datensicherheit und benutzerfreundlicher Data Governance."@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "stockage" ;
+    core:hasTitle "IBM Cloud Object Storage"@en .
+
+<https://ontology.okp4.space/dataverse/service/metadata/81773848-e532-4d98-a7b1-0493bf0324c6> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
+    core:describes service:57b76dd7-25d9-4fad-87e0-b228faf97e8b ;
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
+
+service:57b76dd7-25d9-4fad-87e0-b228faf97e8b a owl:NamedIndividual,
+        core:Service ;
+    core:hasIdentifier <urn:uuid:57b76dd7-25d9-4fad-87e0-b228faf97e8b> ;
+    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+    

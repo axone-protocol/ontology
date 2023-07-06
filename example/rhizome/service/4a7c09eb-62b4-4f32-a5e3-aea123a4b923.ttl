@@ -1,34 +1,30 @@
 @prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
 @prefix core: <https://ontology.okp4.space/core/> .
-@prefix dataspace: <https://ontology.okp4.space/dataverse/dataspace/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix service: <https://ontology.okp4.space/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/7de927d4-b4ab-401f-bfef-3899132ea2f1> a owl:NamedIndividual,
+<https://ontology.okp4.space/dataverse/service/metadata/57705515-d101-4f78-9ec2-d6e8ca34a4f0> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
     core:describes service:4a7c09eb-62b4-4f32-a5e3-aea123a4b923 ;
     core:hasCategory category:Storage ;
-    core:hasDescription "Service de stockage de données"@fr ;
-    core:hasDescription "Data storage service"@en ;
-    core:hasDescription "Datenspeicherungsdienst"@de ;
+    core:hasDescription "Amazon Simple Storage Service (Amazon S3) est un service de stockage d'objets qui offre une capacité de mise à l'échelle, une disponibilité des données, une sécurité et des performances de pointe."@fr ;
+    core:hasDescription "Amazon Simple Storage Service (Amazon S3) is an object storage service that delivers industry-leading scalability, data availability, security and performance."@en ;
+    core:hasDescription "Amazon Simple Storage Service (Amazon S3) ist ein Objektspeicherdienst, der Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung auf höchstem Niveau bietet."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Stockage"@fr ;
-    core:hasTitle "Storage"@en ;
-    core:hasTitle "Speicherung"@de .
+    core:hasTitle "Amazon S3"@en ;
 
-<https://ontology.okp4.space/dataverse/service/metadata/8f5a671d-ba50-4768-9354-4268bd4345e9> a owl:NamedIndividual,
+<https://ontology.okp4.space/dataverse/service/metadata/0fceaaf9-1cab-40dc-9eb1-52ff190d4408> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
-    core:createdOn "2023-03-14T13:33:00Z"^^xsd:dateTimeStamp ;
+    core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:4a7c09eb-62b4-4f32-a5e3-aea123a4b923 ;
     core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
-    core:updatedOn "2023-03-14T13:33:00Z"^^xsd:dateTimeStamp .
+    core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
 
 service:4a7c09eb-62b4-4f32-a5e3-aea123a4b923 a owl:NamedIndividual,
         core:Service ;
-    core:belongsTo zone:ef347285-e52a-430d-9679-dcb76b962ce7 ;
     core:hasIdentifier <urn:uuid:4a7c09eb-62b4-4f32-a5e3-aea123a4b923> ;
     core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
