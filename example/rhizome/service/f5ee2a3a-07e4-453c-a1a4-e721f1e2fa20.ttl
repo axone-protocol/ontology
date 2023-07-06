@@ -9,7 +9,7 @@
     core:describes service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Service de stockage de données"@fr ;
-    core:hasDescription "Data storage service"@en ;
+    core:hasDescription "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale"@en ;
     core:hasDescription "Datenspeicherungsdienst"@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
