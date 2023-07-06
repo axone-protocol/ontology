@@ -17,15 +17,15 @@
 
 <https://ontology.okp4.space/dataverse/service/metadata/c36a41b0-ff67-4841-bc7f-e613e14a1fc8> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;
-    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdBy <did:key:z6Mkjm9GJqB4KKzcPiiDkNX5c56enxNRc5JGdpWeRS6q5ahu> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:455d0f5e-6279-42e2-9290-e0507210f5dd ;
-    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:lastModifiedBy <did:key:z6Mkjm9GJqB4KKzcPiiDkNX5c56enxNRc5JGdpWeRS6q5ahu> ;
     core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
 
 service:455d0f5e-6279-42e2-9290-e0507210f5dd a owl:NamedIndividual,
         core:Service ;
     core:hasIdentifier <urn:uuid:455d0f5e-6279-42e2-9290-e0507210f5dd> ;
-    core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
-    core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+    core:hasIdentity <did:key:z6Mkjm9GJqB4KKzcPiiDkNX5c56enxNRc5JGdpWeRS6q5ahu> ;
+    core:hasRegistrar <did:key:z6Mkjm9GJqB4KKzcPiiDkNX5c56enxNRc5JGdpWeRS6q5ahu> .
     
