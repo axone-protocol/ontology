@@ -1,0 +1,844 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix metagov: <https://ontology.okp4.space/metadata/governance/> .
+@prefix govmeta: <https://ontology.okp4.space/dataverse/governance/metadata/> .
+@prefix governance: <https://ontology.okp4.space/dataverse/governance/> .
+@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
+
+govmeta:3ec30d52-02c7-4245-a9a6-8219774d38c4 a owl:NamedIndividual,
+        metagov:GovernanceMetadata ;
+    core:describes zone:d74127ac-d411-4fef-9d65-73c6fc22315d ;
+    core:createdOn "2023-07-03T00:00:00"^^xsd:dateTime ;
+    metagov:hasChapter govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 . 
+
+govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 a owl:NamedIndividual, 
+        metagov:Chapter ;
+    core:hasTitle "Gouvernance DDP"@fr ;
+    core:hasTitle "DDP Governance"@en ;
+    core:hasTitle "DDP Governance"@de ;
+    core:hasDescription "Porté par CERFRANCE Bretagne, la data est dans le pré (ou DDP) est un data space dont l'objectif est de valoriser les données agricoles (techniques et comptables) au travers d’un mécanisme de fixation du prix juste pour les produits laitiers, pour ensuite fournir des conseils spécifiques à chaque agriculteur."@fr ;
+    core:hasDescription "Supported by CERFRANCE Bretagne, la data est dans le pré (or DDP) is a data space whose aim is to enhance the value of agricultural data (technical and accounting) through a mechanism for setting the right price for dairy products, and then providing specific advice to each farmer."@en ;
+    core:hasDescription "La data est dans le pré (oder DDP) ist ein von CERFRANCE Bretagne unterstützter Datenraum, dessen Ziel es ist, landwirtschaftliche (technische und buchhalterische) Daten durch einen Mechanismus zur Festlegung eines fairen Preises für Milchprodukte aufzuwerten, um dann jedem Landwirt spezifische Ratschläge zu erteilen."@de .
+
+govmeta:40e59a4e-e4db-41ed-8860-d25a1bdac640 a owl:NamedIndividual,  
+        metagov:Section ; 
+    core:hasTitle "Gestion des identités"@fr ;
+    core:hasTitle "Identity Management"@en ;
+    core:hasTitle "Identitätsverwaltung"@de ;
+    core:hasDescription "Il s'agit des processus et des outils utilisés pour gérer et sécuriser l'accès et l'utilisation des données dans le Data Space."@fr ;
+    core:hasDescription "It refers to the processes and tools used to manage and secure the access and use of data within a Zone."@en ;
+    core:hasDescription "Es bezieht sich auf die Prozesse und Werkzeuge, die zur Verwaltung und Sicherung des Zugangs und der Nutzung von Daten innerhalb des Datenraums verwendet werden."@de ;
+    metagov:hasNumber "1.1" ; 
+    core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .  
+
+govmeta:48b1ca26-8706-4d0e-9b58-202118ca3bd3 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Types d'identificateurs acceptés"@fr ; 
+    core:hasTitle "Accceptable forms of identification"@en ; 
+    core:hasTitle "Annehmbare Formen der Identifizierung"@de ; 
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.1.1" ;
+    core:isPartOf govmeta:40e59a4e-e4db-41ed-8860-d25a1bdac640 .   
+
+govmeta:17e2dddd-492f-4534-aa0a-0c1fb14341ed a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Condition : Seuls les identificateurs décentralisés (DID) sont acceptés"@fr ;
+    core:hasTitle "Condition: Only Decentralized Identifiers (DID) are accepted"@en ;
+    core:hasTitle "Bedingung: Nur dezentrale Identifikatoren (DID) werden akzeptiert"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.1.1.1" ;
+    core:isPartOf govmeta:48b1ca26-8706-4d0e-9b58-202118ca3bd3 .  
+
+govmeta:d608fa79-dd52-4fce-aa2d-2fe1b0c9563b a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Méthode de vérification"@fr ;
+    core:hasTitle "Verification method"@en ;
+    core:hasTitle "Methode zur Überprüfung"@de ;
+    core:hasDescription "Doit être 'KEY'"@fr ;
+    core:hasDescription "Must be 'KEY'"@en ;
+    core:hasDescription "Muss 'KEY' sein"@de ;
+    metagov:hasNumber "1.1.1.1.1" ;
+    core:isPartOf govmeta:17e2dddd-492f-4534-aa0a-0c1fb14341ed .   
+
+govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 a owl:NamedIndividual,  
+        metagov:Section ; 
+    core:hasTitle "Modèle de gouvernance"@fr ;
+    core:hasTitle "Governance Model"@en ;
+    core:hasTitle "Governance modell"@de ;
+    core:hasDescription "Il s'agit du cadre de règles, de processus et de procédures qui régissent l'acquisition, la gestion et l'utilisation des données au sein du Data Space."@fr ;
+    core:hasDescription "It refers to the framework of policies, processes, and procedures that govern the acquisition, management, and use of data within the Data Space."@en ;
+    core:hasDescription "Er bezieht sich auf den Rahmen von Richtlinien, Prozessen und Verfahren, die den Erwerb, die Verwaltung und die Nutzung von Daten innerhalb des Datenraums regeln."@de ;
+    metagov:hasNumber "1.2" ; 
+    core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .   
+
+govmeta:25202e54-f74f-4e76-b1c4-b021b54a8a85 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Créer des règles"@fr ; 
+    core:hasTitle "Create Rules"@en ; 
+    core:hasTitle "Regeln erstellen"@de ; 
+    core:hasDescription "Processus de création des règles et de procédures établies régissant la gestion et l'utilisation des ressources au sein du Data Space."@fr ;
+    core:hasDescription "Process of creating established policies and procedures governing the management and use of resources within an Data Space"@en ;
+    core:hasDescription "Prozess der Erstellung von Richtlinien und Verfahren, die die Verwaltung und Nutzung von Ressourcen innerhalb eines Datenraums regeln"@de ;
+    metagov:hasNumber "1.2.1" ;
+    core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
+
+govmeta:6f7581b0-612a-4ef5-bef2-9fc396503a28 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Création de la gouvernance par des utilisateurs spécifiques"@fr ;
+    core:hasTitle "Governance creation by Specific users"@en ;
+    core:hasTitle "Schaffung von Governance durch bestimmte Benutzer"@de ;
+    core:hasDescription "Clés ayant la permission de créer des règles relatives au Data Space"@fr ;
+    core:hasDescription "Keys with the permissions to create rules related to the Data Space"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu erstellen"@de ;
+    metagov:hasNumber "1.2.1.1" ;
+    core:isPartOf govmeta:25202e54-f74f-4e76-b1c4-b021b54a8a85 .  
+
+govmeta:c68d3a77-32b9-4168-b697-1378150d7abf a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.2.1.1.1" ;
+    core:isPartOf govmeta:6f7581b0-612a-4ef5-bef2-9fc396503a28 .  
+
+govmeta:a1345d77-a380-47ae-84c3-d3aff04f65d8  a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Modifier des règles"@fr ; 
+    core:hasTitle "Edit Rules"@en ; 
+    core:hasTitle "Regeln bearbeiten"@de ; 
+    core:hasDescription "Processus de modification des règles et procédures établies régissant la gestion et l'utilisation des données au sein du Data Space"@fr ;
+    core:hasDescription "Process of editing or updating established policies and procedures governing the management and use of data within an Data Space"@en ;
+    core:hasDescription "Prozess der Bearbeitung oder Aktualisierung etablierter Richtlinien und Verfahren für die Verwaltung und Nutzung von Daten innerhalb eines Datenraums regeln"@de ;
+    metagov:hasNumber "1.2.2" ;
+    core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
+
+govmeta:f1cc04f6-ef63-4925-bceb-df092e5a8aee a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Modification de la gouvernance par des utilisateurs spécifiques"@fr ;
+    core:hasTitle "Governance Amendment by Specific users"@en ;
+    core:hasTitle "Änderung der Governance durch bestimmte Benutzer"@de ;
+    core:hasDescription "Clés ayant la permission de modifier les règles relatives au Data Space"@fr ;
+    core:hasDescription "Keys with the permissions to edit rules related to the Data Space"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu bearbeiten"@de ;
+    metagov:hasNumber "1.2.2.1" ;
+    core:isPartOf govmeta:a1345d77-a380-47ae-84c3-d3aff04f65d8  .  
+
+govmeta:f49c773d-74bb-429c-bc8f-7deeb291cfdb a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.2.2.1.1" ;
+    core:isPartOf govmeta:f1cc04f6-ef63-4925-bceb-df092e5a8aee .  
+
+govmeta:025c000b-020c-4287-b4b3-4ececab37763  a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Supprimer des règles"@fr ; 
+    core:hasTitle "Remove Rules"@en ; 
+    core:hasTitle "Regeln löschen"@de ; 
+    core:hasDescription "Processus de suppression ou de révocation des règles et procédures établies régissant la gestion et l'utilisation des données au sein du Data Space."@fr ;
+    core:hasDescription "Process of removing or revoking established policies and procedures governing the management and use of data within an Data Space"@en ;
+    core:hasDescription "Prozess der Aufhebung oder des Widerrufs etablierter Richtlinien und Verfahren, die die Verwaltung und Nutzung von Daten innerhalb eines Datenraums regeln"@de ;
+    metagov:hasNumber "1.2.3" ;
+    core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
+
+govmeta:9536dc1a-e4ce-4994-8722-d632ab74b33b a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Modification de la gouvernance par des utilisateurs spécifiques"@fr ;
+    core:hasTitle "Governance Amendment by Specific users"@en ;
+    core:hasTitle "Änderung der Governance durch bestimmte Benutzer"@de ;
+    core:hasDescription "Clés ayant la permission de supprimer les règles relatives au Data Space"@fr ;
+    core:hasDescription "Keys with the permissions to delete rules related to the Data Space"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu löschen"@de ;
+    metagov:hasNumber "1.2.3.1" ;
+    core:isPartOf govmeta:025c000b-020c-4287-b4b3-4ececab37763  .  
+
+govmeta:82e09e05-4449-4eef-b976-0ee961404589 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.2.3.1.1" ;
+    core:isPartOf govmeta:9536dc1a-e4ce-4994-8722-d632ab74b33b  .  
+
+govmeta:43bffe52-b961-4d96-a933-8f25f0f8a9aa  a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Accepter de nouveaux membres"@fr ; 
+    core:hasTitle "Accept new members"@en ; 
+    core:hasTitle "Neue Mitglieder aufnehmen"@de ; 
+    core:hasDescription "Processus pour accepter de nouveaux membres dans le Data Space."@fr ;
+    core:hasDescription "Process for accepting new members into the Data Space"@en ;
+    core:hasDescription "Prozess, um neue Mitglieder in den Data Space aufzunehmen"@de ;
+    metagov:hasNumber "1.2.4" ;
+    core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
+
+govmeta:5e1d591f-c8ca-41c6-9d56-9d4098cdb1c0 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Modification de la gouvernance par des utilisateurs spécifiques"@fr ;
+    core:hasTitle "Governance Amendment by Specific users"@en ;
+    core:hasTitle "Änderung der Governance durch bestimmte Benutzer"@de ;
+    core:hasDescription "Clés ayant la permission d'accepter de nouveaux membres liés au Data Space"@fr ;
+    core:hasDescription "Keys with the permissions to accept new members related to the Data Space"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, neue Mitglieder in den Datenraum aufzunehmen"@de ;
+    metagov:hasNumber "1.2.4.1" ;
+    core:isPartOf govmeta:43bffe52-b961-4d96-a933-8f25f0f8a9aa  .  
+
+govmeta:52f9e4c5-82b1-4a37-b967-47ad154d458b a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.2.4.1.1" ;
+    core:isPartOf govmeta:5e1d591f-c8ca-41c6-9d56-9d4098cdb1c0  .  
+
+govmeta:64462eac-3644-4306-8c01-93ba694946ba a owl:NamedIndividual,  
+        metagov:Section ; 
+    core:hasTitle "Gestion des jeux de données"@fr ;
+    core:hasTitle "Datasets Management"@en ; 
+    core:hasTitle "Verwaltung von Datensätzen"@de ;     
+    core:hasDescription "Il s'agit des règles visant à rendre les jeux de données accessibles au sein du Data Space."@fr ;
+    core:hasDescription "These are the rules for making datasets accessible within the Data Space."@en ;
+    core:hasDescription "Dies sind die Regeln, um Datensätze innerhalb des Data Space zugänglich zu machen."@de ;
+    metagov:hasNumber "1.3" ; 
+    core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .   
+
+govmeta:65f9d3f1-7ec6-464c-8db2-3719a5fc09da a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Référencer des jeux de données"@fr ; 
+    core:hasTitle "Reference dataset"@en ; 
+    core:hasTitle "Datensätze referenzieren"@de ; 
+    core:hasDescription "Processus de référencer des jeux de données dans le Dataverse"@fr ;
+    core:hasDescription "Dataverse dataset referencing process"@en ;
+    core:hasDescription "Prozess der Referenzierung von Datensätzen im Dataverse"@de ;
+    metagov:hasNumber "1.3.1" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:480904c1-c8d1-4ccf-94ad-2661d2ecfc6c a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour référencer des jeux de données"@fr ;    
+    core:hasTitle "Conditions for referencing datasets"@en ;   
+    core:hasTitle "Bedingungen für die Referenzierung von Datensätzen"@de ;   
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.3.1.1" ;
+    core:isPartOf govmeta:65f9d3f1-7ec6-464c-8db2-3719a5fc09da .  
+
+govmeta:32292e78-a930-43d5-b0b7-e2a028170ff3 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Métadonnées"@fr ;
+    core:hasTitle "Metadata"@en ;
+    core:hasTitle "Metadaten"@de ;
+    core:hasDescription "Obligatoire"@fr ;
+    core:hasDescription "Mandatory"@en ;
+    core:hasDescription "erforderlich"@de ;
+    metagov:hasNumber "1.3.1.1.1" ;
+    core:isPartOf govmeta:480904c1-c8d1-4ccf-94ad-2661d2ecfc6c .  
+
+govmeta:92052e5e-fb57-4b36-a144-25df65a39218 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Paternité"@fr ;
+    core:hasTitle "Creator"@en ;
+    core:hasTitle "Ersteller"@de ;
+    core:hasDescription "Obligatoire"@fr ;
+    core:hasDescription "Mandatory"@en ;
+    core:hasDescription "erforderlich"@de ;
+    metagov:hasNumber "1.3.1.1.2" ;
+    core:isPartOf govmeta:480904c1-c8d1-4ccf-94ad-2661d2ecfc6c .  
+
+govmeta:1685a4ac-147c-44dc-ae08-22f313d46b93 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Métadonnées personnelles"@fr ;
+    core:hasTitle "Personal metadata"@en ;
+    core:hasTitle "Persönliche Metadaten"@de ;
+    core:hasDescription "Non autorisées"@fr ;
+    core:hasDescription "Unauthorized"@en ;
+    core:hasDescription "Nicht erlaubt"@de ;
+    metagov:hasNumber "1.3.1.1.3" ;
+    core:isPartOf govmeta:480904c1-c8d1-4ccf-94ad-2661d2ecfc6c .  
+
+govmeta:e77cc1ea-196a-41ea-af82-4454da0f50c3 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.3.1.1.4" ;
+    core:isPartOf govmeta:480904c1-c8d1-4ccf-94ad-2661d2ecfc6c .  
+
+
+govmeta:ff328c6b-8ab9-4eee-b7a4-9fb0695abbfe a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Créer des métadonnées"@fr ; 
+    core:hasTitle "Create metadata"@en ; 
+    core:hasTitle "Metadaten erstellen"@de ; 
+    core:hasDescription "Processus de créer les métadonnées relatives à un jeu de données"@fr ;
+    core:hasDescription "Process of creating metadata for a dataset"@en ;
+    core:hasDescription "Prozess des Erstellens von Metadaten eines Datensatzes"@de ;
+    metagov:hasNumber "1.3.2" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:e02d407c-1ab4-4ac1-859a-e79f1a3baeca a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de créer des métadonnées"@fr ;
+    core:hasTitle "Authorization to create metadata"@en ;
+    core:hasTitle "Berechtigung zur Erstellung von Metadaten"@de ;
+    core:hasDescription "Clés ayant la permission de créer des métadonnées"@fr ;
+    core:hasDescription "Keys with metadata creation permissions"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Metadaten zu erstellen"@de ;
+    metagov:hasNumber "1.3.2.1" ;
+    core:isPartOf govmeta:ff328c6b-8ab9-4eee-b7a4-9fb0695abbfe .  
+
+govmeta:496951ac-d53f-47e1-b626-ff9dd9ca4e7c a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.3.2.1.1" ;
+    core:isPartOf govmeta:e02d407c-1ab4-4ac1-859a-e79f1a3baeca .  
+
+govmeta:551284ab-87b3-40a3-9370-ddb7229dd130 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Modifier des métadonnées"@fr ; 
+    core:hasTitle "Edit metadata"@en ; 
+    core:hasTitle "Metadaten bearbeiten"@de ; 
+    core:hasDescription "Processus de modifier les métadonnées relatives à un jeu de données"@fr ;
+    core:hasDescription "Process for editing dataset metadata"@en ;
+    core:hasDescription "Prozess der Bearbeitung der Metadaten eines Datensatzes"@de ;
+    metagov:hasNumber "1.3.3" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:aa4f4e8a-23b5-4bee-95a5-72d1424db36b a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de modifier des métadonnées"@fr ;
+    core:hasTitle "Authorization to modify metadata"@en ;
+    core:hasTitle "Berechtigung zur Bearbeitung von Metadaten"@de ;
+    core:hasDescription "Clés ayant la permission de modifier des métadonnées"@fr ;
+    core:hasDescription "Keys with permission to modify metadata"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Metadaten zu bearbeiten"@de ;
+    metagov:hasNumber "1.3.3.1" ;
+    core:isPartOf govmeta:551284ab-87b3-40a3-9370-ddb7229dd130 .  
+
+govmeta:a412ad44-5de8-4a84-b322-167a4b510482 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.3.3.1.1" ;
+    core:isPartOf govmeta:aa4f4e8a-23b5-4bee-95a5-72d1424db36b .  
+
+govmeta:7eddfc57-0d01-4fd5-8d85-4f9ab6033f15 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Supprimer des métadonnées"@fr ; 
+    core:hasTitle "Remove metadata"@en ; 
+    core:hasTitle "Metadaten löschen"@de ; 
+    core:hasDescription "Processus de supprimer les métadonnées relatives à un jeu de données"@fr ;
+    core:hasDescription "Process for removing metadata related to a dataset"@en ;
+    core:hasDescription "Prozess des Löschens von Metadaten eines Datensatzes"@de ;
+    metagov:hasNumber "1.3.4" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:7f5e1682-0142-40cd-b8b8-9751ef724cd7 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de supprimer des métadonnées"@fr ;
+    core:hasTitle "Authorization to delete metadata"@en ;
+    core:hasTitle "Berechtigung zum Löschen von Metadaten"@de ;
+    core:hasDescription "Clés ayant la permission de supprimer des métadonnées"@fr ;
+    core:hasDescription "Keys with permission to delete metadata"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Metadaten zu löschen"@de ;
+    metagov:hasNumber "1.3.4.1" ;
+    core:isPartOf govmeta:7eddfc57-0d01-4fd5-8d85-4f9ab6033f15 .  
+
+govmeta:7e98d071-0f65-49ee-8007-fa149eccc61c a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.3.4.1.1" ;
+    core:isPartOf govmeta:7f5e1682-0142-40cd-b8b8-9751ef724cd7 .  
+
+govmeta:e5a19f5a-16d4-48d0-a45e-4ab98a4b8117 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Déréférencer des jeux de données"@fr ; 
+    core:hasTitle "Dereference datasets"@en ; 
+    core:hasTitle "Dereferenzierung von Datensätzen"@de ; 
+    core:hasDescription "Processus de déréférencer des jeux de données du Dataverse"@fr ;
+    core:hasDescription "Dataverse dereferencing process"@en ;
+    core:hasDescription "Prozess der Auslistung von Datensätzen aus dem Dataverse"@de ;
+    metagov:hasNumber "1.3.5" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:6534d361-03d1-4e8f-9e35-f538af4c083a a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de déréférencer des jeux de données"@fr ;
+    core:hasTitle "Authorization to dereference datasets"@en ;
+    core:hasTitle "Berechtigung zur Auslistung von Datensätzen"@de ;
+    core:hasDescription "Clés ayant la permission de déréférencer des jeux de données"@fr ;
+    core:hasDescription "Keys with permission to dereference datasets"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Datensätze auszulisten"@de ;
+    metagov:hasNumber "1.3.5.1" ;
+    core:isPartOf govmeta:e5a19f5a-16d4-48d0-a45e-4ab98a4b8117 .  
+
+govmeta:5b564b0e-5d41-42d3-afae-8d0744c77960 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.3.5.1.1" ;
+    core:isPartOf govmeta:6534d361-03d1-4e8f-9e35-f538af4c083a .  
+
+govmeta:88dfe664-8ee0-4da4-90ea-5112ebeecc05 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Télécharger des jeux de données"@fr ; 
+    core:hasTitle "Download datasets"@en ; 
+    core:hasTitle "Datensätze herunterladen"@de ; 
+    core:hasDescription "Processus de télécharger un jeu de données rattaché au Data Space"@fr ;
+    core:hasDescription "Process of downloading a dataset attached to the Data Space"@en ;
+    core:hasDescription "Prozess des Herunterladens eines Datensatzes, der an den Datenraum angehängt ist"@de ;
+    metagov:hasNumber "1.3.6" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:b34cc7d4-669f-4250-8557-3e211928864b a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de télécharger des jeux de données"@fr ;
+    core:hasTitle "Authorization to download data sets"@en ;
+    core:hasTitle "Berechtigung zum Herunterladen von Datensätzen"@de ;
+    core:hasDescription "Clés ayant la permission de télécharger des jeux de données"@fr ;
+    core:hasDescription "Keys with permission to download datasets"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, zum Herunterladen von Datensätzen"@de ;
+    metagov:hasNumber "1.3.6.1" ;
+    core:isPartOf govmeta:88dfe664-8ee0-4da4-90ea-5112ebeecc05 .  
+
+govmeta:03118508-3385-4ce0-9237-4b92419ef062 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.3.6.1.1" ;
+    core:isPartOf govmeta:b34cc7d4-669f-4250-8557-3e211928864b .  
+
+govmeta:88ef92f8-685b-4977-aceb-39cd8b7ec8b2 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Gérer les connaissances créées"@fr ; 
+    core:hasTitle "Manage the knowledge created"@en ; 
+    core:hasTitle "Erstelltes Wissen verwalten"@de ; 
+    core:hasDescription "Processus de gestion des jeux de données créés dans un workflow"@fr ;
+    core:hasDescription "Process for managing datasets created in a workflow"@en ;
+    core:hasDescription "Prozess zur Verwaltung von Datensätzen, die über einen Workflow erstellt wurden"@de ;
+    metagov:hasNumber "1.3.7" ;
+    core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
+
+govmeta:4d610258-7aaf-4e16-a480-346621fc9c8a a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation d'accès à la connaissance créée"@fr ; 
+    core:hasTitle "Authorization to access the knowledge created"@en ; 
+    core:hasTitle "Berechtigung zum Zugriff auf das erstellte Wissen"@de ; 
+    core:hasDescription "Clés ayant la permission d'accéder aux jeux de données de la connaissance créée"@fr ;
+    core:hasDescription "Keys with permission to access created knowledge datasets"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, auf die Datensätze des erstellten Wissens zuzugreifen"@de ;
+    metagov:hasNumber "1.3.7.1" ;
+    core:isPartOf govmeta:88ef92f8-685b-4977-aceb-39cd8b7ec8b2 .  
+
+govmeta:6f996d3d-7b5d-441c-963a-073a40d55e2e a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.3.7.1.1" ;
+    core:isPartOf govmeta:4d610258-7aaf-4e16-a480-346621fc9c8a .  
+
+govmeta:d472867d-853a-4d09-8631-0372ad305c86 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation d'accès aux jeux de données intermédiaires"@fr ; 
+    core:hasTitle "Access authorization for intermediate data sets"@en ; 
+    core:hasTitle "Berechtigung zum Zugriff auf Zwischendatensätze"@de ; 
+    core:hasDescription "Clés ayant la permission d'accéder aux jeux de données intermédiaires visant à créer la connaissance"@fr ;
+    core:hasDescription "Keys with permission to access intermediate datasets used to create knowledge"@en ;
+    core:hasDescription "Schlüssel mit der Erlaubnis, auf Zwischendatensätze zuzugreifen, um Wissen zu schaffen"@de ;
+    metagov:hasNumber "1.3.7.2" ;
+    core:isPartOf govmeta:88ef92f8-685b-4977-aceb-39cd8b7ec8b2 .  
+
+govmeta:a3aef5cc-efa7-4b29-ace6-bbc932ef3103 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    core:hasDescription "did:key:1x82d1g1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478996665"@en ;
+    metagov:hasNumber "1.3.7.2.1" ;
+    core:isPartOf govmeta:d472867d-853a-4d09-8631-0372ad305c86 .  
+
+govmeta:3a8f0ed3-ce86-4b8b-81a4-f795e9c3af70 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour supprimer les jeux de données intermédiaires"@fr ; 
+    core:hasTitle "Conditions for deleting intermediate datasets"@en ; 
+    core:hasTitle "Bedingungen für das Löschen von Zwischendatensätzen"@de ; 
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.3.7.3" ;
+    core:isPartOf govmeta:88ef92f8-685b-4977-aceb-39cd8b7ec8b2 .  
+
+govmeta:2973dc5c-d675-4ebe-966a-a90cb8758336 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Suppression"@fr ;
+    core:hasTitle "Delete"@en ;
+    core:hasTitle "Löschen"@de ;
+    core:hasDescription "A la fin du workflow ou si le workflow est interrompu"@fr ;
+    core:hasDescription "At the end of the workflow or if the workflow is interrupted"@en ;
+    core:hasDescription "Am Ende des Arbeitsablaufs oder wenn der Arbeitsablauf unterbrochen wird"@de ;
+    metagov:hasNumber "1.3.7.3.1" ;
+    core:isPartOf govmeta:3a8f0ed3-ce86-4b8b-81a4-f795e9c3af70 .  
+
+govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a a owl:NamedIndividual,  
+        metagov:Section ; 
+    core:hasTitle "Gestion des services"@fr ;
+    core:hasTitle "Services Management"@en ;
+    core:hasTitle "Verwaltung der Dienste"@de ;
+    core:hasDescription "Il s'agit des règles visant à rendre les services accessibles au sein du Data Space"@fr ;
+    core:hasDescription "These are the rules for making services accessible within the Data Space"@en ;
+    core:hasDescription "Dies sind die Regeln, die darauf abzielen, die Dienste innerhalb des Data Space zugänglich zu machen"@de ;
+    metagov:hasNumber "1.4" ; 
+    core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .  
+
+govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Référencer des services"@fr ; 
+    core:hasTitle "Reference services"@en ; 
+    core:hasTitle "Dienstleistungen referenzieren"@de ; 
+    core:hasDescription "Processus de référencer un service dans le Dataverse"@fr ;
+    core:hasDescription "Process of referencing a service in the Dataverse"@en ;
+    core:hasDescription "Prozess der Referenzierung eines Dienstes im Dataverse"@de ;
+    metagov:hasNumber "1.4.1" ;
+    core:isPartOf govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a .  
+
+govmeta:f6984699-613f-49a7-96be-ec647d575008 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour référencer des services"@fr ;
+    core:hasTitle "Conditions for referencing services"@en ;
+    core:hasTitle "Bedingungen für die Referenzierung von Diensten"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.4.1.1" ;
+    core:isPartOf govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 .  
+
+govmeta:e3c90c7e-7493-4c1b-bff9-ca461119265e a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Métadonnées"@fr ;
+    core:hasTitle "Metadata"@en ;
+    core:hasTitle "Metadaten"@de ;
+    core:hasDescription "Obligatoire"@fr ;
+    core:hasDescription "Mandatory"@en ;
+    core:hasDescription "erforderlich"@de ;
+    metagov:hasNumber "1.4.1.1.1" ;
+    core:isPartOf govmeta:f6984699-613f-49a7-96be-ec647d575008 .  
+
+govmeta:a97224df-d24a-45f8-8496-a759d8d86496 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.4.1.1.2" ;
+    core:isPartOf govmeta:f6984699-613f-49a7-96be-ec647d575008 .  
+
+govmeta:1a31d2c8-6185-4265-bf26-587058b72e0f a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour référencer des services d'exécution"@fr ;
+    core:hasTitle "Conditions for referencing execution services"@en ;
+    core:hasTitle "Bedingungen für die Referenzierung von Ausführungsdienstleistungen"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.4.1.2" ;
+    core:isPartOf govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 .  
+
+govmeta:e54e809a-1ca0-4ee2-9ba8-585a4260b7eb a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Localisation du datacenter"@fr ;
+    core:hasTitle "Datacenter location"@en ;
+    core:hasTitle "Standort des Rechenzentrums"@de ;
+    core:hasDescription "France"@fr ;
+    core:hasDescription "France"@en ;
+    core:hasDescription "Frankreich"@de ;
+    metagov:hasNumber "1.4.1.2.1" ;
+    core:isPartOf govmeta:1a31d2c8-6185-4265-bf26-587058b72e0f .  
+
+govmeta:17a3b705-3f3b-4edf-befb-79889243c14e a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour référencer des services de stockage"@fr ;
+    core:hasTitle "Conditions for referencing storage services"@en ;
+    core:hasTitle "Bedingungen für die Referenzierung von Speicherdienstleistungen"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.4.1.3" ;
+    core:isPartOf govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 .  
+
+govmeta:70fb3f88-9ae6-40fe-9f86-69c7bffd8113 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Localisation du datacenter"@fr ;
+    core:hasTitle "Datacenter location"@en ;
+    core:hasTitle "Standort des Rechenzentrums"@de ;
+    core:hasDescription "France"@fr ;
+    core:hasDescription "France"@en ;
+    core:hasDescription "Frankreich"@de ;
+    metagov:hasNumber "1.4.1.3.1" ;
+    core:isPartOf govmeta:17a3b705-3f3b-4edf-befb-79889243c14e .  
+
+
+govmeta:aeeca6e6-0cc0-49b6-8975-e2284836e4e5 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Créer des métadonnées"@fr ; 
+    core:hasTitle "Creating metadata"@en ; 
+    core:hasTitle "Metadaten erstellen"@de ; 
+    core:hasDescription "Processus de créer les métadonnées relatives à un service"@fr ;
+    core:hasDescription "Process for creating service metadata"@en ;
+    core:hasDescription "Prozess des Erstellens der Metadaten eines Dienstes"@de ;
+    metagov:hasNumber "1.4.2" ;
+    core:isPartOf govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a .  
+
+govmeta:21023399-041d-483d-a477-f28aa30356e6 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de créer des métadonnées"@fr ;
+    core:hasTitle "Authorization to create metadata"@en ;
+    core:hasTitle "Berechtigung zum Erstellen von Metadaten"@de ;
+    core:hasDescription "Clés ayant la permission de créer des métadonnées relatives à un service"@fr ;
+    core:hasDescription "Keys with permission to create service metadata"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Metadaten eines Dienstes zu erstellen"@de ;
+    metagov:hasNumber "1.4.2.1" ;
+    core:isPartOf govmeta:aeeca6e6-0cc0-49b6-8975-e2284836e4e5 .  
+
+govmeta:2f93bca5-38c4-4ccb-99d9-6cc6852f53c2 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.4.2.1.1" ;
+    core:isPartOf govmeta:21023399-041d-483d-a477-f28aa30356e6 .  
+
+govmeta:fc005614-50c9-4c60-aa9c-d6baaccdba58 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Modifier des métadonnées"@fr ; 
+    core:hasTitle "Editing metadata"@en ; 
+    core:hasTitle "Metadaten bearbeiten"@de ; 
+    core:hasDescription "Processus de modifier  les métadonnées relatives à un service"@fr ;
+    core:hasDescription "Process for modifying service metadata"@en ;
+    core:hasDescription "Prozess der Bearbeitung der Metadaten eines Dienstes"@de ;
+    metagov:hasNumber "1.4.3" ;
+    core:isPartOf govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a .  
+
+govmeta:94359b02-0942-42b7-9f17-18c0c4af354f a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de modifier des métadonnées"@fr ;
+    core:hasTitle "Authorization to modify metadata"@en ;
+    core:hasTitle "Berechtigung zum Bearbeitung von Metadaten"@de ;
+    core:hasDescription "Clés ayant la permission de modifier des métadonnées relatives à un service"@fr ;
+    core:hasDescription "Keys with permission to modify service metadata"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Metadaten eines Dienstes zu bearbeiten"@de ;
+    metagov:hasNumber "1.4.3.1" ;
+    core:isPartOf govmeta:fc005614-50c9-4c60-aa9c-d6baaccdba58 .  
+
+govmeta:030d681b-67d0-4305-8699-e108216c2cf2 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.4.3.1.1" ;
+    core:isPartOf govmeta:94359b02-0942-42b7-9f17-18c0c4af354f .  
+
+govmeta:7e88f2de-cea7-4138-8654-04d6d2531fa8 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Supprimer des métadonnées"@fr ; 
+    core:hasTitle "Remove metadata"@en ; 
+    core:hasTitle "Metadaten löschen"@de ; 
+    core:hasDescription "Processus de supprimer les métadonnées relatives à un service"@fr ;
+    core:hasDescription "Process for deleting service metadata"@en ;
+    core:hasDescription "Prozess des Löschens von Metadaten eines Dienstes"@de ;
+    metagov:hasNumber "1.4.4" ;
+    core:isPartOf govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a .  
+
+govmeta:961aae29-6a12-4ac2-92cf-ffd761609339 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Autorisation de supprimer des métadonnées"@fr ;
+    core:hasTitle "Authorization to delete metadata"@en ;
+    core:hasTitle "Berechtigung zum Löschen von Metadaten"@de ;
+    core:hasDescription "Clés ayant la permission de supprimer des métadonnées relatives à un service"@fr ;
+    core:hasDescription "Keys with permission to delete service metadata"@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Metadaten eines Dienstes zu löschen"@de ;
+    metagov:hasNumber "1.4.4.1" ;
+    core:isPartOf govmeta:7e88f2de-cea7-4138-8654-04d6d2531fa8 .  
+
+govmeta:a1345472-6d5b-4cb2-9754-ba4a7669c25d a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.4.4.1.1" ;
+    core:isPartOf govmeta:961aae29-6a12-4ac2-92cf-ffd761609339 .  
+
+govmeta:685050ec-103b-4d33-a7c0-4bad803fe36b a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Déréférencer des services"@fr ; 
+    core:hasTitle "Dereference services"@en ; 
+    core:hasTitle "Dereferenzierung von Diensten"@de ; 
+    core:hasDescription "Processus de déréférencer un service du Dataverse"@fr ;
+    core:hasDescription "Dereference a Dataverse service"@en ;
+    core:hasDescription "Prozess der Auslistung eines Dienstes aus dem Dataverse"@de ;
+    metagov:hasNumber "1.4.5" ;
+    core:isPartOf govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a .  
+
+govmeta:72807dd4-3c8c-482b-9fd7-803077dd38fa a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour déréférencer un service"@fr ;
+    core:hasTitle "Conditions for dereference a service"@en ;
+    core:hasTitle "Bedingungen für die Auslistung eines Dienstes"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.4.5.1" ;
+    core:isPartOf govmeta:685050ec-103b-4d33-a7c0-4bad803fe36b .  
+
+govmeta:96253ae4-e5e0-4429-bf0c-f758f9ed4ee2 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Utilisateurs autorisés"@fr ;
+    core:hasTitle "Authorized users"@en ;
+    core:hasTitle "Autorisierte Benutzer"@de ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
+    metagov:hasNumber "1.4.5.1.1" ;
+    core:isPartOf govmeta:72807dd4-3c8c-482b-9fd7-803077dd38fa .  
+
+govmeta:ddedd5c7-cb6c-4b5a-a3e2-41188fb2931d a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Etat d'exécution du service"@fr ;
+    core:hasTitle "Service status"@en ;
+    core:hasTitle "Status der Dienstausführung"@de ;
+    core:hasDescription "Aucune instance en cours ou en queue"@fr ;
+    core:hasDescription "No current or pending proceedings"@en ;
+    core:hasDescription "Kein laufendes oder anhängiges Verfahren"@de ;
+    metagov:hasNumber "1.4.5.1.2" ;
+    core:isPartOf govmeta:72807dd4-3c8c-482b-9fd7-803077dd38fa .  
+
+govmeta:000b7703-34ed-4a72-a255-683ad0f8dbb9 a owl:NamedIndividual,  
+        metagov:Section ; 
+    core:hasTitle "Modèle économique"@fr ;
+    core:hasTitle "Business Model"@en ;
+    core:hasTitle "Geschäftsmodell"@de ;
+    core:hasDescription "Il s'agit de la manière dont le Data Space organise ses ressources numériques pour générer des revenus et rétribuer les participants."@fr ;
+    core:hasDescription "This is the way in which the Data Space organizes its digital resources to generate revenue and remunerate participants."@en ;
+    core:hasDescription "Dies ist die Art und Weise, wie der Datenraum seine digitalen Ressourcen organisiert, um Einnahmen zu erzielen und die Teilnehmer zu entlohnen."@de ;
+    metagov:hasNumber "1.5" ; 
+    core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .  
+
+govmeta:5ca8d928-fdb9-4cba-9963-86d8537d552f a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Rétribution des ressources numériques "@fr ; 
+    core:hasTitle "Payment for digital resources "@en ; 
+    core:hasTitle "Bezahlung für digitale Ressourcen "@de ; 
+    core:hasDescription "Processus de rétribution des fournisseurs de jeux de données et de services"@fr ;
+    core:hasDescription "Payment process for dataset and service providers"@en ;
+    core:hasDescription "Zahlungsverfahren für Datensatz- und Dienstleistungsanbieter"@de ;
+    metagov:hasNumber "1.5.1" ;
+    core:isPartOf govmeta:000b7703-34ed-4a72-a255-683ad0f8dbb9 .  
+
+govmeta:ccacb4e8-788e-4332-beac-db5b019d9def a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour rétribuer les ressources numériques "@fr ; 
+    core:hasTitle "Conditions for paying for digital resources "@fr ; 
+    core:hasTitle "Bedingungen für die Bezahlung von digitalen Ressourcen "@fr ; 
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.5.1.1" ;
+    core:isPartOf govmeta:5ca8d928-fdb9-4cba-9963-86d8537d552f .  
+
+govmeta:b4033d78-9873-464c-8f27-6ab80af0f7f9 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Valeur de la connaissance"@fr ;
+    core:hasTitle "Knowledge value"@en ;
+    core:hasTitle "Wert des Wissens"@de ;
+    core:hasDescription "Somme de la valeur de rétribution des jeux de données et de la valeur consommée des services "@fr ;
+    core:hasDescription "Sum of the remuneration value of datasets and the consumed value of services "@en ;
+    core:hasDescription "Summe des Vergütungswerts von Datensätzen und des verbrauchten Werts von Dienstleistungen "@de ;
+    metagov:hasNumber "1.5.1.1.1" ;
+    core:isPartOf govmeta:ccacb4e8-788e-4332-beac-db5b019d9def .  
+
+govmeta:b18ec80a-3552-4b9e-8349-975cde4d0ba2 a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Rétribution des jeux de données"@fr ; 
+    core:hasTitle "Datasets retribution"@en ;
+    core:hasTitle "Datensätze Vergeltung"@de ;
+    core:hasDescription "Processus de rétribution du fournisseur du jeu de données"@fr ;
+    core:hasDescription "Payment process for the dataset provider"@en ;
+    core:hasDescription "Zahlungsverfahren für den Datensatzanbieter"@de ;
+    metagov:hasNumber "1.5.2" ;
+    core:isPartOf govmeta:000b7703-34ed-4a72-a255-683ad0f8dbb9 .  
+
+govmeta:80a963f3-6914-4565-8b31-9717880ed74c a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour rétribuer des jeux de données"@fr ;
+    core:hasTitle "Conditions for paying for datasets"@en ;
+    core:hasTitle "Bedingungen für die Bezahlung von Datensätzen"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.5.2.1" ;
+    core:isPartOf govmeta:b18ec80a-3552-4b9e-8349-975cde4d0ba2 .  
+
+govmeta:d9cd8662-6bb3-47b7-bc35-a65f8d172b89 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Licence"@fr ;
+    core:hasTitle "License"@en ;
+    core:hasTitle "Lizenz"@en ;
+    core:hasDescription "n'est pas de type Licence Ouverte 2.0 ou Open Government License (OGL) ou CC-BY 2.0 ou ODC-BY ou ODbl 1.0 "@fr ;
+    core:hasDescription "is not Licence Ouverte 2.0 or Open Government License (OGL) or CC-BY 2.0 or ODC-BY or ODbl 1.0 "@en ;
+    core:hasDescription "ist nicht Licence Ouverte 2.0 oder Open Government License (OGL) oder CC-BY 2.0 oder ODC-BY oder ODbl 1.0 "@de ;
+    metagov:hasNumber "1.5.2.1.1" ;
+    core:isPartOf govmeta:80a963f3-6914-4565-8b31-9717880ed74c .  
+
+govmeta:e9feeeb1-3403-4891-a56e-b89e52f31211 a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Prix"@fr ;
+    core:hasTitle "Pricing"@en ;
+    core:hasTitle "Preisgestaltung"@de ;
+    core:hasDescription "Doit être fixé"@fr ;
+    core:hasDescription "Must be fixed"@en ;
+    core:hasDescription "Muss repariert werden"@de ;
+    metagov:hasNumber "1.5.2.1.2" ;
+    core:isPartOf govmeta:80a963f3-6914-4565-8b31-9717880ed74c .  
+
+govmeta:d373989c-5bda-44d9-8206-e15c9095b28f a owl:NamedIndividual,  
+        metagov:Subsection ;
+    core:hasTitle "Rétribution des services"@fr ; 
+    core:hasTitle "Services retribution"@en ;
+    core:hasTitle "Dienstleistungen Vergeltung"@de ;
+    core:hasDescription "Processus de rétribution du fournisseur du service"@fr ;
+    core:hasDescription "Service provider payment process"@en ;
+    core:hasDescription "Verfahren zur Bezahlung von Dienstleistern"@de ;
+    metagov:hasNumber "1.5.3" ;
+    core:isPartOf govmeta:000b7703-34ed-4a72-a255-683ad0f8dbb9 .  
+
+govmeta:6b38206d-9488-432f-a5ad-130ea6f441f2 a owl:NamedIndividual,  
+        metagov:Article ;
+    core:hasTitle "Conditions pour rétribuer des services"@fr ;
+    core:hasTitle "Conditions for paying for services"@en ;
+    core:hasTitle "Bedingungen für die Bezahlung von Dienstleistungen"@de ;
+    core:hasDescription ""@en ;
+    metagov:hasNumber "1.5.3.1" ;
+    core:isPartOf govmeta:d373989c-5bda-44d9-8206-e15c9095b28f .  
+
+govmeta:a6cf58ee-b5e5-4f0a-b465-3abcfac880dc a owl:NamedIndividual,  
+        metagov:Paragraph ;
+    core:hasTitle "Prix"@fr ;
+    core:hasTitle "Pricing"@en ;
+    core:hasTitle "Preisgestaltung"@de ;
+    core:hasDescription "Doit être fixé"@fr ;
+    core:hasDescription "Must be fixed"@en ;
+    core:hasDescription "Muss repariert werden"@de ;
+    metagov:hasNumber "1.5.3.1.1" ;
+    core:isPartOf govmeta:6b38206d-9488-432f-a5ad-130ea6f441f2 .  
