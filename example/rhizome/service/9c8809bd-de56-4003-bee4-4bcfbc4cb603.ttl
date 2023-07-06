@@ -1,0 +1,30 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/52549532-887d-409b-a9c0-fb68f9e521d2> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:9c8809bd-de56-4003-bee4-4bcfbc4cb603 ;
+    core:hasCategory category:Storage ;
+    core:hasDescription "Le service Stockage Blob Azure vous permet de créer des lacs de données pour répondre à vos besoins d’analyse, et vous fournit un espace de stockage pour créer de puissantes applications natives Cloud et mobiles."@fr ;
+    core:hasDescription "The Azure Blob Storage service lets you create datalakes to meet your analysis needs, and provides you with storage space to build powerful native Cloud and mobile applications."@en ;
+    core:hasDescription "Der Azure Blob Storage Service ermöglicht Ihnen die Erstellung von Datensätzen, die Ihren Analyseanforderungen entsprechen, und bietet Ihnen Speicherplatz für die Entwicklung leistungsstarker nativer Cloud- und Mobilanwendungen."@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "stockage" ;
+    core:hasTitle "Microsoft Azure Blob Storage"@en .
+
+<https://ontology.okp4.space/dataverse/service/metadata/cb3c4594-410e-4404-acbb-9dd426885e5b> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:z6MkjRHZHheNCZG6VYEhsri73S154YHSmjgGdSDRH7biQUGx> ;
+    core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
+    core:describes service:9c8809bd-de56-4003-bee4-4bcfbc4cb603 ;
+    core:lastModifiedBy <did:key:z6MkjRHZHheNCZG6VYEhsri73S154YHSmjgGdSDRH7biQUGx> ;
+    core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
+
+service:9c8809bd-de56-4003-bee4-4bcfbc4cb603 a owl:NamedIndividual,
+        core:Service ;
+    core:hasIdentifier <urn:uuid:9c8809bd-de56-4003-bee4-4bcfbc4cb603> ;
+    core:hasIdentity <did:key:z6MkjRHZHheNCZG6VYEhsri73S154YHSmjgGdSDRH7biQUGx> ;
+    core:hasRegistrar <did:key:z6MkjRHZHheNCZG6VYEhsri73S154YHSmjgGdSDRH7biQUGx> .

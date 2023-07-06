@@ -1,0 +1,30 @@
+@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/service/metadata/d6e403d1-816d-4d23-86c3-9fa279829b29> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+    core:describes service:06fd0de2-8be8-436d-9d91-3aa5972c2209 ;
+    core:hasCategory category:Storage ;
+    core:hasDescription "Cloud Storage est un service géré permettant de stocker des données non structurées. Stockez n'importe quelle quantité de données et récupérez-les quand vous le souhaitez."@fr ;
+    core:hasDescription "Cloud Storage is a managed service for storing unstructured data. Store any amount of data and retrieve it whenever you want."@en ;
+    core:hasDescription "Cloud Storage ist ein verwalteter Dienst für die Speicherung unstrukturierter Daten. Speichern Sie beliebige Datenmengen und rufen Sie sie ab, wann immer Sie wollen."@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "stockage" ;
+    core:hasTitle "Google Cloud Storage"@en .
+
+<https://ontology.okp4.space/dataverse/service/metadata/6f008dfb-e743-456f-a6d8-8847a323a116> a owl:NamedIndividual,
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:z6MkhkU5Zh9RWLB9QMkHwmryUfKZotaqCTW5dnQTsbdFp3T7> ;
+    core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
+    core:describes service:06fd0de2-8be8-436d-9d91-3aa5972c2209 ;
+    core:lastModifiedBy <did:key:z6MkhkU5Zh9RWLB9QMkHwmryUfKZotaqCTW5dnQTsbdFp3T7> ;
+    core:updatedOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp .
+
+service:06fd0de2-8be8-436d-9d91-3aa5972c2209 a owl:NamedIndividual,
+        core:Service ;
+    core:hasIdentifier <urn:uuid:06fd0de2-8be8-436d-9d91-3aa5972c2209> ;
+    core:hasIdentity <did:key:z6MkhkU5Zh9RWLB9QMkHwmryUfKZotaqCTW5dnQTsbdFp3T7> ;
+    core:hasRegistrar <did:key:z6MkhkU5Zh9RWLB9QMkHwmryUfKZotaqCTW5dnQTsbdFp3T7> .
