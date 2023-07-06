@@ -8,9 +8,9 @@
         <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
     core:describes service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 ;
     core:hasCategory category:Storage ;
-    core:hasDescription "Service de stockage de données"@fr ;
+    core:hasDescription "IPFS est un protocole décentralisé conçu pour faciliter le stockage, le partage et la récupération de fichiers à l'échelle mondiale."@fr ;
     core:hasDescription "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale"@en ;
-    core:hasDescription "Datenspeicherungsdienst"@de ;
+    core:hasDescription "IPFS ist ein dezentrales Protokoll, das die Speicherung, die gemeinsame Nutzung und den Abruf von Dateien auf globaler Ebene erleichtern soll."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
     core:hasTitle "IPFS"@en .
