@@ -1,0 +1,30 @@
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/zone/metadata/d0c63b88-44f8-4518-b62d-e141dd8fb624> a owl:NamedIndividual,   
+        <https://ontology.okp4.space/metadata/zone/GeneralMetadata> ;
+    core:describes zone:a19fec74-d428-46ac-ad3b-730e520fef86 ; 
+    core:hasDescription "Aujourd'hui, les coopératives et les négociants ont besoin d'une connaissance fine de leur territoire pour optimiser leurs activités d'approvisionnement et de collecte, mais aussi pour accompagner les agriculteurs dans la transition agro-écologique. Le projet CROP répond à ces enjeux en proposant un outil de visualisation des données agro-économiques des territoires. CROP permet de croiser différentes sources de données pour obtenir une meilleure connaissance à l'échelle de l'exploitation mais aussi de son territoire."@fr ;
+    core:hasDescription "Today, cooperatives and traders need to have a detailed knowledge of their territory to optimize their supply and collection activities, but also to support farmers in the agro-ecological transition. The CROP project responds to these challenges by proposing an agro-economic data visualization tool for territories. CROP allows to cross different data sources to get a better knowledge at the scale of the farm but also of its territory."@en ;
+    core:hasDescription "Genossenschaften und Händler benötigen heute detaillierte Kenntnisse über ihr Gebiet, um ihre Liefer- und Sammelaktivitäten zu optimieren, aber auch um die Landwirte bei der agro-ökologischen Umstellung zu unterstützen. Das CROP-Projekt antwortet auf diese Herausforderungen, indem es ein agrarökonomisches Datenvisualisierungstool für Gebiete vorschlägt. CROP ermöglicht es, verschiedene Datenquellen miteinander zu verknüpfen, um ein besseres Wissen auf der Ebene des Betriebs, aber auch des Gebiets zu erhalten."@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "data visualisation",
+        "plot" ,
+        "territory";
+    core:hasTitle "CROP"@en ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+<https://ontology.okp4.space/dataverse/zone/metadata/ac2548f8-106c-4802-9d51-0aa3c8754842> a owl:NamedIndividual,    
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-07-03T15:29:16.507000+00:00"^^xsd:dateTime ;
+    core:describes zone:a19fec74-d428-46ac-ad3b-730e520fef86 ;  
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-07-03T15:29:16.507000+00:00"^^xsd:dateTime .
+
+zone:a19fec74-d428-46ac-ad3b-730e520fef86 a owl:NamedIndividual,  
+        core:Zone ;
+        core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
