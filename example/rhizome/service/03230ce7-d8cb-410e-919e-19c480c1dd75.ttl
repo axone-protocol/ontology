@@ -28,4 +28,3 @@ service:03230ce7-d8cb-410e-919e-19c480c1dd75 a owl:NamedIndividual,
     core:hasIdentifier <urn:uuid:03230ce7-d8cb-410e-919e-19c480c1dd75> ;
     core:hasIdentity <did:key:z6Mkg6zUc9QFnHtfSnawoXVB269ko7wgmZXLHVJDwweDqL3y> ;
     core:hasRegistrar <did:key:z6Mkg6zUc9QFnHtfSnawoXVB269ko7wgmZXLHVJDwweDqL3y> .
-    

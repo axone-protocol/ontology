@@ -13,7 +13,7 @@
     core:hasDescription "Amazon Simple Storage Service (Amazon S3) ist ein Objektspeicherdienst, der Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung auf höchstem Niveau bietet."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Amazon S3"@en ;
+    core:hasTitle "Amazon S3"@en .
 
 <https://ontology.okp4.space/dataverse/service/metadata/0fceaaf9-1cab-40dc-9eb1-52ff190d4408> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

@@ -31,4 +31,3 @@ service:6636b94a-b2f7-4139-9227-6838de9d3ef3 a owl:NamedIndividual,
     core:hasIdentifier <urn:uuid:6636b94a-b2f7-4139-9227-6838de9d3ef3> ;
     core:hasIdentity <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
-

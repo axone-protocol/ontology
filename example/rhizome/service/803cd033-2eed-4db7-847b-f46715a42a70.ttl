@@ -28,4 +28,4 @@ service:803cd033-2eed-4db7-847b-f46715a42a70 a owl:NamedIndividual,
     core:hasIdentifier <urn:uuid:803cd033-2eed-4db7-847b-f46715a42a70> ;
     core:hasIdentity <did:key:z6MkrpCPVDHcsqi3aaqnemLC1aBTUwkfPwTyzc8sFWYwm1PA> ;
     core:hasRegistrar <did:key:z6MkrpCPVDHcsqi3aaqnemLC1aBTUwkfPwTyzc8sFWYwm1PA> .
-    
+   
