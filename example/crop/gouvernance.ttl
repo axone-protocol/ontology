@@ -124,7 +124,7 @@ govmeta:e3e46cc5-8323-4325-acd6-30bd0a1fea70 a owl:NamedIndividual,
     core:hasDescription "Keys with the permissions to edit rules related to the Data Space"@en ;
     core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu bearbeiten"@de ;
     metagov:hasNumber "1.2.2.1" ;
-    core:isPartOf govmeta:7f089661-6299-4700-8395-5bea10be1c0a  .   
+    core:isPartOf govmeta:7f089661-6299-4700-8395-5bea10be1c0a .   
 
 govmeta:1b110077-3684-4fed-bae6-5b5919680975 a owl:NamedIndividual,   
         metagov:Paragraph ;
@@ -156,7 +156,7 @@ govmeta:9024e0ab-fe8d-467c-8e4f-3efe18b6b4a0 a owl:NamedIndividual,
     core:hasDescription "Keys with the permissions to delete rules related to the Data Space"@en ;
     core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu löschen"@de ;
     metagov:hasNumber "1.2.3.1" ;
-    core:isPartOf govmeta:00cc49bd-b0cf-45b8-a93d-258b3186f3b3  .   
+    core:isPartOf govmeta:00cc49bd-b0cf-45b8-a93d-258b3186f3b3 .   
 
 govmeta:c6e7a380-83c2-4b1f-92cd-e0955b8da6fe a owl:NamedIndividual,   
         metagov:Paragraph ;
@@ -166,7 +166,7 @@ govmeta:c6e7a380-83c2-4b1f-92cd-e0955b8da6fe a owl:NamedIndividual,
     core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
     core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.2.3.1.1" ;
-    core:isPartOf govmeta:9024e0ab-fe8d-467c-8e4f-3efe18b6b4a0  .   
+    core:isPartOf govmeta:9024e0ab-fe8d-467c-8e4f-3efe18b6b4a0 .   
 
 govmeta:10129a56-4275-4c58-8e2c-8d84c959e815  a owl:NamedIndividual,   
         metagov:Subsection ;
@@ -188,7 +188,7 @@ govmeta:44a4d2ca-47fe-4305-87ee-a687f6ebf13f a owl:NamedIndividual,
     core:hasDescription "Keys with the permissions to accept new members related to the Data Space"@en ;
     core:hasDescription "Schlüssel mit der Berechtigung, neue Mitglieder in den Datenraum aufzunehmen"@de ;
     metagov:hasNumber "1.2.4.1" ;
-    core:isPartOf govmeta:10129a56-4275-4c58-8e2c-8d84c959e815  .   
+    core:isPartOf govmeta:10129a56-4275-4c58-8e2c-8d84c959e815 .   
 
 govmeta:96e62e45-14e1-4ee7-ae21-3381a0400481 a owl:NamedIndividual,   
         metagov:Paragraph ;
@@ -198,7 +198,7 @@ govmeta:96e62e45-14e1-4ee7-ae21-3381a0400481 a owl:NamedIndividual,
     core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
     core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.2.4.1.1" ;
-    core:isPartOf govmeta:44a4d2ca-47fe-4305-87ee-a687f6ebf13f  .   
+    core:isPartOf govmeta:44a4d2ca-47fe-4305-87ee-a687f6ebf13f .   
 
 govmeta:c5e33fb5-9706-4d5f-968d-8bd60781bdab a owl:NamedIndividual,   
         metagov:Section ; 

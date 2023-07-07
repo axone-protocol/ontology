@@ -28,4 +28,3 @@
 zone:a19fec74-d428-46ac-ad3b-730e520fef86 a owl:NamedIndividual,  
         core:Zone ;
         core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
-

@@ -32,4 +32,3 @@ zone:ef347285-e52a-430d-9679-dcb76b962ce7 a owl:NamedIndividual,
         core:Zone ;
         core:hasIdentifier <urn:uuid:6d1aaad8-9411-4758-a9f9-ed43358af1fd> ;
         core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
-

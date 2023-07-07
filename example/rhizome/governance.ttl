@@ -87,7 +87,7 @@ govmeta:dc888d6a-d301-4449-8c33-659d9198c3be a owl:NamedIndividual,
     core:hasTitle "Governance Amendment by Specific users"@en ;
     core:hasDescription ""@en ;
     metagov:hasNumber "1.2.2.1" ;
-    core:isPartOf govmeta:7109f25d-3976-4174-b4c0-68e71831aff4  .
+    core:isPartOf govmeta:7109f25d-3976-4174-b4c0-68e71831aff4 .
 
 govmeta:468b12c9-c799-4639-ad64-64ea24fb865a a owl:NamedIndividual,
         metagov:Paragraph ;
@@ -108,14 +108,14 @@ govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386 a owl:NamedIndividual,
     core:hasTitle "Governance Amendment by Specific users"@en ;
     core:hasDescription "Keys with the permissions to delete rules related to the Zone."@en ;
     metagov:hasNumber "1.2.3.1" ;
-    core:isPartOf govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a  .
+    core:isPartOf govmeta:5b439672-7cf8-4f6a-be87-aac27d68ef8a .
 
 govmeta:d4e8625c-e26b-49a2-b266-a05652ffae46 a owl:NamedIndividual,
         metagov:Paragraph ;
     core:hasTitle "Users"@en ;
     core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
     metagov:hasNumber "1.2.3.1.1" ;
-    core:isPartOf govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386  .
+    core:isPartOf govmeta:ccee972e-aeb5-499a-85ad-9ec557fbf386 .
 
 govmeta:6c8ba1c9-60db-44de-a3cd-73e31e33fb39 a owl:NamedIndividual,
         metagov:Section ; 
