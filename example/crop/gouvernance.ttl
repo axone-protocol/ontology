@@ -523,7 +523,7 @@ govmeta:df349ed8-ac62-40b5-b0c8-3a79de3b543e a owl:NamedIndividual,
     metagov:hasNumber "1.4.1.1.1" ;
     core:isPartOf govmeta:a3da914a-cec9-47d8-ac67-cf16d95018ac .   
 
-govmeta:df349ed8-ac62-40b5-b0c8-3a79de3b543e a owl:NamedIndividual,   
+govmeta:d54b6454-a5df-433e-b7fa-02f2acbb3384 a owl:NamedIndividual,   
         metagov:Paragraph ;
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
