@@ -17,18 +17,18 @@ govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 a owl:NamedIndividual,
     core:hasTitle "Gouvernance DDP"@fr ;
     core:hasTitle "DDP Governance"@en ;
     core:hasTitle "DDP Governance"@de ;
-    core:hasDescription "Porté par CERFRANCE Bretagne, la data est dans le pré (ou DDP) est un data space dont l'objectif est de valoriser les données agricoles (techniques et comptables) au travers d’un mécanisme de fixation du prix juste pour les produits laitiers, pour ensuite fournir des conseils spécifiques à chaque agriculteur."@fr ;
-    core:hasDescription "Supported by CERFRANCE Bretagne, la data est dans le pré (or DDP) is a data space whose aim is to enhance the value of agricultural data (technical and accounting) through a mechanism for setting the right price for dairy products, and then providing specific advice to each farmer."@en ;
-    core:hasDescription "La data est dans le pré (oder DDP) ist ein von CERFRANCE Bretagne unterstützter Datenraum, dessen Ziel es ist, landwirtschaftliche (technische und buchhalterische) Daten durch einen Mechanismus zur Festlegung eines fairen Preises für Milchprodukte aufzuwerten, um dann jedem Landwirt spezifische Ratschläge zu erteilen."@de .
+    core:hasDescription "Porté par CERFRANCE Bretagne, la data est dans le pré (ou DDP) est une zone dont l'objectif est de valoriser les données agricoles (techniques et comptables) au travers d’un mécanisme de fixation du prix juste pour les produits laitiers, pour ensuite fournir des conseils spécifiques à chaque agriculteur."@fr ;
+    core:hasDescription "Supported by CERFRANCE Bretagne, la data est dans le pré (or DDP) is a zone whose aim is to make the most of agricultural data (technical and accounting) through a mechanism for setting a fair price for dairy products, and then providing specific advice to each farmer."@en ;
+    core:hasDescription "Die von CERFRANCE Bretagne unterstützte Zone << La data est dans le pré >> (DDP) zielt darauf ab, die landwirtschaftlichen Daten (technische und buchhalterische) durch einen Mechanismus zur Festsetzung eines angemessenen Preises für Milchprodukte zu nutzen und den einzelnen Landwirten eine spezifische Beratung anzubieten."@de .
 
 govmeta:40e59a4e-e4db-41ed-8860-d25a1bdac640 a owl:NamedIndividual,  
         metagov:Section ; 
     core:hasTitle "Gestion des identités"@fr ;
     core:hasTitle "Identity Management"@en ;
     core:hasTitle "Identitätsverwaltung"@de ;
-    core:hasDescription "Il s'agit des processus et des outils utilisés pour gérer et sécuriser l'accès et l'utilisation des données dans le Data Space."@fr ;
-    core:hasDescription "It refers to the processes and tools used to manage and secure the access and use of data within a Zone."@en ;
-    core:hasDescription "Es bezieht sich auf die Prozesse und Werkzeuge, die zur Verwaltung und Sicherung des Zugangs und der Nutzung von Daten innerhalb des Datenraums verwendet werden."@de ;
+    core:hasDescription "Il s'agit des processus et des outils utilisés pour gérer et sécuriser l'accès et l'utilisation des données dans la zone."@fr ;
+    core:hasDescription "It refers to the processes and tools used to manage and secure access to and use of data in the zone."@en ;
+    core:hasDescription "Sie bezieht sich auf die Prozesse und Werkzeuge, die zur Verwaltung und Sicherung des Zugangs zu den Daten und ihrer Nutzung in der Zone eingesetzt werden."@de ;
     metagov:hasNumber "1.1" ; 
     core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .  
 
@@ -37,7 +37,9 @@ govmeta:48b1ca26-8706-4d0e-9b58-202118ca3bd3 a owl:NamedIndividual,
     core:hasTitle "Types d'identificateurs acceptés"@fr ; 
     core:hasTitle "Accceptable forms of identification"@en ; 
     core:hasTitle "Annehmbare Formen der Identifizierung"@de ; 
-    core:hasDescription ""@en ;
+    core:hasDescription "Il s'agit de définir les types de clé à utiliser pour s'authentifier."@fr ;
+    core:hasDescription "This defines the types of key to be used for authentication."@en ;
+    core:hasDescription "Hier wird festgelegt, welche Arten von Schlüsseln für die Authentifizierung verwendet werden sollen."@de ;
     metagov:hasNumber "1.1.1" ;
     core:isPartOf govmeta:40e59a4e-e4db-41ed-8860-d25a1bdac640 .   
 
@@ -46,7 +48,9 @@ govmeta:17e2dddd-492f-4534-aa0a-0c1fb14341ed a owl:NamedIndividual,
     core:hasTitle "Condition : Seuls les identificateurs décentralisés (DID) sont acceptés"@fr ;
     core:hasTitle "Condition: Only Decentralized Identifiers (DID) are accepted"@en ;
     core:hasTitle "Bedingung: Nur dezentrale Identifikatoren (DID) werden akzeptiert"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les exigences sur le standard des clés à utiliser pour s'authentifier."@fr ;
+    core:hasDescription "Defines the key standard to be used for authentication."@en ;
+    core:hasDescription "Legt den Schlüsselstandard fest, der für die Authentifizierung verwendet werden soll."@de ;
     metagov:hasNumber "1.1.1.1" ;
     core:isPartOf govmeta:48b1ca26-8706-4d0e-9b58-202118ca3bd3 .  
 
@@ -66,9 +70,9 @@ govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 a owl:NamedIndividual,
     core:hasTitle "Modèle de gouvernance"@fr ;
     core:hasTitle "Governance Model"@en ;
     core:hasTitle "Governance modell"@de ;
-    core:hasDescription "Il s'agit du cadre de règles, de processus et de procédures qui régissent l'acquisition, la gestion et l'utilisation des données au sein du Data Space."@fr ;
-    core:hasDescription "It refers to the framework of policies, processes, and procedures that govern the acquisition, management, and use of data within the Data Space."@en ;
-    core:hasDescription "Er bezieht sich auf den Rahmen von Richtlinien, Prozessen und Verfahren, die den Erwerb, die Verwaltung und die Nutzung von Daten innerhalb des Datenraums regeln."@de ;
+    core:hasDescription "Il s'agit du cadre de règles, de processus et de procédures qui régissent l'acquisition, la gestion et l'utilisation des données au sein de la zone."@fr ;
+    core:hasDescription "This refers to the framework of rules, processes and procedures that govern the acquisition, management and use of data within the zone."@en ;
+    core:hasDescription "Dies bezieht sich auf den Rahmen von Regeln, Prozessen und Verfahren, die die Erfassung, Verwaltung und Verwendung von Daten innerhalb der Zone regeln."@de ;
     metagov:hasNumber "1.2" ; 
     core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .   
 
@@ -77,9 +81,9 @@ govmeta:25202e54-f74f-4e76-b1c4-b021b54a8a85 a owl:NamedIndividual,
     core:hasTitle "Créer des règles"@fr ; 
     core:hasTitle "Create Rules"@en ; 
     core:hasTitle "Regeln erstellen"@de ; 
-    core:hasDescription "Processus de création des règles et de procédures établies régissant la gestion et l'utilisation des ressources au sein du Data Space."@fr ;
-    core:hasDescription "Process of creating established policies and procedures governing the management and use of resources within an Data Space"@en ;
-    core:hasDescription "Prozess der Erstellung von Richtlinien und Verfahren, die die Verwaltung und Nutzung von Ressourcen innerhalb eines Datenraums regeln"@de ;
+    core:hasDescription "Processus de création des règles et de procédures établies régissant la gestion et l'utilisation des ressources au sein d'une zone."@fr ;
+    core:hasDescription "Process of creating rules and established procedures governing the management and use of resources within the zone."@en ;
+    core:hasDescription "Prozess der Schaffung von Regeln und festgelegten Verfahren für die Verwaltung und Nutzung von Ressourcen innerhalb der Zone."@de ;
     metagov:hasNumber "1.2.1" ;
     core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
 
@@ -88,9 +92,9 @@ govmeta:6f7581b0-612a-4ef5-bef2-9fc396503a28 a owl:NamedIndividual,
     core:hasTitle "Création de la gouvernance par des utilisateurs spécifiques"@fr ;
     core:hasTitle "Governance creation by Specific users"@en ;
     core:hasTitle "Schaffung von Governance durch bestimmte Benutzer"@de ;
-    core:hasDescription "Clés ayant la permission de créer des règles relatives au Data Space"@fr ;
-    core:hasDescription "Keys with the permissions to create rules related to the Data Space"@en ;
-    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu erstellen"@de ;
+    core:hasDescription "Clés ayant la permission de créer des règles relatives à la zone."@fr ;
+    core:hasDescription "Keys with permission to create rules related to the zone."@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für die Zone zu erstellen."@de ;
     metagov:hasNumber "1.2.1.1" ;
     core:isPartOf govmeta:25202e54-f74f-4e76-b1c4-b021b54a8a85 .  
 
@@ -109,9 +113,9 @@ govmeta:a1345d77-a380-47ae-84c3-d3aff04f65d8  a owl:NamedIndividual,
     core:hasTitle "Modifier des règles"@fr ; 
     core:hasTitle "Edit Rules"@en ; 
     core:hasTitle "Regeln bearbeiten"@de ; 
-    core:hasDescription "Processus de modification des règles et procédures établies régissant la gestion et l'utilisation des données au sein du Data Space"@fr ;
-    core:hasDescription "Process of editing or updating established policies and procedures governing the management and use of data within an Data Space"@en ;
-    core:hasDescription "Prozess der Bearbeitung oder Aktualisierung etablierter Richtlinien und Verfahren für die Verwaltung und Nutzung von Daten innerhalb eines Datenraums regeln"@de ;
+    core:hasDescription "Processus de modification des règles et procédures établies régissant la gestion et l'utilisation des données au sein de la zone."@fr ;
+    core:hasDescription "Process of modifying established rules and procedures governing the management and use of data within the zone."@en ;
+    core:hasDescription "Verfahren zur Änderung der bestehenden Regeln und Verfahren für die Verwaltung und Verwendung von Daten innerhalb der Zone."@de ;
     metagov:hasNumber "1.2.2" ;
     core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
 
@@ -120,9 +124,9 @@ govmeta:f1cc04f6-ef63-4925-bceb-df092e5a8aee a owl:NamedIndividual,
     core:hasTitle "Modification de la gouvernance par des utilisateurs spécifiques"@fr ;
     core:hasTitle "Governance Amendment by Specific users"@en ;
     core:hasTitle "Änderung der Governance durch bestimmte Benutzer"@de ;
-    core:hasDescription "Clés ayant la permission de modifier les règles relatives au Data Space"@fr ;
-    core:hasDescription "Keys with the permissions to edit rules related to the Data Space"@en ;
-    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu bearbeiten"@de ;
+    core:hasDescription "Clés ayant la permission de modifier les règles relatives à la zone."@fr ;
+    core:hasDescription "Keys with permission to modify zone rules."@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung, Zonenregeln zu ändern."@de ;
     metagov:hasNumber "1.2.2.1" ;
     core:isPartOf govmeta:a1345d77-a380-47ae-84c3-d3aff04f65d8 .  
 
@@ -141,9 +145,9 @@ govmeta:025c000b-020c-4287-b4b3-4ececab37763  a owl:NamedIndividual,
     core:hasTitle "Supprimer des règles"@fr ; 
     core:hasTitle "Remove Rules"@en ; 
     core:hasTitle "Regeln löschen"@de ; 
-    core:hasDescription "Processus de suppression ou de révocation des règles et procédures établies régissant la gestion et l'utilisation des données au sein du Data Space."@fr ;
-    core:hasDescription "Process of removing or revoking established policies and procedures governing the management and use of data within an Data Space"@en ;
-    core:hasDescription "Prozess der Aufhebung oder des Widerrufs etablierter Richtlinien und Verfahren, die die Verwaltung und Nutzung von Daten innerhalb eines Datenraums regeln"@de ;
+    core:hasDescription "Processus de suppression ou de révocation des règles et procédures établies régissant la gestion et l'utilisation des données au sein de la zone."@fr ;
+    core:hasDescription "The process of removing or revoking established rules and procedures governing the management and use of data within the zone."@en ;
+    core:hasDescription "Der Prozess der Abschaffung oder Aufhebung etablierter Regeln und Verfahren für die Verwaltung und Nutzung von Daten innerhalb der Zone."@de ;
     metagov:hasNumber "1.2.3" ;
     core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
 
@@ -152,9 +156,9 @@ govmeta:9536dc1a-e4ce-4994-8722-d632ab74b33b a owl:NamedIndividual,
     core:hasTitle "Modification de la gouvernance par des utilisateurs spécifiques"@fr ;
     core:hasTitle "Governance Amendment by Specific users"@en ;
     core:hasTitle "Änderung der Governance durch bestimmte Benutzer"@de ;
-    core:hasDescription "Clés ayant la permission de supprimer les règles relatives au Data Space"@fr ;
-    core:hasDescription "Keys with the permissions to delete rules related to the Data Space"@en ;
-    core:hasDescription "Schlüssel mit der Berechtigung, Regeln für den Data Space zu löschen"@de ;
+    core:hasDescription "Clés ayant la permission de supprimer les règles relatives à la zone."@fr ;
+    core:hasDescription "Keys with permission to delete zone rules."@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung zum Löschen von Zonenregeln."@de ;
     metagov:hasNumber "1.2.3.1" ;
     core:isPartOf govmeta:025c000b-020c-4287-b4b3-4ececab37763 .  
 
@@ -173,9 +177,9 @@ govmeta:43bffe52-b961-4d96-a933-8f25f0f8a9aa  a owl:NamedIndividual,
     core:hasTitle "Accepter de nouveaux membres"@fr ; 
     core:hasTitle "Accept new members"@en ; 
     core:hasTitle "Neue Mitglieder aufnehmen"@de ; 
-    core:hasDescription "Processus pour accepter de nouveaux membres dans le Data Space."@fr ;
-    core:hasDescription "Process for accepting new members into the Data Space"@en ;
-    core:hasDescription "Prozess, um neue Mitglieder in den Data Space aufzunehmen"@de ;
+    core:hasDescription "Processus pour accepter de nouveaux membres dans la zone."@fr ;
+    core:hasDescription "Process for accepting new members into the zone."@en ;
+    core:hasDescription "Verfahren zur Aufnahme neuer Mitglieder in die Zone."@de ;
     metagov:hasNumber "1.2.4" ;
     core:isPartOf govmeta:450d5e6c-1e48-42e8-85ef-541d9a3a5d58 .  
 
@@ -184,9 +188,9 @@ govmeta:5e1d591f-c8ca-41c6-9d56-9d4098cdb1c0 a owl:NamedIndividual,
     core:hasTitle "Modification de la gouvernance par des utilisateurs spécifiques"@fr ;
     core:hasTitle "Governance Amendment by Specific users"@en ;
     core:hasTitle "Änderung der Governance durch bestimmte Benutzer"@de ;
-    core:hasDescription "Clés ayant la permission d'accepter de nouveaux membres liés au Data Space"@fr ;
-    core:hasDescription "Keys with the permissions to accept new members related to the Data Space"@en ;
-    core:hasDescription "Schlüssel mit der Berechtigung, neue Mitglieder in den Datenraum aufzunehmen"@de ;
+    core:hasDescription "Clés ayant la permission d'accepter de nouveaux membres liés à la zone."@fr ;
+    core:hasDescription "Keys with permission to accept new members linked to the zone."@en ;
+    core:hasDescription "Schlüssel mit der Berechtigung zur Aufnahme neuer Mitglieder, die mit der Zone verbunden sind."@de ;
     metagov:hasNumber "1.2.4.1" ;
     core:isPartOf govmeta:43bffe52-b961-4d96-a933-8f25f0f8a9aa .  
 
@@ -205,9 +209,9 @@ govmeta:64462eac-3644-4306-8c01-93ba694946ba a owl:NamedIndividual,
     core:hasTitle "Gestion des jeux de données"@fr ;
     core:hasTitle "Datasets Management"@en ; 
     core:hasTitle "Verwaltung von Datensätzen"@de ;     
-    core:hasDescription "Il s'agit des règles visant à rendre les jeux de données accessibles au sein du Data Space."@fr ;
-    core:hasDescription "These are the rules for making datasets accessible within the Data Space."@en ;
-    core:hasDescription "Dies sind die Regeln, um Datensätze innerhalb des Data Space zugänglich zu machen."@de ;
+    core:hasDescription "Il s'agit des règles visant à rendre les jeux de données accessibles au sein de la zone."@fr ;
+    core:hasDescription "These are the rules for making data sets accessible within the zone."@en ;
+    core:hasDescription "Dies sind die Regeln für den Zugang zu Datensätzen innerhalb der Zone."@de ;
     metagov:hasNumber "1.3" ; 
     core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .   
 
@@ -227,7 +231,9 @@ govmeta:480904c1-c8d1-4ccf-94ad-2661d2ecfc6c a owl:NamedIndividual,
     core:hasTitle "Conditions pour référencer des jeux de données"@fr ;    
     core:hasTitle "Conditions for referencing datasets"@en ;   
     core:hasTitle "Bedingungen für die Referenzierung von Datensätzen"@de ;   
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions auxquelles se soumettre pour pouvoir référencer des jeux de données."@fr ;
+    core:hasDescription "Defines the conditions for referencing datasets."@en ;
+    core:hasDescription "Legt die Bedingungen für die Referenzierung von Datensätzen fest."@de ;
     metagov:hasNumber "1.3.1.1" ;
     core:isPartOf govmeta:65f9d3f1-7ec6-464c-8db2-3719a5fc09da .  
 
@@ -402,9 +408,9 @@ govmeta:88dfe664-8ee0-4da4-90ea-5112ebeecc05 a owl:NamedIndividual,
     core:hasTitle "Télécharger des jeux de données"@fr ; 
     core:hasTitle "Download datasets"@en ; 
     core:hasTitle "Datensätze herunterladen"@de ; 
-    core:hasDescription "Processus de télécharger un jeu de données rattaché au Data Space"@fr ;
-    core:hasDescription "Process of downloading a dataset attached to the Data Space"@en ;
-    core:hasDescription "Prozess des Herunterladens eines Datensatzes, der an den Datenraum angehängt ist"@de ;
+    core:hasDescription "Processus de télécharger un jeu de données rattaché à la zone."@fr ;
+    core:hasDescription "Process of downloading a dataset attached to the zone."@en ;
+    core:hasDescription "Vorgang des Herunterladens eines mit der Zone verbundenen Datensatzes."@de ;
     metagov:hasNumber "1.3.6" ;
     core:isPartOf govmeta:64462eac-3644-4306-8c01-93ba694946ba .  
 
@@ -487,7 +493,9 @@ govmeta:3a8f0ed3-ce86-4b8b-81a4-f795e9c3af70 a owl:NamedIndividual,
     core:hasTitle "Conditions pour supprimer les jeux de données intermédiaires"@fr ; 
     core:hasTitle "Conditions for deleting intermediate datasets"@en ; 
     core:hasTitle "Bedingungen für das Löschen von Zwischendatensätzen"@de ; 
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions à respecter pour pouvoir supprimer les données intermédiaires."@fr ;
+    core:hasDescription "Defines the conditions to be met before intermediate data can be deleted."@en ;
+    core:hasDescription "Legt die Bedingungen fest, die erfüllt sein müssen, bevor Zwischendaten gelöscht werden können."@de ;
     metagov:hasNumber "1.3.7.3" ;
     core:isPartOf govmeta:88ef92f8-685b-4977-aceb-39cd8b7ec8b2 .  
 
@@ -507,9 +515,9 @@ govmeta:67cd41b9-8823-4f66-9b35-1b7791dbf40a a owl:NamedIndividual,
     core:hasTitle "Gestion des services"@fr ;
     core:hasTitle "Services Management"@en ;
     core:hasTitle "Verwaltung der Dienste"@de ;
-    core:hasDescription "Il s'agit des règles visant à rendre les services accessibles au sein du Data Space"@fr ;
-    core:hasDescription "These are the rules for making services accessible within the Data Space"@en ;
-    core:hasDescription "Dies sind die Regeln, die darauf abzielen, die Dienste innerhalb des Data Space zugänglich zu machen"@de ;
+    core:hasDescription "Il s'agit des règles visant à rendre les services accessibles au sein de la zone."@fr ;
+    core:hasDescription "These are rules designed to make services accessible within the zone."@en ;
+    core:hasDescription "Es handelt sich um Vorschriften, die den Zugang zu Dienstleistungen innerhalb der Zone ermöglichen sollen."@de ;
     metagov:hasNumber "1.4" ; 
     core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .  
 
@@ -529,7 +537,9 @@ govmeta:f6984699-613f-49a7-96be-ec647d575008 a owl:NamedIndividual,
     core:hasTitle "Conditions pour référencer des services"@fr ;
     core:hasTitle "Conditions for referencing services"@en ;
     core:hasTitle "Bedingungen für die Referenzierung von Diensten"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions à respecter pour pouvoir référence des services."@fr ;
+    core:hasDescription "Defines the conditions that must be met to be able to reference services."@en ;
+    core:hasDescription "Legt die Bedingungen fest, die erfüllt sein müssen, um auf Dienste verweisen zu können."@de ;
     metagov:hasNumber "1.4.1.1" ;
     core:isPartOf govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 .  
 
@@ -558,7 +568,9 @@ govmeta:1a31d2c8-6185-4265-bf26-587058b72e0f a owl:NamedIndividual,
     core:hasTitle "Conditions pour référencer des services d'exécution"@fr ;
     core:hasTitle "Conditions for referencing execution services"@en ;
     core:hasTitle "Bedingungen für die Referenzierung von Ausführungsdienstleistungen"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions à respecter pour pouvoir référencer un service d'exécution."@fr ;
+    core:hasDescription "Defines the conditions to be met in order to reference an execution service."@en ;
+    core:hasDescription "Legt die Bedingungen fest, die erfüllt sein müssen, um auf eine Ausführungsleistung verweisen zu können."@de ;
     metagov:hasNumber "1.4.1.2" ;
     core:isPartOf govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 .  
 
@@ -578,7 +590,9 @@ govmeta:17a3b705-3f3b-4edf-befb-79889243c14e a owl:NamedIndividual,
     core:hasTitle "Conditions pour référencer des services de stockage"@fr ;
     core:hasTitle "Conditions for referencing storage services"@en ;
     core:hasTitle "Bedingungen für die Referenzierung von Speicherdienstleistungen"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions pour référencer des services de stockage."@fr ;
+    core:hasDescription "Defines the conditions for referencing storage services."@en ;
+    core:hasDescription "Legt die Bedingungen für die Referenzierung von Speicherdiensten fest."@de ;
     metagov:hasNumber "1.4.1.3" ;
     core:isPartOf govmeta:6d4027e6-9028-4c41-a48c-87da8af76464 .  
 
@@ -703,7 +717,9 @@ govmeta:72807dd4-3c8c-482b-9fd7-803077dd38fa a owl:NamedIndividual,
     core:hasTitle "Conditions pour déréférencer un service"@fr ;
     core:hasTitle "Conditions for dereference a service"@en ;
     core:hasTitle "Bedingungen für die Auslistung eines Dienstes"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions pour déréférencer un service."@fr ;
+    core:hasDescription "Defines the conditions for dereferencing a service."@en ;
+    core:hasDescription "Legt die Bedingungen für die Dereferenzierung eines Dienstes fest."@de ;
     metagov:hasNumber "1.4.5.1" ;
     core:isPartOf govmeta:685050ec-103b-4d33-a7c0-4bad803fe36b .  
 
@@ -732,9 +748,9 @@ govmeta:000b7703-34ed-4a72-a255-683ad0f8dbb9 a owl:NamedIndividual,
     core:hasTitle "Modèle économique"@fr ;
     core:hasTitle "Business Model"@en ;
     core:hasTitle "Geschäftsmodell"@de ;
-    core:hasDescription "Il s'agit de la manière dont le Data Space organise ses ressources numériques pour générer des revenus et rétribuer les participants."@fr ;
-    core:hasDescription "This is the way in which the Data Space organizes its digital resources to generate revenue and remunerate participants."@en ;
-    core:hasDescription "Dies ist die Art und Weise, wie der Datenraum seine digitalen Ressourcen organisiert, um Einnahmen zu erzielen und die Teilnehmer zu entlohnen."@de ;
+    core:hasDescription "Il s'agit de la manière dont la zone organise ses ressources numériques pour générer des revenus et rétribuer les participants."@fr ;
+    core:hasDescription "This is the way in which the zone organises its digital resources to generate revenue and reward participants."@en ;
+    core:hasDescription "Dies ist die Art und Weise, wie die Zone ihre digitalen Ressourcen organisiert, um Einnahmen zu erzielen und Teilnehmer zu belohnen."@de ;
     metagov:hasNumber "1.5" ; 
     core:isPartOf govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 .  
 
@@ -754,7 +770,9 @@ govmeta:ccacb4e8-788e-4332-beac-db5b019d9def a owl:NamedIndividual,
     core:hasTitle "Conditions pour rétribuer les ressources numériques "@fr ; 
     core:hasTitle "Conditions for paying for digital resources "@fr ; 
     core:hasTitle "Bedingungen für die Bezahlung von digitalen Ressourcen "@fr ; 
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions pour rétribuer les ressources numériques."@fr ;
+    core:hasDescription "Defines the conditions for paying for digital resources."@en ;
+    core:hasDescription "Legt die Bedingungen für die Bezahlung von digitalen Ressourcen fest."@de ;
     metagov:hasNumber "1.5.1.1" ;
     core:isPartOf govmeta:5ca8d928-fdb9-4cba-9963-86d8537d552f .  
 
@@ -785,7 +803,9 @@ govmeta:80a963f3-6914-4565-8b31-9717880ed74c a owl:NamedIndividual,
     core:hasTitle "Conditions pour rétribuer des jeux de données"@fr ;
     core:hasTitle "Conditions for paying for datasets"@en ;
     core:hasTitle "Bedingungen für die Bezahlung von Datensätzen"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les conditions pour rétribuer des jeux de données."@fr ;
+    core:hasDescription "Defines the conditions for paying for data sets."@en ;
+    core:hasDescription "Legt die Bedingungen für die Bezahlung von Datensätzen fest."@de ;
     metagov:hasNumber "1.5.2.1" ;
     core:isPartOf govmeta:b18ec80a-3552-4b9e-8349-975cde4d0ba2 .  
 
@@ -827,7 +847,9 @@ govmeta:6b38206d-9488-432f-a5ad-130ea6f441f2 a owl:NamedIndividual,
     core:hasTitle "Conditions pour rétribuer des services"@fr ;
     core:hasTitle "Conditions for paying for services"@en ;
     core:hasTitle "Bedingungen für die Bezahlung von Dienstleistungen"@de ;
-    core:hasDescription ""@en ;
+    core:hasDescription "Définit les condtions pour rétribuer des services."@fr ;
+    core:hasDescription "Legt die Bedingungen für die Bezahlung von Dienstleistungen fest."@de ;
+    core:hasDescription "Defines the conditions for paying for services."@en ;
     metagov:hasNumber "1.5.3.1" ;
     core:isPartOf govmeta:d373989c-5bda-44d9-8206-e15c9095b28f .  
 
