@@ -28,4 +28,3 @@ service:60ac66b6-ed76-4504-bdde-de5901d2b482 a owl:NamedIndividual,
     core:hasIdentifier <urn:uuid:60ac66b6-ed76-4504-bdde-de5901d2b482> ;
     core:hasIdentity <did:key:z6Mkq66auaGba46TMPxNYoAkV5AQ33tXkBFXzU1j93Aw5qik> ;
     core:hasRegistrar <did:key:z6Mkq66auaGba46TMPxNYoAkV5AQ33tXkBFXzU1j93Aw5qik> .
-    

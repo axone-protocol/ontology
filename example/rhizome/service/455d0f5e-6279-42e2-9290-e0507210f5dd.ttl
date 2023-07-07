@@ -28,4 +28,4 @@ service:455d0f5e-6279-42e2-9290-e0507210f5dd a owl:NamedIndividual,
     core:hasIdentifier <urn:uuid:455d0f5e-6279-42e2-9290-e0507210f5dd> ;
     core:hasIdentity <did:key:z6Mkjm9GJqB4KKzcPiiDkNX5c56enxNRc5JGdpWeRS6q5ahu> ;
     core:hasRegistrar <did:key:z6Mkjm9GJqB4KKzcPiiDkNX5c56enxNRc5JGdpWeRS6q5ahu> .
-    
+   
