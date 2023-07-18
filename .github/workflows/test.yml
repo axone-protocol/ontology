@@ -23,3 +23,12 @@ jobs:
       - name: Test ontology
         run: |
           make test-ontology
+
+      - name: Output test results
+        if: ${{ failure() }}
+        run: |
+          find target/test -name "*.tested.flag" -type f \
+            -exec grep -q "Conforms: False" {} \; \
+            -exec echo "❌ {}" \; \
+            -exec cat {} \; \
+            -exec echo "" \;
