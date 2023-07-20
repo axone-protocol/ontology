@@ -94,7 +94,7 @@ RDF_SHACL = \
     --format human \
     /usr/src/ontology/$2
 NT_UNIQUIFY = \
-  @HASH=`md5sum $1 | awk '{print $$1}'`; \
+  HASH=`md5sum $1 | awk '{print $$1}'`; \
   sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
 
 .PHONY: help
