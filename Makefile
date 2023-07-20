@@ -80,6 +80,7 @@ RDF_SERIALIZE = \
     -w /usr/src/ontology \
     ${DOCKER_IMAGE_RUBY_RDF} \
       serialize \
+	  --validate \
       -o $4 \
       --output-format $2 \
       --input-format $1 \
