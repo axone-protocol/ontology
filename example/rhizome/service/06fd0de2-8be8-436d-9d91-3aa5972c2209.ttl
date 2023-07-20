@@ -13,8 +13,8 @@
     core:hasDescription "Cloud Storage ist ein verwalteter Dienst für die Speicherung unstrukturierter Daten. Speichern Sie beliebige Datenmengen und rufen Sie sie ab, wann immer Sie wollen."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Google Cloud Storage"@en .
-    core:hasTitle "Google Cloud Storage"@fr .
+    core:hasTitle "Google Cloud Storage"@en ;
+    core:hasTitle "Google Cloud Storage"@fr ;
     core:hasTitle "Google Cloud Storage"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/6f008dfb-e743-456f-a6d8-8847a323a116> a owl:NamedIndividual,

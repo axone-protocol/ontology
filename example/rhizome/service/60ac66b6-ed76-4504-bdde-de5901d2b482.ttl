@@ -13,8 +13,8 @@
     core:hasDescription "Dropbox ist ein Online-Dienst zum Speichern und Freigeben von Kopien lokaler Dateien."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Dropbox"@en .
-    core:hasTitle "Dropbox"@fr .
+    core:hasTitle "Dropbox"@en ;
+    core:hasTitle "Dropbox"@fr ;
     core:hasTitle "Dropbox"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/230f54ec-5510-4347-b692-beae2c616d77> a owl:NamedIndividual,

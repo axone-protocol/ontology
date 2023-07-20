@@ -13,8 +13,8 @@
     core:hasDescription "IPFS ist ein dezentrales Protokoll, das die Speicherung, die gemeinsame Nutzung und den Abruf von Dateien auf globaler Ebene erleichtern soll."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "IPFS"@en .
-    core:hasTitle "IPFS"@fr .
+    core:hasTitle "IPFS"@en ;
+    core:hasTitle "IPFS"@fr ;
     core:hasTitle "IPFS"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/f6bd8a39-b5ce-47ea-8f03-038347319d79> a owl:NamedIndividual,

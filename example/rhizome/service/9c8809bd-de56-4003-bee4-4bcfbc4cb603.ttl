@@ -13,8 +13,8 @@
     core:hasDescription "Der Azure Blob Storage Service ermöglicht Ihnen die Erstellung von Datensätzen, die Ihren Analyseanforderungen entsprechen, und bietet Ihnen Speicherplatz für die Entwicklung leistungsstarker nativer Cloud- und Mobilanwendungen."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Microsoft Azure Blob Storage"@en .
-    core:hasTitle "Microsoft Azure Blob Storage"@fr .
+    core:hasTitle "Microsoft Azure Blob Storage"@en ;
+    core:hasTitle "Microsoft Azure Blob Storage"@fr ;
     core:hasTitle "Microsoft Azure Blob Storage"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/cb3c4594-410e-4404-acbb-9dd426885e5b> a owl:NamedIndividual,

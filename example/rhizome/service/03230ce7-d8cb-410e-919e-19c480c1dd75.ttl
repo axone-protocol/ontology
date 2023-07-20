@@ -13,8 +13,8 @@
     core:hasDescription "Datenspeicherungsdienst"@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Clever Cloud Data Storage"@en .
-    core:hasTitle "Clever Cloud Data Storage"@fr .
+    core:hasTitle "Clever Cloud Data Storage"@en ;
+    core:hasTitle "Clever Cloud Data Storage"@fr ;
     core:hasTitle "Clever Cloud Data Storage"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/ae18aa63-bbfc-44e4-bc4a-29f3fab3bec0> a owl:NamedIndividual,
