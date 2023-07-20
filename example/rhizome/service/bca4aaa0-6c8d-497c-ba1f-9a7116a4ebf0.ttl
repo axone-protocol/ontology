@@ -13,7 +13,9 @@
     core:hasDescription "IONOS S3 Object Storage erleichtert die digitale Transformation: Speichern und verwalten Sie Daten mit unterschiedlichem Volumen, einfach und kostengünstig."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "IONOS S3 Object Storage"@en .
+    core:hasTitle "IONOS S3 Object Storage"@en ;
+    core:hasTitle "IONOS S3 Object Storage"@fr ;
+    core:hasTitle "IONOS S3 Object Storage"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/5786fad7-a200-46c4-a902-06fc3b20c15e> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

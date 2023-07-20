@@ -13,7 +13,9 @@
     core:hasDescription "Datenspeicherungsdienst"@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "Deutsche Telekom Cloud Object Storage"@en .
+    core:hasTitle "Deutsche Telekom Cloud Object Storage"@en ;
+    core:hasTitle "Deutsche Telekom Cloud Object Storage"@fr ;
+    core:hasTitle "Deutsche Telekom Cloud Object Storage"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/51ca1c69-c562-4b62-a22f-394a6e931811> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

@@ -13,7 +13,9 @@
     core:hasDescription "IBM Cloud Object Storage mit seiner globalen Präsenz und flexiblen Ausfallsicherheitsoptionen unterstützt exponentielles Datenwachstum für Ihre Cloud-nativen Workloads mit branchenführender Kostenoptimierung, robuster Datensicherheit und benutzerfreundlicher Data Governance."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
-    core:hasTitle "IBM Cloud Object Storage"@en .
+    core:hasTitle "IBM Cloud Object Storage"@en ;
+    core:hasTitle "IBM Cloud Object Storage"@fr ;
+    core:hasTitle "IBM Cloud Object Storage"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/81773848-e532-4d98-a7b1-0493bf0324c6> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;
