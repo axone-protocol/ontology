@@ -14,6 +14,8 @@
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
     core:hasTitle "Kodo"@en .
+    core:hasTitle "Kodo"@fr .
+    core:hasTitle "Kodo"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/c36a41b0-ff67-4841-bc7f-e613e14a1fc8> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;

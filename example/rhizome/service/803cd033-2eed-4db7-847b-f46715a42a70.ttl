@@ -14,6 +14,8 @@
     core:hasPublisher "OKP4" ;
     core:hasTag "stockage" ;
     core:hasTitle "Mega"@en .
+    core:hasTitle "Mega"@fr .
+    core:hasTitle "Mega"@de .
 
 <https://ontology.okp4.space/dataverse/service/metadata/d9cc5650-2690-490e-ba77-33bb62c95ac0> a owl:NamedIndividual,
         <https://ontology.okp4.space/metadata/AuditMetadata> ;
