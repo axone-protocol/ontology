@@ -42,7 +42,10 @@ meta:GeneralMetadata a owl:Class ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-    owl:onClass thesaurus:area ;
+    owl:allValuesFrom [ 
+      a owl:Class ;
+      skos:inScheme thesaurus:area ;
+    ] ;
     owl:onProperty core:hasSpatialCoverage ;
   ] ;
   rdfs:subClassOf [
@@ -56,18 +59,24 @@ meta:GeneralMetadata a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom thesaurus:topic ;
+    owl:allValuesFrom [ 
+      a owl:Class ;
+      skos:inScheme thesaurus:topic ;
+    ] ;
     owl:onProperty core:hasTopic ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom thesaurus:media-type ;
+    owl:allValuesFrom [ 
+      a owl:Class ;
+      skos:inScheme thesaurus:media-type ;
+    ] ;
     owl:onProperty core:hasFormat ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-    owl:onClass core:Period ;
+    owl:allValuesFrom core:Period ;
     owl:onProperty core:hasTemporalCoverage ;
   ] ;
   rdfs:subClassOf [
