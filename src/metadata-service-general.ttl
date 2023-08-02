@@ -3,6 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix core: <https://ontology.okp4.space/core/> .
 @prefix meta: <https://ontology.okp4.space/metadata/service/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix thesaurus: <https://ontology.okp4.space/thesaurus/> .
 
 meta:GeneralMetadata a owl:Class ;
@@ -35,7 +36,10 @@ meta:GeneralMetadata a owl:Class ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:allValuesFrom thesaurus:service-category ;
+    owl:allValuesFrom [ 
+      a owl:Class ;
+      skos:inScheme thesaurus:service-category ;
+    ] ;
     owl:onProperty core:hasCategory ;
   ] ;
   rdfs:subClassOf [
