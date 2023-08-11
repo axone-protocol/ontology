@@ -29,6 +29,8 @@
                 core:Period ;
             core:hasStartDate "2020-01-01T00:00:00+00:00"^^xsd:dateTime ] ;
     core:hasTitle "ADMIN EXPRESS COG 2020 REGION"@fr ;
+    core:hasTitle "ADMIN EXPRESS COG 2020 REGION"@en ;
+    core:hasTitle "ADMIN EXPRESS COG 2020 REGION"@de ;
     core:hasTopic topic:Other .
 
 <https://ontology.okp4.space/dataverse/dataset/metadata/bf57a8ce-71d8-4c46-b068-4384f2bf190f> a owl:NamedIndividual,
