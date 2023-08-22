@@ -1,0 +1,33 @@
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/zone/metadata/86500dd6-080c-4565-8779-8a0aa052f166> a owl:NamedIndividual,  
+        <https://ontology.okp4.space/metadata/zone/GeneralMetadata> ;
+    core:describes zone:d74127ac-d411-4fef-9d65-73c6fc22315d ;  
+    core:hasDescription "Porté par CERFRANCE Bretagne, la data est dans le pré (ou DDP) est une Zone dont l'objectif est de valoriser les données agricoles (techniques et comptables) au travers d’un mécanisme de fixation du prix juste pour les produits laitiers, pour ensuite fournir des conseils spécifiques à chaque agriculteur."@fr ;
+    core:hasDescription "Supported by CERFRANCE Bretagne, la data est dans le pré (or DDP) is a Zone whose aim is to enhance the value of agricultural data (technical and accounting) through a mechanism for setting the right price for dairy products, and then providing specific advice to each farmer."@en ;
+    core:hasDescription "La data est dans le pré (oder DDP) ist ein von CERFRANCE Bretagne unterstützte Zone, dessen Ziel es ist, landwirtschaftliche (technische und buchhalterische) Daten durch einen Mechanismus zur Festlegung eines fairen Preises für Milchprodukte aufzuwerten, um dann jedem Landwirt spezifische Ratschläge zu erteilen."@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "agriculture",
+        "prix durable" ,
+        "lait";
+    core:hasTitle "DDP"@fr ;
+    core:hasTitle "DDP"@en ;
+    core:hasTitle "DDP"@de ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+<https://ontology.okp4.space/dataverse/zone/metadata/3e2b1391-088e-4516-af0b-8d0f62c2c7ac> a owl:NamedIndividual,    
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-07-03T15:29:16.507000+00:00"^^xsd:dateTime ;
+    core:describes zone:d74127ac-d411-4fef-9d65-73c6fc22315d ;  
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-07-03T15:29:16.507000+00:00"^^xsd:dateTime .
+
+zone:d74127ac-d411-4fef-9d65-73c6fc22315d a owl:NamedIndividual,  
+        core:Zone ;
+        core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+
