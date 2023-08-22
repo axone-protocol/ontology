@@ -12,7 +12,8 @@
     core:hasDescription "Genossenschaften und Händler benötigen heute detaillierte Kenntnisse über ihr Gebiet, um ihre Liefer- und Sammelaktivitäten zu optimieren, aber auch um die Landwirte bei der agro-ökologischen Umstellung zu unterstützen. Das CROP-Projekt antwortet auf diese Herausforderungen, indem es ein agrarökonomisches Datenvisualisierungstool für Gebiete vorschlägt. CROP ermöglicht es, verschiedene Datenquellen miteinander zu verknüpfen, um ein besseres Wissen auf der Ebene des Betriebs, aber auch des Gebiets zu erhalten."@de ;
     core:hasPublisher "OKP4" ;
     core:hasTag "data visualisation",
-        "plot" ,
+        "plot",
+        "farm",
         "territory";
     core:hasTitle "CROP"@en ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
@@ -28,3 +29,4 @@
 zone:a19fec74-d428-46ac-ad3b-730e520fef86 a owl:NamedIndividual,  
         core:Zone ;
         core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+
