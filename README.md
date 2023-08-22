@@ -23,9 +23,19 @@ Ontology is at the heart of the [OKP4](https://github.com/okp4/okp4d) protocol a
 
 ### Why an ontology?
 
-[Ontology](https://www.w3.org/standards/semanticweb/ontology) is the most general and fundamental concept of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web). Ontologies are linked to various data elements representing conceptualized information about these data items. This allows for unambiguous identification, understanding, navigation and usage of this information.
+[Ontology](https://www.w3.org/standards/semanticweb/ontology), as defined by the [W3C](https://www.w3.org), is a foundational and broad concept of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web). It connects various data elements, providing a conceptual framework about them. Typically, an ontology consists of concepts, relationships, properties, axioms, and instances.
+
+<p align="center">
+  <img src="etc/ontology-equation.webp" alt="Ontology equation" width="600"/>
+</p>
+
+Such a structure ensures clear identification, comprehension, navigation, and utilization of the information.
 
 The knowledge representation language chosen for OKP4 is [RDF Schema](http://www.w3.org/TR/rdf-schema/) and [Web Ontology Language](http://www.w3.org/TR/owl2-overview/) on top of the framework [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/).
+
+<p align="center">
+  <img src="etc/rdf-stack.webp" alt="RDF stack" width="600"/>
+</p>
 
 ## Documentation
 
