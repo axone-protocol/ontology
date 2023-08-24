@@ -57,7 +57,7 @@ jobs:
 
       - name: Find changed ttl files
         id: changed-ttl-files
-        uses: tj-actions/changed-files@v37.3.0
+        uses: tj-actions/changed-files@v38.1.0
         with:
           files: |
             src/**/*.ttl
