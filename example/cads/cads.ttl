@@ -1,0 +1,30 @@
+@prefix core: <https://ontology.okp4.space/core/> .
+@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ontology.okp4.space/dataverse/zone/metadata/d0c63b88-44f8-4518-b62d-e141dd8fb624> a owl:NamedIndividual,   
+        <https://ontology.okp4.space/metadata/zone/GeneralMetadata> ;
+    core:describes zone:fdfde6f6-b5d8-4c6b-ae4c-3451b92d5314 ; 
+    core:hasDescription "Dans le cadre du projet CADS, cette zone a pour objectif de calculer un indicateur agro environnemental à partir d'un composant de l'architecture i4trust."@fr ;
+    core:hasDescription "As part of the CADS project, the aim of this zone is to calculate an agri-environmental indicator based on the i4trust architecture context broker."@en ;
+    core:hasDescription "Im Rahmen des CADS-Projekts soll in diesem Bereich ein Agrarumweltindikator auf der Grundlage des i4trust-Architekturkontextbrokers berechnet werden."@de ;
+    core:hasPublisher "OKP4" ;
+    core:hasTag "i4trust",
+        "data space";
+    core:hasTitle "CADS"@en ;
+    core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
+
+<https://ontology.okp4.space/dataverse/zone/metadata/ac2548f8-106c-4802-9d51-0aa3c8754842> a owl:NamedIndividual,    
+        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+    core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:createdOn "2023-08-25T15:29:16.507000+00:00"^^xsd:dateTime ;
+    core:describes zone:fdfde6f6-b5d8-4c6b-ae4c-3451b92d5314 ;  
+    core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
+    core:updatedOn "2023-08-25T15:29:16.507000+00:00"^^xsd:dateTime .
+
+zone:fdfde6f6-b5d8-4c6b-ae4c-3451b92d5314 a owl:NamedIndividual,  
+        core:Zone ;
+        core:hasRegistrar <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> .
+
