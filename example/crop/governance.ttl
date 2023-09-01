@@ -9,7 +9,7 @@
 govmeta:149e5b0b-25f7-4bb7-9b7a-9894c7b701ad a owl:NamedIndividual, 
         metagov:GovernanceMetadata ;
         core:describes zone:a19fec74-d428-46ac-ad3b-730e520fef86 ;  
-    core:createdOn "2023-07-03T00:00:00"^^xsd:dateTime ;
+    core:createdOn "2023-09-01T00:00:00"^^xsd:dateTime ;
     metagov:hasChapter govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 .  
 
 govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 a owl:NamedIndividual,  
@@ -99,8 +99,7 @@ govmeta:e5983922-c462-4105-b2de-a87fe44659e0 a owl:NamedIndividual,
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
     core:hasTitle "Autorisierte Benutzer"@de ;
-    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
-    core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655, did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.2.1.1.1" ;
     core:isPartOf govmeta:6115b8fe-f464-42a5-a16e-b454b6cfdda1 .   
 
@@ -131,8 +130,7 @@ govmeta:1b110077-3684-4fed-bae6-5b5919680975 a owl:NamedIndividual,
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
     core:hasTitle "Autorisierte Benutzer"@de ;
-    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
-    core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655, did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.2.2.1.1" ;
     core:isPartOf govmeta:e3e46cc5-8323-4325-acd6-30bd0a1fea70 .   
 
@@ -163,8 +161,7 @@ govmeta:c6e7a380-83c2-4b1f-92cd-e0955b8da6fe a owl:NamedIndividual,
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
     core:hasTitle "Autorisierte Benutzer"@de ;
-    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
-    core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655, did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.2.3.1.1" ;
     core:isPartOf govmeta:9024e0ab-fe8d-467c-8e4f-3efe18b6b4a0  .   
 
@@ -195,8 +192,7 @@ govmeta:96e62e45-14e1-4ee7-ae21-3381a0400481 a owl:NamedIndividual,
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
     core:hasTitle "Autorisierte Benutzer"@de ;
-    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
-    core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655, did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.2.4.1.1" ;
     core:isPartOf govmeta:44a4d2ca-47fe-4305-87ee-a687f6ebf13f  .   
 
@@ -425,8 +421,7 @@ govmeta:363b4b74-2098-4348-bc66-3c011114aced a owl:NamedIndividual,
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
     core:hasTitle "Autorisierte Benutzer"@de ;
-    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
-    core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655, did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.3.6.1.1" ;
     core:isPartOf govmeta:2a948061-c769-48a6-9193-a7a3162f92f8 .   
 
@@ -446,8 +441,7 @@ govmeta:371001ef-a758-4106-8a1f-0824c3dc252d a owl:NamedIndividual,
     core:hasTitle "Utilisateurs autorisés"@fr ;
     core:hasTitle "Authorized users"@en ;
     core:hasTitle "Autorisierte Benutzer"@de ;
-    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655"@en ;
-    core:hasDescription "did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
+    core:hasDescription "did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655, did:key:1x489se1b7g1a7a28f9a5a239c326a9813a22f5a5b5d5f5e5d5c5b5a478998879"@en ;
     metagov:hasNumber "1.3.6.2.1" ;
     core:isPartOf govmeta:cc521936-d34c-4a22-b28f-11045df5eda7 .   
 
