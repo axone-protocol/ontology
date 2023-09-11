@@ -1,8 +1,15 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "daily"
+      interval: weekly
     reviewers:
-      - "maintainers"
+      - ccamel
+      - fredericvilcot
+      - amimart
+    assignees:
+      - ccamel
+      - fredericvilcot
+      - amimart
+    open-pull-requests-limit: 5
