@@ -247,6 +247,12 @@ media-type:application_andrew-inset a skos:Concept ;
   skos:prefLabel "Mewnosodiad Andrew Toolkit"@cy ;
   skos:prefLabel "ajout Andrew Toolkit"@fr .
 
+media-type:application_geopackage a skos:Concept ;
+  media-type:hasMediaType "application/geopackage+sqlite3" ;
+  skos:broader media-type:application_octet-stream ; 
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "GeoPackage"@en .
+  
 media-type:application_illustrator a skos:Concept ;
   media-type:hasMediaType "application/illustrator" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
@@ -490,6 +496,12 @@ media-type:application_vndcorel-draw a skos:Concept ;
   skos:prefLabel "Σχέδιο Corel Draw "@el ;
   skos:prefLabel "코렐 드로우 드로잉"@ko .
 
+media-type:application_vnddbf a skos:Concept ;
+  media-type:hasMediaType "application/vnd.dbf" ;
+  skos:broader media-type:application_octet-stream ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "Shapefile format .dbf extension"@en .
+
 media-type:application_vndhp-hpgl a skos:Concept ;
   media-type:hasMediaType "application/vnd.hp-hpgl" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
@@ -600,6 +612,18 @@ media-type:application_vndrn-realmedia a skos:Concept ;
   skos:prefLabel "Document RealAudio/Video"@fr ;
   skos:prefLabel "Έγγραφο RealAudio/Video"@el ;
   skos:prefLabel "리얼오디오/비디오 문서"@ko .
+
+media-type:application_vndshp a skos:Concept ;
+  media-type:hasMediaType "application/vnd.shp" ;
+  skos:broader media-type:application_octet-stream ; 
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "Shapefile format .shp extension"@en .
+
+media-type:application_vndshx a skos:Concept ;
+  media-type:hasMediaType "application/vnd.shx" ;
+  skos:broader media-type:application_octet-stream ; 
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "Shapefile format .shx extension"@en .
 
 media-type:application_vndstardivisioncalc a skos:Concept ;
   media-type:hasMediaType "application/vnd.stardivision.calc" ;
