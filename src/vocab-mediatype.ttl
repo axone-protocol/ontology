@@ -4380,6 +4380,7 @@ mediatype:text a skos:Collection ;
   dct:title "Text types"@en ;
   skos:member mediatype:text_calendar ;
   skos:member mediatype:text_css ;
+  skos:member mediatype:text_csv ;
   skos:member mediatype:text_directory ;
   skos:member mediatype:text_enriched ;
   skos:member mediatype:text_html ;
