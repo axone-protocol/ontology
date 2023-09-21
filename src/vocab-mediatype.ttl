@@ -33,6 +33,7 @@ mediatype:application a skos:Collection ;
   dct:title "Application types"@en ;
   skos:member mediatype:application_andrew-inset ;
   skos:member mediatype:application_illustrator ;
+  skos:member mediatype:application_geopackagesqlite3 ;
   skos:member mediatype:application_mac-binhex40 ;
   skos:member mediatype:application_octet-stream ;
   skos:member mediatype:application_oda ;
@@ -258,6 +259,19 @@ mediatype:application_illustrator a skos:Concept ;
   skos:prefLabel "Adobe Illustrator-dokument"@no ;
   skos:prefLabel "Adobe Illustrator-dokument"@sv ;
   skos:prefLabel "Έγγραφο Adobe Illustrator"@el .
+
+mediatype:geopackagesqlite3 a skos:Concept ;
+  mediatype:hasMediaType "application/geopackage+sqlite3" ;
+  skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
+  skos:prefLabel "GeoPackage SQLite3 Database"@en ;
+  skos:prefLabel "Base de données GeoPackage SQLite3"@fr ;
+  skos:prefLabel "GeoPackage SQLite3-Datenbank"@de ;
+  skos:prefLabel "Base de datos GeoPackage SQLite3"@es ;
+  skos:prefLabel "Database GeoPackage SQLite3"@it ;
+  skos:prefLabel "GeoPackage SQLite3 Database"@nl ;
+  skos:prefLabel "Base de Dados GeoPackage SQLite3"@pt ;
+  skos:prefLabel "GeoPackage SQLite3 データベース"@ja ;
+  skos:prefLabel "GeoPackage SQLite3 数据库"@zh .
 
 mediatype:application_mac-binhex40 a skos:Concept ;
   mediatype:hasMediaType "application/mac-binhex40" ;
