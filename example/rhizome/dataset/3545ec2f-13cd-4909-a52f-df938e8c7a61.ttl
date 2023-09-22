@@ -23,7 +23,7 @@
     core:hasDescription "Le registre parcellaire graphique est une base de données géographiques servant de référence à l'instruction des aides de la politique agricole commune (PAC). La version anonymisée diffusée ici dans le cadre du service public de mise à disposition des données de référence contient les données graphiques des parcelles (depuis 2015) munis de leur culture principale. Ces données sont produites par l'agence de services et de paiement (ASP) depuis 2007"@fr ;
     core:hasDescription "The graphical parcel register is a geographic database used as a reference for the instruction of Common Agricultural Policy (CAP) subsidies. The anonymized version distributed here as part of the public service for making reference data available contains the graphic data of parcels (since 2015) with their main crop. These data are produced by the Agency of Services and Payment (ASP) since 2007"@en ;
     core:hasDescription "Das grafische Parzellenregister ist eine geografische Datenbank, die als Referenz für die Bearbeitung von Beihilfen im Rahmen der Gemeinsamen Agrarpolitik (GAP) dient. Die anonymisierte Version, die hier im Rahmen des öffentlichen Dienstes zur Bereitstellung von Referenzdaten verbreitet wird, enthält die grafischen Daten der Parzellen (seit 2015), die mit ihrer Hauptkultur versehen sind. Diese Daten werden seit 2007 von der Agence de services et de paiement (ASP) erstellt."@de ;
-    core:hasFormat mediatype:application_geopackage-sqlite3 ;
+    core:hasFormat mediatype:application_geopackagesqlite3 ;
     core:hasImage <https://images.unsplash.com/photo-1537721664796-76f77222a5d0> ;
     core:hasLicense license:LO-FR-2_0 ;
     core:hasPublisher "OKP4" ;
