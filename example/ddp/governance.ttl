@@ -10,6 +10,9 @@ govmeta:3ec30d52-02c7-4245-a9a6-8219774d38c4 a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
     core:describes zone:d74127ac-d411-4fef-9d65-73c6fc22315d ;
     core:createdOn "2023-09-01T00:00:00"^^xsd:dateTime ;
+    core:hasDescription "La Data est dans le Pré (DDP) is a zone in which only Cerfrance Bretagne partners can share economic or agronomic data. The governance of this zone is centralized: only Cerfrance Bretagne and OKP4 are authorized to modify the rules of the zone."@en ;
+    core:hasDescription "La Data est dans le Pré (DDP) est une zone dans laquelle seuls les partenaires de Cerfrance Bretagne peuvent partager des données économiques ou agronomiques. La gouvernance de cette zone est centralisée : seuls Cerfrance Bretagne et OKP4 sont autorisés à modifier les règles de la zone."@fr ;
+    core:hasDescription "La Data est dans le Pré (DDP) ist eine Zone, in der nur die Partner von Cerfrance Bretagne wirtschaftliche oder agronomische Daten austauschen können. Die Governance dieser Zone ist zentralisiert: Nur Cerfrance Bretagne und OKP4 sind berechtigt, die Regeln der Zone zu ändern."@de ;
     metagov:hasChapter govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 . 
 
 govmeta:0d3f1464-7322-4b5b-9849-a8a8df9d4331 a owl:NamedIndividual, 

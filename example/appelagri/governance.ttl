@@ -10,6 +10,9 @@ govmeta:cc8076d7-2db5-4436-a508-7251b10daf51 a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
     core:describes zone:ababcf97-a85f-4bf2-b890-34624928452c ;  
     core:createdOn "2023-08-28T00:00:00"^^xsd:dateTime ;
+    core:hasDescription "Appel Agri is a zone in which only O2M partners can share agronomic data. Governance of this zone is centralized: only O2M and OKP4 (on behalf of O2M) are authorized to modify the zone rules."@en ;
+    core:hasDescription "Appel Agri est une zone dans laquelle seuls les partenaires de O2M peuvent partager des données agronomiques. La gouvernance de cette zone est centralisée : seuls O2M et OKP4 (pour le compte d'O2M) sont autorisés à modifier les règles de la zone."@fr ;
+    core:hasDescription "Appel Agri ist eine Zone, in der nur Partner von O2M agronomische Daten austauschen können. Die Verwaltung dieses Bereichs ist zentralisiert: Nur O2M und OKP4 (im Auftrag von O2M) sind berechtigt, die Regeln des Bereichs zu ändern."@de ;
     metagov:hasChapter govmeta:f16729ad-54b5-472c-8eec-7254bd78134a .  
 
 govmeta:f16729ad-54b5-472c-8eec-7254bd78134a a owl:NamedIndividual,  

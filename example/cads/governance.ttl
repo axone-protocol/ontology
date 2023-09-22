@@ -10,6 +10,9 @@ govmeta:e5cc7028-bd3f-4298-b209-8783e65962d1 a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
         core:describes zone:fdfde6f6-b5d8-4c6b-ae4c-3451b92d5314 ;   
     core:createdOn "2023-09-01T00:00:00"^^xsd:dateTime ;
+    core:hasDescription "CADS is a zone in which only CADS project partners can share data for the purpose of calculating carbon credits. The governance of this zone is centralized: only OKP4, on behalf of the consortium, is authorized to modify the rules of the zone."@en ;
+    core:hasDescription "CADS est une zone dans laquelle seuls les partenaires du projet CADS peuvent partager des données dans le but de calculer des crédits carbone. La gouvernance de cette zone est centralisée : seul OKP4, pour le compte du consortium, est autorisé à modifier les règles de la zone."@fr ;
+    core:hasDescription "CADS ist eine Zone, in der nur die Partner des CADS-Projekts Daten zum Zweck der Berechnung von Emissionsgutschriften austauschen können. Die Governance dieser Zone ist zentralisiert: Nur OKP4 im Namen des Konsortiums ist berechtigt, die Regeln der Zone zu ändern."@de ;
     metagov:hasChapter govmeta:3c6d86b6-2bf0-4b46-9cd0-dda89d7c8444 .   
 
 govmeta:3c6d86b6-2bf0-4b46-9cd0-dda89d7c8444 a owl:NamedIndividual,   

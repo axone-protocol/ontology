@@ -10,6 +10,9 @@ govmeta:495560a4-76a6-4bbc-80e2-5f4dac17d5ef a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
     core:describes zone:ef347285-e52a-430d-9679-dcb76b962ce7 ;
     core:createdOn "2023-04-04T00:00:00"^^xsd:dateTime ;
+    core:hasDescription "This first Zone has a centralized governance: only OKP4 can modify the rules. In this first version, only OKP4 can register data and services. However, any wallet is allowed to download data."@en ;
+    core:hasDescription "Cette première Zone a une gouvernance centralisée : seul OKP4 peut modifier les règles. Dans cette première version, seul OKP4 peut enregistrer des données et des services. Toutefois, n'importe quel wallet est autorisé à télécharger les données."@fr ;
+    core:hasDescription "Dieser erste Zone hat eine zentralisierte Governance: Nur OKP4 kann die Regeln ändern. In dieser ersten Version kann nur OKP4 Daten und Dienste speichern. Allerdings ist es jeder Wallet erlaubt, Daten hochzuladen."@de ;
     metagov:hasChapter govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c . 
 
 govmeta:7d3436c7-ebad-4ead-a005-00e76f4f086c a owl:NamedIndividual, 

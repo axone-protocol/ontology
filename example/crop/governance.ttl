@@ -10,6 +10,9 @@ govmeta:149e5b0b-25f7-4bb7-9b7a-9894c7b701ad a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
         core:describes zone:a19fec74-d428-46ac-ad3b-730e520fef86 ;  
     core:createdOn "2023-09-01T00:00:00"^^xsd:dateTime ;
+    core:hasDescription "CROP is a zone in which only FarmLEAP partners can share agronomic data. Governance of this zone is centralized: only FarmLEAP and OKP4 are authorized to modify the zone rules."@en ;
+    core:hasDescription "CROP est une zone dans laquelle seuls les partenaires de FarmLEAP peuvent partager des données agronomiques. La gouvernance de cette zone est centralisée : seuls FarmLEAP et OKP4 sont autorisés à modifier les règles de la zone."@fr ;
+    core:hasDescription "CROP ist eine Zone, in der nur FarmLEAP-Partner agronomische Daten austauschen können. Die Verwaltung dieser Zone ist zentralisiert: Nur FarmLEAP und OKP4 dürfen die Regeln der Zone ändern."@de ;
     metagov:hasChapter govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 .  
 
 govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 a owl:NamedIndividual,  

@@ -10,6 +10,9 @@ govmeta:58f368ee-fbc6-11ed-be56-0242ac120002 a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
     core:describes zone:97ff7e16-c08d-47be-8475-211016c82e33 ;
     core:createdOn "2022-10-16T16:51:28+00:00"^^xsd:dateTime ;
+    core:hasDescription "DS4I is a private Zone where resources are only accessible for a group of addresses contained in a dedicated whitelist. Only OKP4 have the authority to edit the Whitelist."@en ;
+    core:hasDescription "DS4I est une Zone privée où les ressources ne sont accessibles que pour un groupe d'adresses de wallets contenues dans une Whitelist dédiée. Seul OKP4 a le droit de modifier cette whitelist."@fr ;
+    core:hasDescription "DS4I ist ein privater Zone, in dem die Ressourcen nur für eine Gruppe zugänglich sind. Adressen von Wallets, die in einer dedizierten Whitelist enthalten sind. Nur OKP4 hat das Recht, diese Whitelist zu ändern."@de ;
     metagov:hasChapter govmeta:bba31e5b-afe5-41a5-bab4-b5c2d443ec18.
 
 govmeta:bba31e5b-afe5-41a5-bab4-b5c2d443ec18 a owl:NamedIndividual,
