@@ -61,8 +61,7 @@ meta:GovernanceMetadata a owl:Class ;
     a owl:Restriction ;
     owl:allValuesFrom xsd:dateTime ;
     owl:onProperty core:createdOn ;
-  ] ;
-  rdfs:subClassOf core:Metadata .
+  ] ;.
 
 meta:Paragraph a owl:Class ;
   rdfs:label "Paragraph"@en ;
