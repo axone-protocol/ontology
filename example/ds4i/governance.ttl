@@ -10,17 +10,14 @@ govmeta:58f368ee-fbc6-11ed-be56-0242ac120002 a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
     core:describes zone:97ff7e16-c08d-47be-8475-211016c82e33 ;
     core:createdOn "2022-10-16T16:51:28+00:00"^^xsd:dateTime ;
-    core:hasDescription "DS4I is a private Zone where resources are only accessible for a group of addresses contained in a dedicated whitelist. Only OKP4 have the authority to edit the Whitelist."@en ;
-    core:hasDescription "DS4I est une Zone privée où les ressources ne sont accessibles que pour un groupe d'adresses de wallets contenues dans une Whitelist dédiée. Seul OKP4 a le droit de modifier cette whitelist."@fr ;
-    core:hasDescription "DS4I ist ein privater Zone, in dem die Ressourcen nur für eine Gruppe zugänglich sind. Adressen von Wallets, die in einer dedizierten Whitelist enthalten sind. Nur OKP4 hat das Recht, diese Whitelist zu ändern."@de ;
     metagov:hasChapter govmeta:bba31e5b-afe5-41a5-bab4-b5c2d443ec18.
 
 govmeta:bba31e5b-afe5-41a5-bab4-b5c2d443ec18 a owl:NamedIndividual,
         metagov:Chapter ;
     core:hasTitle "DS4I Governance"@en ;
-    core:hasDescription "Data Space for Investors (DS4I) est une Zone privée créée et maintenue par l'équipe OKP4. L'objectif de DS4I est de présenter une preuve de concept simple et conviviale pour démontrer aux investisseurs potentiels comment le protocole OKP4 fonctionne sur la base de règles de gouvernance simples."@fr ;
-    core:hasDescription "Data Space for Investors (DS4I) is a private Zone created and maintained by OKP4 Team. DS4I's purpose is to present a simple and user-friendly Proof of Concept to demonstrate for potential investors how OKP4 protocol works based on simple governance rules."@en ;
-    core:hasDescription "Data Space for Investors (DS4I) ist ein privater Zone, der vom OKP4 Team erstellt und gepflegt wird. DS4I soll ein einfaches und benutzerfreundliches Proof of Concept darstellen, um potentiellen Investoren zu demonstrieren, wie das OKP4 Protokoll basierend auf einfachen Regeln funktioniert."@de .
+    core:hasDescription "DS4I is a private Zone where resources are only accessible for a group of addresses contained in a dedicated whitelist. Only OKP4 have the authority to edit the Whitelist."@en ;
+    core:hasDescription "DS4I est une Zone privée où les ressources ne sont accessibles que pour un groupe d'adresses de wallets contenues dans une Whitelist dédiée. Seul OKP4 a le droit de modifier cette whitelist."@fr ;
+    core:hasDescription "DS4I ist ein privater Zone, in dem die Ressourcen nur für eine Gruppe zugänglich sind. Adressen von Wallets, die in einer dedizierten Whitelist enthalten sind. Nur OKP4 hat das Recht, diese Whitelist zu ändern."@de .
 
 govmeta:8179eed2-dc22-481b-9eaf-f5322a3537a7 a owl:NamedIndividual,
         metagov:Section ; 

@@ -10,9 +10,6 @@ govmeta:149e5b0b-25f7-4bb7-9b7a-9894c7b701ad a owl:NamedIndividual,
         metagov:GovernanceMetadata ;
         core:describes zone:a19fec74-d428-46ac-ad3b-730e520fef86 ;  
     core:createdOn "2023-09-01T00:00:00"^^xsd:dateTime ;
-    core:hasDescription "CROP is a zone in which only FarmLEAP partners can share agronomic data. Governance of this zone is centralized: only FarmLEAP and OKP4 are authorized to modify the zone rules."@en ;
-    core:hasDescription "CROP est une zone dans laquelle seuls les partenaires de FarmLEAP peuvent partager des données agronomiques. La gouvernance de cette zone est centralisée : seuls FarmLEAP et OKP4 sont autorisés à modifier les règles de la zone."@fr ;
-    core:hasDescription "CROP ist eine Zone, in der nur FarmLEAP-Partner agronomische Daten austauschen können. Die Verwaltung dieser Zone ist zentralisiert: Nur FarmLEAP und OKP4 dürfen die Regeln der Zone ändern."@de ;
     metagov:hasChapter govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 .  
 
 govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 a owl:NamedIndividual,  
@@ -20,9 +17,9 @@ govmeta:6815a492-61fe-4b63-9dc7-ed90e7d7e501 a owl:NamedIndividual,
     core:hasTitle "Gouvernance CROP"@fr ;
     core:hasTitle "CROP Governance"@en ;
     core:hasTitle "CROP Governance"@de ;
-    core:hasDescription "Aujourd'hui, les coopératives et les négociants ont besoin d'une connaissance fine de leur territoire pour optimiser leurs activités d'approvisionnement et de collecte, mais aussi pour accompagner les agriculteurs dans la transition agro-écologique. Le projet CROP répond à ces enjeux en proposant un outil de visualisation des données agro-économiques des territoires. CROP permet de croiser différentes sources de données pour obtenir une meilleure connaissance à l'échelle de l'exploitation mais aussi de son territoire."@fr ;
-    core:hasDescription "Today, cooperatives and traders need to have a detailed knowledge of their territory to optimize their supply and collection activities, but also to support farmers in the agro-ecological transition. The CROP project responds to these challenges by proposing an agro-economic data visualization tool for territories. CROP allows to cross different data sources to get a better knowledge at the scale of the farm but also of its territory."@en ;
-    core:hasDescription "Genossenschaften und Händler benötigen heute detaillierte Kenntnisse über ihr Gebiet, um ihre Liefer- und Sammelaktivitäten zu optimieren, aber auch um die Landwirte bei der agro-ökologischen Umstellung zu unterstützen. Das CROP-Projekt antwortet auf diese Herausforderungen, indem es ein agrarökonomisches Datenvisualisierungstool für Gebiete vorschlägt. CROP ermöglicht es, verschiedene Datenquellen miteinander zu verknüpfen, um ein besseres Wissen auf der Ebene des Betriebs, aber auch des Gebiets zu erhalten."@de .
+    core:hasDescription "CROP is a zone in which only FarmLEAP partners can share agronomic data. Governance of this zone is centralized: only FarmLEAP and OKP4 are authorized to modify the zone rules."@en ;
+    core:hasDescription "CROP est une zone dans laquelle seuls les partenaires de FarmLEAP peuvent partager des données agronomiques. La gouvernance de cette zone est centralisée : seuls FarmLEAP et OKP4 sont autorisés à modifier les règles de la zone."@fr ;
+    core:hasDescription "CROP ist eine Zone, in der nur FarmLEAP-Partner agronomische Daten austauschen können. Die Verwaltung dieser Zone ist zentralisiert: Nur FarmLEAP und OKP4 dürfen die Regeln der Zone ändern."@de .
 
 govmeta:aa166fd9-0877-4230-816f-eadb023b0dc8 a owl:NamedIndividual,   
         metagov:Section ; 
