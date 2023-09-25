@@ -616,7 +616,7 @@ mediatype:application_vndrn-realmedia a skos:Concept ;
   skos:prefLabel "Έγγραφο RealAudio/Video"@el ;
   skos:prefLabel "리얼오디오/비디오 문서"@ko .
 
-mediatype:shapefile a skos:Concept ;
+mediatype:application_vndshp a skos:Concept ;
   mediatype:hasMediaType "application/vndshp" ;
   skos:inScheme <https://ontology.okp4.space/thesaurus/media-type> ;
   skos:prefLabel "Shapefile"@en ;
