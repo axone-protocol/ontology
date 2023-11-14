@@ -5,11 +5,9 @@ updates:
     schedule:
       interval: weekly
     reviewers:
-      - ccamel
-      - fredericvilcot
       - amimart
+      - ccamel
     assignees:
-      - ccamel
-      - fredericvilcot
       - amimart
+      - ccamel
     open-pull-requests-limit: 5
