@@ -5,8 +5,8 @@ DOCKER_IMAGE_FUSEKI   := docuteam/fuseki:4.2.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:0.20.0
-DOCKER_IMAGE_RUBY_RDF := ghcr.io/okp4/ruby-rdf:3.2.9
-DOCKER_IMAGE_WIDOCO   := ghcr.io/okp4/widoco:1.4.15
+DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.2.9
+DOCKER_IMAGE_WIDOCO   := okp4/widoco:1.4.17
 
 # Deployment
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
