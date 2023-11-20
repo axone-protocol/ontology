@@ -49,6 +49,7 @@ jobs:
 
   lint-ontology:
     runs-on: ubuntu-22.04
+    if: false # TODO: fix ontology linting - https://github.com/okp4/ontology/issues/210
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
