@@ -37,18 +37,10 @@ plugins:
           from: dcterms:created "(\d+\-\d+\-\d+)"
           to: dcterms:created "<%= new Date().toISOString().split('T')[0] %>"
           countMatches: true
-  - - "@semantic-release/exec"
-    - prepareCmd: make documentation
-  - - "@semantic-release/exec"
-    - prepareCmd: find target/doc/ontology -maxdepth 1 -type f -name "ontology.*" | cut -d '/' -f 4 | tar -czvf ontology.tar.gz -C target/doc/ontology -T -
-  - - "@semantic-release/exec"
-    - prepareCmd: tar -czvf documentation.tar.gz -C ./target/doc/ontology .
   - - "@semantic-release/github"
     - assets:
         - label: Ontology
           path: "./ontology.tar.gz"
-        - label: Documentation
-          path: "./documentation.tar.gz"
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
