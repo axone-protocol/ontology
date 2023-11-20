@@ -25,5 +25,17 @@ okp4core:DigitalResource a owl:Class ;
 
   Digital Resources are accessed through Digital Services, which function as channels for the distribution and exchange of these resources across assorted networks. These services take various forms, including network communication protocols like RESTful APIs and gRPC services. The primary role of Digital Services is to aid in the discovery, acquisition, and engagement with Digital Resources. They are pivotal in linking the resources with Orchestrator Services that utilize these resources for diverse applications. A specific Verifiable Credential is assigned to manifest the connection between a Digital Resource and the Digital Service facilitating its access. This connection is vital for establishing the provenance of the resource and ensuring its access through a trusted service.
 
-  An essential requirement is that the RDF identifier must be a Decentralized Identifier (DID). This stipulation elevates the RDF resource to the status of a Subject within the Verifiable Claims framework. The implementation of a DID as the RDF identifier securely integrates the resource within the decentralized identity architecture, assuring a secure and verifiable identification process.
+  It is imperative that the RDF identifier assumes the form of a Decentralized Identifier (DID). This specification elevates the RDF resource to the status of a Subject within the realm of Verifiable Claims. The adoption of a DID as the RDF identifier solidifies the resource’s position in the decentralized identity landscape, ensuring a secure and verifiable identification mechanism.
+  """@en .
+
+okp4core:DigitalService a owl:Class ;
+  rdfs:label "Digital Service"@en ;
+  rdfs:comment """
+  A Digital Service represents an entity that facilitates access to, manipulation of, and management of Digital Resources.
+
+  These services are distinguished by their capability to interact with Digital Resources, offering a network interface for users to engage with these resources.
+
+  The defining properties and characteristics of Digital Services are delineated through Verifiable Claims. These Claims offer an exhaustive insight into Digital Services, encompassing details such as an informal presentation of the Service, a formal description of the protocol, service capabilities, the specific type of service, among other aspects. This comprehensive approach to defining Digital Services through Verifiable Claims ensures a thorough understanding and reliable representation of these services.
+
+  It is imperative that the RDF identifier assumes the form of a Decentralized Identifier (DID). This specification elevates the RDF resource to the status of a Subject within the realm of Verifiable Claims. The adoption of a DID as the RDF identifier solidifies the resource’s position in the decentralized identity landscape, ensuring a secure and verifiable identification mechanism.
   """@en .
