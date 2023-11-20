@@ -6,7 +6,6 @@ DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:0.20.0
 DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.2.9
-DOCKER_IMAGE_WIDOCO   := okp4/widoco:1.4.17
 
 # Deployment
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
@@ -32,7 +31,6 @@ DST_EXM            := $(DST)/example
 DST_ONT            := $(DST)/ontology
 DST_LINT           := $(DST)/lint
 DST_TEST           := $(DST)/test
-DST_DOC            := $(DST)/doc
 
 SRC_ONT            := $(ROOT)/src
 SRC_EXM            := $(ROOT)/example
@@ -246,34 +244,6 @@ fuseki-stop: ## Stop Fuseki server
 .PHONY: fuseki-log
 fuseki-log: check ## Show Fuseki server logs
 	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER}
-
-## Documentation:
-.PHONY: doc
-doc: check build-ontology ## Generate documentation site
-	@echo "${COLOR_CYAN}📖 generating documentation for ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
-	@docker run \
-        --rm \
-        -v `pwd`:/usr/src/ontology \
-        ${DOCKER_IMAGE_WIDOCO} \
-            -ontFile /usr/src/ontology/${BIN_OKP4_RDFXML} \
-            -outFolder /usr/src/ontology/${DST_DOC} \
-            -lang en \
-            -rewriteAll \
-            -getOntologyMetadata \
-            -includeImportedOntologies \
-            -webVowl \
-            -displayDirectImportsOnly \
-            -uniteSections
-	@sudo chown -R  "$$(id -u):$$(id -g)" ${DST_DOC}
-	@cp -R public/* ${DST_DOC}
-
-.PHONY: doc-serve
-doc-serve: check doc ## Start a web server for serving generated documentation
-	@echo "${COLOR_CYAN}🌐 serving documentation - available at ${COLOR_GREEN}http://localhost:8080/index-en.html${COLOR_RESET}"
-	@docker run --rm \
-      -p 8080:80 \
-      -v `pwd`/${DOC}/ontology/:/usr/local/apache2/htdocs/:ro \
-      ${DOCKER_IMAGE_HTTPD}
 
 ## Misc:
 .PHONY: cache
