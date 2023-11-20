@@ -33,18 +33,20 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
 
-      - name: Release project
-        uses: cycjimmy/semantic-release-action@v4
+      - uses: actions/setup-node@v4
         with:
-          semantic_version: 18.0.0
-          branch: main
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/exec
-            @semantic-release/git
-            @google/semantic-release-replace-plugin
-          extends: |
-            conventional-changelog-conventionalcommits
+          node-version: 18.18
+
+      - name: Release project
+        run: >-
+          npx
+          -p "@semantic-release/changelog@6.0.3"
+          -p "@semantic-release/git@10.0.1"
+          -p "@semantic-release/exec@6.0.3"
+          -p "@google/semantic-release-replace-plugin@1.2.7"
+          -p "conventional-changelog-conventionalcommits@6.1.0"
+          -p "semantic-release@22.0.5"
+          -- "semantic-release"
         env:
           GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
           GIT_AUTHOR_NAME: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
