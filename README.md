@@ -37,10 +37,6 @@ The knowledge representation language chosen for OKP4 is [RDF Schema](http://www
   <img src="etc/rdf-stack.webp" alt="RDF stack" width="600"/>
 </p>
 
-## Documentation
-
-Last released version of OKP4 ontology documentation is available here: <https://ontology.okp4.space>.
-
 ## Some assumptions
 
 - There's no one correct way to model a domain and a trade-off must be found between the meaning given to ontology, its expressiveness, its extensibility and its usage.
