@@ -1,12 +1,11 @@
+@prefix : <https://ontology.okp4.space/core/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix okp4core: <https://ontology.okp4.space/core/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-okp4core:Zone a owl:Class ;
+:Zone a rdfs:Class ;
   rdfs:label "Zone"@en ;
   rdfs:comment """
   Zone constitutes a conceptual structure delineated by a predetermined set of regulations. Within this structure, recognized Resources are required to align with the stipulated rules.
@@ -16,7 +15,7 @@ okp4core:Zone a owl:Class ;
   It is imperative that the RDF identifier assumes the form of a Decentralized Identifier (DID). This specification elevates the RDF resource to the status of a Subject within the realm of Verifiable Claims. The adoption of a DID as the RDF identifier solidifies the resource’s position in the decentralized identity landscape, ensuring a secure and verifiable identification mechanism.
   """@en.
 
-okp4core:DigitalResource a owl:Class ;
+:DigitalResource a rdfs:Class ;
   rdfs:label "Digital Resource"@en ;
   rdfs:comment """
   Digital Resource designates a diverse range of data and information assets, including but not limited to spreadsheets, databases, text, videos, and similar elements. This concept is inherently flexible, adapting continuously to emerging digital formats and technological developments.
@@ -28,7 +27,7 @@ okp4core:DigitalResource a owl:Class ;
   It is imperative that the RDF identifier assumes the form of a Decentralized Identifier (DID). This specification elevates the RDF resource to the status of a Subject within the realm of Verifiable Claims. The adoption of a DID as the RDF identifier solidifies the resource’s position in the decentralized identity landscape, ensuring a secure and verifiable identification mechanism.
   """@en .
 
-okp4core:DigitalService a owl:Class ;
+:DigitalService a rdfs:Class ;
   rdfs:label "Digital Service"@en ;
   rdfs:comment """
   A Digital Service represents an entity that facilitates access to, manipulation of, and management of Digital Resources.
