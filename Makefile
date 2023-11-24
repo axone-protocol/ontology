@@ -8,7 +8,7 @@ DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:0.20.0
 DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
 
 # Executables
-VERSION_OWL_CLI := 1.2.2
+VERSION_OWL_CLI := 1.2.4
 EXEC_OWL_CLI := owl-cli-$(VERSION_OWL_CLI).jar
 
 # Deployment
