@@ -6,6 +6,22 @@
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+:hasAlpha2Code a rdf:Property ;
+  rdfs:label "has ISO 3166-1-alpha-2 code"@en ;
+  rdfs:comment "Represents the ISO 3166-1 two-letter country codes that uniquely identifies a country."@en ;
+  schema:domainIncludes : ;
+  schema:rangeIncludes xsd:string .
+
+:hasAlpha3Code a rdf:Property ;
+  rdfs:label "has ISO 3166-1-alpha-3 code"@en ;
+  rdfs:comment "Represents the ISO 3166-1 three-letter country codes that uniquely identifies a country."@en ;
+  schema:rangeIncludes xsd:string .
+
+:hasAreaCode a rdf:Property ;
+  rdfs:label "has M.49 area code"@en ;
+  rdfs:comment "Represents the M.49 area code that uniquely identifies an area."@en ;
+  schema:rangeIncludes xsd:integer .
+
 :001 a skos:Concept ;
   :hasAreaCode 1 ;
   skos:narrower :002 ;
@@ -2611,22 +2627,6 @@
   skos:inScheme <https://ontology.okp4.space/thesaurus/area> ;
   skos:prefLabel "Zambia"@en ;
   skos:prefLabel "Zambie"@fr .
-
-:hasAlpha2Code a rdf:property ;
-  rdfs:label "has ISO 3166-1-alpha-2 code"@en ;
-  rdfs:comment "Represents the ISO 3166-1 two-letter country codes that uniquely identifies a country."@en ;
-  schema:domainIncludes : ;
-  schema:rangeIncludes xsd:string .
-
-:hasAlpha3Code a rdf:property ;
-  rdfs:label "has ISO 3166-1-alpha-3 code"@en ;
-  rdfs:comment "Represents the ISO 3166-1 three-letter country codes that uniquely identifies a country."@en ;
-  schema:rangeIncludes xsd:string .
-
-:hasAreaCode a rdf:property ;
-  rdfs:label "has M.49 area code"@en ;
-  rdfs:comment "Represents the M.49 area code that uniquely identifies an area."@en ;
-  schema:rangeIncludes xsd:integer .
 
 <https://ontology.okp4.space/thesaurus/area> a skos:ConceptScheme ;
   rdfs:label "Area Code Thesaurus"@en ;

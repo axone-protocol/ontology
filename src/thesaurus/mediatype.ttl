@@ -5,6 +5,12 @@
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+:hasMediaType a rdf:Property ;
+  rdfs:label "has media type"@en ;
+  rdfs:comment "Specifies the Media Type for the term of this vocabulary."@en ;
+  schema:domainIncludes skos:Concept ;
+  schema:rangeIncludes rdfs:Literal .
+
 :application a skos:Collection ;
   rdfs:label "Application types"@en ;
   dct:description "The collection of application types"@en ;
@@ -3173,12 +3179,6 @@
   skos:prefLabel "GeoPackage SQLite3 データベース"@ja ;
   skos:prefLabel "GeoPackage SQLite3 数据库"@zh ;
   skos:prefLabel "GeoPackage SQLite3-Datenbank"@de .
-
-:hasMediaType a rdf:property ;
-  rdfs:label "has media type"@en ;
-  rdfs:comment "Specifies the Media Type for the term of this vocabulary."@en ;
-  schema:domainIncludes skos:Concept ;
-  schema:rangeIncludes rdfs:Literal .
 
 :image a skos:Collection ;
   rdfs:label "Image types"@en ;
