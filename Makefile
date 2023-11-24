@@ -7,6 +7,10 @@ DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:0.20.0
 DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
 
+# Executables
+VERSION_OWL_CLI := 1.2.2
+EXEC_OWL_CLI := owl-cli-$(VERSION_OWL_CLI).jar
+
 # Deployment
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
 DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT=30
@@ -67,7 +71,7 @@ RDF_WRITE = \
       -v `pwd`:/usr/src/ontology:rw \
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_JRE} \
-        java -jar ${DST_CACHE}/owl-cli-1.2.2.jar \
+        java -jar ${DST_CACHE}/$(EXEC_OWL_CLI) \
         write \
         -o $1 \
         $2 \
@@ -247,13 +251,13 @@ fuseki-log: check ## Show Fuseki server logs
 
 ## Misc:
 .PHONY: cache
-cache: $(DST_CACHE)/owl-cli-1.2.2.jar ## Download all required files to cache
+cache: $(DST_CACHE)/$(EXEC_OWL_CLI) ## Download all required files to cache
 
-$(DST_CACHE)/owl-cli-1.2.2.jar:
+$(DST_CACHE)/$(EXEC_OWL_CLI):
 	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
 	@mkdir -p -m 777 $(DST_CACHE); \
     cd $(DST_CACHE); \
-    wget https://github.com/atextor/owl-cli/releases/download/v1.2.2/owl-cli-1.2.2.jar
+    wget https://github.com/atextor/owl-cli/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
 
 .PHONY: check
 check: $(FLG_CHECK_OK) ## Check if all required commands are available in the system
