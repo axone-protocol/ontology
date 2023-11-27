@@ -66,7 +66,7 @@
 
 <https://ontology.okp4.space/thesaurus/topic> a skos:ConceptScheme ;
   rdfs:label "Thema Thesaurus"@de ;
-  rdfs:label "Thésaurus des thèmes"@en ;
+  rdfs:label "Thésaurus des thèmes"@fr ;
   rdfs:label "Topic Thesaurus"@en ;
   dcterms:description """
   Ce thésaurus définit un vocabulaire contrôlé exprimant les différents thèmes communs, ce qui permet d'organiser et de classer les ressources en fonction de leur nature ou de leur objectif. d'être organisées et classées en fonction de leur nature ou de leur objectif.
