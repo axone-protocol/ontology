@@ -46,11 +46,12 @@ OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
 OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
 
-BIN_OKP4_TTL       := $(DST)/okp4.ttl
-BIN_OKP4_NT        := $(DST)/okp4.nt
-BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
-BIN_OKP4_JSONLD    := $(DST)/okp4.jsonld
-BIN_OKP4_BUNDLE   := $(DST)/okp4-bundle.tar.gz
+OKP4_ARTIFACT_ID   := okp4-ontology
+BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID).ttl
+BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID).nt
+BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID).rdf.xml
+BIN_OKP4_JSONLD    := $(DST)/$(OKP4_ARTIFACT_ID).jsonld
+BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-bundle.tar.gz
 
 # - Format
 FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
