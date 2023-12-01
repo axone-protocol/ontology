@@ -1,7 +1,7 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
 # Docker images
-DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.2.0
+DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
