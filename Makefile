@@ -50,6 +50,7 @@ BIN_OKP4_TTL       := $(DST)/okp4.ttl
 BIN_OKP4_NT        := $(DST)/okp4.nt
 BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
 BIN_OKP4_JSONLD    := $(DST)/okp4.jsonld
+BIN_OKP4_BUNDLE   := $(DST)/okp4-bundle.tar.gz
 
 # - Format
 FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
@@ -115,22 +116,22 @@ clean: ## Clean all generated files
 
 ## Build:
 .PHONY: build
-build: build-ontology ## Build all the files
+build: build-ontology-bundle ## Build all the files
 
 .PHONY: build-ontology
-build-ontology: check build-ontology-ttl build-ontology-nt build-ontology-rdfxml build-ontology-jsonld ## Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+build-ontology: check $(DST) build-ontology-ttl build-ontology-nt build-ontology-rdfxml build-ontology-jsonld ## Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
 
 .PHONY: build-ontology-ttl
-build-ontology-ttl: check $(BIN_OKP4_TTL) ## Build the ontology in Turtle format
+build-ontology-ttl: check $(DST) $(BIN_OKP4_TTL) ## Build the ontology in Turtle format
 
 .PHONY: build-ontology-nt
-build-ontology-nt: check $(BIN_OKP4_NT) ## Build the ontology in N-Triples format
+build-ontology-nt: check $(DST) $(BIN_OKP4_NT) ## Build the ontology in N-Triples format
 
 .PHONY: build-ontology-rdfxml
-build-ontology-rdfxml: check $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Build the ontology in RDF/XML format
+build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Build the ontology in RDF/XML format
 
 .PHONY: build-ontology-jsonld
-build-ontology-jsonld: check $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
+build-ontology-jsonld: check $(DST) $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
 
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -171,6 +172,19 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
+
+.PHONY: build-ontology-bundle
+build-ontology-bundle: $(DST) build-ontology $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+
+$(BIN_OKP4_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name "*.ttl") $(ROOT)/LICENSE
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET} tarball"
+	@tar -cvzf $(BIN_OKP4_BUNDLE) \
+	  -C $(abspath $(ROOT)) LICENSE \
+	  -C $(abspath $(DST)) $(shell cd $(DST) ; echo $(OKP4_ARTIFACT_ID).*) \
+	  -C $(abspath $(DST_ONT)) $(shell cd $(DST_ONT) ; echo *)
+	@echo "${COLOR_CYAN}📊 tarball ${COLOR_GREEN}statistics${COLOR_RESET}"
+	@echo "${COLOR_CYAN}   ↳ 🗃️ number of files${COLOR_RESET}: ${COLOR_GREEN}$$(tar -tzf $(BIN_OKP4_BUNDLE) | wc -l | bc)${COLOR_RESET}"
+	@echo "${COLOR_CYAN}   ↳ 📏 size${COLOR_RESET}           : ${COLOR_GREEN}$$(du -sh $(BIN_OKP4_BUNDLE) | cut -f1)${COLOR_RESET}"
 
 ## Format:
 .PHONY: format
@@ -296,6 +310,10 @@ $(FLG_CHECK_OK):
 	@mkdir -p -m 777 $(@D)
 	@touch $(FLG_CHECK_OK)
 
+$(DST):
+	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m 777 $(DST)
+
 ## Help:
 .PHONY: vars
 vars: ## Show relevant variables used in this Makefile
@@ -309,7 +327,7 @@ help: ## Show this help.
 	@echo ''
 	@echo 'Targets:'
 	@awk 'BEGIN {FS = ":.*?## "} { \
-		if (/^[a-zA-Z_-]+:.*?##.*$$/) {printf "    ${COLOR_YELLOW}%-25s${COLOR_GREEN}%s${COLOR_RESET}\n", $$1, $$2} \
+		if (/^[a-zA-Z_-]+:.*?##.*$$/) {printf "    ${COLOR_YELLOW}%-22s${COLOR_GREEN}%s${COLOR_RESET}\n", $$1, $$2} \
 		else if (/^## .*$$/) {printf "  ${COLOR_CYAN}%s${COLOR_RESET}\n", substr($$1,4)} \
 		}' $(MAKEFILE_LIST)
 	@echo ''
