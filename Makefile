@@ -31,10 +31,13 @@ ROOT               := .
 
 DST                := $(ROOT)/target
 DST_CACHE          := $(DST)/.cache
+DST_MAKE           := $(DST)/.make
 DST_ONT            := $(DST)/ontology
-DST_LINT           := $(DST)/lint
-DST_TEST           := $(DST)/test
+DST_FORMAT         := $(DST_MAKE)/format
+DST_LINT           := $(DST_MAKE)/lint
+DST_TEST           := $(DST_MAKE)/test
 
+# - Build
 SRC_ONT            := $(ROOT)/src
 SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
 OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
@@ -42,15 +45,20 @@ OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
 OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
 
+BIN_OKP4_TTL       := $(DST)/okp4.ttl
+BIN_OKP4_NT        := $(DST)/okp4.nt
+BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
+BIN_OKP4_JSONLD    := $(DST)/okp4.jsonld
+
+# - Format
+FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
+
 SRC_TST            := $(ROOT)/test
 
 SRC_TTLS           := $(shell find $(SRC_ONT) $(SRC_EXM) -name "*.ttl" | sort)
 SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
 
-BIN_OKP4_TTL       := $(DST)/okp4.ttl
-BIN_OKP4_NT        := $(DST)/okp4.nt
-BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
-BIN_OKP4_JSONLD    := $(DST)/okp4.jsonld
+
 
 # sed -i support
 SED_FLAG=
@@ -167,9 +175,9 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 format: check format-ttl ## Format with all available formatters
 
 .PHONY: format-ttl
-format-ttl: check cache $(FLG_TTLS_FMT) ## Format all Turtle files
+format-ttl: check cache $(FLG_FMT_TTLS) ## Format all Turtle files
 
-$(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
+$(FLG_FMT_TTLS): $(DST_FORMAT)/%.formatted: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@${call RDF_WRITE,turtle,$<,"$<.formatted"}
