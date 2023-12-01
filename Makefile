@@ -56,12 +56,10 @@ FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SR
 # - Lint
 FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
 
+# - Test
 SRC_TST            := $(ROOT)/test
-
-SRC_TTLS           := $(shell find $(SRC_ONT) $(SRC_EXM) -name "*.ttl" | sort)
 SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
-
-
+FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 
 # sed -i support
 SED_FLAG=
@@ -208,13 +206,13 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 test: test-ontology ## Run all available tests
 
 .PHONY: test-ontology
-test-ontology: check build $(FLG_TSTS) ## Test final (generated) ontology
+test-ontology: check build-ontology-nt $(FLG_TSTS) ## Test the ontology
 
-$(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
-	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
+$(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
+	@echo "${COLOR_CYAN}🧪 test: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@bash -c '\
-		for target in $(BIN_OKP4_NT) $(BIN_EXAMPLE_NT); do \
+		for target in $(BIN_OKP4_NT); do \
 			$(call RDF_SHACL,$<,$$target,$@) \
 			&& echo "  ↳ ✅ ${COLOR_CYAN}$$target ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
 			|| { \
