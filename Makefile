@@ -1,7 +1,7 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
 # Docker images
-DOCKER_IMAGE_FUSEKI   := docuteam/fuseki:4.2.0
+DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.2.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
@@ -15,7 +15,8 @@ EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
 DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT=30
 DEPLOYMENT_FUSEKI_PORT=3030
-DEPLOYMENT_FUSEKI_JVM_ARGS=-Xmx3g -Xms1048m
+DEPLOYMENT_FUSEKI_USER_NAME=admin
+DEPLOYMENT_FUSEKI_USER_PWD=admin
 DEPLOYMENT_FUSEKI_DATASET=dataverse
 
 # Some colors
@@ -235,7 +236,10 @@ fuseki-up: ## Start a Fuseki server and wait for it to be ready
 	    --name ${DEPLOYMENT_FUSEKI_CONTAINER} \
 	    -p ${DEPLOYMENT_FUSEKI_PORT}:${DEPLOYMENT_FUSEKI_PORT} \
 	    -v `pwd`/shiro.ini:/fuseki/shiro.ini \
-	    -e JAVA_OPTS="${DEPLOYMENT_FUSEKI_JVM_ARGS}" \
+	    -e ADMIN_PASSWORD=${DEPLOYMENT_FUSEKI_USER_PWD} \
+	    -e ENABLE_DATA_WRITE=true \
+	    -e ENABLE_UPDATE=true \
+	    -e ENABLE_UPLOAD=true \
 	    ${DOCKER_IMAGE_FUSEKI} && \
 	  sleep 1 && \
 	  echo "${COLOR_CYAN}⏱️ waiting ${COLOR_RESET}for ${COLOR_GREEN}REST API${COLOR_RESET} to be ${COLOR_GREEN}ready${COLOR_RESET}...${COLOR_RESET}" && \
@@ -257,9 +261,9 @@ fuseki-down: check ## Stop the Fuseki container
 .PHONY: fuseki-load
 fuseki-load: $(BIN_OKP4_TTL) fuseki-up ## Load the ontology in Fuseki server
 	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
-	curl -X POST --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
+	curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
 	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
-	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
+	@curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
 
 .PHONY: fuseki-log
 fuseki-log: check ## Show Fuseki server logs
