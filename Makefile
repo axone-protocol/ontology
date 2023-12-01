@@ -53,6 +53,9 @@ BIN_OKP4_JSONLD    := $(DST)/okp4.jsonld
 # - Format
 FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
 
+# - Lint
+FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
+
 SRC_TST            := $(ROOT)/test
 
 SRC_TTLS           := $(shell find $(SRC_ONT) $(SRC_EXM) -name "*.ttl" | sort)
@@ -189,9 +192,9 @@ $(FLG_FMT_TTLS): $(DST_FORMAT)/%.formatted: $(SRC_ONT)/%.ttl
 lint: lint-ttl ## Lint with all available linters
 
 .PHONY: lint-ttl
-lint-ttl: check cache $(FLG_TTLS_LNT) ## Lint all Turtle files
+lint-ttl: check cache $(FLG_LINT_TTLS) ## Lint all Turtle files
 
-$(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
+$(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@docker run --rm \
