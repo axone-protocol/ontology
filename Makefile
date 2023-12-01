@@ -40,7 +40,7 @@ SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
 OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
 OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
-OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.json,$(SRC_ONTS))
+OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
 
 SRC_TST            := $(ROOT)/test
 
@@ -50,6 +50,7 @@ SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
 BIN_OKP4_TTL       := $(DST)/okp4.ttl
 BIN_OKP4_NT        := $(DST)/okp4.nt
 BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
+BIN_OKP4_JSONLD    := $(DST)/okp4.jsonld
 
 # sed -i support
 SED_FLAG=
@@ -107,7 +108,7 @@ clean: ## Clean all generated files
 build: build-ontology ## Build all the files
 
 .PHONY: build-ontology
-build-ontology: check build-ontology-ttl build-ontology-nt build-ontology-rdfxml ## Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+build-ontology: check build-ontology-ttl build-ontology-nt build-ontology-rdfxml build-ontology-jsonld ## Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
 
 .PHONY: build-ontology-ttl
 build-ontology-ttl: check $(BIN_OKP4_TTL) ## Build the ontology in Turtle format
@@ -117,6 +118,9 @@ build-ontology-nt: check $(BIN_OKP4_NT) ## Build the ontology in N-Triples forma
 
 .PHONY: build-ontology-rdfxml
 build-ontology-rdfxml: check $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Build the ontology in RDF/XML format
+
+.PHONY: build-ontology-jsonld
+build-ontology-jsonld: check $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
 
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -134,6 +138,11 @@ $(OBJ_ONTS_RDFXML): $(DST_ONT)/%.rdf.xml: $(DST_ONT)/%.ttl
 	@mkdir -p -m 777 $(@D)
 	@${call RDF_SERIALIZE,turtle,rdfxml,$<,$@}
 
+$(OBJ_ONTS_JSONLD): $(DST_ONT)/%.jsonld: $(DST_ONT)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m 777 $(@D)
+	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
+
 $(BIN_OKP4_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@cat $^ > $@
@@ -147,6 +156,11 @@ $(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
+
+$(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@touch $@
+	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
 
 ## Format:
 .PHONY: format
