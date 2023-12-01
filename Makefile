@@ -15,7 +15,7 @@ EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
 DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT=30
 DEPLOYMENT_FUSEKI_PORT=3030
-DEPLOYMENT_FUSEKI_JVM_ARGS=-Xmx4g
+DEPLOYMENT_FUSEKI_JVM_ARGS=-Xmx3g -Xms1048m
 DEPLOYMENT_FUSEKI_DATASET=dataverse
 
 # Some colors
@@ -223,45 +223,48 @@ $(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
 	'
 
 ## Fuseki:
-.PHONY: fuseki-start
-fuseki-start: check build ## Start Fuseki server with the ontology and examples loaded in it
-	@echo "${COLOR_CYAN}🚀 starting ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+.PHONY: fuseki-up
+fuseki-up: ## Start a Fuseki server and wait for it to be ready
 	@if [ "$$(docker ps -q -f name=${DEPLOYMENT_FUSEKI_CONTAINER})" ]; then \
-      echo "${COLOR_CYAN}❌ container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} already running"; \
-	  exit 1; \
+	  echo "${COLOR_CYAN}🟢 Fuseki already running on container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} and exposing ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET}"; \
+	else \
+	  echo "${COLOR_CYAN}🚀 starting ${COLOR_GREEN}Fuseki${COLOR_RESET} server" && \
+	  docker run \
+	    --rm \
+	    -d \
+	    --name ${DEPLOYMENT_FUSEKI_CONTAINER} \
+	    -p ${DEPLOYMENT_FUSEKI_PORT}:${DEPLOYMENT_FUSEKI_PORT} \
+	    -v `pwd`/shiro.ini:/fuseki/shiro.ini \
+	    -e JAVA_OPTS="${DEPLOYMENT_FUSEKI_JVM_ARGS}" \
+	    ${DOCKER_IMAGE_FUSEKI} && \
+	  sleep 1 && \
+	  echo "${COLOR_CYAN}⏱️ waiting ${COLOR_RESET}for ${COLOR_GREEN}REST API${COLOR_RESET} to be ${COLOR_GREEN}ready${COLOR_RESET}...${COLOR_RESET}" && \
+	  timeout ${DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT} sh -c 'until $$(curl --output /dev/null --silent --head --fail http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/ping); do \
+	      printf '.'; \
+	      sleep 1; \
+	  done' && \
+	  echo "" \
+	  echo "${COLOR_CYAN}🟢 Fuseki running on container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} and exposing ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET} - have fun 🎉" || \
+	  (echo "❌ ${COLOR_RED}failed${COLOR_RESET}" && exit 1); \
 	fi
-	@docker run \
-	  --rm \
-	  -d \
-	  --name ${DEPLOYMENT_FUSEKI_CONTAINER} \
-	  -p ${DEPLOYMENT_FUSEKI_PORT}:${DEPLOYMENT_FUSEKI_PORT} \
-	  -v `pwd`/shiro.ini:/fuseki/shiro.ini \
-	  -e -JVM_ARGS=${DEPLOYMENT_FUSEKI_JVM_ARGS} \
-	  ${DOCKER_IMAGE_FUSEKI}
-	@sleep 1
-	@echo "${COLOR_CYAN}⏱️ waiting for REST API to be ready...${COLOR_RESET}"
-	@timeout ${DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT} sh -c 'until $$(curl --output /dev/null --silent --head --fail http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/ping); do \
-	    printf '.'; \
-	    sleep 1; \
-	done'
-	@echo ""
-	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
-	@curl -X POST --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
-	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
-	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
-	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_EXAMPLE_TTL}${COLOR_RESET}"
-	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_EXAMPLE_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
-	@echo "${COLOR_CYAN}🟢 running on: ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET} - have fun 🎉"
 
-.PHONY: check fuseki-stop
-fuseki-stop: ## Stop Fuseki server
-	@echo "${COLOR_CYAN}✋ stopping ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+.PHONY: fuseki-down
+fuseki-down: check ## Stop the Fuseki container
+	@echo "${COLOR_CYAN}✋ stopping ${COLOR_GREEN}Fuseki${COLOR_RESET} server running on container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET}"
 	@docker stop ${DEPLOYMENT_FUSEKI_CONTAINER}
 	@echo "${COLOR_CYAN}⚪️ Fuseki server stopped${COLOR_RESET}"
 
+.PHONY: fuseki-load
+fuseki-load: $(BIN_OKP4_TTL) fuseki-up ## Load the ontology in Fuseki server
+	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
+	curl -X POST --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
+	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
+	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
+
 .PHONY: fuseki-log
 fuseki-log: check ## Show Fuseki server logs
-	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER}
+	@echo "${COLOR_CYAN}📜 showing ${COLOR_GREEN}Fuseki logs${COLOR_RESET} from container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET}"
+	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER} -f
 
 ## Misc:
 .PHONY: cache
