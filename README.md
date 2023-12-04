@@ -78,7 +78,9 @@ At the root, the ontology is divided into two main parts:
 
 The foundational philosophy underpinning the ontology of the [OKP4 protocol](https://okp4.network) is grounded in the *Open World* principle. This principle operates on the premise that knowledge is not static or finite; rather, it acknowledges that understanding and information can continuously evolve and expand. In practical terms, this means that the ontology is not confined to a predefined or limited set of schemas and thesauri. Instead, it is inherently designed to accommodate and integrate new and diverse contributions.
 
-## Building the ontology
+## Development
+
+### Building the ontology
 
 The ontology is built using [GNU make](https://www.gnu.org/software/make/manual/make.html) and [Docker](https://www.docker.com/).
 To build the ontology, run the following command:
@@ -87,26 +89,37 @@ To build the ontology, run the following command:
 make build
 ```
 
-This will build the ontology and the examples under the `target` directory. The files generated have different [RDF](https://www.w3.org/RDF/) formats ([Turtle](https://www.w3.org/TR/turtle/), [N-Triples](http://www.w3.org/TR/n-triples/), [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), [JSON-LD](https://www.w3.org/TR/json-ld11/)) to be used in different contexts.
+This will build the `okp4` ontology under the `target` directory. The files generated have different [RDF](https://www.w3.org/RDF/) formats:
+
+- [Turtle](https://www.w3.org/TR/turtle/)
+- [N-Triples](http://www.w3.org/TR/n-triples/)
+- [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/)
+- [JSON-LD](https://www.w3.org/TR/json-ld11/)) to be used in different contexts.
+- [Tarball](https://en.wikipedia.org/wiki/Tar_(computing)) containing all the different ontology formats.
 
 ```text
 ./target
-   ├── examples.jsonld
-   ├── examples.nt
-   ├── examples.ttl
-   ├── okp4.nt
-   ├── okp4.rdf.xml
-   └── okp4.ttl
+   ├── okp4-ontology.nt
+   ├── okp4-ontology.rdf.xml
+   ├── okp4-ontology.jsonld
+   ├── okp4-ontology.ttl
+   └── okp4-ontology-bundle.tar.gz
 ```
 
-## Deploying the ontology in local triple store
+### Deploying the ontology in local triple store
 
 The ontology can be deployed in a local triple store using [Docker](https://www.docker.com/). The triple store used is [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/).
 
-To start the triple store, run the following command. This will start the triple store and load the ontology and the examples in it.
+To start the triple store, run the following command. This will start the triple store and wait to be ready.
 
 ```bash
-make fuseki-start
+make fuseki-up
+```
+
+Then, you can load the `okp4` ontology in the triple store using the following command:
+
+```bash
+make fuseki-load
 ```
 
 You can now play with the ontology using the Fuseki UI - <http://localhost:3030/>.
@@ -114,10 +127,70 @@ You can now play with the ontology using the Fuseki UI - <http://localhost:3030/
 Conversaly, to stop the triple store, run the following command:
 
 ```bash
-make fuseki-stop
+make fuseki-down
 ```
 
-Note that the triple store is not persistent, so all the data will be lost when the triple store is stopped.
+⚠️ Note that the triple store is *not persistent*, so all the data will be *lost* when the triple store is stopped.
+
+### Testing the ontology
+
+The ontology is tested using [Shapes Constraint Language (SHACL)](https://www.w3.org/TR/shacl/). To run the tests, run the following command:
+
+```bash
+make test
+```
+
+### Other commands
+
+You can get the list of all available commands by running the following command:
+
+```bash
+make help
+```
+
+Which will output the following:
+
+```text
+Usage:
+  make <target>
+
+Targets:
+  Clean:
+    clean                 Clean all generated files
+  Build:
+    build                 Build all the files
+    build-ontology        Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+    build-ontology-ttl    Build the ontology in Turtle format
+    build-ontology-nt     Build the ontology in N-Triples format
+    build-ontology-rdfxml Build the ontology in RDF/XML format
+    build-ontology-jsonld Build the ontology in JSON-LD format
+    build-ontology-bundle Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+  Format:
+    format                Format with all available formatters
+    format-ttl            Format all Turtle files
+  Lint:
+    lint                  Lint with all available linters
+    lint-ttl              Lint all Turtle files
+  Test:
+    test                  Run all available tests
+    test-ontology         Test the ontology
+  Fuseki:
+    fuseki-up             Start a Fuseki server and wait for it to be ready
+    fuseki-down           Stop the Fuseki container
+    fuseki-load           Load the ontology in Fuseki server
+    fuseki-log            Show Fuseki server logs
+  Misc:
+    cache                 Download all required files to cache
+    check                 Check if all required commands are available in the system
+  Help:
+    vars                  Show relevant variables used in this Makefile
+    help                  Show this help.
+
+This Makefile depends on docker. To install it, please follow the instructions:
+- for macOS: https://docs.docker.com/docker-for-mac/install/
+- for Windows: https://docs.docker.com/docker-for-windows/install/
+- for Linux: https://docs.docker.com/engine/install/
+```
 
 ## Contributing
 

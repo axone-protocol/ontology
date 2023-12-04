@@ -1,7 +1,7 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
 # Docker images
-DOCKER_IMAGE_FUSEKI   := docuteam/fuseki:4.2.0
+DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
@@ -9,13 +9,14 @@ DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
 
 # Executables
 VERSION_OWL_CLI := 1.2.4
-EXEC_OWL_CLI := owl-cli-$(VERSION_OWL_CLI).jar
+EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
 
 # Deployment
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
 DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT=30
 DEPLOYMENT_FUSEKI_PORT=3030
-DEPLOYMENT_FUSEKI_JVM_ARGS=-Xmx4g
+DEPLOYMENT_FUSEKI_USER_NAME=admin
+DEPLOYMENT_FUSEKI_USER_PWD=admin
 DEPLOYMENT_FUSEKI_DATASET=dataverse
 
 # Some colors
@@ -31,32 +32,37 @@ ROOT               := .
 
 DST                := $(ROOT)/target
 DST_CACHE          := $(DST)/.cache
-DST_EXM            := $(DST)/example
+DST_MAKE           := $(DST)/.make
 DST_ONT            := $(DST)/ontology
-DST_LINT           := $(DST)/lint
-DST_TEST           := $(DST)/test
+DST_FORMAT         := $(DST_MAKE)/format
+DST_LINT           := $(DST_MAKE)/lint
+DST_TEST           := $(DST_MAKE)/test
 
+# - Build
 SRC_ONT            := $(ROOT)/src
-SRC_EXM            := $(ROOT)/example
-SRC_TST            := $(ROOT)/test
-SRC_EXMS           := $(shell find $(SRC_EXM) -name "*.ttl" | sort)
 SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
-SRC_TTLS           := $(shell find $(SRC_ONT) $(SRC_EXM) -name "*.ttl" | sort)
+OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
+OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
+OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
+OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
+
+OKP4_ARTIFACT_ID   := okp4-ontology
+BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID).ttl
+BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID).nt
+BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID).rdf.xml
+BIN_OKP4_JSONLD    := $(DST)/$(OKP4_ARTIFACT_ID).jsonld
+BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-bundle.tar.gz
+
+# - Format
+FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
+
+# - Lint
+FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
+
+# - Test
+SRC_TST            := $(ROOT)/test
 SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
-
-OBJ_EXMS           := $(patsubst $(SRC_EXM)/%.ttl,$(DST_EXM)/%.nt,$(SRC_EXMS))
-OBJ_ONTS           := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
-FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested.flag,$(SRC_TSTS))
-FLG_TTLS_FMT       := $(patsubst $(ROOT)/%.ttl,$(DST_LINT)/%.formatted.flag,$(SRC_TTLS))
-FLG_TTLS_LNT       := $(patsubst $(ROOT)/%.ttl,$(DST_LINT)/%.linted.flag,$(SRC_TTLS))
-FLG_CHECK_OK       := $(DST)/check.ok.flag
-
-BIN_OKP4_TTL       := $(DST)/okp4.ttl
-BIN_OKP4_NT        := $(DST)/okp4.nt
-BIN_OKP4_RDFXML    := $(DST)/okp4.rdf.xml
-BIN_EXAMPLE_TTL    := $(DST)/examples.ttl
-BIN_EXAMPLE_NT     := $(DST)/examples.nt
-BIN_EXAMPLE_JSONLD := $(DST)/examples.jsonld
+FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 
 # sed -i support
 SED_FLAG=
@@ -111,27 +117,45 @@ clean: ## Clean all generated files
 
 ## Build:
 .PHONY: build
-build: build-ontology build-examples ## Build all the files (ontology and examples)
+build: build-ontology-bundle ## Build all the files
 
-.PHONY: cache build-ontology
-build-ontology: check $(BIN_OKP4_TTL) $(BIN_OKP4_RDFXML) ## Build the ontology
+.PHONY: build-ontology
+build-ontology: check $(DST) build-ontology-ttl build-ontology-nt build-ontology-rdfxml build-ontology-jsonld ## Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
 
-.PHONY: cache build-examples
-build-examples: check $(BIN_EXAMPLE_TTL) $(BIN_EXAMPLE_JSONLD) ## Build the examples
+.PHONY: build-ontology-ttl
+build-ontology-ttl: check $(DST) $(BIN_OKP4_TTL) ## Build the ontology in Turtle format
 
-$(OBJ_ONTS): $(DST_ONT)/%.nt: $(SRC_ONT)/%.ttl
-	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
+.PHONY: build-ontology-nt
+build-ontology-nt: check $(DST) $(BIN_OKP4_NT) ## Build the ontology in N-Triples format
+
+.PHONY: build-ontology-rdfxml
+build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Build the ontology in RDF/XML format
+
+.PHONY: build-ontology-jsonld
+build-ontology-jsonld: check $(DST) $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
+
+$(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m 777 $(@D)
+	@cp $< $@
+
+$(OBJ_ONTS_NT): $(DST_ONT)/%.nt: $(DST_ONT)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
 	@${call NT_UNIQUIFY,$@}
 
-$(OBJ_EXMS): $(DST_EXM)/%.nt: $(SRC_EXM)/%.ttl
-	@echo "${COLOR_CYAN}🔄 converting${COLOR_RESET} to ${COLOR_GREEN}$@${COLOR_RESET}"
+$(OBJ_ONTS_RDFXML): $(DST_ONT)/%.rdf.xml: $(DST_ONT)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
-	@${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
-	@${call NT_UNIQUIFY,$@}
+	@${call RDF_SERIALIZE,turtle,rdfxml,$<,$@}
 
-$(BIN_OKP4_NT): $(OBJ_ONTS)
+$(OBJ_ONTS_JSONLD): $(DST_ONT)/%.jsonld: $(DST_ONT)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m 777 $(@D)
+	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
+
+$(BIN_OKP4_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@cat $^ > $@
 
@@ -145,26 +169,32 @@ $(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
 
-$(BIN_EXAMPLE_NT): $(OBJ_EXMS)
-	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-	@cat $^ > $@
-
-$(BIN_EXAMPLE_TTL): $(BIN_EXAMPLE_NT)
-	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
-	@${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
-
-$(BIN_EXAMPLE_JSONLD): $(BIN_EXAMPLE_NT)
-	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} examples ${COLOR_GREEN}$@${COLOR_RESET}"
+$(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+	@touch $@
 	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
+
+.PHONY: build-ontology-bundle
+build-ontology-bundle: $(DST) build-ontology $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+
+$(BIN_OKP4_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name "*.ttl") $(ROOT)/LICENSE
+	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET} tarball"
+	@tar -cvzf $(BIN_OKP4_BUNDLE) \
+	  -C $(abspath $(ROOT)) LICENSE \
+	  -C $(abspath $(DST)) $(shell cd $(DST) ; echo $(OKP4_ARTIFACT_ID).*) \
+	  -C $(abspath $(DST_ONT)) $(shell cd $(DST_ONT) ; echo *)
+	@echo "${COLOR_CYAN}📊 tarball ${COLOR_GREEN}statistics${COLOR_RESET}"
+	@echo "${COLOR_CYAN}   ↳ 🗃️ number of files${COLOR_RESET}: ${COLOR_GREEN}$$(tar -tzf $(BIN_OKP4_BUNDLE) | wc -l | bc)${COLOR_RESET}"
+	@echo "${COLOR_CYAN}   ↳ 📏 size${COLOR_RESET}           : ${COLOR_GREEN}$$(du -sh $(BIN_OKP4_BUNDLE) | cut -f1)${COLOR_RESET}"
 
 ## Format:
 .PHONY: format
 format: check format-ttl ## Format with all available formatters
 
 .PHONY: format-ttl
-format-ttl: check cache $(FLG_TTLS_FMT) ## Format all Turtle files
+format-ttl: check cache $(FLG_FMT_TTLS) ## Format all Turtle files
 
-$(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
+$(FLG_FMT_TTLS): $(DST_FORMAT)/%.formatted: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@${call RDF_WRITE,turtle,$<,"$<.formatted"}
@@ -176,9 +206,9 @@ $(FLG_TTLS_FMT): $(DST_LINT)/%.formatted.flag: $(ROOT)/%.ttl
 lint: lint-ttl ## Lint with all available linters
 
 .PHONY: lint-ttl
-lint-ttl: check cache $(FLG_TTLS_LNT) ## Lint all Turtle files
+lint-ttl: check cache $(FLG_LINT_TTLS) ## Lint all Turtle files
 
-$(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
+$(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@docker run --rm \
@@ -192,13 +222,13 @@ $(FLG_TTLS_LNT): $(DST_LINT)/%.linted.flag: $(ROOT)/%.ttl
 test: test-ontology ## Run all available tests
 
 .PHONY: test-ontology
-test-ontology: check build $(FLG_TSTS) ## Test final (generated) ontology
+test-ontology: check build-ontology-nt $(FLG_TSTS) ## Test the ontology
 
-$(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*.ttl)
-	@echo "${COLOR_CYAN}🧪 testing: ${COLOR_GREEN}$<${COLOR_RESET}"
+$(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
+	@echo "${COLOR_CYAN}🧪 test: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@bash -c '\
-		for target in $(BIN_OKP4_NT) $(BIN_EXAMPLE_NT); do \
+		for target in $(BIN_OKP4_NT); do \
 			$(call RDF_SHACL,$<,$$target,$@) \
 			&& echo "  ↳ ✅ ${COLOR_CYAN}$$target ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
 			|| { \
@@ -209,45 +239,51 @@ $(FLG_TSTS): $(DST_TEST)/%.tested.flag: $(SRC_TST)/%.ttl $(wildcard $(SRC_ONT)/*
 	'
 
 ## Fuseki:
-.PHONY: fuseki-start
-fuseki-start: check build ## Start Fuseki server with the ontology and examples loaded in it
-	@echo "${COLOR_CYAN}🚀 starting ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+.PHONY: fuseki-up
+fuseki-up: ## Start a Fuseki server and wait for it to be ready
 	@if [ "$$(docker ps -q -f name=${DEPLOYMENT_FUSEKI_CONTAINER})" ]; then \
-      echo "${COLOR_CYAN}❌ container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} already running"; \
-	  exit 1; \
+	  echo "${COLOR_CYAN}🟢 Fuseki already running on container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} and exposing ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET}"; \
+	else \
+	  echo "${COLOR_CYAN}🚀 starting ${COLOR_GREEN}Fuseki${COLOR_RESET} server" && \
+	  docker run \
+	    --rm \
+	    -d \
+	    --name ${DEPLOYMENT_FUSEKI_CONTAINER} \
+	    -p ${DEPLOYMENT_FUSEKI_PORT}:${DEPLOYMENT_FUSEKI_PORT} \
+	    -v `pwd`/shiro.ini:/fuseki/shiro.ini \
+	    -e ADMIN_PASSWORD=${DEPLOYMENT_FUSEKI_USER_PWD} \
+	    -e ENABLE_DATA_WRITE=true \
+	    -e ENABLE_UPDATE=true \
+	    -e ENABLE_UPLOAD=true \
+	    ${DOCKER_IMAGE_FUSEKI} && \
+	  sleep 1 && \
+	  echo "${COLOR_CYAN}⏱️ waiting ${COLOR_RESET}for ${COLOR_GREEN}REST API${COLOR_RESET} to be ${COLOR_GREEN}ready${COLOR_RESET}...${COLOR_RESET}" && \
+	  timeout ${DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT} sh -c 'until $$(curl --output /dev/null --silent --head --fail http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/ping); do \
+	      printf '.'; \
+	      sleep 1; \
+	  done' && \
+	  echo "" \
+	  echo "${COLOR_CYAN}🟢 Fuseki running on container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET} and exposing ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET} - have fun 🎉" || \
+	  (echo "❌ ${COLOR_RED}failed${COLOR_RESET}" && exit 1); \
 	fi
-	@docker run \
-	  --rm \
-	  -d \
-	  --name ${DEPLOYMENT_FUSEKI_CONTAINER} \
-	  -p ${DEPLOYMENT_FUSEKI_PORT}:${DEPLOYMENT_FUSEKI_PORT} \
-	  -v `pwd`/shiro.ini:/fuseki/shiro.ini \
-	  -e -JVM_ARGS=${DEPLOYMENT_FUSEKI_JVM_ARGS} \
-	  ${DOCKER_IMAGE_FUSEKI}
-	@sleep 1
-	@echo "${COLOR_CYAN}⏱️ waiting for REST API to be ready...${COLOR_RESET}"
-	@timeout ${DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT} sh -c 'until $$(curl --output /dev/null --silent --head --fail http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/ping); do \
-	    printf '.'; \
-	    sleep 1; \
-	done'
-	@echo ""
-	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
-	@curl -X POST --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
-	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
-	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
-	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_EXAMPLE_TTL}${COLOR_RESET}"
-	@curl -X POST -H "Content-Type: text/turtle" --data-binary "@${BIN_EXAMPLE_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
-	@echo "${COLOR_CYAN}🟢 running on: ${COLOR_GREEN}http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${COLOR_RESET} - have fun 🎉"
 
-.PHONY: check fuseki-stop
-fuseki-stop: ## Stop Fuseki server
-	@echo "${COLOR_CYAN}✋ stopping ${COLOR_GREEN}Fuseki${COLOR_RESET} server"
+.PHONY: fuseki-down
+fuseki-down: check ## Stop the Fuseki container
+	@echo "${COLOR_CYAN}✋ stopping ${COLOR_GREEN}Fuseki${COLOR_RESET} server running on container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET}"
 	@docker stop ${DEPLOYMENT_FUSEKI_CONTAINER}
 	@echo "${COLOR_CYAN}⚪️ Fuseki server stopped${COLOR_RESET}"
 
+.PHONY: fuseki-load
+fuseki-load: $(BIN_OKP4_TTL) fuseki-up ## Load the ontology in Fuseki server
+	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
+	curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
+	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
+	@curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
+
 .PHONY: fuseki-log
 fuseki-log: check ## Show Fuseki server logs
-	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER}
+	@echo "${COLOR_CYAN}📜 showing ${COLOR_GREEN}Fuseki logs${COLOR_RESET} from container ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_CONTAINER}${COLOR_RESET}"
+	@docker logs ${DEPLOYMENT_FUSEKI_CONTAINER} -f
 
 ## Misc:
 .PHONY: cache
@@ -275,6 +311,10 @@ $(FLG_CHECK_OK):
 	@mkdir -p -m 777 $(@D)
 	@touch $(FLG_CHECK_OK)
 
+$(DST):
+	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m 777 $(DST)
+
 ## Help:
 .PHONY: vars
 vars: ## Show relevant variables used in this Makefile
@@ -288,7 +328,7 @@ help: ## Show this help.
 	@echo ''
 	@echo 'Targets:'
 	@awk 'BEGIN {FS = ":.*?## "} { \
-		if (/^[a-zA-Z_-]+:.*?##.*$$/) {printf "    ${COLOR_YELLOW}%-20s${COLOR_GREEN}%s${COLOR_RESET}\n", $$1, $$2} \
+		if (/^[a-zA-Z_-]+:.*?##.*$$/) {printf "    ${COLOR_YELLOW}%-22s${COLOR_GREEN}%s${COLOR_RESET}\n", $$1, $$2} \
 		else if (/^## .*$$/) {printf "  ${COLOR_CYAN}%s${COLOR_RESET}\n", substr($$1,4)} \
 		}' $(MAKEFILE_LIST)
 	@echo ''
