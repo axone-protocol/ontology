@@ -3,10 +3,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tst: <https://ontology.okp4.space/test/> .
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix meta: <https://ontology.okp4.space/metadata/dataset/> .
-@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix tst: <https://w3id.org/okp4/ontology/test/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix meta: <https://w3id.org/okp4/ontology/metadata/dataset/> .
+@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
 
 tst:AssertGeneralMetadatas a sh:NodeShape ;
   sh:targetClass meta:GeneralMetadata ;
@@ -24,5 +24,5 @@ tst:AssertGeneralMetadatas a sh:NodeShape ;
             topic:LogisticsRetailSupplyChainECommerce
             topic:MarketingAndCustomerBehavior
             topic:Other ) ; 
-    sh:message "meta:GeneralMetadata requires one core:hasTopic instance part of the <https://ontology.okp4.space/thesaurus/topic> thesaurus."@en ;
+    sh:message "meta:GeneralMetadata requires one core:hasTopic instance part of the <https://w3id.org/okp4/ontology/thesaurus/topic> thesaurus."@en ;
   ] .

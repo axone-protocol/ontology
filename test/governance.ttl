@@ -3,9 +3,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix meta: <https://ontology.okp4.space/metadata/governance/> .
-@prefix tst: <https://ontology.okp4.space/test/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix meta: <https://w3id.org/okp4/ontology/metadata/governance/> .
+@prefix tst: <https://w3id.org/okp4/ontology/test/> .
 
 tst:AssertArticles a sh:NodeShape ;
   sh:targetClass meta:Article ;

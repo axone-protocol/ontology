@@ -1,11 +1,11 @@
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix zone: <https://ontology.okp4.space/dataverse/zone/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix zone: <https://w3id.org/okp4/ontology/dataverse/zone/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/zone/metadata/8de73f45-cd3d-4194-b52d-81c98f78fecf> a owl:NamedIndividual, 
-        <https://ontology.okp4.space/metadata/zone/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/zone/metadata/8de73f45-cd3d-4194-b52d-81c98f78fecf> a owl:NamedIndividual, 
+        <https://w3id.org/okp4/ontology/metadata/zone/GeneralMetadata> ;
     core:describes zone:ababcf97-a85f-4bf2-b890-34624928452c ;  
     core:hasDescription "Le calcul de l'empreinte carbone d'une exploitation agricole nécessite de nombreuses données (consommation d'électricité, taille du cheptel, produits phytosanitaires utilisés, etc.) La collecte de ces données prend beaucoup de temps (en moyenne 1 jour par exploitation) alors que toutes ces données existent dans différents systèmes d'information. O2M développe un outil numérique pour le calcul des crédits carbone. L'objectif de cette Zone est d'automatiser la collecte des open data agricoles."@fr ;
     core:hasDescription "Calculating the carbon footprint of a farm requires a lot of data (electricity consumption, livestock size, plant protection products used, etc.). The collection of these data is very time consuming (on average 1 day) while all these data exist in various information systems. O2M is developing a digital tool for the calculation of carbon credits. The objective of this Zone is to automate the collection of agricultural open data."@en ;
@@ -18,8 +18,8 @@
     core:hasTitle "APPEL AGRI"@de ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-<https://ontology.okp4.space/dataverse/zone/metadata/4574dd4a-2a12-4608-bdb3-fa8193be49fa> a owl:NamedIndividual,   
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/zone/metadata/4574dd4a-2a12-4608-bdb3-fa8193be49fa> a owl:NamedIndividual,   
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-08-28T15:29:16.507000+00:00"^^xsd:dateTime ;
     core:describes zone:ababcf97-a85f-4bf2-b890-34624928452c ;  

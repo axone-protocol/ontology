@@ -1,11 +1,11 @@
-@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
-@prefix core: <https://ontology.okp4.space/core/> .
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/27c1fbf8-038e-4002-a48d-1de142b41ebe> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/27c1fbf8-038e-4002-a48d-1de142b41ebe> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:6272c8d0-f5ed-4394-8f54-a7b429faec13 ;
     core:hasCategory category:DataCleaning ;
     core:hasDescription "L'outil Data Refactor permet d'éditer, de modifier un jeu de données afin de le standardiser."@fr ;
@@ -19,8 +19,8 @@
     core:hasTitle "Data Refactor"@en ;
     core:hasTitle "Data Refactor"@de .
 
-<https://ontology.okp4.space/dataverse/service/metadata/ea1c97e1-3b79-4c1a-9d07-6caa347d25eb> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/ea1c97e1-3b79-4c1a-9d07-6caa347d25eb> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-03-18T08:55:31Z"^^xsd:dateTimeStamp ;
     core:describes service:6272c8d0-f5ed-4394-8f54-a7b429faec13 ;

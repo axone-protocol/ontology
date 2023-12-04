@@ -1,11 +1,11 @@
-@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
-@prefix core: <https://ontology.okp4.space/core/> .
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/a17aa376-ae53-45a8-abff-cc95170caf9c> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/a17aa376-ae53-45a8-abff-cc95170caf9c> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:60ac66b6-ed76-4504-bdde-de5901d2b482 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Dropbox est un service de stockage et de partage de copies de fichiers locaux en ligne."@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "Dropbox"@fr ;
     core:hasTitle "Dropbox"@de .
 
-<https://ontology.okp4.space/dataverse/service/metadata/230f54ec-5510-4347-b692-beae2c616d77> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/230f54ec-5510-4347-b692-beae2c616d77> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6Mkq66auaGba46TMPxNYoAkV5AQ33tXkBFXzU1j93Aw5qik> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:60ac66b6-ed76-4504-bdde-de5901d2b482 ;

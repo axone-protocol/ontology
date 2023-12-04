@@ -1,15 +1,15 @@
-@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
-@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
-@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix area: <https://w3id.org/okp4/ontology/thesaurus/area/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix dataset: <https://w3id.org/okp4/ontology/dataverse/dataset/> .
+@prefix license: <https://w3id.org/okp4/ontology/thesaurus/license/> .
+@prefix mediatype: <https://w3id.org/okp4/ontology/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
-@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/dataset/metadata/08dfb35e-604e-4409-b052-31d7412ac35d> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/dataset/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/dataset/metadata/08dfb35e-604e-4409-b052-31d7412ac35d> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/dataset/GeneralMetadata> ;
     core:describes dataset:142dacec-eb0f-4cd3-ab2b-d2095b8552b3 ;
     core:hasCreator "IGN" ;
     core:hasDescription "ADMIN EXPRESS permet d'effectuer des croisements avec d'autres sources de données dans le but de construire des représentations thématiques du territoire selon une granularité administrative (commune, arrondissement départementaux, département, région). ADMIN EXPRESS est décliné dans une édition \"COG\", conforme au code officiel géographique publié chaque année par l'INSEE."@fr ;
@@ -33,8 +33,8 @@
     core:hasTitle "ADMIN EXPRESS COG 2022 DEPARTEMENT"@de ;
     core:hasTopic topic:Other .
 
-<https://ontology.okp4.space/dataverse/dataset/metadata/ab1d3821-3b74-4281-8c46-f1b10ec15050> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/dataset/metadata/ab1d3821-3b74-4281-8c46-f1b10ec15050> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-08-27T14:11:45+00:00"^^xsd:dateTime ;
     core:describes dataset:142dacec-eb0f-4cd3-ab2b-d2095b8552b3 ;

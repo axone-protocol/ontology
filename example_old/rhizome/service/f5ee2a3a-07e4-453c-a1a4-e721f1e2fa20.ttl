@@ -1,11 +1,11 @@
-@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
-@prefix core: <https://ontology.okp4.space/core/> .
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/da2f0a5d-d04f-48c8-bded-3012ea799b09> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/da2f0a5d-d04f-48c8-bded-3012ea799b09> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 ;
     core:hasCategory category:Storage ;
     core:hasDescription "IPFS est un protocole décentralisé conçu pour faciliter le stockage, le partage et la récupération de fichiers à l'échelle mondiale."@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "IPFS"@fr ;
     core:hasTitle "IPFS"@de .
 
-<https://ontology.okp4.space/dataverse/service/metadata/f6bd8a39-b5ce-47ea-8f03-038347319d79> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/f6bd8a39-b5ce-47ea-8f03-038347319d79> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6MkpoEv7sCWmD3SbXHEef5q16vaiFfKoXtFVyKmLuKzx72W> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:f5ee2a3a-07e4-453c-a1a4-e721f1e2fa20 ;
