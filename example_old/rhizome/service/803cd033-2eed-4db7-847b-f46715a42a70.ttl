@@ -1,11 +1,11 @@
-@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
-@prefix core: <https://ontology.okp4.space/core/> .
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/8e8777c2-cf44-480b-9629-72519bdfe1b4> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/8e8777c2-cf44-480b-9629-72519bdfe1b4> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:803cd033-2eed-4db7-847b-f46715a42a70 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Service d'hébergement de fichiers."@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "Mega"@fr ;
     core:hasTitle "Mega"@de .
 
-<https://ontology.okp4.space/dataverse/service/metadata/d9cc5650-2690-490e-ba77-33bb62c95ac0> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/d9cc5650-2690-490e-ba77-33bb62c95ac0> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6MkrpCPVDHcsqi3aaqnemLC1aBTUwkfPwTyzc8sFWYwm1PA> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:803cd033-2eed-4db7-847b-f46715a42a70 ;

@@ -1,14 +1,14 @@
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
-@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
-@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix dataset: <https://w3id.org/okp4/ontology/dataverse/dataset/> .
+@prefix license: <https://w3id.org/okp4/ontology/thesaurus/license/> .
+@prefix mediatype: <https://w3id.org/okp4/ontology/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
-@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/dataset/metadata/597b0be8-0f76-42ee-8d3c-898a6334a32e> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/dataset/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/dataset/metadata/597b0be8-0f76-42ee-8d3c-898a6334a32e> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/dataset/GeneralMetadata> ;
     core:describes dataset:d23f0f6c-780d-4897-ba91-111d519b6f56 ;
     core:hasCreator "INSEE" ;
     core:hasDescription "Ce jeu de données est obtenu à l'aide de la jointure entre la BASE SIRENE et la Table référentielle des codes NAF afin d'obtenir des informations sur l'activité des établissements."@fr ;
@@ -27,8 +27,8 @@
     core:hasTitle "BASE SIRENE - NAF"@de ;
     core:hasTopic topic:BusinessAndPurchase .
 
-<https://ontology.okp4.space/dataverse/dataset/metadata/c685b0c2-f108-49c2-9853-288b7069f91d> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/dataset/metadata/c685b0c2-f108-49c2-9853-288b7069f91d> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-06-15T21:25:21+00:00"^^xsd:dateTime ;
     core:describes dataset:d23f0f6c-780d-4897-ba91-111d519b6f56 ;

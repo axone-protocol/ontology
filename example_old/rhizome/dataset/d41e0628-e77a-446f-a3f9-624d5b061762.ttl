@@ -1,22 +1,22 @@
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
-@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
-@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix dataset: <https://w3id.org/okp4/ontology/dataverse/dataset/> .
+@prefix license: <https://w3id.org/okp4/ontology/thesaurus/license/> .
+@prefix mediatype: <https://w3id.org/okp4/ontology/thesaurus/media-type/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
-@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/dataset/metadata/4f085bb3-da4b-43b0-b3eb-2c4d8014b9eb> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/dataset/metadata/4f085bb3-da4b-43b0-b3eb-2c4d8014b9eb> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-05-14T20:03:47+00:00"^^xsd:dateTime ;
     core:describes dataset:d41e0628-e77a-446f-a3f9-624d5b061762 ;
     core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:updatedOn "2022-05-14T20:03:47+00:00"^^xsd:dateTime .
 
-<https://ontology.okp4.space/dataverse/dataset/metadata/53314a52-ba8c-4ae7-b883-38c1911725a1> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/dataset/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/dataset/metadata/53314a52-ba8c-4ae7-b883-38c1911725a1> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/dataset/GeneralMetadata> ;
     core:describes dataset:d41e0628-e77a-446f-a3f9-624d5b061762 ;
     core:hasCreator "OKP4" ;
     core:hasDescription "Ce jeu de données référence toutes les entreprises de l'agriculture, de la sylviculture et de la pêche en France en activité. Obtenu grâce à un enchainement de traitements de la donnée à l'aide du protocole OKP4."@fr ;

@@ -1,11 +1,11 @@
-@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
-@prefix core: <https://ontology.okp4.space/core/> .
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/62d09598-de0d-442c-b880-1e19d43b5ec9> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/62d09598-de0d-442c-b880-1e19d43b5ec9> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:b866c23e-40aa-4597-9387-b4af649b77db ;
     core:hasCategory category:Storage ;
     core:hasDescription "Service de stockage de données"@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "Deutsche Telekom Cloud Object Storage"@fr ;
     core:hasTitle "Deutsche Telekom Cloud Object Storage"@de .
 
-<https://ontology.okp4.space/dataverse/service/metadata/51ca1c69-c562-4b62-a22f-394a6e931811> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/51ca1c69-c562-4b62-a22f-394a6e931811> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6MkgB4UhcF16wHfVWA6KtYqrdcm5KQbVFnmuWbPFitCjKwr> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:b866c23e-40aa-4597-9387-b4af649b77db ;

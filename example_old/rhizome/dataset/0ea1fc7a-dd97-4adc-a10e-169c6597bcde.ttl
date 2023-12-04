@@ -1,14 +1,14 @@
-@prefix area: <https://ontology.okp4.space/thesaurus/area/> .
-@prefix core: <https://ontology.okp4.space/core/> .
-@prefix dataset: <https://ontology.okp4.space/dataverse/dataset/> .
-@prefix dstmeta: <https://ontology.okp4.space/dataverse/dataset/metadata/> .
-@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
-@prefix mediatype: <https://ontology.okp4.space/thesaurus/media-type/> .
-@prefix meta: <https://ontology.okp4.space/metadata/> .
-@prefix metadst: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix area: <https://w3id.org/okp4/ontology/thesaurus/area/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix dataset: <https://w3id.org/okp4/ontology/dataverse/dataset/> .
+@prefix dstmeta: <https://w3id.org/okp4/ontology/dataverse/dataset/metadata/> .
+@prefix license: <https://w3id.org/okp4/ontology/thesaurus/license/> .
+@prefix mediatype: <https://w3id.org/okp4/ontology/thesaurus/media-type/> .
+@prefix meta: <https://w3id.org/okp4/ontology/metadata/> .
+@prefix metadst: <https://w3id.org/okp4/ontology/metadata/dataset/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
-@prefix topic: <https://ontology.okp4.space/thesaurus/topic/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dstmeta:d1615703-4ee1-4e2f-997e-15aecf1eea4e a owl:NamedIndividual,

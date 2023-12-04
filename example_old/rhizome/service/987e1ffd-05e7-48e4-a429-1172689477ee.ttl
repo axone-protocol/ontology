@@ -1,11 +1,11 @@
-@prefix category: <https://ontology.okp4.space/thesaurus/service-category/> .
-@prefix core: <https://ontology.okp4.space/core/> .
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://ontology.okp4.space/dataverse/service/> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ontology.okp4.space/dataverse/service/metadata/32ef3b7a-9cbb-4e2a-bc9c-3916687775fa> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/service/GeneralMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/32ef3b7a-9cbb-4e2a-bc9c-3916687775fa> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:987e1ffd-05e7-48e4-a429-1172689477ee ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Grouping permet organiser des données identiques en groupes."@fr ;
@@ -18,8 +18,8 @@
     core:hasTitle "Data Grouping"@en ;
     core:hasTitle "Data Grouping"@de .
 
-<https://ontology.okp4.space/dataverse/service/metadata/a65267da-98ec-4db6-a8ad-29aeb48efd5e> a owl:NamedIndividual,
-        <https://ontology.okp4.space/metadata/AuditMetadata> ;
+<https://w3id.org/okp4/ontology/dataverse/service/metadata/a65267da-98ec-4db6-a8ad-29aeb48efd5e> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-08-30T05:33:00Z"^^xsd:dateTimeStamp ;
     core:describes service:987e1ffd-05e7-48e4-a429-1172689477ee ;
