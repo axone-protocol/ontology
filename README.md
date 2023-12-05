@@ -114,11 +114,11 @@ This will build the `okp4` ontology under the `target` directory. The files gene
 
 ```text
 ./target
-   ├── okp4-ontology.nt
-   ├── okp4-ontology.rdf.xml
-   ├── okp4-ontology.jsonld
-   ├── okp4-ontology.ttl
-   └── okp4-ontology-bundle.tar.gz
+   ├── okp4-ontology-<version>.nt
+   ├── okp4-ontology-<version>.rdf.xml
+   ├── okp4-ontology-<version>.jsonld
+   ├── okp4-ontology-<version>.ttl
+   └── okp4-ontology-<version>-bundle.tar.gz
 ```
 
 ### Deploying the ontology in local triple store
