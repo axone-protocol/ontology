@@ -1,9 +1,0 @@
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix : <> .
-<https://ontology.okp4.space/core/1.1.2> a prov:Entity;
-	 dc:title "OKP4 Ontology: Ontology for Knowledge Graph";
-	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2022-08-03";
-.
