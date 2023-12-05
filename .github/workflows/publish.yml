@@ -1,19 +1,24 @@
 name: Publish
-
-on:
+"on":
   push:
-    tags: [ "v*" ]
-
+    branches:
+      - main
+    tags:
+      - v*
 concurrency:
-  group: publish-${{ github.ref }}
+  group: "publish-${{ github.ref }}"
   cancel-in-progress: true
-
 jobs:
   publish-gh-pages:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+
+      - name: Bump version to next (if not tagged)
+        if: "startsWith(github.ref, 'refs/heads/')"
+        run: |
+          echo next > version
 
       - name: Build documentation
         run: |
@@ -26,6 +31,4 @@ jobs:
           publish_dir: target/ontology/
           destination_dir: .
           keep_files: true
-          commit-message: |
-            chore: deploy ontology v${{ steps.get_version.outputs.version }}
           cname: ontology.okp4.space
