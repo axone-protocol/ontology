@@ -182,6 +182,7 @@ Targets:
   Misc:
     cache                 Download all required files to cache
     check                 Check if all required commands are available in the system
+    version               Show the current version
   Help:
     vars                  Show relevant variables used in this Makefile
     help                  Show this help.
