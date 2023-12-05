@@ -1,6 +1,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix : <https://w3id.org/okp4/ontology/thesaurus/media-type/> .
+@prefix : <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -218,7 +218,7 @@
 
 :application_andrew-inset a skos:Concept ;
   :hasMediaType "application/andrew-inset" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Andrew Toolkit -osio"@fi ;
   skos:prefLabel "Andrew Toolkit innsats"@nn ;
   skos:prefLabel "Andrew Toolkit inset"@cs ;
@@ -235,7 +235,7 @@
 
 :application_illustrator a skos:Concept ;
   :hasMediaType "application/illustrator" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Adobe Illustrator -asiakirja"@fi ;
   skos:prefLabel "Adobe Illustrator document"@en ;
   skos:prefLabel "Adobe Illustrator-Dokument"@de ;
@@ -246,7 +246,7 @@
 
 :application_mac-binhex40 a skos:Concept ;
   :hasMediaType "application/mac-binhex40" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil BinHex-amgodwyd Macintosh"@cy ;
   skos:prefLabel "Macintosh BinHe-kodet arkiv"@no ;
   skos:prefLabel "Macintosh BinHex -koodattu tiedosto"@fi ;
@@ -265,7 +265,7 @@
 
 :application_octet-stream a skos:Concept ;
   :hasMediaType "application/octet-stream" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "inconnu"@fr ;
   skos:prefLabel "tuntematon"@fi ;
   skos:prefLabel "ukjent"@no ;
@@ -275,7 +275,7 @@
 
 :application_oda a skos:Concept ;
   :hasMediaType "application/oda" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen ODA"@cy ;
   skos:prefLabel "Dokument ODA"@cs ;
   skos:prefLabel "ODA document"@en ;
@@ -294,7 +294,7 @@
 
 :application_ogg a skos:Concept ;
   :hasMediaType "application/ogg" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ogg Vorbis -ääni"@fi ;
   skos:prefLabel "Ogg Vorbis audio faylı"@az ;
   skos:prefLabel "Ogg Vorbis audio"@en ;
@@ -313,7 +313,7 @@
 
 :application_pdf a skos:Concept ;
   :hasMediaType "application/pdf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Document PDF"@fr ;
   skos:prefLabel "Dogfen PDF"@cy ;
   skos:prefLabel "PDF document"@en ;
@@ -327,7 +327,7 @@
 
 :application_pgp a skos:Concept ;
   :hasMediaType "application/pgp" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Neges PGP"@cy ;
   skos:prefLabel "PGP bericht"@nl ;
   skos:prefLabel "PGP ismarışı"@az ;
@@ -346,7 +346,7 @@
 
 :application_pgp-encrypted a skos:Concept ;
   :hasMediaType "application/pgp-encrypted" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "En-tête de message chiffré PGP/MIME"@fr ;
   skos:prefLabel "PGP/MIME-encrypted message header"@en ;
   skos:prefLabel "PGP/MIME-kryptert meldingshode"@no ;
@@ -355,7 +355,7 @@
 
 :application_pgp-keys a skos:Concept ;
   :hasMediaType "application/pgp-keys" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Allweddi PGP"@cy ;
   skos:prefLabel "Klíče PGP"@cs ;
   skos:prefLabel "PGP açarları"@az ;
@@ -374,7 +374,7 @@
 
 :application_pgp-signature a skos:Concept ;
   :hasMediaType "application/pgp-signature" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "detached OpenPGP signature"@en ;
   skos:prefLabel "erillinen OpenPGP-allekirjoitus"@fi ;
   skos:prefLabel "frakoblet OpenPGP-signatur"@no ;
@@ -383,7 +383,7 @@
 
 :application_pkcs7-mime a skos:Concept ;
   :hasMediaType "application/pkcs7-mime" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil S/MIME"@cy ;
   skos:prefLabel "S/MIME bestand"@nl ;
   skos:prefLabel "S/MIME faylı"@az ;
@@ -402,7 +402,7 @@
 
 :application_pkcs7-signature a skos:Concept ;
   :hasMediaType "application/pkcs7-signature" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "detached S/MIME signature"@en ;
   skos:prefLabel "erillinen S/MIME-allekirjoitus"@fi ;
   skos:prefLabel "frakoblet S/MIME-signatur"@no ;
@@ -411,7 +411,7 @@
 
 :application_postscript a skos:Concept ;
   :hasMediaType "application/postscript" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Document PostScript"@fr ;
   skos:prefLabel "PostScript document"@en ;
   skos:prefLabel "PostScript-Dokument"@de ;
@@ -423,7 +423,7 @@
 :application_rtf a skos:Concept ;
   :hasMediaType "application/rtf" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen Testun Gyfoethog"@cy ;
   skos:prefLabel "RTF-asiakirja"@fi ;
   skos:prefLabel "RTF-fájl"@hu ;
@@ -442,7 +442,7 @@
 :application_smil a skos:Concept ;
   :hasMediaType "application/smil" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Gesynchroniseerde multimedia integratie taal"@nl ;
   skos:prefLabel "Iaith Integreiddio Aml-Gyfrwng wedi ei Chydweddu"@cy ;
   skos:prefLabel "SMIL-Dokument"@de ;
@@ -459,7 +459,7 @@
 
 :application_vndcorel-draw a skos:Concept ;
   :hasMediaType "application/vnd.corel-draw" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Corel Draw -piirros"@fi ;
   skos:prefLabel "Corel Draw drawing"@en ;
   skos:prefLabel "Corel Draw tekening"@nl ;
@@ -478,7 +478,7 @@
 
 :application_vndhp-hpgl a skos:Concept ;
   :hasMediaType "application/vnd.hp-hpgl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "HP Graphics Language (piirturi)"@fi ;
   skos:prefLabel "HP Graphics Language (plotter)"@en ;
   skos:prefLabel "HP-Grafiksprache (Plotter)"@de ;
@@ -486,7 +486,7 @@
 
 :application_vndhp-pcl a skos:Concept ;
   :hasMediaType "application/vnd.hp-pcl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Fichier du langage de contrôle de l'imprimante HP"@fr ;
   skos:prefLabel "HP Printer Control Language -tiedosto"@fi ;
   skos:prefLabel "HP Printer Control Language file"@en ;
@@ -494,7 +494,7 @@
 
 :application_vndlotus-1-2-3 a skos:Concept ;
   :hasMediaType "application/vnd.lotus-1-2-3" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Lotus 1-2-3 -taulukko"@fi ;
   skos:prefLabel "Lotus 1-2-3 hesab cədvəli"@az ;
   skos:prefLabel "Lotus 1-2-3 regneark"@no ;
@@ -514,7 +514,7 @@
 :application_vndms-excel a skos:Concept ;
   :hasMediaType "application/vnd.ms-excel" ;
   skos:exactMatch :application_msexcel ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Feuille de calcul Microsoft Excel"@fr ;
   skos:prefLabel "Microsoft Excel -taulukko"@fi ;
   skos:prefLabel "Microsoft Excel hesab cədvəli"@az ;
@@ -533,7 +533,7 @@
 
 :application_vndms-powerpoint a skos:Concept ;
   :hasMediaType "application/vnd.ms-powerpoint" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft PowerPoint -esitys"@fi ;
   skos:prefLabel "Microsoft PowerPoint presentation"@en ;
   skos:prefLabel "Microsoft PowerPoint-Präsentation"@de ;
@@ -544,7 +544,7 @@
 :application_vndms-word a skos:Concept ;
   :hasMediaType "application/vnd.ms-word" ;
   skos:exactMatch :application_msword ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Document Microsoft Word"@fr ;
   skos:prefLabel "Dogfen Miscrosoft Word"@cy ;
   skos:prefLabel "Dokument Microsoft Word"@cs ;
@@ -563,14 +563,14 @@
 
 :application_vndpalm a skos:Concept ;
   :hasMediaType "application/vnd.palm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Palmpilot database/document"@en ;
   skos:prefLabel "Palmpilot-Datenbank/-Dokument"@de ;
   skos:prefLabel "Palmpilot-tietokanta tai -asiakirja"@fi .
 
 :application_vndrn-realmedia a skos:Concept ;
   :hasMediaType "application/vnd.rn-realmedia" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Document RealAudio/Video"@fr ;
   skos:prefLabel "Dogfen RealAudio neu RealVideo"@cy ;
   skos:prefLabel "Dokument RealAudio/Video"@cs ;
@@ -589,7 +589,7 @@
 
 :application_vndshp a skos:Concept ;
   :hasMediaType "application/vndshp" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Shapefile"@de ;
   skos:prefLabel "Shapefile"@en ;
   skos:prefLabel "Shapefile"@es ;
@@ -602,7 +602,7 @@
 
 :application_vndstardivisioncalc a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.calc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Feuille de calcul StarCalc"@fr ;
   skos:prefLabel "StarCalc hesab cədvəli"@az ;
   skos:prefLabel "StarCalc spreadsheet"@en ;
@@ -621,7 +621,7 @@
 
 :application_vndstardivisionchart a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.chart" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Graf StarChart"@cs ;
   skos:prefLabel "Siart StarChart"@cy ;
   skos:prefLabel "StarCalc 표"@ko ;
@@ -640,7 +640,7 @@
 
 :application_vndstardivisiondraw a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.draw" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Darlun StarDraw"@cy ;
   skos:prefLabel "Kresba StarDraw"@cs ;
   skos:prefLabel "StarCalc 드로잉"@ko ;
@@ -659,7 +659,7 @@
 
 :application_vndstardivisionimpress a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.impress" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Cyflwyniad StarImpress"@cy ;
   skos:prefLabel "Prezentace StarImpress"@cs ;
   skos:prefLabel "StarImpress presentatie"@nl ;
@@ -678,7 +678,7 @@
 
 :application_vndstardivisionmail a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.mail" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "StarMail email"@en ;
   skos:prefLabel "StarMail-E-Mail"@de ;
   skos:prefLabel "StarMail-melding"@no ;
@@ -686,7 +686,7 @@
 
 :application_vndstardivisionmath a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.math" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "StarMath formula"@en ;
   skos:prefLabel "StarMath-Formel"@de ;
   skos:prefLabel "StarMath-asiakirja"@fi ;
@@ -694,7 +694,7 @@
 
 :application_vndstardivisionwriter a skos:Concept ;
   :hasMediaType "application/vnd.stardivision.writer" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen StarWriter"@cy ;
   skos:prefLabel "Dokument StarWriter"@cs ;
   skos:prefLabel "StarWriter document"@en ;
@@ -713,7 +713,7 @@
 
 :application_vndsunxmlcalc a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.calc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Feuille de calcul OpenOffice.org Calc"@fr ;
   skos:prefLabel "OpenOffice.org Calc -taulukko"@fi ;
   skos:prefLabel "OpenOffice.org Calc spreadsheet"@en ;
@@ -723,7 +723,7 @@
 
 :application_vndsunxmlcalctemplate a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.calc.template" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Modèle de feuille de calcul OpenOffice.org Calc"@fr ;
   skos:prefLabel "OpenOffice.org Calc -taulukkomalli"@fi ;
   skos:prefLabel "OpenOffice.org Calc spreadsheet template"@en ;
@@ -733,7 +733,7 @@
 
 :application_vndsunxmldraw a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.draw" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Draw dessin"@fr ;
   skos:prefLabel "OpenOffice.org Draw drawing"@en ;
   skos:prefLabel "OpenOffice.org Draw-Zeichnung"@de ;
@@ -742,7 +742,7 @@
 
 :application_vndsunxmldrawtemplate a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.draw.template" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Draw -piirrosmalli"@fi ;
   skos:prefLabel "OpenOffice.org Draw drawing template"@en ;
   skos:prefLabel "OpenOffice.org Draw modèle de dessin"@fr ;
@@ -751,7 +751,7 @@
 
 :application_vndsunxmlimpress a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.impress" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Impress -esitys"@fi ;
   skos:prefLabel "OpenOffice.org Impress presentation"@en ;
   skos:prefLabel "OpenOffice.org Impress-presentasjon"@no ;
@@ -762,7 +762,7 @@
 
 :application_vndsunxmlimpresstemplate a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.impress.template" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Modèle de présentation d'OpenOffice.org Impress"@fr ;
   skos:prefLabel "OpenOffice.org Impress -esitysmalli"@fi ;
   skos:prefLabel "OpenOffice.org Impress presentation template"@en ;
@@ -773,7 +773,7 @@
 
 :application_vndsunxmlmath a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.math" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "OpenOffice.org Formule mathématique"@fr ;
   skos:prefLabel "OpenOffice.org Math formula"@en ;
   skos:prefLabel "OpenOffice.org Math-asiakirja"@fi ;
@@ -782,7 +782,7 @@
 
 :application_vndsunxmlwriter a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.writer" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Document OpenOffice.org Writer"@fr ;
   skos:prefLabel "OpenOffice.org Writer -asiakirja"@fi ;
   skos:prefLabel "OpenOffice.org Writer document"@en ;
@@ -793,7 +793,7 @@
 
 :application_vndsunxmlwriterglobal a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.writer.global" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Globalt OpenOffice.org Writer-dokument"@no ;
   skos:prefLabel "OpenOffice.org Writer global document"@en ;
   skos:prefLabel "OpenOffice.org Writer-globaldokument"@sv ;
@@ -802,7 +802,7 @@
 
 :application_vndsunxmlwritertemplate a skos:Concept ;
   :hasMediaType "application/vnd.sun.xml.writer.template" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Modèle de Document OpenOffice.org Writer"@fr ;
   skos:prefLabel "OpenOffice.org Writer -asiakirjamalli"@fi ;
   skos:prefLabel "OpenOffice.org Writer document template"@en ;
@@ -814,7 +814,7 @@
   :hasMediaType "application/vnd.wordperfect" ;
   skos:exactMatch :application_wordperfect ;
   skos:exactMatch :application_x-wordperfect ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen WordPerfect"@cy ;
   skos:prefLabel "Dokument WordPerfect"@cs ;
   skos:prefLabel "WordPerfect document"@en ;
@@ -833,7 +833,7 @@
 
 :application_x-abiword a skos:Concept ;
   :hasMediaType "application/x-abiword" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AbiWord document"@en ;
   skos:prefLabel "AbiWord-Dokument"@de ;
   skos:prefLabel "AbiWord-asiakirja"@fi ;
@@ -843,7 +843,7 @@
 
 :application_x-amipro a skos:Concept ;
   :hasMediaType "application/x-amipro" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen Lotus AmiPro"@cy ;
   skos:prefLabel "Dokument Lotus AmiPro"@cs ;
   skos:prefLabel "Lotus AmiPro -asiakirja"@fi ;
@@ -862,7 +862,7 @@
 
 :application_x-applix-spreadsheet a skos:Concept ;
   :hasMediaType "application/x-applix-spreadsheet" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Applix Spreadsheets -taulukko"@fi ;
   skos:prefLabel "Applix Spreadsheets spreadsheet"@en ;
   skos:prefLabel "Applix Spreadsheets-Tabellendokument"@de ;
@@ -871,7 +871,7 @@
 
 :application_x-applix-word a skos:Concept ;
   :hasMediaType "application/x-applix-word" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Applix Word 문서"@ko ;
   skos:prefLabel "Applix Words -asiakirja"@fi ;
   skos:prefLabel "Applix Words document"@en ;
@@ -890,11 +890,11 @@
 
 :application_x-arc a skos:Concept ;
   :hasMediaType "application/x-arc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-archive a skos:Concept ;
   :hasMediaType "application/x-archive" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AR archive"@en ;
   skos:prefLabel "AR-Archiv"@de ;
   skos:prefLabel "AR-arkisto"@fi ;
@@ -902,7 +902,7 @@
 
 :application_x-arj a skos:Concept ;
   :hasMediaType "application/x-arj" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "ARJ archief"@nl ;
   skos:prefLabel "ARJ archive"@en ;
   skos:prefLabel "ARJ arxivi"@az ;
@@ -921,7 +921,7 @@
 :application_x-asp a skos:Concept ;
   :hasMediaType "application/x-asp" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "ASP (active server page)"@hu ;
   skos:prefLabel "Active server page"@cs ;
   skos:prefLabel "Active-Server-Page-Seite"@de ;
@@ -940,7 +940,7 @@
 :application_x-awk a skos:Concept ;
   :hasMediaType "application/x-awk" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AWK script"@en ;
   skos:prefLabel "AWK script"@nl ;
   skos:prefLabel "AWK skripti"@az ;
@@ -958,7 +958,7 @@
 
 :application_x-bcpio a skos:Concept ;
   :hasMediaType "application/x-bcpio" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "BCPIO document"@en ;
   skos:prefLabel "BCPIO document"@nl ;
   skos:prefLabel "BCPIO sənədi"@az ;
@@ -977,7 +977,7 @@
 
 :application_x-bittorrent a skos:Concept ;
   :hasMediaType "application/x-bittorrent" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "BitTorrent seed faylı"@az ;
   skos:prefLabel "BitTorrent seed file"@en ;
   skos:prefLabel "BitTorrent zaad-bestand"@nl ;
@@ -996,7 +996,7 @@
 
 :application_x-blender a skos:Concept ;
   :hasMediaType "application/x-blender" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Blender scene"@en ;
   skos:prefLabel "Blender-Szene"@de ;
   skos:prefLabel "Blender-scene"@no ;
@@ -1004,7 +1004,7 @@
 
 :application_x-bzip a skos:Concept ;
   :hasMediaType "application/x-bzip" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "bzip archive"@en ;
   skos:prefLabel "bzip-Archiv"@de ;
   skos:prefLabel "bzip-arkisto"@fi ;
@@ -1012,7 +1012,7 @@
 
 :application_x-bzip-compressed-tar a skos:Concept ;
   :hasMediaType "application/x-bzip-compressed-tar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "tar archive (bzip-compressed)"@en ;
   skos:prefLabel "tar-Archiv (bzip-komprimiert)"@de ;
   skos:prefLabel "tar-arkisto (bzip-pakattu)"@fi ;
@@ -1020,7 +1020,7 @@
 
 :application_x-cd-image a skos:Concept ;
   :hasMediaType "application/x-cd-image" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CD-Roh-Image"@de ;
   skos:prefLabel "raaka CD-vedos"@fi ;
   skos:prefLabel "raw CD image"@en ;
@@ -1029,7 +1029,7 @@
 :application_x-cgi a skos:Concept ;
   :hasMediaType "application/x-cgi" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CGI script"@en ;
   skos:prefLabel "CGI-Skript"@de ;
   skos:prefLabel "CGI-skript"@no ;
@@ -1037,7 +1037,7 @@
 
 :application_x-chess-pgn a skos:Concept ;
   :hasMediaType "application/x-chess-pgn" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Gêm wyddbwyll PGN"@cy ;
   skos:prefLabel "PGN chess game"@en ;
   skos:prefLabel "PGN schaakspel"@nl ;
@@ -1056,7 +1056,7 @@
 
 :application_x-class-file a skos:Concept ;
   :hasMediaType "application/x-class-file" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Côd beit Java"@cy ;
   skos:prefLabel "Java bajtový kód"@cs ;
   skos:prefLabel "Java bayt kodu"@az ;
@@ -1075,7 +1075,7 @@
 
 :application_x-compress a skos:Concept ;
   :hasMediaType "application/x-compress" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "UNIX-compressed file"@en ;
   skos:prefLabel "UNIX-komprimert fil"@no ;
   skos:prefLabel "UNIX-komprimierte Datei"@de ;
@@ -1083,7 +1083,7 @@
 
 :application_x-compressed-tar a skos:Concept ;
   :hasMediaType "application/x-compressed-tar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "tar archive (gzip-compressed)"@en ;
   skos:prefLabel "tar-Archiv (gzip-komprimiert)"@de ;
   skos:prefLabel "tar-arkisto (gzip-pakattu)"@fi ;
@@ -1091,14 +1091,14 @@
 
 :application_x-core a skos:Concept ;
   :hasMediaType "application/x-core" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Daten zu Programmabsturz"@de ;
   skos:prefLabel "ohjelman kaatumistiedot"@fi ;
   skos:prefLabel "program crash data"@en .
 
 :application_x-cpio a skos:Concept ;
   :hasMediaType "application/x-cpio" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archif CPIO"@cy ;
   skos:prefLabel "Archiv CPIO"@cs ;
   skos:prefLabel "CPIO archief"@nl ;
@@ -1116,7 +1116,7 @@
 
 :application_x-cpio-compressed a skos:Concept ;
   :hasMediaType "application/x-cpio-compressed" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archif CPIO (gywasgwyd drwy gzip)"@cy ;
   skos:prefLabel "Archiv CPIO (komprimovaný gzip)"@cs ;
   skos:prefLabel "CPIO archief (gzip-ingepakt)"@nl ;
@@ -1135,7 +1135,7 @@
 :application_x-csh a skos:Concept ;
   :hasMediaType "application/x-csh" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "C qabıq skripti"@az ;
   skos:prefLabel "C shell script"@en ;
   skos:prefLabel "C shell script"@nl ;
@@ -1154,7 +1154,7 @@
 
 :application_x-dbase a skos:Concept ;
   :hasMediaType "application/x-dbase" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen dBASE"@cy ;
   skos:prefLabel "Dokument dBASE"@cs ;
   skos:prefLabel "dBASE document"@en ;
@@ -1173,11 +1173,11 @@
 
 :application_x-dbm a skos:Concept ;
   :hasMediaType "application/x-dbm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-dc-rom a skos:Concept ;
   :hasMediaType "application/x-dc-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dreamcast ROM"@el ;
   skos:prefLabel "Dreamcast ROM"@en ;
   skos:prefLabel "Dreamcast-ROM"@de ;
@@ -1186,7 +1186,7 @@
 
 :application_x-deb a skos:Concept ;
   :hasMediaType "application/x-deb" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Balíček Debianu"@cs ;
   skos:prefLabel "Debian package"@en ;
   skos:prefLabel "Debian paketi"@az ;
@@ -1205,7 +1205,7 @@
 
 :application_x-designer a skos:Concept ;
   :hasMediaType "application/x-designer" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "QT Designer-Datei"@de ;
   skos:prefLabel "Qt Designer -tiedosto"@fi ;
   skos:prefLabel "Qt Designer file"@en ;
@@ -1217,7 +1217,7 @@
   :hasMediaType "application/x-desktop" ;
   skos:broader :text_plain ;
   skos:exactMatch :application_x-gnome-app-info ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Desktop-Konfigurationsdatei"@de ;
   skos:prefLabel "desktop configuration file"@en ;
   skos:prefLabel "konfigurasjonsfil for skrivebordet"@no ;
@@ -1225,7 +1225,7 @@
 
 :application_x-dia-diagram a skos:Concept ;
   :hasMediaType "application/x-dia-diagram" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dia diagram"@en ;
   skos:prefLabel "Dia diagram"@nl ;
   skos:prefLabel "Dia diagram"@nn ;
@@ -1244,7 +1244,7 @@
 
 :application_x-dvi a skos:Concept ;
   :hasMediaType "application/x-dvi" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "TeX DVI -asiakirja"@fi ;
   skos:prefLabel "TeX DVI document"@en ;
   skos:prefLabel "TeX DVI-dokument"@no ;
@@ -1253,7 +1253,7 @@
 
 :application_x-e-theme a skos:Concept ;
   :hasMediaType "application/x-e-theme" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Enlightenment tema"@no ;
   skos:prefLabel "Enlightenment thema"@nl ;
   skos:prefLabel "Enlightenment theme"@en ;
@@ -1272,7 +1272,7 @@
 
 :application_x-egon a skos:Concept ;
   :hasMediaType "application/x-egon" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Egon Animator -animaatio"@fi ;
   skos:prefLabel "Egon Animator animation"@en ;
   skos:prefLabel "Egon Animator-Animation"@de ;
@@ -1280,7 +1280,7 @@
 
 :application_x-executable a skos:Concept ;
   :hasMediaType "application/x-executable" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Programm"@de ;
   skos:prefLabel "executable"@en ;
   skos:prefLabel "kjørbar"@no ;
@@ -1290,7 +1290,7 @@
 
 :application_x-font-afm a skos:Concept ;
   :hasMediaType "application/x-font-afm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Adobe font metrics"@en ;
   skos:prefLabel "Adobe lettertype-metrieken"@nl ;
   skos:prefLabel "Adobe skrifttypefil"@no ;
@@ -1308,7 +1308,7 @@
 
 :application_x-font-bdf a skos:Concept ;
   :hasMediaType "application/x-font-bdf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "BDF font"@en ;
   skos:prefLabel "BDF lettertype"@nl ;
   skos:prefLabel "BDF yazı növü"@az ;
@@ -1327,7 +1327,7 @@
 
 :application_x-font-dos a skos:Concept ;
   :hasMediaType "application/x-font-dos" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DOS font"@en ;
   skos:prefLabel "DOS lettertype"@nl ;
   skos:prefLabel "DOS yazı növü"@az ;
@@ -1346,7 +1346,7 @@
 
 :application_x-font-framemaker a skos:Concept ;
   :hasMediaType "application/x-font-framemaker" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Adobe FrameMaker -kirjasin"@fi ;
   skos:prefLabel "Adobe FrameMaker font"@en ;
   skos:prefLabel "Adobe FrameMaker lettertype"@nl ;
@@ -1365,7 +1365,7 @@
 
 :application_x-font-libgrx a skos:Concept ;
   :hasMediaType "application/x-font-libgrx" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont LIBGRX"@cy ;
   skos:prefLabel "LIBGRX font"@en ;
   skos:prefLabel "LIBGRX lettertype"@nl ;
@@ -1384,7 +1384,7 @@
 
 :application_x-font-linux-psf a skos:Concept ;
   :hasMediaType "application/x-font-linux-psf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont Linux PSF"@cy ;
   skos:prefLabel "Linux PSF -konsolikirjasin"@fi ;
   skos:prefLabel "Linux PSF console font"@en ;
@@ -1403,7 +1403,7 @@
 
 :application_x-font-otf a skos:Concept ;
   :hasMediaType "application/x-font-otf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont OpenType"@cy ;
   skos:prefLabel "OpenType font"@en ;
   skos:prefLabel "OpenType lettertype"@nl ;
@@ -1422,7 +1422,7 @@
 
 :application_x-font-pcf a skos:Concept ;
   :hasMediaType "application/x-font-pcf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont PCF"@cy ;
   skos:prefLabel "PCF font"@en ;
   skos:prefLabel "PCF lettertype"@nl ;
@@ -1441,7 +1441,7 @@
 
 :application_x-font-speedo a skos:Concept ;
   :hasMediaType "application/x-font-speedo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont Speedo"@cy ;
   skos:prefLabel "Písmo Speedo"@cs ;
   skos:prefLabel "Speedo font"@en ;
@@ -1460,7 +1460,7 @@
 
 :application_x-font-sunos-news a skos:Concept ;
   :hasMediaType "application/x-font-sunos-news" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont SunOS News"@cy ;
   skos:prefLabel "Písmo SunOS News"@cs ;
   skos:prefLabel "SunOS NEWS-skrifttype"@nn ;
@@ -1479,7 +1479,7 @@
 
 :application_x-font-tex a skos:Concept ;
   :hasMediaType "application/x-font-tex" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont TeX"@cy ;
   skos:prefLabel "Písmo TeX"@cs ;
   skos:prefLabel "TeX font"@en ;
@@ -1498,7 +1498,7 @@
 
 :application_x-font-tex-tfm a skos:Concept ;
   :hasMediaType "application/x-font-tex-tfm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Metrigau Ffont TeX"@cy ;
   skos:prefLabel "Metrika písma TeX"@cs ;
   skos:prefLabel "TeX font metrics"@en ;
@@ -1516,7 +1516,7 @@
 
 :application_x-font-ttf a skos:Concept ;
   :hasMediaType "application/x-font-ttf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "TrueType font"@en ;
   skos:prefLabel "TrueType-Schrift"@de ;
   skos:prefLabel "TrueType-skrift"@no ;
@@ -1525,7 +1525,7 @@
 
 :application_x-font-type1 a skos:Concept ;
   :hasMediaType "application/x-font-type1" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Schrift"@de ;
   skos:prefLabel "font"@en ;
   skos:prefLabel "kirjasin"@fi ;
@@ -1535,7 +1535,7 @@
 
 :application_x-font-vfont a skos:Concept ;
   :hasMediaType "application/x-font-vfont" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffont V"@cy ;
   skos:prefLabel "Písmo V"@cs ;
   skos:prefLabel "V font"@en ;
@@ -1554,11 +1554,11 @@
 
 :application_x-frame a skos:Concept ;
   :hasMediaType "application/x-frame" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-gameboy-rom a skos:Concept ;
   :hasMediaType "application/x-gameboy-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Game Boy -ROM"@fi ;
   skos:prefLabel "Game Boy ROM"@el ;
   skos:prefLabel "Game Boy ROM"@en ;
@@ -1567,11 +1567,11 @@
 
 :application_x-gdbm a skos:Concept ;
   :hasMediaType "application/x-gdbm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-genesis-rom a skos:Concept ;
   :hasMediaType "application/x-genesis-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Genesis ROM"@el ;
   skos:prefLabel "Genesis ROM"@en ;
   skos:prefLabel "Genesis-ROM"@de ;
@@ -1580,7 +1580,7 @@
 
 :application_x-gettext-translation a skos:Concept ;
   :hasMediaType "application/x-gettext-translation" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "käännetyt viestit (koneluettava)"@fi ;
   skos:prefLabel "oversatte meldinger (maskinlesbar)"@no ;
   skos:prefLabel "translated messages (machine-readable)"@en ;
@@ -1589,7 +1589,7 @@
 :application_x-glade a skos:Concept ;
   :hasMediaType "application/x-glade" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Glade layihəsi"@az ;
   skos:prefLabel "Glade project"@en ;
   skos:prefLabel "Glade project"@nl ;
@@ -1607,7 +1607,7 @@
 
 :application_x-gmc-link a skos:Concept ;
   :hasMediaType "application/x-gmc-link" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Cyswllt GMC"@cy ;
   skos:prefLabel "GMC koppeling"@nl ;
   skos:prefLabel "GMC körpüsü"@az ;
@@ -1626,7 +1626,7 @@
 
 :application_x-gnucash a skos:Concept ;
   :hasMediaType "application/x-gnucash" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "GnuCash spreadsheet"@en ;
   skos:prefLabel "GnuCash-Tabellendokument"@de ;
   skos:prefLabel "GnuCash-regneark"@no ;
@@ -1635,7 +1635,7 @@
 
 :application_x-gnumeric a skos:Concept ;
   :hasMediaType "application/x-gnumeric" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Gnumeric spreadsheet"@en ;
   skos:prefLabel "Gnumeric-Tabellendokument"@de ;
   skos:prefLabel "Gnumeric-kalkylblad"@sv ;
@@ -1645,14 +1645,14 @@
 
 :application_x-graphite a skos:Concept ;
   :hasMediaType "application/x-graphite" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Graphite scientific graph"@en ;
   skos:prefLabel "Graphite-graafi"@fi ;
   skos:prefLabel "wissenschaftlicher Graphite-Graph"@de .
 
 :application_x-gtar a skos:Concept ;
   :hasMediaType "application/x-gtar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archiv gtar"@cs ;
   skos:prefLabel "archif gtar"@cy ;
   skos:prefLabel "archive gtar"@fr ;
@@ -1670,7 +1670,7 @@
 
 :application_x-gtktalog a skos:Concept ;
   :hasMediaType "application/x-gtktalog" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "GTKtalog catalog"@en ;
   skos:prefLabel "GTKtalog-Katalog"@de ;
   skos:prefLabel "GTKtalog-katalog"@no ;
@@ -1678,7 +1678,7 @@
 
 :application_x-gzip a skos:Concept ;
   :hasMediaType "application/x-gzip" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "gzip archive"@en ;
   skos:prefLabel "gzip-Archiv"@de ;
   skos:prefLabel "gzip-arkisto"@fi ;
@@ -1687,7 +1687,7 @@
 
 :application_x-gzpostscript a skos:Concept ;
   :hasMediaType "application/x-gzpostscript" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "PostScript document (gzip-compressed)"@en ;
   skos:prefLabel "PostScript-Dokument (gzip-komprimiert)"@de ;
   skos:prefLabel "PostScript-asiakirja (gzip-pakattu)"@fi ;
@@ -1696,7 +1696,7 @@
 
 :application_x-hdf a skos:Concept ;
   :hasMediaType "application/x-hdf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen HDF"@cy ;
   skos:prefLabel "Dokument HDF"@cs ;
   skos:prefLabel "HDF document"@en ;
@@ -1715,7 +1715,7 @@
 
 :application_x-ipod-firmware a skos:Concept ;
   :hasMediaType "application/x-ipod-firmware" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "iPod firmware"@en ;
   skos:prefLabel "iPod-Firmware"@de ;
   skos:prefLabel "iPod-firmware"@no ;
@@ -1723,7 +1723,7 @@
 
 :application_x-jar a skos:Concept ;
   :hasMediaType "application/x-jar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Java archive"@en ;
   skos:prefLabel "Java-Archiv"@de ;
   skos:prefLabel "Java-arkisto"@fi ;
@@ -1732,7 +1732,7 @@
 
 :application_x-java a skos:Concept ;
   :hasMediaType "application/x-java" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Java class"@en ;
   skos:prefLabel "Java-Klasse"@de ;
   skos:prefLabel "Java-klass"@sv ;
@@ -1742,14 +1742,14 @@
 :application_x-javascript a skos:Concept ;
   :hasMediaType "application/x-javascript" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Javascript program"@en ;
   skos:prefLabel "Javascript-Programm"@de ;
   skos:prefLabel "Πρόγραμμα Javascript"@el .
 
 :application_x-jbuilder-project a skos:Concept ;
   :hasMediaType "application/x-jbuilder-project" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "JBuilder project"@en ;
   skos:prefLabel "JBuilder-Projekt"@de ;
   skos:prefLabel "JBuilder-projekti"@fi ;
@@ -1757,7 +1757,7 @@
 
 :application_x-karbon a skos:Concept ;
   :hasMediaType "application/x-karbon" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Karbon14 drawing"@en ;
   skos:prefLabel "Karbon14-Zeichnung"@de ;
   skos:prefLabel "Karbon14-piirros"@fi ;
@@ -1765,7 +1765,7 @@
 
 :application_x-kchart a skos:Concept ;
   :hasMediaType "application/x-kchart" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KChart chart"@en ;
   skos:prefLabel "KChart-Diagramm"@de ;
   skos:prefLabel "KChart-graf"@no ;
@@ -1773,7 +1773,7 @@
 
 :application_x-kformula a skos:Concept ;
   :hasMediaType "application/x-kformula" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KFormula formula"@en ;
   skos:prefLabel "KFormula-Formel"@de ;
   skos:prefLabel "KFormula-formel"@no ;
@@ -1781,7 +1781,7 @@
 
 :application_x-killustrator a skos:Concept ;
   :hasMediaType "application/x-killustrator" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KIllustrator drawing"@en ;
   skos:prefLabel "KIllustrator-Zeichnung"@de ;
   skos:prefLabel "KIllustrator-piirros"@fi ;
@@ -1790,7 +1790,7 @@
 
 :application_x-kivio a skos:Concept ;
   :hasMediaType "application/x-kivio" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Kivio flowchart"@en ;
   skos:prefLabel "Kivio-Flussdiagramm"@de ;
   skos:prefLabel "Kivio-flytdiagram"@no ;
@@ -1798,7 +1798,7 @@
 
 :application_x-kontour a skos:Concept ;
   :hasMediaType "application/x-kontour" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Kontour drawing"@en ;
   skos:prefLabel "Kontour-Zeichnung"@de ;
   skos:prefLabel "Kontour-piirros"@fi ;
@@ -1806,14 +1806,14 @@
 
 :application_x-kpovmodeler a skos:Concept ;
   :hasMediaType "application/x-kpovmodeler" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KPovModeler scene"@en ;
   skos:prefLabel "KPovModeler-Szene"@de ;
   skos:prefLabel "KPovModeler-tiedosto"@fi .
 
 :application_x-kpresenter a skos:Concept ;
   :hasMediaType "application/x-kpresenter" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KPresenter presentation"@en ;
   skos:prefLabel "KPresenter-Präsentation"@de ;
   skos:prefLabel "KPresenter-esitys"@fi ;
@@ -1823,7 +1823,7 @@
 
 :application_x-krita a skos:Concept ;
   :hasMediaType "application/x-krita" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Krita document"@en ;
   skos:prefLabel "Krita-Dokument"@de ;
   skos:prefLabel "Krita-asiakirja"@fi ;
@@ -1832,7 +1832,7 @@
 
 :application_x-kspread a skos:Concept ;
   :hasMediaType "application/x-kspread" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KSpread spreadsheet"@en ;
   skos:prefLabel "KSpread-Tabellendokument"@de ;
   skos:prefLabel "KSpread-regneark"@no ;
@@ -1841,7 +1841,7 @@
 
 :application_x-kspread-crypt a skos:Concept ;
   :hasMediaType "application/x-kspread-crypt" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KSpread spreadsheet (encrypted)"@en ;
   skos:prefLabel "KSpread-Tabellendokument (verschlüsselt)"@de ;
   skos:prefLabel "KSpread-regneark (kryptert)"@no ;
@@ -1849,11 +1849,11 @@
 
 :application_x-ksysv-package a skos:Concept ;
   :hasMediaType "application/x-ksysv-package" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-kugar a skos:Concept ;
   :hasMediaType "application/x-kugar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Kugar document"@en ;
   skos:prefLabel "Kugar-Dokument"@de ;
   skos:prefLabel "Kugar-asiakirja"@fi ;
@@ -1862,7 +1862,7 @@
 
 :application_x-kword a skos:Concept ;
   :hasMediaType "application/x-kword" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen KWord"@cy ;
   skos:prefLabel "KWord document"@en ;
   skos:prefLabel "KWord документ"@sr ;
@@ -1874,7 +1874,7 @@
 
 :application_x-kword-crypt a skos:Concept ;
   :hasMediaType "application/x-kword-crypt" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "KWord document (encrypted)"@en ;
   skos:prefLabel "KWord-Dokument (verschlüsselt)"@de ;
   skos:prefLabel "KWord-asiakirja (salattu)"@fi ;
@@ -1882,7 +1882,7 @@
 
 :application_x-lha a skos:Concept ;
   :hasMediaType "application/x-lha" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archif LHA"@cy ;
   skos:prefLabel "Archiv LHA"@cs ;
   skos:prefLabel "LHA archief"@nl ;
@@ -1900,7 +1900,7 @@
 
 :application_x-lhz a skos:Concept ;
   :hasMediaType "application/x-lhz" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "LHZ archive"@en ;
   skos:prefLabel "LHZ-Archiv"@de ;
   skos:prefLabel "LHZ-arkisto"@fi ;
@@ -1908,7 +1908,7 @@
 
 :application_x-linguist a skos:Concept ;
   :hasMediaType "application/x-linguist" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Nachrichtenkatalog"@de ;
   skos:prefLabel "meldingskatalog"@no ;
   skos:prefLabel "message catalog"@en ;
@@ -1916,7 +1916,7 @@
 
 :application_x-lyx a skos:Concept ;
   :hasMediaType "application/x-lyx" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "LyX document"@en ;
   skos:prefLabel "LyX-Dokument"@de ;
   skos:prefLabel "LyX-asiakirja"@fi ;
@@ -1926,7 +1926,7 @@
 
 :application_x-lzop a skos:Concept ;
   :hasMediaType "application/x-lzop" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "LZO archive"@en ;
   skos:prefLabel "LZO-Archiv"@de ;
   skos:prefLabel "LZO-arkisto"@fi ;
@@ -1934,7 +1934,7 @@
 
 :application_x-macbinary a skos:Concept ;
   :hasMediaType "application/x-macbinary" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MacBinary-tiedosto"@fi ;
   skos:prefLabel "Macintosh MacBinary file"@en ;
   skos:prefLabel "Macintosh MacBinary-fil"@no ;
@@ -1943,7 +1943,7 @@
 :application_x-magicpoint a skos:Concept ;
   :hasMediaType "application/x-magicpoint" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Cyflwyniad MagicPoint"@cy ;
   skos:prefLabel "MagicPoint presentation"@en ;
   skos:prefLabel "MagicPoint презентација"@sr ;
@@ -1956,7 +1956,7 @@
 
 :application_x-matroska a skos:Concept ;
   :hasMediaType "application/x-matroska" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Matroska video"@en ;
   skos:prefLabel "Matroska-Video"@de ;
   skos:prefLabel "Matroska-film"@no ;
@@ -1965,7 +1965,7 @@
 
 :application_x-mif a skos:Concept ;
   :hasMediaType "application/x-mif" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "FrameMaker MIF document"@en ;
   skos:prefLabel "FrameMaker MIF-dokument"@no ;
   skos:prefLabel "FrameMaker-MIF-Dokument"@de ;
@@ -1974,7 +1974,7 @@
 
 :application_x-mozilla-bookmarks a skos:Concept ;
   :hasMediaType "application/x-mozilla-bookmarks" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Mozilla bookmarks"@en ;
   skos:prefLabel "Mozilla-Lesezeichen"@de ;
   skos:prefLabel "Mozilla-bokmerker"@no ;
@@ -1983,7 +1983,7 @@
 
 :application_x-ms-dos-executable a skos:Concept ;
   :hasMediaType "application/x-ms-dos-executable" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DOS/Windows executable"@en ;
   skos:prefLabel "DOS/Windows suoritettava ohjema"@fi ;
   skos:prefLabel "DOS/Windows-Programm"@de ;
@@ -1992,11 +1992,11 @@
 
 :application_x-mswinurl a skos:Concept ;
   :hasMediaType "application/x-mswinurl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-mswrite a skos:Concept ;
   :hasMediaType "application/x-mswrite" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen Microsoft Write"@cy ;
   skos:prefLabel "Dokument Microsoft Write"@cs ;
   skos:prefLabel "Microsoft Write -asiakirja"@fi ;
@@ -2015,7 +2015,7 @@
 
 :application_x-msx-rom a skos:Concept ;
   :hasMediaType "application/x-msx-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MSX ROM"@el ;
   skos:prefLabel "MSX ROM"@en ;
   skos:prefLabel "MSX ром"@sr ;
@@ -2028,7 +2028,7 @@
 
 :application_x-n64-rom a skos:Concept ;
   :hasMediaType "application/x-n64-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Nintendo64 ROM"@el ;
   skos:prefLabel "Nintendo64 ROM"@en ;
   skos:prefLabel "Nintendo64-ROM"@de ;
@@ -2038,7 +2038,7 @@
 :application_x-nautilus-link a skos:Concept ;
   :hasMediaType "application/x-nautilus-link" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Cyswllt Nautilus"@cy ;
   skos:prefLabel "Nautilus koppeling"@nl ;
   skos:prefLabel "Nautilus körpüsü"@az ;
@@ -2057,7 +2057,7 @@
 
 :application_x-nes-rom a skos:Concept ;
   :hasMediaType "application/x-nes-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "NES ROM"@el ;
   skos:prefLabel "NES ROM"@en ;
   skos:prefLabel "NES ROM"@no ;
@@ -2070,7 +2070,7 @@
 
 :application_x-netcdf a skos:Concept ;
   :hasMediaType "application/x-netcdf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Unidata NetCDF document"@en ;
   skos:prefLabel "Unidata NetCDF-dokument"@no ;
   skos:prefLabel "Unidata netCDF -asiakirja"@fi ;
@@ -2079,7 +2079,7 @@
 :application_x-netscape-bookmarks a skos:Concept ;
   :hasMediaType "application/x-netscape-bookmarks" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Netscape bookmarks"@en ;
   skos:prefLabel "Netscape-Lesezeichen"@de ;
   skos:prefLabel "Netscape-bokmerker"@no ;
@@ -2088,7 +2088,7 @@
 
 :application_x-object a skos:Concept ;
   :hasMediaType "application/x-object" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Objekt-Code"@de ;
   skos:prefLabel "object code"@en ;
   skos:prefLabel "objektikoodi"@fi ;
@@ -2096,14 +2096,14 @@
 
 :application_x-ole-storage a skos:Concept ;
   :hasMediaType "application/x-ole-storage" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "OLE2 compound document storage"@en ;
   skos:prefLabel "OLE2-Verbunddokumentenspeicher"@de ;
   skos:prefLabel "OLE2-yhdisteasiakirja"@fi .
 
 :application_x-oleo a skos:Concept ;
   :hasMediaType "application/x-oleo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "GNU Oleo -taulukko"@fi ;
   skos:prefLabel "GNU Oleo regneark"@no ;
   skos:prefLabel "GNU Oleo spreadsheet"@en ;
@@ -2112,7 +2112,7 @@
 
 :application_x-palm-database a skos:Concept ;
   :hasMediaType "application/x-palm-database" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Cronfa Ddata Palm OS"@cy ;
   skos:prefLabel "Databáze Palm OS"@cs ;
   skos:prefLabel "Palm OS -tietokanta"@fi ;
@@ -2131,7 +2131,7 @@
 
 :application_x-pef-executable a skos:Concept ;
   :hasMediaType "application/x-pef-executable" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "PEF executable"@en ;
   skos:prefLabel "PEF suoritettava ohjelma"@fi ;
   skos:prefLabel "PEF-Programm"@de ;
@@ -2141,7 +2141,7 @@
 :application_x-perl a skos:Concept ;
   :hasMediaType "application/x-perl" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Perl script"@en ;
   skos:prefLabel "Perl skript"@nn ;
   skos:prefLabel "Perl skript"@no ;
@@ -2155,7 +2155,7 @@
 :application_x-php a skos:Concept ;
   :hasMediaType "application/x-php" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "PHP script"@en ;
   skos:prefLabel "PHP script"@nl ;
   skos:prefLabel "PHP skripti"@az ;
@@ -2174,7 +2174,7 @@
 
 :application_x-pkcs12 a skos:Concept ;
   :hasMediaType "application/x-pkcs12" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "PKCS#12 certificate bundle"@en ;
   skos:prefLabel "PKCS#12 sertifikathaug"@no ;
   skos:prefLabel "PKCS#12-Zertifikatspaket"@de ;
@@ -2183,7 +2183,7 @@
 :application_x-profile a skos:Concept ;
   :hasMediaType "application/x-profile" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Profiler-Ergebnisse"@de ;
   skos:prefLabel "Výsledky profileru"@cs ;
   skos:prefLabel "canlyniadau proffeilio"@cy ;
@@ -2201,7 +2201,7 @@
 
 :application_x-pw a skos:Concept ;
   :hasMediaType "application/x-pw" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Pathetic Writer -asiakirja"@fi ;
   skos:prefLabel "Pathetic Writer document"@en ;
   skos:prefLabel "Pathetic Writer-Dokument"@de ;
@@ -2210,7 +2210,7 @@
 :application_x-python a skos:Concept ;
   :hasMediaType "application/x-python" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Python script"@en ;
   skos:prefLabel "Python-Skript"@de ;
   skos:prefLabel "Python-skript"@no ;
@@ -2220,7 +2220,7 @@
 
 :application_x-python-bytecode a skos:Concept ;
   :hasMediaType "application/x-python-bytecode" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Bajtový kód Python"@cs ;
   skos:prefLabel "Côd beit Python"@cy ;
   skos:prefLabel "Python bayt kodu"@az ;
@@ -2238,7 +2238,7 @@
 
 :application_x-quattropro a skos:Concept ;
   :hasMediaType "application/x-quattropro" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Quattro Pro -taulukko"@fi ;
   skos:prefLabel "Quattro Pro spreadsheet"@en ;
   skos:prefLabel "Quattro Pro-Tabellendokument"@de ;
@@ -2247,7 +2247,7 @@
 
 :application_x-qw a skos:Concept ;
   :hasMediaType "application/x-qw" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen Quicken"@cy ;
   skos:prefLabel "Dokument Quicken"@cs ;
   skos:prefLabel "Quicken document"@en ;
@@ -2266,7 +2266,7 @@
 
 :application_x-rar a skos:Concept ;
   :hasMediaType "application/x-rar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archif RAR"@cy ;
   skos:prefLabel "RAR archive"@en ;
   skos:prefLabel "RAR-Archiv"@de ;
@@ -2280,7 +2280,7 @@
 :application_x-reject a skos:Concept ;
   :hasMediaType "application/x-reject" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "abgelehnter Patch"@de ;
   skos:prefLabel "avvist patchfil"@no ;
   skos:prefLabel "hylättyjen muutosten tiedosto"@fi ;
@@ -2288,7 +2288,7 @@
 
 :application_x-rpm a skos:Concept ;
   :hasMediaType "application/x-rpm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "RPM package"@en ;
   skos:prefLabel "RPM-Paket"@de ;
   skos:prefLabel "RPM-paket"@sv ;
@@ -2299,7 +2299,7 @@
 :application_x-ruby a skos:Concept ;
   :hasMediaType "application/x-ruby" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ruby script"@en ;
   skos:prefLabel "Ruby-Skript"@de ;
   skos:prefLabel "Ruby-skript"@no ;
@@ -2308,12 +2308,12 @@
 
 :application_x-sc a skos:Concept ;
   :hasMediaType "application/x-sc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :application_x-shar a skos:Concept ;
   :hasMediaType "application/x-shar" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archiv shellu"@cs ;
   skos:prefLabel "Shell-Archiv"@de ;
   skos:prefLabel "archif plisgyn"@cy ;
@@ -2331,7 +2331,7 @@
 
 :application_x-shared-library-la a skos:Concept ;
   :hasMediaType "application/x-shared-library-la" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "delt bibliotek (la)"@no ;
   skos:prefLabel "gemeinsame Bibliothek (la)"@de ;
   skos:prefLabel "jaettu kirjasto (la)"@fi ;
@@ -2339,7 +2339,7 @@
 
 :application_x-sharedlib a skos:Concept ;
   :hasMediaType "application/x-sharedlib" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sdílená knihovna"@cs ;
   skos:prefLabel "bölüşülmüş kitabxana"@az ;
   skos:prefLabel "delat bibliotek"@sv ;
@@ -2358,7 +2358,7 @@
 :application_x-shellscript a skos:Concept ;
   :hasMediaType "application/x-shellscript" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Shell-Skript"@de ;
   skos:prefLabel "Skript shellu"@cs ;
   skos:prefLabel "komentojono"@fi ;
@@ -2376,7 +2376,7 @@
 
 :application_x-shockwave-flash a skos:Concept ;
   :hasMediaType "application/x-shockwave-flash" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Shockwave Flash -media"@fi ;
   skos:prefLabel "Shockwave Flash file"@en ;
   skos:prefLabel "Shockwave Flash-Datei"@de ;
@@ -2385,7 +2385,7 @@
 
 :application_x-siag a skos:Concept ;
   :hasMediaType "application/x-siag" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Siag spreadsheet"@en ;
   skos:prefLabel "Siag-kalkylblad"@sv ;
   skos:prefLabel "Siag-regneark"@no ;
@@ -2395,7 +2395,7 @@
 
 :application_x-slp a skos:Concept ;
   :hasMediaType "application/x-slp" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Balíček Stampede"@cs ;
   skos:prefLabel "Pecyn Stampede"@cy ;
   skos:prefLabel "Stampede package"@en ;
@@ -2414,7 +2414,7 @@
 
 :application_x-sms-rom a skos:Concept ;
   :hasMediaType "application/x-sms-rom" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "SMS- tai Game Gear -ROM"@fi ;
   skos:prefLabel "SMS/Game Gear ROM"@en ;
   skos:prefLabel "SMS/Game Gear-ROM"@de ;
@@ -2422,7 +2422,7 @@
 
 :application_x-stuffit a skos:Concept ;
   :hasMediaType "application/x-stuffit" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archif Macintosh StuffIt"@cy ;
   skos:prefLabel "Archiv Macintosh StuffIt"@cs ;
   skos:prefLabel "Macintosh StuffIt -arkisto"@fi ;
@@ -2440,7 +2440,7 @@
 
 :application_x-sv4cpio a skos:Concept ;
   :hasMediaType "application/x-sv4cpio" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archif CPIO SV4"@cy ;
   skos:prefLabel "Archiv SV4 CPIO"@cs ;
   skos:prefLabel "SV4 CPIO -arkisto"@fi ;
@@ -2458,7 +2458,7 @@
 
 :application_x-sv4crc a skos:Concept ;
   :hasMediaType "application/x-sv4crc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "(CRC를 가지는) SV4 CPIP 아카이브"@ko ;
   skos:prefLabel "Archif CPIP SV4 (efo CRC)"@cy ;
   skos:prefLabel "Archiv SV4 CPIP (s CRC)"@cs ;
@@ -2476,7 +2476,7 @@
 
 :application_x-tar a skos:Concept ;
   :hasMediaType "application/x-tar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "tar archive"@en ;
   skos:prefLabel "tar-Archiv"@de ;
   skos:prefLabel "tar-arkisto"@fi ;
@@ -2484,7 +2484,7 @@
 
 :application_x-tarz a skos:Concept ;
   :hasMediaType "application/x-tarz" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "tar archive (compressed)"@en ;
   skos:prefLabel "tar-Archiv (komprimiert)"@de ;
   skos:prefLabel "tar-arkisto (pakattu)"@fi ;
@@ -2492,7 +2492,7 @@
 
 :application_x-tex-gf a skos:Concept ;
   :hasMediaType "application/x-tex-gf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "generic font file"@en ;
   skos:prefLabel "generische Schriftdatei"@de ;
   skos:prefLabel "vanlig skriftfil"@no ;
@@ -2500,7 +2500,7 @@
 
 :application_x-tex-pk a skos:Concept ;
   :hasMediaType "application/x-tex-pk" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "gepackte Schriftdatei"@de ;
   skos:prefLabel "packed font file"@en ;
   skos:prefLabel "pakattu kirjasintiedosto"@fi ;
@@ -2508,7 +2508,7 @@
 
 :application_x-tgif a skos:Concept ;
   :hasMediaType "application/x-tgif" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "TGIF document"@en ;
   skos:prefLabel "TGIF-Dokument"@de ;
   skos:prefLabel "TGIF-asiakirja"@fi ;
@@ -2519,7 +2519,7 @@
 :application_x-theme a skos:Concept ;
   :hasMediaType "application/x-theme" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Thema"@de ;
   skos:prefLabel "Téma"@cs ;
   skos:prefLabel "drakt"@nn ;
@@ -2538,7 +2538,7 @@
 
 :application_x-toutdoux a skos:Concept ;
   :hasMediaType "application/x-toutdoux" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen ToutDoux"@cy ;
   skos:prefLabel "Dokument ToutDoux"@cs ;
   skos:prefLabel "ToutDoux document"@en ;
@@ -2557,7 +2557,7 @@
 
 :application_x-trash a skos:Concept ;
   :hasMediaType "application/x-trash" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sicherungsdatei"@de ;
   skos:prefLabel "backup file"@en ;
   skos:prefLabel "sikkerhetskopi"@no ;
@@ -2566,7 +2566,7 @@
 :application_x-troff a skos:Concept ;
   :hasMediaType "application/x-troff" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen troff"@cy ;
   skos:prefLabel "Dokument troff"@cs ;
   skos:prefLabel "Troff document"@en ;
@@ -2586,14 +2586,14 @@
 :application_x-troff-man a skos:Concept ;
   :hasMediaType "application/x-troff-man" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Troff document (with manpage macros)"@en ;
   skos:prefLabel "Troff-Dokument (mit man-Seitenmakros)"@de ;
   skos:prefLabel "Troff-asiakirja man-sivu-makroilla"@fi .
 
 :application_x-troff-man-compressed a skos:Concept ;
   :hasMediaType "application/x-troff-man-compressed" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "(압축된) 설명서 페이지"@ko ;
   skos:prefLabel "Handbuchseite (komprimiert)"@de ;
   skos:prefLabel "Manuálová stránka (komprimovaná)"@cs ;
@@ -2611,7 +2611,7 @@
 
 :application_x-tzo a skos:Concept ;
   :hasMediaType "application/x-tzo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "tar archive (LZO-compressed)"@en ;
   skos:prefLabel "tar-Archiv (LZO-komprimiert)"@de ;
   skos:prefLabel "tar-arkisto (LZO-pakattu)"@fi ;
@@ -2619,7 +2619,7 @@
 
 :application_x-ustar a skos:Concept ;
   :hasMediaType "application/x-ustar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Archiv ustar"@cs ;
   skos:prefLabel "Ustar 아카이브"@ko ;
   skos:prefLabel "archif ustar"@cy ;
@@ -2637,7 +2637,7 @@
 
 :application_x-wais-source a skos:Concept ;
   :hasMediaType "application/x-wais-source" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffynhonnell Rhaglen WAIS"@cy ;
   skos:prefLabel "WAIS broncode"@nl ;
   skos:prefLabel "WAIS mənbə faylı"@az ;
@@ -2656,7 +2656,7 @@
 
 :application_x-wpg a skos:Concept ;
   :hasMediaType "application/x-wpg" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "WordPerfect- tai DrawPerfect -kuva"@fi ;
   skos:prefLabel "WordPerfect/DrawPerfect-Bild"@de ;
   skos:prefLabel "WordPerfect/Drawperfect image"@en ;
@@ -2664,7 +2664,7 @@
 
 :application_x-x509-ca-cert a skos:Concept ;
   :hasMediaType "application/x-x509-ca-cert" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DER-, PEM- tai Netscape-koodattu X.509-varmenne"@fi ;
   skos:prefLabel "DER/PEM/Netscape-encoded X.509 certificate"@en ;
   skos:prefLabel "DER/PEM/Netscape-kodet X.509-sertifikat"@no ;
@@ -2673,7 +2673,7 @@
 :application_x-xbel a skos:Concept ;
   :hasMediaType "application/x-xbel" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "XBEL bookmarks"@en ;
   skos:prefLabel "XBEL-Lesezeichen"@de ;
   skos:prefLabel "XBEL-bokmerker"@no ;
@@ -2682,7 +2682,7 @@
 
 :application_x-zerosize a skos:Concept ;
   :hasMediaType "application/x-zerosize" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "empty document"@en ;
   skos:prefLabel "leeres Dokument"@de ;
   skos:prefLabel "tomt dokument"@no ;
@@ -2691,7 +2691,7 @@
 
 :application_x-zoo a skos:Concept ;
   :hasMediaType "application/x-zoo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "zoo archive"@en ;
   skos:prefLabel "zoo-Archiv"@de ;
   skos:prefLabel "zoo-arkisto"@fi ;
@@ -2700,7 +2700,7 @@
 :application_xhtmlxml a skos:Concept ;
   :hasMediaType "application/xhtml+xml" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "XHTML page"@en ;
   skos:prefLabel "XHTML-Seite"@de ;
   skos:prefLabel "XHTML-sida"@sv ;
@@ -2710,7 +2710,7 @@
 
 :application_zip a skos:Concept ;
   :hasMediaType "application/zip" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "ZIP archive"@en ;
   skos:prefLabel "ZIP-Archiv"@de ;
   skos:prefLabel "ZIP-arkisto"@fi ;
@@ -2748,7 +2748,7 @@
 
 :audio_ac3 a skos:Concept ;
   :hasMediaType "audio/ac3" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dolby Digital -ääni"@fi ;
   skos:prefLabel "Dolby Digital audio"@az ;
   skos:prefLabel "Dolby Digital audio"@en ;
@@ -2767,7 +2767,7 @@
 
 :audio_basic a skos:Concept ;
   :hasMediaType "audio/basic" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sain ULAW (Sun)"@cy ;
   skos:prefLabel "ULAW (Sun) -ääni"@fi ;
   skos:prefLabel "ULAW (Sun) audio faylı"@az ;
@@ -2786,7 +2786,7 @@
 :audio_midi a skos:Concept ;
   :hasMediaType "audio/midi" ;
   skos:exactMatch :audio_x-midi ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MIDI audio faylı"@az ;
   skos:prefLabel "MIDI audio"@en ;
   skos:prefLabel "MIDI geluidsbestand"@nl ;
@@ -2805,7 +2805,7 @@
 
 :audio_prssid a skos:Concept ;
   :hasMediaType "audio/prs.sid" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Commodore 64 -ääni"@fi ;
   skos:prefLabel "Commodore 64 audio"@en ;
   skos:prefLabel "Commodore 64-Audio"@de ;
@@ -2815,7 +2815,7 @@
 
 :audio_x-adpcm a skos:Concept ;
   :hasMediaType "audio/x-adpcm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "PCM audio faylı"@az ;
   skos:prefLabel "PCM audio"@en ;
   skos:prefLabel "PCM geluidsbestand"@nl ;
@@ -2834,7 +2834,7 @@
 
 :audio_x-aifc a skos:Concept ;
   :hasMediaType "audio/x-aifc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AIFC audio faylı"@az ;
   skos:prefLabel "AIFC audio"@en ;
   skos:prefLabel "AIFC geluidsbestand"@nl ;
@@ -2853,7 +2853,7 @@
 
 :audio_x-aiff a skos:Concept ;
   :hasMediaType "audio/x-aiff" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AIFF/Amiga/Mac audio faylı"@az ;
   skos:prefLabel "AIFF/Amiga/Mac audio"@en ;
   skos:prefLabel "AIFF/Amiga/Mac geluidsbestand"@nl ;
@@ -2871,7 +2871,7 @@
 
 :audio_x-aiffc a skos:Concept ;
   :hasMediaType "audio/x-aiffc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AIFF audio faylı"@az ;
   skos:prefLabel "AIFF audio"@en ;
   skos:prefLabel "AIFF geluidsbestand"@nl ;
@@ -2890,7 +2890,7 @@
 
 :audio_x-flac a skos:Concept ;
   :hasMediaType "audio/x-flac" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "FLAC audio"@en ;
   skos:prefLabel "FLAC-Audio"@de ;
   skos:prefLabel "FLAC-lyd"@no ;
@@ -2899,7 +2899,7 @@
 
 :audio_x-it a skos:Concept ;
   :hasMediaType "audio/x-it" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Impulse Tracker -ääni"@fi ;
   skos:prefLabel "Impulse Tracker audio faylı"@az ;
   skos:prefLabel "Impulse Tracker audio"@en ;
@@ -2918,7 +2918,7 @@
 
 :audio_x-mod a skos:Concept ;
   :hasMediaType "audio/x-mod" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Amiga SoundTracker -ääni"@fi ;
   skos:prefLabel "Amiga SoundTracker audio"@en ;
   skos:prefLabel "Amiga SoundTracker-Audio"@de ;
@@ -2926,7 +2926,7 @@
 
 :audio_x-mp3 a skos:Concept ;
   :hasMediaType "audio/x-mp3" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MP3 audio faylı"@az ;
   skos:prefLabel "MP3 audio"@en ;
   skos:prefLabel "MP3 geluidsbestand"@nl ;
@@ -2945,7 +2945,7 @@
 
 :audio_x-mp3-playlist a skos:Concept ;
   :hasMediaType "audio/x-mp3-playlist" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MP3 playlist"@en ;
   skos:prefLabel "MP3-Wiedergabeliste"@de ;
   skos:prefLabel "MP3-soittolista"@fi ;
@@ -2953,7 +2953,7 @@
 
 :audio_x-mpeg a skos:Concept ;
   :hasMediaType "audio/x-mpeg" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MP3 audio faylı"@az ;
   skos:prefLabel "MP3 audio"@en ;
   skos:prefLabel "MP3 geluidsbestand"@nl ;
@@ -2972,7 +2972,7 @@
 
 :audio_x-mpegurl a skos:Concept ;
   :hasMediaType "audio/x-mpegurl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MP3 audio (streamed)"@en ;
   skos:prefLabel "MP3-Audio (Stream)"@de ;
   skos:prefLabel "MP3-lyd (streaming)"@no ;
@@ -2980,7 +2980,7 @@
 
 :audio_x-ms-asx a skos:Concept ;
   :hasMediaType "audio/x-ms-asx" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Afspeellijst"@nl ;
   skos:prefLabel "Lejátszható felvételek listája"@hu ;
   skos:prefLabel "Playlist"@en ;
@@ -3000,7 +3000,7 @@
 :audio_x-pn-realaudio a skos:Concept ;
   :hasMediaType "audio/x-pn-realaudio" ;
   skos:exactMatch :audio_vndrn-realaudio ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Darllediad RealAudio"@cy ;
   skos:prefLabel "RealAudio broadcast"@en ;
   skos:prefLabel "RealAudio uitzending"@nl ;
@@ -3018,7 +3018,7 @@
 
 :audio_x-riff a skos:Concept ;
   :hasMediaType "audio/x-riff" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "RIFF audio faylı"@az ;
   skos:prefLabel "RIFF audio"@en ;
   skos:prefLabel "RIFF geluidsbestand"@nl ;
@@ -3037,7 +3037,7 @@
 
 :audio_x-s3m a skos:Concept ;
   :hasMediaType "audio/x-s3m" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sain Scream Tracker 3"@cy ;
   skos:prefLabel "Scream Tracker 3 -ääni"@fi ;
   skos:prefLabel "Scream Tracker 3 audio faylı"@az ;
@@ -3056,7 +3056,7 @@
 
 :audio_x-scpls a skos:Concept ;
   :hasMediaType "audio/x-scpls" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MP3 ShoutCast -soittolista"@fi ;
   skos:prefLabel "MP3 ShoutCast playlist"@en ;
   skos:prefLabel "MP3 ShoutCast-spilleliste"@no ;
@@ -3064,7 +3064,7 @@
 
 :audio_x-stm a skos:Concept ;
   :hasMediaType "audio/x-stm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sain Scream Tracker"@cy ;
   skos:prefLabel "Scream Tracker -ääni"@fi ;
   skos:prefLabel "Scream Tracker audio faylı"@az ;
@@ -3083,7 +3083,7 @@
 
 :audio_x-voc a skos:Concept ;
   :hasMediaType "audio/x-voc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sain VOC"@cy ;
   skos:prefLabel "VOC audio faylı"@az ;
   skos:prefLabel "VOC audio"@en ;
@@ -3102,7 +3102,7 @@
 
 :audio_x-wav a skos:Concept ;
   :hasMediaType "audio/x-wav" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Sain WAV"@cy ;
   skos:prefLabel "WAV audio faylı"@az ;
   skos:prefLabel "WAV audio"@en ;
@@ -3121,7 +3121,7 @@
 
 :audio_x-xi a skos:Concept ;
   :hasMediaType "audio/x-xi" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Nástroj pro Scream Tracker"@cs ;
   skos:prefLabel "Offeryn Scream Tracker"@cy ;
   skos:prefLabel "Scream Tracker -soitin"@fi ;
@@ -3140,7 +3140,7 @@
 
 :audio_x-xm a skos:Concept ;
   :hasMediaType "audio/x-xm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "FastTracker II -ääni"@fi ;
   skos:prefLabel "FastTracker II audio faylı"@az ;
   skos:prefLabel "FastTracker II audio"@en ;
@@ -3169,7 +3169,7 @@
 
 :geopackagesqlite3 a skos:Concept ;
   :hasMediaType "application/geopackage+sqlite3" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Base de Dados GeoPackage SQLite3"@pt ;
   skos:prefLabel "Base de datos GeoPackage SQLite3"@es ;
   skos:prefLabel "Base de données GeoPackage SQLite3"@fr ;
@@ -3240,7 +3240,7 @@
 
 :image_bmp a skos:Concept ;
   :hasMediaType "image/bmp" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd BMP Windows"@cy ;
   skos:prefLabel "Obrázek Windows BMP"@cs ;
   skos:prefLabel "Windows BMP -kuva"@fi ;
@@ -3259,7 +3259,7 @@
 
 :image_cgm a skos:Concept ;
   :hasMediaType "image/cgm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CGM-Datei"@de ;
   skos:prefLabel "Computer Graphics -metatiedosto"@fi ;
   skos:prefLabel "Computer Graphics Metabestand"@nl ;
@@ -3277,7 +3277,7 @@
 
 :image_dpx a skos:Concept ;
   :hasMediaType "image/dpx" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DPX-Bild"@de ;
   skos:prefLabel "DPX-bild (Digital Moving Picture Exchange)"@sv ;
   skos:prefLabel "Delwedd Digital Moving Picture Exchange"@cy ;
@@ -3295,7 +3295,7 @@
 
 :image_fax-g3 a skos:Concept ;
   :hasMediaType "image/fax-g3" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CCITT G3 fax"@en ;
   skos:prefLabel "CCITT G3-faks"@no ;
   skos:prefLabel "CCITT g3 -faksi"@fi ;
@@ -3304,7 +3304,7 @@
 
 :image_g3fax a skos:Concept ;
   :hasMediaType "image/g3fax" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd Ffacs G3"@cy ;
   skos:prefLabel "G3 faks rəsmi"@az ;
   skos:prefLabel "G3 faksbilete"@nn ;
@@ -3323,7 +3323,7 @@
 
 :image_gif a skos:Concept ;
   :hasMediaType "image/gif" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd GIF"@cy ;
   skos:prefLabel "GIF afbeelding"@nl ;
   skos:prefLabel "GIF image"@en ;
@@ -3342,7 +3342,7 @@
 
 :image_ief a skos:Concept ;
   :hasMediaType "image/ief" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd IEF"@cy ;
   skos:prefLabel "IEF afbeelding"@nl ;
   skos:prefLabel "IEF image"@en ;
@@ -3361,7 +3361,7 @@
 
 :image_jpeg a skos:Concept ;
   :hasMediaType "image/jpeg" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd JPEG"@cy ;
   skos:prefLabel "JPEG afbeelding"@nl ;
   skos:prefLabel "JPEG image"@en ;
@@ -3380,7 +3380,7 @@
 
 :image_jpeg2000 a skos:Concept ;
   :hasMediaType "image/jpeg2000" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "JPEG-2000 -kuva"@fi ;
   skos:prefLabel "JPEG-2000 image"@en ;
   skos:prefLabel "JPEG-2000-Bild"@de ;
@@ -3388,7 +3388,7 @@
 
 :image_png a skos:Concept ;
   :hasMediaType "image/png" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd PNG"@cy ;
   skos:prefLabel "Obrázek PNG"@cs ;
   skos:prefLabel "PNG afbeelding"@nl ;
@@ -3407,13 +3407,13 @@
 
 :image_rle a skos:Concept ;
   :hasMediaType "image/rle" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "RLE-Bitmap"@de ;
   skos:prefLabel "Run Length Encoded bitmap"@en .
 
 :image_svgxml a skos:Concept ;
   :hasMediaType "image/svg+xml" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "SVG-kuva"@fi ;
   skos:prefLabel "scalable SVG image"@en ;
   skos:prefLabel "skalerbart SVG-bilde"@no ;
@@ -3421,7 +3421,7 @@
 
 :image_tiff a skos:Concept ;
   :hasMediaType "image/tiff" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "TIFF image"@en ;
   skos:prefLabel "TIFF-Bild"@de ;
   skos:prefLabel "TIFF-bild"@sv ;
@@ -3432,7 +3432,7 @@
 :image_vnddjvu a skos:Concept ;
   :hasMediaType "image/vnd.djvu" ;
   skos:exactMatch :image_x-djvu ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DjVu -kuva"@fi ;
   skos:prefLabel "DjVu image"@en ;
   skos:prefLabel "DjVu 이미지"@ko ;
@@ -3443,7 +3443,7 @@
 
 :image_vnddwg a skos:Concept ;
   :hasMediaType "image/vnd.dwg" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AutoCAD afbeelding"@nl ;
   skos:prefLabel "AutoCAD image"@en ;
   skos:prefLabel "AutoCAD rəsmi"@az ;
@@ -3462,7 +3462,7 @@
 
 :image_vnddxf a skos:Concept ;
   :hasMediaType "image/vnd.dxf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DXF vector image"@en ;
   skos:prefLabel "DXF-Vektorbild"@de ;
   skos:prefLabel "DXF-vektorgrafikk"@no ;
@@ -3470,7 +3470,7 @@
 
 :image_x-3ds a skos:Concept ;
   :hasMediaType "image/x-3ds" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "3D Studio -kuva"@fi ;
   skos:prefLabel "3D Studio afbeelding"@nl ;
   skos:prefLabel "3D Studio image"@en ;
@@ -3489,7 +3489,7 @@
 
 :image_x-applix-graphics a skos:Concept ;
   :hasMediaType "image/x-applix-graphics" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Applix Graphics -kuva"@fi ;
   skos:prefLabel "Applix Graphics image"@en ;
   skos:prefLabel "Applix Graphics-Bild"@de ;
@@ -3498,7 +3498,7 @@
 
 :image_x-cmu-raster a skos:Concept ;
   :hasMediaType "image/x-cmu-raster" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CMU raster afbeelding"@nl ;
   skos:prefLabel "CMU raster image"@en ;
   skos:prefLabel "CMU raster rəsmi"@az ;
@@ -3516,7 +3516,7 @@
 
 :image_x-compressed-xcf a skos:Concept ;
   :hasMediaType "image/x-compressed-xcf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "GIMP image (compressed)"@en ;
   skos:prefLabel "GIMP-Bild (komprimiert)"@de ;
   skos:prefLabel "GIMP-bilde (komprimert)"@no ;
@@ -3525,7 +3525,7 @@
 
 :image_x-dcm a skos:Concept ;
   :hasMediaType "image/x-dcm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Bildformat för digital bildbehandling och medicinsk kommunikation"@sv ;
   skos:prefLabel "DICOM-Bild"@de ;
   skos:prefLabel "Delwedd DCIM (Digital Imaging and Communications in Medicine)"@cy ;
@@ -3542,7 +3542,7 @@
 
 :image_x-dib a skos:Concept ;
   :hasMediaType "image/x-dib" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Apparaat onafhankelijke bitmap"@nl ;
   skos:prefLabel "Avadanlıqdan Müstəqil Bitmap"@az ;
   skos:prefLabel "Bitmapa nezávislá na zařízení"@cs ;
@@ -3560,7 +3560,7 @@
 
 :image_x-eps a skos:Concept ;
   :hasMediaType "image/x-eps" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd PostScript wedi ei chrisialu"@cy ;
   skos:prefLabel "EPS-Bild"@de ;
   skos:prefLabel "Encapsulated PostScript image"@en ;
@@ -3578,7 +3578,7 @@
 
 :image_x-fits a skos:Concept ;
   :hasMediaType "image/x-fits" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "FITS-Dokument"@de ;
   skos:prefLabel "Fleksibelt bildetransportsystem"@no ;
   skos:prefLabel "Flexibel afbeeldingstransportsysteem"@nl ;
@@ -3596,7 +3596,7 @@
 
 :image_x-fpx a skos:Concept ;
   :hasMediaType "image/x-fpx" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "FlashPix image"@en ;
   skos:prefLabel "FlashPix-Bild"@de ;
   skos:prefLabel "FlashPix-bilde"@no ;
@@ -3605,7 +3605,7 @@
 
 :image_x-icb a skos:Concept ;
   :hasMediaType "image/x-icb" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd Targa Truevision"@cy ;
   skos:prefLabel "Obrázek Truevision Targa"@cs ;
   skos:prefLabel "Truevision Targa -kuva"@fi ;
@@ -3624,7 +3624,7 @@
 
 :image_x-ico a skos:Concept ;
   :hasMediaType "image/x-ico" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft Windows -kuvake"@fi ;
   skos:prefLabel "Microsoft Windows icon"@en ;
   skos:prefLabel "Microsoft Windows-Symbol"@de ;
@@ -3633,7 +3633,7 @@
 
 :image_x-iff a skos:Concept ;
   :hasMediaType "image/x-iff" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd IFF"@cy ;
   skos:prefLabel "IFF afbeelding"@nl ;
   skos:prefLabel "IFF image"@en ;
@@ -3652,7 +3652,7 @@
 
 :image_x-ilbm a skos:Concept ;
   :hasMediaType "image/x-ilbm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd ILBM"@cy ;
   skos:prefLabel "ILBM afbeelding"@nl ;
   skos:prefLabel "ILBM image"@en ;
@@ -3671,7 +3671,7 @@
 
 :image_x-jng a skos:Concept ;
   :hasMediaType "image/x-jng" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd JNG"@cy ;
   skos:prefLabel "JNG afbeelding"@nl ;
   skos:prefLabel "JNG image"@en ;
@@ -3690,7 +3690,7 @@
 
 :image_x-lwo a skos:Concept ;
   :hasMediaType "image/x-lwo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Gwrthrych LightWave"@cy ;
   skos:prefLabel "LightWave cismi"@az ;
   skos:prefLabel "LightWave object"@en ;
@@ -3709,7 +3709,7 @@
 
 :image_x-lws a skos:Concept ;
   :hasMediaType "image/x-lws" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Golygfa LightWave"@cy ;
   skos:prefLabel "LightWave scene"@en ;
   skos:prefLabel "LightWave scêne"@nl ;
@@ -3728,7 +3728,7 @@
 
 :image_x-msod a skos:Concept ;
   :hasMediaType "image/x-msod" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft Office -piirros"@fi ;
   skos:prefLabel "Microsoft Office drawing"@en ;
   skos:prefLabel "Microsoft Office-Zeichnung"@de ;
@@ -3736,15 +3736,15 @@
 
 :image_x-niff a skos:Concept ;
   :hasMediaType "image/x-niff" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :image_x-pcx a skos:Concept ;
   :hasMediaType "image/x-pcx" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :image_x-photo-cd a skos:Concept ;
   :hasMediaType "image/x-photo-cd" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd PhotoCD"@cy ;
   skos:prefLabel "Obrázek PhotoCD"@cs ;
   skos:prefLabel "Photo CD-bilete"@nn ;
@@ -3763,14 +3763,14 @@
 
 :image_x-pict a skos:Concept ;
   :hasMediaType "image/x-pict" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Macintosh Quickdraw/PICT -piirros"@fi ;
   skos:prefLabel "Macintosh Quickdraw/PICT drawing"@en ;
   skos:prefLabel "Macintosh Quickdraw/PICT-Zeichnung"@de .
 
 :image_x-portable-anymap a skos:Concept ;
   :hasMediaType "image/x-portable-anymap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd PNM"@cy ;
   skos:prefLabel "Obrázek PNM"@cs ;
   skos:prefLabel "PNM afbeelding"@nl ;
@@ -3789,7 +3789,7 @@
 
 :image_x-portable-bitmap a skos:Concept ;
   :hasMediaType "image/x-portable-bitmap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeiliau Fformat Pixfap Cludadwy"@cy ;
   skos:prefLabel "Formát souborů Portable Bitmap"@cs ;
   skos:prefLabel "Portabelt bitmapp-filformat"@sv ;
@@ -3805,7 +3805,7 @@
 
 :image_x-portable-graymap a skos:Concept ;
   :hasMediaType "image/x-portable-graymap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeiliau Fformat Llwydfap Cludadwy"@cy ;
   skos:prefLabel "Formát souborů Portable Graymap"@cs ;
   skos:prefLabel "Portabelt gråskale-filformat"@sv ;
@@ -3821,7 +3821,7 @@
 
 :image_x-portable-pixmap a skos:Concept ;
   :hasMediaType "image/x-portable-pixmap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd Pixmap Cludadwy"@cy ;
   skos:prefLabel "Formát souboru Portable Pixmap"@cs ;
   skos:prefLabel "Portabelt Pixmap-filformat"@no ;
@@ -3838,7 +3838,7 @@
 
 :image_x-psd a skos:Concept ;
   :hasMediaType "image/x-psd" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Photoshop image"@en ;
   skos:prefLabel "Photoshop-Bild"@de ;
   skos:prefLabel "Photoshop-bilde"@no ;
@@ -3847,7 +3847,7 @@
 
 :image_x-rgb a skos:Concept ;
   :hasMediaType "image/x-rgb" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd RGB"@cy ;
   skos:prefLabel "Obrázek RGB"@cs ;
   skos:prefLabel "RGB afbeelding"@nl ;
@@ -3866,14 +3866,14 @@
 
 :image_x-sgi a skos:Concept ;
   :hasMediaType "image/x-sgi" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Silicon Graphics IRIS -kuva"@fi ;
   skos:prefLabel "Silicon Graphics IRIS image"@en ;
   skos:prefLabel "Silicon Graphics-IRIS-Bild"@de .
 
 :image_x-sun-raster a skos:Concept ;
   :hasMediaType "image/x-sun-raster" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "SUN Rasterfile image"@en ;
   skos:prefLabel "SUN rasterfil-bilde"@no ;
   skos:prefLabel "SUN-Rasterfile-Bild"@de ;
@@ -3881,7 +3881,7 @@
 
 :image_x-tga a skos:Concept ;
   :hasMediaType "image/x-tga" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd TarGA"@cy ;
   skos:prefLabel "Obrázek TarGA"@cs ;
   skos:prefLabel "TarGA afbeelding"@nl ;
@@ -3900,14 +3900,14 @@
 
 :image_x-win-bitmap a skos:Concept ;
   :hasMediaType "image/x-win-bitmap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Windows cursor"@en ;
   skos:prefLabel "Windows-Cursor"@de ;
   skos:prefLabel "Windows-kursori"@fi .
 
 :image_x-wmf a skos:Concept ;
   :hasMediaType "image/x-wmf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft WMF -tiedosto"@fi ;
   skos:prefLabel "Microsoft WMF file"@en ;
   skos:prefLabel "Microsoft WMF-fil"@no ;
@@ -3916,7 +3916,7 @@
 
 :image_x-xbitmap a skos:Concept ;
   :hasMediaType "image/x-xbitmap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Bilete i X Bitmap-format"@nn ;
   skos:prefLabel "Delwedd didfap X"@cy ;
   skos:prefLabel "Obrázek X BitMap"@cs ;
@@ -3934,7 +3934,7 @@
 
 :image_x-xcf a skos:Concept ;
   :hasMediaType "image/x-xcf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "GIF-kuva"@fi ;
   skos:prefLabel "GIMP image"@en ;
   skos:prefLabel "GIMP-Bild"@de ;
@@ -3944,7 +3944,7 @@
 
 :image_x-xfig a skos:Concept ;
   :hasMediaType "image/x-xfig" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "XFig image"@en ;
   skos:prefLabel "XFig-Bild"@de ;
   skos:prefLabel "XFig-bilde"@no ;
@@ -3953,7 +3953,7 @@
 
 :image_x-xpixmap a skos:Concept ;
   :hasMediaType "image/x-xpixmap" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Bilete i X Bitmap-format"@nn ;
   skos:prefLabel "Delwedd picsfap X"@cy ;
   skos:prefLabel "Obrázek X PixMap"@cs ;
@@ -3971,7 +3971,7 @@
 
 :image_x-xwindowdump a skos:Concept ;
   :hasMediaType "image/x-xwindowdump" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Delwedd ffenest X"@cy ;
   skos:prefLabel "Obrázek X window"@cs ;
   skos:prefLabel "X Window afbeelding"@nl ;
@@ -3997,7 +3997,7 @@
 
 :inode_blockdevice a skos:Concept ;
   :hasMediaType "inode/blockdevice" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Blockgerät"@de ;
   skos:prefLabel "block device"@en ;
   skos:prefLabel "blokkenhet"@no ;
@@ -4005,7 +4005,7 @@
 
 :inode_chardevice a skos:Concept ;
   :hasMediaType "inode/chardevice" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Character-Device"@de ;
   skos:prefLabel "character device"@en ;
   skos:prefLabel "merkkilaite"@fi ;
@@ -4013,7 +4013,7 @@
 
 :inode_directory a skos:Concept ;
   :hasMediaType "inode/directory" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:narrower :inode_mount-point ;
   skos:prefLabel "Ordner"@de ;
   skos:prefLabel "folder"@en ;
@@ -4024,7 +4024,7 @@
 
 :inode_fifo a skos:Concept ;
   :hasMediaType "inode/fifo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Pipe"@de ;
   skos:prefLabel "pipe"@en ;
   skos:prefLabel "putki"@fi ;
@@ -4034,7 +4034,7 @@
 :inode_mount-point a skos:Concept ;
   :hasMediaType "inode/mount-point" ;
   skos:broader :inode_directory ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Einbindepunkt"@de ;
   skos:prefLabel "liitospiste"@fi ;
   skos:prefLabel "monteringspunkt"@no ;
@@ -4043,7 +4043,7 @@
 
 :inode_socket a skos:Concept ;
   :hasMediaType "inode/socket" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Socket"@de ;
   skos:prefLabel "pistoke"@fi ;
   skos:prefLabel "plugg"@no ;
@@ -4051,7 +4051,7 @@
 
 :inode_symlink a skos:Concept ;
   :hasMediaType "inode/symlink" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Symbolický odkaz"@cs ;
   skos:prefLabel "Symbolischer Link"@de ;
   skos:prefLabel "cyswllt symbolaidd"@cy ;
@@ -4083,7 +4083,7 @@
 :message_delivery-status a skos:Concept ;
   :hasMediaType "message/delivery-status" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Adroddiad trosgludo post"@cy ;
   skos:prefLabel "E-Mail-Zustellungsbericht"@de ;
   skos:prefLabel "Zpráva o doručení pošty"@cs ;
@@ -4101,7 +4101,7 @@
 
 :message_disposition-notification a skos:Concept ;
   :hasMediaType "message/disposition-notification" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "E-Mail-Übertragungsbericht"@de ;
   skos:prefLabel "Zpráva o předání pošty"@cs ;
   skos:prefLabel "adroddiad ffurf post"@cy ;
@@ -4119,7 +4119,7 @@
 
 :message_external-body a skos:Concept ;
   :hasMediaType "message/external-body" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Odkaz na vzdálený soubor"@cs ;
   skos:prefLabel "Verweis auf entfernte Datei"@de ;
   skos:prefLabel "cyfeiriad at ffeil bell"@cy ;
@@ -4138,7 +4138,7 @@
 :message_news a skos:Concept ;
   :hasMediaType "message/news" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Neges newyddion Usenet"@cy ;
   skos:prefLabel "Příspěvek do diskusních skupin Usenet"@cs ;
   skos:prefLabel "USENET diskusjonsmelding"@nn ;
@@ -4157,7 +4157,7 @@
 :message_partial a skos:Concept ;
   :hasMediaType "message/partial" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "E-Mail-Nachrichtenfragment"@de ;
   skos:prefLabel "darn o neges e-bost"@cy ;
   skos:prefLabel "del av e-post-melding"@nn ;
@@ -4176,7 +4176,7 @@
 :message_rfc822 a skos:Concept ;
   :hasMediaType "message/rfc822" ;
   skos:broader :text_plain ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "E-Mail-Nachricht"@de ;
   skos:prefLabel "e-postmeddelande"@sv ;
   skos:prefLabel "e-postmelding"@no ;
@@ -4186,7 +4186,7 @@
 
 :message_x-gnu-rmail a skos:Concept ;
   :hasMediaType "message/x-gnu-rmail" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "E-mailová zpráva GNU"@cs ;
   skos:prefLabel "GNU e-mail bericht"@nl ;
   skos:prefLabel "GNU e-postmelding"@nn ;
@@ -4211,7 +4211,7 @@
 
 :model_vrml a skos:Concept ;
   :hasMediaType "model/vrml" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen VRML"@cy ;
   skos:prefLabel "Dokument VRML"@cs ;
   skos:prefLabel "VRML document"@en ;
@@ -4244,7 +4244,7 @@
 
 :multipart_alternative a skos:Concept ;
   :hasMediaType "multipart/alternative" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Nachricht in mehreren Formaten"@de ;
   skos:prefLabel "Zpráva v několika formátech"@cs ;
   skos:prefLabel "bericht in verschillende formaten"@nl ;
@@ -4262,7 +4262,7 @@
 
 :multipart_appledouble a skos:Concept ;
   :hasMediaType "multipart/appledouble" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil AppleDouble-amgodedig Macintosh"@cy ;
   skos:prefLabel "Macintosh AppleDouble -koodattu tiedosto"@fi ;
   skos:prefLabel "Macintosh AppleDouble kódolású fájl"@hu ;
@@ -4281,7 +4281,7 @@
 
 :multipart_digest a skos:Concept ;
   :hasMediaType "multipart/digest" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Digest zpráv"@cs ;
   skos:prefLabel "Nachrichtensammlung"@de ;
   skos:prefLabel "berichtsamenvatting"@nl ;
@@ -4299,7 +4299,7 @@
 
 :multipart_encrypted a skos:Concept ;
   :hasMediaType "multipart/encrypted" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Neges wedi ei hamgryptio"@cy ;
   skos:prefLabel "Zašifrovaná zpráva"@cs ;
   skos:prefLabel "encrypted message"@en ;
@@ -4318,7 +4318,7 @@
 
 :multipart_mixed a skos:Concept ;
   :hasMediaType "multipart/mixed" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Verbunddokumente"@de ;
   skos:prefLabel "compound documents"@en ;
   skos:prefLabel "sammensatte dokumenter"@no ;
@@ -4326,7 +4326,7 @@
 
 :multipart_related a skos:Concept ;
   :hasMediaType "multipart/related" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Složený dokument"@cs ;
   skos:prefLabel "Verbunddokument"@de ;
   skos:prefLabel "birləşik sənəd"@az ;
@@ -4344,7 +4344,7 @@
 
 :multipart_report a skos:Concept ;
   :hasMediaType "multipart/report" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "E-Mail-Systembericht"@de ;
   skos:prefLabel "Zpráva poštovního systému"@cs ;
   skos:prefLabel "adroddiad system bost"@cy ;
@@ -4362,7 +4362,7 @@
 
 :multipart_signed a skos:Concept ;
   :hasMediaType "multipart/signed" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Podepsaná zpráva"@cs ;
   skos:prefLabel "allekirjoitettu viesti"@fi ;
   skos:prefLabel "aláírt üzenet"@hu ;
@@ -4380,7 +4380,7 @@
 
 :multipart_x-mixed-replace a skos:Concept ;
   :hasMediaType "multipart/x-mixed-replace" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Datenstrom (Server-Push)"@de ;
   skos:prefLabel "datastrøm (server push)"@no ;
   skos:prefLabel "stream of data (server push)"@en ;
@@ -4460,7 +4460,7 @@
 
 :text_calendar a skos:Concept ;
   :hasMediaType "text/calendar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil iCalendar"@cy ;
   skos:prefLabel "Soubor iCalendar"@cs ;
   skos:prefLabel "fichier iCalendar"@fr ;
@@ -4479,7 +4479,7 @@
 
 :text_css a skos:Concept ;
   :hasMediaType "text/css" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CSS-Stylesheet"@de ;
   skos:prefLabel "CSS-stíluslap"@hu ;
   skos:prefLabel "CSS-tyylisäännöstö"@fi ;
@@ -4500,14 +4500,14 @@
   rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc7111> ;
   skos:altLabel "CSV"@en ;
   skos:exactMatch :text_x-comma-separated-values ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "CSV (valeurs séparées par des virgules)"@fr ;
   skos:prefLabel "Comma Separated Values"@en ;
   skos:prefLabel "Werte durch Komma getrennt"@de .
 
 :text_directory a skos:Concept ;
   :hasMediaType "text/directory" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil gwybodaeth cyfeiriadur"@cy ;
   skos:prefLabel "Soubor informací o adresáři"@cs ;
   skos:prefLabel "Verzeichnisinformationsdatei"@de ;
@@ -4525,7 +4525,7 @@
 
 :text_enriched a skos:Concept ;
   :hasMediaType "text/enriched" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen testun wedi ei gyfoethogi"@cy ;
   skos:prefLabel "Rozšířený textový dokument"@cs ;
   skos:prefLabel "angereichertes Textdokument"@de ;
@@ -4543,7 +4543,7 @@
 
 :text_html a skos:Concept ;
   :hasMediaType "text/html" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "HTML page"@en ;
   skos:prefLabel "HTML-Seite"@de ;
   skos:prefLabel "HTML-sida"@sv ;
@@ -4553,7 +4553,7 @@
 
 :text_htmlh a skos:Concept ;
   :hasMediaType "text/htmlh" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Hilfeseite"@de ;
   skos:prefLabel "Stránka nápovědy"@cs ;
   skos:prefLabel "help page"@en ;
@@ -4572,7 +4572,7 @@
 
 :text_mathml a skos:Concept ;
   :hasMediaType "text/mathml" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen MathML"@cy ;
   skos:prefLabel "Dokument MathML"@cs ;
   skos:prefLabel "MathML document"@en ;
@@ -4591,7 +4591,7 @@
 
 :text_plain a skos:Concept ;
   :hasMediaType "text/plain" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:narrower :application_rtf ;
   skos:narrower :application_smil ;
   skos:narrower :application_x-asp ;
@@ -4629,7 +4629,7 @@
 
 :text_rdf a skos:Concept ;
   :hasMediaType "text/rdf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil RDF (Resource Description Framework)"@cy ;
   skos:prefLabel "Mənbə İzahat Çərçivəsi (RDF) faylı"@az ;
   skos:prefLabel "RDF (erőforrásleíró) -fájl"@hu ;
@@ -4646,7 +4646,7 @@
 
 :text_rfc822-headers a skos:Concept ;
   :hasMediaType "text/rfc822-headers" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "E-Mail-Kopfzeilen"@de ;
   skos:prefLabel "Hlavičky E-mailu"@cs ;
   skos:prefLabel "e-mail koppen"@nl ;
@@ -4664,7 +4664,7 @@
 
 :text_richtext a skos:Concept ;
   :hasMediaType "text/richtext" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Bohatý textový dokument"@cs ;
   skos:prefLabel "RTF-Textdokument"@de ;
   skos:prefLabel "RTF-asiakirja"@fi ;
@@ -4682,7 +4682,7 @@
 
 :text_rss a skos:Concept ;
   :hasMediaType "text/rss" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Crynodeb Safle RDF"@cy ;
   skos:prefLabel "RDF Sayt İcmalı"@az ;
   skos:prefLabel "RDF Site Summary"@en ;
@@ -4700,7 +4700,7 @@
 
 :text_sgml a skos:Concept ;
   :hasMediaType "text/sgml" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen SGML"@cy ;
   skos:prefLabel "SGML document"@en ;
   skos:prefLabel "SGML документ"@sr ;
@@ -4713,7 +4713,7 @@
 
 :text_spreadsheet a skos:Concept ;
   :hasMediaType "text/spreadsheet" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dokument for regnearkutveksling"@no ;
   skos:prefLabel "Spreadsheet interchange document"@en ;
   skos:prefLabel "Tabellenkalkulations-Austauschdokument"@de ;
@@ -4721,7 +4721,7 @@
 
 :text_tab-separated-values a skos:Concept ;
   :hasMediaType "text/tab-separated-values" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Textdokument·(Werte·durch·Tabulatorzeichen·unterteilt)"@de ;
   skos:prefLabel "sarkaimella eroteltuja arvoja tekstitiedostossa"@fi ;
   skos:prefLabel "tekstdokument (med tabulatorseparerte verdier)"@no ;
@@ -4729,7 +4729,7 @@
 
 :text_vndwapwml a skos:Concept ;
   :hasMediaType "text/vnd.wap.wml" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen WML"@cy ;
   skos:prefLabel "Dokument WML"@cs ;
   skos:prefLabel "WML document"@en ;
@@ -4748,7 +4748,7 @@
 
 :text_x-adasrc a skos:Concept ;
   :hasMediaType "text/x-adasrc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ada source code"@en ;
   skos:prefLabel "Ada-Quelltext"@de ;
   skos:prefLabel "Ada-kildekode"@no ;
@@ -4757,7 +4757,7 @@
 
 :text_x-authors a skos:Concept ;
   :hasMediaType "text/x-authors" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Autorenliste"@de ;
   skos:prefLabel "author list"@en ;
   skos:prefLabel "forfatterliste"@no ;
@@ -4765,7 +4765,7 @@
 
 :text_x-bibtex a skos:Concept ;
   :hasMediaType "text/x-bibtex" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Bibtex bibliografiske data"@no ;
   skos:prefLabel "Bibtex bibliographic data"@en ;
   skos:prefLabel "bibliographische Bibitex-Daten"@de ;
@@ -4774,7 +4774,7 @@
 :text_x-chdr a skos:Concept ;
   :hasMediaType "text/x-c++hdr" ;
   :hasMediaType "text/x-chdr" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "C source code header"@en ;
   skos:prefLabel "C заглавља изворног кôда"@sr ;
   skos:prefLabel "C++ source code header"@en ;
@@ -4788,7 +4788,7 @@
 
 :text_x-comma-separated-values a skos:Concept ;
   :hasMediaType "text/x-comma-separated-values" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Textdokument (Werte durch Kommata unterteilt)"@de ;
   skos:prefLabel "pilkulla eroteltuja arvoja tekstitiedostossa"@fi ;
   skos:prefLabel "tekstdokument (med kommaseparerte verdier)"@no ;
@@ -4796,7 +4796,7 @@
 
 :text_x-copying a skos:Concept ;
   :hasMediaType "text/x-copying" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Podmínky licence na software"@cs ;
   skos:prefLabel "Software-Lizenzbedingungen"@de ;
   skos:prefLabel "lisensbestemmelser for programvare"@no ;
@@ -4814,7 +4814,7 @@
 
 :text_x-credits a skos:Concept ;
   :hasMediaType "text/x-credits" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Informace o autorovi software"@cs ;
   skos:prefLabel "Software-Impressum"@de ;
   skos:prefLabel "clodau awduron meddalwedd"@cy ;
@@ -4832,7 +4832,7 @@
 
 :text_x-csharp a skos:Concept ;
   :hasMediaType "text/x-csharp" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "C# source code"@en ;
   skos:prefLabel "C#-Quelltext"@de ;
   skos:prefLabel "C#-lähdekoodi"@fi ;
@@ -4841,7 +4841,7 @@
 :text_x-csrc a skos:Concept ;
   :hasMediaType "text/x-c++src" ;
   :hasMediaType "text/x-csrc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "C source code"@en ;
   skos:prefLabel "C++ source code"@en ;
   skos:prefLabel "C++-Quelltext"@de ;
@@ -4855,7 +4855,7 @@
 
 :text_x-dcl a skos:Concept ;
   :hasMediaType "text/x-dcl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DCL script"@en ;
   skos:prefLabel "DCL script"@nl ;
   skos:prefLabel "DCL skripti"@az ;
@@ -4874,7 +4874,7 @@
 
 :text_x-dsl a skos:Concept ;
   :hasMediaType "text/x-dsl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "DSSSL document"@en ;
   skos:prefLabel "DSSSL document"@nl ;
   skos:prefLabel "DSSSL sənədi"@az ;
@@ -4893,7 +4893,7 @@
 
 :text_x-dtd a skos:Concept ;
   :hasMediaType "text/x-dtd" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Definice typu dokumentu"@cs ;
   skos:prefLabel "Diffiniad math dogfen"@cy ;
   skos:prefLabel "Dokumenttypenbeschreibung (DTD)"@de ;
@@ -4911,7 +4911,7 @@
 
 :text_x-emacs-lisp a skos:Concept ;
   :hasMediaType "text/x-emacs-lisp" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Emacs Lisp -lähdekoodi"@fi ;
   skos:prefLabel "Emacs Lisp broncode"@nl ;
   skos:prefLabel "Emacs Lisp kjeldekode"@nn ;
@@ -4930,7 +4930,7 @@
 
 :text_x-fortran a skos:Concept ;
   :hasMediaType "text/x-fortran" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffynhonnell rhaglen FORTRAN"@cy ;
   skos:prefLabel "Fortran broncode"@nl ;
   skos:prefLabel "Fortran mənbə kodu"@az ;
@@ -4949,7 +4949,7 @@
 
 :text_x-gettext-translation a skos:Concept ;
   :hasMediaType "text/x-gettext-translation" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "käännettyjä viestejä"@fi ;
   skos:prefLabel "oversatte meldinger"@no ;
   skos:prefLabel "translated messages"@en ;
@@ -4958,13 +4958,13 @@
 
 :text_x-gettext-translation-template a skos:Concept ;
   :hasMediaType "text/x-gettext-translation-template" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Vorlage zur Nachrichtenübersetzung"@de ;
   skos:prefLabel "message translation template"@en .
 
 :text_x-gtkrc a skos:Concept ;
   :hasMediaType "text/x-gtkrc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffurfosodiad GTK"@cy ;
   skos:prefLabel "GTK configuratie"@nl ;
   skos:prefLabel "GTK configuration"@en ;
@@ -4983,7 +4983,7 @@
 
 :text_x-haskell a skos:Concept ;
   :hasMediaType "text/x-haskell" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffynhonnell rhaglen Haskell"@cy ;
   skos:prefLabel "Haskell broncode"@nl ;
   skos:prefLabel "Haskell mənbə kodu"@az ;
@@ -5002,7 +5002,7 @@
 
 :text_x-idl a skos:Concept ;
   :hasMediaType "text/x-idl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen IDL"@cy ;
   skos:prefLabel "Dokument IDL"@cs ;
   skos:prefLabel "IDL document"@en ;
@@ -5021,7 +5021,7 @@
 
 :text_x-install a skos:Concept ;
   :hasMediaType "text/x-install" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Návod k instalaci software"@cs ;
   skos:prefLabel "Software-Installationsanleitung"@de ;
   skos:prefLabel "cyfarwyddiadau gosod meddalwedd"@cy ;
@@ -5039,7 +5039,7 @@
 
 :text_x-java a skos:Concept ;
   :hasMediaType "text/x-java" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Java source code"@en ;
   skos:prefLabel "Java-Quelltext"@de ;
   skos:prefLabel "Java-kildekode"@no ;
@@ -5048,7 +5048,7 @@
 
 :text_x-ksh a skos:Concept ;
   :hasMediaType "text/x-ksh" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Korn qabıq skripti"@az ;
   skos:prefLabel "Korn shell script"@en ;
   skos:prefLabel "Korn shell script"@nl ;
@@ -5067,11 +5067,11 @@
 
 :text_x-ksysv-log a skos:Concept ;
   :hasMediaType "text/x-ksysv-log" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :text_x-literate-haskell a skos:Concept ;
   :hasMediaType "text/x-literate-haskell" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffynhonnell Haskell llenyddol"@cy ;
   skos:prefLabel "Literate Haskell-Quelltext"@de ;
   skos:prefLabel "Literate Haskell-källkod"@sv ;
@@ -5089,7 +5089,7 @@
 
 :text_x-log a skos:Concept ;
   :hasMediaType "text/x-log" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Anwendungsprotokoll"@de ;
   skos:prefLabel "application log"@en ;
   skos:prefLabel "applikasjonslogg"@no ;
@@ -5097,7 +5097,7 @@
 
 :text_x-makefile a skos:Concept ;
   :hasMediaType "text/x-makefile" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil 'make'"@cy ;
   skos:prefLabel "Makefil"@sv ;
   skos:prefLabel "Makefile"@cs ;
@@ -5116,7 +5116,7 @@
 
 :text_x-moc a skos:Concept ;
   :hasMediaType "text/x-moc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "QT-Meta-Objektdatei"@de ;
   skos:prefLabel "Qt Meta Object -tiedosto"@fi ;
   skos:prefLabel "Qt Meta Object file"@en ;
@@ -5124,7 +5124,7 @@
 
 :text_x-objcsrc a skos:Concept ;
   :hasMediaType "text/x-objcsrc" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Objective-C -lähdekoodi"@fi ;
   skos:prefLabel "Objective-C source code"@en ;
   skos:prefLabel "Objective-C-Quelltext"@de ;
@@ -5133,7 +5133,7 @@
 
 :text_x-pascal a skos:Concept ;
   :hasMediaType "text/x-pascal" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Pascal source code"@en ;
   skos:prefLabel "Pascal-Quelltext"@de ;
   skos:prefLabel "Pascal-kildekode"@no ;
@@ -5142,7 +5142,7 @@
 
 :text_x-patch a skos:Concept ;
   :hasMediaType "text/x-patch" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Unterschied zwischen Dateien"@de ;
   skos:prefLabel "differences between files"@en ;
   skos:prefLabel "forskjeller mellom filer"@no ;
@@ -5150,7 +5150,7 @@
 
 :text_x-readme a skos:Concept ;
   :hasMediaType "text/x-readme" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen README"@cy ;
   skos:prefLabel "Dokument README"@cs ;
   skos:prefLabel "LEESMIJ document"@nl ;
@@ -5169,7 +5169,7 @@
 
 :text_x-scheme a skos:Concept ;
   :hasMediaType "text/x-scheme" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffynhonnell Rhaglen Scheme"@cy ;
   skos:prefLabel "Scheme broncode"@nl ;
   skos:prefLabel "Scheme kjeldekode"@nn ;
@@ -5188,7 +5188,7 @@
 
 :text_x-setext a skos:Concept ;
   :hasMediaType "text/x-setext" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen Setext"@cy ;
   skos:prefLabel "Dokument Setext"@cs ;
   skos:prefLabel "Setext document"@en ;
@@ -5207,7 +5207,7 @@
 
 :text_x-speech a skos:Concept ;
   :hasMediaType "text/x-speech" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Danışıq sənədi"@az ;
   skos:prefLabel "Dogfen leferydd"@cy ;
   skos:prefLabel "Dokument Speech"@cs ;
@@ -5226,7 +5226,7 @@
 
 :text_x-sql a skos:Concept ;
   :hasMediaType "text/x-sql" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Côd SQL"@cy ;
   skos:prefLabel "Kód SQL"@cs ;
   skos:prefLabel "SQL code"@en ;
@@ -5245,7 +5245,7 @@
 
 :text_x-tcl a skos:Concept ;
   :hasMediaType "text/x-tcl" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Tcl script"@en ;
   skos:prefLabel "Tcl-Skript"@de ;
   skos:prefLabel "Tcl-skript"@no ;
@@ -5255,7 +5255,7 @@
 
 :text_x-tex a skos:Concept ;
   :hasMediaType "text/x-tex" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen TeX "@cy ;
   skos:prefLabel "TeX document"@en ;
   skos:prefLabel "TeX документ"@sr ;
@@ -5268,7 +5268,7 @@
 
 :text_x-texinfo a skos:Concept ;
   :hasMediaType "text/x-texinfo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen TeXInfo"@cy ;
   skos:prefLabel "Dokument TeXInfo"@cs ;
   skos:prefLabel "TeXInfo document"@en ;
@@ -5287,7 +5287,7 @@
 
 :text_x-troff-me a skos:Concept ;
   :hasMediaType "text/x-troff-me" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Troff ME -syöteasiakirja"@fi ;
   skos:prefLabel "Troff ME input document"@en ;
   skos:prefLabel "Troff ME-inndatadokument"@no ;
@@ -5295,7 +5295,7 @@
 
 :text_x-troff-mm a skos:Concept ;
   :hasMediaType "text/x-troff-mm" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Troff MM -syöteasiakirja"@fi ;
   skos:prefLabel "Troff MM input document"@en ;
   skos:prefLabel "Troff MM-inndatadokument"@no ;
@@ -5303,7 +5303,7 @@
 
 :text_x-troff-ms a skos:Concept ;
   :hasMediaType "text/x-troff-ms" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Troff MS -syöteasiakirja"@fi ;
   skos:prefLabel "Troff MS input document"@en ;
   skos:prefLabel "Troff MS-inndatadokument"@no ;
@@ -5311,21 +5311,21 @@
 
 :text_x-uil a skos:Concept ;
   :hasMediaType "text/x-uil" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "X-Motif UIL -taulukko"@fi ;
   skos:prefLabel "X-Motif UIL table"@en ;
   skos:prefLabel "X-Motif-UIL-Tabelle"@de .
 
 :text_x-uri a skos:Concept ;
   :hasMediaType "text/x-uri" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ressourcenort"@de ;
   skos:prefLabel "resource location"@en ;
   skos:prefLabel "ressurslokasjon"@no .
 
 :text_x-vcalendar a skos:Concept ;
   :hasMediaType "text/x-vcalendar" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil gyfnewid vCalendar"@cy ;
   skos:prefLabel "Soubor výměny vCalendar"@cs ;
   skos:prefLabel "fichier « vCalendar interchange »"@fr ;
@@ -5342,7 +5342,7 @@
 
 :text_x-vcard a skos:Concept ;
   :hasMediaType "text/x-vcard" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "electronic business card"@en ;
   skos:prefLabel "elektronische Visitenkarte"@de ;
   skos:prefLabel "elektronisk visittkort"@no ;
@@ -5351,13 +5351,13 @@
 
 :text_x-xmi a skos:Concept ;
   :hasMediaType "text/x-xmi" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "XML Metadata Interchange file"@en ;
   skos:prefLabel "XML-Metadaten-Austauschdatei"@de .
 
 :text_x-xslfo a skos:Concept ;
   :hasMediaType "text/x-xslfo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Ffeil gwrthrych ffurfwedd XSL"@cy ;
   skos:prefLabel "Soubor objektu formátování XSL"@cs ;
   skos:prefLabel "XSF:FO-fájl"@hu ;
@@ -5374,7 +5374,7 @@
 
 :text_x-xslt a skos:Concept ;
   :hasMediaType "text/x-xslt" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "XSLT stylesheet"@en ;
   skos:prefLabel "XSLT-Stylesheet"@de ;
   skos:prefLabel "XSLT-stilark"@no ;
@@ -5382,11 +5382,11 @@
 
 :text_xmcd a skos:Concept ;
   :hasMediaType "text/xmcd" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> .
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> .
 
 :text_xml a skos:Concept ;
   :hasMediaType "text/xml" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Dogfen XML (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language)"@cy ;
   skos:prefLabel "Dokument eXtensible Markup Language"@cs ;
   skos:prefLabel "Uitbreidbare opmaaktaal document (XML)"@nl ;
@@ -5423,7 +5423,7 @@
 
 :video_isivideo a skos:Concept ;
   :hasMediaType "video/isivideo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Fideo ISI"@cy ;
   skos:prefLabel "ISI video faylı"@az ;
   skos:prefLabel "ISI video"@en ;
@@ -5442,7 +5442,7 @@
 
 :video_mpeg a skos:Concept ;
   :hasMediaType "video/mpeg" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MPEG video"@en ;
   skos:prefLabel "MPEG-Video"@de ;
   skos:prefLabel "MPEG-film"@no ;
@@ -5452,7 +5452,7 @@
 
 :video_quicktime a skos:Concept ;
   :hasMediaType "video/quicktime" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "QuickTime video"@en ;
   skos:prefLabel "QuickTime-Video"@de ;
   skos:prefLabel "QuickTime-video"@fi ;
@@ -5461,7 +5461,7 @@
 
 :video_vivo a skos:Concept ;
   :hasMediaType "video/vivo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Fideo Vivo"@cy ;
   skos:prefLabel "Video Vivo"@cs ;
   skos:prefLabel "Vivo video faylı"@az ;
@@ -5480,7 +5480,7 @@
 
 :video_wavelet a skos:Concept ;
   :hasMediaType "video/wavelet" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Fideo Wavelet"@cy ;
   skos:prefLabel "Video Wavelet"@cs ;
   skos:prefLabel "Wavelet video faylı"@az ;
@@ -5499,7 +5499,7 @@
 
 :video_x-anim a skos:Concept ;
   :hasMediaType "video/x-anim" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "ANIM animasiyası"@az ;
   skos:prefLabel "ANIM animatie"@nl ;
   skos:prefLabel "ANIM animation"@en ;
@@ -5518,7 +5518,7 @@
 
 :video_x-avi a skos:Concept ;
   :hasMediaType "video/x-avi" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AVI video faylı"@az ;
   skos:prefLabel "AVI video"@en ;
   skos:prefLabel "AVI video"@nl ;
@@ -5537,7 +5537,7 @@
 
 :video_x-flic a skos:Concept ;
   :hasMediaType "video/x-flic" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "AutoDesk FLIC -animaatio"@fi ;
   skos:prefLabel "AutoDesk FLIC animation"@en ;
   skos:prefLabel "AutoDesk FLIC-animasjon"@no ;
@@ -5545,7 +5545,7 @@
 
 :video_x-mng a skos:Concept ;
   :hasMediaType "video/x-mng" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "MNG animation"@en ;
   skos:prefLabel "MNG-Animation"@de ;
   skos:prefLabel "MNG-animaatio"@fi ;
@@ -5553,7 +5553,7 @@
 
 :video_x-ms-asf a skos:Concept ;
   :hasMediaType "video/x-ms-asf" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft ASF -video"@fi ;
   skos:prefLabel "Microsoft ASF video"@en ;
   skos:prefLabel "Microsoft ASF-film"@no ;
@@ -5562,7 +5562,7 @@
 
 :video_x-ms-wmv a skos:Concept ;
   :hasMediaType "video/x-ms-wmv" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft WMV -video"@fi ;
   skos:prefLabel "Microsoft WMV video faylı"@az ;
   skos:prefLabel "Microsoft WMV video"@en ;
@@ -5581,7 +5581,7 @@
 
 :video_x-msvideo a skos:Concept ;
   :hasMediaType "video/x-msvideo" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Microsoft AVI -video"@fi ;
   skos:prefLabel "Microsoft AVI video"@en ;
   skos:prefLabel "Microsoft AVI-film"@no ;
@@ -5591,7 +5591,7 @@
 
 :video_x-nsv a skos:Concept ;
   :hasMediaType "video/x-nsv" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Fideo Nullsoft"@cy ;
   skos:prefLabel "Nullsoft video faylı"@az ;
   skos:prefLabel "Nullsoft video"@en ;
@@ -5610,7 +5610,7 @@
 
 :video_x-real-video a skos:Concept ;
   :hasMediaType "video/x-real-video" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "Fideo RealVideo"@cy ;
   skos:prefLabel "RealVideo film"@no ;
   skos:prefLabel "RealVideo video faylı"@az ;
@@ -5629,7 +5629,7 @@
 
 :video_x-sgi-movie a skos:Concept ;
   :hasMediaType "video/x-sgi-movie" ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/media-type> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> ;
   skos:prefLabel "SGI video faylı"@az ;
   skos:prefLabel "SGI video"@en ;
   skos:prefLabel "SGI video"@nl ;
@@ -5646,7 +5646,7 @@
   skos:prefLabel "vidéo SGI"@fr ;
   skos:prefLabel "Βίντεο SGI"@el .
 
-<https://w3id.org/okp4/ontology/thesaurus/media-type> a skos:ConceptScheme ;
+<https://w3id.org/okp4/ontology/v$major/thesaurus/media-type> a skos:ConceptScheme ;
   rdfs:label "Media types Thesaurus"@en ;
   dct:description """
     The Media Types Thesaurus is a comprehensive list of Internet media types (originally called MIME types) that are commonly used and widely recognized.

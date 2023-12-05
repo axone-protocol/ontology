@@ -1,70 +1,70 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix : <https://w3id.org/okp4/ontology/thesaurus/topic/> .
+@prefix : <https://w3id.org/okp4/ontology/v$major/thesaurus/topic/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :AgricultureFoodEnvironmentAndForestry a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Agriculture, alimentation, environnement et forêt"@fr ;
   skos:prefLabel "Agriculture, food, environment and forestry"@en ;
   skos:prefLabel "Landwirtschaft, Ernährung, Umwelt und Forstwirtschaft"@de .
 
 :BiologyGeologyAndChemistry a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Biologie, Geologie und Chemie"@de ;
   skos:prefLabel "Biologie, géologie et chimie"@fr ;
   skos:prefLabel "Biology, geology and chemistry"@en .
 
 :BusinessAndPurchase a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Business and purchase"@en ;
   skos:prefLabel "Commerce et achat"@fr ;
   skos:prefLabel "Geschäft und Einkauf"@de .
 
 :DeFiAndCrypto a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "DeFi and Crypto"@en ;
   skos:prefLabel "DeFi et Crypto"@fr ;
   skos:prefLabel "DeFi und Krypto"@de .
 
 :Energy a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Energie"@de ;
   skos:prefLabel "Energie"@fr ;
   skos:prefLabel "Energy"@en .
 
 :Healthcare a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Gesundheit"@de ;
   skos:prefLabel "Health"@en ;
   skos:prefLabel "Santé"@fr .
 
 :IndustryMobilityAndEngineering a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Industrie, Mobilität und Technik"@de ;
   skos:prefLabel "Industrie, mobilité et ingénierie"@fr ;
   skos:prefLabel "Industry, mobility and engineering"@en .
 
 :LogisticsRetailSupplyChainECommerce a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Logistics, retail, supply chain and eCommerce"@en ;
   skos:prefLabel "Logistik, Einzelhandel, Lieferkette und eCommerce"@de ;
   skos:prefLabel "Logistique, commerce, chaîne d'approvisionnement et eCommerce"@fr .
 
 :MarketingAndCustomerBehavior a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Marketing and Customer Behavior"@en ;
   skos:prefLabel "Marketing et comportement des consommateurs"@fr ;
   skos:prefLabel "Marketing und Kundenverhalten"@de .
 
 :Other a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/thesaurus/topic> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/topic> ;
   skos:prefLabel "Andere"@de ;
   skos:prefLabel "Autres"@fr ;
   skos:prefLabel "Other"@en .
 
-<https://w3id.org/okp4/ontology/thesaurus/topic> a skos:ConceptScheme ;
+<https://w3id.org/okp4/ontology/v$major/thesaurus/topic> a skos:ConceptScheme ;
   rdfs:label "Thema Thesaurus"@de ;
   rdfs:label "Thésaurus des thèmes"@fr ;
   rdfs:label "Topic Thesaurus"@en ;
