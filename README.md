@@ -78,6 +78,21 @@ At the root, the ontology is divided into two main parts:
 
 The foundational philosophy underpinning the ontology of the [OKP4 protocol](https://okp4.network) is grounded in the *Open World* principle. This principle operates on the premise that knowledge is not static or finite; rather, it acknowledges that understanding and information can continuously evolve and expand. In practical terms, this means that the ontology is not confined to a predefined or limited set of schemas and thesauri. Instead, it is inherently designed to accommodate and integrate new and diverse contributions.
 
+### Ontology versioning
+
+In managing [RDF](https://www.w3.org/RDF/) resources, it is essential to balance the stability of URIs with the stability of their referenced content:
+
+- _URI Stability_: URIs must remain constant over time. This ensures that each URI consistently references the same resource, providing a reliable point of reference in web-based knowledge systems.
+- _Content Stability_: The content accessed via these URIs should be stable and avoid introducing breaking changes. This stability is crucial for 3rd party systems referencing these URIs, ensuring that their interactions remain consistent.
+
+The OKP4 ontology adopts the [Semantic Versioning](https://semver.org/) format of `MAJOR.MINOR.PATCH`. This approach includes incorporating the `MAJOR` version number into the ontology's URI. As a result, the structure of the ontology's URI is:
+
+```text
+https://w3id.org/okp4/ontology/<MAJOR>/<path>
+```
+
+Note: by including only the `MAJOR` version number in the URI, significant updates that could impact compatibility gives a new ontology version being referenced with a different namespace. `MINOR` updates and `PATCH` (which do not result in breaking changes) have no impact on the URI, maintaining the stability of the URI for external references.
+
 ## Development
 
 ### Building the ontology
