@@ -30,10 +30,17 @@ COLOR_YELLOW := $(shell tput -Txterm setaf 3)
 # Build constants
 ROOT               := .
 
+# - Version constants
+VERSION 	  := $(shell cat version)
+VERSION_MAJOR := $(word 1,$(subst ., ,$(VERSION)))
+VERSION_MINOR := $(word 2,$(subst ., ,$(VERSION)))
+VERSION_PATCH := $(word 3,$(subst ., ,$(VERSION)))
+
+# - Destination directories
 DST                := $(ROOT)/target
 DST_CACHE          := $(DST)/.cache
 DST_MAKE           := $(DST)/.make
-DST_ONT            := $(DST)/ontology
+DST_ONT            := $(DST)/ontology/v$(VERSION_MAJOR)
 DST_FORMAT         := $(DST_MAKE)/format
 DST_LINT           := $(DST_MAKE)/lint
 DST_TEST           := $(DST_MAKE)/test
@@ -138,6 +145,7 @@ $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(@D)
 	@cp $< $@
+	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@
 
 $(OBJ_ONTS_NT): $(DST_ONT)/%.nt: $(DST_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
