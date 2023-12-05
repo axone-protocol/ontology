@@ -323,6 +323,10 @@ $(DST):
 	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m 777 $(DST)
 
+.PHONY: version
+version: ## Show the current version
+	@echo "${COLOR_CYAN}📦 version: ${COLOR_GREEN}${VERSION}${COLOR_RESET}"
+
 ## Help:
 .PHONY: vars
 vars: ## Show relevant variables used in this Makefile
