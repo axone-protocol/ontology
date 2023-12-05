@@ -25,15 +25,15 @@ plugins:
   - - "@semantic-release/github"
     - assets:
         - label: OKP4 Ontology (JSON-LD)
-          path: ./target/okp4-ontology.jsonld
+          path: ./target/okp4-ontology-*.jsonld
         - label: OKP4 Ontology (Turtle)
-          path: ./target/okp4-ontology.ttl
+          path: ./target/okp4-ontology-*.ttl
         - label: OKP4 Ontology (RDF/XML)
-          path: ./target/okp4-ontology.rdf
+          path: ./target/okp4-ontology-*.rdf
         - label: OKP4 Ontology (N-Triples)
-          path: ./target/okp4-ontology.nt
+          path: ./target/okp4-ontology-*.nt
         - label: OKP4 Ontology Bundle
-          path: ./target/okp4-ontology-bundle.tar.gz
+          path: ./target/okp4-ontology-*-bundle.tar.gz
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md

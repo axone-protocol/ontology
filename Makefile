@@ -54,11 +54,11 @@ OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONT
 OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
 
 OKP4_ARTIFACT_ID   := okp4-ontology
-BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID).ttl
-BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID).nt
-BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID).rdf.xml
-BIN_OKP4_JSONLD    := $(DST)/$(OKP4_ARTIFACT_ID).jsonld
-BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-bundle.tar.gz
+BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
+BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).nt
+BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).rdf.xml
+BIN_OKP4_JSONLD    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).jsonld
+BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
 
 # - Format
 FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
@@ -189,7 +189,7 @@ $(BIN_OKP4_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name 
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET} tarball"
 	@tar -cvzf $(BIN_OKP4_BUNDLE) \
 	  -C $(abspath $(ROOT)) LICENSE \
-	  -C $(abspath $(DST)) $(shell cd $(DST) ; echo $(OKP4_ARTIFACT_ID).*) \
+	  -C $(abspath $(DST)) $(shell cd $(DST) ; echo $(OKP4_ARTIFACT_ID)-$(VERSION).*) \
 	  -C $(abspath $(DST_ONT)) $(shell cd $(DST_ONT) ; echo *)
 	@echo "${COLOR_CYAN}📊 tarball ${COLOR_GREEN}statistics${COLOR_RESET}"
 	@echo "${COLOR_CYAN}   ↳ 🗃️ number of files${COLOR_RESET}: ${COLOR_GREEN}$$(tar -tzf $(BIN_OKP4_BUNDLE) | wc -l | bc)${COLOR_RESET}"
