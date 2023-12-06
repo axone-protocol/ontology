@@ -20,7 +20,7 @@ jobs:
         run: |
           echo next > version
 
-      - name: Build documentation
+      - name: Build ontology
         run: |
           make build
 
