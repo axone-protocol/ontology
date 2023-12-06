@@ -9,20 +9,31 @@ plugins:
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
       changelogTitle: "# OKP4 Ontology Changelog"
+  - - "@google/semantic-release-replace-plugin"
+    - replacements:
+        - files: [version]
+          from: ^.+$
+          to: ${nextRelease.version}
+          countMatches: true
+          results:
+            - file: version
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make build
   - - "@semantic-release/github"
     - assets:
         - label: OKP4 Ontology (JSON-LD)
-          path: ./target/okp4-ontology.jsonld
+          path: ./target/okp4-ontology-*.jsonld
         - label: OKP4 Ontology (Turtle)
-          path: ./target/okp4-ontology.ttl
+          path: ./target/okp4-ontology-*.ttl
         - label: OKP4 Ontology (RDF/XML)
-          path: ./target/okp4-ontology.rdf
+          path: ./target/okp4-ontology-*.rdf
         - label: OKP4 Ontology (N-Triples)
-          path: ./target/okp4-ontology.nt
+          path: ./target/okp4-ontology-*.nt
         - label: OKP4 Ontology Bundle
-          path: ./target/okp4-ontology-bundle.tar.gz
+          path: ./target/okp4-ontology-*-bundle.tar.gz
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
