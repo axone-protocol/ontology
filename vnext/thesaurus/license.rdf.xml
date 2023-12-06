@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="https://w3id.org/okp4/ontology/vnext/thesaurus/license/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dct="http://purl.org/dc/terms/">
+  <skos:Collection rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/contentLicenses">
+    <rdfs:label xml:lang="en">Content Licenses</rdfs:label>
+    <dct:description xml:lang="en">Collection of licenses which applies to a content.</dct:description>
+    <dct:title xml:lang="en">Content Licenses</dct:title>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/AFL-3_0">
+        <skos:inScheme>
+          <skos:ConceptScheme rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license">
+            <rdfs:label xml:lang="en">Open Source Licenses Thesaurus</rdfs:label>
+            <dct:description xml:lang="en">This thesaurus defines a controlled vocabulary referencing the (major) Open Source licenses.</dct:description>
+            <dct:title xml:lang="en">Open Source licenses Thesaurus</dct:title>
+            <rdfs:seeAlso rdf:resource="https://licenses.opendefinition.org/"/>
+          </skos:ConceptScheme>
+        </skos:inScheme>
+        <skos:prefLabel xml:lang="en">Academic Free License 3.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Against-DRM">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Against DRM</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-4_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Creative Commons Attribution 4.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-NC-4_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Creative Commons Attribution-NonCommercial 4.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-SA-4_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Creative Commons Attribution Share-Alike 4.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">CC0 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/DSL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Design Science License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/FAL-1_3">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Free Art License 1.3</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">GNU Free Documentation License 1.3 with no cover texts and no invariant sections</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MirOS">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">MirOS Licence</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/NPOSL-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Non-Profit Open Software License 3.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-Canada-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Government License 2.0 (Canada)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Government Licence 1.0 (United Kingdom)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Government Licence 2.0 (United Kingdom)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Government Licence 3.0 (United Kingdom)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OSL-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Software License 3.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Talis">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Talis Community License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/hesa-withrights">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Higher Education Statistics Agency Copyright with data.gov.uk rights</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/localauth-withrights">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Local Authority Copyright with data.gov.uk rights</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-at">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Other (Attribution)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-open">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Other (Open)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-pd">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Other (Public Domain)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukclickusepsi">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">UK Click Use PSI</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukcrown-withrights">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">UK Crown Copyright with data.gov.uk rights</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukpsi">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">UK PSI Public Sector Information</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+  <skos:Collection rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/dataLicenses">
+    <rdfs:label xml:lang="en">Data Licenses</rdfs:label>
+    <dct:description xml:lang="en">Collection of licenses which applies to a data.</dct:description>
+    <dct:title xml:lang="en">Data Licenses</dct:title>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-4_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-NC-4_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-SA-4_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LO-FR-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LO-FR-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ODC-BY-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Data Commons Attribution License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ODbL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Data Commons Open Database License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-Canada-2_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/PDDL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Data Commons Public Domain Dedication and Licence 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/dli-model-use">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Statistics Canada: Data Liberation Initiative (DLI) - Model Data Use Licence</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/geogratis">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Geogratis</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/met-office-cp">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+    <skos:prefLabel xml:lang="en">Met Office UK Climate Projections Licence Agreement</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/notspecified">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+    <skos:prefLabel xml:lang="en">License Not Specified</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-closed">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+    <skos:prefLabel xml:lang="en">Other (Not Open)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-nc">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+    <skos:prefLabel xml:lang="en">Other (Non-Commercial)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Collection rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/softwareLicenses">
+    <rdfs:label xml:lang="en">Software Licenses</rdfs:label>
+    <dct:description xml:lang="en">Collection of licenses which applies to a software.</dct:description>
+    <dct:title xml:lang="en">Software Licenses</dct:title>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/AAL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Attribution Assurance Licenses</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/AFL-3_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/AGPL-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">GNU Affero General Public License v3</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/APL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Adaptive Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/APSL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Apple Public Source License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Apache-1_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Apache Software License 1.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Apache-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Apache Software License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Artistic-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Artistic License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSD-2-Clause">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSD-3-Clause">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Boost Software License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/BitTorrent-1_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">BitTorrent Open Source License 1.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CATOSL-1_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CDDL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Common Development and Distribution License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CECILL-2_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">CeCILL License 2.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CNRI-Python">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">CNRI Python License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CPAL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Common Public Attribution License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/CUA-OPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">CUA Office Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ECL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Educational Community License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/EFL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Eiffel Forum License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/EPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Eclipse Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/EPL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Eclipse Public License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/EUDatagrid">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">EU DataGrid Software License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/EUPL-1_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">European Union Public License 1.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Entessa">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Entessa Public License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Fair">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Fair License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Frameworx-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Frameworx License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/GPL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">GNU General Public License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/GPL-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">GNU General Public License 3.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/HPND">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Historical Permission Notice and Disclaimer</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/IPA">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">IPA Font License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/IPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">IBM Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ISC">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">ISC License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Intel">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Intel Open Source License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LGPL-2_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">GNU Lesser General Public License 2.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LGPL-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">GNU Lesser General Public License 3.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Lucent Public License ("Plan9") 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPL-1_02">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Lucent Public License 1.02</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPPL-1_3c">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">LaTeX Project Public License 1.3c</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MIT">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">MIT License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Mozilla Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-1_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Mozilla Public License 1.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Mozilla Public License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MS-PL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Microsoft Public License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MS-RL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Microsoft Reciprocal License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/MirOS"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Motosoto">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Motosoto License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Multics">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Multics License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/NASA-1_3">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">NASA Open Source Agreement 1.3</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/NCSA">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">University of Illinois/NCSA Open Source License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/NGPL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Nethack General Public License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/NPOSL-3_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/NTP">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">NTP License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Naumen">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Naumen Public License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Nokia">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Nokia Open Source License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OCLC-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">OCLC Research Public License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OFL-1_1">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Font License 1.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0"/>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGTSL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Open Group Test Suite License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license/OSL-3_0"/>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/PHP-3_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">PHP License 3.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/PostgreSQL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">PostgreSQL License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Python-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Python License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/QPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Q Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/RPL-1_5">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Reciprocal Public License 1.5</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/RPSL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">RealNetworks Public Source License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/RSCPL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Ricoh Source Code Public License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/SISSL">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Sun Industry Standards Source License 1.1</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/SPL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Sun Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/SimPL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Simple Public License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Sleepycat">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Sleepycat License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Unlicense">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Unlicense</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/VSL-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Vovida Software License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/W3C">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">W3C License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/WXwindows">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">wxWindows Library License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Watcom-1_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Sybase Open Watcom Public License 1.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Xnet">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">X.Net License</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ZPL-2_0">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">Zope Public License 2.0</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/Zlib">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">zlib/libpng license</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/mitre">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+        <skos:prefLabel xml:lang="en">MITRE Collaborative Virtual Workspace License (CVW License)</skos:prefLabel>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukcrown">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/license"/>
+    <skos:prefLabel xml:lang="en">UK Crown Copyright</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>

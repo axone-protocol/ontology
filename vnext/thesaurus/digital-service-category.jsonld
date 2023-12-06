@@ -1,0 +1,360 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Classification Model"
+        },
+        {
+          "@language": "de",
+          "@value": "Klassifizierungsmodell"
+        },
+        {
+          "@language": "fr",
+          "@value": "Modèle de classification"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Data Processing"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Service Category Thesaurus"
+        },
+        {
+          "@language": "de",
+          "@value": "Thesaurus der Dienstleistungskategorien"
+        },
+        {
+          "@language": "fr",
+          "@value": "Thésaurus des catégories de services"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@language": "fr",
+          "@value": "\n  Ce thésaurus définit un vocabulaire contrôlé exprimant les différentes catégories/classes de services, permettant de les organiser et de les classer en fonction de leur nature ou de leur objectif.\n  "
+        },
+        {
+          "@language": "de",
+          "@value": "\n  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen Kategorien/Klassen von Diensten ausdrückt und es ermöglicht, diese\n  und nach ihrer Art oder ihrem Zweck zu klassifizieren.\n  "
+        },
+        {
+          "@language": "en",
+          "@value": "\n  This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised\n  and classified according to their nature or purpose.\n  "
+        }
+      ],
+      "dcterms:title": [
+        {
+          "@language": "en",
+          "@value": "The OKP4 Service Category Thesaurus"
+        },
+        {
+          "@language": "de",
+          "@value": "Thesaurus der Dienstleistungskategorien"
+        },
+        {
+          "@language": "fr",
+          "@value": "Thésaurus des catégories de services"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Clustering Model"
+        },
+        {
+          "@language": "de",
+          "@value": "Clustering-Modell"
+        },
+        {
+          "@language": "fr",
+          "@value": "Modèle de clustering"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "de",
+          "@value": "Computer Vision"
+        },
+        {
+          "@language": "en",
+          "@value": "Computer Vision"
+        },
+        {
+          "@language": "fr",
+          "@value": "Vision par ordinateur"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data Cleaning"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenbereinigung"
+        },
+        {
+          "@language": "fr",
+          "@value": "Nettoyage de données"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data Integration"
+        },
+        {
+          "@language": "de",
+          "@value": "Integration von Daten"
+        },
+        {
+          "@language": "fr",
+          "@value": "Intégration des données"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data Transformation"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenumwandlung"
+        },
+        {
+          "@language": "fr",
+          "@value": "Transformation des données"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "fr",
+          "@value": "Apprentissage profond"
+        },
+        {
+          "@language": "en",
+          "@value": "Deep Learning"
+        },
+        {
+          "@language": "de",
+          "@value": "mehrschichtiges Lernen"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Natural Language Processing"
+        },
+        {
+          "@language": "fr",
+          "@value": "Traitement du langage naturel"
+        },
+        {
+          "@language": "de",
+          "@value": "Verarbeitung natürlicher Sprache"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "fr",
+          "@value": "Modèle de régression"
+        },
+        {
+          "@language": "en",
+          "@value": "Regression Model"
+        },
+        {
+          "@language": "de",
+          "@value": "Regressionsmodell"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Statistics & Analytics"
+        },
+        {
+          "@language": "de",
+          "@value": "Statistik & Analytik"
+        },
+        {
+          "@language": "fr",
+          "@value": "Statistiques et analyses"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "de",
+          "@value": "Lagerung"
+        },
+        {
+          "@language": "fr",
+          "@value": "Stockage"
+        },
+        {
+          "@language": "en",
+          "@value": "Storage"
+        }
+      ]
+    }
+  ]
+}
