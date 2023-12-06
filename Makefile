@@ -71,6 +71,9 @@ SRC_TST            := $(ROOT)/test
 SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
 FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 
+# - Permission mode
+PERMISSION_MODE := 767
+
 # sed -i support
 SED_FLAG=
 SHELL_NAME := $(shell uname -s)
@@ -143,24 +146,24 @@ build-ontology-jsonld: check $(DST) $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Bui
 
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@cp $< $@
 	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@
 
 $(OBJ_ONTS_NT): $(DST_ONT)/%.nt: $(DST_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,ntriples,$<,$@}
 	@${call NT_UNIQUIFY,$@}
 
 $(OBJ_ONTS_RDFXML): $(DST_ONT)/%.rdf.xml: $(DST_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,rdfxml,$<,$@}
 
 $(OBJ_ONTS_JSONLD): $(DST_ONT)/%.jsonld: $(DST_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
 
 $(BIN_OKP4_NT): $(OBJ_ONTS_NT)
@@ -204,7 +207,7 @@ format-ttl: check cache $(FLG_FMT_TTLS) ## Format all Turtle files
 
 $(FLG_FMT_TTLS): $(DST_FORMAT)/%.formatted: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}📐 formating: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_WRITE,turtle,$<,"$<.formatted"}
 	@mv -f "$<.formatted" $<
 	@touch $@
@@ -218,7 +221,7 @@ lint-ttl: check cache $(FLG_LINT_TTLS) ## Lint all Turtle files
 
 $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@docker run --rm \
       -v `pwd`:/usr/src/ontology:ro \
       -w /usr/src/ontology \
@@ -234,7 +237,7 @@ test-ontology: check build-ontology-nt $(FLG_TSTS) ## Test the ontology
 
 $(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 test: ${COLOR_GREEN}$<${COLOR_RESET}"
-	@mkdir -p -m 777 $(@D)
+	mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@bash -c '\
 		for target in $(BIN_OKP4_NT); do \
 			$(call RDF_SHACL,$<,$$target,$@) \
@@ -299,7 +302,7 @@ cache: $(DST_CACHE)/$(EXEC_OWL_CLI) ## Download all required files to cache
 
 $(DST_CACHE)/$(EXEC_OWL_CLI):
 	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
-	@mkdir -p -m 777 $(DST_CACHE); \
+	@mkdir -p -m $(PERMISSION_MODE) $(DST_CACHE); \
     cd $(DST_CACHE); \
     wget https://github.com/atextor/owl-cli/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
 
@@ -316,12 +319,12 @@ $(FLG_CHECK_OK):
 			echo "${COLOR_CYAN}✅ ${COLOR_GREEN}$$cmd${COLOR_RESET} ($$path)"; \
 		fi \
 	done
-	@mkdir -p -m 777 $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@touch $(FLG_CHECK_OK)
 
 $(DST):
 	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m 777 $(DST)
+	@mkdir -p -m $(PERMISSION_MODE) $(DST)
 
 .PHONY: version
 version: ## Show the current version
