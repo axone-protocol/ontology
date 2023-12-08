@@ -1,7 +1,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <https://w3id.org/okp4/ontology/vnext/thesaurus/area/> .
+@prefix : <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -32,12 +32,12 @@
   skos:narrower :150 ;
   skos:prefLabel "Monde"@fr ;
   skos:prefLabel "World"@en ;
-  skos:topConceptOf <https://w3id.org/okp4/ontology/vnext/thesaurus/area> .
+  skos:topConceptOf <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> .
 
 :002 a skos:Concept ;
   :hasAreaCode 2 ;
   skos:broader :001 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :015 ;
   skos:narrower :202 ;
   skos:prefLabel "Africa"@en ;
@@ -48,14 +48,14 @@
   :hasAlpha3Code "AFG" ;
   :hasAreaCode 4 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Afghanistan"@en ;
   skos:prefLabel "Afghanistan"@fr .
 
 :005 a skos:Concept ;
   :hasAreaCode 5 ;
   skos:broader :419 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :032 ;
   skos:narrower :068 ;
   skos:narrower :074 ;
@@ -80,14 +80,14 @@
   :hasAlpha3Code "ALB" ;
   :hasAreaCode 8 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Albania"@en ;
   skos:prefLabel "Albanie"@fr .
 
 :009 a skos:Concept ;
   :hasAreaCode 9 ;
   skos:broader :001 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :053 ;
   skos:narrower :054 ;
   skos:narrower :057 ;
@@ -100,14 +100,14 @@
   :hasAlpha3Code "ATA" ;
   :hasAreaCode 10 ;
   skos:broader :001 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Antarctica"@en ;
   skos:prefLabel "Antarctique"@fr .
 
 :011 a skos:Concept ;
   :hasAreaCode 11 ;
   skos:broader :202 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :132 ;
   skos:narrower :204 ;
   skos:narrower :270 ;
@@ -133,14 +133,14 @@
   :hasAlpha3Code "DZA" ;
   :hasAreaCode 12 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Algeria"@en ;
   skos:prefLabel "Algérie"@fr .
 
 :013 a skos:Concept ;
   :hasAreaCode 13 ;
   skos:broader :419 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :084 ;
   skos:narrower :188 ;
   skos:narrower :222 ;
@@ -155,7 +155,7 @@
 :014 a skos:Concept ;
   :hasAreaCode 14 ;
   skos:broader :202 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :086 ;
   skos:narrower :108 ;
   skos:narrower :174 ;
@@ -184,7 +184,7 @@
 :015 a skos:Concept ;
   :hasAreaCode 15 ;
   skos:broader :002 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :012 ;
   skos:narrower :434 ;
   skos:narrower :504 ;
@@ -200,14 +200,14 @@
   :hasAlpha3Code "ASM" ;
   :hasAreaCode 16 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "American Samoa"@en ;
   skos:prefLabel "Samoa américaines"@fr .
 
 :017 a skos:Concept ;
   :hasAreaCode 17 ;
   skos:broader :202 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :024 ;
   skos:narrower :120 ;
   skos:narrower :140 ;
@@ -223,7 +223,7 @@
 :018 a skos:Concept ;
   :hasAreaCode 18 ;
   skos:broader :202 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :072 ;
   skos:narrower :426 ;
   skos:narrower :516 ;
@@ -235,7 +235,7 @@
 :019 a skos:Concept ;
   :hasAreaCode 19 ;
   skos:broader :001 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :021 ;
   skos:narrower :419 ;
   skos:prefLabel "Americas"@en ;
@@ -246,14 +246,14 @@
   :hasAlpha3Code "AND" ;
   :hasAreaCode 20 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Andorra"@en ;
   skos:prefLabel "Andorre"@fr .
 
 :021 a skos:Concept ;
   :hasAreaCode 21 ;
   skos:broader :019 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :060 ;
   skos:narrower :124 ;
   skos:narrower :304 ;
@@ -266,7 +266,7 @@
   :hasAlpha3Code "AGO" ;
   :hasAreaCode 24 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Angola"@en ;
   skos:prefLabel "Angola"@fr .
 
@@ -275,14 +275,14 @@
   :hasAlpha3Code "ATG" ;
   :hasAreaCode 28 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Antigua and Barbuda"@en ;
   skos:prefLabel "Antigua et Barbade"@fr .
 
 :029 a skos:Concept ;
   :hasAreaCode 29 ;
   skos:broader :419 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :028 ;
   skos:narrower :044 ;
   skos:narrower :052 ;
@@ -317,7 +317,7 @@
 :030 a skos:Concept ;
   :hasAreaCode 30 ;
   skos:broader :142 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :156 ;
   skos:narrower :344 ;
   skos:narrower :392 ;
@@ -333,7 +333,7 @@
   :hasAlpha3Code "AZE" ;
   :hasAreaCode 31 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Azerbaijan"@en ;
   skos:prefLabel "Azerbaijan"@fr .
 
@@ -342,14 +342,14 @@
   :hasAlpha3Code "ARG" ;
   :hasAreaCode 32 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Argentina"@en ;
   skos:prefLabel "Argentine"@fr .
 
 :034 a skos:Concept ;
   :hasAreaCode 34 ;
   skos:broader :142 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :004 ;
   skos:narrower :050 ;
   skos:narrower :064 ;
@@ -365,7 +365,7 @@
 :035 a skos:Concept ;
   :hasAreaCode 35 ;
   skos:broader :142 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :096 ;
   skos:narrower :104 ;
   skos:narrower :116 ;
@@ -385,14 +385,14 @@
   :hasAlpha3Code "AUS" ;
   :hasAreaCode 36 ;
   skos:broader :053 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Australia"@en ;
   skos:prefLabel "Australie"@fr .
 
 :039 a skos:Concept ;
   :hasAreaCode 39 ;
   skos:broader :150 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :008 ;
   skos:narrower :020 ;
   skos:narrower :070 ;
@@ -417,7 +417,7 @@
   :hasAlpha3Code "AUT" ;
   :hasAreaCode 40 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Austria"@en ;
   skos:prefLabel "Autriche"@fr .
 
@@ -426,7 +426,7 @@
   :hasAlpha3Code "BHS" ;
   :hasAreaCode 44 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bahamas"@en ;
   skos:prefLabel "Bahamas"@fr .
 
@@ -435,7 +435,7 @@
   :hasAlpha3Code "BHR" ;
   :hasAreaCode 48 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bahrain"@en ;
   skos:prefLabel "Bahrain"@fr .
 
@@ -444,7 +444,7 @@
   :hasAlpha3Code "BGD" ;
   :hasAreaCode 50 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bangladesh"@en ;
   skos:prefLabel "Bangladesh"@fr .
 
@@ -453,7 +453,7 @@
   :hasAlpha3Code "ARM" ;
   :hasAreaCode 51 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Armenia"@en ;
   skos:prefLabel "Armenie"@fr .
 
@@ -462,14 +462,14 @@
   :hasAlpha3Code "BRB" ;
   :hasAreaCode 52 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Barbades"@fr ;
   skos:prefLabel "Barbados"@en .
 
 :053 a skos:Concept ;
   :hasAreaCode 53 ;
   skos:broader :009 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :036 ;
   skos:narrower :162 ;
   skos:narrower :166 ;
@@ -482,7 +482,7 @@
 :054 a skos:Concept ;
   :hasAreaCode 54 ;
   skos:broader :009 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :090 ;
   skos:narrower :242 ;
   skos:narrower :540 ;
@@ -496,14 +496,14 @@
   :hasAlpha3Code "BEL" ;
   :hasAreaCode 56 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Belgique"@fr ;
   skos:prefLabel "Belgium"@en .
 
 :057 a skos:Concept ;
   :hasAreaCode 57 ;
   skos:broader :009 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :296 ;
   skos:narrower :316 ;
   skos:narrower :520 ;
@@ -519,14 +519,14 @@
   :hasAlpha3Code "BMU" ;
   :hasAreaCode 60 ;
   skos:broader :021 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bermuda"@en ;
   skos:prefLabel "Bermudes"@fr .
 
 :061 a skos:Concept ;
   :hasAreaCode 61 ;
   skos:broader :009 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :016 ;
   skos:narrower :184 ;
   skos:narrower :258 ;
@@ -545,7 +545,7 @@
   :hasAlpha3Code "BTN" ;
   :hasAreaCode 64 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bhutan"@en .
 
 :068 a skos:Concept ;
@@ -553,7 +553,7 @@
   :hasAlpha3Code "BOL" ;
   :hasAreaCode 68 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bolivia (Plurinational State of)"@en ;
   skos:prefLabel "Bolivie"@fr .
 
@@ -562,7 +562,7 @@
   :hasAlpha3Code "BIH" ;
   :hasAreaCode 70 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bosnia and Herzegovina"@en ;
   skos:prefLabel "Bosnie-Herzégovine"@fr .
 
@@ -571,7 +571,7 @@
   :hasAlpha3Code "BWA" ;
   :hasAreaCode 72 ;
   skos:broader :018 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Botswana"@en .
 
 :074 a skos:Concept ;
@@ -579,7 +579,7 @@
   :hasAlpha3Code "BVT" ;
   :hasAreaCode 74 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bouvet Island"@en .
 
 :076 a skos:Concept ;
@@ -587,7 +587,7 @@
   :hasAlpha3Code "BRA" ;
   :hasAreaCode 76 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Brazil"@en ;
   skos:prefLabel "Brésil"@fr .
 
@@ -596,7 +596,7 @@
   :hasAlpha3Code "BLZ" ;
   :hasAreaCode 84 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Belize"@en .
 
 :086 a skos:Concept ;
@@ -604,7 +604,7 @@
   :hasAlpha3Code "IOT" ;
   :hasAreaCode 86 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "British Indian Ocean Territory"@en .
 
 :090 a skos:Concept ;
@@ -612,7 +612,7 @@
   :hasAlpha3Code "SLB" ;
   :hasAreaCode 90 ;
   skos:broader :054 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Solomon Islands"@en ;
   skos:prefLabel "Îles Salomon"@fr .
 
@@ -621,7 +621,7 @@
   :hasAlpha3Code "VGB" ;
   :hasAreaCode 92 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "British Virgin Islands"@en ;
   skos:prefLabel "Îles Vierges britanniques"@fr .
 
@@ -630,7 +630,7 @@
   :hasAlpha3Code "BRN" ;
   :hasAreaCode 96 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Brunei Darussalam"@en .
 
 :100 a skos:Concept ;
@@ -638,7 +638,7 @@
   :hasAlpha3Code "BGR" ;
   :hasAreaCode 100 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bulgaria"@en ;
   skos:prefLabel "Bulgarie"@fr .
 
@@ -647,7 +647,7 @@
   :hasAlpha3Code "MMR" ;
   :hasAreaCode 104 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Myanmar"@en .
 
 :108 a skos:Concept ;
@@ -655,7 +655,7 @@
   :hasAlpha3Code "BDI" ;
   :hasAreaCode 108 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Burundi"@en .
 
 :112 a skos:Concept ;
@@ -663,7 +663,7 @@
   :hasAlpha3Code "BLR" ;
   :hasAreaCode 112 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Belarus"@en ;
   skos:prefLabel "Biélorussie"@fr .
 
@@ -672,7 +672,7 @@
   :hasAlpha3Code "KHM" ;
   :hasAreaCode 116 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cambodge"@fr ;
   skos:prefLabel "Cambodia"@en .
 
@@ -681,7 +681,7 @@
   :hasAlpha3Code "CMR" ;
   :hasAreaCode 120 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cameroon"@en .
 
 :124 a skos:Concept ;
@@ -689,7 +689,7 @@
   :hasAlpha3Code "CAN" ;
   :hasAreaCode 124 ;
   skos:broader :021 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Canada"@en .
 
 :132 a skos:Concept ;
@@ -697,7 +697,7 @@
   :hasAlpha3Code "CPV" ;
   :hasAreaCode 132 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cabo Verde"@en .
 
 :136 a skos:Concept ;
@@ -705,7 +705,7 @@
   :hasAlpha3Code "CYM" ;
   :hasAreaCode 136 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cayman Islands"@en ;
   skos:prefLabel "Îles Caïmans"@fr .
 
@@ -714,14 +714,14 @@
   :hasAlpha3Code "CAF" ;
   :hasAreaCode 140 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Central African Republic"@en ;
   skos:prefLabel "République centrafricaine"@fr .
 
 :142 a skos:Concept ;
   :hasAreaCode 142 ;
   skos:broader :001 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :030 ;
   skos:narrower :034 ;
   skos:narrower :035 ;
@@ -733,7 +733,7 @@
 :143 a skos:Concept ;
   :hasAreaCode 143 ;
   skos:broader :142 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :398 ;
   skos:narrower :417 ;
   skos:narrower :762 ;
@@ -747,13 +747,13 @@
   :hasAlpha3Code "LKA" ;
   :hasAreaCode 144 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Sri Lanka"@en .
 
 :145 a skos:Concept ;
   :hasAreaCode 145 ;
   skos:broader :142 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :031 ;
   skos:narrower :048 ;
   skos:narrower :051 ;
@@ -780,14 +780,14 @@
   :hasAlpha3Code "TCD" ;
   :hasAreaCode 148 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Chad"@en ;
   skos:prefLabel "Tchad"@fr .
 
 :150 a skos:Concept ;
   :hasAreaCode 150 ;
   skos:broader :001 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :039 ;
   skos:narrower :151 ;
   skos:narrower :154 ;
@@ -797,7 +797,7 @@
 :151 a skos:Concept ;
   :hasAreaCode 151 ;
   skos:broader :150 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :100 ;
   skos:narrower :112 ;
   skos:narrower :203 ;
@@ -816,14 +816,14 @@
   :hasAlpha3Code "CHL" ;
   :hasAreaCode 152 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Chile"@en ;
   skos:prefLabel "Chili"@fr .
 
 :154 a skos:Concept ;
   :hasAreaCode 154 ;
   skos:broader :150 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :208 ;
   skos:narrower :233 ;
   skos:narrower :234 ;
@@ -845,7 +845,7 @@
 :155 a skos:Concept ;
   :hasAreaCode 155 ;
   skos:broader :150 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :040 ;
   skos:narrower :056 ;
   skos:narrower :250 ;
@@ -863,7 +863,7 @@
   :hasAlpha3Code "CHN" ;
   :hasAreaCode 156 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "China"@en ;
   skos:prefLabel "Chine"@fr .
 
@@ -872,7 +872,7 @@
   :hasAlpha3Code "CXR" ;
   :hasAreaCode 162 ;
   skos:broader :053 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Christmas Island"@en .
 
 :166 a skos:Concept ;
@@ -880,7 +880,7 @@
   :hasAlpha3Code "CCK" ;
   :hasAreaCode 166 ;
   skos:broader :053 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cocos (Keeling) Islands"@en .
 
 :170 a skos:Concept ;
@@ -888,7 +888,7 @@
   :hasAlpha3Code "COL" ;
   :hasAreaCode 170 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Colombia"@en ;
   skos:prefLabel "Colombie"@fr .
 
@@ -897,7 +897,7 @@
   :hasAlpha3Code "COM" ;
   :hasAreaCode 174 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Comores"@fr ;
   skos:prefLabel "Comoros"@en .
 
@@ -906,7 +906,7 @@
   :hasAlpha3Code "MYT" ;
   :hasAreaCode 175 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Mayotte"@en .
 
 :178 a skos:Concept ;
@@ -914,7 +914,7 @@
   :hasAlpha3Code "COG" ;
   :hasAreaCode 178 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Congo"@en .
 
 :180 a skos:Concept ;
@@ -922,7 +922,7 @@
   :hasAlpha3Code "COD" ;
   :hasAreaCode 180 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Democratic Republic of the Congo"@en ;
   skos:prefLabel "République démocratique du Congo"@fr .
 
@@ -931,7 +931,7 @@
   :hasAlpha3Code "COK" ;
   :hasAreaCode 184 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cook Islands"@en .
 
 :188 a skos:Concept ;
@@ -939,7 +939,7 @@
   :hasAlpha3Code "CRI" ;
   :hasAreaCode 188 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Costa Rica"@en .
 
 :191 a skos:Concept ;
@@ -947,7 +947,7 @@
   :hasAlpha3Code "HRV" ;
   :hasAreaCode 191 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Croatia"@en ;
   skos:prefLabel "Croatie"@fr .
 
@@ -956,7 +956,7 @@
   :hasAlpha3Code "CUB" ;
   :hasAreaCode 192 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Cuba"@en .
 
 :196 a skos:Concept ;
@@ -964,14 +964,14 @@
   :hasAlpha3Code "CYP" ;
   :hasAreaCode 196 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Chypre"@fr ;
   skos:prefLabel "Cyprus"@en .
 
 :202 a skos:Concept ;
   :hasAreaCode 202 ;
   skos:broader :002 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :011 ;
   skos:narrower :014 ;
   skos:narrower :017 ;
@@ -984,7 +984,7 @@
   :hasAlpha3Code "CZE" ;
   :hasAreaCode 203 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Czechia"@en ;
   skos:prefLabel "Tchéquie"@fr .
 
@@ -993,7 +993,7 @@
   :hasAlpha3Code "BEN" ;
   :hasAreaCode 204 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Benin"@en ;
   skos:prefLabel "Bénin"@fr .
 
@@ -1002,7 +1002,7 @@
   :hasAlpha3Code "DNK" ;
   :hasAreaCode 208 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Danemark"@fr ;
   skos:prefLabel "Denmark"@en .
 
@@ -1011,7 +1011,7 @@
   :hasAlpha3Code "DMA" ;
   :hasAreaCode 212 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Dominica"@en ;
   skos:prefLabel "Dominique"@fr .
 
@@ -1020,7 +1020,7 @@
   :hasAlpha3Code "DOM" ;
   :hasAreaCode 214 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Dominican Republic"@en ;
   skos:prefLabel "République dominicaine"@fr .
 
@@ -1029,7 +1029,7 @@
   :hasAlpha3Code "ECU" ;
   :hasAreaCode 218 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ecuador"@en ;
   skos:prefLabel "Équateur"@fr .
 
@@ -1038,7 +1038,7 @@
   :hasAlpha3Code "SLV" ;
   :hasAreaCode 222 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "El Salvador"@en ;
   skos:prefLabel "Salvador"@fr .
 
@@ -1047,7 +1047,7 @@
   :hasAlpha3Code "GNQ" ;
   :hasAreaCode 226 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Equatorial Guinea"@en ;
   skos:prefLabel "Guinée équatoriale"@fr .
 
@@ -1056,7 +1056,7 @@
   :hasAlpha3Code "ETH" ;
   :hasAreaCode 231 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ethiopia"@en ;
   skos:prefLabel "Éthiopie"@fr .
 
@@ -1065,7 +1065,7 @@
   :hasAlpha3Code "ERI" ;
   :hasAreaCode 232 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Eritrea"@en ;
   skos:prefLabel "Érythrée"@fr .
 
@@ -1074,7 +1074,7 @@
   :hasAlpha3Code "EST" ;
   :hasAreaCode 233 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Estonia"@en ;
   skos:prefLabel "Estonie"@fr .
 
@@ -1083,7 +1083,7 @@
   :hasAlpha3Code "FRO" ;
   :hasAreaCode 234 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Faroe Islands"@en .
 
 :238 a skos:Concept ;
@@ -1091,7 +1091,7 @@
   :hasAlpha3Code "FLK" ;
   :hasAreaCode 238 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Falkland Islands (Malvinas)"@en .
 
 :239 a skos:Concept ;
@@ -1099,7 +1099,7 @@
   :hasAlpha3Code "SGS" ;
   :hasAreaCode 239 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "South Georgia and the South Sandwich Islands"@en .
 
 :242 a skos:Concept ;
@@ -1107,7 +1107,7 @@
   :hasAlpha3Code "FJI" ;
   :hasAreaCode 242 ;
   skos:broader :054 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Fiji"@en .
 
 :246 a skos:Concept ;
@@ -1115,7 +1115,7 @@
   :hasAlpha3Code "FIN" ;
   :hasAreaCode 246 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Finland"@en ;
   skos:prefLabel "Finlande"@fr .
 
@@ -1124,7 +1124,7 @@
   :hasAlpha3Code "ALA" ;
   :hasAreaCode 248 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Åland Islands"@en .
 
 :250 a skos:Concept ;
@@ -1132,7 +1132,7 @@
   :hasAlpha3Code "FRA" ;
   :hasAreaCode 250 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "France"@en .
 
 :254 a skos:Concept ;
@@ -1140,7 +1140,7 @@
   :hasAlpha3Code "GUF" ;
   :hasAreaCode 254 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "French Guiana"@en ;
   skos:prefLabel "Guyane française"@fr .
 
@@ -1149,7 +1149,7 @@
   :hasAlpha3Code "PYF" ;
   :hasAreaCode 258 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "French Polynesia"@en ;
   skos:prefLabel "Polynésie française"@fr .
 
@@ -1158,7 +1158,7 @@
   :hasAlpha3Code "ATF" ;
   :hasAreaCode 260 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "French Southern Territories"@en ;
   skos:prefLabel "Territoires français du Sud"@fr .
 
@@ -1167,7 +1167,7 @@
   :hasAlpha3Code "DJI" ;
   :hasAreaCode 262 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Djibouti"@en .
 
 :266 a skos:Concept ;
@@ -1175,7 +1175,7 @@
   :hasAlpha3Code "GAB" ;
   :hasAreaCode 266 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Gabon"@en .
 
 :268 a skos:Concept ;
@@ -1183,7 +1183,7 @@
   :hasAlpha3Code "GEO" ;
   :hasAreaCode 268 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Georgia"@en ;
   skos:prefLabel "Géorgie"@fr .
 
@@ -1192,7 +1192,7 @@
   :hasAlpha3Code "GMB" ;
   :hasAreaCode 270 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Gambia"@en ;
   skos:prefLabel "Gambie"@fr .
 
@@ -1201,7 +1201,7 @@
   :hasAlpha3Code "PSE" ;
   :hasAreaCode 275 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "State of Palestine"@en ;
   skos:prefLabel "État de Palestine"@fr .
 
@@ -1210,7 +1210,7 @@
   :hasAlpha3Code "DEU" ;
   :hasAreaCode 276 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Allemagne"@fr ;
   skos:prefLabel "Germany"@en .
 
@@ -1219,7 +1219,7 @@
   :hasAlpha3Code "GHA" ;
   :hasAreaCode 288 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ghana"@en .
 
 :292 a skos:Concept ;
@@ -1227,7 +1227,7 @@
   :hasAlpha3Code "GIB" ;
   :hasAreaCode 292 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Gibraltar"@en .
 
 :296 a skos:Concept ;
@@ -1235,7 +1235,7 @@
   :hasAlpha3Code "KIR" ;
   :hasAreaCode 296 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Kiribati"@en .
 
 :300 a skos:Concept ;
@@ -1243,7 +1243,7 @@
   :hasAlpha3Code "GRC" ;
   :hasAreaCode 300 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Greece"@en ;
   skos:prefLabel "Grèce"@fr .
 
@@ -1252,7 +1252,7 @@
   :hasAlpha3Code "GRL" ;
   :hasAreaCode 304 ;
   skos:broader :021 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Greenland"@en .
 
 :308 a skos:Concept ;
@@ -1260,7 +1260,7 @@
   :hasAlpha3Code "GRD" ;
   :hasAreaCode 308 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Grenada"@en ;
   skos:prefLabel "Grenade"@fr .
 
@@ -1269,7 +1269,7 @@
   :hasAlpha3Code "GLP" ;
   :hasAreaCode 312 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guadeloupe"@en .
 
 :316 a skos:Concept ;
@@ -1277,7 +1277,7 @@
   :hasAlpha3Code "GUM" ;
   :hasAreaCode 316 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guam"@en .
 
 :320 a skos:Concept ;
@@ -1285,7 +1285,7 @@
   :hasAlpha3Code "GTM" ;
   :hasAreaCode 320 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guatemala"@en .
 
 :324 a skos:Concept ;
@@ -1293,7 +1293,7 @@
   :hasAlpha3Code "GIN" ;
   :hasAreaCode 324 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guinea"@en ;
   skos:prefLabel "Guinée"@fr .
 
@@ -1302,7 +1302,7 @@
   :hasAlpha3Code "GUY" ;
   :hasAreaCode 328 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guyana"@en ;
   skos:prefLabel "Guyane"@fr .
 
@@ -1311,7 +1311,7 @@
   :hasAlpha3Code "HTI" ;
   :hasAreaCode 332 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Haiti"@en .
 
 :334 a skos:Concept ;
@@ -1319,7 +1319,7 @@
   :hasAlpha3Code "HMD" ;
   :hasAreaCode 334 ;
   skos:broader :053 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Heard Island and McDonald Islands"@en .
 
 :336 a skos:Concept ;
@@ -1327,7 +1327,7 @@
   :hasAlpha3Code "VAT" ;
   :hasAreaCode 336 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Holy See"@en .
 
 :340 a skos:Concept ;
@@ -1335,7 +1335,7 @@
   :hasAlpha3Code "HND" ;
   :hasAreaCode 340 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Honduras"@en .
 
 :344 a skos:Concept ;
@@ -1343,7 +1343,7 @@
   :hasAlpha3Code "HKG" ;
   :hasAreaCode 344 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "China, Hong Kong Special Administrative Region"@en ;
   skos:prefLabel "Chine, Région administrative spéciale de Hong Kong"@fr .
 
@@ -1352,7 +1352,7 @@
   :hasAlpha3Code "HUN" ;
   :hasAreaCode 348 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Hongrie"@fr ;
   skos:prefLabel "Hungary"@en .
 
@@ -1361,7 +1361,7 @@
   :hasAlpha3Code "ISL" ;
   :hasAreaCode 352 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Iceland"@en ;
   skos:prefLabel "Islande"@fr .
 
@@ -1370,7 +1370,7 @@
   :hasAlpha3Code "IND" ;
   :hasAreaCode 356 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Inde"@fr ;
   skos:prefLabel "India"@en .
 
@@ -1379,7 +1379,7 @@
   :hasAlpha3Code "IDN" ;
   :hasAreaCode 360 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Indonesia"@en ;
   skos:prefLabel "Indonésie"@fr .
 
@@ -1388,7 +1388,7 @@
   :hasAlpha3Code "IRN" ;
   :hasAreaCode 364 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Iran (Islamic Republic of)"@en ;
   skos:prefLabel "Iran (République islamique d')"@fr .
 
@@ -1397,7 +1397,7 @@
   :hasAlpha3Code "IRQ" ;
   :hasAreaCode 368 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Irak"@fr ;
   skos:prefLabel "Iraq"@en .
 
@@ -1406,7 +1406,7 @@
   :hasAlpha3Code "IRL" ;
   :hasAreaCode 372 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ireland"@en ;
   skos:prefLabel "Irlande"@fr .
 
@@ -1415,7 +1415,7 @@
   :hasAlpha3Code "ISR" ;
   :hasAreaCode 376 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Israel"@en ;
   skos:prefLabel "Israël"@fr .
 
@@ -1424,7 +1424,7 @@
   :hasAlpha3Code "ITA" ;
   :hasAreaCode 380 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Italie"@fr ;
   skos:prefLabel "Italy"@en .
 
@@ -1433,7 +1433,7 @@
   :hasAlpha3Code "CIV" ;
   :hasAreaCode 384 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Côte d’Ivoire"@en .
 
 :388 a skos:Concept ;
@@ -1441,7 +1441,7 @@
   :hasAlpha3Code "JAM" ;
   :hasAreaCode 388 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Jamaica"@en ;
   skos:prefLabel "Jamaïque"@fr .
 
@@ -1450,7 +1450,7 @@
   :hasAlpha3Code "JPN" ;
   :hasAreaCode 392 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Japan"@en ;
   skos:prefLabel "Japon"@fr .
 
@@ -1459,7 +1459,7 @@
   :hasAlpha3Code "KAZ" ;
   :hasAreaCode 398 ;
   skos:broader :143 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Kazakhstan"@en .
 
 :400 a skos:Concept ;
@@ -1467,7 +1467,7 @@
   :hasAlpha3Code "JOR" ;
   :hasAreaCode 400 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Jordan"@en ;
   skos:prefLabel "Jordanie"@fr .
 
@@ -1476,7 +1476,7 @@
   :hasAlpha3Code "KEN" ;
   :hasAreaCode 404 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Kenya"@en .
 
 :408 a skos:Concept ;
@@ -1484,7 +1484,7 @@
   :hasAlpha3Code "PRK" ;
   :hasAreaCode 408 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Democratic People's Republic of Korea"@en ;
   skos:prefLabel "République populaire démocratique de Corée"@fr .
 
@@ -1493,7 +1493,7 @@
   :hasAlpha3Code "KOR" ;
   :hasAreaCode 410 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Republic of Korea"@en ;
   skos:prefLabel "République de Corée"@fr .
 
@@ -1502,7 +1502,7 @@
   :hasAlpha3Code "KWT" ;
   :hasAreaCode 414 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Koweït"@fr ;
   skos:prefLabel "Kuwait"@en .
 
@@ -1511,7 +1511,7 @@
   :hasAlpha3Code "KGZ" ;
   :hasAreaCode 417 ;
   skos:broader :143 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Kyrgyzstan"@en .
 
 :418 a skos:Concept ;
@@ -1519,14 +1519,14 @@
   :hasAlpha3Code "LAO" ;
   :hasAreaCode 418 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Lao People's Democratic Republic"@en ;
   skos:prefLabel "République démocratique populaire lao"@fr .
 
 :419 a skos:Concept ;
   :hasAreaCode 419 ;
   skos:broader :019 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :005 ;
   skos:narrower :013 ;
   skos:narrower :029 ;
@@ -1538,7 +1538,7 @@
   :hasAlpha3Code "LBN" ;
   :hasAreaCode 422 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Lebanon"@en ;
   skos:prefLabel "Liban"@fr .
 
@@ -1547,7 +1547,7 @@
   :hasAlpha3Code "LSO" ;
   :hasAreaCode 426 ;
   skos:broader :018 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Lesotho"@en .
 
 :428 a skos:Concept ;
@@ -1555,7 +1555,7 @@
   :hasAlpha3Code "LVA" ;
   :hasAreaCode 428 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Latvia"@en ;
   skos:prefLabel "Lettonie"@fr .
 
@@ -1564,7 +1564,7 @@
   :hasAlpha3Code "LBR" ;
   :hasAreaCode 430 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Liberia"@en .
 
 :434 a skos:Concept ;
@@ -1572,7 +1572,7 @@
   :hasAlpha3Code "LBY" ;
   :hasAreaCode 434 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Libya"@en ;
   skos:prefLabel "Libye"@fr .
 
@@ -1581,7 +1581,7 @@
   :hasAlpha3Code "LIE" ;
   :hasAreaCode 438 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Liechtenstein"@en .
 
 :440 a skos:Concept ;
@@ -1589,7 +1589,7 @@
   :hasAlpha3Code "LTU" ;
   :hasAreaCode 440 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Lithuania"@en ;
   skos:prefLabel "Lituanie"@fr .
 
@@ -1598,7 +1598,7 @@
   :hasAlpha3Code "LUX" ;
   :hasAreaCode 442 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Luxembourg"@en .
 
 :446 a skos:Concept ;
@@ -1606,7 +1606,7 @@
   :hasAlpha3Code "MAC" ;
   :hasAreaCode 446 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "China, Macao Special Administrative Region"@en .
 
 :450 a skos:Concept ;
@@ -1614,7 +1614,7 @@
   :hasAlpha3Code "MDG" ;
   :hasAreaCode 450 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Madagascar"@en .
 
 :454 a skos:Concept ;
@@ -1622,7 +1622,7 @@
   :hasAlpha3Code "MWI" ;
   :hasAreaCode 454 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Malawi"@en .
 
 :458 a skos:Concept ;
@@ -1630,7 +1630,7 @@
   :hasAlpha3Code "MYS" ;
   :hasAreaCode 458 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Malaisie"@fr ;
   skos:prefLabel "Malaysia"@en .
 
@@ -1639,7 +1639,7 @@
   :hasAlpha3Code "MDV" ;
   :hasAreaCode 462 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Maldives"@en .
 
 :466 a skos:Concept ;
@@ -1647,7 +1647,7 @@
   :hasAlpha3Code "MLI" ;
   :hasAreaCode 466 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Mali"@en .
 
 :470 a skos:Concept ;
@@ -1655,7 +1655,7 @@
   :hasAlpha3Code "MLT" ;
   :hasAreaCode 470 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Malta"@en ;
   skos:prefLabel "Malte"@fr .
 
@@ -1664,7 +1664,7 @@
   :hasAlpha3Code "MTQ" ;
   :hasAreaCode 474 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Martinique"@en .
 
 :478 a skos:Concept ;
@@ -1672,7 +1672,7 @@
   :hasAlpha3Code "MRT" ;
   :hasAreaCode 478 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Mauritania"@en ;
   skos:prefLabel "Mauritanie"@fr .
 
@@ -1681,7 +1681,7 @@
   :hasAlpha3Code "MUS" ;
   :hasAreaCode 480 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ile Maurice"@fr ;
   skos:prefLabel "Mauritius"@en .
 
@@ -1690,7 +1690,7 @@
   :hasAlpha3Code "MEX" ;
   :hasAreaCode 484 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Mexico"@en ;
   skos:prefLabel "Mexique"@fr .
 
@@ -1699,7 +1699,7 @@
   :hasAlpha3Code "MCO" ;
   :hasAreaCode 492 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Monaco"@en .
 
 :496 a skos:Concept ;
@@ -1707,7 +1707,7 @@
   :hasAlpha3Code "MNG" ;
   :hasAreaCode 496 ;
   skos:broader :030 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Mongolia"@en ;
   skos:prefLabel "Mongolie"@fr .
 
@@ -1716,7 +1716,7 @@
   :hasAlpha3Code "MDA" ;
   :hasAreaCode 498 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Republic of Moldova"@en ;
   skos:prefLabel "République de Moldavie"@fr .
 
@@ -1724,7 +1724,7 @@
   :hasAlpha3Code "MNE" ;
   :hasAreaCode 499 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Montenegro"@en .
 
 :500 a skos:Concept ;
@@ -1732,7 +1732,7 @@
   :hasAlpha3Code "MSR" ;
   :hasAreaCode 500 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Montserrat"@en .
 
 :504 a skos:Concept ;
@@ -1740,7 +1740,7 @@
   :hasAlpha3Code "MAR" ;
   :hasAreaCode 504 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Maroc"@fr ;
   skos:prefLabel "Morocco"@en .
 
@@ -1749,7 +1749,7 @@
   :hasAlpha3Code "MOZ" ;
   :hasAreaCode 508 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Mozambique"@en .
 
 :512 a skos:Concept ;
@@ -1757,7 +1757,7 @@
   :hasAlpha3Code "OMN" ;
   :hasAreaCode 512 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Oman"@en .
 
 :516 a skos:Concept ;
@@ -1765,7 +1765,7 @@
   :hasAlpha3Code "NAM" ;
   :hasAreaCode 516 ;
   skos:broader :018 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Namibia"@en ;
   skos:prefLabel "Namibie"@fr .
 
@@ -1774,7 +1774,7 @@
   :hasAlpha3Code "NRU" ;
   :hasAreaCode 520 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Nauru"@en .
 
 :524 a skos:Concept ;
@@ -1782,7 +1782,7 @@
   :hasAlpha3Code "NPL" ;
   :hasAreaCode 524 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Nepal"@en .
 
 :528 a skos:Concept ;
@@ -1790,7 +1790,7 @@
   :hasAlpha3Code "NLD" ;
   :hasAreaCode 528 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Netherlands"@en ;
   skos:prefLabel "Pays-Bas"@fr .
 
@@ -1798,7 +1798,7 @@
   :hasAlpha3Code "CUW" ;
   :hasAreaCode 531 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Curaçao"@en .
 
 :533 a skos:Concept ;
@@ -1806,14 +1806,14 @@
   :hasAlpha3Code "ABW" ;
   :hasAreaCode 533 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Aruba"@en .
 
 :534 a skos:Concept ;
   :hasAlpha3Code "SXM" ;
   :hasAreaCode 534 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint-Martin (partie néerlandaise)"@fr ;
   skos:prefLabel "Sint Maarten (Dutch part)"@en .
 
@@ -1821,7 +1821,7 @@
   :hasAlpha3Code "BES" ;
   :hasAreaCode 535 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en .
 
 :540 a skos:Concept ;
@@ -1829,7 +1829,7 @@
   :hasAlpha3Code "NCL" ;
   :hasAreaCode 540 ;
   skos:broader :054 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "New Caledonia"@en ;
   skos:prefLabel "Nouvelle-Calédonie"@fr .
 
@@ -1838,7 +1838,7 @@
   :hasAlpha3Code "VUT" ;
   :hasAreaCode 548 ;
   skos:broader :054 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Vanuatu"@en .
 
 :554 a skos:Concept ;
@@ -1846,7 +1846,7 @@
   :hasAlpha3Code "NZL" ;
   :hasAreaCode 554 ;
   skos:broader :053 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "New Zealand"@en ;
   skos:prefLabel "Nouvelle-Zélande"@fr .
 
@@ -1855,7 +1855,7 @@
   :hasAlpha3Code "NIC" ;
   :hasAreaCode 558 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Nicaragua"@en .
 
 :562 a skos:Concept ;
@@ -1863,7 +1863,7 @@
   :hasAlpha3Code "NER" ;
   :hasAreaCode 562 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Niger"@en .
 
 :566 a skos:Concept ;
@@ -1871,7 +1871,7 @@
   :hasAlpha3Code "NGA" ;
   :hasAreaCode 566 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Nigeria"@en .
 
 :570 a skos:Concept ;
@@ -1879,7 +1879,7 @@
   :hasAlpha3Code "NIU" ;
   :hasAreaCode 570 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Niue"@en .
 
 :574 a skos:Concept ;
@@ -1887,7 +1887,7 @@
   :hasAlpha3Code "NFK" ;
   :hasAreaCode 574 ;
   skos:broader :053 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Norfolk Island"@en .
 
 :578 a skos:Concept ;
@@ -1895,7 +1895,7 @@
   :hasAlpha3Code "NOR" ;
   :hasAreaCode 578 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Norvège"@fr ;
   skos:prefLabel "Norway"@en .
 
@@ -1904,7 +1904,7 @@
   :hasAlpha3Code "MNP" ;
   :hasAreaCode 580 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Northern Mariana Islands"@en .
 
 :581 a skos:Concept ;
@@ -1912,7 +1912,7 @@
   :hasAlpha3Code "UMI" ;
   :hasAreaCode 581 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "United States Minor Outlying Islands"@en .
 
 :583 a skos:Concept ;
@@ -1920,7 +1920,7 @@
   :hasAlpha3Code "FSM" ;
   :hasAreaCode 583 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Micronesia (Federated States of)"@en .
 
 :584 a skos:Concept ;
@@ -1928,7 +1928,7 @@
   :hasAlpha3Code "MHL" ;
   :hasAreaCode 584 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Marshall Islands"@en .
 
 :585 a skos:Concept ;
@@ -1936,7 +1936,7 @@
   :hasAlpha3Code "PLW" ;
   :hasAreaCode 585 ;
   skos:broader :057 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Palau"@en .
 
 :586 a skos:Concept ;
@@ -1944,7 +1944,7 @@
   :hasAlpha3Code "PAK" ;
   :hasAreaCode 586 ;
   skos:broader :034 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Pakistan"@en .
 
 :591 a skos:Concept ;
@@ -1952,7 +1952,7 @@
   :hasAlpha3Code "PAN" ;
   :hasAreaCode 591 ;
   skos:broader :013 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Panama"@en .
 
 :598 a skos:Concept ;
@@ -1960,7 +1960,7 @@
   :hasAlpha3Code "PNG" ;
   :hasAreaCode 598 ;
   skos:broader :054 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel " Papouasie-Nouvelle-Guinée "@fr ;
   skos:prefLabel "Papua New Guinea"@en .
 
@@ -1969,7 +1969,7 @@
   :hasAlpha3Code "PRY" ;
   :hasAreaCode 600 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Paraguay"@en .
 
 :604 a skos:Concept ;
@@ -1977,7 +1977,7 @@
   :hasAlpha3Code "PER" ;
   :hasAreaCode 604 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Peru"@en ;
   skos:prefLabel "Pérou"@fr .
 
@@ -1986,7 +1986,7 @@
   :hasAlpha3Code "PHL" ;
   :hasAreaCode 608 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Philippines"@en .
 
 :612 a skos:Concept ;
@@ -1994,7 +1994,7 @@
   :hasAlpha3Code "PCN" ;
   :hasAreaCode 612 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Pitcairn"@en .
 
 :616 a skos:Concept ;
@@ -2002,7 +2002,7 @@
   :hasAlpha3Code "POL" ;
   :hasAreaCode 616 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Poland"@en ;
   skos:prefLabel "Pologne"@fr .
 
@@ -2011,7 +2011,7 @@
   :hasAlpha3Code "PRT" ;
   :hasAreaCode 620 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Portugal"@en .
 
 :624 a skos:Concept ;
@@ -2019,7 +2019,7 @@
   :hasAlpha3Code "GNB" ;
   :hasAreaCode 624 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guinea-Bissau"@en ;
   skos:prefLabel "Guinée-Bissau"@fr .
 
@@ -2028,7 +2028,7 @@
   :hasAlpha3Code "TLS" ;
   :hasAreaCode 626 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Timor-Leste"@en .
 
 :630 a skos:Concept ;
@@ -2036,7 +2036,7 @@
   :hasAlpha3Code "PRI" ;
   :hasAreaCode 630 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Pprto Rico"@fr ;
   skos:prefLabel "Puerto Rico"@en .
 
@@ -2045,7 +2045,7 @@
   :hasAlpha3Code "QAT" ;
   :hasAreaCode 634 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Qatar"@en .
 
 :638 a skos:Concept ;
@@ -2053,7 +2053,7 @@
   :hasAlpha3Code "REU" ;
   :hasAreaCode 638 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Réunion"@en .
 
 :642 a skos:Concept ;
@@ -2061,7 +2061,7 @@
   :hasAlpha3Code "ROU" ;
   :hasAreaCode 642 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Romania"@en ;
   skos:prefLabel "Roumanie"@fr .
 
@@ -2070,7 +2070,7 @@
   :hasAlpha3Code "RUS" ;
   :hasAreaCode 643 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Fédération de Russie"@fr ;
   skos:prefLabel "Russian Federation"@en .
 
@@ -2079,14 +2079,14 @@
   :hasAlpha3Code "RWA" ;
   :hasAreaCode 646 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Rwanda"@en .
 
 :652 a skos:Concept ;
   :hasAlpha3Code "BLM" ;
   :hasAreaCode 652 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Barthélemy"@en .
 
 :654 a skos:Concept ;
@@ -2094,7 +2094,7 @@
   :hasAlpha3Code "SHN" ;
   :hasAreaCode 654 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Helena"@en .
 
 :659 a skos:Concept ;
@@ -2102,7 +2102,7 @@
   :hasAlpha3Code "KNA" ;
   :hasAreaCode 659 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Kitts and Nevis"@en .
 
 :660 a skos:Concept ;
@@ -2110,7 +2110,7 @@
   :hasAlpha3Code "AIA" ;
   :hasAreaCode 660 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Anguilla"@en .
 
 :662 a skos:Concept ;
@@ -2118,14 +2118,14 @@
   :hasAlpha3Code "LCA" ;
   :hasAreaCode 662 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Lucia"@en .
 
 :663 a skos:Concept ;
   :hasAlpha3Code "MAF" ;
   :hasAreaCode 663 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Martin (French Part)"@en ;
   skos:prefLabel "Saint Martin (Partie française)"@fr .
 
@@ -2134,7 +2134,7 @@
   :hasAlpha3Code "SPM" ;
   :hasAreaCode 666 ;
   skos:broader :021 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Pierre and Miquelon"@en ;
   skos:prefLabel "Saint Pierre et Miquelon"@fr .
 
@@ -2143,7 +2143,7 @@
   :hasAlpha3Code "VCT" ;
   :hasAreaCode 670 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Saint Vincent and the Grenadines"@en .
 
 :674 a skos:Concept ;
@@ -2151,7 +2151,7 @@
   :hasAlpha3Code "SMR" ;
   :hasAreaCode 674 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "San Marino"@en .
 
 :678 a skos:Concept ;
@@ -2159,14 +2159,14 @@
   :hasAlpha3Code "STP" ;
   :hasAreaCode 678 ;
   skos:broader :017 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Sao Tome and Principe"@en .
 
 :680 a skos:Concept ;
   :hasAlpha3Code "" ;
   :hasAreaCode 680 ;
   skos:broader :830 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Sark"@en .
 
 :682 a skos:Concept ;
@@ -2174,7 +2174,7 @@
   :hasAlpha3Code "SAU" ;
   :hasAreaCode 682 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Arabie Saoudite"@fr ;
   skos:prefLabel "Saudi Arabia"@en .
 
@@ -2183,7 +2183,7 @@
   :hasAlpha3Code "SEN" ;
   :hasAreaCode 686 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Senegal"@en ;
   skos:prefLabel "Sénégal"@fr .
 
@@ -2191,7 +2191,7 @@
   :hasAlpha3Code "SRB" ;
   :hasAreaCode 688 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Serbia"@en ;
   skos:prefLabel "Serbie"@fr .
 
@@ -2200,7 +2200,7 @@
   :hasAlpha3Code "SYC" ;
   :hasAreaCode 690 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Seychelles"@en .
 
 :694 a skos:Concept ;
@@ -2208,7 +2208,7 @@
   :hasAlpha3Code "SLE" ;
   :hasAreaCode 694 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Sierra Leone"@en .
 
 :702 a skos:Concept ;
@@ -2216,7 +2216,7 @@
   :hasAlpha3Code "SGP" ;
   :hasAreaCode 702 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Singapore"@en ;
   skos:prefLabel "Singapour"@fr .
 
@@ -2225,7 +2225,7 @@
   :hasAlpha3Code "SVK" ;
   :hasAreaCode 703 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Slovakia"@en ;
   skos:prefLabel "Slovaquie"@fr .
 
@@ -2234,7 +2234,7 @@
   :hasAlpha3Code "VNM" ;
   :hasAreaCode 704 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Viet Nam"@en ;
   skos:prefLabel "Vietnam"@fr .
 
@@ -2243,7 +2243,7 @@
   :hasAlpha3Code "SVN" ;
   :hasAreaCode 705 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Slovenia"@en ;
   skos:prefLabel "Slovenie"@fr .
 
@@ -2252,7 +2252,7 @@
   :hasAlpha3Code "SOM" ;
   :hasAreaCode 706 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Somalia"@en ;
   skos:prefLabel "Somalie"@fr .
 
@@ -2261,7 +2261,7 @@
   :hasAlpha3Code "ZAF" ;
   :hasAreaCode 710 ;
   skos:broader :018 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Afrique du Sud"@fr ;
   skos:prefLabel "South Africa"@en .
 
@@ -2270,7 +2270,7 @@
   :hasAlpha3Code "ZWE" ;
   :hasAreaCode 716 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Zimbabwe"@en .
 
 :724 a skos:Concept ;
@@ -2278,7 +2278,7 @@
   :hasAlpha3Code "ESP" ;
   :hasAreaCode 724 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Espagne"@fr ;
   skos:prefLabel "Spain"@en .
 
@@ -2286,7 +2286,7 @@
   :hasAlpha3Code "SSD" ;
   :hasAreaCode 728 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Soudan du Sud"@fr ;
   skos:prefLabel "South Sudan"@en .
 
@@ -2295,7 +2295,7 @@
   :hasAlpha3Code "SDN" ;
   :hasAreaCode 729 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Soudan"@fr ;
   skos:prefLabel "Sudan"@en .
 
@@ -2304,7 +2304,7 @@
   :hasAlpha3Code "ESH" ;
   :hasAreaCode 732 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Sahara occidental"@fr ;
   skos:prefLabel "Western Sahara"@en .
 
@@ -2313,7 +2313,7 @@
   :hasAlpha3Code "SUR" ;
   :hasAreaCode 740 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Suriname"@en .
 
 :744 a skos:Concept ;
@@ -2321,7 +2321,7 @@
   :hasAlpha3Code "SJM" ;
   :hasAreaCode 744 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Svalbard and Jan Mayen Islands"@en .
 
 :748 a skos:Concept ;
@@ -2329,7 +2329,7 @@
   :hasAlpha3Code "SWZ" ;
   :hasAreaCode 748 ;
   skos:broader :018 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Eswatini"@en .
 
 :752 a skos:Concept ;
@@ -2337,7 +2337,7 @@
   :hasAlpha3Code "SWE" ;
   :hasAreaCode 752 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Suède"@fr ;
   skos:prefLabel "Sweden"@en .
 
@@ -2346,7 +2346,7 @@
   :hasAlpha3Code "CHE" ;
   :hasAreaCode 756 ;
   skos:broader :155 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Suisse"@fr ;
   skos:prefLabel "Switzerland"@en .
 
@@ -2355,7 +2355,7 @@
   :hasAlpha3Code "SYR" ;
   :hasAreaCode 760 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "République arabe syrienne"@fr ;
   skos:prefLabel "Syrian Arab Republic"@en .
 
@@ -2364,7 +2364,7 @@
   :hasAlpha3Code "TJK" ;
   :hasAreaCode 762 ;
   skos:broader :143 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Tajikistan"@en .
 
 :764 a skos:Concept ;
@@ -2372,7 +2372,7 @@
   :hasAlpha3Code "THA" ;
   :hasAreaCode 764 ;
   skos:broader :035 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Thailand"@en ;
   skos:prefLabel "Thaïlande"@fr .
 
@@ -2381,7 +2381,7 @@
   :hasAlpha3Code "TGO" ;
   :hasAreaCode 768 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Togo"@en .
 
 :772 a skos:Concept ;
@@ -2389,7 +2389,7 @@
   :hasAlpha3Code "TKL" ;
   :hasAreaCode 772 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Tokelau"@en .
 
 :776 a skos:Concept ;
@@ -2397,7 +2397,7 @@
   :hasAlpha3Code "TON" ;
   :hasAreaCode 776 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Tonga"@en .
 
 :780 a skos:Concept ;
@@ -2405,7 +2405,7 @@
   :hasAlpha3Code "TTO" ;
   :hasAreaCode 780 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Trinidad and Tobago"@en .
 
 :784 a skos:Concept ;
@@ -2413,7 +2413,7 @@
   :hasAlpha3Code "ARE" ;
   :hasAreaCode 784 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "United Arab Emirates"@en ;
   skos:prefLabel "Émirats arabes unis"@fr .
 
@@ -2422,7 +2422,7 @@
   :hasAlpha3Code "TUN" ;
   :hasAreaCode 788 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Tunisia"@en ;
   skos:prefLabel "Tunisie"@fr .
 
@@ -2431,7 +2431,7 @@
   :hasAlpha3Code "TUR" ;
   :hasAreaCode 792 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Turquie"@fr ;
   skos:prefLabel "Türkiye"@en .
 
@@ -2440,7 +2440,7 @@
   :hasAlpha3Code "TKM" ;
   :hasAreaCode 795 ;
   skos:broader :143 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Turkmenistan"@en .
 
 :796 a skos:Concept ;
@@ -2448,7 +2448,7 @@
   :hasAlpha3Code "TCA" ;
   :hasAreaCode 796 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Turks and Caicos Islands"@en .
 
 :798 a skos:Concept ;
@@ -2456,7 +2456,7 @@
   :hasAlpha3Code "TUV" ;
   :hasAreaCode 798 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Tuvalu"@en .
 
 :800 a skos:Concept ;
@@ -2464,7 +2464,7 @@
   :hasAlpha3Code "UGA" ;
   :hasAreaCode 800 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ouganda"@fr ;
   skos:prefLabel "Uganda"@en .
 
@@ -2473,7 +2473,7 @@
   :hasAlpha3Code "UKR" ;
   :hasAreaCode 804 ;
   skos:broader :151 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Ukraine"@en .
 
 :807 a skos:Concept ;
@@ -2481,7 +2481,7 @@
   :hasAlpha3Code "MKD" ;
   :hasAreaCode 807 ;
   skos:broader :039 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Macédoine du Nord"@fr ;
   skos:prefLabel "North Macedonia"@en .
 
@@ -2490,7 +2490,7 @@
   :hasAlpha3Code "EGY" ;
   :hasAreaCode 818 ;
   skos:broader :015 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Egypt"@en ;
   skos:prefLabel "Égypte"@fr .
 
@@ -2499,14 +2499,14 @@
   :hasAlpha3Code "GBR" ;
   :hasAreaCode 826 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord"@fr ;
   skos:prefLabel "United Kingdom of Great Britain and Northern Ireland"@en .
 
 :830 a skos:Concept ;
   :hasAreaCode 830 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:narrower :680 ;
   skos:narrower :831 ;
   skos:narrower :832 ;
@@ -2516,7 +2516,7 @@
   :hasAlpha3Code "GGY" ;
   :hasAreaCode 831 ;
   skos:broader :830 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Guernesey"@fr ;
   skos:prefLabel "Guernsey"@en .
 
@@ -2524,7 +2524,7 @@
   :hasAlpha3Code "JEY" ;
   :hasAreaCode 832 ;
   skos:broader :830 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Jersey"@en .
 
 :833 a skos:Concept ;
@@ -2532,7 +2532,7 @@
   :hasAlpha3Code "IMN" ;
   :hasAreaCode 833 ;
   skos:broader :154 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Isle of Man"@en .
 
 :834 a skos:Concept ;
@@ -2540,7 +2540,7 @@
   :hasAlpha3Code "TZA" ;
   :hasAreaCode 834 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "République-Unie de Tanzanie"@fr ;
   skos:prefLabel "United Republic of Tanzania"@en .
 
@@ -2549,7 +2549,7 @@
   :hasAlpha3Code "USA" ;
   :hasAreaCode 840 ;
   skos:broader :021 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "United States of America"@en ;
   skos:prefLabel "États-Unis d'Amérique"@fr .
 
@@ -2558,7 +2558,7 @@
   :hasAlpha3Code "VIR" ;
   :hasAreaCode 850 ;
   skos:broader :029 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "United States Virgin Islands"@en .
 
 :854 a skos:Concept ;
@@ -2566,7 +2566,7 @@
   :hasAlpha3Code "BFA" ;
   :hasAreaCode 854 ;
   skos:broader :011 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Burkina Faso"@en .
 
 :858 a skos:Concept ;
@@ -2574,7 +2574,7 @@
   :hasAlpha3Code "URY" ;
   :hasAreaCode 858 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Uruguay"@en .
 
 :860 a skos:Concept ;
@@ -2582,7 +2582,7 @@
   :hasAlpha3Code "UZB" ;
   :hasAreaCode 860 ;
   skos:broader :143 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Uzbekistan"@en .
 
 :862 a skos:Concept ;
@@ -2590,7 +2590,7 @@
   :hasAlpha3Code "VEN" ;
   :hasAreaCode 862 ;
   skos:broader :005 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Venezuela (Bolivarian Republic of)"@en ;
   skos:prefLabel "Venezuela"@fr .
 
@@ -2599,7 +2599,7 @@
   :hasAlpha3Code "WLF" ;
   :hasAreaCode 876 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Wallis and Futuna Islands"@en ;
   skos:prefLabel "Îles Wallis et Futuna"@fr .
 
@@ -2608,7 +2608,7 @@
   :hasAlpha3Code "WSM" ;
   :hasAreaCode 882 ;
   skos:broader :061 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Samoa"@en .
 
 :887 a skos:Concept ;
@@ -2616,7 +2616,7 @@
   :hasAlpha3Code "YEM" ;
   :hasAreaCode 887 ;
   skos:broader :145 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Yemen"@en .
 
 :894 a skos:Concept ;
@@ -2624,11 +2624,11 @@
   :hasAlpha3Code "ZMB" ;
   :hasAreaCode 894 ;
   skos:broader :014 ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area> ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> ;
   skos:prefLabel "Zambia"@en ;
   skos:prefLabel "Zambie"@fr .
 
-<https://w3id.org/okp4/ontology/vnext/thesaurus/area> a skos:ConceptScheme ;
+<https://w3id.org/okp4/ontology/vnext/thesaurus/area-code> a skos:ConceptScheme ;
   rdfs:label "Area Code Thesaurus"@en ;
   dcterms:description "This thesaurus defines a controlled vocabulary referencing the different area codes as developed and maintained by the United Nations Statistics Division."@en ;
   dcterms:title "Area Codes for Statistical Use (Series M, No. 49) Thesaurus"@en ;

@@ -7,7 +7,7 @@
   },
   "@graph": [
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-digital-service-execution-status/Cancelled",
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/Cancelled",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
@@ -34,7 +34,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-digital-service-execution-status/Delivered",
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/Delivered",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
@@ -45,7 +45,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-digital-service-execution-status/Failed",
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/Failed",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
