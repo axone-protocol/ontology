@@ -1,0 +1,43 @@
+@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+# Declaration of the organization "OKP4 Association"
+
+<https://w3id.org/okp4/ontology/dataverse/eb290338-a0a6-11ee-8c90-0242ac120002> a foaf:Organization ; 
+    foaf:name "OKP4 Association" .
+
+
+# Declaration of the IPFS service
+
+<https://w3id.org/okp4/ontology/dataverse/da2f0a5d-d04f-48c8-bded-3012ea799b09> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/>
+    core:hasCredential <https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/declaration/0c1ee8d4-a0a5-11ee-8c90-0242ac120002> ;
+    core:hasCredential <https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/description/ac8637b6-a0a3-11ee-8c90-0242ac120002> .
+
+# Credential Digital Service Declaration
+
+<https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/declaration/0c1ee8d4-a0a5-11ee-8c90-0242ac120002> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/declaration/> ;
+    core::hasIdentifier <https://w3id.org/okp4/ontology/dataverse/da2f0a5d-d04f-48c8-bded-3012ea799b09> .
+
+
+
+# Credential Digital Service Description
+
+<https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/description/ac8637b6-a0a3-11ee-8c90-0242ac120002> a owl:NamedIndividual,
+        <https://w3id.org/okp4/ontology/v$major/schema/credential/digital-service/description/> ;
+    core:hasCategory category:Storage ;
+    core:hasDescription "IPFS est un protocole décentralisé conçu pour faciliter le stockage, le partage et la récupération de fichiers à l'échelle mondiale."@fr ;
+    core:hasDescription "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale"@en ;
+    core:hasDescription "IPFS ist ein dezentrales Protokoll, das die Speicherung, die gemeinsame Nutzung und den Abruf von Dateien auf globaler Ebene erleichtern soll."@de ;
+    core:hasPublisher <https://w3id.org/okp4/ontology/dataverse/eb290338-a0a6-11ee-8c90-0242ac120002> ;
+    core:hasTag "storage" ;
+    core:hasTitle "IPFS"@en ;
+    core:hasTitle "IPFS"@fr ;
+    core:hasTitle "IPFS"@de .
+
+
