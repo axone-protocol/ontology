@@ -1,3 +1,5 @@
 line-length: false
 no-hard-tabs: false
 no-inline-html: false
+no-duplicate-heading: false
+
