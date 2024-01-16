@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cli"
+version = "0.1.0"
+description = "CLI tool to generate the documentation for the OKP4 ontology"
+authors = ["opensource-OKP4 <opensource@okp4.com>"]
+license = "BSD 3-Clause License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.2"
+click = "^8.1.7"
+rdflib = "^7.0.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+
+[tool.poetry.scripts]
+cli = "cli.cli:command"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
