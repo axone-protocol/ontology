@@ -4,6 +4,7 @@
 DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
+DOCKER_IMAGE_MARKDOWNLINT = thegeeklab/markdownlint-cli:0.38.0
 DOCKER_IMAGE_POETRY   := fnndsc/python-poetry:1.7.1
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
 DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
@@ -120,10 +121,14 @@ NT_UNIQUIFY = \
   HASH=`md5sum $1 | awk '{print $$1}'`; \
   sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
 GENERATE_DOCUMENTATION = \
-	docker run --rm \
+  docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_POETRY} sh -c "poetry install -C $(SRC_SCRIPT) && poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"
+	${DOCKER_IMAGE_POETRY} sh -c "poetry install -C $(SRC_SCRIPT) && poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"; \
+  docker run --rm \
+	-v `pwd`:/usr/src/ontology \
+	-w /usr/src/ontology \
+	${DOCKER_IMAGE_MARKDOWNLINT} -f docs
 
 .PHONY: help
 all: help
