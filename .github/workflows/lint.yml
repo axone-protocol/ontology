@@ -88,7 +88,10 @@ jobs:
 
       - name: Generate documentation
         run: |
+          chmod $NUMBER_OF_THE_BEAST docs/*.md
           make docs
+        env:
+          NUMBER_OF_THE_BEAST: 666
 
       - name: Check Git diff in generated files (proto + docs)
         run: |

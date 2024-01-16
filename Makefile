@@ -124,7 +124,7 @@ GENERATE_DOCUMENTATION = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_POETRY} sh -c "poetry install -C $(SRC_SCRIPT) && poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"; \
+	${DOCKER_IMAGE_POETRY} sh -c "poetry install -C $(SRC_SCRIPT) && poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9" && \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
@@ -199,7 +199,7 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
 
-$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*")
+$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating${COLOR_RESET} schemas documentation ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call GENERATE_DOCUMENTATION,-i,$(DST_ONT)/schema,-o,$@}
