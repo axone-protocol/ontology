@@ -124,7 +124,7 @@ jobs:
         if: steps.changed-poetry-files.outputs.any_changed == 'true'
         uses: abatilo/actions-poetry@v3.0.0
         with:
-          poetry-version: 1.3.1
+          poetry-version: 1.7.1
 
       - name: Check poetry config is valid
         if: steps.changed-poetry-files.outputs.any_changed == 'true'
@@ -157,7 +157,7 @@ jobs:
         if: steps.changed-python-files.outputs.any_changed == 'true'
         uses: abatilo/actions-poetry@v3.0.0
         with:
-          poetry-version: 1.3.1
+          poetry-version: 1.7.1
 
       - name: Install project dependencies
         if: steps.changed-python-files.outputs.any_changed == 'true'
