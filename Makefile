@@ -4,6 +4,8 @@
 DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
 DOCKER_IMAGE_HTTPD    := httpd:2.4.51
 DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
+DOCKER_IMAGE_MARKDOWNLINT = thegeeklab/markdownlint-cli:0.38.0
+DOCKER_IMAGE_POETRY   := fnndsc/python-poetry:1.7.1
 DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
 DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
 
@@ -39,6 +41,7 @@ VERSION_PATCH := $(word 3,$(subst ., ,$(VERSION)))
 # - Destination directories
 DST                := $(ROOT)/target
 DST_CACHE          := $(DST)/.cache
+DST_DOCS		   := $(ROOT)/docs
 DST_MAKE           := $(DST)/.make
 DST_ONT            := $(DST)/ontology/v$(VERSION_MAJOR)
 DST_FORMAT         := $(DST_MAKE)/format
@@ -48,6 +51,7 @@ DST_TEST           := $(DST_MAKE)/test
 # - Build
 SRC_ONT            := $(ROOT)/src
 SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
+SRC_SCRIPT         := $(ROOT)/script
 OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
 OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
@@ -59,6 +63,7 @@ BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).nt
 BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).rdf.xml
 BIN_OKP4_JSONLD    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).jsonld
 BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
+BIN_DOC_SCHEMAS	   := $(DST_DOCS)/schemas.md
 
 # - Format
 FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
@@ -115,6 +120,15 @@ RDF_SHACL = \
 NT_UNIQUIFY = \
   HASH=`md5sum $1 | awk '{print $$1}'`; \
   sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
+GENERATE_DOCUMENTATION = \
+  docker run --rm \
+	-v `pwd`:/usr/src/ontology \
+	-w /usr/src/ontology \
+	${DOCKER_IMAGE_POETRY} sh -c "poetry install -C $(SRC_SCRIPT) && poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9" && \
+  docker run --rm \
+	-v `pwd`:/usr/src/ontology \
+	-w /usr/src/ontology \
+	${DOCKER_IMAGE_MARKDOWNLINT} -f docs
 
 .PHONY: help
 all: help
@@ -185,6 +199,11 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
 
+$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
+	@echo "${COLOR_CYAN}📝 generating${COLOR_RESET} schemas documentation ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@${call GENERATE_DOCUMENTATION,-i,$(DST_ONT)/schema,-o,$@}
+
 .PHONY: build-ontology-bundle
 build-ontology-bundle: $(DST) build-ontology $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
 
@@ -227,6 +246,13 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
 	@touch $@
+
+## Documentation:
+.PHONY: docs
+docs: docs-schemas ## Generate all available documentation
+
+.PHONY: docs-schemas
+docs-schemas: check $(BIN_DOC_SCHEMAS) ## Generate schemas markdown documentation
 
 ## Test:
 .PHONY: test

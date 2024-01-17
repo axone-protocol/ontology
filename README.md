@@ -155,6 +155,16 @@ The ontology is tested using [Shapes Constraint Language (SHACL)](https://www.w3
 make test
 ```
 
+### Generating the documentation
+
+The documentation is generated using the following command:
+
+```bash
+make docs
+```
+
+This will generate the documentation under the `docs` directory. Don't forget to commit the generated files.
+
 ### Other commands
 
 You can get the list of all available commands by running the following command:
@@ -186,6 +196,9 @@ Targets:
   Lint:
     lint                  Lint with all available linters
     lint-ttl              Lint all Turtle files
+  Documentation:
+    docs                  Generate all available documentation
+    docs-schemas          Generate schemas markdown documentation
   Test:
     test                  Run all available tests
     test-ontology         Test the ontology

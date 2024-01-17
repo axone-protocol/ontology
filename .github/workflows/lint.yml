@@ -79,3 +79,98 @@ jobs:
             >&2 git status
             exit 1
           fi
+
+  lint-generated:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate documentation
+        run: |
+          chmod $NUMBER_OF_THE_BEAST docs/*.md
+          make docs
+        env:
+          NUMBER_OF_THE_BEAST: 666
+
+      - name: Check Git diff in generated files (proto + docs)
+        run: |
+          if [[ $(git status -s) != "" ]]; then
+            >&2 echo "❌ There is a diff between generated files and source code"
+            >&2 git status
+            exit 1
+          fi
+
+  lint-poetry:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if poetry files have changed
+        id: changed-poetry-files
+        uses: tj-actions/changed-files@v41.1.1
+        with:
+          files: |
+            script/poetry.lock
+            script/pyproject.toml
+
+      - name: Install Python
+        if: steps.changed-poetry-files.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Python Poetry
+        if: steps.changed-poetry-files.outputs.any_changed == 'true'
+        uses: abatilo/actions-poetry@v3.0.0
+        with:
+          poetry-version: 1.7.1
+
+      - name: Check poetry config is valid
+        if: steps.changed-poetry-files.outputs.any_changed == 'true'
+        working-directory: script
+        run: |
+          poetry check
+
+  lint-python:
+    needs: lint-poetry
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if python files have changed
+        id: changed-python-files
+        uses: tj-actions/changed-files@v41.1.1
+        with:
+          files: |
+            script/**/*.*
+
+      - name: Install Python
+        if: steps.changed-python-files.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Python Poetry
+        if: steps.changed-python-files.outputs.any_changed == 'true'
+        uses: abatilo/actions-poetry@v3.0.0
+        with:
+          poetry-version: 1.7.1
+
+      - name: Install project dependencies
+        if: steps.changed-python-files.outputs.any_changed == 'true'
+        working-directory: script
+        run: |
+          poetry install
+
+      - name: Lint python code (flake8)
+        if: steps.changed-python-files.outputs.any_changed == 'true'
+        working-directory: script
+        run: |
+          poetry run flake8 --count --show-source --statistics
