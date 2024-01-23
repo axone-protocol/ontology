@@ -58,6 +58,7 @@ OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
 OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
 OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
+OBJ_EXAMPLES       := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
 
 OKP4_ARTIFACT_ID   := okp4-ontology
 BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
@@ -161,6 +162,9 @@ build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Bui
 .PHONY: build-ontology-jsonld
 build-ontology-jsonld: check $(DST) $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
 
+.PHONY: build-examples
+build-examples: check $(DST) $(OBJ_EXAMPLES) ## Build the examples in JSON-LD format
+
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
@@ -182,6 +186,12 @@ $(OBJ_ONTS_JSONLD): $(DST_ONT)/%.jsonld: $(DST_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
+
+$(OBJ_EXAMPLES): $(DST_ONT)/%.jsonld: $(SRC_ONT)/%.jsonld
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} example ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@cp $< $@
+	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@
 
 $(BIN_OKP4_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -208,7 +218,7 @@ $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Make
 	@${call GENERATE_DOCUMENTATION,-i,$(DST_ONT)/schema,-o,$@}
 
 .PHONY: build-ontology-bundle
-build-ontology-bundle: $(DST) build-ontology $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
 
 $(BIN_OKP4_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name "*.ttl") $(ROOT)/LICENSE
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET} tarball"
@@ -256,11 +266,13 @@ lint-jsonld: check cache $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
 $(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@cp $< $@.jsonld
+	@sed -i ${SED_FLAG} "s/\$$major/next/g" $@.jsonld
 	@docker run --rm \
 	  -v `pwd`:/usr/src/ontology:ro \
 	  -w /usr/src/ontology \
-	  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
-	@touch $@
+	  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $@.jsonld
+	@mv -f $@.jsonld $@
 
 ## Documentation:
 .PHONY: docs
