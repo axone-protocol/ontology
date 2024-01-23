@@ -51,8 +51,7 @@ DST_TEST           := $(DST_MAKE)/test
 # - Build
 SRC_ONT            := $(ROOT)/src
 SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
-SRC_EXAMPLE        := $(ROOT)/example
-SRC_EXAMPLES       := $(shell find $(SRC_EXAMPLE) -name "*.jsonld" | sort)
+SRC_EXAMPLES       := $(shell find $(SRC_ONT) -name "*.jsonld" | sort)
 SRC_SCRIPT         := $(ROOT)/script
 
 OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
@@ -73,7 +72,7 @@ FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SR
 
 # - Lint
 FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
-FLG_LINT_JSONLDS   := $(patsubst $(SRC_EXAMPLE)/%.jsonld,$(DST_LINT)/%.linted,$(SRC_EXAMPLES))
+FLG_LINT_JSONLDS   := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_LINT)/%.linted,$(SRC_EXAMPLES))
 
 # - Test
 SRC_TST            := $(ROOT)/test
@@ -254,7 +253,7 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 .PHONY: lint-jsonld
 lint-jsonld: check cache $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
 
-$(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_EXAMPLE)/%.jsonld
+$(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@docker run --rm \
