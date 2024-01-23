@@ -51,7 +51,10 @@ DST_TEST           := $(DST_MAKE)/test
 # - Build
 SRC_ONT            := $(ROOT)/src
 SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
+SRC_EXAMPLE        := $(ROOT)/example
+SRC_EXAMPLES       := $(shell find $(SRC_EXAMPLE) -name "*.jsonld" | sort)
 SRC_SCRIPT         := $(ROOT)/script
+
 OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
 OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
@@ -70,6 +73,7 @@ FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SR
 
 # - Lint
 FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
+FLG_LINT_JSONLDS   := $(patsubst $(SRC_EXAMPLE)/%.jsonld,$(DST_LINT)/%.linted,$(SRC_EXAMPLES))
 
 # - Test
 SRC_TST            := $(ROOT)/test
@@ -233,7 +237,7 @@ $(FLG_FMT_TTLS): $(DST_FORMAT)/%.formatted: $(SRC_ONT)/%.ttl
 
 ## Lint:
 .PHONY: lint
-lint: lint-ttl ## Lint with all available linters
+lint: lint-ttl lint-jsonld ## Lint with all available linters
 
 .PHONY: lint-ttl
 lint-ttl: check cache $(FLG_LINT_TTLS) ## Lint all Turtle files
@@ -245,6 +249,18 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
       -v `pwd`:/usr/src/ontology:ro \
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
+	@touch $@
+
+.PHONY: lint-jsonld
+lint-jsonld: check cache $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
+
+$(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_EXAMPLE)/%.jsonld
+	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@docker run --rm \
+	  -v `pwd`:/usr/src/ontology:ro \
+	  -w /usr/src/ontology \
+	  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
 	@touch $@
 
 ## Documentation:
