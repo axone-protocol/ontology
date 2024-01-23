@@ -189,13 +189,15 @@ Targets:
     build-ontology-nt     Build the ontology in N-Triples format
     build-ontology-rdfxml Build the ontology in RDF/XML format
     build-ontology-jsonld Build the ontology in JSON-LD format
-    build-ontology-bundle Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+    build-examples        Build the examples in JSON-LD format
+    build-ontology-bundle Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
   Format:
     format                Format with all available formatters
     format-ttl            Format all Turtle files
   Lint:
     lint                  Lint with all available linters
     lint-ttl              Lint all Turtle files
+    lint-jsonld           Lint all JSON-LD files
   Documentation:
     docs                  Generate all available documentation
     docs-schemas          Generate schemas markdown documentation
