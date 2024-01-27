@@ -1,18 +1,5 @@
 # Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
-# Docker images
-DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
-DOCKER_IMAGE_HTTPD    := httpd:2.4.51
-DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
-DOCKER_IMAGE_MARKDOWNLINT = thegeeklab/markdownlint-cli:0.38.0
-DOCKER_IMAGE_POETRY   := fnndsc/python-poetry:1.7.1
-DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
-DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
-
-# Executables
-VERSION_OWL_CLI := 1.2.4
-EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
-
 # Deployment
 DEPLOYMENT_FUSEKI_CONTAINER=okp4-dataverse-fuseki
 DEPLOYMENT_FUSEKI_STARTUP_TIMEOUT=30
@@ -44,27 +31,32 @@ DST_CACHE          := $(DST)/.cache
 DST_DOCS		   := $(ROOT)/docs
 DST_MAKE           := $(DST)/.make
 DST_ONT            := $(DST)/ontology/v$(VERSION_MAJOR)
+DST_SCHEMA         := $(DST_ONT)/schema
+DST_THESAURUS      := $(DST_ONT)/thesaurus
 DST_FORMAT         := $(DST_MAKE)/format
 DST_LINT           := $(DST_MAKE)/lint
 DST_TEST           := $(DST_MAKE)/test
 
 # - Build
-SRC_ONT            := $(ROOT)/src
-SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
-SRC_EXAMPLES       := $(shell find $(SRC_ONT) -name "*.jsonld" | sort)
-SRC_SCRIPT         := $(ROOT)/script
-
-OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
-OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
-OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
-OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
-OBJ_EXAMPLES       := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
+SRC_ONT             := $(ROOT)/src
+SRC_SCRIPT          := $(ROOT)/script
+SRC_SCHEMA 		    := $(SRC_ONT)/schema
+SRC_THESAURUS	    := $(SRC_ONT)/thesaurus
+SRC_ONTS            := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
+SRC_SCHEMAS		    := $(shell find $(SRC_SCHEMA) -name "*.ttl" | sort)
+SRC_THESAURI	    := $(shell find $(SRC_THESAURUS) -name "*.ttl" | sort)
+SRC_EXAMPLES        := $(shell find $(SRC_ONT) -name "*.jsonld" | sort)
+OBJ_ONTS_TTL        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
+OBJ_ONTS_NT         := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
+OBJ_ONTS_RDFXML     := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
+OBJ_SCHEMAS_JSONLD  := $(patsubst $(SRC_SCHEMA)/%.ttl,$(DST_ONT)/schema/%.jsonld,$(SRC_SCHEMAS))
+OBJ_THESAURI_JSONLD := $(patsubst $(SRC_THESAURUS)/%.ttl,$(DST_ONT)/thesaurus/%.jsonld,$(SRC_THESAURI))
+OBJ_EXAMPLES        := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
 
 OKP4_ARTIFACT_ID   := okp4-ontology
 BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
 BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).nt
 BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).rdf.xml
-BIN_OKP4_JSONLD    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).jsonld
 BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
 BIN_DOC_SCHEMAS	   := $(DST_DOCS)/schemas.md
 
@@ -80,8 +72,26 @@ SRC_TST            := $(ROOT)/test
 SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
 FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 
-# - Permission mode
+# - Script
+SRC_SCRIPT         := $(ROOT)/script
+
+# Docker images
+DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
+DOCKER_IMAGE_HTTPD    := httpd:2.4.51
+DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
+DOCKER_IMAGE_MARKDOWNLINT = thegeeklab/markdownlint-cli:0.38.0
+DOCKER_IMAGE_POETRY   := fnndsc/python-poetry:1.7.1
+DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
+DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
+DOCKER_IMAGE_CLI	  := okp4/cli
+
+# Executables
+VERSION_OWL_CLI := 1.2.4
+EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
+
+# Other constants
 PERMISSION_MODE := 767
+JSONLD_INDENT   := 2
 
 # sed -i support
 SED_FLAG=
@@ -124,11 +134,11 @@ RDF_SHACL = \
 NT_UNIQUIFY = \
   HASH=`md5sum $1 | awk '{print $$1}'`; \
   sed -E -i ${SED_FLAG} "s/_:(g[0-9]+)/_:$${HASH}_\1/g" $1
-GENERATE_DOCUMENTATION = \
+CLI = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_POETRY} sh -c "poetry install -C $(SRC_SCRIPT) && poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9" && \
+	${DOCKER_IMAGE_CLI} sh -c "poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9" && \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
@@ -160,7 +170,7 @@ build-ontology-nt: check $(DST) $(BIN_OKP4_NT) ## Build the ontology in N-Triple
 build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Build the ontology in RDF/XML format
 
 .PHONY: build-ontology-jsonld
-build-ontology-jsonld: check $(DST) $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
+build-ontology-jsonld: check cache $(DST) $(OBJ_SCHEMAS_JSONLD) $(OBJ_THESAURI_JSONLD)  ## Build the ontology in JSON-LD format
 
 .PHONY: build-examples
 build-examples: check $(DST) $(OBJ_EXAMPLES) ## Build the examples in JSON-LD format
@@ -182,8 +192,13 @@ $(OBJ_ONTS_RDFXML): $(DST_ONT)/%.rdf.xml: $(DST_ONT)/%.ttl
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,rdfxml,$<,$@}
 
-$(OBJ_ONTS_JSONLD): $(DST_ONT)/%.jsonld: $(DST_ONT)/%.ttl
-	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
+$(OBJ_SCHEMAS_JSONLD): $(DST_SCHEMA)/%.jsonld: $(DST_SCHEMA)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} schema ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@${call CLI,jsonld,convert,$<,-o,$@,--indent,$(JSONLD_INDENT)}
+
+$(OBJ_THESAURI_JSONLD): $(DST_THESAURUS)/%.jsonld: $(DST_THESAURUS)/%.ttl
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} thesaurus ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
 
@@ -210,12 +225,12 @@ $(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
 $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
-	@${call RDF_SERIALIZE,ntriples,jsonld,$<,$@}
+	@${call CLI,jsonld,convert,$<,-o,$@,--indent,$(JSONLD_INDENT)}
 
 $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating${COLOR_RESET} schemas documentation ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
-	@${call GENERATE_DOCUMENTATION,-i,$(DST_ONT)/schema,-o,$@}
+	@${call CLI,documentation,generate,-i,$(DST_ONT)/schema,-o,$@}
 
 .PHONY: build-ontology-bundle
 build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
@@ -279,7 +294,7 @@ $(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 docs: docs-schemas ## Generate all available documentation
 
 .PHONY: docs-schemas
-docs-schemas: check $(BIN_DOC_SCHEMAS) ## Generate schemas markdown documentation
+docs-schemas: check cache $(BIN_DOC_SCHEMAS) ## Generate schemas markdown documentation
 
 ## Test:
 .PHONY: test
@@ -351,13 +366,25 @@ fuseki-log: check ## Show Fuseki server logs
 
 ## Misc:
 .PHONY: cache
-cache: $(DST_CACHE)/$(EXEC_OWL_CLI) ## Download all required files to cache
+cache: $(DST_CACHE)/$(EXEC_OWL_CLI) $(DST_CACHE)/cli ## Download all required files to cache
 
 $(DST_CACHE)/$(EXEC_OWL_CLI):
 	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(DST_CACHE); \
     cd $(DST_CACHE); \
     wget https://github.com/atextor/owl-cli/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
+
+$(DST_CACHE)/cli: $(shell find $(SRC_SCRIPT) -name "*.*")
+	@echo "${COLOR_CYAN}🐳 making ${COLOR_GREEN}$(DOCKER_IMAGE_CLI)${COLOR_RESET} image"
+	@docker image rm "$(DOCKER_IMAGE_CLI)" 2>/dev/null || true
+	@DOCKER_CONTAINER_NAME="okp4-cli-$$(date +%s)"; \
+	docker run --name $$DOCKER_CONTAINER_NAME \
+	  -v `pwd`:/usr/src/ontology \
+	  -w /usr/src/ontology \
+	  $(DOCKER_IMAGE_POETRY) sh -c "poetry install -C $(SRC_SCRIPT)" && \
+	docker commit $$DOCKER_CONTAINER_NAME "$(DOCKER_IMAGE_CLI)" && \
+	docker rm $$DOCKER_CONTAINER_NAME && \
+	touch $@
 
 .PHONY: check
 check: $(FLG_CHECK_OK) ## Check if all required commands are available in the system
