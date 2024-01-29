@@ -9,12 +9,12 @@ from rdflib.term import Node
 
 
 def generate_documentation(input_path: os.PathLike[str], output_file: t.TextIO) -> None:
-    """Generate the markdown documentation from the ontology schemas."""
+    """Generate the markdown documentation from the ontology turtle files found in the input directory."""
     dataset = Dataset()
 
     click.echo(f"🔍 Looking into: {input_path}")
 
-    for filename in glob.glob(f"{input_path}/*/*.ttl"):
+    for filename in glob.glob(f"{input_path}/**/*.ttl", recursive=True):
         click.echo(f"✔ {filename}")
         name = os.path.basename(filename).replace(".ttl", "")
         click.echo("  🔬 loading graph")

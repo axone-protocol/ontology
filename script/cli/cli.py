@@ -30,13 +30,9 @@ root.add_command(jsonld)
 
 
 @documentation.command()
-@click.option(
-    "-i",
-    "--input",
+@click.argument(
     "input_path",
     type=click.Path(dir_okay=True, file_okay=False, exists=True, readable=True),
-    required=True,
-    help="The path to the directory containing the ontology schemas.",
 )
 @click.option(
     "-o",
@@ -47,8 +43,11 @@ root.add_command(jsonld)
     help="The path and name for the generated markdown document.",
 )
 def generate(input_path: os.PathLike[str], output_file: t.TextIO) -> None:
-    """Generate the markdown documentation from the ontology schemas found in the input directory."""
-    generate_documentation(input_path, output_file)
+    """Generate the markdown documentation from the ontology turtle files found in the input directory."""
+    try:
+        generate_documentation(input_path, output_file)
+    except Exception as e:
+        raise click.UsageError(f"{e}")
 
 
 @jsonld.command()

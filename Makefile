@@ -230,7 +230,7 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating${COLOR_RESET} schemas documentation ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
-	@${call CLI,documentation,generate,-i,$(DST_ONT)/schema,-o,$@}
+	@${call CLI,documentation,generate,$(DST_ONT)/schema,-o,$@}
 
 .PHONY: build-ontology-bundle
 build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
