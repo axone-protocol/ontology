@@ -51,11 +51,14 @@ DST_TEST           := $(DST_MAKE)/test
 # - Build
 SRC_ONT            := $(ROOT)/src
 SRC_ONTS           := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
+SRC_EXAMPLES       := $(shell find $(SRC_ONT) -name "*.jsonld" | sort)
 SRC_SCRIPT         := $(ROOT)/script
+
 OBJ_ONTS_TTL       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
 OBJ_ONTS_NT        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
 OBJ_ONTS_JSONLD    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.jsonld,$(SRC_ONTS))
+OBJ_EXAMPLES       := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
 
 OKP4_ARTIFACT_ID   := okp4-ontology
 BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
@@ -70,6 +73,7 @@ FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SR
 
 # - Lint
 FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
+FLG_LINT_JSONLDS   := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_LINT)/%.linted,$(SRC_EXAMPLES))
 
 # - Test
 SRC_TST            := $(ROOT)/test
@@ -158,6 +162,9 @@ build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Bui
 .PHONY: build-ontology-jsonld
 build-ontology-jsonld: check $(DST) $(OBJ_ONTS_JSONLD) $(BIN_OKP4_JSONLD) ## Build the ontology in JSON-LD format
 
+.PHONY: build-examples
+build-examples: check $(DST) $(OBJ_EXAMPLES) ## Build the examples in JSON-LD format
+
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
@@ -179,6 +186,12 @@ $(OBJ_ONTS_JSONLD): $(DST_ONT)/%.jsonld: $(DST_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
+
+$(OBJ_EXAMPLES): $(DST_ONT)/%.jsonld: $(SRC_ONT)/%.jsonld
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} example ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@cp $< $@
+	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@
 
 $(BIN_OKP4_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -205,7 +218,7 @@ $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Make
 	@${call GENERATE_DOCUMENTATION,-i,$(DST_ONT)/schema,-o,$@}
 
 .PHONY: build-ontology-bundle
-build-ontology-bundle: $(DST) build-ontology $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
+build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
 
 $(BIN_OKP4_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name "*.ttl") $(ROOT)/LICENSE
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET} tarball"
@@ -233,7 +246,7 @@ $(FLG_FMT_TTLS): $(DST_FORMAT)/%.formatted: $(SRC_ONT)/%.ttl
 
 ## Lint:
 .PHONY: lint
-lint: lint-ttl ## Lint with all available linters
+lint: lint-ttl lint-jsonld ## Lint with all available linters
 
 .PHONY: lint-ttl
 lint-ttl: check cache $(FLG_LINT_TTLS) ## Lint all Turtle files
@@ -246,6 +259,20 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
       -w /usr/src/ontology \
       ${DOCKER_IMAGE_RUBY_RDF} validate --validate $<
 	@touch $@
+
+.PHONY: lint-jsonld
+lint-jsonld: check cache $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
+
+$(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
+	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@cp $< $@.jsonld
+	@sed -i ${SED_FLAG} "s/\$$major/next/g" $@.jsonld
+	@docker run --rm \
+	  -v `pwd`:/usr/src/ontology:ro \
+	  -w /usr/src/ontology \
+	  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $@.jsonld
+	@mv -f $@.jsonld $@
 
 ## Documentation:
 .PHONY: docs
