@@ -24,8 +24,6 @@ plugins:
     - prepareCmd: make build
   - - "@semantic-release/github"
     - assets:
-        - label: OKP4 Ontology (JSON-LD)
-          path: ./target/okp4-ontology-*.jsonld
         - label: OKP4 Ontology (Turtle)
           path: ./target/okp4-ontology-*.ttl
         - label: OKP4 Ontology (RDF/XML)

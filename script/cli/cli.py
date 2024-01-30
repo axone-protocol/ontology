@@ -1,70 +1,94 @@
-import glob
 import os
+import typing as t
 
 import click
-from jinja2 import Environment, FileSystemLoader
-from rdflib import URIRef, Dataset, RDF, SKOS, DCTERMS, RDFS
 
-from cli.markdown import normalize_text, linkify
-from cli.rdf import credential_class, value, graphs, sort_graphs, graph_name, uri_split
+from cli.documentation import generate_documentation
+from cli.jsonld import convert_jsonld
 
 
-@click.command()
-@click.option(
-    "-i",
-    "--input",
+@click.group()
+def root():
+    """A command line interface used to manage the OKP4 ontology."""
+    pass
+
+
+@click.group()
+def documentation():
+    """Group of commands used to manage the documentation for the OKP4 ontology."""
+    pass
+
+
+@click.group()
+def jsonld():
+    """Group of commands used to manage the OKP4 ontology."""
+    pass
+
+
+root.add_command(documentation)
+root.add_command(jsonld)
+
+
+@documentation.command()
+@click.argument(
     "input_path",
     type=click.Path(dir_okay=True, file_okay=False, exists=True, readable=True),
-    required=True,
-    help="The path to the directory containing the ontology schemas.",
 )
 @click.option(
     "-o",
     "--output",
-    "out_file",
-    type=click.Path(dir_okay=False, file_okay=True, readable=True),
-    required=True,
+    "output_file",
+    type=click.File('w'),
+    default=click.get_text_stream('stdout'),
     help="The path and name for the generated markdown document.",
 )
-def command(input_path, out_file):
-    """Generate a markdown document from the ontology schemas."""
+def generate(input_path: os.PathLike[str], output_file: t.TextIO) -> None:
+    """Generate the markdown documentation from the ontology turtle files found in the input directory."""
+    try:
+        generate_documentation(input_path, output_file)
+    except Exception as e:
+        raise click.UsageError(f"{e}")
 
-    dataset = Dataset()
 
-    click.echo(f"🔍 Looking into: {input_path}")
+@jsonld.command()
+@click.argument(
+    "input_file",
+    type=click.File('r'),
+)
+@click.option(
+    "-o",
+    "--output",
+    "output_file",
+    type=click.File('w'),
+    default=click.get_text_stream('stdout'),
+    help="The path and name for the generated JSON-LD file.",
+)
+@click.option(
+    "-f",
+    "--format",
+    "format",
+    type=click.Choice(["turtle", "n3", "nt", "xml", "nquads", "trix"]),
+    default=None,
+    help="The format of the input file.",
+)
+@click.option(
+    "--indent",
+    "indent",
+    type=int,
+    default=None,
+    help="The number of spaces to use for indentation.",
+)
+def convert(input_file: t.TextIO, output_file: t.TextIO, indent: t.Optional[int], format: t.Optional[str]) -> None:
+    """Converts a schema to JSON-LD.
 
-    for filename in glob.glob(f"{input_path}/*/*.ttl"):
-        click.echo(f"✔ {filename}")
-        name = os.path.basename(filename).replace(".ttl", "")
-        click.echo("  🔬 loading graph")
-        g = dataset.graph(URIRef("urn:x-schema:" + name))
-        g.parse(filename, format="ttl")
-        click.echo(f"  📊 graph has {len(g)} triples")
-
-    env = Environment(loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')))
-    env.filters['credential_class'] = credential_class
-    env.filters['value'] = value
-    env.filters['graphs'] = graphs
-    env.filters['sort_graphs'] = sort_graphs
-    env.filters['graph_name'] = graph_name
-    env.filters['uri_split'] = uri_split
-    env.filters['normalize_text'] = normalize_text
-    env.filters['linkify'] = linkify
-    namespaces = {
-        'RDF': RDF,
-        'RDFS': RDFS,
-        'SKOS': SKOS,
-        'DCTERMS': DCTERMS
-    }
-
-    click.echo("📝 generating markdown...")
-    template = env.get_template('schemas.md.jinja2')
-    rendered = template.render(dataset=dataset, **namespaces)
-
-    click.echo(f"💾 writing to: {click.format_filename(out_file)}")
-    with open(out_file, "w") as fh:
-        fh.write(rendered)
+    If the output file is not specified, the JSON-LD will be printed to the console.
+    You can specify the format of the input file, if it cannot be inferred from the file extension.
+    """
+    try:
+        convert_jsonld(input_file, output_file, indent, format)
+    except Exception as e:
+        raise click.UsageError(f"{e}")
 
 
 if __name__ == '__main__':
-    command()
+    root()

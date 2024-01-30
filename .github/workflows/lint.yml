@@ -174,3 +174,9 @@ jobs:
         working-directory: script
         run: |
           poetry run flake8 --count --show-source --statistics
+
+      - name: Lint python code (mypy)
+        if: steps.changed-python-files.outputs.any_changed == 'true'
+        working-directory: script
+        run: |
+          poetry run mypy --config-file ./mypy.ini .
