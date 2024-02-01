@@ -109,14 +109,12 @@ This will build the `okp4` ontology under the `target` directory. The files gene
 - [Turtle](https://www.w3.org/TR/turtle/)
 - [N-Triples](http://www.w3.org/TR/n-triples/)
 - [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/)
-- [JSON-LD](https://www.w3.org/TR/json-ld11/)) to be used in different contexts.
-- [Tarball](https://en.wikipedia.org/wiki/Tar_(computing)) containing all the different ontology formats.
+- [Tarball](https://en.wikipedia.org/wiki/Tar_(computing)) containing all the schemas and vocabularies in different formats.
 
 ```text
 ./target
    ├── okp4-ontology-<version>.nt
    ├── okp4-ontology-<version>.rdf.xml
-   ├── okp4-ontology-<version>.jsonld
    ├── okp4-ontology-<version>.ttl
    └── okp4-ontology-<version>-bundle.tar.gz
 ```
