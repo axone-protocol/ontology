@@ -1,16 +1,28 @@
+---
+sidebar_position: {{ pos }}
+---
 [//]: # (This file is auto-generated. Please do not modify it yourself.)
 
-{% set vc = graph | credential_class() -%}
+{% set vc = schema.graph | credential_class() -%}
 
 {% if vc %}
-# {{ vc | value(graph, RDFS.label) | capitalize }}
+# {{ vc | value(schema.graph, RDFS.label) | capitalize }}
 
-> Name: `{{ graph.identifier | uri_split(':') | last }}`
+> Name: `{{ schema.name }}`
 >
-> Schema: &lt;{{ vc | uri_split('/') | first | replace('$major','next') | linkify }}&gt;
+> Schema: {{ vc | uri_split('/') | first | replace('$major','next') | linkify }}
 
 ## Description
 
-{{ vc | value(graph, RDFS.comment) | normalize_text() -}}
+{{ vc | value(schema.graph, RDFS.comment) | normalize_text() -}}
 
+{% endif %}
+{% if schema.examples %}
+## Examples
+
+```json title="{{ schema.filename }}"
+{% for example in schema.examples -%}
+{{ example.content }}
+{%- endfor -%}
+```
 {% endif -%}

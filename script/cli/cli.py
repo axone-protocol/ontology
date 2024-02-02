@@ -38,10 +38,18 @@ root.add_command(jsonld)
     "output_path",
     type=click.Path(dir_okay=True, file_okay=False, exists=True, readable=True),
 )
-def generate(input_path: os.PathLike[str], output_path: os.PathLike[str]) -> None:
+@click.option(
+    "-e",
+    "--example-path",
+    "example_path",
+    type=click.Path(exists=True, readable=True),
+    help="The path to the example file used to generate the documentation.",
+)
+def generate(input_path: os.PathLike[str], output_path: os.PathLike[str],
+             example_path: t.Optional[os.PathLike[str]]) -> None:
     """Generate the markdown documentation from the ontology turtle files found in the input directory."""
     try:
-        generate_documentation(input_path, output_path)
+        generate_documentation(input_path, output_path, example_path)
     except Exception as e:
         raise click.UsageError(f"{e}")
 

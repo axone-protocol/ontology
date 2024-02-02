@@ -1,51 +1,89 @@
-import glob
 import os
 import typing as t
+from pathlib import Path
 
 import click
-from jinja2 import Environment, FileSystemLoader
-from rdflib import URIRef, Dataset, RDF, SKOS, DCTERMS, RDFS, Graph
+from jinja2 import FileSystemLoader, Environment
+from rdflib import URIRef, RDF, SKOS, DCTERMS, RDFS, Graph
 from rdflib.term import Node
 
+PathLikeStr = os.PathLike[str]
 
-def generate_documentation(input_path: os.PathLike[str], output_path: os.PathLike[str]) -> None:
+FILE_FORMAT = "turtle"
+EXAMPLE_SUFFIX = ".jsonld"
+TEMPLATE_DIR = 'templates'
+TEMPLATE_FILE = 'schema.md.jinja2'
+
+NAMESPACES = {
+    'RDF': RDF,
+    'RDFS': RDFS,
+    'SKOS': SKOS,
+    'DCTERMS': DCTERMS
+}
+
+
+def parse_graph(filename: PathLikeStr) -> Graph:
+    """Parse the graph from a given filename."""
+    click.echo("  🔬 Loading graph")
+    graph = Graph()
+    graph.parse(str(filename), format=FILE_FORMAT)
+    click.echo(f"  📊 Graph has {len(graph)} triples")
+    return graph
+
+
+def find_examples(filename: PathLikeStr, example_path: PathLikeStr) -> list[dict[str, t.Any]]:
+    """Find and return examples related to the given schema filename."""
+    click.echo("  📚 Looking for examples related to this graph")
+    pattern = str(Path(filename).with_suffix(EXAMPLE_SUFFIX)).replace("credential-", "*-")
+    examples = [
+        {
+            'filename': example_filename.name,
+            'content': example_filename.read_text()
+        } for example_filename in Path(example_path).glob(pattern)
+    ]
+    examples.sort(key=lambda x: x['filename'])
+    click.echo(f"  {'✅' if examples else '✔️'} found {len(examples)} example(s)")
+    return examples
+
+
+def generate_documentation(input_path: PathLikeStr, output_path: PathLikeStr,
+                           example_path: t.Optional[PathLikeStr]) -> None:
     """Generate the markdown documentation from the ontology turtle files found in the input directory."""
-    dataset = Dataset()
+    schemas = []
 
     click.echo(f"🔍 Looking into: {input_path}")
 
-    for filename in glob.glob(f"{input_path}/**/*.ttl", recursive=True):
-        click.echo(f"✔ {filename}")
-        name = os.path.basename(filename).replace(".ttl", "")
-        click.echo("  🔬 loading graph")
-        g = dataset.graph(URIRef("urn:x-schema:" + name))
-        g.parse(filename, format="ttl")
-        click.echo(f"  📊 graph has {len(g)} triples")
+    for filename in Path(input_path).rglob("**/*.ttl"):
+        rel_path = filename.relative_to(input_path)
+        click.echo(f"✔ {rel_path}")
 
-    env = Environment(loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')))
+        schema: dict[str, t.Any] = {
+            'filename': filename,
+            'name': filename.stem,
+            'graph': parse_graph(filename)
+        }
+
+        if example_path:
+            schema['examples'] = find_examples(rel_path, example_path)
+
+        schemas.append(schema)
+
+    schemas.sort(key=lambda x: x['name'])
+    loader = FileSystemLoader(Path(__file__).parent / TEMPLATE_DIR)
+    env = Environment(loader=loader)
     env.filters.update({
         'credential_class': credential_class,
         'value': value,
-        'graph_name': graph_name,
         'uri_split': uri_split,
         'normalize_text': normalize_text,
         'linkify': linkify
     })
-    namespaces = {
-        'RDF': RDF,
-        'RDFS': RDFS,
-        'SKOS': SKOS,
-        'DCTERMS': DCTERMS
-    }
 
-    template = env.get_template('schema.md.jinja2')
-    for graph in dataset.graphs():
-        if str(graph.identifier) == "urn:x-rdflib:default":
-            continue
-        click.echo(f"📝 generating markdown for {graph.identifier}")
-
-        output_filename = os.path.join(output_path, f"{uri_split(URIRef(graph.identifier),sep=':')[1]}.md")
-        template.stream(graph=graph, **namespaces).dump(output_filename)
+    for idx, schema in enumerate(schemas):
+        click.echo(f"📝 Generating markdown for {schema['name']}")
+        template = env.get_template(TEMPLATE_FILE)
+        output_filename = Path(output_path) / f"{schema['name']}.md"
+        template.stream(schema=schema, pos=idx+1, **NAMESPACES).dump(str(output_filename))
 
 
 def normalize_text(text: str) -> str:
@@ -60,11 +98,6 @@ def normalize_text(text: str) -> str:
 
 def linkify(link: str) -> str:
     return f"[{link}]({link})"
-
-
-def graph_name(graph: Graph) -> t.Optional[str]:
-    cc = credential_class(graph)
-    return str(value(cc, graph, RDFS.label)) if cc else None
 
 
 def credential_class(graph: Graph) -> t.Optional[Node]:
