@@ -13,9 +13,11 @@
         "hasPublisher": "IPFS",
         "hasTag": [
             "Storage",
+            "Peer-to-peer",
             "Cloud"
         ],
-        "hasTitle": "IPFS"
+        "hasTitle": "IPFS",
+        "hasWebpage": "https://docs.ipfs.tech/"
     },
     "issuanceDate": "2024-01-22T09:28:43.475304+01:00",
     "issuer": {
