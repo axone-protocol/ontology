@@ -10,7 +10,7 @@
         "type": "DatasetDescriptionCredential",
         "hasDescription": "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database.",
         "hasFormat": "https://w3id.org/okp4/ontology/v$major/thesaurus/media-type/text_csv",
-        "hasGeoCoverage":"https://w3id.org/okp4/ontology/v$major/thesaurus/area-code/840",
+        "hasGeoCoverage": "https://w3id.org/okp4/ontology/v$major/thesaurus/area-code/840",
         "hasTag": [
             "Crime",
             "Police",
