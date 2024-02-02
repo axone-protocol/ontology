@@ -8,7 +8,7 @@ from rdflib import URIRef, Dataset, RDF, SKOS, DCTERMS, RDFS, Graph
 from rdflib.term import Node
 
 
-def generate_documentation(input_path: os.PathLike[str], output_file: t.TextIO) -> None:
+def generate_documentation(input_path: os.PathLike[str], output_path: os.PathLike[str]) -> None:
     """Generate the markdown documentation from the ontology turtle files found in the input directory."""
     dataset = Dataset()
 
@@ -26,8 +26,6 @@ def generate_documentation(input_path: os.PathLike[str], output_file: t.TextIO) 
     env.filters.update({
         'credential_class': credential_class,
         'value': value,
-        'graphs': graphs,
-        'sort_graphs': sort_graphs,
         'graph_name': graph_name,
         'uri_split': uri_split,
         'normalize_text': normalize_text,
@@ -40,12 +38,14 @@ def generate_documentation(input_path: os.PathLike[str], output_file: t.TextIO) 
         'DCTERMS': DCTERMS
     }
 
-    click.echo("📝 generating markdown...")
-    template = env.get_template('schemas.md.jinja2')
-    rendered = template.render(dataset=dataset, **namespaces)
+    template = env.get_template('schema.md.jinja2')
+    for graph in dataset.graphs():
+        if str(graph.identifier) == "urn:x-rdflib:default":
+            continue
+        click.echo(f"📝 generating markdown for {graph.identifier}")
 
-    click.echo(f"💾 writing to: {click.format_filename(output_file.name)}")
-    output_file.write(rendered)
+        output_filename = os.path.join(output_path, f"{uri_split(URIRef(graph.identifier),sep=':')[1]}.md")
+        template.stream(graph=graph, **namespaces).dump(output_filename)
 
 
 def normalize_text(text: str) -> str:
@@ -60,16 +60,6 @@ def normalize_text(text: str) -> str:
 
 def linkify(link: str) -> str:
     return f"[{link}]({link})"
-
-
-def graphs(dataset: Dataset) -> t.Generator[Graph, None, None]:
-    return dataset.graphs()
-
-
-def sort_graphs(graphs: list[Graph]) -> list[Graph]:
-    return sorted(
-        graphs,
-        key=lambda g: graph_name(g) or "")
 
 
 def graph_name(graph: Graph) -> t.Optional[str]:
