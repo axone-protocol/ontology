@@ -79,4 +79,10 @@
     <skos:prefLabel xml:lang="fr">Autres</skos:prefLabel>
     <skos:prefLabel xml:lang="en">Other</skos:prefLabel>
   </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="en">Security</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Sicherheit</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Sécurité</skos:prefLabel>
+  </skos:Concept>
 </rdf:RDF>

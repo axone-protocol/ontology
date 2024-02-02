@@ -48,6 +48,11 @@
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Other> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andere"@de .
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Other> <http://www.w3.org/2004/02/skos/core#prefLabel> "Autres"@fr .
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Other> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other"@en .
+<https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/topic> .
+<https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security> <http://www.w3.org/2004/02/skos/core#prefLabel> "Security"@en .
+<https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sicherheit"@de .
+<https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sécurité"@fr .
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic> <http://www.w3.org/2000/01/rdf-schema#label> "Thema Thesaurus"@de .
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic> <http://www.w3.org/2000/01/rdf-schema#label> "Thésaurus des thèmes"@fr .

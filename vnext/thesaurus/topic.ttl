@@ -64,6 +64,12 @@
   skos:prefLabel "Autres"@fr ;
   skos:prefLabel "Other"@en .
 
+:Security a skos:Concept ;
+  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/topic> ;
+  skos:prefLabel "Security"@en ;
+  skos:prefLabel "Sicherheit"@de ;
+  skos:prefLabel "Sécurité"@fr .
+
 <https://w3id.org/okp4/ontology/vnext/thesaurus/topic> a skos:ConceptScheme ;
   rdfs:label "Thema Thesaurus"@de ;
   rdfs:label "Thésaurus des thèmes"@fr ;

@@ -261,6 +261,27 @@
           "@value": "Other"
         }
       ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Security"
+        },
+        {
+          "@language": "de",
+          "@value": "Sicherheit"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sécurité"
+        }
+      ]
     }
   ]
 }
