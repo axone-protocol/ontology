@@ -24,11 +24,18 @@ jobs:
         run: |
           make build
 
+      - name: Retrieve version
+        id: version
+        run: |
+          version=$(cat version)
+          major=$(echo $version | cut -d. -f1)
+          echo "::set-output name=version::$version"
+          echo "::set-output name=major::$major"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.OKP4_TOKEN }}
-          publish_dir: target/ontology/
-          destination_dir: .
-          keep_files: true
-          cname: ontology.okp4.space
+          publish_dir: target/ontology/v${{ steps.version.outputs.major }}
+          destination_dir: ./v${{ steps.version.outputs.major }}
+          keep_files: false
