@@ -51,7 +51,8 @@ def generate(input_path: os.PathLike[str], output_path: os.PathLike[str],
     try:
         generate_documentation(input_path, output_path, example_path)
     except Exception as e:
-        raise click.UsageError(f"{e}")
+        raise e
+        # raise click.UsageError(f"{e}")
 
 
 @jsonld.command()

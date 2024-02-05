@@ -4,7 +4,7 @@ from pathlib import Path
 
 import click
 from jinja2 import FileSystemLoader, Environment
-from rdflib import URIRef, RDF, SKOS, DCTERMS, RDFS, Graph
+from rdflib import URIRef, RDF, SKOS, DCTERMS, RDFS, Graph, Namespace
 from rdflib.term import Node
 
 PathLikeStr = os.PathLike[str]
@@ -13,20 +13,34 @@ FILE_FORMAT = "turtle"
 EXAMPLE_SUFFIX = ".jsonld"
 TEMPLATE_DIR = 'templates'
 TEMPLATE_FILE = 'schema.md.jinja2'
+SCHEMA = Namespace('http://schema.org/')
 
 NAMESPACES = {
     'RDF': RDF,
     'RDFS': RDFS,
     'SKOS': SKOS,
-    'DCTERMS': DCTERMS
+    'DCTERMS': DCTERMS,
+    'SCHEMA': SCHEMA
 }
 
 
-def parse_graph(filename: PathLikeStr) -> Graph:
+def parse_vc_graph(filename: Path) -> Graph:
     """Parse the graph from a given filename."""
     click.echo("  🔬 Loading graph")
     graph = Graph()
+    graph.namespace_manager.reset()
+    graph.bind("rdf", RDF)
+    graph.bind("rdfs", RDFS)
+    graph.bind("skos", SKOS)
+    graph.bind("dcterms", DCTERMS)
+    graph.bind("schema", SCHEMA)
     graph.parse(str(filename), format=FILE_FORMAT)
+
+    credential_uri = credential_class(graph)
+    if credential_uri:
+        ns, _ = split_uri(credential_uri)
+        graph.bind(filename.stem, f"{ns}/")
+
     click.echo(f"  📊 Graph has {len(graph)} triples")
     return graph
 
@@ -57,10 +71,12 @@ def generate_documentation(input_path: PathLikeStr, output_path: PathLikeStr,
         rel_path = filename.relative_to(input_path)
         click.echo(f"✔ {rel_path}")
 
+        graph = parse_vc_graph(filename)
+
         schema: dict[str, t.Any] = {
             'filename': filename,
             'name': filename.stem,
-            'graph': parse_graph(filename)
+            'graph': graph,
         }
 
         if example_path:
@@ -74,16 +90,20 @@ def generate_documentation(input_path: PathLikeStr, output_path: PathLikeStr,
     env.filters.update({
         'credential_class': credential_class,
         'value': value,
-        'uri_split': uri_split,
+        'curiefy': curiefy,
+        'split_uri': split_uri,
         'normalize_text': normalize_text,
-        'linkify': linkify
+        'linkify': linkify,
+        'domains': domains,
+        'ranges': ranges,
+        'append': append,
     })
 
     for idx, schema in enumerate(schemas):
         click.echo(f"📝 Generating markdown for {schema['name']}")
         template = env.get_template(TEMPLATE_FILE)
         output_filename = Path(output_path) / f"{schema['name']}.md"
-        template.stream(schema=schema, pos=idx+1, **NAMESPACES).dump(str(output_filename))
+        template.stream(schema=schema, pos=idx + 1, **NAMESPACES).dump(str(output_filename))
 
 
 def normalize_text(text: str) -> str:
@@ -96,13 +116,13 @@ def normalize_text(text: str) -> str:
     return normalized_text
 
 
-def linkify(link: str) -> str:
-    return f"[{link}]({link})"
+def linkify(text: str, link: t.Optional[str] = None) -> str:
+    return f"[{text}]({link or text})"
 
 
-def credential_class(graph: Graph) -> t.Optional[Node]:
+def credential_class(graph: Graph) -> t.Optional[URIRef]:
     for s in graph.subjects(RDF.type, RDFS.Class):
-        if str(s).endswith("Credential"):
+        if str(s).endswith("Credential") and isinstance(s, URIRef):
             return s
     return None
 
@@ -111,6 +131,22 @@ def value(subject: Node | None, graph: Graph, predicate: Node | None) -> Node | 
     return graph.value(subject, predicate)
 
 
-def uri_split(uri: URIRef, sep: str = '/') -> t.Tuple[str, str]:
+def split_uri(uri: URIRef, sep: str = '/') -> t.Tuple[str, str]:
     parts = str(uri).rsplit(sep, 1)
     return (parts[0], parts[1]) if len(parts) == 2 else (parts[0], '')
+
+
+def curiefy(uri: str, graph: Graph) -> str:
+    return graph.namespace_manager.curie(uri)
+
+
+def domains(predicate: Node, graph: Graph) -> list[Node]:
+    return sorted(graph.objects(predicate, SCHEMA.domainIncludes), key=str)
+
+
+def ranges(predicate: Node, graph: Graph) -> list[Node]:
+    return sorted(graph.objects(predicate, SCHEMA.rangeIncludes), key=str)
+
+
+def append(s: str, *args: t.Any) -> str:
+    return s + ''.join(args)

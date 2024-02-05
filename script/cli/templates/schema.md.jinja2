@@ -8,15 +8,16 @@ sidebar_position: {{ pos }}
 {% if vc %}
 # {{ vc | value(schema.graph, RDFS.label) | capitalize }}
 
-> Name: `{{ schema.name }}`
+> **Name**: `{{ schema.name }}`
 >
-> Schema: {{ vc | uri_split('/') | first | replace('$major','next') | linkify }}
+> **Namespace**: {{ vc | split_uri('/') | first | append('/') | linkify }}
 
 ## Description
 
 {{ vc | value(schema.graph, RDFS.comment) | normalize_text() -}}
 
 {% endif %}
+
 {% if schema.examples %}
 ## Examples
 
@@ -26,3 +27,23 @@ sidebar_position: {{ pos }}
 {%- endfor -%}
 ```
 {% endif -%}
+
+## Properties
+{%- for property in schema.graph.subjects(RDF.type, RDF.Property) %}
+
+### {{ property | value(schema.graph, RDFS.label) | capitalize }}
+> **IRI**: {{ property | curiefy(schema.graph) | linkify(property) }}
+>
+> **Domain**:
+{%- for domain in (property | domains(schema.graph)) -%}
+    {{- domain | curiefy(schema.graph) | linkify(domain) }}{{ ", " if not loop.last else "" -}}
+{%- endfor %}
+>
+> **Range**:
+{%- for range in (property | ranges(schema.graph)) -%}
+    {{- range | curiefy(schema.graph) | linkify(range) }}{{ ", " if not loop.last else "" -}}
+{%- endfor %}
+
+{{ property | value(schema.graph, RDFS.comment) | normalize_text() }}
+
+{%- endfor %}
