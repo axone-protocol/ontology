@@ -144,7 +144,7 @@ MARKDOWN_LINT = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_MARKDOWNLINT} -f docs
+	${DOCKER_IMAGE_MARKDOWNLINT} $1 $2 $3 $4 $5 $6 $7 $8 $9
 
 .PHONY: help
 all: help
@@ -233,9 +233,9 @@ $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Make
 	@echo "${COLOR_CYAN}📝 generating ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
 	@rm -rf $(DTS_DOCS_SCHEMAS)
 	@mkdir -p -m $(PERMISSION_MODE) $(DTS_DOCS_SCHEMAS)
-	@${call CLI,documentation,generate,$(DST_ONT)/schema,$(DTS_DOCS_SCHEMAS)}
+	@${call CLI,documentation,generate,$(DST_ONT)/schema,$(DTS_DOCS_SCHEMAS),--example-path,$(DST_ONT)/example}
 	@echo "${COLOR_CYAN}🔍 linting ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
-	@${call MARKDOWN_LINT,$(DTS_DOCS_SCHEMAS)}
+	${call MARKDOWN_LINT,-f,$(DTS_DOCS_SCHEMAS)}
 
 .PHONY: build-ontology-bundle
 build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
