@@ -296,7 +296,7 @@ $(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 
 ## Documentation:
 .PHONY: docs
-docs: docs-schemas ## Generate all available documentation
+docs: build-examples docs-schemas ## Generate all available documentation
 
 .PHONY: docs-schemas
 docs-schemas: check cache $(BIN_DOC_SCHEMAS) ## Generate schemas markdown documentation
