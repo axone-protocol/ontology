@@ -231,7 +231,8 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 
 $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
-	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@rm -rf $(DTS_DOCS_SCHEMAS)
+	@mkdir -p -m $(PERMISSION_MODE) $(DTS_DOCS_SCHEMAS)
 	@${call CLI,documentation,generate,$(DST_ONT)/schema,$(DTS_DOCS_SCHEMAS)}
 	@echo "${COLOR_CYAN}🔍 linting ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
 	@${call MARKDOWN_LINT,$(DTS_DOCS_SCHEMAS)}
