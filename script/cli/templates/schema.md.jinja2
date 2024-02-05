@@ -28,6 +28,12 @@ sidebar_position: {{ pos }}
 ```
 {% endif -%}
 
+## Namespaces
+
+{%- for ns in schema.graph.namespaces() %}
+- `{{ ns[0] }}`: {{ ns[1] | linkify }}
+{%- endfor %}
+
 ## Properties
 {%- for property in schema.graph.subjects(RDF.type, RDF.Property) %}
 

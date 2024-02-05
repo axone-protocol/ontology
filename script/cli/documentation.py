@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 from jinja2 import FileSystemLoader, Environment
 from rdflib import URIRef, RDF, SKOS, DCTERMS, RDFS, Graph, Namespace
+from rdflib.namespace import NamespaceManager
 from rdflib.term import Node
 
 PathLikeStr = os.PathLike[str]
@@ -27,13 +28,13 @@ NAMESPACES = {
 def parse_vc_graph(filename: Path) -> Graph:
     """Parse the graph from a given filename."""
     click.echo("  🔬 Loading graph")
-    graph = Graph()
-    graph.namespace_manager.reset()
-    graph.bind("rdf", RDF)
-    graph.bind("rdfs", RDFS)
-    graph.bind("skos", SKOS)
-    graph.bind("dcterms", DCTERMS)
-    graph.bind("schema", SCHEMA)
+    ns_mgr = NamespaceManager(Graph(), bind_namespaces="none")
+    ns_mgr.bind("rdf", RDF)
+    ns_mgr.bind("rdfs", RDFS)
+    ns_mgr.bind("skos", SKOS)
+    ns_mgr.bind("dcterms", DCTERMS)
+    ns_mgr.bind("schema", SCHEMA)
+    graph = Graph(namespace_manager=ns_mgr)
     graph.parse(str(filename), format=FILE_FORMAT)
 
     credential_uri = credential_class(graph)
