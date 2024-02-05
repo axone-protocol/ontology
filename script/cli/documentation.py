@@ -13,7 +13,7 @@ PathLikeStr = os.PathLike[str]
 FILE_FORMAT = "turtle"
 EXAMPLE_SUFFIX = ".jsonld"
 TEMPLATE_DIR = 'templates'
-TEMPLATE_FILE = 'schema.md.jinja2'
+TEMPLATE_FILE = 'schema.md.j2'
 SCHEMA = Namespace('http://schema.org/')
 
 NAMESPACES = {
@@ -123,9 +123,13 @@ def linkify(text: str, link: t.Optional[str] = None) -> str:
 
 def credential_class(graph: Graph) -> t.Optional[URIRef]:
     for s in graph.subjects(RDF.type, RDFS.Class):
-        if str(s).endswith("Credential") and isinstance(s, URIRef):
+        if isinstance(s, URIRef) and is_credential_class(s):
             return s
     return None
+
+
+def is_credential_class(node: URIRef) -> bool:
+    return str(node).endswith("Credential")
 
 
 def value(subject: Node | None, graph: Graph, predicate: Node | None) -> Node | None:
