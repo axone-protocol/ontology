@@ -29,6 +29,7 @@ VERSION_PATCH := $(word 3,$(subst ., ,$(VERSION)))
 DST                := $(ROOT)/target
 DST_CACHE          := $(DST)/.cache
 DST_DOCS		   := $(ROOT)/docs
+DTS_DOCS_SCHEMAS   := $(DST_DOCS)/schemas
 DST_MAKE           := $(DST)/.make
 DST_ONT            := $(DST)/ontology/v$(VERSION_MAJOR)
 DST_SCHEMA         := $(DST_ONT)/schema
@@ -58,7 +59,7 @@ BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
 BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).nt
 BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).rdf.xml
 BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
-BIN_DOC_SCHEMAS	   := $(DST_DOCS)/schemas.md
+BIN_DOC_SCHEMAS	   := $(patsubst %.ttl,$(DTS_DOCS_SCHEMAS)/%.md,$(notdir $(SRC_SCHEMAS)))
 
 # - Format
 FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
@@ -138,11 +139,12 @@ CLI = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_CLI} sh -c "poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9" && \
+	${DOCKER_IMAGE_CLI} sh -c "poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"
+MARKDOWN_LINT = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_MARKDOWNLINT} -f docs
+	${DOCKER_IMAGE_MARKDOWNLINT} $1 $2 $3 $4 $5 $6 $7 $8 $9
 
 .PHONY: help
 all: help
@@ -228,9 +230,12 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@${call CLI,jsonld,convert,$<,-o,$@,--indent,$(JSONLD_INDENT)}
 
 $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
-	@echo "${COLOR_CYAN}📝 generating${COLOR_RESET} schemas documentation ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m $(PERMISSION_MODE) $(@D)
-	@${call CLI,documentation,generate,$(DST_ONT)/schema,-o,$@}
+	@echo "${COLOR_CYAN}📝 generating ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
+	@rm -rf $(DTS_DOCS_SCHEMAS)
+	@mkdir -p -m $(PERMISSION_MODE) $(DTS_DOCS_SCHEMAS)
+	@${call CLI,documentation,generate,$(DST_ONT)/schema,$(DTS_DOCS_SCHEMAS),--example-path,$(DST_ONT)/example}
+	@echo "${COLOR_CYAN}🔍 linting ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
+	${call MARKDOWN_LINT,-f,$(DTS_DOCS_SCHEMAS)}
 
 .PHONY: build-ontology-bundle
 build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
@@ -291,7 +296,7 @@ $(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 
 ## Documentation:
 .PHONY: docs
-docs: docs-schemas ## Generate all available documentation
+docs: build-examples docs-schemas ## Generate all available documentation
 
 .PHONY: docs-schemas
 docs-schemas: check cache $(BIN_DOC_SCHEMAS) ## Generate schemas markdown documentation

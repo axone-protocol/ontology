@@ -1,0 +1,92 @@
+---
+sidebar_position: {{ pos }}
+---
+[//]: # (This file is auto-generated. Please do not modify it yourself.)
+
+{% set vc = schema.graph | credential_class() -%}
+
+{% if vc %}
+# {{ vc | value(schema.graph, RDFS.label) | capitalize }}
+
+> **Name**: `{{ schema.name }}`
+>
+> **Namespace**: {{ vc | split_uri('/') | first | append('/') | linkify }}
+
+## Namespaces
+
+Here are the namespaces used in this schema:
+
+{%- for ns in schema.graph.namespaces() %}
+- `{{ ns[0] }}`: {{ ns[1] | linkify }}
+{%- endfor %}
+
+## Verifiable Credential
+
+> **IRI**: {{ vc | curiefy(schema.graph) | linkify(vc) }}
+
+### Description
+
+{{ vc | value(schema.graph, RDFS.comment) | normalize_text() -}}
+
+{% endif %}
+
+{% if schema.examples %}
+### Examples
+
+{% for example in schema.examples -%}
+```json title="{{ example.filename }}"
+{{ example.content }}
+```
+{% endfor -%}
+{% endif -%}
+
+### Properties
+
+{%- for property in schema.graph.subjects(RDF.type, RDF.Property) %}
+{%- if vc in (property | domains(schema.graph) | list) %}
+
+#### {{ property | value(schema.graph, RDFS.label) | capitalize }}
+> **IRI**: {{ property | curiefy(schema.graph) | linkify(property) }}
+>
+> **Range**:&nbsp;
+{%- for range in (property | ranges(schema.graph)) -%}
+    {{- range | curiefy(schema.graph) | linkify(range) }}{{ ", " if not loop.last else "" -}}
+{%- endfor %}
+
+{{ property | value(schema.graph, RDFS.comment) | normalize_text() }}
+{%- endif %}
+{%- endfor %}
+
+{% set classes = schema.graph.subjects(RDF.type, RDFS.Class) | reject('equalto', vc) | list -%}
+{%- if classes | count > 0 %}
+## Classes
+
+This schema defines {{ classes | count }} classe{{ "s" if classes | count > 1 else "" }}.
+
+{% for klass in classes -%}
+### {{ klass | value(schema.graph, RDFS.label) | capitalize }}
+> **IRI**: {{ klass | curiefy(schema.graph) | linkify(klass) }}
+
+#### Description
+
+{{ klass | value(schema.graph, RDFS.comment) | normalize_text() }}
+
+#### Properties
+
+{%- for property in schema.graph.subjects(RDF.type, RDF.Property) %}
+{%- if klass in (property | domains(schema.graph) | list) %}
+
+##### {{ property | value(schema.graph, RDFS.label) | capitalize }}
+> **IRI**: {{ property | curiefy(schema.graph) | linkify(property) }}
+>
+> **Range**:&nbsp;
+{%- for range in (property | ranges(schema.graph)) -%}
+    {{- range | curiefy(schema.graph) | linkify(range) }}{{ ", " if not loop.last else "" -}}
+{%- endfor %}
+
+{{ property | value(schema.graph, RDFS.comment) | normalize_text() }}
+{%- endif %}
+{%- endfor %}
+
+{% endfor -%}
+{% endif %}
