@@ -41,7 +41,7 @@ The objective of these credentials is to furnish a wide-ranging insight into the
         "https://w3id.org/okp4/ontology/v2/schema/credential/dataset/description/"
     ],
     "type": "VerifiableCredential",
-    "id": "https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/description/d1120529-3242-4fa8-ac7c-a99abc3fc73e",
+    "id": "https://w3id.org/okp4/ontology/v2/schema/credential/dataset/description/d1120529-3242-4fa8-ac7c-a99abc3fc73e",
     "credentialSubject": {
         "id": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
         "type": "DatasetDescriptionCredential",

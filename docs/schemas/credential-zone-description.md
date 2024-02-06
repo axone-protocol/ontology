@@ -32,6 +32,37 @@ Zone Description credentials deliver an extensive overview of the essential info
 
 The primary objective of this credentials is to provide a broad overview of the zone, facilitating users' comprehension of its purpose and potential use cases.
 
+### Examples
+
+```json title="collab-ai-zone-description.jsonld"
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/okp4/ontology/v2/schema/credential/zone/description/"
+    ],
+    "type": "VerifiableCredential",
+    "id": "https://w3id.org/okp4/ontology/v2/schema/credential/zone/description/91f9ef40-9087-4730-bac6-53d3941f07a0",
+    "credentialSubject": {
+        "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+        "type": "ZoneDescriptionCredential",
+        "hasDescription": "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way.",
+        "hasTag": [
+            "AI",
+            "Collaboration",
+            "Machine Learning"
+        ],
+        "hasTitle": "Collaborative AI Zone",
+        "hasTopic": "https://w3id.org/okp4/ontology/v2/thesaurus/topic/other"
+    },
+    "issuanceDate": "2024-02-02T15:40:43.475304+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "OKP4"
+    }
+}
+
+```
+
 ### Properties
 
 #### Has description
