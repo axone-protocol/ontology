@@ -77,14 +77,14 @@ FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TST
 SRC_SCRIPT         := $(ROOT)/script
 
 # Docker images
-DOCKER_IMAGE_FUSEKI   := secoresearch/fuseki:4.10.0
-DOCKER_IMAGE_HTTPD    := httpd:2.4.51
-DOCKER_IMAGE_JRE      := eclipse-temurin:19.0.2_7-jre-focal
-DOCKER_IMAGE_MARKDOWNLINT = thegeeklab/markdownlint-cli:0.38.0
-DOCKER_IMAGE_POETRY   := fnndsc/python-poetry:1.7.1
-DOCKER_IMAGE_PYSHACL  := ashleysommer/pyshacl:v0.25.0
-DOCKER_IMAGE_RUBY_RDF := okp4/ruby-rdf:3.3.1
-DOCKER_IMAGE_CLI	  := okp4/cli
+DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:4.10.0
+DOCKER_IMAGE_HTTPD        := httpd:2.4.51
+DOCKER_IMAGE_JRE          := eclipse-temurin:19.0.2_7-jre-focal
+DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.38.0
+DOCKER_IMAGE_POETRY       := fnndsc/python-poetry:1.7.1
+DOCKER_IMAGE_PYSHACL      := ashleysommer/pyshacl:v0.25.0
+DOCKER_IMAGE_RUBY_RDF     := okp4/ruby-rdf:3.3.1
+DOCKER_IMAGE_CLI	      := okp4/cli
 
 # Executables
 VERSION_OWL_CLI := 1.2.4
@@ -229,7 +229,7 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@touch $@
 	@${call CLI,jsonld,convert,$<,-o,$@,--indent,$(JSONLD_INDENT)}
 
-$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
+$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(OBJ_EXAMPLES) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
 	@rm -rf $(DTS_DOCS_SCHEMAS)
 	@mkdir -p -m $(PERMISSION_MODE) $(DTS_DOCS_SCHEMAS)
