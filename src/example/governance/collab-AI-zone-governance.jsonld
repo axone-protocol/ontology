@@ -1,0 +1,81 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/"
+    ],
+    "type": "VerifiableCredential",
+    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95",
+    "credentialSubject": {
+        "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+        "type": "GovernanceTextCredential",
+        "isGovernedBy": {
+            "type": "GovernanceText",
+            "fromGovernance": "cosmwasm:{contract_name}:{contract_address}?query={contract_query}",
+            "hasChapter": {
+                "type": "Chapter",
+                "hasTitle": "Collaborative AI governance",
+                "hasOrdinalNumber": "1",
+                "hasSection": {
+                    "type": "Section",
+                    "hasTitle": "Zone Governance",
+                    "hasOrdinalNumber": "1.1",
+                    "hasSubsection": {
+                        "type": "SubSection",
+                        "hasTitle": "Governers",
+                        "hasOrdinalNumber": "1.1.1",
+                        "hasArticle": {
+                            "type": "Article",
+                            "hasTitle": "Conditions to amend the rules",
+                            "hasOrdinalNumber": "1.1.1.1",
+                            "hasParagraph": {
+                                "type": "Paragraph",
+                                "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+                                "hasOrdinalNumber": "1.1.1.1.1"
+                            },
+                            "hasArticle": {
+                                "type": "Article",
+                                "hasTitle": "Conditions on autorized services",
+                                "hasOrdinalNumber": "1.1.1.2",
+                                "hasParagraph": {
+                                    "type": "Paragraph",
+                                    "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
+                                    "hasOrdinalNumber": "1.1.1.2.1"
+                                },
+                                "hasSubsection": {
+                                    "type": "SubSection",
+                                    "hasTitle": "XXXX",
+                                    "hasOrdinalNumber": "1.1.2",
+                                    "hasArticle": {
+                                        "type": "Article",
+                                        "hasTitle": "XXXX",
+                                        "hasOrdinalNumber": "1.1.2.1",
+                                        "hasParagraph": {
+                                            "type": "Paragraph",
+                                            "hasTitle": "XXXX",
+                                            "hasOrdinalNumber": "1.1.2.1.1"
+                                        },
+                                        "hasArticle": {
+                                            "type": "Article",
+                                            "hasTitle": "XXXX",
+                                            "hasOrdinalNumber": "1.1.2.2",
+                                            "hasParagraph": {
+                                                "type": "Paragraph",
+                                                "hasTitle": "XXXX",
+                                                "hasOrdinalNumber": "1.1.2.2.1"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "issuanceDate": "2024-06-06T15:45:00.475304+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "OKP4"
+    }
+}
