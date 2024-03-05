@@ -1,0 +1,1683 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AAL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Attribution Assurance Licenses"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Open Source Licenses Thesaurus"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "This thesaurus defines a controlled vocabulary referencing the (major) Open Source licenses."
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "Open Source licenses Thesaurus"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://licenses.opendefinition.org/"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AFL-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Academic Free License 3.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AGPL-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GNU Affero General Public License v3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/APL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Adaptive Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/APSL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Apple Public Source License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Against-DRM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Against DRM"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Apache-1_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Apache Software License 1.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Apache-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Apache Software License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Artistic-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Artistic License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BSD-2-Clause",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BSD-3-Clause",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BSL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Boost Software License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BitTorrent-1_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "BitTorrent Open Source License 1.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CATOSL-1_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-4_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Creative Commons Attribution 4.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-NC-4_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Creative Commons Attribution-NonCommercial 4.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-SA-4_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Creative Commons Attribution Share-Alike 4.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC0-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "CC0 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CDDL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Common Development and Distribution License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CECILL-2_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "CeCILL License 2.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CNRI-Python",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "CNRI Python License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CPAL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Common Public Attribution License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CUA-OPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "CUA Office Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/DSL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Design Science License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ECL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Educational Community License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EFL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Eiffel Forum License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Eclipse Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EPL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Eclipse Public License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EUDatagrid",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "EU DataGrid Software License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EUPL-1_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "European Union Public License 1.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Entessa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Entessa Public License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/FAL-1_3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Free Art License 1.3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Fair",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fair License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Frameworx-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Frameworx License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GNU Free Documentation License 1.3 with no cover texts and no invariant sections"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/GPL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GNU General Public License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/GPL-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GNU General Public License 3.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/HPND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Historical Permission Notice and Disclaimer"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/IPA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "IPA Font License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/IPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "IBM Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ISC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "ISC License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Intel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intel Open Source License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LGPL-2_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GNU Lesser General Public License 2.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LGPL-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GNU Lesser General Public License 3.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LO-FR-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LO-FR-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Lucent Public License (\"Plan9\") 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LPL-1_02",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Lucent Public License 1.02"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LPPL-1_3c",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "LaTeX Project Public License 1.3c"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MIT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "MIT License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mozilla Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MPL-1_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mozilla Public License 1.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MPL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mozilla Public License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MS-PL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Microsoft Public License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MS-RL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Microsoft Reciprocal License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MirOS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "MirOS Licence"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Motosoto",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Motosoto License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Multics",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Multics License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NASA-1_3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "NASA Open Source Agreement 1.3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NCSA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "University of Illinois/NCSA Open Source License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NGPL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nethack General Public License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NPOSL-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Non-Profit Open Software License 3.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NTP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "NTP License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Naumen",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Naumen Public License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Nokia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Nokia Open Source License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OCLC-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "OCLC Research Public License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ODC-BY-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Data Commons Attribution License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ODbL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Data Commons Open Database License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OFL-1_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Font License 1.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-Canada-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Government License 2.0 (Canada)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Government Licence 1.0 (United Kingdom)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Government Licence 2.0 (United Kingdom)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Government Licence 3.0 (United Kingdom)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGTSL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Group Test Suite License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OSL-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Software License 3.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/PDDL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Open Data Commons Public Domain Dedication and Licence 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/PHP-3_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "PHP License 3.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/PostgreSQL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "PostgreSQL License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Python-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Python License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/QPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Q Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/RPL-1_5",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Reciprocal Public License 1.5"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/RPSL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "RealNetworks Public Source License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/RSCPL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Ricoh Source Code Public License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/SISSL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Sun Industry Standards Source License 1.1"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/SPL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Sun Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/SimPL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Simple Public License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Sleepycat",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Sleepycat License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Talis",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Talis Community License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Unlicense",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Unlicense"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/VSL-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vovida Software License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/W3C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "W3C License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/WXwindows",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "wxWindows Library License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Watcom-1_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Sybase Open Watcom Public License 1.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Xnet",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "X.Net License"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ZPL-2_0",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Zope Public License 2.0"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Zlib",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "zlib/libpng license"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/contentLicenses",
+      "@type": "skos:Collection",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Content Licenses"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "Collection of licenses which applies to a content."
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "Content Licenses"
+      },
+      "skos:member": [
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AFL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Against-DRM"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-4_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-NC-4_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-SA-4_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC0-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/DSL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/FAL-1_3"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MirOS"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NPOSL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-Canada-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OSL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Talis"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/hesa-withrights"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/localauth-withrights"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-at"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-open"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-pd"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukclickusepsi"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukcrown-withrights"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukpsi"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/hesa-withrights",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Higher Education Statistics Agency Copyright with data.gov.uk rights"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/localauth-withrights",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Local Authority Copyright with data.gov.uk rights"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-at",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other (Attribution)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-open",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other (Open)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-pd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other (Public Domain)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukclickusepsi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "UK Click Use PSI"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukcrown-withrights",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "UK Crown Copyright with data.gov.uk rights"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukpsi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "UK PSI Public Sector Information"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/dataLicenses",
+      "@type": "skos:Collection",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Data Licenses"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "Collection of licenses which applies to a data."
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "Data Licenses"
+      },
+      "skos:member": [
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-4_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-NC-4_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC-BY-SA-4_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC0-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LO-FR-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LO-FR-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ODC-BY-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ODbL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-Canada-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/PDDL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/dli-model-use"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/geogratis"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/dli-model-use",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Statistics Canada: Data Liberation Initiative (DLI) - Model Data Use Licence"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/geogratis",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Geogratis"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/met-office-cp",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Met Office UK Climate Projections Licence Agreement"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/mitre",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "MITRE Collaborative Virtual Workspace License (CVW License)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/notspecified",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "License Not Specified"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-closed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other (Not Open)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/other-nc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other (Non-Commercial)"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/softwareLicenses",
+      "@type": "skos:Collection",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Software Licenses"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "Collection of licenses which applies to a software."
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "Software Licenses"
+      },
+      "skos:member": [
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AAL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AFL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/AGPL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/APL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/APSL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Apache-1_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Apache-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Artistic-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BSD-2-Clause"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BSD-3-Clause"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BSL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/BitTorrent-1_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CATOSL-1_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CC0-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CDDL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CECILL-2_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CNRI-Python"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CPAL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/CUA-OPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ECL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EFL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EPL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EUDatagrid"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/EUPL-1_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Entessa"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Fair"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Frameworx-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/GPL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/GPL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/HPND"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/IPA"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/IPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ISC"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Intel"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LGPL-2_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LGPL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LPL-1_02"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/LPPL-1_3c"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MIT"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MPL-1_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MPL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MS-PL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MS-RL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/MirOS"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Motosoto"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Multics"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NASA-1_3"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NCSA"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NGPL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NPOSL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/NTP"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Naumen"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Nokia"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OCLC-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OFL-1_1"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGL-UK-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OGTSL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/OSL-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/PHP-3_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/PostgreSQL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Python-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/QPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/RPL-1_5"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/RPSL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/RSCPL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/SISSL"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/SPL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/SimPL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Sleepycat"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Unlicense"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/VSL-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/W3C"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/WXwindows"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Watcom-1_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Xnet"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ZPL-2_0"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/Zlib"
+        },
+        {
+          "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/mitre"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license/ukcrown",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v2/thesaurus/license"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "UK Crown Copyright"
+      }
+    }
+  ]
+}

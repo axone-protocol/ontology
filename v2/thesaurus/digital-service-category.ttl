@@ -1,0 +1,116 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:ClassificationModel a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Classification Model"@en ;
+  skos:prefLabel "Klassifizierungsmodell"@de ;
+  skos:prefLabel "Modèle de classification"@fr .
+
+:ClusteringModel a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Clustering Model"@en ;
+  skos:prefLabel "Clustering-Modell"@de ;
+  skos:prefLabel "Modèle de clustering"@fr .
+
+:ComputerVision a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Computer Vision"@de ;
+  skos:prefLabel "Computer Vision"@en ;
+  skos:prefLabel "Vision par ordinateur"@fr .
+
+:DataCleaning a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Data Cleaning"@en ;
+  skos:prefLabel "Datenbereinigung"@de ;
+  skos:prefLabel "Nettoyage de données"@fr .
+
+:DataIntegration a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Data Integration"@en ;
+  skos:prefLabel "Integration von Daten"@de ;
+  skos:prefLabel "Intégration des données"@fr .
+
+:DataProcessing a skos:Concept ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:narrower :ClassificationModel ;
+  skos:narrower :ClusteringModel ;
+  skos:narrower :ComputerVision ;
+  skos:narrower :DataCleaning ;
+  skos:narrower :DataIntegration ;
+  skos:narrower :DataTransformation ;
+  skos:narrower :DeepLearning ;
+  skos:narrower :NaturalLanguageProcessing ;
+  skos:narrower :RegressionModel ;
+  skos:narrower :StatisticsAndAnalytics ;
+  skos:prefLabel "Data Processing"@en .
+
+:DataTransformation a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Data Transformation"@en ;
+  skos:prefLabel "Datenumwandlung"@de ;
+  skos:prefLabel "Transformation des données"@fr .
+
+:DeepLearning a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Apprentissage profond"@fr ;
+  skos:prefLabel "Deep Learning"@en ;
+  skos:prefLabel "mehrschichtiges Lernen"@de .
+
+:NaturalLanguageProcessing a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Natural Language Processing"@en ;
+  skos:prefLabel "Traitement du langage naturel"@fr ;
+  skos:prefLabel "Verarbeitung natürlicher Sprache"@de .
+
+:RegressionModel a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Modèle de régression"@fr ;
+  skos:prefLabel "Regression Model"@en ;
+  skos:prefLabel "Regressionsmodell"@de .
+
+:StatisticsAndAnalytics a skos:Concept ;
+  skos:broader :DataProcessing ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Statistics & Analytics"@en ;
+  skos:prefLabel "Statistik & Analytik"@de ;
+  skos:prefLabel "Statistiques et analyses"@fr .
+
+:Storage a skos:Concept ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> ;
+  skos:prefLabel "Lagerung"@de ;
+  skos:prefLabel "Stockage"@fr ;
+  skos:prefLabel "Storage"@en .
+
+<https://w3id.org/okp4/ontology/v2/thesaurus/digital-service-category> a skos:ConceptScheme ;
+  rdfs:label "Service Category Thesaurus"@en ;
+  rdfs:label "Thesaurus der Dienstleistungskategorien"@de ;
+  rdfs:label "Thésaurus des catégories de services"@fr ;
+  dcterms:description """
+  Ce thésaurus définit un vocabulaire contrôlé exprimant les différentes catégories/classes de services, permettant de les organiser et de les classer en fonction de leur nature ou de leur objectif.
+  """@fr ;
+  dcterms:description """
+  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen Kategorien/Klassen von Diensten ausdrückt und es ermöglicht, diese
+  und nach ihrer Art oder ihrem Zweck zu klassifizieren.
+  """@de ;
+  dcterms:description """
+  This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised
+  and classified according to their nature or purpose.
+  """@en ;
+  dcterms:title "The OKP4 Service Category Thesaurus"@en ;
+  dcterms:title "Thesaurus der Dienstleistungskategorien"@de ;
+  dcterms:title "Thésaurus des catégories de services"@fr .
+
+
