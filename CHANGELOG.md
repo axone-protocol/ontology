@@ -1,5 +1,72 @@
 # OKP4 Ontology Changelog
 
+## [3.0.0](https://github.com/okp4/ontology/compare/v2.0.0...v3.0.0) (2024-03-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **project:** generate flatten json-ld schemas
+* **schema:** fix typo in class name
+* **schema:** remove credential zone declaration credential
+* **release:** remove json-ld artifact
+* **schema:** remove credential-x-declaration claims
+
+### Features
+
+* add service webpage property ([0a71d52](https://github.com/okp4/ontology/commit/0a71d52fc55c0300a76a3fffdc3cce2d8529ac85))
+* **example:** add Collab AI zone governance VC ([4c52978](https://github.com/okp4/ontology/commit/4c5297833c5b238d5ecb1bd53545b24bb8c987b2))
+* **example:** add collaborative ai zone ([0b8eebf](https://github.com/okp4/ontology/commit/0b8eebfb3d5ef67d4bd03435e6be2c407b5fab40))
+* **example:** add crime dataset description ([ccf4bcf](https://github.com/okp4/ontology/commit/ccf4bcfcb3edbe9bff90ce3cd33bbe97c9842d6c))
+* **example:** add crime dataset governance VC ([4a43f0c](https://github.com/okp4/ontology/commit/4a43f0c35e64c44f350a95a2308d6473cab45fe8))
+* **example:** add ipfs storage VC ([dc2fde3](https://github.com/okp4/ontology/commit/dc2fde348205493780fcc0eb17cf5cc2935ff19b))
+* **example:** add keyring used by example VCs ([0aea79a](https://github.com/okp4/ontology/commit/0aea79a3b4a993abb4a270d8a6acf1dbb872a5b3))
+* **example:** improve description of example VCs ([afa1810](https://github.com/okp4/ontology/commit/afa181062447ef2cbe40e8ca2fb1161d7a5eb20f))
+* **example:** rename ipfs digital service description file ([fa32f2a](https://github.com/okp4/ontology/commit/fa32f2ab77c3c0f2b9e5023fdf69506cfa7d345b))
+* **schema:** add dataset-description credentials schema ([c9d1c35](https://github.com/okp4/ontology/commit/c9d1c35d487ab5fb032e4a2a1988ad18f7ecfc2c))
+* **schema:** add digital service execution order credentials schema ([c098e09](https://github.com/okp4/ontology/commit/c098e099de3c3974659559274555638af233af11))
+* **schema:** add digital-resource-registration credentials schema ([78a727f](https://github.com/okp4/ontology/commit/78a727f314d21558d170d140e2d527e5d8268641))
+* **schema:** add digital-resource-rights credentials schema ([b9e3159](https://github.com/okp4/ontology/commit/b9e315985e0057827ff59cc296f4daa63e0d9c58))
+* **schema:** add digital-service-description credentials schema ([7afa260](https://github.com/okp4/ontology/commit/7afa2601378666b386e75f9e7de10e4a141f437e))
+* **schema:** add digital-service-execution-result credential ([4c320b1](https://github.com/okp4/ontology/commit/4c320b1c70bb120ac3687c454831ab802588161e))
+* **schema:** add digital-service-registration credentials schema ([33c85a7](https://github.com/okp4/ontology/commit/33c85a7b23f90f9efdfac8a64aa598818c67b213))
+* **schema:** add governance-text credentials schema ([61235bc](https://github.com/okp4/ontology/commit/61235bc19f81b3d369ad378730197a1724f59301))
+* **schema:** add zone-description credentials schema ([6abcd35](https://github.com/okp4/ontology/commit/6abcd352f00e663f8c7192ccf340ef8200e7e5cd))
+* **schema:** add zone-registration credentials schema ([046c57e](https://github.com/okp4/ontology/commit/046c57e0df13ee75ccae7768c018f5586ed40380))
+* **schema:** improve description of the Resources ([4f9889a](https://github.com/okp4/ontology/commit/4f9889aa72f2b169f4d5ad01ce0b1968822448f8))
+* **schema:** remove credential zone declaration credential ([a64d0d3](https://github.com/okp4/ontology/commit/a64d0d3cebc4b6b2899b070a643169049c7f4360))
+* **thersaurus:** add digital-service-execution-status thesaurus ([3f96024](https://github.com/okp4/ontology/commit/3f9602474435983c6d8ca991655c0e7a2f132ea8))
+* **thesaurus:** add Security concept to topics ([f3c5840](https://github.com/okp4/ontology/commit/f3c58403317762baf70003862e76e3e0c5af8e54))
+
+
+### Bug Fixes
+
+* apply suggestions after code review ([edf4f30](https://github.com/okp4/ontology/commit/edf4f30f43291fcc3235a4096a3c79423a71f314))
+* **example:** correct thesaurus URI ([2bbd685](https://github.com/okp4/ontology/commit/2bbd685b4d2dd4519e4b0d66c11c3e46e271f011))
+* **example:** correct URI credential ([39bfe1f](https://github.com/okp4/ontology/commit/39bfe1fb547cef8c3dae1307eac7e0ea52205518))
+* format file in ttl ([4f93b8a](https://github.com/okp4/ontology/commit/4f93b8a27a3831e49a290dd6d9141c9637854861))
+* **schema:** fix incorrect class name in rangeIncludes ([2f54e74](https://github.com/okp4/ontology/commit/2f54e743bdd6cb142fc2297366bbd03b49d38b05))
+* **schema:** fix namespaces (was missing end slash) ([1eb1bdf](https://github.com/okp4/ontology/commit/1eb1bdf8b977b7fb59eca52ed50f84ecb30e2497))
+* **schema:** fix typo in class name ([cc7f6c5](https://github.com/okp4/ontology/commit/cc7f6c57f28070df7a0fb5ed190f55a9a79e79eb))
+* **schemas:** fix incorrect label ([5242aaa](https://github.com/okp4/ontology/commit/5242aaa5fa580ea4914b13073baa3af4bc71fd40))
+* **schema:** standardize naming & namespaces ([e328069](https://github.com/okp4/ontology/commit/e328069f05bfc62cabb6f6e370972f3c6787dd11))
+* **thesaurus:** fix typo in rdf:property ([6cbfb50](https://github.com/okp4/ontology/commit/6cbfb50e4349f17d460ef9e2b7294b8074bf494d))
+* **thesaurus:** standardize naming & namespace ([d5f8c65](https://github.com/okp4/ontology/commit/d5f8c65737ac88769606a5823b0a74fe4963aaa6))
+
+
+### Code Refactoring
+
+* **schema:** remove credential-x-declaration claims ([8c15177](https://github.com/okp4/ontology/commit/8c15177af79a3a8d816c6122ccf2ca5edf9d9620))
+
+
+### Build System
+
+* **project:** generate flatten json-ld schemas ([454d1ef](https://github.com/okp4/ontology/commit/454d1ef5a924dab50461335edf75e97ffe1a5167))
+
+
+### Continuous Integration
+
+* **release:** remove json-ld artifact ([8f76641](https://github.com/okp4/ontology/commit/8f7664163978867037aa7f261ec490c275f91137))
+
 ## [2.0.0](https://github.com/okp4/ontology/compare/v1.1.2...v2.0.0) (2023-11-20)
 
 
