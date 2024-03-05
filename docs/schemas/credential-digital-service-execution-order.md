@@ -7,7 +7,7 @@ sidebar_position: 4
 
 > **Name**: `credential-digital-service-execution-order`
 >
-> **Namespace**: [https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/)
+> **Namespace**: [https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-digital-service-execution-order`: [https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/)
+- `credential-digital-service-execution-order`: [https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-digital-service-execution-order:DigitalServiceExecutionOrderCredential](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/DigitalServiceExecutionOrderCredential)
+> **IRI**: [credential-digital-service-execution-order:DigitalServiceExecutionOrderCredential](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/DigitalServiceExecutionOrderCredential)
 
 ### Description
 
@@ -39,9 +39,9 @@ These credentials function as directives for orchestrating service execution, ra
 
 #### Executed by
 >
-> **IRI**: [credential-digital-service-execution-order:executedBy](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/executedBy)
+> **IRI**: [credential-digital-service-execution-order:executedBy](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/executedBy)
 >
-> **Range**:&nbsp;[credential-digital-service-execution-order:DigitalServiceExecutionOrder](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/DigitalServiceExecutionOrder)
+> **Range**:&nbsp;[credential-digital-service-execution-order:DigitalServiceExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/DigitalServiceExecutionOrder)
 
 This property links a Digital Service Execution Order Credential to the specific Digital Service Execution Order it pertains to. It establishes a relationship indicating that the execution of the service, as detailed in the order, is authorized or mandated by the credential.
 
@@ -53,7 +53,7 @@ This schema defines 1 classe.
 
 ### Digital service execution order
 >
-> **IRI**: [credential-digital-service-execution-order:DigitalServiceExecutionOrder](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/DigitalServiceExecutionOrder)
+> **IRI**: [credential-digital-service-execution-order:DigitalServiceExecutionOrder](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/DigitalServiceExecutionOrder)
 
 #### Description
 
@@ -63,7 +63,7 @@ Formal representation of the order in which a Digital Service should be executed
 
 ##### In zone
 >
-> **IRI**: [credential-digital-service-execution-order:inZone](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/inZone)
+> **IRI**: [credential-digital-service-execution-order:inZone](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/inZone)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -71,7 +71,7 @@ The zone in which the service should be executed.
 
 ##### Placed on
 >
-> **IRI**: [credential-digital-service-execution-order:placedOn](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/placedOn)
+> **IRI**: [credential-digital-service-execution-order:placedOn](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/placedOn)
 >
 > **Range**:&nbsp;[schema:Date](http://schema.org/Date), [schema:DateTime](http://schema.org/DateTime)
 
@@ -79,7 +79,7 @@ The date and time when the order was placed.
 
 ##### With parameter
 >
-> **IRI**: [credential-digital-service-execution-order:withParameter](https://w3id.org/okp4/ontology/v2/schema/credential/digital-service/execution-order/withParameter)
+> **IRI**: [credential-digital-service-execution-order:withParameter](https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/execution-order/withParameter)
 >
 > **Range**:&nbsp;[schema:PropertyValue](http://schema.org/PropertyValue)
 

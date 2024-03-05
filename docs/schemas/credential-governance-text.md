@@ -7,7 +7,7 @@ sidebar_position: 6
 
 > **Name**: `credential-governance-text`
 >
-> **Namespace**: [https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/)
+> **Namespace**: [https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-governance-text`: [https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/)
+- `credential-governance-text`: [https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-governance-text:GovernanceTextCredential](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/GovernanceTextCredential)
+> **IRI**: [credential-governance-text:GovernanceTextCredential](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential)
 
 ### Description
 
@@ -39,9 +39,9 @@ The Governance Text Credentaials applies to all resources in the Dataverse for w
 
 #### Is governed by
 >
-> **IRI**: [credential-governance-text:isGovernedBy](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/isGovernedBy)
+> **IRI**: [credential-governance-text:isGovernedBy](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy)
 >
-> **Range**:&nbsp;[credential-governance-text:GovernanceText](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/GovernanceText)
+> **Range**:&nbsp;[credential-governance-text:GovernanceText](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText)
 
 The Governance Text that governs a Resource in the Dataverse.
 
@@ -51,7 +51,7 @@ This schema defines 6 classes.
 
 ### Article
 >
-> **IRI**: [credential-governance-text:Article](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Article)
+> **IRI**: [credential-governance-text:Article](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Article)
 
 #### Description
 
@@ -61,7 +61,7 @@ An article of a Governance Text, which states a specific (legal) rule or princip
 
 ##### Has content
 >
-> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasContent)
+> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasContent)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -69,7 +69,7 @@ The content of a Governance Text.
 
 ##### Has ordinal number
 >
-> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasOrdinalNumber)
+> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber)
 >
 > **Range**:&nbsp;[xsd:integer](http://www.w3.org/2001/XMLSchema#integer)
 
@@ -81,15 +81,15 @@ The format for this numbering may vary based on the domain, for instance, employ
 
 ##### Has paragraph
 >
-> **IRI**: [credential-governance-text:hasParagraph](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasParagraph)
+> **IRI**: [credential-governance-text:hasParagraph](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasParagraph)
 >
-> **Range**:&nbsp;[credential-governance-text:Paragraph](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Paragraph)
+> **Range**:&nbsp;[credential-governance-text:Paragraph](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Paragraph)
 
 The paragraph of an article.
 
 ##### Has title
 >
-> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasTitle)
+> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -97,7 +97,7 @@ The title of a Governance Text.
 
 ### Chapter
 >
-> **IRI**: [credential-governance-text:Chapter](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Chapter)
+> **IRI**: [credential-governance-text:Chapter](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Chapter)
 
 #### Description
 
@@ -107,7 +107,7 @@ A chapter of a Governance Text.
 
 ##### Has content
 >
-> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasContent)
+> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasContent)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -115,7 +115,7 @@ The content of a Governance Text.
 
 ##### Has ordinal number
 >
-> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasOrdinalNumber)
+> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber)
 >
 > **Range**:&nbsp;[xsd:integer](http://www.w3.org/2001/XMLSchema#integer)
 
@@ -127,15 +127,15 @@ The format for this numbering may vary based on the domain, for instance, employ
 
 ##### Has section
 >
-> **IRI**: [credential-governance-text:hasSection](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasSection)
+> **IRI**: [credential-governance-text:hasSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSection)
 >
-> **Range**:&nbsp;[credential-governance-text:Section](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Section)
+> **Range**:&nbsp;[credential-governance-text:Section](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Section)
 
 The section of a Governance Text.
 
 ##### Has title
 >
-> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasTitle)
+> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -143,7 +143,7 @@ The title of a Governance Text.
 
 ### Governance text
 >
-> **IRI**: [credential-governance-text:GovernanceText](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/GovernanceText)
+> **IRI**: [credential-governance-text:GovernanceText](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText)
 
 #### Description
 
@@ -157,7 +157,7 @@ Governance Text is distinct from the Governance itself expressed using logic lan
 
 ##### From governance
 >
-> **IRI**: [credential-governance-text:fromGovernance](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/fromGovernance)
+> **IRI**: [credential-governance-text:fromGovernance](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/fromGovernance)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -165,15 +165,15 @@ The Governance that a Governance Text is derived from.
 
 ##### Has chapter
 >
-> **IRI**: [credential-governance-text:hasChapter](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasChapter)
+> **IRI**: [credential-governance-text:hasChapter](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasChapter)
 >
-> **Range**:&nbsp;[credential-governance-text:Chapter](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Chapter)
+> **Range**:&nbsp;[credential-governance-text:Chapter](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Chapter)
 
 The chapter of a governance text, which groups related sections together.
 
 ### Paragraph
 >
-> **IRI**: [credential-governance-text:Paragraph](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Paragraph)
+> **IRI**: [credential-governance-text:Paragraph](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Paragraph)
 
 #### Description
 
@@ -183,7 +183,7 @@ A paragraph of an article, which expresses a sub-rule or sub-principle of the ar
 
 ##### Has content
 >
-> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasContent)
+> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasContent)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -191,7 +191,7 @@ The content of a Governance Text.
 
 ##### Has title
 >
-> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasTitle)
+> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -199,7 +199,7 @@ The title of a Governance Text.
 
 ### Section
 >
-> **IRI**: [credential-governance-text:Section](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Section)
+> **IRI**: [credential-governance-text:Section](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Section)
 
 #### Description
 
@@ -209,7 +209,7 @@ A section of a governance text, which groups related subsections together.
 
 ##### Has content
 >
-> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasContent)
+> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasContent)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -217,7 +217,7 @@ The content of a Governance Text.
 
 ##### Has ordinal number
 >
-> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasOrdinalNumber)
+> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber)
 >
 > **Range**:&nbsp;[xsd:integer](http://www.w3.org/2001/XMLSchema#integer)
 
@@ -229,15 +229,15 @@ The format for this numbering may vary based on the domain, for instance, employ
 
 ##### Has subsection
 >
-> **IRI**: [credential-governance-text:hasSubSection](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasSubSection)
+> **IRI**: [credential-governance-text:hasSubSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSubSection)
 >
-> **Range**:&nbsp;[credential-governance-text:SubSection](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/SubSection)
+> **Range**:&nbsp;[credential-governance-text:SubSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/SubSection)
 
 The subsection of a Governance Text.
 
 ##### Has title
 >
-> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasTitle)
+> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -245,7 +245,7 @@ The title of a Governance Text.
 
 ### Subsection
 >
-> **IRI**: [credential-governance-text:SubSection](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/SubSection)
+> **IRI**: [credential-governance-text:SubSection](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/SubSection)
 
 #### Description
 
@@ -255,15 +255,15 @@ A subsection of a governance text, which groups related articles together within
 
 ##### Has article
 >
-> **IRI**: [credential-governance-text:hasArticle](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasArticle)
+> **IRI**: [credential-governance-text:hasArticle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasArticle)
 >
-> **Range**:&nbsp;[credential-governance-text:Article](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/Article)
+> **Range**:&nbsp;[credential-governance-text:Article](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Article)
 
 The article of a Governance Text.
 
 ##### Has content
 >
-> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasContent)
+> **IRI**: [credential-governance-text:hasContent](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasContent)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -271,7 +271,7 @@ The content of a Governance Text.
 
 ##### Has ordinal number
 >
-> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasOrdinalNumber)
+> **IRI**: [credential-governance-text:hasOrdinalNumber](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber)
 >
 > **Range**:&nbsp;[xsd:integer](http://www.w3.org/2001/XMLSchema#integer)
 
@@ -283,7 +283,7 @@ The format for this numbering may vary based on the domain, for instance, employ
 
 ##### Has title
 >
-> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v2/schema/credential/governance/text/hasTitle)
+> **IRI**: [credential-governance-text:hasTitle](https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
