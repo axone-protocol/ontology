@@ -82,14 +82,20 @@ def generate(input_path: os.PathLike[str], output_path: os.PathLike[str],
     default=None,
     help="The number of spaces to use for indentation.",
 )
-def convert(input_file: t.TextIO, output_file: t.TextIO, indent: t.Optional[int], format: t.Optional[str]) -> None:
+@click.option(
+    "--flatten",
+    "flatten",
+    is_flag=True,
+    help="Produces a flattened JSON-LD representation.",
+)
+def convert(input_file: t.TextIO, output_file: t.TextIO, flatten: bool, indent: t.Optional[int], format: t.Optional[str]) -> None:
     """Converts a schema to JSON-LD.
 
     If the output file is not specified, the JSON-LD will be printed to the console.
     You can specify the format of the input file, if it cannot be inferred from the file extension.
     """
     try:
-        convert_jsonld(input_file, output_file, indent, format)
+        convert_jsonld(input_file, output_file, flatten, indent, format)
     except Exception as e:
         raise click.UsageError(f"{e}")
 

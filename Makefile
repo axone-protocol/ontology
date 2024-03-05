@@ -197,7 +197,7 @@ $(OBJ_ONTS_RDFXML): $(DST_ONT)/%.rdf.xml: $(DST_ONT)/%.ttl
 $(OBJ_SCHEMAS_JSONLD): $(DST_SCHEMA)/%.jsonld: $(DST_SCHEMA)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} schema ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
-	@${call CLI,jsonld,convert,$<,-o,$@,--indent,$(JSONLD_INDENT)}
+	@${call CLI,jsonld,convert,$<,-o,$@,--flatten,--indent,$(JSONLD_INDENT)}
 
 $(OBJ_THESAURI_JSONLD): $(DST_THESAURUS)/%.jsonld: $(DST_THESAURUS)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} thesaurus ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -227,7 +227,7 @@ $(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
 $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
-	@${call CLI,jsonld,convert,$<,-o,$@,--indent,$(JSONLD_INDENT)}
+	@${call CLI,jsonld,convert,$<,-o,$@,--flatten,--indent,$(JSONLD_INDENT)}
 
 $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(OBJ_EXAMPLES) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"

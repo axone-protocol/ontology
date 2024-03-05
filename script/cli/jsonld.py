@@ -8,7 +8,7 @@ from rdflib.term import Node
 SCHEMA = Namespace("http://schema.org/")
 
 
-def convert_jsonld(input_file: t.TextIO, output_file: t.TextIO, indent: t.Optional[int] = None,
+def convert_jsonld(input_file: t.TextIO, output_file: t.TextIO, flatten: bool, indent: t.Optional[int] = None,
                    format: t.Optional[str] = None):
     """Converts a schema to JSON-LD."""
     context = empty_context()
@@ -30,7 +30,7 @@ def convert_jsonld(input_file: t.TextIO, output_file: t.TextIO, indent: t.Option
         is_a_type = (isinstance(range, term.Identifier)) and ((range == XSD.anyURI) or not range.startswith(str(XSD)))
 
         domains: list[Node | None] = list(g.objects(s, SCHEMA.domainIncludes))
-        if not domains:
+        if not domains or flatten:
             domains = [None]
 
         for domain in domains:
