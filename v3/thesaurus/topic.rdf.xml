@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="https://w3id.org/okp4/ontology/v3/thesaurus/topic/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/">
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/AgricultureFoodEnvironmentAndForestry">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic">
+        <rdfs:label xml:lang="de">Thema Thesaurus</rdfs:label>
+        <rdfs:label xml:lang="fr">Thésaurus des thèmes</rdfs:label>
+        <rdfs:label xml:lang="en">Topic Thesaurus</rdfs:label>
+        <dcterms:description xml:lang="fr">
+  Ce thésaurus définit un vocabulaire contrôlé exprimant les différents thèmes communs, ce qui permet d'organiser et de classer les ressources en fonction de leur nature ou de leur objectif. d'être organisées et classées en fonction de leur nature ou de leur objectif.
+  </dcterms:description>
+        <dcterms:description xml:lang="de">
+  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen gemeinsamen Themen ausdrückt und die Organisation und Klassifizierung von Ressourcen nach ihrer Art oder ihrem Zweck ermöglicht.
+  </dcterms:description>
+        <dcterms:description xml:lang="en">
+  This thesaurus defines a controlled vocabulary expressing the different common topics, allowing resources
+  to be organised and classified according to their nature or purpose.
+  </dcterms:description>
+        <dcterms:title xml:lang="de">Der OKP4 Themen-Thesaurus</dcterms:title>
+        <dcterms:title xml:lang="fr">Le thésaurus thématique OKP4</dcterms:title>
+        <dcterms:title xml:lang="en">The OKP4 Topic Thesaurus</dcterms:title>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="fr">Agriculture, alimentation, environnement et forêt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agriculture, food, environment and forestry</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Landwirtschaft, Ernährung, Umwelt und Forstwirtschaft</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/BiologyGeologyAndChemistry">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="de">Biologie, Geologie und Chemie</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Biologie, géologie et chimie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biology, geology and chemistry</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/BusinessAndPurchase">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="en">Business and purchase</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Commerce et achat</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Geschäft und Einkauf</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/DeFiAndCrypto">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="en">DeFi and Crypto</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">DeFi et Crypto</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">DeFi und Krypto</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/Energy">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="de">Energie</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Energie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Energy</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/Healthcare">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="de">Gesundheit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Health</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Santé</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/IndustryMobilityAndEngineering">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="de">Industrie, Mobilität und Technik</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Industrie, mobilité et ingénierie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Industry, mobility and engineering</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/LogisticsRetailSupplyChainECommerce">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="en">Logistics, retail, supply chain and eCommerce</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Logistik, Einzelhandel, Lieferkette und eCommerce</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Logistique, commerce, chaîne d'approvisionnement et eCommerce</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/MarketingAndCustomerBehavior">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="en">Marketing and Customer Behavior</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Marketing et comportement des consommateurs</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Marketing und Kundenverhalten</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/Other">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="de">Andere</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Autres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Other</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/topic/Security">
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/topic"/>
+    <skos:prefLabel xml:lang="en">Security</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Sicherheit</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Sécurité</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>

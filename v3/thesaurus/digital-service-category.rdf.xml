@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/">
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/Storage">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category">
+        <rdfs:label xml:lang="en">Service Category Thesaurus</rdfs:label>
+        <rdfs:label xml:lang="de">Thesaurus der Dienstleistungskategorien</rdfs:label>
+        <rdfs:label xml:lang="fr">Thésaurus des catégories de services</rdfs:label>
+        <dcterms:description xml:lang="fr">
+  Ce thésaurus définit un vocabulaire contrôlé exprimant les différentes catégories/classes de services, permettant de les organiser et de les classer en fonction de leur nature ou de leur objectif.
+  </dcterms:description>
+        <dcterms:description xml:lang="de">
+  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen Kategorien/Klassen von Diensten ausdrückt und es ermöglicht, diese
+  und nach ihrer Art oder ihrem Zweck zu klassifizieren.
+  </dcterms:description>
+        <dcterms:description xml:lang="en">
+  This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised
+  and classified according to their nature or purpose.
+  </dcterms:description>
+        <dcterms:title xml:lang="en">The OKP4 Service Category Thesaurus</dcterms:title>
+        <dcterms:title xml:lang="de">Thesaurus der Dienstleistungskategorien</dcterms:title>
+        <dcterms:title xml:lang="fr">Thésaurus des catégories de services</dcterms:title>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="de">Lagerung</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Stockage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Storage</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/ClassificationModel">
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing">
+        <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+        <skos:narrower rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/ClassificationModel"/>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/ClusteringModel">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="en">Clustering Model</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Clustering-Modell</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Modèle de clustering</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/ComputerVision">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="de">Computer Vision</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Computer Vision</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Vision par ordinateur</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataCleaning">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="en">Data Cleaning</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Datenbereinigung</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Nettoyage de données</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataIntegration">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="en">Data Integration</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Integration von Daten</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Intégration des données</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataTransformation">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="en">Data Transformation</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Datenumwandlung</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Transformation des données</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DeepLearning">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="fr">Apprentissage profond</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Deep Learning</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">mehrschichtiges Lernen</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/NaturalLanguageProcessing">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="en">Natural Language Processing</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Traitement du langage naturel</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Verarbeitung natürlicher Sprache</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/RegressionModel">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="fr">Modèle de régression</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Regression Model</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Regressionsmodell</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+          <skos:Concept rdf:about="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/StatisticsAndAnalytics">
+            <skos:broader rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/DataProcessing"/>
+            <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+            <skos:prefLabel xml:lang="en">Statistics &amp; Analytics</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Statistik &amp; Analytik</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Statistiques et analyses</skos:prefLabel>
+          </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="en">Data Processing</skos:prefLabel>
+      </skos:Concept>
+    </skos:broader>
+    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category"/>
+    <skos:prefLabel xml:lang="en">Classification Model</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Klassifizierungsmodell</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Modèle de classification</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>

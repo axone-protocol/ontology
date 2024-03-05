@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status/Cancelled",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cancelled"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Digital Service Execution Status Thesaurus"
+      },
+      "dcterms:description": {
+        "@language": "en",
+        "@value": "\n  This thesaurus defines a controlled vocabulary for representing the status of execution of Digital Services. This allows for standardized representation and understanding of execution status in various systems.\n  "
+      },
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "The OKP4 Execution Status Thesaurus"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status/Delivered",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Delivered"
+      }
+    },
+    {
+      "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status/Failed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-execution-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Failed"
+      }
+    }
+  ]
+}
