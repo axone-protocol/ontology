@@ -61,7 +61,7 @@ Here are the namespaces used in this schema:
 {%- if classes | count > 0 %}
 ## Classes
 
-This schema defines {{ classes | count }} classe{{ "s" if classes | count > 1 else "" }}.
+This schema defines {{ classes | count }} class{{ "es" if classes | count > 1 else "" }}.
 
 {% for klass in classes -%}
 ### {{ klass | value(schema.graph, RDFS.label) | capitalize }}
