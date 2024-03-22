@@ -5,16 +5,33 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :Cancelled a skos:Concept ;
+  skos:definition """
+  A term used to indicate that the execution of a Digital Service has been cancelled.
+  """@en ;
   skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/digital-service-execution-status> ;
   skos:prefLabel "Cancelled"@en .
 
 :Delivered a skos:Concept ;
+  skos:definition """
+  A term used to indicate that the execution of a Digital Service has been completed and the service 
+  has been delivered to the user.
+  """@en ;
   skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/digital-service-execution-status> ;
   skos:prefLabel "Delivered"@en .
 
 :Failed a skos:Concept ;
+  skos:definition """
+  A term used to indicate that the execution of a Digital Service has failed.
+  """@en ;
   skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/digital-service-execution-status> ;
   skos:prefLabel "Failed"@en .
+
+:InExecution a skos:Concept ;
+  skos:definition """
+  A term used to indicate that the execution of a Digital Service is currently in progress.
+  """@en ;
+  skos:inScheme <https://w3id.org/okp4/ontology/v$major/thesaurus/digital-service-execution-status> ;
+  skos:prefLabel "In Execution"@en .
 
 <https://w3id.org/okp4/ontology/v$major/thesaurus/digital-service-execution-status> a skos:ConceptScheme ;
   rdfs:label "Digital Service Execution Status Thesaurus"@en ;
