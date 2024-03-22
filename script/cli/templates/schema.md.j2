@@ -48,6 +48,11 @@ Here are the namespaces used in this schema:
 #### {{ property | value(schema.graph, RDFS.label) | capitalize }}
 > **IRI**: {{ property | curiefy(schema.graph) | linkify(property) }}
 >
+> **Domain**:&nbsp;
+{%- for domain in (property | domains(schema.graph)) -%}
+    {{- domain | curiefy(schema.graph) | linkify(domain) }}{{ ", " if not loop.last else "" -}}
+{%- endfor %}
+>
 > **Range**:&nbsp;
 {%- for range in (property | ranges(schema.graph)) -%}
     {{- range | curiefy(schema.graph) | linkify(range) }}{{ ", " if not loop.last else "" -}}
