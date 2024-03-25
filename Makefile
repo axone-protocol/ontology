@@ -52,7 +52,8 @@ OBJ_ONTS_NT         := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML     := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
 OBJ_SCHEMAS_JSONLD  := $(patsubst $(SRC_SCHEMA)/%.ttl,$(DST_ONT)/schema/%.jsonld,$(SRC_SCHEMAS))
 OBJ_THESAURI_JSONLD := $(patsubst $(SRC_THESAURUS)/%.ttl,$(DST_ONT)/thesaurus/%.jsonld,$(SRC_THESAURI))
-OBJ_EXAMPLES        := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
+OBJ_EXAMPLES_JSONLD := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
+OBJ_EXAMPLES_NQUAD  := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.nq,$(SRC_EXAMPLES))
 
 OKP4_ARTIFACT_ID   := okp4-ontology
 BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
@@ -175,7 +176,13 @@ build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Bui
 build-ontology-jsonld: check cache $(DST) $(OBJ_SCHEMAS_JSONLD) $(OBJ_THESAURI_JSONLD)  ## Build the ontology in JSON-LD format
 
 .PHONY: build-examples
-build-examples: check $(DST) $(OBJ_EXAMPLES) ## Build the examples in JSON-LD format
+build-examples: build-examples-jsonld build-examples-nquad $(DST) ## Build the examples in different formats (N-Quads, JSON-LD)
+
+.PHONY: build-examples-jsonld
+build-examples-jsonld: check $(OBJ_EXAMPLES_JSONLD)
+
+.PHONY: build-examples-nquad
+build-examples-nquad: check build-examples-jsonld $(OBJ_EXAMPLES_NQUAD)
 
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -204,11 +211,16 @@ $(OBJ_THESAURI_JSONLD): $(DST_THESAURUS)/%.jsonld: $(DST_THESAURUS)/%.ttl
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
 
-$(OBJ_EXAMPLES): $(DST_ONT)/%.jsonld: $(SRC_ONT)/%.jsonld
+$(OBJ_EXAMPLES_JSONLD): $(DST_ONT)/%.jsonld: $(SRC_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} example ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@cp $< $@
 	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@
+
+$(OBJ_EXAMPLES_NQUAD): $(DST_ONT)/%.nq: $(DST_ONT)/%.jsonld
+	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} example ${COLOR_GREEN}$@${COLOR_RESET}"
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@${call RDF_SERIALIZE,jsonld,nquads,$<,$@}
 
 $(BIN_OKP4_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -229,7 +241,7 @@ $(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
 	@touch $@
 	@${call CLI,jsonld,convert,$<,-o,$@,--flatten,--indent,$(JSONLD_INDENT)}
 
-$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(OBJ_EXAMPLES) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
+$(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(OBJ_EXAMPLES_JSONLD) $(shell find $(SRC_SCRIPT) -name "*.*") Makefile
 	@echo "${COLOR_CYAN}📝 generating ${COLOR_GREEN}schemas ${COLOR_RESET}documentation"
 	@rm -rf $(DTS_DOCS_SCHEMAS)
 	@mkdir -p -m $(PERMISSION_MODE) $(DTS_DOCS_SCHEMAS)
