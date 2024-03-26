@@ -187,7 +187,7 @@ Targets:
     build-ontology-nt     Build the ontology in N-Triples format
     build-ontology-rdfxml Build the ontology in RDF/XML format
     build-ontology-jsonld Build the ontology in JSON-LD format
-    build-examples        Build the examples in JSON-LD format
+    build-examples        Build the examples in different formats (N-Quads, JSON-LD)
     build-ontology-bundle Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
   Format:
     format                Format with all available formatters
