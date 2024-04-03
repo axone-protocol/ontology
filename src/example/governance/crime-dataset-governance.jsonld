@@ -9,7 +9,7 @@
         "id": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
         "isGovernedBy": {
             "type": "GovernanceText",
-            "fromGovernance": "cosmwasm:{contract_name}:{contract_address}?query={contract_query}",
+            "fromGovernance": "cosmwasm:law-stone:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk?query=%22program_code%22",
             "hasChapter": {
                 "type": "Chapter",
                 "hasTitle": "Crime data dataset governance",

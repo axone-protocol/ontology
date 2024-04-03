@@ -9,7 +9,7 @@
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
         "isGovernedBy": {
             "type": "GovernanceText",
-            "fromGovernance": "cosmwasm:{contract_name}:{contract_address}?query={contract_query}",
+            "fromGovernance": "cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22",
             "hasChapter": {
                 "type": "Chapter",
                 "hasTitle": "Collaborative AI governance",
