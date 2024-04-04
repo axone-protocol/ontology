@@ -9,4 +9,4 @@ chapter('chap1').
                  title('art1.1.1', 'Conditions on consumers').
                  paragraph('para1.1.1.1', permitted) :- action(A), A=='workflow:consume'.
                     partOf('para1.1.1.1', 'art1.1.1.1').
-                     description('para1.1.1.1', 'Everyone can use the dataset').
+                    description('para1.1.1.1', 'Everyone can use the dataset').
