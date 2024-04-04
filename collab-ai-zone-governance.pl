@@ -7,6 +7,6 @@ chapter('chap1').
              article('art1.1.1').
                  partOf('art1.1.1', 'sec1.1').
                  title('art1.1.1', 'Conditions to amend the rules').
-                 paragraph('para1.1.1.1', permitted) :- action(A), A=='governance:amend', S == 'did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3'.
+                 paragraph('para1.1.1.1', permitted) :- action(A), A=='governance:amend', subject(S), S == 'did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3'.
                     partOf('para1.1.1.1', 'art1.1.1').
                      description('para1.1.1.1', 'Governance can only be amended by the identity `did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3`').
