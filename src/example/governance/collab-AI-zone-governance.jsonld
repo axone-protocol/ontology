@@ -3,8 +3,11 @@
         "https://www.w3.org/2018/credentials/v1",
         "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/"
     ],
-    "type": ["VerifiableCredential","GovernanceTextCredential"],
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
+    "type": [
+        "VerifiableCredential",
+        "GovernanceTextCredential"
+    ],
+    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
     "credentialSubject": {
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
         "isGovernedBy": {
@@ -18,54 +21,49 @@
                     "type": "Section",
                     "hasTitle": "Zone Governance",
                     "hasOrdinalNumber": "1.1",
-                    "hasSubsection": {
-                        "type": "SubSection",
-                        "hasTitle": "Governers",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions to amend the rules",
                         "hasOrdinalNumber": "1.1.1",
-                        "hasArticle": {
-                            "type": "Article",
-                            "hasTitle": "Conditions to amend the rules",
-                            "hasOrdinalNumber": "1.1.1.1",
-                            "hasParagraph": {
-                                "type": "Paragraph",
-                                "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
-                                "hasOrdinalNumber": "1.1.1.1.1"
-                            },
-                            "hasArticle": {
-                                "type": "Article",
-                                "hasTitle": "Conditions on autorized services",
-                                "hasOrdinalNumber": "1.1.1.2",
-                                "hasParagraph": {
-                                    "type": "Paragraph",
-                                    "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
-                                    "hasOrdinalNumber": "1.1.1.2.1"
-                                },
-                                "hasSubsection": {
-                                    "type": "SubSection",
-                                    "hasTitle": "XXXX",
-                                    "hasOrdinalNumber": "1.1.2",
-                                    "hasArticle": {
-                                        "type": "Article",
-                                        "hasTitle": "XXXX",
-                                        "hasOrdinalNumber": "1.1.2.1",
-                                        "hasParagraph": {
-                                            "type": "Paragraph",
-                                            "hasTitle": "XXXX",
-                                            "hasOrdinalNumber": "1.1.2.1.1"
-                                        },
-                                        "hasArticle": {
-                                            "type": "Article",
-                                            "hasTitle": "XXXX",
-                                            "hasOrdinalNumber": "1.1.2.2",
-                                            "hasParagraph": {
-                                                "type": "Paragraph",
-                                                "hasTitle": "XXXX",
-                                                "hasOrdinalNumber": "1.1.2.2.1"
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Governance can only be amended by the identity `did:key:0x04d1j1x8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575758`",
+                            "hasOrdinalNumber": "1.1.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on autorized services",
+                        "hasOrdinalNumber": "1.1.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Only services of type 'Storage' or 'Machine Learning'",
+                            "hasOrdinalNumber": "1.1.2.1"
+                        }
+                    }
+                },
+                "hasSection": {
+                    "type": "Section",
+                    "hasTitle": "Zone Business Model",
+                    "hasOrdinalNumber": "1.2",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "XXXX",
+                        "hasOrdinalNumber": "1.2.1",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "XXXX",
+                            "hasOrdinalNumber": "1.2.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "XXXX",
+                        "hasOrdinalNumber": "1.2.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "XXXX",
+                            "hasOrdinalNumber": "1.2.2.1"
                         }
                     }
                 }
