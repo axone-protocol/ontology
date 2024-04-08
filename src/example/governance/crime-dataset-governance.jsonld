@@ -18,54 +18,49 @@
                     "type": "Section",
                     "hasTitle": "Usage of the dataset",
                     "hasOrdinalNumber": "1.1",
-                    "hasSubsection": {
-                        "type": "SubSection",
-                        "hasTitle": "Users",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on consumers",
                         "hasOrdinalNumber": "1.1.1",
-                        "hasArticle": {
-                            "type": "Article",
-                            "hasTitle": "Conditions on consumers",
-                            "hasOrdinalNumber": "1.1.1.1",
-                            "hasParagraph": {
-                                "type": "Paragraph",
-                                "hasTitle": "Everyone can use the dataset",
-                                "hasOrdinalNumber": "1.1.1.1.1"
-                            },
-                            "hasArticle": {
-                                "type": "Article",
-                                "hasTitle": "Conditions on services that consume the dataset",
-                                "hasOrdinalNumber": "1.1.1.2",
-                                "hasParagraph": {
-                                    "type": "Paragraph",
-                                    "hasTitle": "Only services of type 'Storage' or 'Data Processing'",
-                                    "hasOrdinalNumber": "1.1.1.2.1"
-                                },
-                                "hasSubsection": {
-                                    "type": "SubSection",
-                                    "hasTitle": "Conditions of usages",
-                                    "hasOrdinalNumber": "1.1.2",
-                                    "hasArticle": {
-                                        "type": "Article",
-                                        "hasTitle": "Price",
-                                        "hasOrdinalNumber": "1.1.2.1",
-                                        "hasParagraph": {
-                                            "type": "Paragraph",
-                                            "hasTitle": "Free",
-                                            "hasOrdinalNumber": "1.1.2.1.1"
-                                        },
-                                        "hasArticle": {
-                                            "type": "Article",
-                                            "hasTitle": "Rate limiting",
-                                            "hasOrdinalNumber": "1.1.2.2",
-                                            "hasParagraph": {
-                                                "type": "Paragraph",
-                                                "hasTitle": "The rate limit is 2 months maximum",
-                                                "hasOrdinalNumber": "1.1.2.2.1"
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Everyone can use the dataset",
+                            "hasOrdinalNumber": "1.1.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Conditions on services that consume the dataset",
+                        "hasOrdinalNumber": "1.1.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Only services of type 'Storage' or 'Data Processing'",
+                            "hasOrdinalNumber": "1.1.2.1"
+                        }
+                    }
+                },
+                "hasSection": {
+                    "type": "Section",
+                    "hasTitle": "Conditions of usages",
+                    "hasOrdinalNumber": "1.2",
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Price",
+                        "hasOrdinalNumber": "1.2.1",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "Free",
+                            "hasOrdinalNumber": "1.2.1.1"
+                        }
+                    },
+                    "hasArticle": {
+                        "type": "Article",
+                        "hasTitle": "Rate limiting",
+                        "hasOrdinalNumber": "1.2.2",
+                        "hasParagraph": {
+                            "type": "Paragraph",
+                            "hasTitle": "The rate limit is 2 months maximum",
+                            "hasOrdinalNumber": "1.2.2.1"
                         }
                     }
                 }
