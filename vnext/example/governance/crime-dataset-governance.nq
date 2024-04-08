@@ -1,15 +1,24 @@
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> .
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-06T13:29:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
-<did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-06T13:29:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hfk0312a-f4bb-449c-a736-7a16e7cc94c1> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 <did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/isGovernedBy> _:g4460 .
 _:g4460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/GovernanceText> .
+_:g4460 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp41z7asfxkwv0t863rllul570eh5pf2zk07k3d86ag4vtghaue37l5sa62rrk?query=%22program_code%22> .
 _:g4460 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasChapter> _:g4480 .
 _:g4480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Chapter> .
 _:g4480 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Crime data dataset governance" .
 _:g4480 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1" .
 _:g4480 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasSection> _:g4500 .
 _:g4500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Section> .
-_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Usage of the dataset" .
-_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
+_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Conditions of usages" .
+_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.2" .
+_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasArticle> _:g4520 .
+_:g4520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Article> .
+_:g4520 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Rate limiting" .
+_:g4520 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.2.2" .
+_:g4520 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasParagraph> _:g4540 .
+_:g4540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Paragraph> .
+_:g4540 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "The rate limit is 2 months maximum" .
+_:g4540 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.2.2.1" .

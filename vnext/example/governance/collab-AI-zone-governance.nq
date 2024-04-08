@@ -1,15 +1,24 @@
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/c29835be-9d4c-4a9a-8525-145bc85b6f95> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/isGovernedBy> _:g4460 .
 _:g4460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/GovernanceText> .
+_:g4460 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22> .
 _:g4460 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasChapter> _:g4480 .
 _:g4480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Chapter> .
 _:g4480 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Collaborative AI governance" .
 _:g4480 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1" .
 _:g4480 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasSection> _:g4500 .
 _:g4500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Section> .
-_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Zone Governance" .
-_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
+_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "Zone Business Model" .
+_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.2" .
+_:g4500 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasArticle> _:g4520 .
+_:g4520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Article> .
+_:g4520 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "XXXX" .
+_:g4520 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.2.2" .
+_:g4520 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasParagraph> _:g4540 .
+_:g4540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/Paragraph> .
+_:g4540 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasTitle> "XXXX" .
+_:g4540 <https://w3id.org/okp4/ontology/vnext/schema/credential/governance/text/hasOrdinalNumber> "1.2.2.1" .
