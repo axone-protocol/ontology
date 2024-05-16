@@ -1,11 +1,11 @@
-@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix category: <https://w3id.org/axone/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix service: <https://w3id.org/axone/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/37fb789f-23d8-41b3-900b-418147d115fd> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/37fb789f-23d8-41b3-900b-418147d115fd> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:fbe11a63-85da-4f82-97c4-f719ac1f4ce8 ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Selector permet de sélectionner un échantillon de l'ensemble de données, en spécifiant un nombre de lignes. Il est possible de supprimer ou de conserver des colonnes. Un autre paramètre permet de sélectionner les données d'une colonne en fonction de sa (ses) valeur(s)."@fr ;
@@ -18,8 +18,8 @@
     core:hasTitle "Data Selector"@en ;
     core:hasTitle "Data Selector"@de .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/730f271e-022e-411c-9eb9-23d8140af611> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/730f271e-022e-411c-9eb9-23d8140af611> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-09-28T11:13:13Z"^^xsd:dateTimeStamp ;
     core:describes service:fbe11a63-85da-4f82-97c4-f719ac1f4ce8 ;

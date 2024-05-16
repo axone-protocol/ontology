@@ -88,7 +88,7 @@ In managing [RDF](https://www.w3.org/RDF/) resources, it is essential to balance
 The OKP4 ontology adopts the [Semantic Versioning](https://semver.org/) format of `MAJOR.MINOR.PATCH`. This approach includes incorporating the `MAJOR` version number into the ontology's URI. As a result, the structure of the ontology's URI is:
 
 ```text
-https://w3id.org/okp4/ontology/<MAJOR>/<path>
+https://w3id.org/axone-protocol/ontology/<MAJOR>/<path>
 ```
 
 Note: by including only the `MAJOR` version number in the URI, significant updates that could impact compatibility gives a new ontology version being referenced with a different namespace. `MINOR` updates and `PATCH` (which do not result in breaking changes) have no impact on the URI, maintaining the stability of the URI for external references.

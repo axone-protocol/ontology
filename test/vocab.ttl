@@ -3,7 +3,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tst: <https://w3id.org/okp4/ontology/test/> .
+@prefix tst: <https://w3id.org/axone/ontology/test/> .
 
 tst:AssertConceptSchemes a sh:NodeShape ;
   sh:property [

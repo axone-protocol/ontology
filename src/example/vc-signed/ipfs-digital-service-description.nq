@@ -1,16 +1,16 @@
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasCategory> <https://w3id.org/okp4/ontology/v3/thesaurus/digital-service-category/Storage> .
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasDescription> "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale" .
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasTag> "Cloud" .
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasTag> "Peer-to-peer" .
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasTag> "Storage" .
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasTitle> "IPFS" .
-<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/hasWebpage> <https://docs.ipfs.tech/> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://w3id.org/security#proof> _:b0 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://www.w3.org/2018/credentials#issuanceDate> "2024-01-22T09:28:43.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasCategory> <https://w3id.org/axone/ontology/v3/thesaurus/digital-service-category/Storage> .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasDescription> "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale" .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasTag> "Cloud" .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasTag> "Peer-to-peer" .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasTag> "Storage" .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasTitle> "IPFS" .
+<did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/hasWebpage> <https://docs.ipfs.tech/> .
+<https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/DigitalServiceDescriptionCredential> .
+<https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB> .
+<https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://www.w3.org/2018/credentials#issuanceDate> "2024-01-22T09:28:43.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/axone/ontology/v3/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 _:b1 <http://purl.org/dc/terms/created> "2024-04-03T09:27:36.01083+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
 _:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..OotDVBn9pE3NufZ37NtUV9WDSDscbtREXUaffklUilsC2EK2dz2edQbyWqv_bF8hTY5n2dq1GE4bzslD7Q37yw" _:b0 .

@@ -1,15 +1,15 @@
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasDescription> "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way." .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag> "AI" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag> "Collaboration" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTag> "Machine Learning" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTitle> "Collaborative AI Zone" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/hasTopic> <https://w3id.org/okp4/ontology/v3/thesaurus/topic/other> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://w3id.org/security#proof> _:b0 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-02T15:40:43.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/hasDescription> "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way." .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/hasTag> "AI" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/hasTag> "Collaboration" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/hasTag> "Machine Learning" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/hasTitle> "Collaborative AI Zone" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/hasTopic> <https://w3id.org/axone/ontology/v3/thesaurus/topic/other> .
+<https://w3id.org/axone/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/v3/schema/credential/zone/description/ZoneDescriptionCredential> .
+<https://w3id.org/axone/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/axone/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/axone/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
+<https://w3id.org/axone/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-02T15:40:43.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/axone/ontology/v3/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 _:b1 <http://purl.org/dc/terms/created> "2024-04-03T09:30:58.82844+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
 _:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..-oJCy6SuZM1QmQNOw2_cpdXfqSu3sER_V-j1FfcE-k1pjh-K4TFtNc4EMuHcoTp-FMsCcJoMyR3xphLPo0BLgQ" _:b0 .

@@ -1,11 +1,11 @@
-@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix category: <https://w3id.org/axone/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix service: <https://w3id.org/axone/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/52549532-887d-409b-a9c0-fb68f9e521d2> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/52549532-887d-409b-a9c0-fb68f9e521d2> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:9c8809bd-de56-4003-bee4-4bcfbc4cb603 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Le service Stockage Blob Azure vous permet de créer des lacs de données pour répondre à vos besoins d’analyse, et vous fournit un espace de stockage pour créer de puissantes applications natives Cloud et mobiles."@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "Microsoft Azure Blob Storage"@fr ;
     core:hasTitle "Microsoft Azure Blob Storage"@de .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/cb3c4594-410e-4404-acbb-9dd426885e5b> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/cb3c4594-410e-4404-acbb-9dd426885e5b> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6MkjRHZHheNCZG6VYEhsri73S154YHSmjgGdSDRH7biQUGx> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:9c8809bd-de56-4003-bee4-4bcfbc4cb603 ;

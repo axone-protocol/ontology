@@ -1,13 +1,13 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/"
+        "https://w3id.org/axone/ontology/v$major/schema/credential/governance/text/"
     ],
     "type": [
         "VerifiableCredential",
         "GovernanceTextCredential"
     ],
-    "id": "https://w3id.org/okp4/ontology/v$major/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
+    "id": "https://w3id.org/axone/ontology/v$major/schema/credential/governance/text/5f2e5526-5ce0-41b9-b1ea-a4a3b595a0ae",
     "credentialSubject": {
         "id": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
         "isGovernedBy": {

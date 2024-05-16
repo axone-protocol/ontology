@@ -1,11 +1,11 @@
-@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix category: <https://w3id.org/axone/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix service: <https://w3id.org/axone/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/d6e403d1-816d-4d23-86c3-9fa279829b29> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/d6e403d1-816d-4d23-86c3-9fa279829b29> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:06fd0de2-8be8-436d-9d91-3aa5972c2209 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Cloud Storage est un service géré permettant de stocker des données non structurées. Stockez n'importe quelle quantité de données et récupérez-les quand vous le souhaitez."@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "Google Cloud Storage"@fr ;
     core:hasTitle "Google Cloud Storage"@de .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/6f008dfb-e743-456f-a6d8-8847a323a116> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/6f008dfb-e743-456f-a6d8-8847a323a116> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6MkhkU5Zh9RWLB9QMkHwmryUfKZotaqCTW5dnQTsbdFp3T7> ;
     core:createdOn "2023-07-04T10:00:00Z"^^xsd:dateTimeStamp ;
     core:describes service:06fd0de2-8be8-436d-9d91-3aa5972c2209 ;
