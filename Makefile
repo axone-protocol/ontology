@@ -55,11 +55,11 @@ OBJ_THESAURI_JSONLD := $(patsubst $(SRC_THESAURUS)/%.ttl,$(DST_ONT)/thesaurus/%.
 OBJ_EXAMPLES_JSONLD := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
 OBJ_EXAMPLES_NQUAD  := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.nq,$(SRC_EXAMPLES))
 
-OKP4_ARTIFACT_ID   := okp4-ontology
-BIN_OKP4_TTL       := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).ttl
-BIN_OKP4_NT        := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).nt
-BIN_OKP4_RDFXML    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION).rdf.xml
-BIN_OKP4_BUNDLE    := $(DST)/$(OKP4_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
+AXONE_ARTIFACT_ID   := axone-ontology
+BIN_AXONE_TTL       := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION).ttl
+BIN_AXONE_NT        := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION).nt
+BIN_AXONE_RDFXML    := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION).rdf.xml
+BIN_AXONE_BUNDLE    := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
 BIN_DOC_SCHEMAS	   := $(patsubst %.ttl,$(DTS_DOCS_SCHEMAS)/%.md,$(notdir $(SRC_SCHEMAS)))
 
 # - Format
@@ -164,13 +164,13 @@ build: build-ontology-bundle ## Build all the files
 build-ontology: check $(DST) build-ontology-ttl build-ontology-nt build-ontology-rdfxml build-ontology-jsonld ## Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
 
 .PHONY: build-ontology-ttl
-build-ontology-ttl: check $(DST) $(BIN_OKP4_TTL) ## Build the ontology in Turtle format
+build-ontology-ttl: check $(DST) $(BIN_AXONE_TTL) ## Build the ontology in Turtle format
 
 .PHONY: build-ontology-nt
-build-ontology-nt: check $(DST) $(BIN_OKP4_NT) ## Build the ontology in N-Triples format
+build-ontology-nt: check $(DST) $(BIN_AXONE_NT) ## Build the ontology in N-Triples format
 
 .PHONY: build-ontology-rdfxml
-build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_OKP4_RDFXML) ## Build the ontology in RDF/XML format
+build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_AXONE_RDFXML) ## Build the ontology in RDF/XML format
 
 .PHONY: build-ontology-jsonld
 build-ontology-jsonld: check cache $(DST) $(OBJ_SCHEMAS_JSONLD) $(OBJ_THESAURI_JSONLD)  ## Build the ontology in JSON-LD format
@@ -222,21 +222,21 @@ $(OBJ_EXAMPLES_NQUAD): $(DST_ONT)/%.nq: $(DST_ONT)/%.jsonld
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call RDF_SERIALIZE,jsonld,nquads,$<,$@}
 
-$(BIN_OKP4_NT): $(OBJ_ONTS_NT)
+$(BIN_AXONE_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@cat $^ > $@
 
-$(BIN_OKP4_TTL): $(BIN_OKP4_NT)
+$(BIN_AXONE_TTL): $(BIN_AXONE_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,turtle,$<,$@}
 
-$(BIN_OKP4_RDFXML): $(BIN_OKP4_NT)
+$(BIN_AXONE_RDFXML): $(BIN_AXONE_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
 	@${call RDF_SERIALIZE,ntriples,rdfxml,$<,$@}
 
-$(BIN_OKP4_JSONLD): $(BIN_OKP4_NT)
+$(BIN_AXONE_JSONLD): $(BIN_AXONE_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
 	@touch $@
 	@${call CLI,jsonld,convert,$<,-o,$@,--flatten,--indent,$(JSONLD_INDENT)}
@@ -250,17 +250,17 @@ $(BIN_DOC_SCHEMAS): $(OBJ_ONTS_TTL) $(OBJ_EXAMPLES_JSONLD) $(shell find $(SRC_SC
 	${call MARKDOWN_LINT,-f,$(DTS_DOCS_SCHEMAS)}
 
 .PHONY: build-ontology-bundle
-build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_OKP4_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
+build-ontology-bundle: $(DST) build-ontology build-examples $(BIN_AXONE_BUNDLE) ## Build a tarball containing the segments and the ontology in all available formats (N-Triples, RDF/XML, JSON-LD) plus the examples
 
-$(BIN_OKP4_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name "*.ttl") $(ROOT)/LICENSE
+$(BIN_AXONE_BUNDLE): $(shell test -d $(DST_ONT) && find $(DST_ONT) -type f -name "*.ttl") $(ROOT)/LICENSE
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET} tarball"
-	@tar -cvzf $(BIN_OKP4_BUNDLE) \
+	@tar -cvzf $(BIN_AXONE_BUNDLE) \
 	  -C $(abspath $(ROOT)) LICENSE \
-	  -C $(abspath $(DST)) $(shell cd $(DST) ; echo $(OKP4_ARTIFACT_ID)-$(VERSION).*) \
+	  -C $(abspath $(DST)) $(shell cd $(DST) ; echo $(AXONE_ARTIFACT_ID)-$(VERSION).*) \
 	  -C $(abspath $(DST_ONT)) $(shell cd $(DST_ONT) ; echo *)
 	@echo "${COLOR_CYAN}📊 tarball ${COLOR_GREEN}statistics${COLOR_RESET}"
-	@echo "${COLOR_CYAN}   ↳ 🗃️ number of files${COLOR_RESET}: ${COLOR_GREEN}$$(tar -tzf $(BIN_OKP4_BUNDLE) | wc -l | bc)${COLOR_RESET}"
-	@echo "${COLOR_CYAN}   ↳ 📏 size${COLOR_RESET}           : ${COLOR_GREEN}$$(du -sh $(BIN_OKP4_BUNDLE) | cut -f1)${COLOR_RESET}"
+	@echo "${COLOR_CYAN}   ↳ 🗃️ number of files${COLOR_RESET}: ${COLOR_GREEN}$$(tar -tzf $(BIN_AXONE_BUNDLE) | wc -l | bc)${COLOR_RESET}"
+	@echo "${COLOR_CYAN}   ↳ 📏 size${COLOR_RESET}           : ${COLOR_GREEN}$$(du -sh $(BIN_AXONE_BUNDLE) | cut -f1)${COLOR_RESET}"
 
 ## Format:
 .PHONY: format
@@ -324,7 +324,7 @@ $(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 test: ${COLOR_GREEN}$<${COLOR_RESET}"
 	mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@bash -c '\
-		for target in $(BIN_OKP4_NT); do \
+		for target in $(BIN_AXONE_NT); do \
 			$(call RDF_SHACL,$<,$$target,$@) \
 			&& echo "  ↳ ✅ ${COLOR_CYAN}$$target ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
 			|| { \
@@ -370,11 +370,11 @@ fuseki-down: check ## Stop the Fuseki container
 	@echo "${COLOR_CYAN}⚪️ Fuseki server stopped${COLOR_RESET}"
 
 .PHONY: fuseki-load
-fuseki-load: $(BIN_OKP4_TTL) fuseki-up ## Load the ontology in Fuseki server
+fuseki-load: $(BIN_AXONE_TTL) fuseki-up ## Load the ontology in Fuseki server
 	@echo "${COLOR_CYAN}📂 creating ${COLOR_GREEN}${DEPLOYMENT_FUSEKI_DATASET}${COLOR_RESET}"
 	curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" --fail --data "dbName=${DEPLOYMENT_FUSEKI_DATASET}&dbType=tdb2" "http://localhost:${DEPLOYMENT_FUSEKI_PORT}/$$/datasets"
-	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_OKP4_TTL}${COLOR_RESET}"
-	@curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" -H "Content-Type: text/turtle" --data-binary "@${BIN_OKP4_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
+	@echo "${COLOR_CYAN}📦 loading ${COLOR_GREEN}${BIN_AXONE_TTL}${COLOR_RESET}"
+	@curl -X POST --user "${DEPLOYMENT_FUSEKI_USER_NAME}:${DEPLOYMENT_FUSEKI_USER_PWD}" -H "Content-Type: text/turtle" --data-binary "@${BIN_AXONE_TTL}" http://localhost:${DEPLOYMENT_FUSEKI_PORT}/${DEPLOYMENT_FUSEKI_DATASET}/data
 
 .PHONY: fuseki-log
 fuseki-log: check ## Show Fuseki server logs
@@ -394,7 +394,7 @@ $(DST_CACHE)/$(EXEC_OWL_CLI):
 $(DST_CACHE)/cli: $(shell find $(SRC_SCRIPT) -name "*.*")
 	@echo "${COLOR_CYAN}🐳 making ${COLOR_GREEN}$(DOCKER_IMAGE_CLI)${COLOR_RESET} image"
 	@docker image rm "$(DOCKER_IMAGE_CLI)" 2>/dev/null || true
-	@DOCKER_CONTAINER_NAME="okp4-cli-$$(date +%s)"; \
+	@DOCKER_CONTAINER_NAME="axone-cli-$$(date +%s)"; \
 	docker run --name $$DOCKER_CONTAINER_NAME \
 	  -v `pwd`:/usr/src/ontology \
 	  -w /usr/src/ontology \
