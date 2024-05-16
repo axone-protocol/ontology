@@ -23,7 +23,8 @@ plugins:
   - - "@semantic-release/exec"
     - prepareCmd: make build
   - - "@semantic-release/github"
-    - assets:
+    - successComment: false
+      assets:
         - label: Axone Ontology (Turtle)
           path: ./target/axone-ontology-*.ttl
         - label: Axone Ontology (RDF/XML)
