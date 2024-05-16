@@ -11,14 +11,14 @@ jobs:
       - name: Notify Discord
         uses: fjogeleit/http-request-action@v1
         with:
-          url: ${{ secrets.OKP4_DISCORD_WEBHOOK }}
+          url: ${{ secrets.DISCORD_WEBHOOK }}
           method: "POST"
           customHeaders: '{"Content-Type": "application/json"}'
           data: |-
             {
               "avatar_url": "https://avatars.githubusercontent.com/u/98603954?v=4",
               "username": "Bot Anik",
-              "content": "🚨 A new version of @${{github.repository}} ${{ github.event.release.tag_name }} has been released! 🎉\n\n👉 Changelog: https://github.com/${{ github.repository }}/releases/tag/${{ github.event.release.tag_name }}\n👉 Official repo: https://github.com/${{ github.repository }}\n👉 Documentation: https://w3id.org/okp4/ontology"
+              "content": "🚨 A new version of @${{github.repository}} ${{ github.event.release.tag_name }} has been released! 🎉\n\n👉 Changelog: https://github.com/${{ github.repository }}/releases/tag/${{ github.event.release.tag_name }}\n👉 Official repo: https://github.com/${{ github.repository }}\n👉 Documentation: https://docs.axone.xyz/ontology/schemas/credential-dataset-description"
             }
   update-docs:
     runs-on: ubuntu-22.04
@@ -26,9 +26,9 @@ jobs:
       - name: Update ontology docs repository
         uses: fjogeleit/http-request-action@v1
         with:
-          url: 'https://api.github.com/repos/okp4/docs/actions/workflows/39152549/dispatches'
+          url: 'https://api.github.com/repos/axone-protocol/docs/actions/workflows/39152549/dispatches'
           method: 'POST'
-          customHeaders: '{"Accept": "application/vnd.github+json", "Authorization": "Bearer ${{ secrets.OKP4_TOKEN }}"}'
+          customHeaders: '{"Accept": "application/vnd.github+json", "Authorization": "Bearer ${{ secrets.OPS_TOKEN }}"}'
           data: |-
             {
               "ref": "main",

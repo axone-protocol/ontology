@@ -1,10 +1,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
-@prefix metagov: <https://w3id.org/okp4/ontology/metadata/governance/> .
-@prefix govmeta: <https://w3id.org/okp4/ontology/dataverse/governance/metadata/> .
-@prefix governance: <https://w3id.org/okp4/ontology/dataverse/governance/> .
-@prefix zone: <https://w3id.org/okp4/ontology/dataverse/zone/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
+@prefix metagov: <https://w3id.org/axone/ontology/metadata/governance/> .
+@prefix govmeta: <https://w3id.org/axone/ontology/dataverse/governance/metadata/> .
+@prefix governance: <https://w3id.org/axone/ontology/dataverse/governance/> .
+@prefix zone: <https://w3id.org/axone/ontology/dataverse/zone/> .
 
 govmeta:149e5b0b-25f7-4bb7-9b7a-9894c7b701ad a owl:NamedIndividual, 
         metagov:GovernanceMetadata ;

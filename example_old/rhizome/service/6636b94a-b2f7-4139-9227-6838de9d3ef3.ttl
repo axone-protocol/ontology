@@ -1,19 +1,19 @@
-@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix category: <https://w3id.org/axone/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix service: <https://w3id.org/axone/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/2eb089a5-c388-4411-b451-afd05b8a128a> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/2eb089a5-c388-4411-b451-afd05b8a128a> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2022-10-10T01:09:39Z"^^xsd:dateTimeStamp ;
     core:describes service:6636b94a-b2f7-4139-9227-6838de9d3ef3 ;
     core:lastModifiedBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:updatedOn "2022-10-10T01:09:39Z"^^xsd:dateTimeStamp .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/90359e65-5685-4721-9298-f457a47787ff> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/90359e65-5685-4721-9298-f457a47787ff> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:6636b94a-b2f7-4139-9227-6838de9d3ef3 ;
     core:hasCategory category:DataTransformation ;
     core:hasDescription "L'outil Data Join Tabular permet de joindre deux jeux de données contenant des valeurs communes afin d'apporter de nouvelles informations."@fr ;

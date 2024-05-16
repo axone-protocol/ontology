@@ -10,7 +10,7 @@ assignees: 'ccamel'
 
 ### Purpose
 
-Describe clearly how you want to improve OKP4 ontology project. Specify if it concerns:
+Describe clearly how you want to improve Axone ontology project. Specify if it concerns:
 
 - The continuous integration
 - The continuous deployment

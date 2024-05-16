@@ -1,6 +1,6 @@
 branches:
   - main
-repositoryUrl: "git@github.com:okp4/ontology.git"
+repositoryUrl: "git@github.com:axone-protocol/ontology.git"
 plugins:
   - - "@semantic-release/commit-analyzer"
     - preset: conventionalcommits
@@ -8,7 +8,7 @@ plugins:
     - preset: conventionalcommits
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
-      changelogTitle: "# OKP4 Ontology Changelog"
+      changelogTitle: "# Axone Ontology Changelog"
   - - "@google/semantic-release-replace-plugin"
     - replacements:
         - files: [version]
@@ -23,15 +23,16 @@ plugins:
   - - "@semantic-release/exec"
     - prepareCmd: make build
   - - "@semantic-release/github"
-    - assets:
-        - label: OKP4 Ontology (Turtle)
-          path: ./target/okp4-ontology-*.ttl
-        - label: OKP4 Ontology (RDF/XML)
-          path: ./target/okp4-ontology-*.rdf.xml
-        - label: OKP4 Ontology (N-Triples)
-          path: ./target/okp4-ontology-*.nt
-        - label: OKP4 Ontology Bundle
-          path: ./target/okp4-ontology-*-bundle.tar.gz
+    - successComment: false
+      assets:
+        - label: Axone Ontology (Turtle)
+          path: ./target/axone-ontology-*.ttl
+        - label: Axone Ontology (RDF/XML)
+          path: ./target/axone-ontology-*.rdf.xml
+        - label: Axone Ontology (N-Triples)
+          path: ./target/axone-ontology-*.nt
+        - label: Axone Ontology Bundle
+          path: ./target/axone-ontology-*-bundle.tar.gz
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md

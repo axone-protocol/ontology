@@ -1,11 +1,11 @@
-@prefix category: <https://w3id.org/okp4/ontology/thesaurus/service-category/> .
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
+@prefix category: <https://w3id.org/axone/ontology/thesaurus/service-category/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix service: <https://w3id.org/okp4/ontology/dataverse/service/> .
+@prefix service: <https://w3id.org/axone/ontology/dataverse/service/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/7de927d4-b4ab-401f-bfef-3899132ea2f1> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/service/GeneralMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/7de927d4-b4ab-401f-bfef-3899132ea2f1> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/service/GeneralMetadata> ;
     core:describes service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 ;
     core:hasCategory category:Storage ;
     core:hasDescription "Service de stockage de données"@fr ;
@@ -17,8 +17,8 @@
     core:hasTitle "Storage"@en ;
     core:hasTitle "Speicherung"@de .
 
-<https://w3id.org/okp4/ontology/dataverse/service/metadata/8f5a671d-ba50-4768-9354-4268bd4345e9> a owl:NamedIndividual,
-        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/service/metadata/8f5a671d-ba50-4768-9354-4268bd4345e9> a owl:NamedIndividual,
+        <https://w3id.org/axone/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:z6MkfBG9HjCRpnBiubdfgMfmHW3W66EMHbVKfaea2gDa8Vcc> ;
     core:createdOn "2023-03-14T13:33:00Z"^^xsd:dateTimeStamp ;
     core:describes service:d1b0b4d3-f9a6-4115-bcd8-ad97233a7b08 ;

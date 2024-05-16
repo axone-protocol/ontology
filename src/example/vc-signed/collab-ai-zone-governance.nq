@@ -1,22 +1,22 @@
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://w3id.org/security#proof> _:b0 .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/isGovernedBy> _:b2 .
+<https://w3id.org/axone/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/GovernanceTextCredential> .
+<https://w3id.org/axone/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://w3id.org/axone/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://w3id.org/security#proof> _:b0 .
+<https://w3id.org/axone/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
+<https://w3id.org/axone/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuanceDate> "2024-06-06T15:45:00.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/axone/ontology/v3/schema/credential/governance/text/4e2e5526-5ce0-41b9-b1ea-a4a3b595a0ae> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 _:b1 <http://purl.org/dc/terms/created> "2024-04-03T11:34:29.724958+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> _:b0 .
 _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/security#EcdsaSecp256k1Signature2019> _:b0 .
 _:b1 <https://w3id.org/security#jws> "eyJhbGciOiJ1bmtub3duIiwiYjY0IjpmYWxzZSwiY3JpdCI6WyJiNjQiXX0..WHnc8--Jo7GjhuN2HhO1bKE0EkfG8qVyl-M2k34hzmJsH6M4SfwtmocFPagvzFUu6upKM8mvt40Y2Hxz0cMKGg" _:b0 .
 _:b1 <https://w3id.org/security#proofPurpose> <https://w3id.org/security#assertionMethod> _:b0 .
 _:b1 <https://w3id.org/security#verificationMethod> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3#zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> _:b0 .
-_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/GovernanceText> .
-_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22> .
-_:b2 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasChapter> _:b3 .
-_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Chapter> .
-_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1" .
-_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasSection> _:b4 .
-_:b3 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Collaborative AI governance" .
-_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/Section> .
-_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
-_:b4 <https://w3id.org/okp4/ontology/v3/schema/credential/governance/text/hasTitle> "Zone Governance" .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/GovernanceText> .
+_:b2 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/fromGovernance> <cosmwasm:law-stone:okp4182nff4ttmvshn6yjlqj5czapfcav9434l2qzz8aahf5pxnyd33ts6jynpl?query=%22program_code%22> .
+_:b2 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/hasChapter> _:b3 .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/Chapter> .
+_:b3 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1" .
+_:b3 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/hasSection> _:b4 .
+_:b3 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/hasTitle> "Collaborative AI governance" .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/Section> .
+_:b4 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/hasOrdinalNumber> "1.1" .
+_:b4 <https://w3id.org/axone/ontology/v3/schema/credential/governance/text/hasTitle> "Zone Governance" .

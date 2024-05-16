@@ -1,11 +1,11 @@
-@prefix core: <https://w3id.org/okp4/ontology/core/> .
-@prefix zone: <https://w3id.org/okp4/ontology/dataverse/zone/> .
+@prefix core: <https://w3id.org/axone/ontology/core/> .
+@prefix zone: <https://w3id.org/axone/ontology/dataverse/zone/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix topic: <https://w3id.org/okp4/ontology/thesaurus/topic/> .
+@prefix topic: <https://w3id.org/axone/ontology/thesaurus/topic/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/okp4/ontology/dataverse/zone/metadata/5da6d183-8f96-4a00-bbc9-bc08c4ca3b81> a owl:NamedIndividual,   
-        <https://w3id.org/okp4/ontology/metadata/zone/GeneralMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/zone/metadata/5da6d183-8f96-4a00-bbc9-bc08c4ca3b81> a owl:NamedIndividual,   
+        <https://w3id.org/axone/ontology/metadata/zone/GeneralMetadata> ;
     core:describes zone:fdfde6f6-b5d8-4c6b-ae4c-3451b92d5314 ; 
     core:hasDescription "Dans le cadre du projet CADS, cette zone a pour objectif de calculer un indicateur agro environnemental à partir d'un composant de l'architecture i4trust."@fr ;
     core:hasDescription "As part of the CADS project, the aim of this zone is to calculate an agri-environmental indicator based on the i4trust architecture context broker."@en ;
@@ -16,8 +16,8 @@
     core:hasTitle "CADS"@en ;
     core:hasTopic topic:AgricultureFoodEnvironmentAndForestry .
 
-<https://w3id.org/okp4/ontology/dataverse/zone/metadata/f93819f4-241f-464e-9298-a16f21be3dc0> a owl:NamedIndividual,    
-        <https://w3id.org/okp4/ontology/metadata/AuditMetadata> ;
+<https://w3id.org/axone/ontology/dataverse/zone/metadata/f93819f4-241f-464e-9298-a16f21be3dc0> a owl:NamedIndividual,    
+        <https://w3id.org/axone/ontology/metadata/AuditMetadata> ;
     core:createdBy <did:key:0x04d1f1b8f8a7a28f9a5a254c326a963a22f5a5b5d5f5e5d5c5b5a5958575655> ;
     core:createdOn "2023-08-25T15:29:16.507000+00:00"^^xsd:dateTime ;
     core:describes zone:fdfde6f6-b5d8-4c6b-ae4c-3451b92d5314 ;  
