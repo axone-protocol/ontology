@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.OKP4_TOKEN }}
+          github_token: ${{ secrets.OPS_TOKEN }}
           publish_dir: target/ontology/v${{ steps.version.outputs.major }}
           destination_dir: ./v${{ steps.version.outputs.major }}
           keep_files: false

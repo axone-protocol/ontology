@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a bug report to help us improve OKP4 ontology
+about: Create a bug report to help us improve Axone ontology
 labels: ':warning: Bug'
 assignees: 'ccamel'
 ---

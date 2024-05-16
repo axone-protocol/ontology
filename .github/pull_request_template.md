@@ -1,6 +1,6 @@
 # My pull request title
 
-- [ ] I've read the last version of [CODE_OF_CONDUCT.md](https://github.com/okp4/.github/blob/main/CODE-OF-CONDUCT.md) and [CONTRIBUTING.md](https://github.com/okp4/.github/blob/main/CONTRIBUTING.md)
+- [ ] I've read the last version of [CODE_OF_CONDUCT.md](https://github.com/axone-protocol/.github/blob/main/CODE-OF-CONDUCT.md) and [CONTRIBUTING.md](https://github.com/axone-protocol/.github/blob/main/CONTRIBUTING.md)
 
 ## Description
 
