@@ -74,16 +74,27 @@ At the root, the ontology is divided into two main parts:
 
 - __Thesaurus Part__: This part contains all controlled vocabularies integral to the ontology. The thesaurus adheres to the [SKOS standard](https://www.w3.org/TR/skos-reference/), which is instrumental in ensuring compatibility with other thesauri and simplifying the ontology's integration into various systems.
 
-- __Schema Part__: This part encompasses diverse Verifiable Credentials schemas utilized within the [Axone protocol](https://axone.xyz). These schemas are deployed as [JSON-LD contexts](https://www.w3.org/TR/json-ld11/), a format that maximizes their usability in the Web3 ecosystem and promotes interoperability with existing Digital Credentials Wallets.
+- __Schema Part__: This part encompasses diverse [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) schemas utilized within the [Axone protocol](https://axone.xyz). These schemas are deployed as [JSON-LD contexts](https://www.w3.org/TR/json-ld11/), a format that maximizes their usability in the Web3 ecosystem and promotes interoperability with existing Digital Credentials Wallets.
 
 The foundational philosophy underpinning the ontology of the [Axone protocol](https://axone.xyz) is grounded in the *Open World* principle. This principle operates on the premise that knowledge is not static or finite; rather, it acknowledges that understanding and information can continuously evolve and expand. In practical terms, this means that the ontology is not confined to a predefined or limited set of schemas and thesauri. Instead, it is inherently designed to accommodate and integrate new and diverse contributions.
 
-### Ontology versioning
+### Axone Ontology URI
+
+#### W3ID.org persistent URI
+
+To ensure the robust management of [RDF](https://www.w3.org/RDF/) resources, the [Axone ontology]([https://github.com/okp4/ontology](https://docs.axone.xyz/technical-documentation/ontology/the-power-of-ontologies)) leverages the [w3id.org](https://w3id.org) service, which provides persistent URIs. This strategy is fundamental in maintaining both URI and content stability — an essential feature for web-based semantic technologies.
+
+__Persistent URI Benefits:__
+
+- __Durability:__ [w3id.org](https://w3id.org) URIs are designed to be persistent, meaning they are intended to be available for a long duration. This permanence is crucial for maintaining reliable references, which is crucial for the Axone ontology's long-term accessibility and usability.
+- __Redirect Capability:__ The [w3id.org](https://w3id.org) service enables redirection, allowing the Axone ontology to direct clients to the appropriate resource location as it evolves. This feature is particularly beneficial for versioning, where changes to the ontology structure or content might necessitate updates to the resource location.
+
+#### Semantic versioning
 
 In managing [RDF](https://www.w3.org/RDF/) resources, it is essential to balance the stability of URIs with the stability of their referenced content:
 
-- _URI Stability_: URIs must remain constant over time. This ensures that each URI consistently references the same resource, providing a reliable point of reference in web-based knowledge systems.
-- _Content Stability_: The content accessed via these URIs should be stable and avoid introducing breaking changes. This stability is crucial for 3rd party systems referencing these URIs, ensuring that their interactions remain consistent.
+- __URI Stability__: URIs must remain constant over time. This ensures that each URI consistently references the same resource, providing a reliable point of reference in web-based knowledge systems.
+- __Content Stability__: The content accessed via these URIs should be stable and avoid introducing breaking changes. This stability is crucial for 3rd party systems referencing these URIs, ensuring that their interactions remain consistent.
 
 The Axone ontology adopts the [Semantic Versioning](https://semver.org/) format of `MAJOR.MINOR.PATCH`. This approach includes incorporating the `MAJOR` version number into the ontology's URI. As a result, the structure of the ontology's URI is:
 
