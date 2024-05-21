@@ -82,7 +82,7 @@ The foundational philosophy underpinning the ontology of the [Axone protocol](ht
 
 #### W3ID.org persistent URI
 
-To ensure the robust management of [RDF](https://www.w3.org/RDF/) resources, the [Axone ontology]([https://github.com/okp4/ontology](https://docs.axone.xyz/technical-documentation/ontology/the-power-of-ontologies)) leverages the [w3id.org](https://w3id.org) service, which provides persistent URIs. This strategy is fundamental in maintaining both URI and content stability — an essential feature for web-based semantic technologies.
+For robust [RDF](https://www.w3.org/RDF/) resources management, the [Axone ontology]([https://github.com/okp4/ontology](https://docs.axone.xyz/technical-documentation/ontology/the-power-of-ontologies)) uses the [w3id.org](https://w3id.org) service for persistent URIs. This strategy is fundamental in maintaining both URI and content stability — an essential feature for web-based semantic technologies.
 
 __Persistent URI Benefits:__
 
