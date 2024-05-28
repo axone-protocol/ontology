@@ -1,88 +1,88 @@
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Classification Model"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Klassifizierungsmodell"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modèle de classification"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clustering Model"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clustering-Modell"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modèle de clustering"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vision par ordinateur"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Cleaning"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Datenbereinigung"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nettoyage de données"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Integration"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Integration von Daten"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intégration des données"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Processing"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Transformation"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Datenumwandlung"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transformation des données"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apprentissage profond"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deep Learning"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#prefLabel> "mehrschichtiges Lernen"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Natural Language Processing"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Traitement du langage naturel"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Verarbeitung natürlicher Sprache"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modèle de régression"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regression Model"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regressionsmodell"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistics & Analytics"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistik & Analytik"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistiques et analyses"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lagerung"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stockage"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#prefLabel> "Storage"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/2000/01/rdf-schema#label> "Service Category Thesaurus"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/2000/01/rdf-schema#label> "Thesaurus der Dienstleistungskategorien"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/2000/01/rdf-schema#label> "Thésaurus des catégories de services"@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/description> "\n  Ce thésaurus définit un vocabulaire contrôlé exprimant les différentes catégories/classes de services, permettant de les organiser et de les classer en fonction de leur nature ou de leur objectif.\n  "@fr .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/description> "\n  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen Kategorien/Klassen von Diensten ausdrückt und es ermöglicht, diese\n  und nach ihrer Art oder ihrem Zweck zu klassifizieren.\n  "@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/description> "\n  This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised\n  and classified according to their nature or purpose.\n  "@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/title> "The OKP4 Service Category Thesaurus"@en .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/title> "Thesaurus der Dienstleistungskategorien"@de .
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/title> "Thésaurus des catégories de services"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Classification Model"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Klassifizierungsmodell"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modèle de classification"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clustering Model"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clustering-Modell"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modèle de clustering"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vision par ordinateur"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Cleaning"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Datenbereinigung"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nettoyage de données"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Integration"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Integration von Daten"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intégration des données"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Processing"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Transformation"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Datenumwandlung"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transformation des données"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apprentissage profond"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deep Learning"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning> <http://www.w3.org/2004/02/skos/core#prefLabel> "mehrschichtiges Lernen"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Natural Language Processing"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Traitement du langage naturel"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Verarbeitung natürlicher Sprache"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modèle de régression"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regression Model"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regressionsmodell"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistics & Analytics"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistik & Analytik"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistiques et analyses"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lagerung"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stockage"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage> <http://www.w3.org/2004/02/skos/core#prefLabel> "Storage"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/2000/01/rdf-schema#label> "Service Category Thesaurus"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/2000/01/rdf-schema#label> "Thesaurus der Dienstleistungskategorien"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://www.w3.org/2000/01/rdf-schema#label> "Thésaurus des catégories de services"@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/description> "\n  Ce thésaurus définit un vocabulaire contrôlé exprimant les différentes catégories/classes de services, permettant de les organiser et de les classer en fonction de leur nature ou de leur objectif.\n  "@fr .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/description> "\n  Dieser Thesaurus definiert ein kontrolliertes Vokabular, das die verschiedenen Kategorien/Klassen von Diensten ausdrückt und es ermöglicht, diese\n  und nach ihrer Art oder ihrem Zweck zu klassifizieren.\n  "@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/description> "\n  This thesaurus defines a controlled vocabulary expressing the different categories/classes of services, allowing them to be organised\n  and classified according to their nature or purpose.\n  "@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/title> "The OKP4 Service Category Thesaurus"@en .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/title> "Thesaurus der Dienstleistungskategorien"@de .
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> <http://purl.org/dc/terms/title> "Thésaurus des catégories de services"@fr .

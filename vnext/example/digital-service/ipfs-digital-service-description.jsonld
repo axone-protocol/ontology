@@ -1,13 +1,13 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/okp4/ontology/vnext/schema/credential/digital-service/description/"
+        "https://w3id.org/axone/ontology/vnext/schema/credential/digital-service/description/"
     ],
     "type": ["VerifiableCredential","DigitalServiceDescriptionCredential"],
-    "id": "https://w3id.org/okp4/ontology/vnext/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
+    "id": "https://w3id.org/axone/ontology/vnext/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
     "credentialSubject": {
         "id": "did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB",
-        "hasCategory": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage",
+        "hasCategory": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage",
         "hasDescription": "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale",
         "hasPublisher": "IPFS",
         "hasTag": [

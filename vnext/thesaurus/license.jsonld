@@ -6,10 +6,10 @@
   },
   "@graph": [
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AAL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AAL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -17,7 +17,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license",
       "@type": "skos:ConceptScheme",
       "rdfs:label": {
         "@language": "en",
@@ -36,10 +36,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AFL-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AFL-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -47,10 +47,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AGPL-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AGPL-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -58,10 +58,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/APL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/APL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -69,10 +69,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/APSL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/APSL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -80,10 +80,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Against-DRM",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Against-DRM",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -91,10 +91,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Apache-1_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Apache-1_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -102,10 +102,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Apache-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Apache-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -113,10 +113,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Artistic-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Artistic-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -124,10 +124,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSD-2-Clause",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BSD-2-Clause",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -135,10 +135,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSD-3-Clause",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BSD-3-Clause",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -146,10 +146,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BSL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -157,10 +157,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BitTorrent-1_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BitTorrent-1_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -168,10 +168,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CATOSL-1_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CATOSL-1_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -179,10 +179,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-4_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-4_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -190,10 +190,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-NC-4_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-NC-4_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -201,10 +201,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-SA-4_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-SA-4_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -212,10 +212,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC0-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -223,10 +223,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CDDL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CDDL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -234,10 +234,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CECILL-2_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CECILL-2_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -245,10 +245,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CNRI-Python",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CNRI-Python",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -256,10 +256,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CPAL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CPAL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -267,10 +267,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CUA-OPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CUA-OPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -278,10 +278,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/DSL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/DSL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -289,10 +289,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ECL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ECL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -300,10 +300,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EFL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EFL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -311,10 +311,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -322,10 +322,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EPL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EPL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -333,10 +333,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EUDatagrid",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EUDatagrid",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -344,10 +344,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EUPL-1_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EUPL-1_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -355,10 +355,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Entessa",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Entessa",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -366,10 +366,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/FAL-1_3",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/FAL-1_3",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -377,10 +377,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Fair",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Fair",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -388,10 +388,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Frameworx-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Frameworx-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -399,10 +399,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -410,10 +410,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/GPL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/GPL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -421,10 +421,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/GPL-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/GPL-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -432,10 +432,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/HPND",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/HPND",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -443,10 +443,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/IPA",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/IPA",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -454,10 +454,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/IPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/IPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -465,10 +465,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ISC",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ISC",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -476,10 +476,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Intel",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Intel",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -487,10 +487,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LGPL-2_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LGPL-2_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -498,10 +498,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LGPL-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LGPL-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -509,10 +509,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LO-FR-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LO-FR-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -520,10 +520,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LO-FR-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LO-FR-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -531,10 +531,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -542,10 +542,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPL-1_02",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LPL-1_02",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -553,10 +553,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPPL-1_3c",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LPPL-1_3c",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -564,10 +564,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MIT",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MIT",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -575,10 +575,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -586,10 +586,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-1_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MPL-1_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -597,10 +597,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MPL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -608,10 +608,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MS-PL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MS-PL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -619,10 +619,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MS-RL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MS-RL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -630,10 +630,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MirOS",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MirOS",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -641,10 +641,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Motosoto",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Motosoto",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -652,10 +652,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Multics",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Multics",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -663,10 +663,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NASA-1_3",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NASA-1_3",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -674,10 +674,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NCSA",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NCSA",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -685,10 +685,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NGPL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NGPL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -696,10 +696,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NPOSL-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NPOSL-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -707,10 +707,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NTP",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NTP",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -718,10 +718,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Naumen",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Naumen",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -729,10 +729,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Nokia",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Nokia",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -740,10 +740,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OCLC-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OCLC-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -751,10 +751,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ODC-BY-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ODC-BY-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -762,10 +762,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ODbL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ODbL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -773,10 +773,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OFL-1_1",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OFL-1_1",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -784,10 +784,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-Canada-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-Canada-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -795,10 +795,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -806,10 +806,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -817,10 +817,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -828,10 +828,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGTSL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGTSL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -839,10 +839,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OSL-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OSL-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -850,10 +850,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/PDDL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/PDDL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -861,10 +861,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/PHP-3_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/PHP-3_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -872,10 +872,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/PostgreSQL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/PostgreSQL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -883,10 +883,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Python-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Python-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -894,10 +894,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/QPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/QPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -905,10 +905,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/RPL-1_5",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/RPL-1_5",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -916,10 +916,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/RPSL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/RPSL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -927,10 +927,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/RSCPL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/RSCPL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -938,10 +938,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/SISSL",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/SISSL",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -949,10 +949,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/SPL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/SPL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -960,10 +960,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/SimPL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/SimPL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -971,10 +971,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Sleepycat",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Sleepycat",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -982,10 +982,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Talis",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Talis",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -993,10 +993,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Unlicense",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Unlicense",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1004,10 +1004,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/VSL-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/VSL-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1015,10 +1015,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/W3C",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/W3C",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1026,10 +1026,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/WXwindows",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/WXwindows",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1037,10 +1037,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Watcom-1_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Watcom-1_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1048,10 +1048,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Xnet",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Xnet",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1059,10 +1059,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ZPL-2_0",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ZPL-2_0",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1070,10 +1070,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Zlib",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Zlib",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1081,7 +1081,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/contentLicenses",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/contentLicenses",
       "@type": "skos:Collection",
       "rdfs:label": {
         "@language": "en",
@@ -1097,87 +1097,87 @@
       },
       "skos:member": [
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AFL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AFL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Against-DRM"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Against-DRM"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-4_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-4_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-NC-4_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-NC-4_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-SA-4_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-SA-4_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC0-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/DSL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/DSL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/FAL-1_3"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/FAL-1_3"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MirOS"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MirOS"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NPOSL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NPOSL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-Canada-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-Canada-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OSL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OSL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Talis"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Talis"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/hesa-withrights"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/hesa-withrights"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/localauth-withrights"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/localauth-withrights"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-at"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-at"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-open"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-open"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-pd"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-pd"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukclickusepsi"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukclickusepsi"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukcrown-withrights"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukcrown-withrights"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukpsi"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukpsi"
         }
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/hesa-withrights",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/hesa-withrights",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1185,10 +1185,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/localauth-withrights",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/localauth-withrights",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1196,10 +1196,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-at",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-at",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1207,10 +1207,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-open",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-open",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1218,10 +1218,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-pd",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-pd",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1229,10 +1229,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukclickusepsi",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukclickusepsi",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1240,10 +1240,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukcrown-withrights",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukcrown-withrights",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1251,10 +1251,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukpsi",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukpsi",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1262,7 +1262,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/dataLicenses",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/dataLicenses",
       "@type": "skos:Collection",
       "rdfs:label": {
         "@language": "en",
@@ -1278,57 +1278,57 @@
       },
       "skos:member": [
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-4_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-4_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-NC-4_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-NC-4_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC-BY-SA-4_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC-BY-SA-4_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC0-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LO-FR-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LO-FR-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LO-FR-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LO-FR-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ODC-BY-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ODC-BY-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ODbL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ODbL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-Canada-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-Canada-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/PDDL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/PDDL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/dli-model-use"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/dli-model-use"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/geogratis"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/geogratis"
         }
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/dli-model-use",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/dli-model-use",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1336,10 +1336,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/geogratis",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/geogratis",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1347,10 +1347,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/met-office-cp",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/met-office-cp",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1358,10 +1358,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/mitre",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/mitre",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1369,10 +1369,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/notspecified",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/notspecified",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1380,10 +1380,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-closed",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-closed",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1391,10 +1391,10 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/other-nc",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/other-nc",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -1402,7 +1402,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/softwareLicenses",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/softwareLicenses",
       "@type": "skos:Collection",
       "rdfs:label": {
         "@language": "en",
@@ -1418,261 +1418,261 @@
       },
       "skos:member": [
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AAL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AAL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AFL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AFL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/AGPL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/AGPL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/APL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/APL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/APSL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/APSL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Apache-1_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Apache-1_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Apache-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Apache-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Artistic-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Artistic-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSD-2-Clause"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BSD-2-Clause"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSD-3-Clause"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BSD-3-Clause"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BSL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BSL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/BitTorrent-1_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/BitTorrent-1_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CATOSL-1_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CATOSL-1_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CC0-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CC0-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CDDL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CDDL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CECILL-2_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CECILL-2_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CNRI-Python"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CNRI-Python"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CPAL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CPAL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/CUA-OPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/CUA-OPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ECL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ECL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EFL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EFL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EPL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EPL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EUDatagrid"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EUDatagrid"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/EUPL-1_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/EUPL-1_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Entessa"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Entessa"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Fair"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Fair"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Frameworx-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Frameworx-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/GPL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/GPL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/GPL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/GPL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/HPND"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/HPND"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/IPA"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/IPA"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/IPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/IPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ISC"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ISC"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Intel"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Intel"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LGPL-2_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LGPL-2_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LGPL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LGPL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPL-1_02"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LPL-1_02"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/LPPL-1_3c"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/LPPL-1_3c"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MIT"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MIT"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-1_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MPL-1_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MPL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MPL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MS-PL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MS-PL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MS-RL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MS-RL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/MirOS"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/MirOS"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Motosoto"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Motosoto"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Multics"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Multics"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NASA-1_3"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NASA-1_3"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NCSA"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NCSA"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NGPL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NGPL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NPOSL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NPOSL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/NTP"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/NTP"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Naumen"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Naumen"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Nokia"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Nokia"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OCLC-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OCLC-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OFL-1_1"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OFL-1_1"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGL-UK-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGL-UK-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OGTSL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OGTSL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/OSL-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/OSL-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/PHP-3_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/PHP-3_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/PostgreSQL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/PostgreSQL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Python-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Python-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/QPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/QPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/RPL-1_5"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/RPL-1_5"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/RPSL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/RPSL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/RSCPL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/RSCPL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/SISSL"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/SISSL"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/SPL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/SPL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/SimPL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/SimPL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Sleepycat"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Sleepycat"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Unlicense"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Unlicense"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/VSL-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/VSL-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/W3C"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/W3C"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/WXwindows"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/WXwindows"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Watcom-1_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Watcom-1_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Xnet"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Xnet"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ZPL-2_0"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ZPL-2_0"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/Zlib"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/Zlib"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/mitre"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/mitre"
         }
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license/ukcrown",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license/ukcrown",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/license"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/license"
       },
       "skos:prefLabel": {
         "@language": "en",

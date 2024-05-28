@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/">
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/AgricultureFoodEnvironmentAndForestry">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="https://w3id.org/axone/ontology/vnext/thesaurus/topic/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/">
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/AgricultureFoodEnvironmentAndForestry">
     <skos:inScheme>
-      <skos:ConceptScheme rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic">
+      <skos:ConceptScheme rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic">
         <rdfs:label xml:lang="de">Thema Thesaurus</rdfs:label>
         <rdfs:label xml:lang="fr">Thésaurus des thèmes</rdfs:label>
         <rdfs:label xml:lang="en">Topic Thesaurus</rdfs:label>
@@ -25,62 +25,62 @@
     <skos:prefLabel xml:lang="en">Agriculture, food, environment and forestry</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Landwirtschaft, Ernährung, Umwelt und Forstwirtschaft</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/BiologyGeologyAndChemistry">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/BiologyGeologyAndChemistry">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="de">Biologie, Geologie und Chemie</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Biologie, géologie et chimie</skos:prefLabel>
     <skos:prefLabel xml:lang="en">Biology, geology and chemistry</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/BusinessAndPurchase">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/BusinessAndPurchase">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="en">Business and purchase</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Commerce et achat</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Geschäft und Einkauf</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/DeFiAndCrypto">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/DeFiAndCrypto">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="en">DeFi and Crypto</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">DeFi et Crypto</skos:prefLabel>
     <skos:prefLabel xml:lang="de">DeFi und Krypto</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Energy">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/Energy">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="de">Energie</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Energie</skos:prefLabel>
     <skos:prefLabel xml:lang="en">Energy</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Healthcare">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/Healthcare">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="de">Gesundheit</skos:prefLabel>
     <skos:prefLabel xml:lang="en">Health</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Santé</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/IndustryMobilityAndEngineering">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/IndustryMobilityAndEngineering">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="de">Industrie, Mobilität und Technik</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Industrie, mobilité et ingénierie</skos:prefLabel>
     <skos:prefLabel xml:lang="en">Industry, mobility and engineering</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/LogisticsRetailSupplyChainECommerce">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/LogisticsRetailSupplyChainECommerce">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="en">Logistics, retail, supply chain and eCommerce</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Logistik, Einzelhandel, Lieferkette und eCommerce</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Logistique, commerce, chaîne d'approvisionnement et eCommerce</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/MarketingAndCustomerBehavior">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/MarketingAndCustomerBehavior">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="en">Marketing and Customer Behavior</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Marketing et comportement des consommateurs</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Marketing und Kundenverhalten</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Other">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/Other">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="de">Andere</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Autres</skos:prefLabel>
     <skos:prefLabel xml:lang="en">Other</skos:prefLabel>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security">
-    <skos:inScheme rdf:resource="https://w3id.org/okp4/ontology/vnext/thesaurus/topic"/>
+  <skos:Concept rdf:about="https://w3id.org/axone/ontology/vnext/thesaurus/topic/Security">
+    <skos:inScheme rdf:resource="https://w3id.org/axone/ontology/vnext/thesaurus/topic"/>
     <skos:prefLabel xml:lang="en">Security</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Sicherheit</skos:prefLabel>
     <skos:prefLabel xml:lang="fr">Sécurité</skos:prefLabel>

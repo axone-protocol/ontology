@@ -1,46 +1,46 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix : <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/> .
+@prefix : <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :ClassificationModel a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Classification Model"@en ;
   skos:prefLabel "Klassifizierungsmodell"@de ;
   skos:prefLabel "Modèle de classification"@fr .
 
 :ClusteringModel a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Clustering Model"@en ;
   skos:prefLabel "Clustering-Modell"@de ;
   skos:prefLabel "Modèle de clustering"@fr .
 
 :ComputerVision a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Computer Vision"@de ;
   skos:prefLabel "Computer Vision"@en ;
   skos:prefLabel "Vision par ordinateur"@fr .
 
 :DataCleaning a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Data Cleaning"@en ;
   skos:prefLabel "Datenbereinigung"@de ;
   skos:prefLabel "Nettoyage de données"@fr .
 
 :DataIntegration a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Data Integration"@en ;
   skos:prefLabel "Integration von Daten"@de ;
   skos:prefLabel "Intégration des données"@fr .
 
 :DataProcessing a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:narrower :ClassificationModel ;
   skos:narrower :ClusteringModel ;
   skos:narrower :ComputerVision ;
@@ -55,46 +55,46 @@
 
 :DataTransformation a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Data Transformation"@en ;
   skos:prefLabel "Datenumwandlung"@de ;
   skos:prefLabel "Transformation des données"@fr .
 
 :DeepLearning a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Apprentissage profond"@fr ;
   skos:prefLabel "Deep Learning"@en ;
   skos:prefLabel "mehrschichtiges Lernen"@de .
 
 :NaturalLanguageProcessing a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Natural Language Processing"@en ;
   skos:prefLabel "Traitement du langage naturel"@fr ;
   skos:prefLabel "Verarbeitung natürlicher Sprache"@de .
 
 :RegressionModel a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Modèle de régression"@fr ;
   skos:prefLabel "Regression Model"@en ;
   skos:prefLabel "Regressionsmodell"@de .
 
 :StatisticsAndAnalytics a skos:Concept ;
   skos:broader :DataProcessing ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Statistics & Analytics"@en ;
   skos:prefLabel "Statistik & Analytik"@de ;
   skos:prefLabel "Statistiques et analyses"@fr .
 
 :Storage a skos:Concept ;
-  skos:inScheme <https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> ;
+  skos:inScheme <https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> ;
   skos:prefLabel "Lagerung"@de ;
   skos:prefLabel "Stockage"@fr ;
   skos:prefLabel "Storage"@en .
 
-<https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category> a skos:ConceptScheme ;
+<https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category> a skos:ConceptScheme ;
   rdfs:label "Service Category Thesaurus"@en ;
   rdfs:label "Thesaurus der Dienstleistungskategorien"@de ;
   rdfs:label "Thésaurus des catégories de services"@fr ;

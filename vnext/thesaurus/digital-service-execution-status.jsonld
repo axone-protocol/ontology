@@ -7,14 +7,14 @@
   },
   "@graph": [
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/Cancelled",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status/Cancelled",
       "@type": "skos:Concept",
       "skos:definition": {
         "@language": "en",
         "@value": "\n  A term used to indicate that the execution of a Digital Service has been cancelled.\n  "
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status",
       "@type": "skos:ConceptScheme",
       "rdfs:label": {
         "@language": "en",
@@ -38,14 +38,14 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/Delivered",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status/Delivered",
       "@type": "skos:Concept",
       "skos:definition": {
         "@language": "en",
         "@value": "\n  A term used to indicate that the execution of a Digital Service has been completed and the service \n  has been delivered to the user.\n  "
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -53,14 +53,14 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/Failed",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status/Failed",
       "@type": "skos:Concept",
       "skos:definition": {
         "@language": "en",
         "@value": "\n  A term used to indicate that the execution of a Digital Service has failed.\n  "
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status"
       },
       "skos:prefLabel": {
         "@language": "en",
@@ -68,14 +68,14 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status/InExecution",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status/InExecution",
       "@type": "skos:Concept",
       "skos:definition": {
         "@language": "en",
         "@value": "\n  A term used to indicate that the execution of a Digital Service is currently in progress.\n  "
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-execution-status"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-execution-status"
       },
       "skos:prefLabel": {
         "@language": "en",

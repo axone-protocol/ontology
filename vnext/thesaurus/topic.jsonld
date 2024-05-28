@@ -7,10 +7,10 @@
   },
   "@graph": [
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/AgricultureFoodEnvironmentAndForestry",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/AgricultureFoodEnvironmentAndForestry",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic",
       "@type": "skos:ConceptScheme",
       "rdfs:label": [
         {
@@ -74,10 +74,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/BiologyGeologyAndChemistry",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/BiologyGeologyAndChemistry",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -95,10 +95,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/BusinessAndPurchase",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/BusinessAndPurchase",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -116,10 +116,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/DeFiAndCrypto",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/DeFiAndCrypto",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -137,10 +137,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Energy",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/Energy",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -158,10 +158,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Healthcare",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/Healthcare",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -179,10 +179,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/IndustryMobilityAndEngineering",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/IndustryMobilityAndEngineering",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -200,10 +200,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/LogisticsRetailSupplyChainECommerce",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/LogisticsRetailSupplyChainECommerce",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -221,10 +221,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/MarketingAndCustomerBehavior",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/MarketingAndCustomerBehavior",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -242,10 +242,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Other",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/Other",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {
@@ -263,10 +263,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic/Security",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic/Security",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/topic"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/topic"
       },
       "skos:prefLabel": [
         {

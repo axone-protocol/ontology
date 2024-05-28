@@ -7,13 +7,13 @@
   },
   "@graph": [
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -31,41 +31,41 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:narrower": [
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClassificationModel"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClassificationModel"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel"
         },
         {
-          "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics"
+          "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics"
         }
       ],
       "skos:prefLabel": {
@@ -74,7 +74,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category",
       "@type": "skos:ConceptScheme",
       "rdfs:label": [
         {
@@ -120,13 +120,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ClusteringModel",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ClusteringModel",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -144,13 +144,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/ComputerVision",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/ComputerVision",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -168,13 +168,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataCleaning",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataCleaning",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -192,13 +192,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataIntegration",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataIntegration",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -216,13 +216,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataTransformation",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataTransformation",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -240,13 +240,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DeepLearning",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DeepLearning",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -264,13 +264,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/NaturalLanguageProcessing",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -288,13 +288,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/RegressionModel",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/RegressionModel",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -312,13 +312,13 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/StatisticsAndAnalytics",
       "@type": "skos:Concept",
       "skos:broader": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/DataProcessing"
       },
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
@@ -336,10 +336,10 @@
       ]
     },
     {
-      "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category/Storage",
+      "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category/Storage",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://w3id.org/okp4/ontology/vnext/thesaurus/digital-service-category"
+        "@id": "https://w3id.org/axone/ontology/vnext/thesaurus/digital-service-category"
       },
       "skos:prefLabel": [
         {
