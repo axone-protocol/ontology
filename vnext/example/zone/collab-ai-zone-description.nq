@@ -1,11 +1,11 @@
 <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
-<https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/ZoneDescriptionCredential> .
+<https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/ZoneDescriptionCredential> .
 <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#credentialSubject> <did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> .
 <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuanceDate> "2024-02-02T15:40:43.475304+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/7f547e63-ceb8-4ff3-8e2e-7a4278d97b8e> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/hasDescription> "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way." .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/hasTag> "AI" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/hasTag> "Collaboration" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/hasTag> "Machine Learning" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/hasTitle> "Collaborative AI Zone" .
-<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/okp4/ontology/vnext/schema/credential/zone/description/hasTopic> <https://w3id.org/axone/ontology/vnext/thesaurus/topic/other> .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/hasDescription> "Collaborative AI Zone is dedicated to train AI models in a collaborative and open way." .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/hasTag> "AI" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/hasTag> "Collaboration" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/hasTag> "Machine Learning" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/hasTitle> "Collaborative AI Zone" .
+<did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ> <https://w3id.org/axone/ontology/vnext/schema/credential/zone/description/hasTopic> <https://w3id.org/axone/ontology/vnext/thesaurus/topic/other> .
