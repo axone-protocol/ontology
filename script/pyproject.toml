@@ -14,7 +14,7 @@ rdflib = "^7.0.0"
 mypy = "^1.11.1"
 
 [tool.poetry.group.dev.dependencies]
-flake8 = "^7.1.0"
+flake8 = "^7.1.1"
 
 [tool.poetry.scripts]
 cli = "cli.cli:root"
