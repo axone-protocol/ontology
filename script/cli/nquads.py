@@ -1,5 +1,6 @@
 import os
 import re
+from pathlib import Path
 from typing import Callable, Dict, Optional, TextIO, Union
 
 import click
@@ -11,7 +12,7 @@ AXONE = Namespace("https://w3id.org/axone/ontology/")
 
 
 def convert_nquads(input_file: Union[str, os.PathLike], output_file: TextIO,
-                   context_folder: Optional[os.PathLike[str]] = None, algorithm: str = "URGNA2012") -> None:
+                   context_folder: Optional[Union[str, os.PathLike]] = None, algorithm: str = "URGNA2012") -> None:
     """Converts a JSON-LD schema to N-Quads format."""
     context_mapping = create_context_mapping(context_folder)
 
@@ -29,17 +30,18 @@ def convert_nquads(input_file: Union[str, os.PathLike], output_file: TextIO,
     output_file.write(normalized)
 
 
-def create_context_mapping(context_folder: Optional[os.PathLike[str]]) -> Dict[str, str]:
+def create_context_mapping(context_folder: Optional[Union[str, os.PathLike]]) -> Dict[str, str]:
     """Creates a JSON-LD context mapping from files in the specified folder."""
     context = {}
 
     if context_folder:
+        context_folder = str(context_folder)
         click.echo(f"🔍 Scanning directory: {context_folder}")
         for root, _, files in os.walk(context_folder):
             for file in files:
                 if file.endswith('.jsonld'):
                     file_path = os.path.join(root, file)
-                    document = jsonld.load_document(f"file://{file_path}",
+                    document = jsonld.load_document(f"file://{Path(file_path).resolve()}",
                                                     options={'documentLoader': create_custom_document_loader()})
                     uri = extract_context_uri(document)
                     if uri:
@@ -49,8 +51,10 @@ def create_context_mapping(context_folder: Optional[os.PathLike[str]]) -> Dict[s
     return context
 
 
-def create_custom_document_loader(context_mapping: Dict[str, str] = {}) -> Callable[[str, Dict[str, str]], Dict[str, Union[str, None]]]:
+def create_custom_document_loader(context_mapping: Optional[Dict[str, str]] = None) -> Callable[[str, Dict[str, str]], Dict[str, Union[str, None]]]:
     """Creates a custom document loader for JSON-LD which supports local file Axone URIs."""
+    if context_mapping is None:
+        context_mapping = {}
 
     def loader(url: str, options: Dict[str, str] = {}) -> Dict[str, Union[str, None]]:
         if url.startswith("file://"):

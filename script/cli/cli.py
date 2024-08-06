@@ -52,7 +52,7 @@ def generate(input_path: os.PathLike[str], output_path: os.PathLike[str],
     try:
         generate_documentation(input_path, output_path, example_path)
     except Exception as e:
-        raise click.UsageError(f"{e}")
+        raise click.UsageError(f"{e}") from e
 
 
 @jsonld.command()
@@ -99,7 +99,7 @@ def convert(input_file: t.TextIO, output_file: t.TextIO, flatten: bool, indent: 
     try:
         convert_jsonld(input_file, output_file, flatten, indent, format)
     except Exception as e:
-        raise click.UsageError(f"{e}")
+        raise click.UsageError(f"{e}") from e
 
 
 @jsonld.command()
@@ -142,7 +142,7 @@ def nquads(input_file: os.PathLike[str], output_file: t.TextIO, context_folder: 
     try:
         convert_nquads(input_file, output_file, context_folder, algorithm)
     except Exception as e:
-        raise click.UsageError(f"{e}")
+        raise click.UsageError(f"{e}") from e
 
 
 if __name__ == '__main__':
