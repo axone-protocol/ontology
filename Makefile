@@ -176,13 +176,13 @@ build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_AXONE_RDFXML) ## Bu
 build-ontology-jsonld: check cache $(DST) $(OBJ_SCHEMAS_JSONLD) $(OBJ_THESAURI_JSONLD)  ## Build the ontology in JSON-LD format
 
 .PHONY: build-examples
-build-examples: build-examples-jsonld build-examples-nquad $(DST) ## Build the examples in different formats (N-Quads, JSON-LD)
+build-examples: build-examples-jsonld build-ontology-jsonld build-examples-nquad $(DST) ## Build the examples in different formats (N-Quads, JSON-LD)
 
 .PHONY: build-examples-jsonld
 build-examples-jsonld: check $(OBJ_EXAMPLES_JSONLD)
 
 .PHONY: build-examples-nquad
-build-examples-nquad: check build-examples-jsonld $(OBJ_EXAMPLES_NQUAD)
+build-examples-nquad: check build-examples-jsonld build-ontology-jsonld $(OBJ_EXAMPLES_NQUAD)
 
 $(OBJ_ONTS_TTL): $(DST_ONT)/%.ttl: $(SRC_ONT)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -220,7 +220,7 @@ $(OBJ_EXAMPLES_JSONLD): $(DST_ONT)/%.jsonld: $(SRC_ONT)/%.jsonld
 $(OBJ_EXAMPLES_NQUAD): $(DST_ONT)/%.nq: $(DST_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} example ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
-	@${call RDF_SERIALIZE,jsonld,nquads,$<,$@}
+	@${call CLI,jsonld,nquads,$<,-o,$@,--algorithm,URDNA2015,--context-folder,$(DST_SCHEMA)}
 
 $(BIN_AXONE_NT): $(OBJ_ONTS_NT)
 	@echo "${COLOR_CYAN}📦 making${COLOR_RESET} ontology ${COLOR_GREEN}$@${COLOR_RESET}"
@@ -391,7 +391,7 @@ $(DST_CACHE)/$(EXEC_OWL_CLI):
     cd $(DST_CACHE); \
     wget https://github.com/atextor/owl-cli/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
 
-$(DST_CACHE)/cli: $(shell find $(SRC_SCRIPT) -name "*.*")
+$(DST_CACHE)/cli: $(shell find $(SRC_SCRIPT) -name "*.*" -not -path "$(SRC_SCRIPT)/.*")
 	@echo "${COLOR_CYAN}🐳 making ${COLOR_GREEN}$(DOCKER_IMAGE_CLI)${COLOR_RESET} image"
 	@docker image rm "$(DOCKER_IMAGE_CLI)" 2>/dev/null || true
 	@DOCKER_CONTAINER_NAME="axone-cli-$$(date +%s)"; \
