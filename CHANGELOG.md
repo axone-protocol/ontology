@@ -1,3 +1,44 @@
+# Axone Ontology Changelog
+
+## [4.0.0](https://github.com/axone-protocol/ontology/compare/v3.0.0...v4.0.0) (2024-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ontology:** change URI domain from okp4 to axone
+* **schema:** redesign the Service Execution order & results
+* **schema:** remove SubSection hierarchy
+
+### Features
+
+* **example:** update examples ([4433c38](https://github.com/axone-protocol/ontology/commit/4433c38e6bfdb53c314c15eb1bc37f411bf51490))
+* **example:** update uuid ([d73394f](https://github.com/axone-protocol/ontology/commit/d73394fae8d5a7470b80062b0c384ecedddfa3e5))
+* remove exec order ref from auth credential ([0e11bb9](https://github.com/axone-protocol/ontology/commit/0e11bb9a366a3cbc4425ea1d4193692f5b99bf49))
+* **schema:** add digital-resource-publication credentials schema ([b9490ff](https://github.com/axone-protocol/ontology/commit/b9490ff887a0c8eabf41563de357121423e48317))
+* **schema:** add hasExecutionEvidence prop to OrchestrationServiceExecution ([681afd6](https://github.com/axone-protocol/ontology/commit/681afd66574ff8a3f8705a0abd45f8c01d58e40d))
+* **schema:** add new credential to represents auth between services ([a6e3e4e](https://github.com/axone-protocol/ontology/commit/a6e3e4ef00c38eac6753247b8fbfe70bc7becc3e))
+* **thesaurus:** specify InExecution term ([f2756bd](https://github.com/axone-protocol/ontology/commit/f2756bd87715e8ec0bd633bfa124a128c6edff2c))
+
+
+### Bug Fixes
+
+* correct some orchestration creds property domain ([41aabd1](https://github.com/axone-protocol/ontology/commit/41aabd1350effb7873b7f8eee6ece48002f6ea74))
+* **example:** change type credential ([c86c592](https://github.com/axone-protocol/ontology/commit/c86c5922b43edc0d0b7790600973cb8721271d58))
+* **example:** correct prolog governance ([354ea76](https://github.com/axone-protocol/ontology/commit/354ea762d7093b333a8cd6072cc8a301b16187cf))
+* **example:** remove subsection into gov VC examples ([f093d2c](https://github.com/axone-protocol/ontology/commit/f093d2cf3507898ffa0dd5a905a12e5d9bc2253e))
+* **example:** update uuid ([eaa6ef5](https://github.com/axone-protocol/ontology/commit/eaa6ef54c941b3ac8663b4a785281d5aeef9405e))
+* **schema:** correct grammar ([81bcf07](https://github.com/axone-protocol/ontology/commit/81bcf070aac5322ee5fbb8a9fc2066d70c064caf))
+* **schema:** fix typos ([24fb40a](https://github.com/axone-protocol/ontology/commit/24fb40acbeae7c6701975ba5e7c6d3af9b0e41e0))
+* **script:** add property domain (was missing) ([4f8b27a](https://github.com/axone-protocol/ontology/commit/4f8b27a9ea932aedc1ec6e56abcc71a38705f3b6))
+* **script:** fix plural form ([cd433a1](https://github.com/axone-protocol/ontology/commit/cd433a172b06260b8b59cf5195da8aa28ea5cc7c))
+
+
+### Code Refactoring
+
+* **ontology:** change URI domain from okp4 to axone ([f4887ab](https://github.com/axone-protocol/ontology/commit/f4887ab66540663fdc4f83020b7a7d496b87b3dc))
+* **schema:** redesign the Service Execution order & results ([7b7b66d](https://github.com/axone-protocol/ontology/commit/7b7b66dfa7c6ca5e5e3b1bc081dfda04bf319a15))
+* **schema:** remove SubSection hierarchy ([c3cdd78](https://github.com/axone-protocol/ontology/commit/c3cdd78f90cfcbb24c3984ba33f5b99a1addd176))
+
 # OKP4 Ontology Changelog
 
 ## [3.0.0](https://github.com/okp4/ontology/compare/v2.0.0...v3.0.0) (2024-03-05)
