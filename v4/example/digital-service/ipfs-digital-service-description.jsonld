@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/"
+    ],
+    "type": ["VerifiableCredential","DigitalServiceDescriptionCredential"],
+    "id": "https://w3id.org/axone/ontology/v4/schema/credential/digital-service/description/5a3bd610-3a5d-4a41-bc90-0e437d453220",
+    "credentialSubject": {
+        "id": "did:key:zQ3shhb4SvzBRLbBonsvKb3WX6WoDeKWHpsXXXMhAJETqXAfB",
+        "hasCategory": "https://w3id.org/axone/ontology/v4/thesaurus/digital-service-category/Storage",
+        "hasDescription": "IPFS is a decentralized protocol designed to facilitate the storage, sharing, and retrieval of files on a global scale",
+        "hasPublisher": "IPFS",
+        "hasTag": [
+            "Storage",
+            "Peer-to-peer",
+            "Cloud"
+        ],
+        "hasTitle": "IPFS",
+        "hasWebpage": "https://docs.ipfs.tech/"
+    },
+    "issuanceDate": "2024-01-22T09:28:43.475304+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "OKP4"
+    }
+}

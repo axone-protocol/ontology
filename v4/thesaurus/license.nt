@@ -1,0 +1,476 @@
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AAL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AAL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Attribution Assurance Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AFL-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AFL-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AFL-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Academic Free License 3.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AGPL-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AGPL-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/AGPL-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "GNU Affero General Public License v3"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/APL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/APL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/APL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Adaptive Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/APSL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/APSL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/APSL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apple Public Source License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Against-DRM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Against-DRM> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Against-DRM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Against DRM"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-1_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-1_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apache Software License 1.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Apache Software License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Artistic-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Artistic-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Artistic-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Artistic License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-2-Clause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-2-Clause> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-2-Clause> <http://www.w3.org/2004/02/skos/core#prefLabel> "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-3-Clause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-3-Clause> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-3-Clause> <http://www.w3.org/2004/02/skos/core#prefLabel> "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BSL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Boost Software License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BitTorrent-1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BitTorrent-1_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/BitTorrent-1_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "BitTorrent Open Source License 1.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CATOSL-1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CATOSL-1_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CATOSL-1_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-4_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-4_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-4_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Creative Commons Attribution 4.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-NC-4_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-NC-4_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-NC-4_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Creative Commons Attribution-NonCommercial 4.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-SA-4_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-SA-4_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-SA-4_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Creative Commons Attribution Share-Alike 4.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC0-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC0-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CC0-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "CC0 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CDDL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CDDL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CDDL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Common Development and Distribution License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CECILL-2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CECILL-2_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CECILL-2_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "CeCILL License 2.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CNRI-Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CNRI-Python> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CNRI-Python> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNRI Python License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CPAL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CPAL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CPAL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Common Public Attribution License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CUA-OPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CUA-OPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/CUA-OPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "CUA Office Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/DSL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/DSL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/DSL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Design Science License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ECL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ECL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ECL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educational Community License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EFL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EFL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EFL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eiffel Forum License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eclipse Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eclipse Public License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EUDatagrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EUDatagrid> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EUDatagrid> <http://www.w3.org/2004/02/skos/core#prefLabel> "EU DataGrid Software License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EUPL-1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EUPL-1_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/EUPL-1_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union Public License 1.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Entessa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Entessa> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Entessa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entessa Public License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/FAL-1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/FAL-1_3> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/FAL-1_3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Free Art License 1.3"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Fair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Fair> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Fair> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fair License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Frameworx-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Frameworx-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Frameworx-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Frameworx License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections> <http://www.w3.org/2004/02/skos/core#prefLabel> "GNU Free Documentation License 1.3 with no cover texts and no invariant sections"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "GNU General Public License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "GNU General Public License 3.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/HPND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/HPND> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/HPND> <http://www.w3.org/2004/02/skos/core#prefLabel> "Historical Permission Notice and Disclaimer"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/IPA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/IPA> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/IPA> <http://www.w3.org/2004/02/skos/core#prefLabel> "IPA Font License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/IPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/IPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/IPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "IBM Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ISC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ISC> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ISC> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISC License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Intel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Intel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Intel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intel Open Source License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-2_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-2_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-2_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "GNU Lesser General Public License 2.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "GNU Lesser General Public License 3.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lucent Public License (\"Plan9\") 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_02> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lucent Public License 1.02"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPPL-1_3c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPPL-1_3c> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/LPPL-1_3c> <http://www.w3.org/2004/02/skos/core#prefLabel> "LaTeX Project Public License 1.3c"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MIT> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MIT> <http://www.w3.org/2004/02/skos/core#prefLabel> "MIT License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mozilla Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mozilla Public License 1.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mozilla Public License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MS-PL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MS-PL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MS-PL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Microsoft Public License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MS-RL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MS-RL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MS-RL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Microsoft Reciprocal License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MirOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MirOS> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/MirOS> <http://www.w3.org/2004/02/skos/core#prefLabel> "MirOS Licence"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Motosoto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Motosoto> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Motosoto> <http://www.w3.org/2004/02/skos/core#prefLabel> "Motosoto License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Multics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Multics> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Multics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Multics License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NASA-1_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NASA-1_3> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NASA-1_3> <http://www.w3.org/2004/02/skos/core#prefLabel> "NASA Open Source Agreement 1.3"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NCSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NCSA> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NCSA> <http://www.w3.org/2004/02/skos/core#prefLabel> "University of Illinois/NCSA Open Source License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NGPL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NGPL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NGPL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nethack General Public License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NPOSL-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NPOSL-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NPOSL-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-Profit Open Software License 3.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NTP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NTP> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/NTP> <http://www.w3.org/2004/02/skos/core#prefLabel> "NTP License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Naumen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Naumen> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Naumen> <http://www.w3.org/2004/02/skos/core#prefLabel> "Naumen Public License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Nokia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Nokia> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Nokia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nokia Open Source License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OCLC-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OCLC-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OCLC-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "OCLC Research Public License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ODC-BY-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ODC-BY-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ODC-BY-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Data Commons Attribution License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ODbL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ODbL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ODbL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Data Commons Open Database License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OFL-1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OFL-1_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OFL-1_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Font License 1.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-Canada-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-Canada-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-Canada-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Government License 2.0 (Canada)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Government Licence 1.0 (United Kingdom)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Government Licence 2.0 (United Kingdom)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Government Licence 3.0 (United Kingdom)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGTSL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGTSL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OGTSL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Group Test Suite License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OSL-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OSL-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/OSL-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Software License 3.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PDDL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PDDL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PDDL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Data Commons Public Domain Dedication and Licence 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PHP-3_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PHP-3_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PHP-3_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "PHP License 3.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PostgreSQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PostgreSQL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/PostgreSQL> <http://www.w3.org/2004/02/skos/core#prefLabel> "PostgreSQL License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Python-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Python-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Python-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Python License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/QPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/QPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/QPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Q Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RPL-1_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RPL-1_5> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RPL-1_5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reciprocal Public License 1.5"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RPSL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RPSL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RPSL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "RealNetworks Public Source License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RSCPL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RSCPL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/RSCPL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ricoh Source Code Public License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SISSL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SISSL> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SISSL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sun Industry Standards Source License 1.1"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SPL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SPL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SPL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sun Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SimPL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SimPL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/SimPL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Simple Public License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Sleepycat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Sleepycat> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Sleepycat> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sleepycat License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Talis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Talis> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Talis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Talis Community License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Unlicense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Unlicense> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Unlicense> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unlicense"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/VSL-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/VSL-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/VSL-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vovida Software License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/W3C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/W3C> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/W3C> <http://www.w3.org/2004/02/skos/core#prefLabel> "W3C License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/WXwindows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/WXwindows> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/WXwindows> <http://www.w3.org/2004/02/skos/core#prefLabel> "wxWindows Library License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Watcom-1_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Watcom-1_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Watcom-1_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sybase Open Watcom Public License 1.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Xnet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Xnet> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Xnet> <http://www.w3.org/2004/02/skos/core#prefLabel> "X.Net License"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ZPL-2_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ZPL-2_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ZPL-2_0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Zope Public License 2.0"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Zlib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Zlib> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/Zlib> <http://www.w3.org/2004/02/skos/core#prefLabel> "zlib/libpng license"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2000/01/rdf-schema#label> "Content Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://purl.org/dc/terms/description> "Collection of licenses which applies to a content."@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://purl.org/dc/terms/title> "Content Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/AFL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Against-DRM> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-4_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-NC-4_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-SA-4_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC0-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/DSL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/FAL-1_3> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/GFDL-1_3-no-cover-texts-no-invariant-sections> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MirOS> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/NPOSL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-Canada-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OSL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Talis> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/hesa-withrights> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/localauth-withrights> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/other-at> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/other-open> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/other-pd> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ukclickusepsi> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown-withrights> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/contentLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ukpsi> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2000/01/rdf-schema#label> "Data Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://purl.org/dc/terms/description> "Collection of licenses which applies to a data."@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://purl.org/dc/terms/title> "Data Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-4_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-NC-4_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC-BY-SA-4_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC0-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LO-FR-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ODC-BY-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ODbL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-Canada-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/PDDL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/dli-model-use> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dataLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/geogratis> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dli-model-use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dli-model-use> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/dli-model-use> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistics Canada: Data Liberation Initiative (DLI) - Model Data Use Licence"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/geogratis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/geogratis> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/geogratis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geogratis"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/hesa-withrights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/hesa-withrights> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/hesa-withrights> <http://www.w3.org/2004/02/skos/core#prefLabel> "Higher Education Statistics Agency Copyright with data.gov.uk rights"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/localauth-withrights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/localauth-withrights> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/localauth-withrights> <http://www.w3.org/2004/02/skos/core#prefLabel> "Local Authority Copyright with data.gov.uk rights"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/met-office-cp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/met-office-cp> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/met-office-cp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Met Office UK Climate Projections Licence Agreement"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/mitre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/mitre> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/mitre> <http://www.w3.org/2004/02/skos/core#prefLabel> "MITRE Collaborative Virtual Workspace License (CVW License)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/notspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/notspecified> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/notspecified> <http://www.w3.org/2004/02/skos/core#prefLabel> "License Not Specified"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-at> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-at> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-at> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other (Attribution)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-closed> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-closed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other (Not Open)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-nc> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-nc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other (Non-Commercial)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-open> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-open> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other (Open)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-pd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-pd> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/other-pd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Other (Public Domain)"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Collection> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2000/01/rdf-schema#label> "Software Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://purl.org/dc/terms/description> "Collection of licenses which applies to a software."@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://purl.org/dc/terms/title> "Software Licenses"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/AAL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/AFL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/AGPL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/APL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/APSL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-1_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Apache-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Artistic-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-2-Clause> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/BSD-3-Clause> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/BSL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/BitTorrent-1_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CATOSL-1_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CC0-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CDDL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CECILL-2_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CNRI-Python> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CPAL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/CUA-OPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ECL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/EFL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/EPL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/EUDatagrid> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/EUPL-1_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Entessa> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Fair> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Frameworx-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/GPL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/HPND> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/IPA> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/IPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ISC> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Intel> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-2_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LGPL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LPL-1_02> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/LPPL-1_3c> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MIT> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-1_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MPL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MS-PL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MS-RL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/MirOS> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Motosoto> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Multics> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/NASA-1_3> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/NCSA> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/NGPL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/NPOSL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/NTP> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Naumen> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Nokia> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OCLC-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OFL-1_1> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGL-UK-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OGTSL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/OSL-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/PHP-3_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/PostgreSQL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Python-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/QPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/RPL-1_5> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/RPSL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/RSCPL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/SISSL> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/SPL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/SimPL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Sleepycat> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Unlicense> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/VSL-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/W3C> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/WXwindows> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Watcom-1_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Xnet> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/ZPL-2_0> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/Zlib> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/softwareLicenses> <http://www.w3.org/2004/02/skos/core#member> <https://w3id.org/axone/ontology/v4/thesaurus/license/mitre> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukclickusepsi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukclickusepsi> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukclickusepsi> <http://www.w3.org/2004/02/skos/core#prefLabel> "UK Click Use PSI"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown> <http://www.w3.org/2004/02/skos/core#prefLabel> "UK Crown Copyright"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown-withrights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown-withrights> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukcrown-withrights> <http://www.w3.org/2004/02/skos/core#prefLabel> "UK Crown Copyright with data.gov.uk rights"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukpsi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukpsi> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/v4/thesaurus/license> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license/ukpsi> <http://www.w3.org/2004/02/skos/core#prefLabel> "UK PSI Public Sector Information"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/axone/ontology/v4/thesaurus/license> <http://www.w3.org/2000/01/rdf-schema#label> "Open Source Licenses Thesaurus"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license> <http://purl.org/dc/terms/description> "This thesaurus defines a controlled vocabulary referencing the (major) Open Source licenses."@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license> <http://purl.org/dc/terms/title> "Open Source licenses Thesaurus"@en .
+<https://w3id.org/axone/ontology/v4/thesaurus/license> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://licenses.opendefinition.org/> .
