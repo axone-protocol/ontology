@@ -22,6 +22,8 @@ plugins:
               numReplacements: 1
   - - "@semantic-release/exec"
     - prepareCmd: make build
+  - - "@semantic-release/exec"
+    - prepareCmd: make docs
   - - "@semantic-release/github"
     - successComment: false
       assets:
@@ -35,6 +37,7 @@ plugins:
           path: ./target/axone-ontology-*-bundle.tar.gz
   - - "@semantic-release/git"
     - assets:
+        - docs/schemas/*.md
         - CHANGELOG.md
         - version
       message: "chore(release): perform release ${nextRelease.version}"
