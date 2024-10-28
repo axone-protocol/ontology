@@ -125,7 +125,7 @@ jobs:
 
       - name: Install Python Poetry
         if: steps.changed-poetry-files.outputs.any_changed == 'true'
-        uses: abatilo/actions-poetry@v3.0.0
+        uses: abatilo/actions-poetry@v3.0.1
         with:
           poetry-version: 1.7.1
 
@@ -159,7 +159,7 @@ jobs:
 
       - name: Install Python Poetry
         if: steps.changed-python-files.outputs.any_changed == 'true'
-        uses: abatilo/actions-poetry@v3.0.0
+        uses: abatilo/actions-poetry@v3.0.1
         with:
           poetry-version: 1.7.1
 
