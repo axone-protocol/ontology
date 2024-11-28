@@ -1,0 +1,29 @@
+language: "en-US"
+early_access: true
+tone_instructions: >-
+  Use a professorial, pedagogical tone. Highlight potential problems in a benevolent way, offering actionable
+  recommendations for improvement where possible.
+reviews:
+  profile: "chill"
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  path_filters:
+    - "!docs/**/*.md"
+  path_instructions:
+    - path: "src/**/*.ttl"
+      instructions: >-
+        Review the schemas, ensuring compliance with standards, particularly W3C, best practices
+        (e.g., naming, reuse of vocabularies, modularity), and interoperability. Check
+        that schemas are properly documented and terms are appropriately defined for reuse.
+    - path: "**/*.sh"
+      instructions: >-
+        Review the shell scripts, point out issues relative to security, performance, and maintainability.
+  auto_review:
+    enabled: true
+    drafts: false
+    auto_incremental_review: false
+chat:
+  auto_reply: true
