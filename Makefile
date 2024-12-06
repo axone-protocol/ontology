@@ -17,7 +17,7 @@ COLOR_WHITE  := $(shell tput -Txterm setaf 7)
 COLOR_YELLOW := $(shell tput -Txterm setaf 3)
 
 # Build constants
-ROOT               := .
+ROOT := .
 
 # - Version constants
 VERSION 	  := $(shell cat version)
@@ -26,17 +26,17 @@ VERSION_MINOR := $(word 2,$(subst ., ,$(VERSION)))
 VERSION_PATCH := $(word 3,$(subst ., ,$(VERSION)))
 
 # - Destination directories
-DST                := $(ROOT)/target
-DST_CACHE          := $(DST)/.cache
-DST_DOCS		   := $(ROOT)/docs
-DTS_DOCS_SCHEMAS   := $(DST_DOCS)/schemas
-DST_MAKE           := $(DST)/.make
-DST_ONT            := $(DST)/ontology/v$(VERSION_MAJOR)
-DST_SCHEMA         := $(DST_ONT)/schema
-DST_THESAURUS      := $(DST_ONT)/thesaurus
-DST_FORMAT         := $(DST_MAKE)/format
-DST_LINT           := $(DST_MAKE)/lint
-DST_TEST           := $(DST_MAKE)/test
+DST              := $(ROOT)/target
+DST_CACHE        := $(DST)/.cache
+DST_DOCS		 := $(ROOT)/docs
+DTS_DOCS_SCHEMAS := $(DST_DOCS)/schemas
+DST_MAKE         := $(DST)/.make
+DST_ONT          := $(DST)/ontology/v$(VERSION_MAJOR)
+DST_SCHEMA       := $(DST_ONT)/schema
+DST_THESAURUS    := $(DST_ONT)/thesaurus
+DST_FORMAT       := $(DST_MAKE)/format
+DST_LINT         := $(DST_MAKE)/lint
+DST_TEST         := $(DST_MAKE)/test
 
 # - Build
 SRC_ONT             := $(ROOT)/src
@@ -60,22 +60,22 @@ BIN_AXONE_TTL       := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION).ttl
 BIN_AXONE_NT        := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION).nt
 BIN_AXONE_RDFXML    := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION).rdf.xml
 BIN_AXONE_BUNDLE    := $(DST)/$(AXONE_ARTIFACT_ID)-$(VERSION)-bundle.tar.gz
-BIN_DOC_SCHEMAS	   := $(patsubst %.ttl,$(DTS_DOCS_SCHEMAS)/%.md,$(notdir $(SRC_SCHEMAS)))
+BIN_DOC_SCHEMAS	    := $(patsubst %.ttl,$(DTS_DOCS_SCHEMAS)/%.md,$(notdir $(SRC_SCHEMAS)))
 
 # - Format
-FLG_FMT_TTLS       := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
+FLG_FMT_TTLS := $(patsubst $(SRC_ONT)/%.ttl,$(DST_FORMAT)/%.formatted,$(SRC_ONTS))
 
 # - Lint
-FLG_LINT_TTLS      := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
-FLG_LINT_JSONLDS   := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_LINT)/%.linted,$(SRC_EXAMPLES))
+FLG_LINT_TTLS    := $(patsubst $(SRC_ONT)/%.ttl,$(DST_LINT)/%.linted,$(SRC_ONTS))
+FLG_LINT_JSONLDS := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_LINT)/%.linted,$(SRC_EXAMPLES))
 
 # - Test
-SRC_TST            := $(ROOT)/test
-SRC_TSTS           := $(shell find $(SRC_TST) -name "*.ttl" | sort)
-FLG_TSTS           := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
+SRC_TST  := $(ROOT)/test
+SRC_TSTS := $(shell find $(SRC_TST) -name "*.ttl" | sort)
+FLG_TSTS := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 
 # - Script
-SRC_SCRIPT         := $(ROOT)/script
+SRC_SCRIPT := $(ROOT)/script
 
 # Docker images
 DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:4.10.0
