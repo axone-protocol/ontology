@@ -152,7 +152,7 @@ all: help
 
 ## Clean:
 .PHONY: clean
-clean: clean-cache clean-build ## Clean all generated files
+clean: clean-cache clean-build clean-ontologies ## Clean all generated files
 	@echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST}${COLOR_RESET}"
 	@rm -rf ${DST}
 
@@ -162,9 +162,14 @@ clean-cache: ## Clean the cache
 	@rm -rf ${DST_CACHE}
 
 .PHONY: clean-build
-clean-make: ## Clean the make build directory
+clean-build: ## Clean the .make (build) directory
 	@echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST_MAKE}${COLOR_RESET}"
 	@rm -rf ${DST_MAKE}
+
+.PHONY: clean-ontologies
+clean-ontologies: ## Clean the built ontologies
+	@echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST_ONT}${COLOR_RESET}"
+	@rm -rf ${DST_ONT}
 
 ## Build:
 .PHONY: build
