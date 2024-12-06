@@ -152,9 +152,14 @@ all: help
 
 ## Clean:
 .PHONY: clean
-clean: ## Clean all generated files
+clean: clean-cache ## Clean all generated files
 	@echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST}${COLOR_RESET}"
 	@rm -rf ${DST}
+
+.PHONY: clean-cache
+clean-cache: ## Clean the cache
+	@echo "${COLOR_CYAN}🧹 cleaning: ${COLOR_GREEN}${DST_CACHE}${COLOR_RESET}"
+	@rm -rf ${DST_CACHE}
 
 ## Build:
 .PHONY: build
