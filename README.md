@@ -191,6 +191,9 @@ Usage:
 Targets:
   Clean:
     clean                 Clean all generated files
+    clean-cache           Clean the cache
+    clean-build           Clean the .make (build) directory
+    clean-ontologies      Clean the built ontologies
   Build:
     build                 Build all the files
     build-ontology        Build the ontology in all available formats (N-Triples, RDF/XML, JSON-LD)
