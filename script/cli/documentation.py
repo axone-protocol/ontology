@@ -6,7 +6,7 @@ import click
 from jinja2 import FileSystemLoader, Environment
 from rdflib import URIRef, RDF, SKOS, DCTERMS, RDFS, Graph, Namespace
 from rdflib.namespace import NamespaceManager
-from rdflib.term import Node
+from rdflib.term import Node, IdentifiedNode, Literal, Variable
 
 PathLikeStr = os.PathLike[str]
 
@@ -132,7 +132,7 @@ def is_credential_class(node: URIRef) -> bool:
     return str(node).endswith("Credential")
 
 
-def value(subject: Node | None, graph: Graph, predicate: Node | None) -> Node | None:
+def value(subject: t.Union[IdentifiedNode, Literal, Variable] | None, graph: Graph, predicate: IdentifiedNode | None) -> Node | None:
     return graph.value(subject, predicate)
 
 
@@ -145,11 +145,11 @@ def curiefy(uri: str, graph: Graph) -> str:
     return graph.namespace_manager.curie(uri)
 
 
-def domains(predicate: Node, graph: Graph) -> list[Node]:
+def domains(predicate: IdentifiedNode, graph: Graph) -> list[Node]:
     return sorted(graph.objects(predicate, SCHEMA.domainIncludes), key=str)
 
 
-def ranges(predicate: Node, graph: Graph) -> list[Node]:
+def ranges(predicate: IdentifiedNode, graph: Graph) -> list[Node]:
     return sorted(graph.objects(predicate, SCHEMA.rangeIncludes), key=str)
 
 
