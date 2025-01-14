@@ -79,7 +79,7 @@ SRC_SCRIPT := $(ROOT)/script
 
 # Docker images
 DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:5.2.0
-DOCKER_IMAGE_HTTPD        := httpd:2.4.51
+DOCKER_IMAGE_HTTPD        := httpd:2.4.62-alpine3.21
 DOCKER_IMAGE_JRE          := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.38.0
 DOCKER_IMAGE_POETRY       := fnndsc/python-poetry:1.7.1
