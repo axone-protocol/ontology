@@ -78,7 +78,7 @@ FLG_TSTS := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 SRC_SCRIPT := $(ROOT)/script
 
 # Docker images
-DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:4.10.0
+DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:5.2.0
 DOCKER_IMAGE_HTTPD        := httpd:2.4.51
 DOCKER_IMAGE_JRE          := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.38.0
