@@ -140,7 +140,7 @@ CLI = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_CLI} sh -c "poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"
+	${DOCKER_IMAGE_CLI} sh -c "poetry run --project $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"
 MARKDOWN_LINT = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
