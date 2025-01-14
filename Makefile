@@ -88,7 +88,7 @@ DOCKER_IMAGE_RUBY_RDF     := okp4/ruby-rdf:3.3.1
 DOCKER_IMAGE_CLI	      := okp4/cli
 
 # Executables
-VERSION_OWL_CLI := 1.2.4
+VERSION_OWL_CLI := 1.2.5
 EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
 
 # Other constants
