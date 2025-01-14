@@ -88,7 +88,7 @@ jobs:
 
       - name: Generate documentation
         run: |
-          find docs -type f -name "*.md" -exec chmod 666 {} +
+          find docs -type f -name "*.md" -exec chmod $NUMBER_OF_THE_BEAST {} + # This is a hack
           make docs
         env:
           NUMBER_OF_THE_BEAST: 666

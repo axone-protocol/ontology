@@ -78,17 +78,17 @@ FLG_TSTS := $(patsubst $(SRC_TST)/%.ttl,$(DST_TEST)/%.tested,$(SRC_TSTS))
 SRC_SCRIPT := $(ROOT)/script
 
 # Docker images
-DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:4.10.0
-DOCKER_IMAGE_HTTPD        := httpd:2.4.51
+DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:5.2.0
+DOCKER_IMAGE_HTTPD        := httpd:2.4.62-alpine3.21
 DOCKER_IMAGE_JRE          := eclipse-temurin:19.0.2_7-jre-focal
-DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.38.0
-DOCKER_IMAGE_POETRY       := fnndsc/python-poetry:1.7.1
-DOCKER_IMAGE_PYSHACL      := ashleysommer/pyshacl:v0.25.0
+DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.42.0
+DOCKER_IMAGE_POETRY       := acidrain/python-poetry:3.10-alpine-2.0.1
+DOCKER_IMAGE_PYSHACL      := ashleysommer/pyshacl:v0.29.1
 DOCKER_IMAGE_RUBY_RDF     := okp4/ruby-rdf:3.3.1
 DOCKER_IMAGE_CLI	      := okp4/cli
 
 # Executables
-VERSION_OWL_CLI := 1.2.4
+VERSION_OWL_CLI := 1.2.5
 EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
 
 # Other constants
@@ -140,7 +140,7 @@ CLI = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
 	-w /usr/src/ontology \
-	${DOCKER_IMAGE_CLI} sh -c "poetry run -C $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"
+	${DOCKER_IMAGE_CLI} sh -c "poetry run --project $(SRC_SCRIPT) cli $1 $2 $3 $4 $5 $6 $7 $8 $9"
 MARKDOWN_LINT = \
   docker run --rm \
 	-v `pwd`:/usr/src/ontology \
