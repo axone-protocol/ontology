@@ -83,7 +83,7 @@ DOCKER_IMAGE_HTTPD        := httpd:2.4.62-alpine3.21
 DOCKER_IMAGE_JRE          := eclipse-temurin:19.0.2_7-jre-focal
 DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.42.0
 DOCKER_IMAGE_POETRY       := acidrain/python-poetry:3.10-alpine-2.0.1
-DOCKER_IMAGE_PYSHACL      := ashleysommer/pyshacl:v0.25.0
+DOCKER_IMAGE_PYSHACL      := ashleysommer/pyshacl:v0.29.1
 DOCKER_IMAGE_RUBY_RDF     := okp4/ruby-rdf:3.3.1
 DOCKER_IMAGE_CLI	      := okp4/cli
 
