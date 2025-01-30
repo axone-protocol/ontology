@@ -5,16 +5,16 @@ from typing import Callable, Dict, Optional, TextIO, Union
 
 import click
 from pyld import jsonld
-from rdflib import Namespace
 
-SCHEMA = Namespace("http://schema.org/")
-AXONE = Namespace("https://w3id.org/axone/ontology/")
+DEFAULT_CONTEXT_MAPPING = {
+    "https://schema.org": "https://schema.org/docs/jsonldcontext.jsonld"
+}
 
 
 def convert_nquads(input_file: Union[str, os.PathLike], output_file: TextIO,
                    context_folder: Optional[Union[str, os.PathLike]] = None, algorithm: str = "URGNA2012") -> None:
     """Converts a JSON-LD schema to N-Quads format."""
-    context_mapping = create_context_mapping(context_folder)
+    context_mapping = create_context_mapping(context_folder, DEFAULT_CONTEXT_MAPPING)
 
     click.echo(f"🔬 Loading graph from {input_file}")
     normalized = jsonld.normalize(
@@ -30,9 +30,9 @@ def convert_nquads(input_file: Union[str, os.PathLike], output_file: TextIO,
     output_file.write(normalized)
 
 
-def create_context_mapping(context_folder: Optional[Union[str, os.PathLike]]) -> Dict[str, str]:
+def create_context_mapping(context_folder: Optional[Union[str, os.PathLike]], default_context_mapping: Dict[str, str] = {}) -> Dict[str, str]:
     """Creates a JSON-LD context mapping from files in the specified folder."""
-    context = {}
+    context_mapping = default_context_mapping.copy()
 
     if context_folder:
         context_folder = str(context_folder)
@@ -42,21 +42,19 @@ def create_context_mapping(context_folder: Optional[Union[str, os.PathLike]]) ->
                 if file.endswith('.jsonld'):
                     file_path = os.path.join(root, file)
                     document = jsonld.load_document(f"file://{Path(file_path).resolve()}",
-                                                    options={'documentLoader': create_custom_document_loader()})
+                                                    options={'documentLoader': create_custom_document_loader(default_context_mapping)})
                     uri = extract_context_uri(document)
                     if uri:
                         click.echo(f"📌 Mapping: {uri} → {file}")
-                        context[uri] = file_path
+                        context_mapping[uri] = f"file://{file_path}"
 
-    return context
+    return context_mapping
 
 
-def create_custom_document_loader(context_mapping: Optional[Dict[str, str]] = None) -> Callable[[str, Dict[str, str]], Dict[str, Union[str, None]]]:
+def create_custom_document_loader(context_mapping: Dict[str, str] = {}) -> Callable[[str, Dict[str, str]], Dict[str, Union[str, None]]]:
     """Creates a custom document loader for JSON-LD which supports local file Axone URIs."""
-    if context_mapping is None:
-        context_mapping = {}
-
     def loader(url: str, options: Dict[str, str] = {}) -> Dict[str, Union[str, None]]:
+        click.echo(f"🛜 Resolving: {url}")
         if url.startswith("file://"):
             path = url[7:]
             with open(path, 'r') as f:
@@ -67,8 +65,7 @@ def create_custom_document_loader(context_mapping: Optional[Dict[str, str]] = No
                     'contextUrl': None
                 }
         elif url in context_mapping:
-            local_path = context_mapping[url]
-            return loader(f"file://{local_path}")
+            return loader(context_mapping[url])
         else:
             return jsonld.requests_document_loader()(url, options=options)
 
@@ -85,7 +82,8 @@ def extract_context_uri(document: Dict) -> Optional[str]:
         elif isinstance(context, list):
             return context[0] if context else None
         elif isinstance(context, dict):
-            first_id = next((v.get('@id') for v in context.values() if isinstance(v, dict) and '@id' in v), None)
+            first_id = next((v.get('@id') for v in context.values()
+                            if isinstance(v, dict) and '@id' in v), None)
             if first_id:
                 match = re.match(r'(.*/).*', first_id)
                 return match.group(1) if match else None
