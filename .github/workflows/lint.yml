@@ -93,7 +93,7 @@ jobs:
         env:
           NUMBER_OF_THE_BEAST: 666
 
-      - name: Check Git diff in generated files (proto + docs)
+      - name: Check Git diff in generated files (docs)
         run: |
           if [[ $(git status -s) != "" ]]; then
             >&2 echo "❌ There is a diff between generated files and source code"
