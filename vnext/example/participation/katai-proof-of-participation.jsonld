@@ -1,0 +1,26 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/axone/ontology/vnext/schema/credential/proof-of-participation/",
+        "https://schema.org"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ProofOfParticipationCredential"
+    ],
+    "id": "https://credentials.axone.xyz/proof-of-participation/katai/42",
+    "credentialSubject": {
+        "id": "urn:addr:axone1y6wwdp0gmgnj6hf0jt0r67axhw0fp5dsq37ccv",
+        "participatedIn": {
+            "id": "https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918",
+            "name": "KatAI | Community-Driven Kat Art, AI & Rewards",
+            "startDate": "2025-01-08T17:00:00.000Z",
+            "endDate": "2025-01-29T16:59:59.000Z"
+        }
+    },
+    "issuanceDate": "2025-01-11T19:14:24.344904+01:00",
+    "issuer": {
+        "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+        "name": "Axone"
+    }
+}

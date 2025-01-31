@@ -1,0 +1,10 @@
+<did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> <http://schema.org/name> "Axone" .
+<https://credentials.axone.xyz/proof-of-participation/katai/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/axone/ontology/vnext/schema/credential/proof-of-participation/ProofOfParticipationCredential> .
+<https://credentials.axone.xyz/proof-of-participation/katai/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://credentials.axone.xyz/proof-of-participation/katai/42> <https://www.w3.org/2018/credentials#credentialSubject> <urn:addr:axone1y6wwdp0gmgnj6hf0jt0r67axhw0fp5dsq37ccv> .
+<https://credentials.axone.xyz/proof-of-participation/katai/42> <https://www.w3.org/2018/credentials#issuanceDate> "2025-01-11T19:14:24.344904+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://credentials.axone.xyz/proof-of-participation/katai/42> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
+<https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/endDate> "2025-01-29T16:59:59.000Z"^^<http://schema.org/Date> .
+<https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/name> "KatAI | Community-Driven Kat Art, AI & Rewards" .
+<https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/startDate> "2025-01-08T17:00:00.000Z"^^<http://schema.org/Date> .
+<urn:addr:axone1y6wwdp0gmgnj6hf0jt0r67axhw0fp5dsq37ccv> <https://w3id.org/axone/ontology/vnext/schema/credential/proof-of-participation/participatedIn> <https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> .
