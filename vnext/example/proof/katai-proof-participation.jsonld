@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/axone/ontology/vnext/schema/credential/proof-of-participation/",
+        "https://w3id.org/axone/ontology/vnext/schema/credential/proof/participation/",
         "https://schema.org"
     ],
     "type": [
