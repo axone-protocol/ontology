@@ -6,5 +6,11 @@
 <https://credentials.axone.xyz/proof-of-participation/katai/42> <https://www.w3.org/2018/credentials#issuer> <did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3> .
 <https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/endDate> "2025-01-29T16:59:59.000Z"^^<http://schema.org/Date> .
 <https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/name> "KatAI | Community-Driven Kat Art, AI & Rewards" .
+<https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/organizer> _:c14n0 .
 <https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/startDate> "2025-01-08T17:00:00.000Z"^^<http://schema.org/Date> .
+<https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://schema.org/url> <https://play.katai.axone.xyz> .
+<https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ExhibitionEvent> .
 <urn:addr:axone1y6wwdp0gmgnj6hf0jt0r67axhw0fp5dsq37ccv> <https://w3id.org/axone/ontology/vnext/schema/credential/proof/participation/participatedIn> <https://play.katai.axone.xyz/sprints/c5295c01-8381-4747-b7be-c7b12dc3b918> .
+_:c14n0 <http://schema.org/name> "Axone" .
+_:c14n0 <http://schema.org/url> <https://axone.xyz> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
