@@ -57,7 +57,7 @@ jobs:
 
       - name: Find changed ttl files
         id: changed-ttl-files
-        uses: tj-actions/changed-files@v45.0.7
+        uses: tj-actions/changed-files@v46.0.1
         with:
           files: |
             src/**/*.ttl
@@ -111,7 +111,7 @@ jobs:
 
       - name: Check if poetry files have changed
         id: changed-poetry-files
-        uses: tj-actions/changed-files@v45.0.7
+        uses: tj-actions/changed-files@v46.0.1
         with:
           files: |
             script/poetry.lock
@@ -146,7 +146,7 @@ jobs:
 
       - name: Check if python files have changed
         id: changed-python-files
-        uses: tj-actions/changed-files@v45.0.7
+        uses: tj-actions/changed-files@v46.0.1
         with:
           files: |
             script/**/*.*
