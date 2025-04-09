@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix tst: <https://w3id.org/axone/ontology/test/> .
+@prefix : <https://w3id.org/axone/ontology/v$major/schema/credential/zone/membership/> .
+
+tst:AssertZoneMembershipCredential a sh:NodeShape ;
+  sh:targetClass :ZoneMembershipCredential ;
+
+  sh:property [
+    sh:path :inZone ;
+    sh:datatype xsd:anyURI ;
+    sh:minCount 1 ;
+    sh:message ":ZoneMembershipCredential must have an :inZone property with a valid URI."@en ;
+  ] ;
+
+  sh:property [
+    sh:path :forResource ;
+    sh:datatype xsd:anyURI ;
+    sh:minCount 1 ;
+    sh:message ":ZoneMembershipCredential must have a :forResource property with a valid URI."@en ;
+  ] ;
+
+  sh:property [
+    sh:path :hasMembershipRole ;
+    sh:datatype xsd:string ;
+    sh:minCount 0 ;
+    sh:maxCount 1 ;
+    sh:message "Optional :hasMembershipRole must be a string if present."@en ;
+  ] .

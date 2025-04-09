@@ -1,0 +1,20 @@
+{
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/axone/ontology/v$major/schema/credential/zone/membership/"
+    ],
+    "type": ["VerifiableCredential", "ZoneMembershipCredential"],
+    "id": "https://w3id.org/axone/ontology/v$major/schema/credential/zone/membership/1a34c83e-7d5a-4d55-94f1-60c32dbd77f6",
+    "credentialSubject": {
+      "id": "did:key:zZ9shZoneMem1ab7D4dA1cCz38dMvNfzZtxqyNtkKv2gb",
+      "forResource": "did:key:zQ3shRfADCmegmmKotqCjzDc9BHWDpbEzp9yMiN5RkJx88oP5",
+      "inZone": "did:key:zQ3shunN7us5oKNYKKzprW8nP5HAoTf4t2Fxyudho5zMAR1PQ",
+      "hasMembershipRole": "contributor"
+    },
+    "issuanceDate": "2025-04-09T10:00:00.000Z",
+    "issuer": {
+      "id": "did:key:zQ3shs7auhJSmVJpiUbQWco6bxxEhSqWnVEPvaBHBRvBKw6Q3",
+      "name": "OKP4"
+    }
+  }
+  
