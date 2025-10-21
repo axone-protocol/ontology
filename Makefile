@@ -337,10 +337,12 @@ test-ontology: check build-ontology-nt $(FLG_TSTS) ## Test the ontology
 
 $(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 test: ${COLOR_GREEN}$<${COLOR_RESET}"
-	mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@mkdir -p -m $(PERMISSION_MODE) $(@D)
+	@cp $< $(DST_TEST)/$*.ttl
+	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $(DST_TEST)/$*.ttl
 	@bash -c '\
 		for target in $(BIN_AXONE_NT); do \
-			$(call RDF_SHACL,$<,$$target,$@) \
+			$(call RDF_SHACL,$(DST_TEST)/$*.ttl,$$target,$@) \
 			&& echo "  ↳ ✅ ${COLOR_CYAN}$$target ${COLOR_GREEN}passed ${COLOR_CYAN}$<${COLOR_RESET}" \
 			|| { \
 				echo "  ↳ ❌ ${COLOR_CYAN}$$target ${COLOR_RED}failed ${COLOR_CYAN}$<${COLOR_RESET}"; \
