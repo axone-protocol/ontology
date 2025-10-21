@@ -333,7 +333,15 @@ docs-schemas: check cache $(BIN_DOC_SCHEMAS) ## Generate schemas markdown docume
 test: test-ontology ## Run all available tests
 
 .PHONY: test-ontology
-test-ontology: check build-ontology-nt $(FLG_TSTS) ## Test the ontology
+test-ontology: check build-ontology-nt ## Test the ontology (use FORCE=1 to ignore markers)
+	@if [ "$(FORCE)" = "1" ]; then \
+		echo "${COLOR_CYAN}🗜️ force testing: ${COLOR_RESET}removing markers and running all tests"; \
+		rm -f $(FLG_TSTS); \
+	fi
+	@$(MAKE) _test-ontology-run
+
+.PHONY: _test-ontology-run
+_test-ontology-run: $(FLG_TSTS)
 
 $(FLG_TSTS): $(DST_TEST)/%.tested: $(SRC_TST)/%.ttl $(wildcard $(DST_ONT)/*.ttl)
 	@echo "${COLOR_CYAN}🧪 test: ${COLOR_GREEN}$<${COLOR_RESET}"
