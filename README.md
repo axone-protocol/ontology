@@ -98,7 +98,7 @@ __Persistent URI Benefits:__
 Axone semantic resources adopt the [Semantic Versioning](https://semver.org/) format of `MAJOR.MINOR.PATCH`. This approach includes incorporating the `MAJOR` version number into the URI. As a result, the URI structure is:
 
 ```text
-https://w3id.org/axone/ontology/<MAJOR>/<path>
+https://w3id.org/axone/ontology/v<MAJOR>/<path>
 ```
 
 Note: by including only the `MAJOR` version number in the URI, significant updates that could impact compatibility are referenced through a different namespace. `MINOR` and `PATCH` updates that do not introduce breaking changes have no impact on the URI, maintaining the stability of the URI for external references.
