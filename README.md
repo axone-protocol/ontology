@@ -1,6 +1,6 @@
 # Axone Ontology
 
-> The ontology used [@axone](https://axone.xyz) to describe knowledge data, services and processes in the Axone protocol.
+> RDF vocabularies, thesauri, and Verifiable Credential payload schemas used by the Axone protocol.
 
 [![release](https://img.shields.io/github/v/release/axone-protocol/ontology?style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/releases)
 [![lint](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/lint.yml)
@@ -13,96 +13,95 @@
 
 ## The [Axone](https://axone.xyz) ontology
 
-This ontology defines and specifies the various schemas and vocabularies employed in the [Axone protocol](https://axone.xyz), utilizing a formal and standardized methodology.
+This repository defines RDF vocabularies, thesauri, and Verifiable Credential payload schemas used by the [Axone protocol](https://axone.xyz).
 
-Essentially, the Axone ontology is structured around two primary dimensions.
+It provides the semantic artefacts required to name, describe, and constrain credential payloads in Axone.
 
-### The Semantic Dimension
+### Vocabulary and thesauri
 
-An [Ontology](https://www.w3.org/standards/semanticweb/ontology), as defined by the [W3C](https://www.w3.org), is a foundational and broad concept of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web). It connects various data elements, providing a conceptual semantic framework about them. Typically, an ontology consists of concepts, relationships, properties, axioms, and instances.
+[Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) use JSON-LD contexts to map credential terms to machine-readable identifiers. Axone defines these terms with RDF-compatible vocabularies and controlled thesauri so that credential payloads can be interpreted consistently across implementations.
 
-<p align="center">
-  <img src="etc/ontology-equation.webp" alt="Ontology equation" width="600"/>
-</p>
+Axone uses [RDF Schema](http://www.w3.org/TR/rdf-schema/) to define reusable semantic terms and [SKOS](https://www.w3.org/TR/skos-reference/) for controlled vocabularies. Both are built on top of the [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/). This keeps the model lightweight while remaining compatible with RDF and JSON-LD tooling.
 
-The knowledge representation language chosen for Axone is [RDF Schema](http://www.w3.org/TR/rdf-schema/), and [SKOS](https://www.w3.org/TR/skos-reference/) for thesauri, both of which are built on top of the framework [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/).
+### Verifiable Credential payload schemas
 
-<p align="center">
-  <img src="etc/rdf-stack.webp" alt="RDF stack" width="600"/>
-</p>
+This repository defines semantic payload schemas for VCs.
 
-In this framework, the Axone ontology is dedicated to constructing a semantic network that encapsulates various resources, such as Zones, Digital Resources, Digital Services, to name a few. It focuses on semantically defining these entities and elucidating the interconnections they share.
+These schemas describe the content carried by credentials. They are designed to remain generic and extensible. A schema should be introduced only when it captures a stable payload structure that cannot be expressed cleanly through an existing one.
 
-### The Trust and Proof Dimension
+Axone distinguishes between informational credentials and governance-relevant credentials.
 
-This particular aspect of the ontology addresses the representation of information related to resources using [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential) (VCs). VCs play a critical role in asserting properties about subjects, which, within the framework of this ontology, are considered resources. These resources can be varied, like Zones, Digital Resources or Digital Services.
+Informational credentials carry descriptive material. They help humans, wallets, explorers, indexers, and agents discover or understand an identifiable subject. They are not intended to provide material that can directly support a governance decision.
 
-In the context of the Axone ontology, each resource is uniquely identified by [Decentralized Identifiers](https://www.w3.org/TR/did-core/) (DIDs). DIDs are a key component in the decentralized identity ecosystem, providing a mechanism for establishing and verifying the identity of a resource without centralized control. This identification system is integral to the structure and function of the ontology, ensuring that each resource is distinct, easily identifiable and easily traceable.
+Governance-relevant credentials carry structured information that may be evaluated by a governance process. They may express facts, rights, attestations, authorisations, or other statements with normative or evidentiary value.
 
-The use of VCs in this framework brings several advantages. Firstly, VCs allow for the assertion of specific properties about a resource. This means that each resource can carry with it a set of verifiable information, detailing its characteristics, and any other relevant attributes. Secondly, because VCs are inherently designed to be tamper-evident and cryptographically secure, they enhance the reliability and transparency of the information they convey, ensuring integrity and clarity in both off-chain and on-chain contexts.
+Core VC schemas live under the `schema/core` sub-domain.
 
-This approach results in a more reliable and robust system, where the data about resources, backed by the claims from Verifiable Credentials, can be shared and used with confidence. These claims, being trusted sources of information, are instrumental for decision-making in established on-chain Governance rules.
+Some credentials are descriptive. They help identify, discover, and display a subject.
 
-## At the heart of the Axone blockchain
+Other credentials are governance-relevant. They carry structured statements that may be evaluated by protocol components.
 
-In the [Axone protocol](https://axone.xyz), the ontology is crucial, especially as key data is introduced to the blockchain in the form of [Verifiable Presentations](https://www.w3.org/TR/vc-data-model/#presentations) (VPs). VPs, often a selected subset of [VCs](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential) with a verifiable chain, serve as the medium for conveying knowledge to the blockchain.
+### Credential authorship
 
-This process is integral in ensuring that the semantics of nearly all transactions, which describe the Dataverse on the blockchain, are captured within this ontology framework. As a result, significant activities within the Axone ecosystem —such as the establishment of a Zone, the announcement of a Digital Service, or the description of a Dataset— are communicated through these Verifiable Presentations.
+Axone credentials are not expected to carry embedded off-chain proofs when submitted to the protocol.
 
-The use of VPs in this context is not merely a procedural step; it introduces a profound layer of semantic precision and trust. This is crucial for the blockchain environment, where clarity and verifiability are paramount. Furthermore, the data presented on-chain through VPs become vital resources for on-chain governance decisions. They provide a reliable basis for the formulation and execution of governance rules, ensuring that decisions are made on the basis of verified and accurate information. Thus, the integration of VPs into the [Axone protocol](https://axone.xyz)'s ontology enhances both the functionality and the integrity of the system.
+Authorship is established by the account that submits the credential. The transaction signer controls the abstract account that emits the credential. The credential payload therefore carries semantics; the protocol submission carries authorship.
 
-## Ontology Design
+When an Axone account is represented as a DID, examples use the `did:pkh` method grounded in the on-chain abstract account address, for example `did:pkh:cosmos:<chain_id>:cosmos1...`.
 
-### Ontology construction process
+### Use in Axone
 
-The construction of this ontology follows a number of steps which are described below:
+In the [Axone protocol](https://axone.xyz), the ontology provides the vocabulary used to describe credential payloads and controlled terms.
+
+Credentials may either provide informational metadata or carry governance-relevant material. Informational payloads can be discovered, indexed, and displayed. Governance-relevant payloads can be referenced or evaluated by protocol components according to their own rules.
+
+Domain-specific facts such as licences, compliance status, authority, capability, resource properties, or identity attributes can often be represented through assertion predicates. Dedicated schemas should be introduced only when the structure has a stable and concrete use case that is not cleanly captured by the generic assertion model.
+
+## Design
+
+### Construction process
+
+The construction of the semantic model follows a number of steps which are described below:
 
 - __Ontology scope definition (1) & knowledge acquisition (2)__: Identification and definition of key concepts and relationships in the domain of interest and the terms that refer to such concepts, in natural language.
 - __Ontology specification (3) & conceptualization (4)__: Formalizing of the elements identified in the previous step in the form of a knowledge representation, using the building blocks of ontologies: classes, attributes, relationships, subsumption.
-- __Ontology implementation (5)__: Encoding the ontology according to the OWL grammar.
-- __Ontology evaluation (6)__: Association of key concepts and terms in the ontology with concepts and terms of other ontologies.
+- __Implementation (5)__: Encoding the semantic model using RDF-compatible formats and JSON-LD contexts.
+- __Evaluation (6)__: Association of key concepts and terms with concepts and terms from other vocabularies when relevant.
 
-<p align="center">
-  <img src="etc/ontology-construction-process.webp" alt="Ontology construction process" width="600"/>
-</p>
+### Organization
 
-### Ontology organization
+The repository is structured in a modular way, with each part representing a specific semantic domain while keeping credential payload schemas generic and extensible.
 
-This ontology is structured in a modular way, with each part representing a specific domain of knowledge, providing a clear *separation of concerns* and a maximum of *extensibility*.
-
-At the root, the ontology is divided into two main parts:
+At the root, the semantic model is divided into two main parts:
 
 - __Thesaurus Part__: This part contains all controlled vocabularies integral to the ontology. The thesaurus adheres to the [SKOS standard](https://www.w3.org/TR/skos-reference/), which is instrumental in ensuring compatibility with other thesauri and simplifying the ontology's integration into various systems.
 
-- __Schema Part__: This part encompasses diverse [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) schemas utilized within the [Axone protocol](https://axone.xyz). These schemas are deployed as [JSON-LD contexts](https://www.w3.org/TR/json-ld11/), a format that maximizes their usability in the Web3 ecosystem and promotes interoperability with existing Digital Credentials Wallets.
+- __Schema Part__: This part contains the active [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) payload schemas used within the [Axone protocol](https://axone.xyz). These schemas are deployed as [JSON-LD contexts](https://www.w3.org/TR/json-ld11/) under the `schema/core` sub-domain. They describe reusable payload semantics, not protocol operations.
 
-The foundational philosophy underpinning the ontology of the [Axone protocol](https://axone.xyz) is grounded in the *Open World* principle. This principle operates on the premise that knowledge is not static or finite; rather, it acknowledges that understanding and information can continuously evolve and expand. In practical terms, this means that the ontology is not confined to a predefined or limited set of schemas and thesauri. Instead, it is inherently designed to accommodate and integrate new and diverse contributions.
+Credential schemas should remain generic when possible. Descriptive credentials carry information about identifiable subjects. Governance-relevant credentials carry structured statements with normative or evidentiary value.
 
-### Axone Ontology URI
+The foundational philosophy underpinning the semantic model is grounded in the *Open World* principle. Knowledge is not static or finite. The model is therefore not confined to a closed set of schemas and thesauri. It is designed to accommodate new terms and payload structures when they are justified by concrete use cases.
+
+### Axone semantic URIs
 
 #### W3ID.org persistent URI
 
-For robust [RDF](https://www.w3.org/RDF/) resources management, the [Axone ontology]([https://github.com/okp4/ontology](https://docs.axone.xyz/technical-documentation/ontology/the-power-of-ontologies)) uses the [w3id.org](https://w3id.org) service for persistent URIs. This strategy is fundamental in maintaining both URI and content stability — an essential feature for web-based semantic technologies.
+For robust [RDF](https://www.w3.org/RDF/) resource management, Axone uses the [w3id.org](https://w3id.org) service for persistent URIs. This strategy maintains both URI and content stability, which is required for web-based semantic technologies.
 
 __Persistent URI Benefits:__
 
-- __Durability:__ [w3id.org](https://w3id.org) URIs are designed to be persistent, meaning they are intended to be available for a long duration. This permanence is crucial for maintaining reliable references, which is crucial for the Axone ontology's long-term accessibility and usability.
-- __Redirect Capability:__ The [w3id.org](https://w3id.org) service enables redirection, allowing the Axone ontology to direct clients to the appropriate resource location as it evolves. This feature is particularly beneficial for versioning, where changes to the ontology structure or content might necessitate updates to the resource location.
+- __Durability:__ [w3id.org](https://w3id.org) URIs are designed to be persistent, meaning they are intended to be available for a long duration. This permanence is crucial for maintaining reliable references over time.
+- __Redirect Capability:__ The [w3id.org](https://w3id.org) service enables redirection, allowing Axone semantic URIs to direct clients to the appropriate resource location as the repository evolves. This feature is particularly useful for versioning.
 
 #### Semantic versioning
 
-In managing [RDF](https://www.w3.org/RDF/) resources, it is essential to balance the stability of URIs with the stability of their referenced content:
-
-- __URI Stability__: URIs must remain constant over time. This ensures that each URI consistently references the same resource, providing a reliable point of reference in web-based knowledge systems.
-- __Content Stability__: The content accessed via these URIs should be stable and avoid introducing breaking changes. This stability is crucial for 3rd party systems referencing these URIs, ensuring that their interactions remain consistent.
-
-The Axone ontology adopts the [Semantic Versioning](https://semver.org/) format of `MAJOR.MINOR.PATCH`. This approach includes incorporating the `MAJOR` version number into the ontology's URI. As a result, the structure of the ontology's URI is:
+Axone semantic resources adopt the [Semantic Versioning](https://semver.org/) format of `MAJOR.MINOR.PATCH`. This approach includes incorporating the `MAJOR` version number into the URI. As a result, the URI structure is:
 
 ```text
 https://w3id.org/axone/ontology/<MAJOR>/<path>
 ```
 
-Note: by including only the `MAJOR` version number in the URI, significant updates that could impact compatibility gives a new ontology version being referenced with a different namespace. `MINOR` updates and `PATCH` (which do not result in breaking changes) have no impact on the URI, maintaining the stability of the URI for external references.
+Note: by including only the `MAJOR` version number in the URI, significant updates that could impact compatibility are referenced through a different namespace. `MINOR` and `PATCH` updates that do not introduce breaking changes have no impact on the URI, maintaining the stability of the URI for external references.
 
 ## Development
 
