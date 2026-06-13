@@ -64,26 +64,6 @@ Profile credentials describe entities such as zones, datasets, digital resources
 
 ### Properties
 
-#### Description
->
-> **IRI**: [credential-profile:description](https://w3id.org/axone/ontology/v4/schema/core/profile/description)
->
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
->
-> **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
-
-A human-readable description of the subject.
-
-#### Image
->
-> **IRI**: [credential-profile:image](https://w3id.org/axone/ontology/v4/schema/core/profile/image)
->
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
->
-> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
-
-An image associated with the subject.
-
 #### Link
 >
 > **IRI**: [credential-profile:link](https://w3id.org/axone/ontology/v4/schema/core/profile/link)
@@ -94,26 +74,6 @@ An image associated with the subject.
 
 A web page or other resource related to the subject.
 
-#### Name
->
-> **IRI**: [credential-profile:name](https://w3id.org/axone/ontology/v4/schema/core/profile/name)
->
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
->
-> **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
-
-A human-readable name for the subject.
-
-#### Same as
->
-> **IRI**: [credential-profile:sameAs](https://w3id.org/axone/ontology/v4/schema/core/profile/sameAs)
->
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
->
-> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
-
-Another identifier or profile that refers to the same subject.
-
 #### Tag
 >
 > **IRI**: [credential-profile:tag](https://w3id.org/axone/ontology/v4/schema/core/profile/tag)
@@ -123,3 +83,43 @@ Another identifier or profile that refers to the same subject.
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 A keyword or term associated with the subject.
+
+#### Description
+>
+> **IRI**: [schema:description](http://schema.org/description)
+>
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+>
+> **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
+
+A human-readable description of the subject.
+
+#### Image
+>
+> **IRI**: [schema:image](http://schema.org/image)
+>
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+>
+> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
+
+An image associated with the subject.
+
+#### Name
+>
+> **IRI**: [schema:name](http://schema.org/name)
+>
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+>
+> **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
+
+A human-readable name for the subject.
+
+#### Same as
+>
+> **IRI**: [schema:sameAs](http://schema.org/sameAs)
+>
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+>
+> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
+
+Another identifier or profile that refers to the same subject.
