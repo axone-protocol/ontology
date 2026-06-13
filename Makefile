@@ -80,7 +80,7 @@ SRC_SCRIPT := $(ROOT)/script
 # Docker images
 DOCKER_IMAGE_FUSEKI       := secoresearch/fuseki:5.2.0
 DOCKER_IMAGE_HTTPD        := httpd:2.4.62-alpine3.21
-DOCKER_IMAGE_JRE          := eclipse-temurin:19.0.2_7-jre-focal
+DOCKER_IMAGE_JRE          := eclipse-temurin:25-jre
 DOCKER_IMAGE_MARKDOWNLINT := thegeeklab/markdownlint-cli:0.42.0
 DOCKER_IMAGE_POETRY       := acidrain/python-poetry:3.10-alpine-2.0.1
 DOCKER_IMAGE_PYSHACL      := ashleysommer/pyshacl:v0.29.1
@@ -88,8 +88,8 @@ DOCKER_IMAGE_RUBY_RDF     := okp4/ruby-rdf:3.3.1
 DOCKER_IMAGE_CLI	      := okp4/cli
 
 # Executables
-VERSION_OWL_CLI := 1.2.5
-EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
+VERSION_OWL_CLI := 2.0.0
+EXEC_OWL_CLI    := cool-rdf-cli-$(VERSION_OWL_CLI).jar
 
 # Other constants
 PERMISSION_MODE := 767
@@ -308,17 +308,14 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 	@touch $@
 
 .PHONY: lint-jsonld
-lint-jsonld: check cache $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
+lint-jsonld: check cache build-ontology-jsonld $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
 
 $(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@cp $< $@.jsonld
-	@sed -i ${SED_FLAG} "s/\$$major/next/g" $@.jsonld
-	@docker run --rm \
-	  -v `pwd`:/usr/src/ontology:ro \
-	  -w /usr/src/ontology \
-	  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $@.jsonld
+	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@.jsonld
+	@${call CLI,jsonld,nquads,$@.jsonld,-o,/dev/null,--algorithm,URDNA2015,--context-folder,$(DST_SCHEMA)}
 	@mv -f $@.jsonld $@
 
 ## Documentation:
@@ -414,7 +411,7 @@ $(DST_CACHE)/$(EXEC_OWL_CLI):
 	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(DST_CACHE); \
     cd $(DST_CACHE); \
-    wget https://github.com/atextor/owl-cli/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
+    wget https://github.com/cool-rdf/cool-rdf/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
 
 $(DST_CACHE)/cli: $(shell find $(SRC_SCRIPT) -name "*.*" -not -path "$(SRC_SCRIPT)/.*")
 	@echo "${COLOR_CYAN}🐳 making ${COLOR_GREEN}$(DOCKER_IMAGE_CLI)${COLOR_RESET} image"

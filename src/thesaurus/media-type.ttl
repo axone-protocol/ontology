@@ -4850,8 +4850,8 @@
   skos:prefLabel "C-Quelltext"@de ;
   skos:prefLabel "C-kildekode"@no ;
   skos:prefLabel "C-lähdekoodi"@fi ;
-  skos:prefLabel "Πηγαίος κώδικας C++"@el ;
-  skos:prefLabel "Πηγαίος κώδικας C"@el .
+  skos:prefLabel "Πηγαίος κώδικας C"@el ;
+  skos:prefLabel "Πηγαίος κώδικας C++"@el .
 
 :text_x-dcl a skos:Concept ;
   :hasMediaType "text/x-dcl" ;
