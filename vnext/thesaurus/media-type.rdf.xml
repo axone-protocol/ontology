@@ -5148,8 +5148,8 @@
         <skos:prefLabel xml:lang="de">C-Quelltext</skos:prefLabel>
         <skos:prefLabel xml:lang="no">C-kildekode</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">C-lähdekoodi</skos:prefLabel>
-        <skos:prefLabel xml:lang="el">Πηγαίος κώδικας C++</skos:prefLabel>
         <skos:prefLabel xml:lang="el">Πηγαίος κώδικας C</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Πηγαίος κώδικας C++</skos:prefLabel>
       </skos:Concept>
     </skos:member>
     <skos:member>

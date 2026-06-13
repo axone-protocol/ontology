@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/axone/ontology/vnext/schema/core/profile/"
+    ],
+    "type": ["VerifiableCredential", "ProfileCredential"],
+    "id": "https://credentials.axone.xyz/profile/collab-ai-zone",
+    "credentialSubject": {
+        "id": "did:pkh:cosmos:axone-1:cosmos1unn7us5oknykkzprw8np5haotf4t2fxyudho5z",
+        "name": "Collaborative AI Zone",
+        "description": "Collaborative AI Zone is dedicated to training AI models in a collaborative and open way.",
+        "tag": [
+            "AI",
+            "Collaboration",
+            "Machine Learning"
+        ],
+        "link": "https://axone.xyz",
+        "sameAs": "https://docs.axone.xyz"
+    },
+    "issuanceDate": "2026-06-11T00:00:00.000000+02:00",
+    "issuer": {
+        "id": "did:pkh:cosmos:axone-1:cosmos1s7auhjsmvjpiubqwco6bxxehsqwnvepvabhbrv",
+        "name": "Axone"
+    }
+}

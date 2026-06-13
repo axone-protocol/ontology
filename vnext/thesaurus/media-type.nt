@@ -4505,8 +4505,8 @@
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-csrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "C-Quelltext"@de .
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-csrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "C-kildekode"@no .
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-csrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "C-lähdekoodi"@fi .
-<https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-csrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Πηγαίος κώδικας C++"@el .
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-csrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Πηγαίος κώδικας C"@el .
+<https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-csrc> <http://www.w3.org/2004/02/skos/core#prefLabel> "Πηγαίος κώδικας C++"@el .
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-dcl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-dcl> <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/hasMediaType> "text/x-dcl" .
 <https://w3id.org/axone/ontology/vnext/thesaurus/media-type/text_x-dcl> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/axone/ontology/vnext/thesaurus/media-type> .
