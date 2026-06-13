@@ -11,7 +11,7 @@
     "credentialSubject": {
         "id": "urn:uuid:5d29ea71-003f-46e7-a74d-d8d598629ed8",
         "subject": "did:pkh:cosmos:axone-1:cosmos1rfadcmegmmkotqcjzdc9bhwdpbezp9ymi5rkjx",
-        "predicate": "axone:hasLicence",
+        "predicate": "http://purl.org/dc/terms/license",
         "object": "CC-BY-4.0",
         "scope": "did:pkh:cosmos:axone-1:cosmos1unn7us5oknykkzprw8np5haotf4t2fxyudho5z",
         "supportingEvidence": "https://example.com/evidence/resource-license"
