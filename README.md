@@ -129,32 +129,6 @@ This will build the `axone` ontology under the `target` directory. The files gen
    └── axone-ontology-<version>-bundle.tar.gz
 ```
 
-### Deploying the ontology in local triple store
-
-The ontology can be deployed in a local triple store using [Docker](https://www.docker.com/). The triple store used is [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/).
-
-To start the triple store, run the following command. This will start the triple store and wait to be ready.
-
-```bash
-make fuseki-up
-```
-
-Then, you can load the `axone` ontology in the triple store using the following command:
-
-```bash
-make fuseki-load
-```
-
-You can now play with the ontology using the Fuseki UI - <http://localhost:3030/>.
-
-Conversaly, to stop the triple store, run the following command:
-
-```bash
-make fuseki-down
-```
-
-⚠️ Note that the triple store is *not persistent*, so all the data will be *lost* when the triple store is stopped.
-
 ### Testing the ontology
 
 The ontology is tested using [Shapes Constraint Language (SHACL)](https://www.w3.org/TR/shacl/). To run the tests, run the following command:
@@ -215,11 +189,6 @@ Targets:
   Test:
     test                  Run all available tests
     test-ontology         Test the ontology
-  Fuseki:
-    fuseki-up             Start a Fuseki server and wait for it to be ready
-    fuseki-down           Stop the Fuseki container
-    fuseki-load           Load the ontology in Fuseki server
-    fuseki-log            Show Fuseki server logs
   Misc:
     cache                 Download all required files to cache
     check                 Check if all required commands are available in the system
