@@ -50,7 +50,7 @@ Assertion credentials use predicates to represent domain-specific facts, such as
         "predicate": "axone:hasLicence",
         "object": "CC-BY-4.0",
         "scope": "did:pkh:cosmos:axone-1:cosmos1unn7us5oknykkzprw8np5haotf4t2fxyudho5z",
-        "evidence": "https://example.com/evidence/resource-license"
+        "supportingEvidence": "https://example.com/evidence/resource-license"
     },
     "issuanceDate": "2026-06-11T00:00:00.000000+02:00",
     "issuer": {
@@ -62,16 +62,6 @@ Assertion credentials use predicates to represent domain-specific facts, such as
 ```
 
 ### Properties
-
-#### Evidence
->
-> **IRI**: [credential-assertion:evidence](https://w3id.org/axone/ontology/v4/schema/core/assertion/evidence)
->
-> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
->
-> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
-
-A resource that supports or documents the asserted fact.
 
 #### Object
 >
@@ -112,3 +102,13 @@ The context, zone, policy, or other resource within which the assertion applies.
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
 The identifiable subject the fact is asserted about.
+
+#### Supporting evidence
+>
+> **IRI**: [credential-assertion:supportingEvidence](https://w3id.org/axone/ontology/v4/schema/core/assertion/supportingEvidence)
+>
+> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+>
+> **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
+
+A resource that supports or documents the asserted fact.

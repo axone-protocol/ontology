@@ -14,7 +14,7 @@
         "predicate": "axone:hasLicence",
         "object": "CC-BY-4.0",
         "scope": "did:pkh:cosmos:axone-1:cosmos1unn7us5oknykkzprw8np5haotf4t2fxyudho5z",
-        "evidence": "https://example.com/evidence/resource-license"
+        "supportingEvidence": "https://example.com/evidence/resource-license"
     },
     "issuanceDate": "2026-06-11T00:00:00.000000+02:00",
     "issuer": {
