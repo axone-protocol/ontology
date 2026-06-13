@@ -88,8 +88,8 @@ DOCKER_IMAGE_RUBY_RDF     := okp4/ruby-rdf:3.3.1
 DOCKER_IMAGE_CLI	      := okp4/cli
 
 # Executables
-VERSION_OWL_CLI := 1.2.5
-EXEC_OWL_CLI    := owl-cli-$(VERSION_OWL_CLI).jar
+VERSION_OWL_CLI := 2.0.0
+EXEC_OWL_CLI    := cool-rdf-cli-$(VERSION_OWL_CLI).jar
 
 # Other constants
 PERMISSION_MODE := 767
@@ -411,7 +411,7 @@ $(DST_CACHE)/$(EXEC_OWL_CLI):
 	@echo "${COLOR_CYAN}⤵️ downlading ${COLOR_GREEN}$(notdir $@)${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(DST_CACHE); \
     cd $(DST_CACHE); \
-    wget https://github.com/atextor/owl-cli/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
+    wget https://github.com/cool-rdf/cool-rdf/releases/download/v$(VERSION_OWL_CLI)/$(EXEC_OWL_CLI)
 
 $(DST_CACHE)/cli: $(shell find $(SRC_SCRIPT) -name "*.*" -not -path "$(SRC_SCRIPT)/.*")
 	@echo "${COLOR_CYAN}🐳 making ${COLOR_GREEN}$(DOCKER_IMAGE_CLI)${COLOR_RESET} image"
