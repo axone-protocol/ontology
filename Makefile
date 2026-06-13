@@ -308,17 +308,14 @@ $(FLG_LINT_TTLS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.ttl
 	@touch $@
 
 .PHONY: lint-jsonld
-lint-jsonld: check cache $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
+lint-jsonld: check cache build-ontology-jsonld $(FLG_LINT_JSONLDS) ## Lint all JSON-LD files
 
 $(FLG_LINT_JSONLDS): $(DST_LINT)/%.linted: $(SRC_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔬 linting: ${COLOR_GREEN}$<${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@cp $< $@.jsonld
-	@sed -i ${SED_FLAG} "s/\$$major/next/g" $@.jsonld
-	@docker run --rm \
-	  -v `pwd`:/usr/src/ontology:ro \
-	  -w /usr/src/ontology \
-	  ${DOCKER_IMAGE_RUBY_RDF} validate --validate $@.jsonld
+	@sed -i ${SED_FLAG} "s/\$$major/$(VERSION_MAJOR)/g" $@.jsonld
+	@${call CLI,jsonld,nquads,$@.jsonld,-o,/dev/null,--algorithm,URDNA2015,--context-folder,$(DST_SCHEMA)}
 	@mv -f $@.jsonld $@
 
 ## Documentation:
