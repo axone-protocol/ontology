@@ -7,7 +7,7 @@ sidebar_position: 2
 
 > **Name**: `credential-profile`
 >
-> **Namespace**: [https://w3id.org/axone/ontology/v4/schema/core/profile/](https://w3id.org/axone/ontology/v4/schema/core/profile/)
+> **Namespace**: [https://w3id.org/axone/ontology/v5/schema/core/profile/](https://w3id.org/axone/ontology/v5/schema/core/profile/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-profile`: [https://w3id.org/axone/ontology/v4/schema/core/profile/](https://w3id.org/axone/ontology/v4/schema/core/profile/)
+- `credential-profile`: [https://w3id.org/axone/ontology/v5/schema/core/profile/](https://w3id.org/axone/ontology/v5/schema/core/profile/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **IRI**: [credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 
 ### Description
 
@@ -37,7 +37,7 @@ Profile credentials describe entities such as zones, datasets, digital resources
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/axone/ontology/v4/schema/core/profile/"
+        "https://w3id.org/axone/ontology/v5/schema/core/profile/"
     ],
     "type": ["VerifiableCredential", "ProfileCredential"],
     "id": "https://credentials.axone.xyz/profile/collab-ai-zone",
@@ -66,9 +66,9 @@ Profile credentials describe entities such as zones, datasets, digital resources
 
 #### Link
 >
-> **IRI**: [credential-profile:link](https://w3id.org/axone/ontology/v4/schema/core/profile/link)
+> **IRI**: [credential-profile:link](https://w3id.org/axone/ontology/v5/schema/core/profile/link)
 >
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -76,9 +76,9 @@ A web page or other resource related to the subject.
 
 #### Tag
 >
-> **IRI**: [credential-profile:tag](https://w3id.org/axone/ontology/v4/schema/core/profile/tag)
+> **IRI**: [credential-profile:tag](https://w3id.org/axone/ontology/v5/schema/core/profile/tag)
 >
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -88,7 +88,7 @@ A keyword or term associated with the subject.
 >
 > **IRI**: [schema:description](http://schema.org/description)
 >
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -98,7 +98,7 @@ A human-readable description of the subject.
 >
 > **IRI**: [schema:image](http://schema.org/image)
 >
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -108,7 +108,7 @@ An image associated with the subject.
 >
 > **IRI**: [schema:name](http://schema.org/name)
 >
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 >
 > **Range**:&nbsp;[xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
@@ -118,7 +118,7 @@ A human-readable name for the subject.
 >
 > **IRI**: [schema:sameAs](http://schema.org/sameAs)
 >
-> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v4/schema/core/profile/ProfileCredential)
+> **Domain**:&nbsp;[credential-profile:ProfileCredential](https://w3id.org/axone/ontology/v5/schema/core/profile/ProfileCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 

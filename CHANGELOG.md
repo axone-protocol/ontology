@@ -1,5 +1,39 @@
 # Axone Ontology Changelog
 
+## [5.0.0](https://github.com/axone-protocol/ontology/compare/v4.0.0...v5.0.0) (2026-06-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **schema:** remove obsolete credential schemas
+* **schema:** remove VC-based governance binding
+* **schema:** remove Governance Text VC
+
+### Features
+
+* **example:** add example for credential-zone-membership ([bc5b200](https://github.com/axone-protocol/ontology/commit/bc5b20061e23c119cabb4c0aab96080c6eb903c4))
+* **example:** add proof-of-participation example ([d4992c8](https://github.com/axone-protocol/ontology/commit/d4992c8dd53b1c769f63388bc678858d1be0f954))
+* **example:** include event organizer in Proof of Participation VC ([1642702](https://github.com/axone-protocol/ontology/commit/1642702bae33c80b38054324368060ad62aa997d))
+* **schema:** add assertion credential schema ([ca343e7](https://github.com/axone-protocol/ontology/commit/ca343e7159336dacb22054ee811e6a22dd785e88))
+* **schema:** add credential-zone-membership VC ([0b1646e](https://github.com/axone-protocol/ontology/commit/0b1646e31b1f40539cb36132cd33013ae9fd1315))
+* **schema:** add governance-declaration credentials schema ([d4dfc9d](https://github.com/axone-protocol/ontology/commit/d4dfc9d9453e618afb58e09dd4fa39658ba84910))
+* **schema:** add profile credential schema ([4bb5937](https://github.com/axone-protocol/ontology/commit/4bb59373e258d335693c76f154b180fcb4808721))
+* **schema:** add proof-of-participation vc ([df82851](https://github.com/axone-protocol/ontology/commit/df828511e82c65d765ccce4f5f112bef83c16685))
+* **schema:** remove Governance Text VC ([4a3561c](https://github.com/axone-protocol/ontology/commit/4a3561c0e262f44a470304b1ea3179c8201e384c))
+* **script:** add schema.org schema resolver ([a67909e](https://github.com/axone-protocol/ontology/commit/a67909ed8435677a8ec1152cbc80ea582b421d89))
+
+
+### Bug Fixes
+
+* **example:** use external license predicate in assertion example ([c55bc78](https://github.com/axone-protocol/ontology/commit/c55bc78c8137a9e58c1ca2847f5c6c37f9251498))
+* **schema:** avoid protected VC context term collision ([01e7f9b](https://github.com/axone-protocol/ontology/commit/01e7f9b6bb50bbfc8173f7a792feadde92f5c1c4))
+
+
+### Code Refactoring
+
+* **schema:** remove obsolete credential schemas ([1d02cd5](https://github.com/axone-protocol/ontology/commit/1d02cd58224071f3806af2d9ea840a5cdd1002db))
+* **schema:** remove VC-based governance binding ([b4de256](https://github.com/axone-protocol/ontology/commit/b4de256b761780dca7c4b8d18dec9dc84c6f0f44))
+
 ## [4.0.0](https://github.com/axone-protocol/ontology/compare/v3.0.0...v4.0.0) (2024-08-07)
 
 

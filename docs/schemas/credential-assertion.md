@@ -7,7 +7,7 @@ sidebar_position: 1
 
 > **Name**: `credential-assertion`
 >
-> **Namespace**: [https://w3id.org/axone/ontology/v4/schema/core/assertion/](https://w3id.org/axone/ontology/v4/schema/core/assertion/)
+> **Namespace**: [https://w3id.org/axone/ontology/v5/schema/core/assertion/](https://w3id.org/axone/ontology/v5/schema/core/assertion/)
 
 ## Namespaces
 
@@ -19,11 +19,11 @@ Here are the namespaces used in this schema:
 - `dcterms`: [http://purl.org/dc/terms/](http://purl.org/dc/terms/)
 - `schema`: [http://schema.org/](http://schema.org/)
 - `xsd`: [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#)
-- `credential-assertion`: [https://w3id.org/axone/ontology/v4/schema/core/assertion/](https://w3id.org/axone/ontology/v4/schema/core/assertion/)
+- `credential-assertion`: [https://w3id.org/axone/ontology/v5/schema/core/assertion/](https://w3id.org/axone/ontology/v5/schema/core/assertion/)
 
 ## Verifiable Credential
 
-> **IRI**: [credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+> **IRI**: [credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v5/schema/core/assertion/AssertionCredential)
 
 ### Description
 
@@ -37,9 +37,9 @@ Assertion credentials use predicates to represent domain-specific facts, such as
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/axone/ontology/v4/schema/core/assertion/",
+        "https://w3id.org/axone/ontology/v5/schema/core/assertion/",
         {
-            "axone": "https://w3id.org/axone/ontology/v4/"
+            "axone": "https://w3id.org/axone/ontology/v5/"
         }
     ],
     "type": ["VerifiableCredential", "AssertionCredential"],
@@ -65,9 +65,9 @@ Assertion credentials use predicates to represent domain-specific facts, such as
 
 #### Object
 >
-> **IRI**: [credential-assertion:object](https://w3id.org/axone/ontology/v4/schema/core/assertion/object)
+> **IRI**: [credential-assertion:object](https://w3id.org/axone/ontology/v5/schema/core/assertion/object)
 >
-> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v5/schema/core/assertion/AssertionCredential)
 >
 > **Range**:&nbsp;
 
@@ -75,9 +75,9 @@ The value of the asserted fact. The object can be expressed as a URI, a literal 
 
 #### Predicate
 >
-> **IRI**: [credential-assertion:predicate](https://w3id.org/axone/ontology/v4/schema/core/assertion/predicate)
+> **IRI**: [credential-assertion:predicate](https://w3id.org/axone/ontology/v5/schema/core/assertion/predicate)
 >
-> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v5/schema/core/assertion/AssertionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -85,9 +85,9 @@ The property or relationship being asserted about the subject.
 
 #### Scope
 >
-> **IRI**: [credential-assertion:scope](https://w3id.org/axone/ontology/v4/schema/core/assertion/scope)
+> **IRI**: [credential-assertion:scope](https://w3id.org/axone/ontology/v5/schema/core/assertion/scope)
 >
-> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v5/schema/core/assertion/AssertionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -95,9 +95,9 @@ The context, zone, policy, or other resource within which the assertion applies.
 
 #### Subject
 >
-> **IRI**: [credential-assertion:subject](https://w3id.org/axone/ontology/v4/schema/core/assertion/subject)
+> **IRI**: [credential-assertion:subject](https://w3id.org/axone/ontology/v5/schema/core/assertion/subject)
 >
-> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v5/schema/core/assertion/AssertionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
@@ -105,9 +105,9 @@ The identifiable subject the fact is asserted about.
 
 #### Supporting evidence
 >
-> **IRI**: [credential-assertion:supportingEvidence](https://w3id.org/axone/ontology/v4/schema/core/assertion/supportingEvidence)
+> **IRI**: [credential-assertion:supportingEvidence](https://w3id.org/axone/ontology/v5/schema/core/assertion/supportingEvidence)
 >
-> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v4/schema/core/assertion/AssertionCredential)
+> **Domain**:&nbsp;[credential-assertion:AssertionCredential](https://w3id.org/axone/ontology/v5/schema/core/assertion/AssertionCredential)
 >
 > **Range**:&nbsp;[xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 
