@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   project-auto-merge-dependabot:
-    if: github.actor == 'dependabot[bot]'
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     runs-on: ubuntu-22.04
     steps:
       - name: Auto merge PR
