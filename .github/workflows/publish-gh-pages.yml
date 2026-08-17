@@ -39,7 +39,7 @@ jobs:
         id: version
         run: |
           version=$(cat version)
-          major=$(echo $version | cut -d. -f1)
+          major=$(echo "$version" | cut -d. -f1)
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "major=$major" >> "$GITHUB_OUTPUT"
 
