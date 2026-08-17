@@ -1,0 +1,42 @@
+name: Build / Ontology
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-ontology.yml'
+      - 'src/**'
+      - 'script/**'
+      - 'LICENSE'
+      - 'Makefile'
+      - 'version'
+
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-ontology.yml'
+      - 'src/**'
+      - 'script/**'
+      - 'LICENSE'
+      - 'Makefile'
+      - 'version'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-ontology:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Build ontology and examples
+        run: |
+          make build

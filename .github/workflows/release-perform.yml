@@ -1,23 +1,19 @@
-name: Release
+name: Release / Perform
 
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  lint:
+  release-perform:
     if: github.ref == 'refs/heads/main'
-    uses: ./.github/workflows/lint.yml
-
-  build:
-    if: github.ref == 'refs/heads/main'
-    uses: ./.github/workflows/build.yml
-
-  perform-release:
     runs-on: ubuntu-22.04
-    needs:
-      - lint
-      - build
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
@@ -33,7 +29,8 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
 
-      - uses: actions/setup-node@v7
+      - name: Set up Node
+        uses: actions/setup-node@v7
         with:
           node-version: 18.18
 

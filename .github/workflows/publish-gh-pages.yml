@@ -1,13 +1,24 @@
-name: Publish
-"on":
+name: Publish / GitHub Pages
+
+on:
   push:
-    branches:
-      - main
-    tags:
-      - v*
+    branches: [main]
+    tags: [v*]
+    paths:
+      - '.github/workflows/publish-gh-pages.yml'
+      - 'src/**'
+      - 'script/**'
+      - 'LICENSE'
+      - 'Makefile'
+      - 'version'
+
+permissions:
+  contents: read
+
 concurrency:
-  group: "publish-${{ github.ref }}"
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   publish-gh-pages:
     runs-on: ubuntu-22.04
@@ -16,7 +27,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Bump version to next (if not tagged)
-        if: "startsWith(github.ref, 'refs/heads/')"
+        if: startsWith(github.ref, 'refs/heads/')
         run: |
           echo next > version
 
@@ -28,9 +39,9 @@ jobs:
         id: version
         run: |
           version=$(cat version)
-          major=$(echo $version | cut -d. -f1)
-          echo "::set-output name=version::$version"
-          echo "::set-output name=major::$major"
+          major=$(echo "$version" | cut -d. -f1)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "major=$major" >> "$GITHUB_OUTPUT"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

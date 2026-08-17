@@ -3,10 +3,10 @@
 > RDF vocabularies, thesauri, and Verifiable Credential payload schemas used by the Axone protocol.
 
 [![release](https://img.shields.io/github/v/release/axone-protocol/ontology?style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/releases)
-[![lint](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/lint.yml?label=lint&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/lint.yml)
-[![build](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/build.yml?label=build&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/build.yml)
-[![test](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/test.yml?label=test&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/test.yml)
-[![publish](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/publish.yml?label=publish&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/publish.yml)
+[![lint-ontology](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/lint-ontology.yml?label=lint-ontology&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/lint-ontology.yml)
+[![build-ontology](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/build-ontology.yml?label=build-ontology&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/build-ontology.yml)
+[![test-ontology](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/test-ontology.yml?label=test-ontology&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/test-ontology.yml)
+[![publish-gh-pages](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/publish-gh-pages.yml?label=publish-gh-pages&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/publish-gh-pages.yml)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge&logo=conventionalcommits)](https://conventionalcommits.org)
 [![contributor covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](https://github.com/axone-protocol/.github/blob/main/CODE_OF_CONDUCT.md)
 ![W3C](https://img.shields.io/badge/W3C-1572B6?style=for-the-badge&logo=w3c&logoColor=white) [![cc-by-sa-4.0][cc-by-sa-image]][cc-by-sa]
