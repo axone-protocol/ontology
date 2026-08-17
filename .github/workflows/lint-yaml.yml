@@ -1,0 +1,35 @@
+name: Lint / YAML
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/lint-yaml.yml'
+      - '.yamllint.yaml'
+      - '**/*.yml'
+      - '**/*.yaml'
+
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lint-yaml.yml'
+      - '.yamllint.yaml'
+      - '**/*.yml'
+      - '**/*.yaml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-yaml:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Lint yaml files
+        uses: ibiqlik/action-yamllint@v3.1.1

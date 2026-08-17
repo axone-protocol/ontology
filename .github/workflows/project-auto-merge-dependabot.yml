@@ -1,12 +1,19 @@
-name: Auto merge
+name: Project / Auto Merge Dependabot
 
 on:
   pull_request:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  auto-merge-dependabot:
-    runs-on: ubuntu-22.04
+  project-auto-merge-dependabot:
     if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-22.04
     steps:
       - name: Auto merge PR
         uses: ahmadnassri/action-dependabot-auto-merge@v2
