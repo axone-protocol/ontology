@@ -50,7 +50,7 @@ jobs:
           GH_TOKEN: ${{ secrets.OPS_TOKEN }}
 
       - name: Create an announcement discussion for release
-        uses: abirismyname/create-discussion@v2.1.0
+        uses: abirismyname/create-discussion@c2b7c825241769dda523865ae444a879f6bbd0e0 # v2.1.0
         with:
           title: 🎉 ${{ env.REPO_NAME }} ${{ env.RELEASE_TAG }} released!
           body: |
