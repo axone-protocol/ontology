@@ -25,7 +25,6 @@ DTS_DOCS_SCHEMAS := $(DST_DOCS)/schemas
 DST_MAKE         := $(DST)/.make
 DST_ONT          := $(DST)/ontology/v$(VERSION_MAJOR)
 DST_SCHEMA       := $(DST_ONT)/schema
-DST_THESAURUS    := $(DST_ONT)/thesaurus
 DST_FORMAT       := $(DST_MAKE)/format
 DST_LINT         := $(DST_MAKE)/lint
 DST_TEST         := $(DST_MAKE)/test
@@ -34,16 +33,13 @@ DST_TEST         := $(DST_MAKE)/test
 SRC_ONT             := $(ROOT)/src
 SRC_SCRIPT          := $(ROOT)/script
 SRC_SCHEMA 		    := $(SRC_ONT)/schema
-SRC_THESAURUS	    := $(SRC_ONT)/thesaurus
 SRC_ONTS            := $(shell find $(SRC_ONT) -name "*.ttl" | sort)
 SRC_SCHEMAS		    := $(shell find $(SRC_SCHEMA) -name "*.ttl" | sort)
-SRC_THESAURI	    := $(shell find $(SRC_THESAURUS) -name "*.ttl" | sort)
 SRC_EXAMPLES        := $(shell find $(SRC_ONT) -name "*.jsonld" | sort)
 OBJ_ONTS_TTL        := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.ttl,$(SRC_ONTS))
 OBJ_ONTS_NT         := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.nt,$(SRC_ONTS))
 OBJ_ONTS_RDFXML     := $(patsubst $(SRC_ONT)/%.ttl,$(DST_ONT)/%.rdf.xml,$(SRC_ONTS))
 OBJ_SCHEMAS_JSONLD  := $(patsubst $(SRC_SCHEMA)/%.ttl,$(DST_ONT)/schema/%.jsonld,$(SRC_SCHEMAS))
-OBJ_THESAURI_JSONLD := $(patsubst $(SRC_THESAURUS)/%.ttl,$(DST_ONT)/thesaurus/%.jsonld,$(SRC_THESAURI))
 OBJ_EXAMPLES_JSONLD := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.jsonld,$(SRC_EXAMPLES))
 OBJ_EXAMPLES_NQUAD  := $(patsubst $(SRC_ONT)/%.jsonld,$(DST_ONT)/%.nq,$(SRC_EXAMPLES))
 
@@ -179,7 +175,7 @@ build-ontology-nt: check $(DST) $(BIN_AXONE_NT) ## Build the ontology in N-Tripl
 build-ontology-rdfxml: check $(DST) $(OBJ_ONTS_RDFXML) $(BIN_AXONE_RDFXML) ## Build the ontology in RDF/XML format
 
 .PHONY: build-ontology-jsonld
-build-ontology-jsonld: check cache $(DST) $(OBJ_SCHEMAS_JSONLD) $(OBJ_THESAURI_JSONLD)  ## Build the ontology in JSON-LD format
+build-ontology-jsonld: check cache $(DST) $(OBJ_SCHEMAS_JSONLD)  ## Build the ontology in JSON-LD format
 
 .PHONY: build-examples
 build-examples: build-examples-jsonld build-ontology-jsonld build-examples-nquad $(DST) ## Build the examples in different formats (N-Quads, JSON-LD)
@@ -211,11 +207,6 @@ $(OBJ_SCHEMAS_JSONLD): $(DST_SCHEMA)/%.jsonld: $(DST_SCHEMA)/%.ttl
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} schema ${COLOR_GREEN}$@${COLOR_RESET}"
 	@mkdir -p -m $(PERMISSION_MODE) $(@D)
 	@${call CLI,jsonld,convert,$<,-o,$@,--flatten,--indent,$(JSONLD_INDENT)}
-
-$(OBJ_THESAURI_JSONLD): $(DST_THESAURUS)/%.jsonld: $(DST_THESAURUS)/%.ttl
-	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} thesaurus ${COLOR_GREEN}$@${COLOR_RESET}"
-	@mkdir -p -m $(PERMISSION_MODE) $(@D)
-	@${call RDF_SERIALIZE,turtle,jsonld,$<,$@}
 
 $(OBJ_EXAMPLES_JSONLD): $(DST_ONT)/%.jsonld: $(SRC_ONT)/%.jsonld
 	@echo "${COLOR_CYAN}🔨 building${COLOR_RESET} example ${COLOR_GREEN}$@${COLOR_RESET}"
