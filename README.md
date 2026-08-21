@@ -103,8 +103,13 @@ Note: by including only the `MAJOR` version number in the URI, significant updat
 
 ### Building the ontology
 
-The ontology is built using [GNU make](https://www.gnu.org/software/make/manual/make.html) and [Docker](https://www.docker.com/).
-To build the ontology, run the following command:
+The ontology is built with [GNU make](https://www.gnu.org/software/make/manual/make.html) in the reproducible [Nix](https://nixos.org/) development environment. Install [Nix](https://nixos.org/download/) and [direnv](https://direnv.net/docs/installation.html), then authorize the environment:
+
+```bash
+direnv allow
+```
+
+To build the ontology, run:
 
 ```bash
 make build
@@ -160,7 +165,6 @@ Usage:
 Targets:
   Clean:
     clean                 Clean all generated files
-    clean-cache           Clean the cache
     clean-build           Clean the .make (build) directory
     clean-ontologies      Clean the built ontologies
   Build:
@@ -184,19 +188,15 @@ Targets:
     docs-schemas          Generate schemas markdown documentation
   Test:
     test                  Run all available tests
-    test-ontology         Test the ontology
-  Misc:
-    cache                 Download all required files to cache
+    test-ontology         Test the ontology (use FORCE=1 to ignore markers)
     check                 Check if all required commands are available in the system
     version               Show the current version
   Help:
     vars                  Show relevant variables used in this Makefile
     help                  Show this help.
 
-This Makefile depends on docker. To install it, please follow the instructions:
-- for macOS: https://docs.docker.com/docker-for-mac/install/
-- for Windows: https://docs.docker.com/docker-for-windows/install/
-- for Linux: https://docs.docker.com/engine/install/
+This Makefile runs in the Nix development environment.
+Run direnv allow once, or invoke nix develop.
 ```
 
 ## Contributing

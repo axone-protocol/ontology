@@ -1,23 +1,23 @@
-name: Lint / Ontology
+name: Lint / Nix
 
 on:
   push:
     branches: [main]
     paths:
-      - '.github/workflows/lint-ontology.yml'
-      - 'src/**/*.ttl'
-      - 'Makefile'
+      - '.envrc'
+      - '.github/workflows/lint-nix.yml'
       - 'flake.lock'
       - 'flake.nix'
+      - '**/*.nix'
 
   pull_request:
     branches: [main]
     paths:
-      - '.github/workflows/lint-ontology.yml'
-      - 'src/**/*.ttl'
-      - 'Makefile'
+      - '.envrc'
+      - '.github/workflows/lint-nix.yml'
       - 'flake.lock'
       - 'flake.nix'
+      - '**/*.nix'
 
 permissions:
   contents: read
@@ -27,25 +27,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint-ontology:
+  lint-nix:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
         with:
           persist-credentials: false
+
       - name: Set up Nix
         uses: DeterminateSystems/nix-installer-action@ef8a148080ab6020fd15196c2084a2eea5ff2d25 # v22
 
+      - name: Check flake
+        run: nix flake check --all-systems --show-trace --print-build-logs
 
-      - name: Validate RDF files (Turtle)
-        run: nix develop --command make lint-ttl
-
-      - name: Check RDF files (Turtle) are formatted
+      - name: Check formatting
         run: |
-          nix develop --command make format-ttl
-          if [[ $(git status -s) ]]; then
-            >&2 echo 'There is a diff between formatted files and source code'
-            >&2 git status
-            exit 1
-          fi
+          mapfile -t nix_files < <(git ls-files '*.nix')
+          nix develop --command nixfmt --check "${nix_files[@]}"
+
+      - name: Statix
+        run: nix develop --command statix check .
+
+      - name: Deadnix
+        run: nix develop --command deadnix --fail .
