@@ -1,6 +1,6 @@
 # Axone Ontology
 
-> RDF vocabularies, thesauri, and Verifiable Credential payload schemas used by the Axone protocol.
+> RDF vocabularies and Verifiable Credential payload schemas used by the Axone protocol.
 
 [![release](https://img.shields.io/github/v/release/axone-protocol/ontology?style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/releases)
 [![lint-ontology](https://img.shields.io/github/actions/workflow/status/axone-protocol/ontology/lint-ontology.yml?label=lint-ontology&style=for-the-badge&logo=github)](https://github.com/axone-protocol/ontology/actions/workflows/lint-ontology.yml)
@@ -13,15 +13,15 @@
 
 ## The [Axone](https://axone.xyz) ontology
 
-This repository defines RDF vocabularies, thesauri, and Verifiable Credential payload schemas used by the [Axone protocol](https://axone.xyz).
+This repository defines RDF vocabularies and Verifiable Credential payload schemas used by the [Axone protocol](https://axone.xyz).
 
 It provides the semantic artefacts required to name, describe, and constrain credential payloads in Axone.
 
-### Vocabulary and thesauri
+### Vocabulary
 
-[Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) use JSON-LD contexts to map credential terms to machine-readable identifiers. Axone defines these terms with RDF-compatible vocabularies and controlled thesauri so that credential payloads can be interpreted consistently across implementations.
+[Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) use JSON-LD contexts to map credential terms to machine-readable identifiers. Axone defines these terms with RDF-compatible vocabularies so that credential payloads can be interpreted consistently across implementations.
 
-Axone uses [RDF Schema](http://www.w3.org/TR/rdf-schema/) to define reusable semantic terms and [SKOS](https://www.w3.org/TR/skos-reference/) for controlled vocabularies. Both are built on top of the [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/). This keeps the model lightweight while remaining compatible with RDF and JSON-LD tooling.
+Axone uses [RDF Schema](http://www.w3.org/TR/rdf-schema/) to define reusable semantic terms. It is built on top of the [Resource Description Framework](http://www.w3.org/TR/rdf-concepts/), keeping the model lightweight while remaining compatible with RDF and JSON-LD tooling.
 
 ### Verifiable Credential payload schemas
 
@@ -51,7 +51,7 @@ When an Axone account is represented as a DID, examples use the `did:pkh` method
 
 ### Use in Axone
 
-In the [Axone protocol](https://axone.xyz), the ontology provides the vocabulary used to describe credential payloads and controlled terms.
+In the [Axone protocol](https://axone.xyz), the ontology provides the vocabulary used to describe credential payloads.
 
 Credentials may either provide informational metadata or carry governance-relevant material. Informational payloads can be discovered, indexed, and displayed. Governance-relevant payloads can be referenced or evaluated by protocol components according to their own rules.
 
@@ -70,17 +70,13 @@ The construction of the semantic model follows a number of steps which are descr
 
 ### Organization
 
-The repository is structured in a modular way, with each part representing a specific semantic domain while keeping credential payload schemas generic and extensible.
+The repository is structured in a modular way, with each schema representing a specific semantic domain while keeping credential payload schemas generic and extensible.
 
-At the root, the semantic model is divided into two main parts:
-
-- __Thesaurus Part__: This part contains all controlled vocabularies integral to the ontology. The thesaurus adheres to the [SKOS standard](https://www.w3.org/TR/skos-reference/), which is instrumental in ensuring compatibility with other thesauri and simplifying the ontology's integration into various systems.
-
-- __Schema Part__: This part contains the active [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) payload schemas used within the [Axone protocol](https://axone.xyz). These schemas are deployed as [JSON-LD contexts](https://www.w3.org/TR/json-ld11/) under the `schema/core` sub-domain. They describe reusable payload semantics, not protocol operations.
+It contains the active [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) payload schemas used within the [Axone protocol](https://axone.xyz). These schemas are deployed as [JSON-LD contexts](https://www.w3.org/TR/json-ld11/) under the `schema/core` sub-domain. They describe reusable payload semantics, not protocol operations.
 
 Credential schemas should remain generic when possible. Descriptive credentials carry information about identifiable subjects. Governance-relevant credentials carry structured statements with normative or evidentiary value.
 
-The foundational philosophy underpinning the semantic model is grounded in the *Open World* principle. Knowledge is not static or finite. The model is therefore not confined to a closed set of schemas and thesauri. It is designed to accommodate new terms and payload structures when they are justified by concrete use cases.
+The foundational philosophy underpinning the semantic model is grounded in the *Open World* principle. Knowledge is not static or finite. The model is therefore not confined to a closed set of schemas or terms. It is designed to accommodate new terms and payload structures when they are justified by concrete use cases.
 
 ### Axone semantic URIs
 
