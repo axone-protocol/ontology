@@ -12,7 +12,7 @@ jobs:
   project-add-issue:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v2.0.0
+      - uses: actions/add-to-project@v2.0.1
         with:
           project-url: https://github.com/orgs/axone-protocol/projects/2
           github-token: ${{ secrets.OPS_TOKEN }}
