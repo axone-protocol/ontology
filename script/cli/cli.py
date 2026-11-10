@@ -65,7 +65,7 @@ def generate(input_path: os.PathLike[str], output_path: os.PathLike[str],
     "--output",
     "output_file",
     type=click.File('w'),
-    default=click.get_text_stream('stdout'),
+    default="-",
     help="The path and name for the generated JSON-LD file.",
 )
 @click.option(
@@ -112,7 +112,7 @@ def convert(input_file: t.TextIO, output_file: t.TextIO, flatten: bool, indent: 
     "--output",
     "output_file",
     type=click.File('w'),
-    default=click.get_text_stream('stdout'),
+    default="-",
     help="The path and name for the generated NQUADS file.",
 )
 @click.option(
